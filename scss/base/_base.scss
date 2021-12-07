@@ -1,0 +1,34 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  border: 0.02rem solid HSL(var(--primary-hs) 0%);
+  font-family: var(--ff);
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.container {
+  // max-height: 100vh;
+  // height: 100vh;
+  // max-width: 90rem;
+  // border: 0.02rem solid HSL(var(--primary-hs) 0%);
+  // margin: 0.6rem;
+  padding: var(--padding-container);
+  // background-color: red;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.grid {
+  display: grid;
+  gap: var(--gap, 1rem);
+}
+
+.flow > * + * {
+  margin-top: var(--flow-space, 1rem);
+}

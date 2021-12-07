@@ -1,0 +1,55 @@
+/*
+@media (min-width:320px) {  smartphones, portrait iPhone, portrait 480x320 phones (Android)  }
+@media (min-width:480px) {  smartphones, Android phones, landscape iPhone  }
+@media (min-width:600px) {  portrait tablets, portrait iPad, e-readers (Nook/Kindle), landscape 800x480 phones (Android)  }
+@media (min-width:801px) {  tablet, landscape iPad, lo-res laptops ands desktops  }
+@media (min-width:1025px) {  big landscape tablets, laptops, and desktops  }
+@media (min-width:1281px) {  hi-res laptops and desktops  }
+*/
+
+$breakpoints: (
+  '1920->': (
+    min-width: 120em,
+  ),
+  '1366->': (
+    min-width: 85.375em,
+  ),
+  '1024->': (
+    min-width: 64em,
+  ),
+  '736->': (
+    min-width: 46em,
+  ),
+  '568->': (
+    min-width: 35.5em,
+  ),
+  '320->': (
+    min-width: 20em,
+  ),
+) !default;
+
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  } @else {
+    @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+        + "Available breakpoints are: #{map-keys($breakpoints)}.";
+  }
+}
+
+@mixin flex($dir, $jus, $al) {
+  display: flex;
+  flex-direction: $dir;
+  justify-content: $jus;
+  align-items: $al;
+  gap: vaar(--gap, 1rem);
+}
+
+@mixin abs-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
