@@ -1,9 +1,16 @@
 :root {
   //colors
-  --clr-primary: hsl(212, 93%, 84%);
+  --clr-primary: hsl(202, 65%, 51%);
+  --clr-secondary: hsl(54, 100%, 50%);
+  --clr-footer: hsl(23, 100%, 50%);
   --clr-white: 0 0% 100%;
   --clr-black: hsl(0, 0%, 0%);
   --primary-hs: 0 0%;
+
+  --clr-btn-1: hsl(205, 85%, 40%);
+  --clr-btn-2: hsl(40, 5%, 12%);
+  --clr-btn-3: hsl(344, 85%, 53%);
+  --clr-btn-4: hsl(52, 61%, 90%);
 
   //fonts
   --fs-900: 9rem;

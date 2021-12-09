@@ -10,13 +10,12 @@ body {
 }
 
 .container {
-  // max-height: 100vh;
-  // height: 100vh;
-  // max-width: 90rem;
-  // border: 0.02rem solid HSL(var(--primary-hs) 0%);
-  // margin: 0.6rem;
-  padding: var(--padding-container);
-  // background-color: red;
+  position: relative;
+
+  width: 100%;
+  height: calc(100vh - var(--padding-container) * 2);
+
+  overflow: hidden;
 }
 
 .flex {
@@ -31,4 +30,16 @@ body {
 
 .flow > * + * {
   margin-top: var(--flow-space, 1rem);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+  white-space: nowrap;
+  overflow: hidden;
 }

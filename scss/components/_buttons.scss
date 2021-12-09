@@ -1,0 +1,52 @@
+.btn {
+  //   position: relative;
+  grid-column: 1;
+  grid-row: 2;
+
+  width: 5rem;
+  aspect-ratio: 1;
+  align-self: flex-end;
+
+  //   margin: 5rem;
+  cursor: pointer;
+  //   z-index: 20;
+  outline: 2px solid lightgreen;
+
+  &[aria-selected='false'] {
+    display: none;
+  }
+
+  &[aria-selected='true'] {
+    display: block;
+  }
+
+  // &--click {
+  //   width: 6rem;
+  //   // aspect-ratio: 1;
+  // }
+
+  &-box {
+    position: relative;
+
+    grid-template-columns: min-content 1fr;
+    // grid-template-rows: min-content 10rem;
+    z-index: 20;
+  }
+
+  .cls-1 {
+    fill: var(--clr-btn-1);
+  }
+  .cls-2 {
+    fill: var(--clr-btn-2);
+  }
+  .cls-3 {
+    fill: var(--clr-btn-3);
+  }
+  .cls-4 {
+    fill: hsl(58, 93%, 55%);
+  }
+
+  .cls-5 {
+    fill: var(--clr-btn-4);
+  }
+}
