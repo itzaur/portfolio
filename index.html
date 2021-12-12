@@ -16,14 +16,27 @@
   <body>
     <main class="page">
       <div class="container">
-        <div class="page__bg page__bg--1">
-          <div class="btn-box grid">
-            <div class="fs-560">Click!</div>
+        <div class="page__bg page__bg--1"></div>
+        <div class="page__bg page__bg--2"></div>
+        <div class="page__bg page__bg--3"></div>
+
+        <div class="btn__box grid">
+          <!-- <div class="btn__text flex fs-560 clr-white">
+            <div>C</div>
+            <div>l</div>
+            <div>i</div>
+            <div>c</div>
+            <div>k</div>
+          </div> -->
+          <button
+            class="btn btn-big"
+            aria-selected="true"
+            data-attribute="Click"
+          >
             <svg
-              class="btn"
+              class=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 106.81 110.87"
-              aria-selected="true"
             >
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_2-2" data-name="Layer 2">
@@ -150,12 +163,21 @@
                 </g>
               </g>
             </svg>
+            <span class="sr-only">Menu</span>
+            <div class="btn__text flex fs-180 clr-white">
+              <div>C</div>
+              <div>l</div>
+              <div>i</div>
+              <div>c</div>
+              <div>k</div>
+            </div>
+          </button>
 
+          <button class="btn btn-small" aria-selected="false">
             <svg
-              class="btn"
+              class=""
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 119.71 150.93"
-              aria-selected="false"
             >
               <g id="Layer_2" data-name="Layer 2">
                 <g id="Layer_2-2" data-name="Layer 2">
@@ -298,10 +320,17 @@
                 </g>
               </g>
             </svg>
-          </div>
+            <span class="sr-only">Menu</span>
+          </button>
+          <div class="logo"></div>
+          <!-- <div class="btn__text flex fs-560 clr-white">
+            <div>C</div>
+            <div>l</div>
+            <div>i</div>
+            <div>c</div>
+            <div>k</div>
+          </div> -->
         </div>
-        <div class="page__bg page__bg--2"></div>
-        <div class="page__bg page__bg--3"></div>
       </div>
     </main>
 

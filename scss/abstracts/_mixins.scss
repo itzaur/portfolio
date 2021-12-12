@@ -44,7 +44,7 @@ $breakpoints: (
   flex-direction: $dir;
   justify-content: $jus;
   align-items: $al;
-  gap: vaar(--gap, 1rem);
+  gap: var(--gap, 1rem);
 }
 
 @mixin abs-center {
