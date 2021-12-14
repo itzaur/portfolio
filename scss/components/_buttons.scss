@@ -14,32 +14,15 @@
   // outline: 2px solid lightgreen;
   background: none;
   border: 0;
+  z-index: 20;
 
   @include respond-to('568->') {
     width: 5rem;
   }
 
-  &__box {
-    // --gap: 0;
-    // @include flex(null, flex-start, null);
-    position: relative;
-
-    grid-template-columns: minmax(2rem, 1fr) minmax(0, 70rem) minmax(0, 70rem) minmax(
-        2rem,
-        1fr
-      );
-    grid-template-rows: minmax(5rem, 1fr) min-content;
-
-    padding-block: 2rem;
-    z-index: 20;
-
-    @include respond-to('568->') {
-      grid-template-rows: minmax(8rem, 1fr) min-content;
-    }
-  }
-
-  &-small svg {
+  &-small {
     width: 3.35rem;
+    height: auto;
 
     @include respond-to('568->') {
       width: 5.6rem;
@@ -58,7 +41,8 @@
 
   &[aria-selected='true'] {
     grid-column: 2;
-    display: block;
+    display: flex;
+    align-items: flex-end;
   }
 
   // &--click {

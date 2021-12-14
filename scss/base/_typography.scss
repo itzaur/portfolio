@@ -33,3 +33,61 @@
 .fs-120 {
   font-size: var(--fs-120);
 }
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 0.6rem;
+}
+
+.doodle__text {
+  font-family: var(--ff-doodle);
+}
+
+// .doodle__text {
+//   font-family: var(--ff-doodle);
+//   fill: HSL(var(--primary-hs) 0%);
+//   stroke: red;
+//   stroke-width: 0.3rem;
+//   stroke-linecap: round;
+//   stroke-linejoin: round;
+//   stroke-miterlimit: 10;
+//   stroke-dasharray: 1100;
+//   stroke-dashoffset: 1100;
+//   // stroke-opacity: 0;
+//   // animation: stroke 7s linear;
+//   // animation-fill-mode: forwards;
+//   // animation-delay: 4.5s;
+
+//   & > * {
+//     opacity: 0;
+//     stroke-width: 0.3rem;
+//     animation: opacity 3s linear;
+//     animation-delay: 4.5s;
+//   }
+// }
+
+// @keyframes stroke {
+//   1% {
+//     stroke-opacity: 1;
+//   }
+//   75% {
+//     stroke-dashoffset: 0;
+//   }
+//   100% {
+//     stroke-dashoffset: 0;
+//     fill: HSL(var(--primary-hs) 100%);
+//     stroke-opacity: 1;
+//   }
+// }
+// @keyframes opacity {
+//   1% {
+//     opacity: 0;
+//   }
+
+//   100% {
+//     opacity: 1;
+//   }
+// }

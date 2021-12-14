@@ -17,6 +17,7 @@
   --clr-btn-2: hsl(40, 5%, 12%);
   --clr-btn-3: hsl(344, 85%, 53%);
   --clr-btn-4: hsl(52, 61%, 90%);
+  --clr-logo-1: hsl(274, 53%, 37%);
   --fs-900: 9rem;
   --fs-560: 5.6rem;
   --fs-480: 4.8rem;
@@ -27,11 +28,8 @@
   --fs-140: 1.4rem;
   --fs-120: 1.2rem;
   --ff: 'Comic Neue', cursive;
+  --ff-doodle: 'Lemon', cursive;
   --padding-container: 0.6rem;
-}
-
-.clr-white {
-  color: HSL(var(--clr-white));
 }
 
 html {
@@ -79,6 +77,10 @@ body {
   border: 0;
   white-space: nowrap;
   overflow: hidden;
+}
+
+.clr-white {
+  color: HSL(var(--clr-white));
 }
 
 /* Box sizing rules */
@@ -197,6 +199,18 @@ select {
   font-size: var(--fs-120);
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
+.letter-spacing {
+  letter-spacing: 0.6rem;
+}
+
+.doodle__text {
+  font-family: var(--ff-doodle);
+}
+
 .btn {
   position: relative;
   width: 3rem;
@@ -207,6 +221,7 @@ select {
   cursor: pointer;
   background: none;
   border: 0;
+  z-index: 20;
 }
 
 @media (min-width: 35.5em) {
@@ -215,31 +230,13 @@ select {
   }
 }
 
-.btn__box {
-  position: relative;
-  -ms-grid-columns: minmax(2rem, 1fr) minmax(0, 70rem) minmax(0, 70rem) minmax(2rem, 1fr);
-      grid-template-columns: minmax(2rem, 1fr) minmax(0, 70rem) minmax(0, 70rem) minmax(2rem, 1fr);
-  -ms-grid-rows: minmax(5rem, 1fr) min-content;
-      grid-template-rows: minmax(5rem, 1fr) -webkit-min-content;
-      grid-template-rows: minmax(5rem, 1fr) min-content;
-  padding-block: 2rem;
-  z-index: 20;
-}
-
-@media (min-width: 35.5em) {
-  .btn__box {
-    -ms-grid-rows: minmax(8rem, 1fr) min-content;
-        grid-template-rows: minmax(8rem, 1fr) -webkit-min-content;
-        grid-template-rows: minmax(8rem, 1fr) min-content;
-  }
-}
-
-.btn-small svg {
+.btn-small {
   width: 3.35rem;
+  height: auto;
 }
 
 @media (min-width: 35.5em) {
-  .btn-small svg {
+  .btn-small {
     width: 5.6rem;
   }
 }
@@ -251,7 +248,12 @@ select {
 .btn[aria-selected='true'] {
   -ms-grid-column: 2;
   grid-column: 2;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 
 .btn__text {
@@ -386,6 +388,136 @@ select {
   }
 }
 
+.logo {
+  width: 2.5rem;
+  -ms-grid-column: 7;
+  grid-column: 7;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  z-index: 20;
+}
+
+@media (min-width: 35.5em) {
+  .logo {
+    width: 5rem;
+  }
+}
+
+.logo svg {
+  -webkit-transition: fill 0.5s ease;
+  transition: fill 0.5s ease;
+}
+
+.logo svg .cls-1 {
+  fill: var(--clr-logo-1);
+}
+
+.logo svg .cls-2 {
+  fill: HSL(var(--primary-hs) 100%);
+}
+
+.logo:hover svg {
+  fill: var(--clr-btn-1);
+}
+
+.doodle {
+  position: absolute;
+  width: 40vw;
+  z-index: 1;
+}
+
+.doodle-cls-1 {
+  stroke-miterlimit: 10;
+}
+
+.doodle-cls-2 {
+  stroke-width: 0.4rem;
+}
+
+.doodle-cls-3 {
+  fill: HSL(var(--primary-hs) 90%);
+}
+
+.doodle-cls-1, .doodle-cls-2 {
+  fill: HSL(var(--primary-hs) 100%);
+}
+
+.doodle-cls-1, .doodle-cls-3 {
+  stroke-width: 0.3rem;
+}
+
+.doodle-cls-2, .doodle-cls-3 {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.doodle-cls-1, .doodle-cls-2, .doodle-cls-3 {
+  stroke: HSL(var(--primary-hs) 0%);
+}
+
+.photo,
+.pre-photo {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 6;
+  grid-column: 3 / span 6;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 4;
+  grid-row: 2 / span 4;
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+  -webkit-transform: translate(0, 5rem);
+          transform: translate(0, 5rem);
+}
+
+@media (min-width: 20em) {
+  .photo,
+  .pre-photo {
+    -webkit-transform: translate(0, 8rem);
+            transform: translate(0, 8rem);
+  }
+}
+
+@media (min-width: 35.5em) {
+  .photo,
+  .pre-photo {
+    -webkit-transform: translate(0, 15rem);
+            transform: translate(0, 15rem);
+  }
+}
+
+@media (min-width: 46em) {
+  .photo,
+  .pre-photo {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 4;
+    grid-column: 4 / span 4;
+  }
+}
+
+@media (min-width: 64em) {
+  .photo,
+  .pre-photo {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 3;
+    grid-column: 5 / span 3;
+  }
+}
+
+.photo {
+  outline: 3px solid green;
+  z-index: 2;
+}
+
+.pre-photo {
+  z-index: 0;
+}
+
+.pre-photo .cls-1 {
+  fill: HSL(var(--primary-hs) 100%);
+}
+
 .page {
   padding: var(--padding-container);
 }
@@ -422,15 +554,15 @@ select {
 
 @media (max-width: 20em) {
   .page__bg--1::before {
-    background-position: top -10rem left -5rem, top 10% center, left -5rem top -10rem;
-    background-size: cover, contain, cover;
+    background-position: top -6rem center, top 10% center, left -5rem center;
+    background-size: cover, 100%, cover;
   }
 }
 
 @media (min-width: 20em) {
   .page__bg--1::before {
     background-position: top -10rem center, top center, left -15rem top -20rem;
-    background-size: 190%, 100%, cover;
+    background-size: 200%, 100%, 200%;
   }
 }
 
@@ -483,14 +615,14 @@ select {
 
 @media (max-width: 20em) {
   .page__bg--2::before {
-    background-position: left -2rem top 5rem;
+    background-position: left -1rem top 5rem;
     background-size: cover, cover;
   }
 }
 
 @media (min-width: 20em) {
   .page__bg--2::before {
-    background-position: center top 15rem;
+    background-position: center top 5rem;
   }
 }
 
@@ -578,6 +710,25 @@ select {
 @media (min-width: 64em) {
   .page__bg--3::before {
     width: 99.85%;
+  }
+}
+
+.content {
+  --gap: 0.5rem;
+  position: relative;
+  -ms-grid-columns: minmax(2vw, 1fr) minmax(5rem, 1fr) (minmax(0, 45rem))[4] minmax(5rem, 1fr) minmax(2vw, 1fr);
+      grid-template-columns: minmax(2vw, 1fr) minmax(5rem, 1fr) repeat(4, minmax(0, 45rem)) minmax(5rem, 1fr) minmax(2vw, 1fr);
+  -ms-grid-rows: 5rem 1fr;
+      grid-template-rows: 5rem 1fr;
+  height: 100%;
+  z-index: 20;
+}
+
+@media (min-width: 35.5em) {
+  .content {
+    -ms-grid-rows: 8rem (1fr)[4];
+        grid-template-rows: 8rem repeat(4, 1fr);
+    padding-block: 2rem 0;
   }
 }
 

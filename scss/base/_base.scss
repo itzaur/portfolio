@@ -43,3 +43,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
 }
+
+.clr-white {
+  color: HSL(var(--clr-white));
+}

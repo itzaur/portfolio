@@ -1,0 +1,44 @@
+.photo,
+.pre-photo {
+  grid-column: 3 / span 6;
+  grid-row: 2 / span 4;
+  align-self: end;
+  transform: translate(0, 5rem);
+
+  @include respond-to('320->') {
+    transform: translate(0, 8rem);
+  }
+
+  @include respond-to('568->') {
+    // grid-column: 3 / span 5;
+    // grid-row: 2 / span 4;
+    transform: translate(0, 15rem);
+  }
+
+  @include respond-to('736->') {
+    grid-column: 4 / span 4;
+    // grid-row: 5 / span 1;
+    // grid-row: 1 / span 5;
+    // transform: translateY(15rem);
+  }
+
+  @include respond-to('1024->') {
+    grid-column: 5 / span 3;
+    // grid-row: 1 / span 5;
+    // transform: translateY(15rem);
+  }
+}
+
+.photo {
+  // position: relative;
+  outline: 3px solid green;
+  z-index: 2;
+}
+
+.pre-photo {
+  z-index: 0;
+}
+
+.pre-photo .cls-1 {
+  fill: HSL(var(--primary-hs) 100%);
+}

@@ -119,3 +119,147 @@ btnSmall.addEventListener('click', e => {
   btnSmall.setAttribute('aria-selected', false);
   btnBig.setAttribute('aria-selected', true);
 });
+
+//ANCHOR Doodle
+// const doodleGs = document.querySelectorAll('.doodle g');
+// const doodlePolygons = document.querySelectorAll('.doodle polygon');
+
+// doodleGs.forEach((doodleG, i) => {
+//   let doodleBox = doodlePolygons[i].getBBox();
+//   // console.log(doodleBox);
+//   let center = {
+//     x: doodleBox.x + doodleBox.width / 2,
+//     y: doodleBox.y + doodleBox.height / 2,
+//   };
+
+//   let text = doodleG.querySelector('text');
+//   console.log(text);
+//   if (text == null) return;
+//   text.setAttributeNS(null, 'x', center.x);
+//   text.setAttributeNS(null, 'y', center.y);
+//   // console.log(text);
+//   let textSpan = text.querySelectorAll('tspan');
+//   let textSpanLength = textSpan[0].getComputedTextLength();
+//   console.log(textSpanLength);
+//   textSpan[1].setAttributeNS(null, 'dx', -textSpanLength);
+//   textSpan[2].setAttributeNS(null, 'dx', -textSpanLength);
+//   console.log(textSpan);
+// });
+// const doodlePolygon = document.querySelector('.doodle-cls-2');
+// addDoodleText(doodlePolygon, 'Some text hgjgjhghj');
+// function addDoodleText(bgPath, doodleText) {
+//   let bbox = bgPath.getBBox();
+//   let center = {
+//     x: bbox.x + bbox.width / 2,
+//     y: bbox.y + bbox.height / 2,
+//   };
+//   let textElem = document.createElementNS(bgPath.namespaceURL, 'text');
+//   textElem.setAttribute('x', center.x);
+//   textElem.setAttribute('y', center.y);
+//   textElem.setAttribute('text-anchor', 'middle');
+//   textElem.classList.add('doodle__text');
+//   textElem.textContent = doodleText;
+//   bgPath.after(textElem);
+//   console.log(center);
+// }
+const textSpan0 = document.querySelector('.span0');
+const textSpan1 = document.querySelector('.span1');
+const textSpan2 = document.querySelector('.span2');
+const textSpan3 = document.querySelector('.span3');
+
+const text = {
+  string0: 'My name',
+  string1: 'is Pavel!',
+  string2: 'Welcome to',
+  string3: 'my page!',
+};
+const str0 = text.string0.split('');
+const str1 = text.string1.split('');
+const str2 = text.string2.split('');
+const str3 = text.string3.split('');
+
+console.log(str0);
+
+function animateLetters1() {
+  if (str0.length > 0) {
+    textSpan0.innerHTML += str0.shift();
+  } else {
+    clearTimeout(animateLetters1);
+  }
+
+  setTimeout(animateLetters1, 100);
+}
+animateLetters1();
+
+function animateLetters2() {
+  if (str1.length > 0) {
+    textSpan1.innerHTML += str1.shift();
+  } else {
+    clearTimeout(animateLetters2);
+  }
+
+  setTimeout(animateLetters2, 100);
+}
+
+function animateLetters3() {
+  if (str2.length > 0) {
+    textSpan2.innerHTML += str2.shift();
+  } else {
+    clearTimeout(animateLetters3);
+  }
+
+  setTimeout(animateLetters3, 100);
+}
+
+function animateLetters4() {
+  if (str3.length > 0) {
+    textSpan3.innerHTML += str3.shift();
+  } else {
+    clearTimeout(animateLetters4);
+  }
+
+  setTimeout(animateLetters4, 100);
+}
+
+setTimeout(animateLetters2, 1500);
+setTimeout(animateLetters3, 2500);
+setTimeout(animateLetters4, 3800);
+
+const photo = document.querySelector('.photo');
+const doodle = document.querySelector('.doodle');
+const photoBox = photo.getBoundingClientRect();
+const doodleBox = doodle.getBoundingClientRect();
+const windowHeight = window.innerHeight;
+const windowWidth = window.innerWidth;
+const photoWindowHeight = photo.offsetHeight - 150;
+const photoWindowWidth = photo.offsetWidth;
+doodle.style.transform = `translate(${
+  window.innerWidth - doodle.offsetWidth - photo.offsetWidth * 0.8
+}px, ${
+  window.innerHeight - (photo.offsetHeight - photo.offsetHeight * 0.25 - 150)
+}px)`;
+// console.log(photoBox);
+
+window.addEventListener('resize', function () {
+  // const doodleBox = doodle.getBoundingClientRect();
+  // console.log(doodleBox.right);
+  // doodleBox.right === photoBox.left;
+  // console.log(doodleBox.right);
+  // console.log(photoBox.left);
+  // doodle.style.transform = `translate(${
+  //   photoBox.left - photoBox.width / 2
+  // }px, ${photoBox.top + photoBox.height / 3}px)`;
+  // console.log(doodle);
+  // console.log(window.innerHeight);
+  // console.log(window.innerWidth);
+  // const leftTopCoord = window.innerHeight - photoBox.height;
+  // console.log(leftTopCoord);
+
+  doodle.style.transform = `translate(${
+    window.innerWidth - doodle.offsetWidth - photo.offsetWidth * 0.8
+  }px, ${
+    window.innerHeight - (photo.offsetHeight - photo.offsetHeight * 0.25 - 150)
+  }px)`;
+  // console.log(window.innerHeight, window.innerWidth);
+  console.log(window.innerHeight, photo.offsetHeight);
+});

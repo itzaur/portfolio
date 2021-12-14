@@ -1,0 +1,46 @@
+.doodle {
+  position: absolute;
+  // @include abs-center;
+  width: 40vw;
+  z-index: 1;
+  // left: -3%;
+
+  &-cls-1 {
+    stroke-miterlimit: 10;
+  }
+
+  &-cls-2 {
+    stroke-width: 0.4rem;
+  }
+
+  &-cls-3 {
+    fill: HSL(var(--primary-hs) 90%);
+  }
+
+  &-cls-1,
+  &-cls-2 {
+    fill: HSL(var(--primary-hs) 100%);
+  }
+
+  &-cls-1,
+  &-cls-3 {
+    stroke-width: 0.3rem;
+  }
+
+  &-cls-2,
+  &-cls-3 {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+  }
+
+  &-cls-1,
+  &-cls-2,
+  &-cls-3 {
+    stroke: HSL(var(--primary-hs) 0%);
+  }
+
+  @include respond-to('736->') {
+    // grid-column: 3 / span 2;
+    // grid-row: 3;
+  }
+}
