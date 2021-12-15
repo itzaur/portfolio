@@ -39,6 +39,17 @@
     stroke: HSL(var(--primary-hs) 0%);
   }
 
+  @media (max-width: 20em) {
+    width: 0;
+  }
+
+  // @media (min-width: 20em) and (max-width: 35.5em) {
+  //   width: 22rem;
+  // }
+  // @include respond-to('568->') {
+  //   width: 40vw;
+  // }
+
   @include respond-to('736->') {
     // grid-column: 3 / span 2;
     // grid-row: 3;

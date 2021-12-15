@@ -82,7 +82,7 @@
       display: block;
       top: 1px;
       left: 1px;
-      width: 99.6%;
+      width: 99.8%;
       height: 99.6%;
       clip-path: polygon(0% 46.2%, 99.8% 41.7%, 99.8% 83%, 0% 67.8%);
 
@@ -204,11 +204,58 @@
   height: 100%;
 
   z-index: 20;
+  overflow: hidden;
+  // border-right: 1px solid HSL(var(--primary-hs) 0%);
   // border: 5px solid lightgreen;
+  border-right: 1px solid;
+  border-image: linear-gradient(
+      to bottom,
+      transparent 41%,
+      black 82.5%,
+      transparent 0%
+    )
+    5;
+  // border-image: linear-gradient(
+  //   0deg,
+  //   transparent 40%,
+  //   HSL(var(--primary-hs) 0%) 40%,
+  //   transparent 20%
+  // );
+
+  // @media (min-width: 35.5em) and (max-width: 46em) {
+  //   border-right: 1px solid;
+  //   border-image: linear-gradient(
+  //     0deg,
+  //     transparent 40%,
+  //     HSL(var(--primary-hs) 0%) 40%,
+  //     transparent 20%
+  //   );
+  // }
+
+  @include respond-to('320->') {
+    border-image: linear-gradient(
+        to bottom,
+        transparent 41%,
+        black 85%,
+        transparent 0%
+      )
+      5;
+  }
 
   @include respond-to('568->') {
     grid-template-rows: 8rem repeat(4, 1fr);
     padding-block: 2rem 0;
+    border-image: linear-gradient(
+        to bottom,
+        transparent 41%,
+        black 100%,
+        transparent 0%
+      )
+      5;
+  }
+
+  @include respond-to('736->') {
+    border-right: 0;
   }
 }
 
