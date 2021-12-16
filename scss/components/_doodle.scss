@@ -1,9 +1,23 @@
 .doodle {
   position: absolute;
-  // @include abs-center;
+
   width: 40vw;
   z-index: 1;
-  // left: -3%;
+  opacity: 0;
+  transition: transform 0s, opacity 2s ease-in-out;
+
+  // & > svg:not(text) {
+  //   stroke-linecap: square;
+  //   stroke-linejoin: miter;
+  //   stroke-miterlimit: 0;
+  //   stroke-dasharray: 2000;
+  //   stroke-dashoffset: 100;
+  //   stroke-opacity: 1;
+
+  //   animation-fill-mode: forwards;
+  //   animation-delay: 1s;
+  //   animation: doodle 3s linear;
+  // }
 
   &-cls-1 {
     stroke-miterlimit: 10;
@@ -55,3 +69,17 @@
     // grid-row: 3;
   }
 }
+
+// @keyframes doodle {
+//   1% {
+//     stroke-opacity: 1;
+//   }
+//   75% {
+//     stroke-dashoffset: 2000;
+//   }
+//   100% {
+//     stroke-dashoffset: 0;
+//     // fill: rgba(255, 255, 255, 0.4);
+//     stroke-opacity: 1;
+//   }
+// }

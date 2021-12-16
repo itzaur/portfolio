@@ -196,7 +196,7 @@
   position: relative;
 
   grid-template-columns:
-    minmax(2vw, 1fr) minmax(5rem, 1fr) repeat(4, minmax(0, 45rem))
+    minmax(4vw, 1fr) minmax(5rem, 1fr) repeat(4, minmax(0, 45rem))
     minmax(5rem, 1fr) minmax(2vw, 1fr);
   // grid-template-rows: min-content 1fr;
   grid-template-rows: 5rem 1fr;

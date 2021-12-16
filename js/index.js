@@ -1,5 +1,61 @@
 'use strict';
 
+// setInterval(() => {
+//   timelineGlasses.play();
+// }, 6000);
+// timelineGlasses
+//   .to('.glass rect', 1, {
+//     height: 60,
+//     ease: 'none',
+//   })
+//   .to('.glass rect', 2, {
+//     height: 40,
+//     ease: 'none',
+//   })
+//   .to('.glass rect', 5, {
+//     height: 20,
+//     ease: 'none',
+//   });
+// keyframes: {
+//   '0%': { height: 60, ease: 'none' },
+//   '20%': { height: 50, ease: 'none' },
+//   '40%': { height: 40, ease: 'none' },
+//   '60%': { height: 30, ease: 'none' },
+//   '80%': { height: 20, ease: 'none' },
+//   '100%': { height: 10, ease: 'none' },
+// },
+// height: '10',
+
+// const tl = gsap.timeline({
+//   repeat: -1, // Makes animation repeat infinitely
+//   yoyo: true, // Animation will go back-and-forth like a yoyo
+// });
+
+// tl.to('.st36', {
+//   fill: '#fff',
+//   duration: 3,
+// });
+
+// gsap.from('.photo', { duration: 2.5, ease: 'bounce.out', y: '100%' });
+// const tl = gsap.timeline({
+//   repeat: -1, // Makes animation repeat infinitely
+//   yoyo: true, // Animation will go back-and-forth like a yoyo
+// });
+
+// tl.to('.glass', {
+//   translateY: '100%', // Move .mask elements down by 100%
+//   duration: 3,
+// }).to(
+//   '.st0',
+//   {
+//     attr: {
+//       fill: '#ffd11b', // Change the "fill" attribute of #bg-color
+//     },
+//     duration: 2,
+//   },
+//   '<+=1'
+// ); // Start 1s after the previous animation
+
 //ANCHOR Button
 const btnBig = document.querySelector('.btn-big');
 const btnSmall = document.querySelector('.btn-small');
@@ -15,6 +71,62 @@ btnSmall.addEventListener('click', e => {
   console.log(e.target.closest('.btn-small'));
   btnSmall.setAttribute('aria-selected', false);
   btnBig.setAttribute('aria-selected', true);
+});
+
+btnBig.addEventListener('mouseenter', animateTextHoverRun);
+btnBig.addEventListener('mouseleave', animateTextHoverStop);
+const timelineLetters = gsap.timeline({
+  repeat: 0,
+  yoyo: false,
+});
+
+//Animations
+//Letters animation
+function animateTextHoverRun() {
+  timelineLetters.to('.text-cls-1', {
+    translateX: '-1rem',
+    duration: 0.2,
+    ease: 'back.out(1.7)',
+    stagger: 0.05,
+    opacity: 1,
+  });
+  timelineLetters.play();
+}
+
+function animateTextHoverStop() {
+  timelineLetters.reverse();
+}
+
+//Glasses animation
+const timelineGlasses = gsap.timeline({
+  repeat: -1,
+  yoyo: false,
+});
+
+gsap.fromTo(
+  '.glass',
+  {
+    x: -25,
+    y: 8.5,
+    ease: 'none',
+    opacity: 0.8,
+  },
+  {
+    x: 55,
+    y: -25,
+    duration: 0.6,
+    ease: 'none',
+    repeat: -1,
+    repeatDelay: 6,
+  }
+);
+
+timelineGlasses.to('.glass rect', {
+  keyframes: [{ height: 80 }, { height: 22, x: -19, y: 13, opacity: 1 }],
+  duration: 0.6,
+  ease: 'none',
+  repeat: -1,
+  repeatDelay: 6,
 });
 
 //ANCHOR Doodle
@@ -101,15 +213,19 @@ const photoWindowHeight = photo.offsetHeight - photoTransformY;
 const photoWindowWidth = photo.offsetWidth;
 const visibleContentX = window.innerWidth - photo.getBoundingClientRect().left;
 const visibleContentY = window.innerHeight - photo.getBoundingClientRect().top;
-doodle.style.transform = `translate(${
-  window.innerWidth -
-  doodle.offsetWidth -
-  photo.offsetWidth * 0.8 +
-  photoTransformX
-}px, ${
-  window.innerHeight -
-  (photo.offsetHeight - photo.offsetHeight * 0.25 - photoTransformY)
-}px)`;
+
+document.addEventListener('DOMContentLoaded', function () {
+  doodle.style.opacity = 1;
+  doodle.style.transform = `translate(${
+    window.innerWidth -
+    doodle.offsetWidth -
+    photo.offsetWidth * 0.8 +
+    photoTransformX
+  }px, ${
+    window.innerHeight -
+    (photo.offsetHeight - photo.offsetHeight * 0.25 - photoTransformY)
+  }px)`;
+});
 
 window.addEventListener('resize', function () {
   doodle.style.transform = `translate(${

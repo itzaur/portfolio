@@ -19,9 +19,9 @@
     grid-column: 3 / span 6;
     transform: translate(5rem, 9rem);
 
-    // & > * {
-    //   min-width: 40rem;
-    // }
+    & > * {
+      min-width: 40rem;
+    }
   }
 
   @include respond-to('568->') {
@@ -39,11 +39,11 @@
     // grid-row: 5 / span 1;
     // grid-row: 1 / span 5;
     // transform: translateY(15rem);
-    transform: translate(0, 12rem);
+    transform: translate(0, 15rem);
   }
 
   @include respond-to('1024->') {
-    grid-column: 5 / span 3;
+    grid-column: 5 / span 4;
     // grid-row: 1 / span 5;
     // transform: translateY(15rem);
   }
@@ -61,4 +61,15 @@
 
 .pre-photo .cls-1 {
   fill: HSL(var(--primary-hs) 100%);
+}
+
+// .st34.glass {
+//   width: 100%;
+//   height: 100%;
+//   // fill: url(#bg-glass);
+// }
+.st37.glass {
+  overflow: hidden;
+  z-index: -1;
+  order: -1;
 }
