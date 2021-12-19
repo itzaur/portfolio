@@ -114,7 +114,7 @@ gsap.fromTo(
   {
     x: 55,
     y: -25,
-    duration: 0.6,
+    duration: 0.5,
     ease: 'none',
     repeat: -1,
     repeatDelay: 6,
@@ -123,7 +123,7 @@ gsap.fromTo(
 
 timelineGlasses.to('.glass rect', {
   keyframes: [{ height: 80 }, { height: 22, x: -19, y: 13, opacity: 1 }],
-  duration: 0.6,
+  duration: 0.5,
   ease: 'none',
   repeat: -1,
   repeatDelay: 6,
