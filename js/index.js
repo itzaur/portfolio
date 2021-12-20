@@ -129,6 +129,35 @@ timelineGlasses.to('.glass rect', {
   repeatDelay: 6,
 });
 
+//Dots animation
+// const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
+// console.log(dots);
+
+// const timelineDots = gsap.timeline({
+//   repeat: 0,
+//   yoyo: false,
+// });
+
+// timelineDots.fromTo(
+//   dots,
+//   {
+//     opacity: 0,
+//     scale: 0,
+
+//     // ease: 'back.out(1.7)',
+//   },
+//   {
+//     opacity: 1,
+//     scale: 'random(1, 1)',
+//     // duration: 0.4,
+//     stagger: {
+//       each: 0.1,
+//       from: 100,
+//     },
+//     ease: 'back.out(1.7)',
+//   }
+// );
+
 //ANCHOR Doodle
 const textSpan0 = document.querySelector('.span0');
 const textSpan1 = document.querySelector('.span1');
@@ -193,6 +222,7 @@ setTimeout(animateLetters2, 1500);
 setTimeout(animateLetters3, 2500);
 setTimeout(animateLetters4, 3800);
 
+//ANCHOR Photo
 const photo = document.querySelector('.photo');
 const doodle = document.querySelector('.doodle');
 const photoBox = photo.getBoundingClientRect();

@@ -4,6 +4,7 @@
   grid-row: 2 / span 4;
   align-self: end;
   transform: translate(3rem, 5rem);
+  z-index: -1;
 
   & > * {
     min-width: 40rem;
@@ -49,15 +50,15 @@
   }
 }
 
-.photo {
-  // position: relative;
-  // outline: 3px solid green;
-  z-index: 2;
-}
+// .photo {
+//   // position: relative;
+//   // outline: 3px solid green;
+//   z-index: 2;
+// }
 
-.pre-photo {
-  z-index: 0;
-}
+// .pre-photo {
+//   z-index: 0;
+// }
 
 .pre-photo .cls-1 {
   fill: HSL(var(--primary-hs) 100%);

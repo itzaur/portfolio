@@ -6,6 +6,7 @@
   --clr-white: 0 0% 100%;
   --clr-black: hsl(0, 0%, 0%);
   --primary-hs: 0 0%;
+  --nn: hsl(0, 0%, 100%);
 
   --clr-btn-1: hsl(205, 85%, 40%);
   --clr-btn-2: hsl(40, 5%, 12%);
@@ -16,6 +17,8 @@
 
   //fonts
   --fs-900: 9rem;
+  // --fs-560: clamp(3rem, 5vw, 7rem);
+  --fs-700: 7rem;
   --fs-560: 5.6rem;
   --fs-480: 4.8rem;
   --fs-360: 3.6rem;
@@ -29,8 +32,10 @@
 
   --padding-container: 0.6rem;
   --padding-corner: 2rem;
-  --corner-flip-size-1: 5rem;
-  --corner-flip-size-2: 10rem;
+
+  --corner-flip-size-0: 2rem;
+  --corner-flip-size-1: 7.5rem;
+  --corner-flip-size-2: 15rem;
 }
 
 // @font-face {
