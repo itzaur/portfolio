@@ -73,6 +73,9 @@ btnSmall.addEventListener('click', e => {
   btnBig.setAttribute('aria-selected', true);
 });
 
+//Animations
+//Letters animation
+
 btnBig.addEventListener('mouseenter', animateTextHoverRun);
 btnBig.addEventListener('mouseleave', animateTextHoverStop);
 const timelineLetters = gsap.timeline({
@@ -80,8 +83,6 @@ const timelineLetters = gsap.timeline({
   yoyo: false,
 });
 
-//Animations
-//Letters animation
 function animateTextHoverRun() {
   timelineLetters.to('.text-cls-1', {
     translateX: '-1rem',
@@ -269,4 +270,19 @@ window.addEventListener('resize', function () {
       photo.offsetHeight * 0.25 -
       +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[5])
   }px)`;
+});
+
+// document.querySelector('.btn-big').addEventListener('click', () => {
+//   document.body.classList.toggle('active');
+// });
+
+//ANCHOR Next page animation
+const cornerBtn = document.getElementById('corner-link');
+cornerBtn.addEventListener('click', e => {
+  e.preventDefault();
+  document.getElementById('wrapper').classList.add('flip');
+
+  window.setTimeout(() => {
+    window.location.href = 'test.html';
+  }, 250);
 });

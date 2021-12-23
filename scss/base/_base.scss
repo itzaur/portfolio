@@ -3,7 +3,7 @@ html {
 }
 
 body {
-  border: 0.02rem solid HSL(var(--primary-hs) 0%);
+  border: 0.02rem solid HSL(var(--primary-hs) 100%);
   font-family: var(--ff);
   font-weight: 700;
   overflow: hidden;
@@ -49,3 +49,14 @@ body {
 .clr-white {
   color: HSL(var(--clr-white));
 }
+
+// #wrapper.active {
+//   animation: tr 5s ease;
+// }
+
+// @keyframes tr {
+//   to {
+//     transform: translate(-100%, -100%) rotate(390deg) skew(-20deg, -10deg)
+//       scaleZ(20);
+//   }
+// }
