@@ -1,4 +1,13 @@
-// @import url(//db.onlinewebfonts.com/c/402da6bf1175f2450541550134c69916?family=CCMonologousW00-BoldItalic);
+@font-face {
+  font-family: 'd_CCMonologous';
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap; /* Read next point */
+  unicode-range: U+000-5FF; /* Download only latin glyphs */
+  src: local('d_CCMonologous'),
+    url('../fonts/d_ccmonologous_bolditalic.woff2') format('woff2'),
+    url('../fonts/d_ccmonologous_bolditalic.woff2') format('woff');
+}
 
 .fs-900 {
   font-size: var(--fs-900);
@@ -49,7 +58,7 @@
 }
 
 .doodle__text {
-  font-family: var(--ff-doodle);
+  font-family: var(--ff-comic);
 }
 
 // .doodle__text {

@@ -210,4 +210,12 @@
   padding: 0.8rem 0.5rem;
 
   background-color: transparent;
+
+  // @include respond-to('320->') {
+  //   width: 8rem;
+  // }
+
+  // @include respond-to('736->') {
+  //   width: 14rem;
+  // }
 }

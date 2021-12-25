@@ -1,4 +1,18 @@
 'use strict';
+//ANCHOR Fonts
+import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
+let font = new FontFaceObserver('d_CCMonologous', {
+  weight: 700,
+});
+
+font
+  .load()
+  .then(function () {
+    console.log('Font has loaded.');
+  })
+  .catch(function () {
+    console.log('Font failed to load.');
+  });
 
 // setInterval(() => {
 //   timelineGlasses.play();
@@ -61,21 +75,17 @@ const btnBig = document.querySelector('.btn-big');
 const btnSmall = document.querySelector('.btn-small');
 console.log(btnBig);
 btnBig.addEventListener('click', e => {
-  console.log(e.target.closest('.btn-big'));
-  // e.target.closest('.btn-big').classList.add('clicked');
   btnBig.setAttribute('aria-selected', false);
   btnSmall.setAttribute('aria-selected', true);
 });
 
 btnSmall.addEventListener('click', e => {
-  console.log(e.target.closest('.btn-small'));
   btnSmall.setAttribute('aria-selected', false);
   btnBig.setAttribute('aria-selected', true);
 });
 
 //Animations
 //Letters animation
-
 btnBig.addEventListener('mouseenter', animateTextHoverRun);
 btnBig.addEventListener('mouseleave', animateTextHoverStop);
 const timelineLetters = gsap.timeline({
@@ -130,36 +140,9 @@ timelineGlasses.to('.glass rect', {
   repeatDelay: 6,
 });
 
-//Dots animation
-// const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
-// console.log(dots);
-
-// const timelineDots = gsap.timeline({
-//   repeat: 0,
-//   yoyo: false,
-// });
-
-// timelineDots.fromTo(
-//   dots,
-//   {
-//     opacity: 0,
-//     scale: 0,
-
-//     // ease: 'back.out(1.7)',
-//   },
-//   {
-//     opacity: 1,
-//     scale: 'random(1, 1)',
-//     // duration: 0.4,
-//     stagger: {
-//       each: 0.1,
-//       from: 100,
-//     },
-//     ease: 'back.out(1.7)',
-//   }
-// );
-
 //ANCHOR Doodle
+const doodle = document.querySelector('.doodle');
+
 const textSpan0 = document.querySelector('.span0');
 const textSpan1 = document.querySelector('.span1');
 const textSpan2 = document.querySelector('.span2');
@@ -176,8 +159,6 @@ const str1 = text.string1.split('');
 const str2 = text.string2.split('');
 const str3 = text.string3.split('');
 
-console.log(str0);
-
 function animateLetters1() {
   if (str0.length > 0) {
     textSpan0.innerHTML += str0.shift();
@@ -187,7 +168,6 @@ function animateLetters1() {
 
   setTimeout(animateLetters1, 100);
 }
-animateLetters1();
 
 function animateLetters2() {
   if (str1.length > 0) {
@@ -218,14 +198,15 @@ function animateLetters4() {
 
   setTimeout(animateLetters4, 100);
 }
-
-setTimeout(animateLetters2, 1500);
-setTimeout(animateLetters3, 2500);
-setTimeout(animateLetters4, 3800);
+setTimeout(animateLetters1, 3500);
+setTimeout(animateLetters2, 4500);
+setTimeout(animateLetters3, 5500);
+setTimeout(animateLetters4, 6800);
 
 //ANCHOR Photo
+const prePhoto = document.querySelector('.pre-photo');
 const photo = document.querySelector('.photo');
-const doodle = document.querySelector('.doodle');
+
 const photoBox = photo.getBoundingClientRect();
 const doodleBox = doodle.getBoundingClientRect();
 // const photoTransformY = photo.computedStyleMap().get('transform')[0].y.value;
@@ -246,7 +227,6 @@ const visibleContentX = window.innerWidth - photo.getBoundingClientRect().left;
 const visibleContentY = window.innerHeight - photo.getBoundingClientRect().top;
 
 document.addEventListener('DOMContentLoaded', function () {
-  doodle.style.opacity = 1;
   doodle.style.transform = `translate(${
     window.innerWidth -
     doodle.offsetWidth -
@@ -254,7 +234,7 @@ document.addEventListener('DOMContentLoaded', function () {
     photoTransformX
   }px, ${
     window.innerHeight -
-    (photo.offsetHeight - photo.offsetHeight * 0.25 - photoTransformY)
+    (photo.offsetHeight - photo.offsetHeight * 0.25 + -photoTransformY)
   }px)`;
 });
 
@@ -272,9 +252,48 @@ window.addEventListener('resize', function () {
   }px)`;
 });
 
-// document.querySelector('.btn-big').addEventListener('click', () => {
-//   document.body.classList.toggle('active');
-// });
+const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
+const tlPage = gsap.timeline({ defaults: { duration: 1, repeat: 0 } });
+tlPage
+  .from('.photo', {
+    x: '200%',
+    ease: 'back.out(1.7)',
+    clearProps: 'transform',
+  })
+  .from(dots, {
+    opacity: 0,
+    scale: 0,
+    stagger: {
+      each: 0.002,
+      from: 15,
+    },
+
+    ease: 'back.out(1.7)',
+  })
+  .to(
+    '.doodle',
+    {
+      opacity: 1,
+      ease: 'back.out(1.7)',
+    },
+    '<0.2'
+  )
+  .from(btnBig, {
+    y: -500,
+    opacity: 0,
+    ease: 'elastic.out(1, 0.3)',
+  })
+  .from(
+    '.logo',
+    {
+      y: -500,
+      opacity: 0,
+      ease: 'elastic.out(1, 0.3)',
+    },
+    '<0'
+  );
+
+// pageElementsAnimation();
 
 //ANCHOR Next page animation
 const cornerBtn = document.getElementById('corner-link');
