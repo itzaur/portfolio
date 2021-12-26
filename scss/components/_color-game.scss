@@ -1,0 +1,42 @@
+.color-game {
+  // --gap: 2rem;
+
+  grid-column: 2;
+  grid-row: 2 / -1;
+  align-self: center;
+
+  @include flex(column, center, null);
+
+  @media (max-width: 19.999em) {
+    margin-top: 45vh;
+  }
+
+  @include respond-to('320->') {
+    --gap: 2rem;
+    @include flex(row, flex-start, null);
+    align-self: flex-end;
+    grid-column: 2 / span 4;
+  }
+
+  @include respond-to('568->') {
+    flex-direction: column;
+    margin-bottom: 2vw;
+  }
+
+  & > * {
+    @include flex(null, center, center);
+
+    width: 3rem;
+    aspect-ratio: 1;
+
+    background-color: HSL(var(--primary-hs) 100%);
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    @include respond-to('320->') {
+      width: 5rem;
+    }
+  }
+}

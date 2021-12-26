@@ -1,6 +1,10 @@
 .page {
   padding: var(--padding-container);
 
+  &.grayscale {
+    mix-blend-mode: luminosity;
+  }
+
   &__bg {
     width: 100%;
     height: 100%;
