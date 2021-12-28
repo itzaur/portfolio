@@ -143,10 +143,10 @@ function animateLetters4() {
 
   setTimeout(animateLetters4, 100);
 }
-setTimeout(animateLetters1, 4500);
-setTimeout(animateLetters2, 5500);
-setTimeout(animateLetters3, 6500);
-setTimeout(animateLetters4, 7800);
+setTimeout(animateLetters1, 6000);
+setTimeout(animateLetters2, 7000);
+setTimeout(animateLetters3, 8000);
+setTimeout(animateLetters4, 9300);
 
 //ANCHOR Photo
 const prePhoto = document.querySelector('.pre-photo');
@@ -204,88 +204,158 @@ const helloDots = document.querySelectorAll(
 const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
 const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
 
-const tlPage = gsap.timeline({ defaults: { duration: 1, repeat: 0 } });
-tlPage
-  .fromTo(
-    '.photo',
-    {
-      x: 2400,
-      transformOrigin: 'top top',
-      rotation: '50deg',
-      ease: 'back.out(1.7)',
-      clearProps: 'transform',
-    },
-    {
-      x: photoTransformX,
-      rotation: '0deg',
-      clearProps: 'transform',
-      duration: 1.5,
-    }
-  )
-  .from(dots, {
-    opacity: 0,
-    scale: 0,
-    stagger: {
-      each: 0.002,
-      from: 15,
-    },
+const tlPage = gsap.timeline({
+  defaults: { duration: 1, repeat: 0, rotation: 0.05 },
+});
 
-    ease: 'back.out(1.7)',
+function getPageAnimation() {
+  tlPage
+    .fromTo(
+      '.photo',
+      {
+        x: 2400,
+        transformOrigin: 'top top',
+        rotation: '50deg',
+        ease: 'back.out(1.7)',
+        clearProps: 'transform',
+      },
+      {
+        x: photoTransformX,
+        rotation: '0deg',
+        clearProps: 'transform',
+        duration: 1.5,
+      }
+    )
+    .from(dots, {
+      opacity: 0,
+      scale: 0,
+      stagger: {
+        each: 0.002,
+        from: 15,
+      },
+
+      ease: 'back.out(1.7)',
+    })
+    .from(
+      helloDots,
+      0.5,
+      {
+        y: -100,
+        ease: 'bounce.out',
+        opacity: 0,
+        stagger: { each: 0.003, from: 'random' },
+      },
+      '<0.6'
+    )
+    .from(
+      helloDoodle,
+      0.6,
+      { y: -100, ease: 'bounce.out', opacity: 0, stagger: 0.03 },
+      '<1.3'
+    )
+    .to(
+      '.doodle',
+      {
+        opacity: 1,
+        ease: 'back.out(1.7)',
+      },
+      '<0.5'
+    )
+    .from(
+      btnBig,
+      {
+        transform: 'translate3d(0, 0, 1px) scale(0)',
+        opacity: 0,
+        ease: 'Bounce.easeOut',
+        delay: 1,
+      },
+      '<4.8'
+    )
+    .from(
+      '.logo',
+      {
+        transform: 'translate3d(0, 0, 1px) scale(0)',
+        opacity: 0,
+        ease: 'Bounce.easeOut',
+      },
+      '<0'
+    )
+    .from('.color-game__item', {
+      x: '-100%',
+      opacity: 0,
+      stagger: {
+        each: 0.2,
+      },
+      ease: 'back.out(1.7)',
+    });
+}
+
+getPageAnimation();
+
+//Menu animation
+//Menu transition
+const menuPage = document.querySelector('.menu');
+const menuDoodle = document.querySelectorAll(
+  '.menu__box path, .menu__box polygon'
+);
+const menuNavDoodle = document.querySelector('.menu__img svg');
+const menuBtnClose = document.querySelector('.menu-btn-close');
+const menuLinks = document.querySelectorAll('.nav__item');
+
+const tlMenuTransition = gsap.timeline({
+  paused: true,
+  clearProps: 'transform',
+});
+
+tlMenuTransition
+  .to(menuPage, {
+    height: 'calc(100vh - var(--padding-container) * 2)',
+    ease: 'bounce.out',
   })
   .from(
-    helloDots,
-    0.5,
+    menuDoodle,
     {
       y: -100,
       ease: 'bounce.out',
       opacity: 0,
-      stagger: { each: 0.003, from: 'random' },
+      duration: 0.3,
+      stagger: { each: 0.001, from: 'random' },
     },
-    '<0.6'
+    '< 0.1'
   )
   .from(
-    helloDoodle,
-    0.6,
-    { y: -100, ease: 'bounce.out', opacity: 0, stagger: 0.03 },
-    '<1.3'
-  )
-  .to(
-    '.doodle',
-    {
-      opacity: 1,
-      ease: 'back.out(1.7)',
-    },
-    '<0.5'
-  )
-  .from(
-    btnBig,
+    menuNavDoodle,
     {
       scale: 0,
       opacity: 0,
-      ease: 'Bounce.easeOut',
-      delay: 1,
+      ease: 'elastic.out(1, 0.3)',
+      duration: 1.2,
+      transform: 'translate3d(0, 0, 1px) scale(0)', //fix firefox bug
+      clearProps: 'transform',
     },
-    '<3.8'
+    '< 0.3'
   )
-  .from(
-    '.logo',
-    {
-      scale: 0,
-      opacity: 0,
-      ease: 'Bounce.easeOut',
-    },
-    '<0'
-  )
-  .from('.color-game__item', {
-    x: '-100%',
+  .from(menuLinks, {
+    y: -60,
     opacity: 0,
-    stagger: {
-      each: 0.2,
-    },
+    stagger: 0.2,
     ease: 'back.out(1.7)',
   });
 
-// pageElementsAnimation();
+function menuTransition() {
+  setTimeout(() => {
+    tlMenuTransition.timeScale(0.8).play();
+  }, 100);
+}
+
+btnBig.addEventListener('click', menuTransition);
+
+menuBtnClose.addEventListener('click', function () {
+  tlMenuTransition.timeScale(3).reverse();
+
+  btnBig.setAttribute('aria-selected', true);
+  btnSmall.setAttribute('aria-selected', false);
+});
 
 //ANCHOR Next page animation
 const cornerBtn = document.getElementById('corner-link');

@@ -48,7 +48,11 @@ body {
 }
 
 .clr-white {
-  color: HSL(var(--clr-white));
+  color: HSL(var(--primary-hs) 100%);
+}
+
+.clr-black {
+  color: HSL(var(--primary-hs) 0%);
 }
 
 // #wrapper.active {

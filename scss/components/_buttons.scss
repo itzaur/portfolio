@@ -188,3 +188,7 @@
 //     opacity: 0;
 //   }
 // }
+.menu-btn-close {
+  grid-column: 1;
+  width: Min(18rem, 100vw);
+}

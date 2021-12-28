@@ -48,7 +48,7 @@
   @include respond-to('1024->') {
     grid-column: 5 / span 4;
     // grid-row: 1 / span 5;
-    transform: translate(0, 15rem);
+    transform: translate(0, 18rem);
   }
 }
 
