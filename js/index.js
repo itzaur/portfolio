@@ -290,7 +290,7 @@ function getPageAnimation() {
     });
 }
 
-getPageAnimation();
+// getPageAnimation();
 
 //Menu animation
 //Menu transition
@@ -301,10 +301,23 @@ const menuDoodle = document.querySelectorAll(
 const menuNavDoodle = document.querySelector('.menu__img svg');
 const menuBtnClose = document.querySelector('.menu-btn-close');
 const menuLinks = document.querySelectorAll('.nav__item');
+let isOpen = false;
+let mediaQueryTransformX = -16;
+let mediaQueryTransformY = 5;
+let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
+let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
+function checkMediaQuery() {
+  if (window.matchMedia('(max-width: 568px)').matches) {
+    menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
+  } else {
+    menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 1px) scale(1)`;
+  }
+}
+checkMediaQuery();
+window.addEventListener('resize', checkMediaQuery);
 
 const tlMenuTransition = gsap.timeline({
   paused: true,
-  clearProps: 'transform',
 });
 
 tlMenuTransition
@@ -321,37 +334,90 @@ tlMenuTransition
       duration: 0.3,
       stagger: { each: 0.001, from: 'random' },
     },
-    '< 0.1'
+    '<0.1'
   )
   .from(
     menuNavDoodle,
     {
-      scale: 0,
       opacity: 0,
       ease: 'elastic.out(1, 0.3)',
       duration: 1.2,
-      transform: 'translate3d(0, 0, 1px) scale(0)', //fix firefox bug
-      clearProps: 'transform',
+      transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
     },
-    '< 0.3'
+    '<0.3'
   )
-  .from(menuLinks, {
-    y: -60,
-    opacity: 0,
-    stagger: 0.2,
-    ease: 'back.out(1.7)',
-  });
+  .from(
+    menuLinks,
+    {
+      y: -60,
+      opacity: 0,
+      stagger: 0.2,
+      ease: 'back.out(1.7)',
+    },
+    '<0.6'
+  );
 
 function menuTransition() {
+  if (window.matchMedia('(max-width: 568px)').matches) {
+    gsap.to(menuNavDoodle, {
+      transform: `translate3d(0, 0, 2px) scale(1)`,
+    });
+    gsap.from(
+      '.menu-btn-close',
+      {
+        y: -100,
+        opacity: 0,
+        ease: 'back.out(1.7)',
+        duration: 0.6,
+      },
+      '+=1'
+    );
+  } else {
+    gsap.to(menuNavDoodle, {
+      transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
+    });
+    gsap.from(
+      '.menu-btn-close',
+      {
+        x: -100,
+        opacity: 0,
+        ease: 'back.out(1.7)',
+        duration: 0.6,
+      },
+      '+=1.5'
+    );
+  }
+
   setTimeout(() => {
     tlMenuTransition.timeScale(0.8).play();
+    isOpen = true;
   }, 100);
 }
 
 btnBig.addEventListener('click', menuTransition);
 
-menuBtnClose.addEventListener('click', function () {
-  tlMenuTransition.timeScale(3).reverse();
+menuBtnClose.addEventListener('click', function (e) {
+  const closeMenu = gsap.to(menuPage, {
+    height: 0,
+    ease: 'power4.out',
+    duration: 0.8,
+    paused: true,
+  });
+
+  isOpen = false;
+
+  if (!isOpen) {
+    //isOpen == false
+    closeMenu.play();
+  }
+
+  tlMenuTransition.pause(0).reversed(true);
+
+  gsap.to('.menu-btn-close', {
+    x: -100,
+    y: -100,
+    clearProps: 'x, y',
+  });
 
   btnBig.setAttribute('aria-selected', true);
   btnSmall.setAttribute('aria-selected', false);
@@ -399,3 +465,30 @@ colorBtns.forEach(btn => {
 function getRandomNumber() {
   return Math.floor(Math.random() * hex.length);
 }
+
+//Logo
+const logo = document.querySelector('.logo');
+const logoElements = document.querySelectorAll('.logo path, .logo rect');
+const x = Math.floor(Math.random() * 15);
+console.log(x);
+
+const tlLogo = gsap.timeline();
+tlLogo.to(logoElements, {
+  x: 4,
+  duration: 0.5,
+  ease: 'bounce.out',
+
+  stagger: { each: 0.03, from: 'random' },
+  // paused: true,
+});
+
+function getLogoAnim() {
+  tlLogo.play();
+}
+
+function stopLogoAnim() {
+  tlLogo.reverse();
+}
+
+logo.addEventListener('mouseenter', getLogoAnim);
+logo.addEventListener('mouseleave', stopLogoAnim);

@@ -250,7 +250,7 @@ select {
 
 .btn {
   position: relative;
-  width: 3rem;
+  width: 3.5rem;
   aspect-ratio: 1;
   -ms-flex-item-align: end;
       align-self: flex-end;
@@ -259,7 +259,6 @@ select {
   background: none;
   border: 0;
   z-index: 20;
-  color: #ffffff79;
 }
 
 @media (min-width: 35.5em) {
@@ -297,15 +296,27 @@ select {
 .btn__text {
   position: absolute;
   top: 0;
-  left: -3rem;
-  fill: #f5f1d6;
+  left: -1.5rem;
+  fill: var(--clr-btn-4);
   stroke: HSL(var(--primary-hs) 0%);
   stroke-width: 1px;
 }
 
+@media (min-width: 35.5em) {
+  .btn__text {
+    left: -3rem;
+  }
+}
+
 .btn__text svg {
-  width: 4rem;
+  width: 2.5rem;
   overflow: visible;
+}
+
+@media (min-width: 35.5em) {
+  .btn__text svg {
+    width: 4rem;
+  }
 }
 
 .btn__text .text-cls-1 {
@@ -336,11 +347,31 @@ select {
 .menu-btn-close {
   -ms-grid-column: 1;
   grid-column: 1;
-  width: Min(18rem, 100vw);
+  padding: 0;
+  color: #310210;
+  background-color: var(--clr-secondary);
+  border: 0.5rem solid #310210;
+  -webkit-box-shadow: 0px 10px 3px -6px #310210;
+          box-shadow: 0px 10px 3px -6px #310210;
+  cursor: pointer;
+}
+
+@media (min-width: 35.5em) {
+  .menu-btn-close {
+    padding: 0.3em 2em;
+    -webkit-box-shadow: 6px 6px 3px -1px #310210;
+            box-shadow: 6px 6px 3px -1px #310210;
+  }
+}
+
+.menu-btn-close span {
+  color: #e61c52;
+  font-size: 1.5em;
+  text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black, -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
 }
 
 .logo {
-  width: 2.5rem;
+  width: 3.5rem;
   -ms-grid-column: 7;
   grid-column: 7;
   justify-self: flex-end;
@@ -366,10 +397,6 @@ select {
 
 .logo svg .cls-2 {
   fill: HSL(var(--primary-hs) 100%);
-}
-
-.logo:hover svg {
-  fill: var(--clr-btn-1);
 }
 
 .doodle {
@@ -973,10 +1000,10 @@ select {
 .content {
   --gap: 0.5rem;
   position: relative;
-  -ms-grid-columns: minmax(4vw, 1fr) minmax(5rem, 1fr) (minmax(0, 45rem))[4] minmax(5rem, 1fr) minmax(2vw, 1fr);
-      grid-template-columns: minmax(4vw, 1fr) minmax(5rem, 1fr) repeat(4, minmax(0, 45rem)) minmax(5rem, 1fr) minmax(2vw, 1fr);
-  -ms-grid-rows: 5rem (1fr)[2];
-      grid-template-rows: 5rem repeat(2, 1fr);
+  -ms-grid-columns: minmax(5vw, 1fr) minmax(5rem, 1fr) (minmax(0, 45rem))[4] minmax(5rem, 1fr) minmax(2vw, 1fr);
+      grid-template-columns: minmax(5vw, 1fr) minmax(5rem, 1fr) repeat(4, minmax(0, 45rem)) minmax(5rem, 1fr) minmax(2vw, 1fr);
+  -ms-grid-rows: 6rem (1fr)[2];
+      grid-template-rows: 6rem repeat(2, 1fr);
   height: 100%;
   z-index: 20;
   overflow: hidden;
@@ -1012,6 +1039,7 @@ select {
 }
 
 .menu {
+  --gap: 0;
   position: fixed;
   inset: var(--padding-container);
   -ms-grid-columns: 1fr;
@@ -1118,8 +1146,6 @@ select {
   .menu__img > svg {
     max-width: 100vw;
     width: Min(120rem, 85vw);
-    -webkit-transform: translate(-16vw, 5vw);
-            transform: translate(-16vw, 5vw);
     margin: 0;
   }
 }

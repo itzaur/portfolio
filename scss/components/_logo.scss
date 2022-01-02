@@ -1,5 +1,5 @@
 .logo {
-  width: 2.5rem;
+  width: 3.5rem;
 
   grid-column: 7;
   justify-self: flex-end;
@@ -23,9 +23,9 @@
     }
   }
 
-  &:hover {
-    svg {
-      fill: var(--clr-btn-1);
-    }
-  }
+  // &:hover {
+  //   svg {
+  //     fill: var(--clr-btn-1);
+  //   }
+  // }
 }
