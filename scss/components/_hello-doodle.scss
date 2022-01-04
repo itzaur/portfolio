@@ -21,6 +21,7 @@
 
   svg {
     width: clamp(20rem, 35vw, 48rem);
+    overflow: visible;
 
     @include respond-to('320->') {
       width: clamp(30rem, 35vw, 48rem);

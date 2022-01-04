@@ -355,6 +355,16 @@ tlMenuTransition
       ease: 'back.out(1.7)',
     },
     '<0.6'
+  )
+  .from(
+    '.star',
+    {
+      opacity: 0,
+      scale: 0,
+      stagger: 0.1,
+      ease: 'elastic.out(1, 0.3)',
+    },
+    '-=1'
   );
 
 function menuTransition() {
@@ -421,6 +431,14 @@ menuBtnClose.addEventListener('click', function (e) {
 
   btnBig.setAttribute('aria-selected', true);
   btnSmall.setAttribute('aria-selected', false);
+});
+
+gsap.to('.st19', {
+  repeat: -1,
+  duration: 2,
+  yoyo: true,
+  x: 5,
+  ease: 'none',
 });
 
 //ANCHOR Next page animation
@@ -621,17 +639,19 @@ class MagnetLogo {
   initEvent() {
     this.onResize = () => this.calculateSizePosition();
     window.addEventListener('resize', this.onResize);
+    window.addEventListener('load', this.onResize);
   }
 
   render() {
-    let x = 0;
-    let y = 0;
     const distanceMouseElement = distance(
       mouse.x + window.scrollX,
       mouse.y + window.scrollY,
       this.rect.left + this.rect.width / 2,
       this.rect.top + this.rect.height / 2
     );
+
+    let x = 0;
+    let y = 0;
 
     if (distanceMouseElement < this.distanceToTrigger) {
       x =
@@ -666,12 +686,14 @@ class MagnetLogo {
 
   enter() {
     this.state.hover = true;
-    this.renderStyles['scale'].current = 1.2;
-    // gsap.killTweensOf(this.DOM.item);
+    this.renderStyles['scale'].current = 1.3;
+    gsap.killTweensOf(this.DOM.item);
+
     gsap.to(this.DOM.item, {
+      duration: 4,
+      startAt: { yPercent: 75 },
+      yPercent: 0,
       ease: 'power3.easeOut',
-      startAt: { y: '75%' },
-      y: '0%',
     });
   }
 
@@ -681,7 +703,7 @@ class MagnetLogo {
     // gsap.killTweensOf(this.DOM.item);
     gsap.to(this.DOM.item, {
       ease: 'power3.easeOut',
-      y: '-75%',
+      yPercent: -75,
     });
   }
 }
@@ -695,8 +717,7 @@ document
   });
 
 const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
-document.querySelectorAll('.logo').forEach(el => {
-  el.addEventListener('mouseenter', () => magnetLogo.enter());
-  el.addEventListener('mouseleave', () => magnetLogo.leave());
-});
-// console.log(cursor.render());
+// document.querySelectorAll('.logo').forEach(el => {
+//   el.addEventListener('mouseenter', () => magnetLogo.enter());
+//   el.addEventListener('mouseleave', () => magnetLogo.leave());
+// });
