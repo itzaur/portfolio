@@ -7,6 +7,10 @@
   // transform: translate(0, 0);
   transition: transform 0s, opacity 2s ease-in-out;
 
+  & svg {
+    overflow: visible;
+  }
+
   // & > svg:not(text) {
   //   stroke-linecap: square;
   //   stroke-linejoin: miter;
@@ -26,6 +30,7 @@
 
   &-cls-2 {
     stroke-width: 0.4rem;
+    filter: drop-shadow(-20px 28px 2px HSL(var(--primary-hs) 0% / 0.4));
   }
 
   &-cls-3 {
