@@ -44,19 +44,9 @@
   --corner-flip-size-0: 2rem;
   --corner-flip-size-1: 7.5rem;
   --corner-flip-size-2: 16rem;
-}
 
-// @font-face {
-//   font-family: 'CCMonologous-BoldItalic';
-//   src: url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.eot');
-//   src: url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.eot?#iefix')
-//       format('embedded-opentype'),
-//     url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.woff2')
-//       format('woff2'),
-//     url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.woff')
-//       format('woff'),
-//     url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.ttf')
-//       format('truetype'),
-//     url('//db.onlinewebfonts.com/t/1f4eae42101e1f7e5c847a150dae981b.svg#CCMonologous-BoldItalic')
-//       format('svg');
-// }
+  @media (max-width: 35.5rem) {
+    --fs-240: 2rem;
+    --fs-140: clamp(1rem, 3vw, 1.4rem);
+  }
+}

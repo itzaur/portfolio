@@ -360,7 +360,7 @@ tlMenuTransition
     '<0.6'
   )
   .from(
-    '.menu__star',
+    '.star',
     {
       opacity: 0,
       scale: 0,

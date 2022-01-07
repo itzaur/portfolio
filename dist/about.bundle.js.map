@@ -1,0 +1,1 @@
+{"version":3,"file":"about.bundle.js","mappings":"mBACAA,MAAM,U","sources":["webpack://portfolio/./js/about.js"],"sourcesContent":["'use strict';\nalert('hello');\n"],"names":["alert"],"sourceRoot":""}

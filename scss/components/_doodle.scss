@@ -1,7 +1,7 @@
 .doodle {
   position: absolute;
 
-  width: 40vw;
+  width: Max(19rem, 40vw);
   z-index: 1;
   transform: scale(0);
   opacity: 0;

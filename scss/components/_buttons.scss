@@ -110,24 +110,32 @@
   // margin: 1vw 0 0 1vw;
   padding: 0;
 
-  color: #310210;
-  background-color: var(--clr-secondary);
-  border: 0.5rem solid hsl(342, 92%, 10%);
-  box-shadow: 0px 10px 3px -6px rgba(49, 2, 16, 1);
+  // color: #310210;
+  // background-color: var(--clr-secondary);
+  // border: 0.5rem solid hsl(342, 92%, 10%);
+  // box-shadow: 0px 10px 3px -6px rgba(49, 2, 16, 1);
   cursor: pointer;
 
   @include respond-to('568->') {
     padding: 0.3em 2em;
-    box-shadow: 6px 6px 3px -1px rgba(49, 2, 16, 1);
+    // box-shadow: 6px 6px 3px -1px rgba(49, 2, 16, 1);
   }
 
-  span {
-    color: #e61c52;
-    font-size: 1.5em;
-    // text-shadow: 0.025em 0.025em 0 #310210, 0.05em 0.05em 0 green,
-    //   0.075em 0.075em 0 orange, 0.1 0.1 0 black;
+  // span {
+  //   color: #e61c52;
+  //   font-size: 1.5em;
+  //   // text-shadow: 0.025em 0.025em 0 #310210, 0.05em 0.05em 0 green,
+  //   //   0.075em 0.075em 0 orange, 0.1 0.1 0 black;
 
-    text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black,
-      -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
-  }
+  //   text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black,
+  //     -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
+  // }
+}
+
+.skills__btn {
+  width: 100%;
+
+  padding: 0.6em 1em;
+
+  cursor: pointer;
 }
