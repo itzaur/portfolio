@@ -55,15 +55,24 @@
       <section class="skills grid">
         <div class="top-nav top-nav--about fs-240"><span>S</span>kills</div>
         <div class="skills__btns grid">
-          <button class="skills__btn">studying for about a year</button>
-          <button class="skills__btn">studying recently</button>
-          <button class="skills__btn">want to study</button>
+          <button class="skills__btn active" aria-expanded="true" data-tab="1">
+            <span>studying for about a year</span>
+            <img src="img/svg/doodle-abou1.svg" alt="" />
+          </button>
+          <button class="skills__btn" aria-expanded="false" data-tab="2">
+            <span>studying recently</span>
+            <img src="img/svg/doodle-abou2.svg" alt="" />
+          </button>
+          <button class="skills__btn" aria-expanded="false" data-tab="3">
+            <span>want to study</span>
+            <img src="img/svg/doodle-about3.svg" alt="" />
+          </button>
         </div>
         <ul class="skills__box skill grid" role="list">
           <li
-            class="skills-level skill grid"
-            aria-hidden="true"
-            data-level="studying a year"
+            class="skills-level skills-level--1 skill grid"
+            aria-hidden="false"
+            data-level="studying for about a year"
           >
             <ul
               class="skill-list skill grid"
@@ -97,7 +106,7 @@
             </ul>
           </li>
           <li
-            class="skills-level skill grid"
+            class="skills-level skills-level--2 skill grid"
             aria-hidden="true"
             data-level="studying recently"
           >
@@ -133,9 +142,9 @@
             </ul>
           </li>
           <li
-            class="skills-level skill grid"
+            class="skills-level skills-level--3 skill grid"
             aria-hidden="true"
-            data-level="wanna learn"
+            data-level="want to study"
           >
             <ul
               class="skill-list skill grid"

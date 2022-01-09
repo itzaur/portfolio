@@ -133,9 +133,30 @@
 }
 
 .skills__btn {
+  position: relative;
   width: 100%;
 
-  padding: 0.6em 1em;
+  // padding: 0.6em 1em;
 
   cursor: pointer;
+
+  background-color: transparent;
+  border: none;
+
+  transition: background-color 0.4s linear;
+
+  span {
+    @include abs-center;
+    z-index: 1;
+  }
+
+  &.active {
+    img {
+      filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
+        brightness(83%) contrast(127%);
+      transition: filter 0.2s linear;
+    }
+    // background-color: red;
+    // border: none;
+  }
 }
