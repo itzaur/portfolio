@@ -1,6 +1,11 @@
 'use strict';
+// import barba from '@barba/core';
+// import barbaCss from '@barba/css';
+// import Barba from 'barba.js';
+
 //ANCHOR Fonts
 import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
+
 let font = new FontFaceObserver('d_CCMonologous', {
   weight: 700,
 });
@@ -447,12 +452,12 @@ menuBtnClose.addEventListener('click', function (e) {
 //ANCHOR Next page animation
 const cornerBtn = document.getElementById('corner-link');
 cornerBtn.addEventListener('click', e => {
-  e.preventDefault();
+  // e.preventDefault();
   document.getElementById('wrapper').classList.add('flip');
 
-  window.setTimeout(() => {
-    window.location.href = 'about.html';
-  }, 250);
+  // window.setTimeout(() => {
+  //   window.location.href = 'about.html';
+  // }, 250);
 });
 
 //ANCHOR Color game
@@ -723,4 +728,155 @@ const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
 // document.querySelectorAll('.logo').forEach(el => {
 //   el.addEventListener('mouseenter', () => magnetLogo.enter());
 //   el.addEventListener('mouseleave', () => magnetLogo.leave());
+// });
+
+function delay(n) {
+  n = n || 2000;
+  return new Promise(done => {
+    setTimeout(() => {
+      done();
+    }, n);
+  });
+}
+
+function pageTransition() {
+  var tl = gsap.timeline({ default: { paused: true } });
+  tl.to('#wrapper__corner-box', {
+    duration: 0.4,
+    width: '150%',
+    height: '150%',
+
+    ease: 'Expo.easeInOut',
+  })
+    .to('#wrapper', {
+      opacity: 0,
+    })
+    .to(
+      '#wrapper',
+      {
+        opacity: 1,
+      },
+      '-=0.1'
+    )
+    .to(
+      '#wrapper__corner-box',
+      {
+        duration: 1.4,
+        width: 30,
+        height: 30,
+        ease: 'Expo.easeInOut',
+      },
+      '<0'
+    )
+    .from(
+      '.isTransition',
+      {
+        // duration: -0.5,
+        // xPercent: 100,
+        opacity: 0,
+        // stagger: 0.4,
+        // delay: 0.2,
+      },
+      '<-3'
+    );
+
+  // tl.from('.about-page', {
+  //   duration: 4,
+  //   // width: '100%',
+  //   height: 0,
+  //   top: '100%',
+  //   ease: 'Expo.easeInOut',
+  //   delay: 0.3,
+  // })
+  // tl.set('.loading-screen', { top: '-100%' });
+  // document.getElementById('wrapper').classList.add('flip');
+  document.getElementById('wrapper').classList.remove('flip');
+}
+
+function contentAnimation() {
+  // var tl = gsap.timeline();
+  // tl.from(
+  //   '.page',
+  //   {
+  //     duration: -0.5,
+  //     xPercent: 100,
+  //     opacity: 0,
+  //     // stagger: 0.4,
+  //     // delay: 0.2,
+  //   },
+  //   '-=0.8'
+  // );
+  console.log('anim');
+}
+
+// barba.init({
+//   sync: true,
+//   debug: true,
+
+//   transitions: [
+//     {
+//       name: 'default-transition',
+//       once(data) {
+//         gsap.to('#wrapper__corner-box', {
+//           duration: 0.4,
+//           width: '150%',
+//           height: '150%',
+
+//           ease: 'Expo.easeInOut',
+//         });
+//       },
+//       async leave(data) {
+//         const done = this.async();
+
+//         pageTransition();
+//         await delay(1500);
+//         done();
+//       },
+
+//       async enter(data) {
+//         contentAnimation();
+//       },
+
+//       async once(data) {
+//         contentAnimation();
+//       },
+//     },
+//   ],
+// });
+
+// barba.hooks.beforeEnter(({ current, next }) => {
+//   var beforeEnterPromiseAll = new Promise(function (resolve) {
+//     // killOldScrollTriggers();
+//     // destroySmoothScrollbar();
+
+//     resolve();
+//   });
+
+//   return beforeEnterPromiseAll;
+// });
+
+// barba.hooks.enter(({ current, next }) => {
+//   var enterPromiseAll = new Promise(function (resolve) {
+//     current.container.remove();
+
+//     resolve();
+//   });
+
+//   return enterPromiseAll;
+// });
+
+// barba.hooks.afterEnter(({ current, next }) => {
+//   var afterEnterPromiseAll = new Promise(function (resolve) {
+//     // initSmoothScrollbar();
+//     // initScrollTriggers();
+//     // const cursor = new Cursor(document.querySelector('.cursor'));
+//     // getPageAnimation();
+//     // initJS();
+//     resolve();
+//   });
+
+//   return afterEnterPromiseAll;
+// });
+// barba.init({
+//   debug: true,
 // });

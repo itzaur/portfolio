@@ -17,6 +17,8 @@
     width: var(--corner-flip-size-0);
     height: var(--corner-flip-size-0);
 
+    z-index: 20;
+
     transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
 
     &::before {
@@ -38,8 +40,8 @@
   }
 
   &.flip &__corner-box:hover {
-    width: calc(var(--corner-flip-size-2) * 13);
-    height: calc(var(--corner-flip-size-2) * 13);
+    width: calc(var(--corner-flip-size-2));
+    height: calc(var(--corner-flip-size-2));
   }
 }
 
@@ -81,6 +83,7 @@
     height: 50%;
 
     border-bottom-right-radius: 55%;
+    border-right: solid 1px HSL(var(--primary-hs) 100%);
 
     backface-visibility: hidden;
 

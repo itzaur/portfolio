@@ -1,9 +1,11 @@
 module.exports = {
   devtool: 'source-map',
+  // devtool: 'eval-cheap-source-map',
   watch: true,
   entry: {
-    home: './js/index.js',
-    about: './js/about.js',
+    home: ['babel-regenerator-runtime', './js/index.js'],
+    about: ['babel-regenerator-runtime', './js/about.js'],
+    barba: ['babel-regenerator-runtime', './js/barba.js'],
   },
   output: {
     filename: '[name].bundle.js',

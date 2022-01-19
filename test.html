@@ -13,8 +13,13 @@
     />
     <title>Portfolio</title>
   </head>
-  <body>
-    <div id="wrapper" class="grid">
+  <body data-barba="wrapper">
+    <div
+      id="wrapper"
+      class="grid"
+      data-barba="container"
+      data-barba-namespace="test-page"
+    >
       <div id="wrapper__box">
         <div id="wrapper__content">
           <h1>Smooth animated flipping page</h1>
@@ -36,7 +41,7 @@
         </div>
 
         <div id="wrapper__corner-box">
-          <a id="corner-link" href="#">
+          <a id="corner-link" href="index.html">
             <div id="corner-content">
               <div id="corner-button">
                 <strong>Click Here </strong>text lines
@@ -45,24 +50,39 @@
           </a>
         </div>
 
-        <div id="wrapper__corner-box-2">
-          <a id="corner-link-2" href="#">
+        <!-- <div id="wrapper__corner-box-2">
+          <a id="corner-link-2" href="index.html">
             <div id="corner-content-2">
               <div id="corner-button-2">
                 <strong>Click Here </strong>text lines
               </div>
             </div>
           </a>
-        </div>
+        </div> -->
 
         <a href="index.html">Back</a>
       </div>
+
+      <div id="wrapper__corner-box-2">
+        <a id="corner-link-2" href="index.html">
+          <div id="corner-content-2">
+            <div id="corner-button-2">
+              <strong>Click Here </strong>text lines
+            </div>
+          </div>
+        </a>
+      </div>
     </div>
+
     <!-- <div class="wrapper grid">
       <div class="item item--1"></div>
       <div class="item item--2"></div>
       <div class="item item--3"></div>
     </div> -->
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/CustomEase.min.js"></script>
+  <script type="module" src="dist/home.bundle.js"></script>
+  <script type="module" src="dist/barba.bundle.js"></script>
   <!-- <script src="./js/index.js"></script> -->
 </html>

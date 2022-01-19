@@ -150,13 +150,21 @@
     z-index: 1;
   }
 
+  &[data-tab='1'] span {
+    top: 55%;
+    left: 55%;
+  }
+
+  &[data-tab='2'] span {
+    top: 45%;
+    left: 45%;
+  }
+
   &.active {
     img {
       filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
         brightness(83%) contrast(127%);
       transition: filter 0.2s linear;
     }
-    // background-color: red;
-    // border: none;
   }
 }
