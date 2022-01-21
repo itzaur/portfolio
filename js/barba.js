@@ -3,39 +3,24 @@ import { aboutPageSkillsInit } from './export';
 
 function animationEnter(container) {
   const cornerBox = container.querySelector('#wrapper__corner-box');
+  // container.querySelector('#corner-content').style.background = 'red';
 
   const tl = gsap.timeline();
 
-  tl.to(
-    cornerBox,
+  tl.from(cornerBox, {
+    width: 2000,
+    height: 2000,
+    duration: 1,
+    clearProps: 'all',
+  }).from(
+    container,
     {
-      duration: 0.5,
-      width: 2000,
-      height: 2000,
-      ease: 'Expo.easeInOut',
-    },
-    '<-0.2'
-  )
-    .from(container, {
       opacity: 0,
-      duration: 0.0001,
-    })
-    .fromTo(
-      cornerBox,
-      {
-        width: 2000,
-        height: 2000,
-      },
-      {
-        width: 20,
-        height: 20,
-        clearProps: 'all',
-        duration: 0.5,
-        ease: 'Expo.easeInOut',
-        delay: 0,
-      },
-      '<-0.0001'
-    );
+      clearProps: 'all',
+    },
+    '<0.2'
+  );
+
   return tl;
 }
 
@@ -44,20 +29,18 @@ function animationLeave(container, done) {
 
   const tl = gsap.timeline();
 
-  tl.set(cornerBox, { width: 160, height: 160, autoAlpha: 1 }).fromTo(
-    cornerBox,
+  tl.to(cornerBox, {
+    width: 2000,
+    height: 2000,
+    duration: 1,
+    clearProps: 'all',
+    onComplete: () => done(),
+  }).to(
+    container,
     {
-      width: 160,
-      height: 160,
+      opacity: 0,
     },
-    {
-      width: 2000,
-      height: 2000,
-      ease: 'Expo.easeInOut',
-      duration: 1,
-      clearProps: 'all',
-      onComplete: () => done(),
-    }
+    '<0.4'
   );
 
   return tl;
@@ -74,18 +57,16 @@ barba.init({
       name: 'default-transition',
       once(data) {
         animationEnter(data.next.container);
-        // console.log('once');
+        console.log('once');
       },
       leave(data) {
         const done = this.async();
         animationLeave(data.current.container, done);
-
-        // console.log('leaving');
+        console.log('leaving');
       },
       enter(data) {
-        // console.log('entering');
+        console.log('entering');
         animationEnter(data.next.container);
-        // aboutPageSkillsInit();
       },
     },
   ],
