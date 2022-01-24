@@ -1,4 +1,6 @@
 'use strict';
+import { Cursor } from './export';
+import { MagnetLogo, addCustomCursor } from './export';
 
 function aboutPageSkillsInit() {
   const skillsBtn = document.querySelectorAll('.skills__btn');

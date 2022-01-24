@@ -2,6 +2,8 @@
 // import barba from '@barba/core';
 // import barbaCss from '@barba/css';
 // import Barba from 'barba.js';
+import { Cursor } from './export';
+import { MagnetLogo, addCustomCursor } from './cursor';
 
 //ANCHOR Fonts
 import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
@@ -375,7 +377,7 @@ tlMenuTransition
     '-=1'
   );
 
-function menuTransition() {
+function menuTransitionRun() {
   if (window.matchMedia('(max-width: 568px)').matches) {
     gsap.to(menuNavDoodle, {
       transform: `translate3d(0, 0, 2px) scale(1)`,
@@ -412,9 +414,7 @@ function menuTransition() {
   }, 100);
 }
 
-btnBig.addEventListener('click', menuTransition);
-
-menuBtnClose.addEventListener('click', function (e) {
+function menuTransitionStop() {
   const closeMenu = gsap.to(menuPage, {
     height: 0,
     ease: 'power4.out',
@@ -439,7 +439,11 @@ menuBtnClose.addEventListener('click', function (e) {
 
   btnBig.setAttribute('aria-selected', true);
   btnSmall.setAttribute('aria-selected', false);
-});
+}
+
+btnBig.addEventListener('click', menuTransitionRun);
+
+menuBtnClose.addEventListener('click', menuTransitionStop);
 
 // gsap.to('.st19', {
 //   repeat: -1,
@@ -449,16 +453,16 @@ menuBtnClose.addEventListener('click', function (e) {
 //   ease: 'none',
 // });
 
-//ANCHOR Next page animation
-const cornerBtn = document.getElementById('corner-link');
-cornerBtn.addEventListener('click', e => {
-  // e.preventDefault();
-  document.getElementById('wrapper').classList.add('flip');
+// //ANCHOR Next page animation
+// const cornerBtn = document.getElementById('corner-link');
+// cornerBtn.addEventListener('click', e => {
+//   // e.preventDefault();
+//   document.getElementById('wrapper').classList.add('flip');
 
-  // window.setTimeout(() => {
-  //   window.location.href = 'about.html';
-  // }, 250);
-});
+//   // window.setTimeout(() => {
+//   //   window.location.href = 'about.html';
+//   // }, 250);
+// });
 
 //ANCHOR Color game
 const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
@@ -526,324 +530,6 @@ function getRandomNumber() {
 // logo.addEventListener('mouseenter', getLogoAnim);
 // logo.addEventListener('mouseleave', stopLogoAnim);
 
-//ANCHOR Cursor
-let mouse = {
-  x: 0,
-  y: 0,
-};
-
-const lerp = function (start, end, n) {
-  return (1 - n) * start + n * end;
-};
-
-const distance = function (x1, y1, x2, y2) {
-  let a = x1 - x2;
-  let b = y1 - y2;
-  return Math.hypot(a, b);
-};
-
-const calcWindowSize = () => {
-  return {
-    width: window.innerWidth,
-    height: window.innerHeight,
-  };
-};
-
-const getRandomFloat = function (min, max) {
-  return (Math.random() * (max - min) + min).toFixed(2);
-};
-
-const getMousePosition = e => {
-  return {
-    x: e.clientX,
-    y: e.clientY,
-  };
-};
-
-window.addEventListener('mousemove', function (ev) {
-  mouse = getMousePosition(ev);
-});
-
-class Cursor {
-  constructor(item) {
-    this.DOM = { item: item };
-    this.DOM.item.style.opacity = 0;
-    this.bounds = this.DOM.item.getBoundingClientRect();
-    this.renderStyles = {
-      tx: { previous: 0, current: 0, amount: 0.2 },
-      ty: { previous: 0, current: 0, amount: 0.2 },
-      scale: { previous: 1, current: 1, amount: 0.15 },
-      opacity: { previous: 1, current: 1, amount: 0.1 },
-    };
-    this.onMouseMove = () => {
-      this.renderStyles.tx.previous = this.renderStyles.tx.current =
-        mouse.x - this.bounds.width / 2;
-      this.renderStyles.ty.previous = this.renderStyles.ty.current =
-        mouse.y - this.bounds.height / 2;
-      gsap.to(this.DOM.item, {
-        duration: 0.85,
-        opacity: 1,
-        ease: 'power3.easeOut',
-      });
-      requestAnimationFrame(() => this.render());
-      window.removeEventListener('mousemove', this.onMouseMove);
-    };
-    window.addEventListener('mousemove', this.onMouseMove);
-  }
-
-  render() {
-    this.renderStyles['tx'].current = mouse.x - this.bounds.width / 2;
-    this.renderStyles['ty'].current = mouse.y - this.bounds.height / 2;
-
-    for (const key in this.renderStyles) {
-      this.renderStyles[key].previous = lerp(
-        this.renderStyles[key].previous,
-        this.renderStyles[key].current,
-        this.renderStyles[key].amount
-      );
-      // console.log(this.renderStyles[key].previous);
-    }
-
-    this.DOM.item.style.transform = `translate(${this.renderStyles['tx'].previous}px, ${this.renderStyles['ty'].previous}px) scale(${this.renderStyles['scale'].previous})`;
-    this.DOM.item.style.opacity = this.renderStyles['opacity'].previous;
-
-    requestAnimationFrame(() => this.render());
-  }
-
-  enter() {
-    this.renderStyles['scale'].current = 2.5;
-    this.renderStyles['opacity'].current = 0.5;
-  }
-
-  leave() {
-    this.renderStyles['scale'].current = 1;
-    this.renderStyles['opacity'].current = 1;
-  }
-}
-
-class MagnetLogo {
-  constructor(item) {
-    this.DOM = { item: item };
-    this.renderStyles = {
-      tx: { previous: 0, current: 0, amount: 0.1 },
-      ty: { previous: 0, current: 0, amount: 0.1 },
-      scale: { previous: 1, current: 1, amount: 0.2 },
-    };
-
-    this.state = {
-      hover: false,
-    };
-
-    this.initEvent();
-    this.calculateSizePosition();
-    requestAnimationFrame(() => this.render());
-  }
-
-  calculateSizePosition() {
-    this.rect = this.DOM.item.getBoundingClientRect();
-    this.distanceToTrigger = this.rect.width * 1.9;
-  }
-
-  initEvent() {
-    this.onResize = () => this.calculateSizePosition();
-    window.addEventListener('resize', this.onResize);
-    window.addEventListener('load', this.onResize);
-  }
-
-  render() {
-    const distanceMouseElement = distance(
-      mouse.x + window.scrollX,
-      mouse.y + window.scrollY,
-      this.rect.left + this.rect.width / 2,
-      this.rect.top + this.rect.height / 2
-    );
-
-    let x = 0;
-    let y = 0;
-
-    if (distanceMouseElement < this.distanceToTrigger) {
-      x =
-        (mouse.x + window.scrollX - (this.rect.left + this.rect.width / 2)) *
-        0.3;
-      y =
-        (mouse.y + window.scrollY - (this.rect.top + this.rect.height / 2)) *
-        0.3;
-
-      if (!this.state.hover) {
-        this.enter();
-      }
-    } else if (this.state.hover) {
-      this.leave();
-    }
-
-    this.renderStyles['tx'].current = x;
-    this.renderStyles['ty'].current = y;
-
-    for (const key in this.renderStyles) {
-      this.renderStyles[key].previous = lerp(
-        this.renderStyles[key].previous,
-        this.renderStyles[key].current,
-        this.renderStyles[key].amount
-      );
-    }
-
-    this.DOM.item.style.transform = `translate(${this.renderStyles['tx'].previous}px, ${this.renderStyles['ty'].previous}px) scale(${this.renderStyles['scale'].previous})`;
-
-    requestAnimationFrame(() => this.render());
-  }
-
-  enter() {
-    this.state.hover = true;
-    this.renderStyles['scale'].current = 1.3;
-    gsap.killTweensOf(this.DOM.item);
-
-    gsap.to(this.DOM.item, {
-      duration: 4,
-      startAt: { yPercent: 75 },
-      yPercent: 0,
-      ease: 'power3.easeOut',
-    });
-  }
-
-  leave() {
-    this.state.hover = false;
-    this.renderStyles['scale'].current = 1;
-    // gsap.killTweensOf(this.DOM.item);
-    gsap.to(this.DOM.item, {
-      ease: 'power3.easeOut',
-      yPercent: -75,
-    });
-  }
-}
-
-const cursor = new Cursor(document.querySelector('.cursor'));
-document
-  .querySelectorAll('a, .btn, .menu-btn-close, .logo, .color-game__item')
-  .forEach(el => {
-    el.addEventListener('mouseenter', () => cursor.enter());
-    el.addEventListener('mouseleave', () => cursor.leave());
-  });
-
-const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
-// document.querySelectorAll('.logo').forEach(el => {
-//   el.addEventListener('mouseenter', () => magnetLogo.enter());
-//   el.addEventListener('mouseleave', () => magnetLogo.leave());
-// });
-
-function delay(n) {
-  n = n || 2000;
-  return new Promise(done => {
-    setTimeout(() => {
-      done();
-    }, n);
-  });
-}
-
-function pageTransition() {
-  var tl = gsap.timeline({ default: { paused: true } });
-  tl.to('#wrapper__corner-box', {
-    duration: 0.4,
-    width: '150%',
-    height: '150%',
-
-    ease: 'Expo.easeInOut',
-  })
-    .to('#wrapper', {
-      opacity: 0,
-    })
-    .to(
-      '#wrapper',
-      {
-        opacity: 1,
-      },
-      '-=0.1'
-    )
-    .to(
-      '#wrapper__corner-box',
-      {
-        duration: 1.4,
-        width: 30,
-        height: 30,
-        ease: 'Expo.easeInOut',
-      },
-      '<0'
-    )
-    .from(
-      '.isTransition',
-      {
-        // duration: -0.5,
-        // xPercent: 100,
-        opacity: 0,
-        // stagger: 0.4,
-        // delay: 0.2,
-      },
-      '<-3'
-    );
-
-  // tl.from('.about-page', {
-  //   duration: 4,
-  //   // width: '100%',
-  //   height: 0,
-  //   top: '100%',
-  //   ease: 'Expo.easeInOut',
-  //   delay: 0.3,
-  // })
-  // tl.set('.loading-screen', { top: '-100%' });
-  // document.getElementById('wrapper').classList.add('flip');
-  document.getElementById('wrapper').classList.remove('flip');
-}
-
-function contentAnimation() {
-  // var tl = gsap.timeline();
-  // tl.from(
-  //   '.page',
-  //   {
-  //     duration: -0.5,
-  //     xPercent: 100,
-  //     opacity: 0,
-  //     // stagger: 0.4,
-  //     // delay: 0.2,
-  //   },
-  //   '-=0.8'
-  // );
-  console.log('anim');
-}
-
-// barba.init({
-//   sync: true,
-//   debug: true,
-
-//   transitions: [
-//     {
-//       name: 'default-transition',
-//       once(data) {
-//         gsap.to('#wrapper__corner-box', {
-//           duration: 0.4,
-//           width: '150%',
-//           height: '150%',
-
-//           ease: 'Expo.easeInOut',
-//         });
-//       },
-//       async leave(data) {
-//         const done = this.async();
-
-//         pageTransition();
-//         await delay(1500);
-//         done();
-//       },
-
-//       async enter(data) {
-//         contentAnimation();
-//       },
-
-//       async once(data) {
-//         contentAnimation();
-//       },
-//     },
-//   ],
-// });
-
 // barba.hooks.beforeEnter(({ current, next }) => {
 //   var beforeEnterPromiseAll = new Promise(function (resolve) {
 //     // killOldScrollTriggers();
@@ -880,3 +566,4 @@ function contentAnimation() {
 // barba.init({
 //   debug: true,
 // });
+window.addEventListener('DOMContentLoaded', addCustomCursor);

@@ -1,5 +1,8 @@
 import barba from '@barba/core';
 import { aboutPageSkillsInit } from './export';
+import { Cursor } from './export';
+import { MagnetLogo, addCustomCursor } from './export';
+// import MagnetLogo from './export';
 
 function animationEnter(container) {
   const cornerBox = container.querySelector('#wrapper__corner-box');
@@ -57,11 +60,13 @@ barba.init({
       name: 'default-transition',
       once(data) {
         animationEnter(data.next.container);
+        // addCustomCursor();
         console.log('once');
       },
       leave(data) {
         const done = this.async();
         animationLeave(data.current.container, done);
+
         console.log('leaving');
       },
       enter(data) {
@@ -72,10 +77,27 @@ barba.init({
   ],
 });
 
-// barba.hooks.beforeEnter(() => {
-
-// });
+barba.hooks.beforeEnter(() => {
+  // // const magnet = new MagnetLogo(document.querySelector('.logo'));
+  // cursor.enter();
+  // window.addEventListener('DOMContentLoaded', addCustomCursor);
+  // window.removeEventListener('DOMContentLoaded', addCustomCursor);
+  console.log('barba.hooks.beforeEnter');
+});
 
 barba.hooks.afterEnter(() => {
   aboutPageSkillsInit();
+  // window.removeEventListener('DOMContentLoaded', addCustomCursor);
+  // const cursor = new Cursor(document.querySelector('.cursor'));
+  // document
+  //   .querySelectorAll(
+  //     'button, .menu-btn-close, #corner-button, .logo, .color-game__item'
+  //   )
+  //   .forEach(el => {
+  //     el.addEventListener('mouseenter', () => cursor.enter());
+  //     el.addEventListener('mouseleave', () => cursor.leave());
+  //   });
+  console.log('barba.hooks.afterEnter');
+  addCustomCursor();
+  // const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
 });

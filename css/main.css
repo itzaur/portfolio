@@ -754,6 +754,7 @@ select {
   width: 14rem;
   padding: 0.8rem 0.5rem;
   background-color: transparent;
+  z-index: 1;
 }
 
 .hello {
@@ -1024,13 +1025,6 @@ select {
   stroke: #020203;
   stroke-width: 22.4366;
   stroke-miterlimit: 10;
-}
-
-.cursor__inner {
-  fill: var(--cursor-fill);
-  stroke: var(--cursor-stroke);
-  stroke-width: var(--cursor-stroke-width);
-  opacity: 0.7;
 }
 
 .page {
