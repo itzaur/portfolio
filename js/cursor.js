@@ -86,13 +86,11 @@ class Cursor {
   enter() {
     this.renderStyles['scale'].current = 2.5;
     this.renderStyles['opacity'].current = 0.5;
-    console.log('cursor enter');
   }
 
   leave() {
     this.renderStyles['scale'].current = 1;
     this.renderStyles['opacity'].current = 1;
-    console.log('cursor leave');
   }
 }
 
