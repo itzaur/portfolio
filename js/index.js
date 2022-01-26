@@ -2,8 +2,9 @@
 // import barba from '@barba/core';
 // import barbaCss from '@barba/css';
 // import Barba from 'barba.js';
-import { Cursor } from './export';
-import { MagnetLogo, addCustomCursor } from './cursor';
+// import { Cursor } from './export';
+// import { MagnetLogo, addCustomCursor } from './cursor';
+import { addCustomCursor } from './cursor';
 import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
 
 function homeInit() {
@@ -192,26 +193,26 @@ function homeInit() {
     }px)`;
   }
 
-  function doodlePositionResize() {
-    doodle.style.transform = `translate(${
-      window.innerWidth -
-      doodle.offsetWidth -
-      photo.offsetWidth * 0.8 +
-      +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[4]
-    }px, ${
-      window.innerHeight -
-      (photo.offsetHeight -
-        photo.offsetHeight * 0.25 -
-        +window
-          .getComputedStyle(photo, null)
-          .transform.match(/(-?[0-9\.]+)/g)[5])
-    }px)`;
-  }
+  // function doodlePositionResize() {
+  //   doodle.style.transform = `translate(${
+  //     window.innerWidth -
+  //     doodle.offsetWidth -
+  //     photo.offsetWidth * 0.8 +
+  //     +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[4]
+  //   }px, ${
+  //     window.innerHeight -
+  //     (photo.offsetHeight -
+  //       photo.offsetHeight * 0.25 -
+  //       +window
+  //         .getComputedStyle(photo, null)
+  //         .transform.match(/(-?[0-9\.]+)/g)[5])
+  //   }px)`;
+  // }
   doodlePositionStart();
   // doodlePositionResize();
   // document.addEventListener('DOMContentLoaded', doodlePositionStart);
 
-  window.addEventListener('resize', doodlePositionResize);
+  // window.addEventListener('resize', doodlePositionResize);
 
   //ANCHOR Page animations
   const helloDots = document.querySelectorAll(
@@ -584,23 +585,23 @@ function homeInit() {
 //   debug: true,
 // });
 
+function doodlePositionResize() {
+  const photo = document.querySelector('.photo');
+  const doodle = document.querySelector('.doodle');
+
+  doodle.style.transform = `translate(${
+    window.innerWidth -
+    doodle.offsetWidth -
+    photo.offsetWidth * 0.8 +
+    +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[4]
+  }px, ${
+    window.innerHeight -
+    (photo.offsetHeight -
+      photo.offsetHeight * 0.25 -
+      +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[5])
+  }px)`;
+}
+
 window.addEventListener('DOMContentLoaded', addCustomCursor);
-// window.addEventListener('resize', () => {
-//   document.querySelector('.doodle').style.transform = `translate(${
-//     window.innerWidth -
-//     document.querySelector('.doodle').offsetWidth -
-//     document.querySelector('.photo').offsetWidth * 0.8 +
-//     +window
-//       .getComputedStyle(document.querySelector('.photo'), null)
-//       .transform.match(/(-?[0-9\.]+)/g)[4]
-//   }px, ${
-//     window.innerHeight -
-//     (document.querySelector('.photo').offsetHeight -
-//       document.querySelector('.photo').offsetHeight * 0.25 -
-//       +window
-//         .getComputedStyle(document.querySelector('.photo'), null)
-//         .transform.match(/(-?[0-9\.]+)/g)[5])
-//   }px)`;
-// });
-export { homeInit };
-// export { doodleInit };
+
+export { homeInit, doodlePositionResize };
