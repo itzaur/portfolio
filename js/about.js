@@ -32,8 +32,9 @@ function aboutPageSkillsInit() {
           opacity: 1,
           scale: 1,
           ease: 'cubic',
+
           clearProps: 'all',
-          duration: 0.5,
+          duration: 0.2,
         },
         '<0.3'
       );

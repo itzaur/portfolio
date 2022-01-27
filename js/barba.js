@@ -1,5 +1,10 @@
 import barba from '@barba/core';
-import { aboutPageSkillsInit, addCustomCursor, homeInit } from './export';
+import {
+  MagnetLogo,
+  aboutPageSkillsInit,
+  addCustomCursor,
+  homeInit,
+} from './export';
 import { doodlePositionResize } from './index';
 // import { aboutPageSkillsInit } from './export';
 // import { Cursor } from './export';

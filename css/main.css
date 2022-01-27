@@ -35,6 +35,22 @@
   }
 }
 
+@-webkit-keyframes loaderAnim {
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+            transform: scale3d(0.5, 0.5, 1);
+  }
+}
+
+@keyframes loaderAnim {
+  to {
+    opacity: 1;
+    -webkit-transform: scale3d(0.5, 0.5, 1);
+            transform: scale3d(0.5, 0.5, 1);
+  }
+}
+
 :root {
   --clr-primary: hsl(202, 65%, 51%);
   --clr-secondary: hsl(54, 100%, 50%);
@@ -135,6 +151,32 @@ body {
 
 .clr-black {
   color: HSL(var(--primary-hs) 0%);
+}
+
+.loading::before, .loading:after {
+  content: '';
+  position: fixed;
+  z-index: 9999;
+}
+
+.loading:before {
+  width: 100%;
+  height: 100%;
+  inset: 0;
+  background: HSL(var(--primary-hs) 90%);
+}
+
+.loading:after {
+  top: 50%;
+  left: 50%;
+  background: var(--clr-menu);
+  width: 6rem;
+  height: 6rem;
+  margin: -3rem 0 0 -3rem;
+  border-radius: 50%;
+  opacity: 0.4;
+  -webkit-animation: loaderAnim 0.7s linear infinite alternate forwards;
+          animation: loaderAnim 0.7s linear infinite alternate forwards;
 }
 
 /* Box sizing rules */

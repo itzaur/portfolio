@@ -4,7 +4,7 @@
 // import Barba from 'barba.js';
 // import { Cursor } from './export';
 // import { MagnetLogo, addCustomCursor } from './cursor';
-import { addCustomCursor } from './cursor';
+import { MagnetLogo, addCustomCursor } from './cursor';
 import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
 
 function homeInit() {
@@ -297,6 +297,9 @@ function homeInit() {
           transform: 'translate3d(0, 0, 1px) scale(0)',
           opacity: 0,
           ease: 'Bounce.easeOut',
+          onComplete: () => {
+            const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
+          },
         },
         '<0'
       )
@@ -603,5 +606,38 @@ function doodlePositionResize() {
 }
 
 window.addEventListener('DOMContentLoaded', addCustomCursor);
+
+// imagesLoaded(
+//   document.querySelector('.page'),
+//   { background: true },
+//   function (instance) {
+//     console.log('all images are loaded');
+//     console.log('page background image loaded');
+//   }
+// );
+
+//ANCHOR Preloader
+// gsap.registerPlugin(CSSRulePlugin);
+
+// const rule = CSSRulePlugin.getRule('.loading:after');
+// gsap.to(rule, {
+//   duration: 1,
+//   cssRule: {
+//     opacity: 1,
+//   },
+//   repeat: -1,
+//   yoyo: true,
+//   ease: 'power4.out',
+// });
+
+const preloadImages = (selector = 'svg') => {
+  return new Promise(resolve => {
+    imagesLoaded(document.querySelectorAll(selector), resolve);
+  });
+};
+
+preloadImages().then(() => {
+  document.body.classList.remove('loading');
+});
 
 export { homeInit, doodlePositionResize };
