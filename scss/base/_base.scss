@@ -8,7 +8,7 @@ body {
   font-weight: 700;
   font-style: italic;
   overflow: hidden;
-  background-color: #fff;
+  background-color: HSL(var(--primary-hs) 100%);
   z-index: -1;
 }
 

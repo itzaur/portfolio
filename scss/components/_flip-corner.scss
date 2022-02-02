@@ -22,7 +22,7 @@
     transition: all 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       right: 0;
@@ -75,7 +75,7 @@
 
   &::before,
   &::after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
 
@@ -97,11 +97,14 @@
     background: -webkit-radial-gradient(
       625% 635%,
       circle,
-      hsla(218, 83%, 18%, 0.12) 89%,
+      hsla(218, 83%, 18%, 0.18) 89%,
       transparent 91%
     );
 
-    box-shadow: 2.7rem 1.8rem 0.4rem -2.2rem HSL(var(--primary-hs) 91% / 0.988);
+    // box-shadow: 2.7rem 1.8rem 0.4rem -2.2rem HSL(var(--primary-hs) 91% / 0.988);
+
+    box-shadow: 3.7rem 0.8rem 1.2rem -2.2rem HSL(var(--primary-hs) 90%/0.988),
+      2.7rem 6.8rem 2.4rem -1.2rem HSL(var(--primary-hs) 91%/0.988);
   }
 
   &::after {
@@ -112,10 +115,11 @@
       -145% -145%,
       circle,
       HSL(var(--primary-hs) 100% / 0) 85%,
-      HSL(var(--primary-hs) 0% / 0.1) 93%
+      HSL(var(--primary-hs) 0% / 0.19) 93%
     );
 
-    box-shadow: 0px 13px 16px -14px HSL(var(--primary-hs) 78% / 0.988);
+    // box-shadow: 0px 13px 16px -14px HSL(var(--primary-hs) 78% / 0.988);
+    box-shadow: 30px 30px 22px -10px HSL(var(--primary-hs) 92%/0.988);
   }
 }
 
@@ -166,7 +170,7 @@
 
   &::before,
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     bottom: 0;
     right: 0;
