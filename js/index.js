@@ -1,45 +1,45 @@
-'use strict';
+"use strict";
 // import barba from '@barba/core';
 // import barbaCss from '@barba/css';
 // import Barba from 'barba.js';
 // import { Cursor } from './export';
 // import { MagnetLogo, addCustomCursor } from './cursor';
-import { MagnetLogo, addCustomCursor } from './cursor';
-import FontFaceObserver from './../node_modules/fontfaceobserver/fontfaceobserver';
+import { MagnetLogo, addCustomCursor } from "./cursor";
+import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
 
 function homeInit() {
   //ANCHOR Fonts
-  let font = new FontFaceObserver('d_CCMonologous', {
+  let font = new FontFaceObserver("d_CCMonologous", {
     weight: 700,
   });
 
   font
     .load()
     .then(function () {
-      console.log('Font has loaded.');
+      console.log("Font has loaded.");
     })
     .catch(function () {
-      console.log('Font failed to load.');
+      console.log("Font failed to load.");
     });
 
   //ANCHOR Button
-  const btnBig = document.querySelector('.btn-big');
-  const btnSmall = document.querySelector('.btn-small');
+  const btnBig = document.querySelector(".btn-big");
+  const btnSmall = document.querySelector(".btn-small");
 
-  btnBig.addEventListener('click', e => {
-    btnBig.setAttribute('aria-selected', false);
-    btnSmall.setAttribute('aria-selected', true);
+  btnBig.addEventListener("click", (e) => {
+    btnBig.setAttribute("aria-selected", false);
+    btnSmall.setAttribute("aria-selected", true);
   });
 
-  btnSmall.addEventListener('click', e => {
-    btnSmall.setAttribute('aria-selected', false);
-    btnBig.setAttribute('aria-selected', true);
+  btnSmall.addEventListener("click", (e) => {
+    btnSmall.setAttribute("aria-selected", false);
+    btnBig.setAttribute("aria-selected", true);
   });
 
   //ANCHOR Animations
   //Letters animation
-  btnBig.addEventListener('mouseenter', animateTextHoverRun);
-  btnBig.addEventListener('mouseleave', animateTextHoverStop);
+  btnBig.addEventListener("mouseenter", animateTextHoverRun);
+  btnBig.addEventListener("mouseleave", animateTextHoverStop);
 
   const timelineLetters = gsap.timeline({
     repeat: 0,
@@ -47,10 +47,10 @@ function homeInit() {
   });
 
   function animateTextHoverRun() {
-    timelineLetters.to('.text-cls-1', {
-      translateX: '-1rem',
+    timelineLetters.to(".text-cls-1", {
+      translateX: "-1rem",
       duration: 0.2,
-      ease: 'back.out(1.7)',
+      ease: "back.out(1.7)",
       stagger: 0.05,
       opacity: 1,
     });
@@ -68,48 +68,48 @@ function homeInit() {
   });
 
   gsap.fromTo(
-    '.glass',
+    ".glass",
     {
       x: -25,
       y: 8.5,
-      ease: 'none',
+      ease: "none",
       opacity: 0.8,
     },
     {
       x: 55,
       y: -25,
       duration: 0.5,
-      ease: 'none',
+      ease: "none",
       repeat: -1,
       repeatDelay: 6,
     }
   );
 
-  timelineGlasses.to('.glass rect', {
+  timelineGlasses.to(".glass rect", {
     keyframes: [{ height: 80 }, { height: 22, x: -19, y: 13, opacity: 1 }],
     duration: 0.5,
-    ease: 'none',
+    ease: "none",
     repeat: -1,
     repeatDelay: 6,
   });
 
   //ANCHOR Doodle
 
-  const textSpan0 = document.querySelector('.span0');
-  const textSpan1 = document.querySelector('.span1');
-  const textSpan2 = document.querySelector('.span2');
-  const textSpan3 = document.querySelector('.span3');
+  const textSpan0 = document.querySelector(".span0");
+  const textSpan1 = document.querySelector(".span1");
+  const textSpan2 = document.querySelector(".span2");
+  const textSpan3 = document.querySelector(".span3");
 
   const text = {
-    string0: 'My name',
-    string1: 'is Pavel!',
-    string2: 'Welcome to',
-    string3: 'my page!',
+    string0: "My name",
+    string1: "is Pavel!",
+    string2: "Welcome to",
+    string3: "my page!",
   };
-  const str0 = text.string0.split('');
-  const str1 = text.string1.split('');
-  const str2 = text.string2.split('');
-  const str3 = text.string3.split('');
+  const str0 = text.string0.split("");
+  const str1 = text.string1.split("");
+  const str2 = text.string2.split("");
+  const str3 = text.string3.split("");
 
   //Doodle animation
   function animateLetters1() {
@@ -171,8 +171,8 @@ function homeInit() {
   // const visibleContentX = window.innerWidth - photo.getBoundingClientRect().left;
   // const visibleContentY = window.innerHeight - photo.getBoundingClientRect().top;
 
-  const photo = document.querySelector('.photo');
-  const doodle = document.querySelector('.doodle');
+  const photo = document.querySelector(".photo");
+  const doodle = document.querySelector(".doodle");
 
   const photoTransformY = +window
     .getComputedStyle(photo, null)
@@ -228,11 +228,11 @@ function homeInit() {
   function getPageAnimation() {
     tlPage
       .fromTo(
-        '.photo',
+        ".photo",
         {
           x: 2400,
-          transformOrigin: 'top top',
-          rotation: '50deg',
+          transformOrigin: "top top",
+          rotation: "50deg",
           // ease: 'back.out(1.7)',
           // ease: 'elastic.out(1, 0.3)',
           // duration: 1.5,
@@ -240,9 +240,9 @@ function homeInit() {
         },
         {
           x: photoTransformX,
-          rotation: '0deg',
+          rotation: "0deg",
           // ease: 'elastic.out(1, 0.6)',
-          clearProps: 'transform',
+          clearProps: "transform",
           // duration: 1.5,
         }
       )
@@ -254,62 +254,62 @@ function homeInit() {
           from: 15,
         },
 
-        ease: 'back.out(1.7)',
+        ease: "back.out(1.7)",
       })
       .from(
         helloDots,
         0.5,
         {
           y: -100,
-          ease: 'bounce.out',
+          ease: "bounce.out",
           opacity: 0,
-          stagger: { each: 0.003, from: 'random' },
+          stagger: { each: 0.003, from: "random" },
         },
-        '<0.6'
+        "<0.6"
       )
       .from(
         helloDoodle,
         0.6,
-        { y: -100, ease: 'bounce.out', opacity: 0, stagger: 0.03 },
-        '<1.3'
+        { y: -100, ease: "bounce.out", opacity: 0, stagger: 0.03 },
+        "<1.3"
       )
       .to(
-        '.doodle',
+        ".doodle",
         {
           opacity: 1,
-          ease: 'back.out(1.7)',
+          ease: "back.out(1.7)",
         },
-        '<0.5'
+        "<0.5"
       )
       .from(
         btnBig,
         {
-          transform: 'translate3d(0, 0, 1px) scale(0)',
+          transform: "translate3d(0, 0, 1px) scale(0)",
           opacity: 0,
-          ease: 'Bounce.easeOut',
+          ease: "Bounce.easeOut",
           delay: 1,
         },
-        '<4.8'
+        "<4.8"
       )
       .from(
-        '.logo',
+        ".logo",
         {
-          transform: 'translate3d(0, 0, 1px) scale(0)',
+          transform: "translate3d(0, 0, 1px) scale(0)",
           opacity: 0,
-          ease: 'Bounce.easeOut',
+          ease: "Bounce.easeOut",
           onComplete: () => {
-            const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
+            const magnetLogo = new MagnetLogo(document.querySelector(".logo"));
           },
         },
-        '<0'
+        "<0"
       )
-      .from('.color-game__item', {
-        x: '-100%',
+      .from(".color-game__item", {
+        x: "-100%",
         opacity: 0,
         stagger: {
           each: 0.2,
         },
-        ease: 'back.out(1.7)',
+        ease: "back.out(1.7)",
       });
   }
 
@@ -317,27 +317,27 @@ function homeInit() {
 
   //Menu animation
   //Menu transition
-  const menuPage = document.querySelector('.menu');
+  const menuPage = document.querySelector(".menu");
   const menuDoodle = document.querySelectorAll(
-    '.menu__box path, .menu__box polygon'
+    ".menu__box path, .menu__box polygon"
   );
-  const menuNavDoodle = document.querySelector('.menu__img svg');
-  const menuBtnClose = document.querySelector('.menu-btn-close');
-  const menuLinks = document.querySelectorAll('.nav__item');
+  const menuNavDoodle = document.querySelector(".menu__img svg");
+  const menuBtnClose = document.querySelector(".menu-btn-close");
+  const menuLinks = document.querySelectorAll(".nav__item");
   let isOpen = false;
   let mediaQueryTransformX = -16;
   let mediaQueryTransformY = 5;
   let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
   let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
   function checkMediaQuery() {
-    if (window.matchMedia('(max-width: 568px)').matches) {
+    if (window.matchMedia("(max-width: 568px)").matches) {
       menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
     } else {
       menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 1px) scale(1)`;
     }
   }
   checkMediaQuery();
-  window.addEventListener('resize', checkMediaQuery);
+  window.addEventListener("resize", checkMediaQuery);
 
   const tlMenuTransition = gsap.timeline({
     paused: true,
@@ -345,29 +345,29 @@ function homeInit() {
 
   tlMenuTransition
     .to(menuPage, {
-      height: 'calc(100vh - var(--padding-container) * 2)',
-      ease: 'bounce.out',
+      height: "calc(100vh - var(--padding-container) * 2)",
+      ease: "bounce.out",
     })
     .from(
       menuDoodle,
       {
         y: -100,
-        ease: 'bounce.out',
+        ease: "bounce.out",
         opacity: 0,
         duration: 0.3,
-        stagger: { each: 0.001, from: 'random' },
+        stagger: { each: 0.001, from: "random" },
       },
-      '<0.1'
+      "<0.1"
     )
     .from(
       menuNavDoodle,
       {
         opacity: 0,
-        ease: 'elastic.out(1, 0.3)',
+        ease: "elastic.out(1, 0.3)",
         duration: 1.2,
         transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
       },
-      '<0.3'
+      "<0.3"
     )
     .from(
       menuLinks,
@@ -375,49 +375,49 @@ function homeInit() {
         y: -60,
         opacity: 0,
         stagger: 0.2,
-        ease: 'back.out(1.7)',
+        ease: "back.out(1.7)",
       },
-      '<0.6'
+      "<0.6"
     )
     .from(
-      '.menu__star',
+      ".menu__star",
       {
         opacity: 0,
         scale: 0,
         stagger: 0.1,
-        ease: 'elastic.out(1, 0.3)',
+        ease: "elastic.out(1, 0.3)",
       },
-      '-=1'
+      "-=1"
     );
 
   function menuTransitionRun() {
-    if (window.matchMedia('(max-width: 568px)').matches) {
+    if (window.matchMedia("(max-width: 568px)").matches) {
       gsap.to(menuNavDoodle, {
         transform: `translate3d(0, 0, 2px) scale(1)`,
       });
       gsap.from(
-        '.menu-btn-close',
+        ".menu-btn-close",
         {
           y: -100,
           opacity: 0,
-          ease: 'back.out(1.7)',
+          ease: "back.out(1.7)",
           duration: 0.6,
         },
-        '+=1'
+        "+=1"
       );
     } else {
       gsap.to(menuNavDoodle, {
         transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
       });
       gsap.from(
-        '.menu-btn-close',
+        ".menu-btn-close",
         {
           x: -100,
           opacity: 0,
-          ease: 'back.out(1.7)',
+          ease: "back.out(1.7)",
           duration: 0.6,
         },
-        '+=1.5'
+        "+=1.5"
       );
     }
 
@@ -430,7 +430,7 @@ function homeInit() {
   function menuTransitionStop() {
     const closeMenu = gsap.to(menuPage, {
       height: 0,
-      ease: 'power4.out',
+      ease: "power4.out",
       duration: 0.8,
       paused: true,
     });
@@ -444,19 +444,19 @@ function homeInit() {
 
     tlMenuTransition.pause(0).reversed(true);
 
-    gsap.to('.menu-btn-close', {
+    gsap.to(".menu-btn-close", {
       x: -100,
       y: -100,
-      clearProps: 'x, y',
+      clearProps: "x, y",
     });
 
-    btnBig.setAttribute('aria-selected', true);
-    btnSmall.setAttribute('aria-selected', false);
+    btnBig.setAttribute("aria-selected", true);
+    btnSmall.setAttribute("aria-selected", false);
   }
 
-  btnBig.addEventListener('click', menuTransitionRun);
+  btnBig.addEventListener("click", menuTransitionRun);
 
-  menuBtnClose.addEventListener('click', menuTransitionStop);
+  menuBtnClose.addEventListener("click", menuTransitionStop);
 
   // gsap.to('.st19', {
   //   repeat: -1,
@@ -479,31 +479,31 @@ function homeInit() {
 
   //ANCHOR Color game
   function colorGame() {
-    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
-    const colorBtns = document.querySelectorAll('.color-game__item');
+    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    const colorBtns = document.querySelectorAll(".color-game__item");
     const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
-    const pullover = photo.querySelectorAll('.pullover');
-    const beard = photo.querySelectorAll('.beard');
+    const pullover = photo.querySelectorAll(".pullover");
+    const beard = photo.querySelectorAll(".beard");
 
-    colorBtns.forEach(btn => {
-      btn.addEventListener('click', e => {
-        let hexColor = '#';
+    colorBtns.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        let hexColor = "#";
         const HEX_COLOR_LENGTH = 6;
         for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
           hexColor += hex[getRandomNumber()];
         }
 
-        const attr = e.target.getAttribute('data-name');
-        if (attr === 'glasses') {
+        const attr = e.target.getAttribute("data-name");
+        if (attr === "glasses") {
           glassesElements.forEach(
-            glassesEl => (glassesEl.style.fill = hexColor)
+            (glassesEl) => (glassesEl.style.fill = hexColor)
           );
-        } else if (attr === 'pullover') {
-          pullover.forEach(el => (el.style.fill = hexColor));
-        } else if (attr === 'beard') {
-          beard.forEach(el => (el.style.fill = hexColor));
-        } else if (attr === 'grayscale') {
-          document.querySelector('.page').classList.toggle('grayscale');
+        } else if (attr === "pullover") {
+          pullover.forEach((el) => (el.style.fill = hexColor));
+        } else if (attr === "beard") {
+          beard.forEach((el) => (el.style.fill = hexColor));
+        } else if (attr === "grayscale") {
+          document.querySelector(".page").classList.toggle("grayscale");
         }
       });
     });
@@ -589,8 +589,8 @@ function homeInit() {
 // });
 
 function doodlePositionResize() {
-  const photo = document.querySelector('.photo');
-  const doodle = document.querySelector('.doodle');
+  const photo = document.querySelector(".photo");
+  const doodle = document.querySelector(".doodle");
 
   doodle.style.transform = `translate(${
     window.innerWidth -
@@ -605,7 +605,7 @@ function doodlePositionResize() {
   }px)`;
 }
 
-window.addEventListener('DOMContentLoaded', addCustomCursor);
+window.addEventListener("DOMContentLoaded", addCustomCursor);
 
 // imagesLoaded(
 //   document.querySelector('.page'),
@@ -630,14 +630,14 @@ window.addEventListener('DOMContentLoaded', addCustomCursor);
 //   ease: 'power4.out',
 // });
 
-const preloadImages = (selector = 'svg') => {
-  return new Promise(resolve => {
+const preloadImages = (selector = "svg") => {
+  return new Promise((resolve) => {
     imagesLoaded(document.querySelectorAll(selector), resolve);
   });
 };
 
 preloadImages().then(() => {
-  document.body.classList.remove('loading');
+  document.body.classList.remove("loading");
 });
 
 export { homeInit, doodlePositionResize };

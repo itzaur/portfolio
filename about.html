@@ -50,7 +50,7 @@
     />
     <title>About me</title>
   </head>
-  <body id="wrapper" data-scroll="true" data-barba="wrapper">
+  <body id="wrapper" data-scroll="false" data-barba="wrapper">
     <!-- <div class="load-container">
       <div class="loading-screen"></div>
     </div> -->
@@ -60,26 +60,34 @@
       data-barba="container"
       data-barba-namespace="about-page"
     >
-      <section class="about">
+      <section class="about grid">
         <div class="about__content">
-          <h2>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            beatae ipsam deleniti sapiente quisquam inventore tenetur deserunt
-            amet natus molestiae, autem rerum consequatur corporis nam hic ad
-            facilis nostrum voluptatem. Similique officia dolor id ipsam
-            aspernatur fugiat. Delectus sint fuga aperiam ut fugiat laboriosam,
-            laudantium officiis vel dolorem iure voluptate.
-            <!-- <iframe
-              src="https://my.spline.design/myphone-66bd6b520f88df90721728dd69fdfd74/"
-              frameborder="0"
-              width="100%"
-              height="100%"
-            ></iframe> -->
-          </h2>
+          <button class="top-nav top-nav--about menu-btn-close fs-240">
+            <span>A</span>bout Me
+          </button>
+          <div class="story grid">
+            <div class="story__content"></div>
+
+            <picture class="story__photo story__photo--person">
+              <img src="img/photo-about.png" alt="photo-about" />
+            </picture>
+            <picture class="story__photo story__photo--doodle1">
+              <img src="img/svg/about-doodle-1.svg" alt="about-doodle-1" />
+            </picture>
+            <picture class="story__photo story__photo--doodle2">
+              <img src="img/svg/about-doodle-2.svg" alt="about-doodle-1" />
+            </picture>
+            <picture class="story__photo story__photo--doodle3">
+              <img src="img/svg/about-doodle-3.svg" alt="about-doodle-1" />
+            </picture>
+            <!-- <picture class="story__bg">
+              <img src="img/about-bg.png" alt="about-bg" />
+            </picture> -->
+          </div>
         </div>
       </section>
       <section class="skills grid">
-        <div class="top-nav top-nav--about fs-240"><span>S</span>kills</div>
+        <div class="top-nav top-nav--skills fs-240"><span>S</span>kills</div>
         <div class="skills__btns grid">
           <button class="skills__btn active" aria-expanded="true" data-tab="1">
             <span class="fs-240">freshman year</span>

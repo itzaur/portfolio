@@ -17,7 +17,7 @@
   border: 0;
   z-index: 20;
 
-  @include respond-to('568->') {
+  @include respond-to("568->") {
     width: 5rem;
   }
 
@@ -25,7 +25,7 @@
     width: 3.35rem;
     height: auto;
 
-    @include respond-to('568->') {
+    @include respond-to("568->") {
       width: 5.6rem;
     }
   }
@@ -36,11 +36,11 @@
   //   // display: none;
   // }
 
-  &[aria-selected='false'] {
+  &[aria-selected="false"] {
     display: none;
   }
 
-  &[aria-selected='true'] {
+  &[aria-selected="true"] {
     grid-column: 2;
     display: flex;
     align-items: flex-end;
@@ -62,7 +62,7 @@
     stroke-width: 1px;
     // z-index: 22;
     // stroke-miterlimit: 10;
-    @include respond-to('568->') {
+    @include respond-to("568->") {
       left: -3rem;
     }
 
@@ -72,7 +72,7 @@
       // outline: 2px solid lightgreen;
       overflow: visible;
 
-      @include respond-to('568->') {
+      @include respond-to("568->") {
         width: 4rem;
       }
     }
@@ -116,7 +116,7 @@
   // box-shadow: 0px 10px 3px -6px rgba(49, 2, 16, 1);
   cursor: pointer;
 
-  @include respond-to('568->') {
+  @include respond-to("568->") {
     padding: 0.3em 2em;
     // box-shadow: 6px 6px 3px -1px rgba(49, 2, 16, 1);
   }
@@ -150,12 +150,12 @@
     z-index: 1;
   }
 
-  &[data-tab='1'] span {
+  &[data-tab="1"] span {
     top: 55%;
     left: 55%;
   }
 
-  &[data-tab='2'] span {
+  &[data-tab="2"] span {
     top: 45%;
     left: 45%;
   }
@@ -165,6 +165,60 @@
       filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
         brightness(83%) contrast(127%);
       transition: filter 0.2s linear;
+    }
+  }
+}
+
+.top-nav {
+  color: #310210;
+  background-color: var(--clr-secondary);
+  border: 0.5rem solid hsl(342, 92%, 10%);
+  box-shadow: 0px 10px 3px -6px rgba(49, 2, 16, 1);
+
+  @include respond-to("568->") {
+    // padding: 0.3em 2em;
+    box-shadow: 6px 6px 3px -1px rgba(49, 2, 16, 1);
+  }
+
+  span {
+    color: #e61c52;
+    font-size: 1.5em;
+    // text-shadow: 0.025em 0.025em 0 #310210, 0.05em 0.05em 0 green,
+    //   0.075em 0.075em 0 orange, 0.1 0.1 0 black;
+
+    text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black,
+      -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
+  }
+
+  &--skills {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    padding: 0.3em 1em;
+
+    z-index: 2;
+
+    @include respond-to("568->") {
+      // padding: 0.3em 2em;
+      top: -1rem;
+      padding: 0.3em 2em;
+    }
+  }
+
+  &--about {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 0.3em 1em;
+
+    z-index: 2;
+
+    @include respond-to("568->") {
+      // padding: 0.3em 2em;
+      // top: -1rem;
+      padding: 0.3em 2em;
     }
   }
 }
