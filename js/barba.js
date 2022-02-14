@@ -1,12 +1,13 @@
-import barba from '@barba/core';
+import barba from "@barba/core";
 import {
   MagnetLogo,
-  aboutPageSkillsInit,
+  pageSkillsInit,
+  aboutAnimationInit,
   addCustomCursor,
   homeInit,
-} from './export';
-import { doodlePositionResize } from './index';
-// import { aboutPageSkillsInit } from './export';
+} from "./export";
+import { doodlePositionResize } from "./index";
+// import { pageSkillsInit } from './export';
 // import { Cursor } from './export';
 // import {
 //   // MagnetLogo,
@@ -19,7 +20,7 @@ import { doodlePositionResize } from './index';
 // import MagnetLogo from './export';
 
 function animationEnter(container) {
-  const cornerBox = container.querySelector('#wrapper__corner-box');
+  const cornerBox = container.querySelector("#wrapper__corner-box");
   // container.querySelector('#corner-content').style.background = 'red';
   const tl = gsap.timeline();
 
@@ -27,21 +28,21 @@ function animationEnter(container) {
     width: 2000,
     height: 2000,
     duration: 1,
-    clearProps: 'all',
+    clearProps: "all",
   }).from(
     container,
     {
       opacity: 0,
-      clearProps: 'all',
+      clearProps: "all",
     },
-    '<0.2'
+    "<0.2"
   );
 
   return tl;
 }
 
 function animationLeave(container, done) {
-  const cornerBox = container.querySelector('#wrapper__corner-box');
+  const cornerBox = container.querySelector("#wrapper__corner-box");
 
   const tl = gsap.timeline();
 
@@ -49,14 +50,14 @@ function animationLeave(container, done) {
     width: 2000,
     height: 2000,
     duration: 1,
-    clearProps: 'all',
+    clearProps: "all",
     onComplete: () => done(),
   }).to(
     container,
     {
       opacity: 0,
     },
-    '<0.4'
+    "<0.4"
   );
 
   return tl;
@@ -66,27 +67,27 @@ barba.init({
   debug: true,
   transitions: [
     {
-      name: 'default-transition',
+      name: "default-transition",
       once(data) {
         animationEnter(data.next.container);
-        console.log('once');
+        console.log("once");
       },
       leave(data) {
         const done = this.async();
         animationLeave(data.current.container, done);
-        console.log('leaving');
+        console.log("leaving");
       },
       enter(data) {
-        console.log('entering');
+        console.log("entering");
         animationEnter(data.next.container);
       },
     },
   ],
   views: [
     {
-      namespace: 'home-page',
+      namespace: "home-page",
       beforeEnter: () => {
-        window.addEventListener('resize', doodlePositionResize);
+        window.addEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
         homeInit();
@@ -94,12 +95,22 @@ barba.init({
       },
     },
     {
-      namespace: 'about-page',
+      namespace: "about-page",
       beforeEnter: () => {
-        window.removeEventListener('resize', doodlePositionResize);
+        window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
-        aboutPageSkillsInit();
+        aboutAnimationInit();
+        addCustomCursor();
+      },
+    },
+    {
+      namespace: "skills-page",
+      beforeEnter: () => {
+        window.removeEventListener("resize", doodlePositionResize);
+      },
+      afterEnter: () => {
+        pageSkillsInit();
         addCustomCursor();
       },
     },
