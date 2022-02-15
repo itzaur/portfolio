@@ -63,26 +63,66 @@ function pageSkillsInit() {
     getSkillsAnim();
   });
 }
-// pageSkillsInit();
+
 function aboutAnimationInit() {
+  //Slider
+  const slidesBox = document.querySelector(".story__box");
+  const slides = slidesBox.querySelectorAll(".story__photo");
+  const tabList = document.querySelector("[role='tablist']");
+  const aboutBtns = tabList.querySelectorAll("[role='tab']");
+
+  tabList.addEventListener("keydown", (e) => {
+    const KEYDOWN_LEFT = 37;
+    const KEYDOWN_RIGHT = 39;
+
+    if (e.keyCode === KEYDOWN_RIGHT) {
+      nextSlide();
+    } else if (e.keyCode === KEYDOWN_LEFT) {
+      prevSlide();
+    }
+  });
+
+  let currentSlide = 0;
+  function goToSlide(s) {
+    slides.forEach((slide) => {
+      const gap = 20;
+      slide.style.transform = `translate(calc(${100 * -s}% - ${
+        s * gap
+      }rem), 0)`;
+    });
+  }
+
+  function nextSlide() {
+    currentSlide === slides.length - 1 ? (currentSlide = 0) : currentSlide++;
+    goToSlide(currentSlide);
+  }
+
+  function prevSlide() {
+    currentSlide === 0 ? (currentSlide = slides.length - 1) : currentSlide--;
+    goToSlide(currentSlide);
+  }
+
+  function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
+    var mql = window.matchMedia(mediaQuery);
+    mql.addListener(function (e) {
+      return layoutChangedCallback(e.matches);
+    });
+    layoutChangedCallback(mql.matches);
+  }
+
   const aboutTimeline = gsap.timeline();
   aboutTimeline
     .from(".top-nav--about", {
-      // scale: 0,
       xPercent: 100,
       duration: 0.5,
       ease: "power1.out",
-      // stagger: 0.1,
-      // opacity: 0,
       delay: 1,
       clearProps: "all",
     })
     .from(".story__photo--person", {
-      // scale: 0,
       xPercent: 100,
       duration: 2,
       ease: "elastic.out(1, 0.3)",
-      // stagger: 0.1,
       opacity: 0,
       clearProps: "all",
     })
@@ -90,7 +130,6 @@ function aboutAnimationInit() {
       scale: 0,
       duration: 1.8,
       ease: "elastic.out(1, 0.2)",
-      // stagger: 0.1,
       opacity: 0,
       clearProps: "all",
     })
@@ -101,7 +140,6 @@ function aboutAnimationInit() {
         y: -100,
         duration: 1.8,
         ease: "elastic.out(1, 0.2)",
-        // stagger: 0.1,
         opacity: 0,
         clearProps: "all",
       },
@@ -114,28 +152,47 @@ function aboutAnimationInit() {
         y: -200,
         duration: 1.8,
         ease: "elastic.out(1, 0.2)",
-        // stagger: 0.1,
         opacity: 0,
         clearProps: "all",
       },
       "+=0.5"
+    )
+    .from("[data-num='0']", {
+      x: -100,
+      opacity: 0,
+      ease: Back.easeOut.config(1.7),
+    })
+    .from(
+      "[data-num='1']",
+      {
+        x: 100,
+        opacity: 0,
+        ease: Back.easeOut.config(1.7),
+        onComplete: () => {
+          installMediaQueryWatcher("(max-width: 568px)", function (matches) {
+            if (matches) {
+              goToSlide(0);
+              tabList
+                .querySelector("[data-num='1']")
+                .addEventListener("click", nextSlide);
+              tabList
+                .querySelector("[data-num='0']")
+                .addEventListener("click", prevSlide);
+
+              slides.forEach((slide) => {
+                slide.style.transition = `transform 0.3s ease`;
+              });
+            } else {
+              slides.forEach((slide) => {
+                slide.style.removeProperty("transform");
+              });
+            }
+          });
+        },
+      },
+      "<0"
     );
 }
-
-const tabList = document.querySelector("[role='tablist']");
-const aboutBtns = tabList.querySelectorAll("[role='tab']");
-
-tabList.addEventListener("keydown", (e) => {
-  console.log(e.keyCode);
-  const KEYDOWN_LEFT = 37;
-  const KEYDOWN_RIGHT = 39;
-
-  if (e.keyCode === KEYDOWN_RIGHT) {
-    document.querySelector(
-      ".story__photo--doodle2"
-    ).style.transform = `translate(-100%, 0)`;
-  }
-});
 
 // export default pageSkillsInit;
 export { pageSkillsInit, aboutAnimationInit };
