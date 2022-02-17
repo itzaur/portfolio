@@ -3,6 +3,25 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
 function pageSkillsInit() {
+  const hobbiesItems = document.querySelectorAll(".hobbie");
+  hobbiesItems.forEach((hobbie) => {
+    hobbie.addEventListener("click", addClass);
+  });
+
+  function addClass(e) {
+    e.stopPropagation();
+    removeActiveClass();
+    const target = e.currentTarget;
+    target.classList.add("active");
+  }
+
+  function removeActiveClass() {
+    const activEl = document.querySelector(".active");
+    if (activEl) {
+      activEl.classList.remove("active");
+    }
+  }
+
   const skillsBtn = document.querySelectorAll(".skills__btn");
   const skillsBtnContainer = document.querySelector(".skills__btns");
   const skillsLevel = document.querySelectorAll(".skills-level");
