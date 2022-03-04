@@ -7,24 +7,84 @@
   align-self: center;
   z-index: -1;
 
-  @include respond-to('320->') {
-    // align-items: flex-start;
-  }
+  // @include respond-to("320->") {
+  //   // align-items: flex-start;
+  // }
 
-  @include respond-to('568->') {
+  @include respond-to("568->") {
     justify-self: flex-start;
   }
 
-  @include respond-to('736->') {
+  @include respond-to("736->") {
     grid-column: 3 / span 2;
+    grid-row: 2 / span 2;
   }
 
   svg {
     width: clamp(20rem, 35vw, 48rem);
     overflow: visible;
 
-    @include respond-to('320->') {
-      width: clamp(30rem, 35vw, 48rem);
+    @include respond-to("320->") {
+      width: clamp(30rem, 35vw, 50rem);
     }
+  }
+
+  .cls-1 {
+    isolation: isolate;
+  }
+
+  .cls-2 {
+    fill: var(--clr-btn-1);
+  }
+
+  .cls-3 {
+    fill: url(#Super_Soft_Black_Vignette_2);
+  }
+
+  .cls-4 {
+    fill: var(--clr-btn-7);
+  }
+  .cls-5 {
+    mix-blend-mode: multiply;
+    opacity: 0.5;
+  }
+
+  .cls-6 {
+    fill: hsl(180, 4%, 95%);
+  }
+
+  .cls-7 {
+    fill: url(#Super_Soft_Black_Vignette_2-2);
+  }
+
+  .cls-8 {
+    fill: url(#Super_Soft_Black_Vignette_2-3);
+  }
+
+  .cls-9 {
+    fill: url(#Super_Soft_Black_Vignette_2-4);
+  }
+
+  .cls-10 {
+    fill: url(#Super_Soft_Black_Vignette_2-5);
+  }
+
+  .cls-11,
+  .cls-13 {
+    stroke: HSL(var(--primary-hs) 0%);
+    stroke-miterlimit: 10;
+  }
+
+  .cls-11 {
+    stroke-width: 8.63px;
+  }
+
+  .cls-12 {
+    fill: HSL(var(--primary-hs) 50%);
+  }
+
+  .cls-13 {
+    fill: HSL(var(--primary-hs) 100%);
+    stroke-width: 6px;
   }
 }

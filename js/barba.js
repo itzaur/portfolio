@@ -114,5 +114,16 @@ barba.init({
         addCustomCursor();
       },
     },
+    {
+      namespace: "test-page",
+      beforeEnter: () => {
+        // window.removeEventListener("resize", doodlePositionResize);
+      },
+      afterEnter: () => {
+        // homeInit();
+        // addCustomCursor();
+        console.log("test afterEnter");
+      },
+    },
   ],
 });

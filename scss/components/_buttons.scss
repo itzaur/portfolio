@@ -25,6 +25,8 @@
     width: 3.35rem;
     height: auto;
 
+    box-shadow: none;
+
     @include respond-to("568->") {
       width: 5.6rem;
     }
@@ -88,18 +90,29 @@
   .cls-1 {
     fill: var(--clr-btn-1);
   }
+
   .cls-2 {
     fill: var(--clr-btn-2);
   }
+
   .cls-3 {
     fill: var(--clr-btn-3);
   }
+
   .cls-4 {
-    fill: hsl(58, 93%, 55%);
+    fill: var(--clr-btn-4);
   }
 
   .cls-5 {
-    fill: var(--clr-btn-4);
+    fill: var(--clr-btn-5);
+  }
+
+  .cls-6 {
+    fill: var(--clr-btn-6);
+  }
+
+  .cls-7 {
+    fill: var(--clr-btn-7);
   }
 }
 

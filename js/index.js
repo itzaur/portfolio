@@ -73,7 +73,8 @@ function homeInit() {
       x: -25,
       y: 8.5,
       ease: "none",
-      opacity: 0.8,
+      // opacity: 0.8,
+      opacity: 1,
     },
     {
       x: 55,
@@ -86,7 +87,7 @@ function homeInit() {
   );
 
   timelineGlasses.to(".glass rect", {
-    keyframes: [{ height: 80 }, { height: 22, x: -19, y: 13, opacity: 1 }],
+    keyframes: [{ height: 80 }, { height: 22, x: -336, y: 160, opacity: 1 }],
     duration: 0.5,
     ease: "none",
     repeat: -1,
@@ -100,6 +101,12 @@ function homeInit() {
   const textSpan2 = document.querySelector(".span2");
   const textSpan3 = document.querySelector(".span3");
 
+  const doodleMobile = document.querySelector(".doodle-mobile");
+  const textSpan0Mobile = doodleMobile.querySelector(".span0");
+  const textSpan1Mobile = doodleMobile.querySelector(".span1");
+  const textSpan2Mobile = doodleMobile.querySelector(".span2");
+  const textSpan3Mobile = doodleMobile.querySelector(".span3");
+
   const text = {
     string0: "My name",
     string1: "is Pavel!",
@@ -111,10 +118,16 @@ function homeInit() {
   const str2 = text.string2.split("");
   const str3 = text.string3.split("");
 
+  const str0Mobile = text.string0.split("");
+  const str1Mobile = text.string1.split("");
+  const str2Mobile = text.string2.split("");
+  const str3Mobile = text.string3.split("");
+
   //Doodle animation
   function animateLetters1() {
     if (str0.length > 0) {
       textSpan0.innerHTML += str0.shift();
+      textSpan0Mobile.innerHTML += str0Mobile.shift();
     } else {
       clearTimeout(animateLetters1);
     }
@@ -125,6 +138,7 @@ function homeInit() {
   function animateLetters2() {
     if (str1.length > 0) {
       textSpan1.innerHTML += str1.shift();
+      textSpan1Mobile.innerHTML += str1Mobile.shift();
     } else {
       clearTimeout(animateLetters2);
     }
@@ -135,6 +149,7 @@ function homeInit() {
   function animateLetters3() {
     if (str2.length > 0) {
       textSpan2.innerHTML += str2.shift();
+      textSpan2Mobile.innerHTML += str2Mobile.shift();
     } else {
       clearTimeout(animateLetters3);
     }
@@ -145,12 +160,14 @@ function homeInit() {
   function animateLetters4() {
     if (str3.length > 0) {
       textSpan3.innerHTML += str3.shift();
+      textSpan3Mobile.innerHTML += str3Mobile.shift();
     } else {
       clearTimeout(animateLetters4);
     }
 
     setTimeout(animateLetters4, 100);
   }
+
   setTimeout(animateLetters1, 5500);
   setTimeout(animateLetters2, 6200);
   setTimeout(animateLetters3, 7200);
@@ -270,11 +287,11 @@ function homeInit() {
       .from(
         helloDoodle,
         0.6,
-        { y: -100, ease: "bounce.out", opacity: 0, stagger: 0.03 },
+        { y: -300, ease: "bounce.out", opacity: 0, stagger: 0.03 },
         "<1.3"
       )
       .to(
-        ".doodle",
+        [".doodle", ".doodle-mobile"],
         {
           opacity: 1,
           ease: "back.out(1.7)",
@@ -321,7 +338,7 @@ function homeInit() {
   const menuDoodle = document.querySelectorAll(
     ".menu__box path, .menu__box polygon"
   );
-  const menuNavDoodle = document.querySelector(".menu__img svg");
+  const menuNavDoodle = document.querySelector(".menu__img img");
   const menuBtnClose = document.querySelector(".menu-btn-close");
   const menuLinks = document.querySelectorAll(".nav__item");
   let isOpen = false;
@@ -329,6 +346,7 @@ function homeInit() {
   let mediaQueryTransformY = 5;
   let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
   let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
+
   function checkMediaQuery() {
     if (window.matchMedia("(max-width: 568px)").matches) {
       menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
@@ -343,52 +361,57 @@ function homeInit() {
     paused: true,
   });
 
-  tlMenuTransition
-    .to(menuPage, {
-      height: "calc(100vh - var(--padding-container) * 2)",
-      ease: "bounce.out",
-    })
-    .from(
-      menuDoodle,
-      {
-        y: -100,
+  function getMenuAnimation() {
+    tlMenuTransition
+      .to(menuPage, {
+        height: "calc(100vh - var(--padding-container) * 2)",
+        // height: "100vh",
         ease: "bounce.out",
-        opacity: 0,
-        duration: 0.3,
-        stagger: { each: 0.001, from: "random" },
-      },
-      "<0.1"
-    )
-    .from(
-      menuNavDoodle,
-      {
-        opacity: 0,
-        ease: "elastic.out(1, 0.3)",
-        duration: 1.2,
-        transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
-      },
-      "<0.3"
-    )
-    .from(
-      menuLinks,
-      {
-        y: -60,
-        opacity: 0,
-        stagger: 0.2,
-        ease: "back.out(1.7)",
-      },
-      "<0.6"
-    )
-    .from(
-      ".menu__star",
-      {
-        opacity: 0,
-        scale: 0,
-        stagger: 0.1,
-        ease: "elastic.out(1, 0.3)",
-      },
-      "-=1"
-    );
+      })
+      .from(
+        menuDoodle,
+        {
+          y: -100,
+          ease: "bounce.out",
+          opacity: 0,
+          duration: 0.3,
+          stagger: { each: 0.001, from: "random" },
+        },
+        "<0.1"
+      )
+      .from(
+        menuNavDoodle,
+        {
+          opacity: 0,
+          ease: "elastic.out(1, 0.3)",
+          duration: 1.2,
+          transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
+        },
+        "<0.3"
+      )
+      .from(
+        menuLinks,
+        {
+          y: -60,
+          opacity: 0,
+          stagger: 0.2,
+          ease: "back.out(1.7)",
+        },
+        "<0.6"
+      )
+      .from(
+        ".menu__star",
+        {
+          opacity: 0,
+          scale: 0,
+          stagger: 0.1,
+          ease: "elastic.out(1, 0.3)",
+        },
+        "-=1"
+      );
+  }
+
+  getMenuAnimation();
 
   function menuTransitionRun() {
     if (window.matchMedia("(max-width: 568px)").matches) {
@@ -455,9 +478,8 @@ function homeInit() {
   }
 
   btnBig.addEventListener("click", menuTransitionRun);
-
-  menuBtnClose.addEventListener("click", menuTransitionStop);
-
+  // menuBtnClose.addEventListener("click", menuTransitionStop);
+  menuPage.addEventListener("click", menuTransitionStop);
   // gsap.to('.st19', {
   //   repeat: -1,
   //   duration: 2,
