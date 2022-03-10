@@ -3,7 +3,7 @@
   grid-column: 2 / span 6;
   grid-row: 2 / span 4;
   align-self: end;
-  transform: translate(3rem, 5rem);
+  transform: translate(2rem, 4rem);
   // transition: transform 0.2s linear;
   // transform: translate(0, 0);
   z-index: -1;
@@ -20,7 +20,7 @@
 
   @include respond-to("320->") {
     grid-column: 3 / span 6;
-    transform: translate(5rem, 9rem);
+    transform: translate(5rem, 5rem);
 
     & > * {
       min-width: 40rem;
@@ -30,7 +30,7 @@
   @include respond-to("568->") {
     // grid-column: 3 / span 5;
     // grid-row: 2 / span 4;
-    transform: translate(16rem, 15rem);
+    transform: translate(13rem, 7rem);
 
     & > * {
       width: auto;
@@ -42,13 +42,13 @@
     // grid-row: 5 / span 1;
     // grid-row: 1 / span 5;
     // transform: translateY(15rem);
-    transform: translate(9rem, 18rem);
+    transform: translate(9rem, 7rem);
   }
 
   @include respond-to("1024->") {
     grid-column: 5 / span 4;
     // grid-row: 1 / span 5;
-    transform: translate(0, 18rem);
+    transform: translate(0, 9.5rem);
   }
 }
 

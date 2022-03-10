@@ -371,7 +371,7 @@ function homeInit() {
       .from(
         menuDoodle,
         {
-          y: -100,
+          y: -600,
           ease: "bounce.out",
           opacity: 0,
           duration: 0.3,
@@ -379,6 +379,11 @@ function homeInit() {
         },
         "<0.1"
       )
+      .from(".menu__box img", {
+        autoAlpha: 0,
+        scale: 0,
+        ease: "elastic.out(1, 0.3)",
+      })
       .from(
         menuNavDoodle,
         {
@@ -410,8 +415,6 @@ function homeInit() {
         "-=1"
       );
   }
-
-  getMenuAnimation();
 
   function menuTransitionRun() {
     if (window.matchMedia("(max-width: 568px)").matches) {
@@ -477,7 +480,9 @@ function homeInit() {
     btnSmall.setAttribute("aria-selected", false);
   }
 
+  getMenuAnimation();
   btnBig.addEventListener("click", menuTransitionRun);
+  // btnBig.addEventListener("click", getMenuAnimation);
   // menuBtnClose.addEventListener("click", menuTransitionStop);
   menuPage.addEventListener("click", menuTransitionStop);
   // gsap.to('.st19', {
