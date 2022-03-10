@@ -58,7 +58,7 @@ body {
 .loading {
   &::before,
   &:after {
-    content: '';
+    content: "";
     position: fixed;
     z-index: 9999;
   }
@@ -79,7 +79,7 @@ body {
     // letter-spacing: 3px;
     // text-transform: uppercase;
 
-    background: var(--clr-menu);
+    background: var(--clr-footer);
     // transform: translate(-50%, -50%);
 
     width: 6rem;

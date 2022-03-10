@@ -3,6 +3,29 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
 function pageSkillsInit() {
+  const hobbiesItems = document.querySelectorAll(".hobbie");
+
+  hobbiesItems.forEach((hobbie) => {
+    hobbie.addEventListener("click", addClass);
+  });
+
+  function addClass(e) {
+    e.stopPropagation();
+    removeActiveClass();
+    const target = e.currentTarget;
+    target.classList.add("active");
+    // if (target.classList.contains("active")) {
+    //   addHobbiesParallax();
+    // }
+  }
+
+  function removeActiveClass() {
+    const activEl = document.querySelector(".active");
+    if (activEl) {
+      activEl.classList.remove("active");
+    }
+  }
+
   const skillsBtn = document.querySelectorAll(".skills__btn");
   const skillsBtnContainer = document.querySelector(".skills__btns");
   const skillsLevel = document.querySelectorAll(".skills-level");
@@ -61,7 +84,158 @@ function pageSkillsInit() {
     selectSkillsLevel.setAttribute("aria-hidden", false);
 
     getSkillsAnim();
+
+    //Skills btns animation
+    if (clicked.getAttribute("aria-expanded") === "true") {
+      gsap.fromTo(
+        clicked,
+        {
+          scale: 0,
+        },
+        {
+          scale: 1,
+          ease: "elastic.out(1, 0.5)",
+          clearProps: "transform",
+        }
+      );
+    }
   });
+
+  function addHobbiesParallax() {
+    const gymItem = document.querySelector(".hobbie--1");
+    const gymDots = gymItem.querySelector(".hobbie__img:nth-child(2) img");
+    const gymElements = gymItem.querySelector(".hobbie__img:nth-child(3) img");
+
+    gymItem.addEventListener("mousemove", addParallax);
+    gymItem.addEventListener("mouseout", removeParallax);
+    function addParallax(e) {
+      const x = e.pageX;
+      const y = e.pageY;
+      const coords = gymElements.getBoundingClientRect();
+      const gymX = coords.left + gymElements.offsetWidth / 2;
+      const gymY = coords.top + gymElements.offsetHeight / 2;
+      const gymAngleX = (gymY - y) / 25;
+      const gymAngleY = (gymX - x) / -25;
+
+      if (gymItem.classList.contains("active")) {
+        gymDots.style.transform = `translateX(${-gymAngleY}px) translateY(${-gymAngleX}px)`;
+        gymDots.style.transition = `none`;
+
+        gymElements.style.transform = `translateX(${gymAngleY}px) translateY(${gymAngleX}px)`;
+        gymElements.style.transition = `none`;
+      }
+    }
+
+    function removeParallax() {
+      gymDots.style.transform = `translateX(0px) translateY(0px)`;
+      gymDots.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+
+      gymElements.style.transform = `translateX(0px) translateY(0px)`;
+      gymElements.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+    }
+
+    const cassetteItem = document.querySelector(".hobbie--2");
+    const cassette = cassetteItem.querySelector(".hobbie__img:first-child img");
+    const cassetteDots = cassetteItem.querySelector(
+      ".hobbie__img:nth-child(2) img"
+    );
+    const cassetteElements = cassetteItem.querySelector(
+      ".hobbie__img:nth-child(3) img"
+    );
+
+    cassetteItem.addEventListener("mousemove", (e) => {
+      let state = {
+        mouseX: 0,
+        mouseY: 0,
+        height: cassetteItem.clientHeight,
+        width: cassetteItem.clientWidth,
+      };
+      const x = e.pageX;
+      const y = e.pageY;
+
+      state.mouseX = x - cassetteItem.offsetLeft - state.width / 2;
+      state.mouseY = y - cassetteItem.offsetTop - state.height / 2;
+      const angleX = (state.mouseX / state.width) * -40;
+      const angleY = (state.mouseY / state.height) * -40;
+      const posX = (state.mouseX / state.width) * -40;
+      const posY = (state.mouseY / state.height) * -40;
+
+      if (cassetteItem.classList.contains("active")) {
+        cassette.style.transform = `translateX(${posX}px) translateY(${posY}px)`;
+        cassette.style.transition = `none`;
+
+        cassetteDots.style.transform = `rotateX(${angleY}deg) rotateY(${angleX}deg) translate(-50%, -50%)`;
+        cassetteDots.style.transition = `none`;
+
+        cassetteElements.style.transform = `translateX(${-posX}px) translateY(${-posY}px)`;
+        cassetteElements.style.transition = `none`;
+      }
+    });
+
+    cassetteItem.addEventListener("mouseout", () => {
+      cassette.style.transform = `rotateY(0deg) rotateX(0deg) `;
+      cassette.style.transform = `translateX(0px) translateY(0px)`;
+      cassette.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+
+      cassetteDots.style.transform = `rotateX(0deg) rotateY(0deg) translate(-50%, -50%)`;
+      cassetteDots.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+
+      cassetteElements.style.transform = `rotateY(0deg) rotateX(0deg) `;
+      cassetteElements.style.transform = `translateX(0px) translateY(0px)`;
+      cassetteElements.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+    });
+  }
+  addHobbiesParallax();
+
+  //Eye move
+  const catItem = document.querySelector(".hobbie--3");
+  const cat = document.getElementById("cat");
+  const eyeLeftPupil = cat.querySelector(".eye-left-pupil");
+  const eyeRightPupil = cat.querySelector(".eye-right-pupil");
+
+  const eyeLeft = cat.querySelector(".eye-left");
+  const eyeLeftHighlight = cat.querySelector(".eye-left-highlight");
+  const eyeRightHighlight = cat.querySelector(".eye-right-highlight");
+
+  const eyeWidth = eyeLeft.getBoundingClientRect().width;
+  const eyeHeight = eyeLeft.getBoundingClientRect().height;
+
+  const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
+  const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
+  const xMove = (eyeWidth - pupilWidth) / 2;
+  const yMove = (eyeHeight - pupilHeight) / 2;
+
+  const eyeCoordsX = -698;
+  const eyeCoordsY = -340.1;
+
+  gsap.set(eyeLeftPupil, {
+    x: eyeCoordsX,
+    y: eyeCoordsY,
+  });
+
+  catItem.addEventListener("mousemove", moveEyes);
+  function moveEyes(e) {
+    const mouseXPercent = e.clientX / catItem.clientWidth;
+    const mouseYPercent = e.clientY / catItem.clientHeight;
+    const posX = ((mouseXPercent * 2 - 1) * xMove) / 0.8;
+    const posY = ((mouseYPercent * 2 - 1) * yMove) / 0.8;
+
+    if (catItem.classList.contains("active")) {
+      eyeLeftPupil.style.transform = `translate(${eyeCoordsX + posX}px, ${
+        eyeCoordsY + posY + 2
+      }px)`;
+      eyeRightPupil.style.transform = `translate(${eyeCoordsX + posX}px, ${
+        eyeCoordsY + posY + 2
+      }px)`;
+
+      eyeLeftHighlight.style.transform = `translate(${
+        eyeCoordsX + posX + 2
+      }px, ${eyeCoordsY + posY + 2}px)`;
+      eyeRightHighlight.style.transform = `translate(${
+        eyeCoordsX + posX + 4
+      }px, ${eyeCoordsY + posY}px)`;
+    }
+  }
 }
 
 function aboutAnimationInit() {
@@ -126,13 +300,17 @@ function aboutAnimationInit() {
       opacity: 0,
       clearProps: "all",
     })
-    .from(".story__photo--doodle1", {
-      scale: 0,
-      duration: 1.8,
-      ease: "elastic.out(1, 0.2)",
-      opacity: 0,
-      clearProps: "all",
-    })
+    .from(
+      ".story__photo--doodle1",
+      {
+        scale: 0,
+        duration: 1.8,
+        ease: "elastic.out(1, 0.2)",
+        opacity: 0,
+        clearProps: "all",
+      },
+      "<1.2"
+    )
     .from(
       ".story__photo--doodle2",
       {
@@ -192,6 +370,24 @@ function aboutAnimationInit() {
       },
       "<0"
     );
+
+  // const cc = document.querySelectorAll("#corner-button svg .cls-3");
+  // console.log(cc);
+  // gsap.fromTo(
+  //   "#corner-button svg .cls-3, #corner-button svg .cls-2, #corner-button svg .cls-1, #corner-button svg .cls-4",
+  //   {
+  //     rotation: 0,
+  //     transformOrigin: "center center",
+  //     // opacity: 0,
+  //   },
+  //   {
+  //     rotation: 360,
+  //     opacity: 1,
+  //     ease: "none",
+  //     duration: 30,
+  //     transformOrigin: "center center",
+  //   }
+  // );
 }
 
 // export default pageSkillsInit;

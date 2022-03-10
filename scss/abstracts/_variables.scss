@@ -1,21 +1,30 @@
 :root {
   //colors
-  --clr-primary: hsl(202, 65%, 51%);
-  --clr-secondary: hsl(54, 100%, 50%);
-  --clr-footer: #ff6200;
-  --clr-menu: hsl(271, 76%, 53%);
+
+  --clr-primary: hsl(193, 43%, 80%);
+  --clr-secondary: hsl(50, 85%, 79%);
+  --clr-orange: hsl(15, 83%, 63%);
+  // hsl(47, 78%, 87%);
+  // hsl(202, 65%, 51%);
+  // hsl(54, 100%, 50%);
+  // hsl(15, 83%, 63%);
+  --clr-footer: hsl(227, 21%, 39%);
+  --clr-menu: #8a2ce2;
   --clr-white: 0 0% 100%;
   --clr-black: hsl(0, 0%, 0%);
   --primary-hs: 0 0%;
 
   --nn: hsl(0, 0%, 100%);
 
-  --clr-btn-1: hsl(205, 85%, 40%);
-  --clr-btn-2: hsl(40, 5%, 12%);
-  --clr-btn-3: hsl(344, 85%, 53%);
-  --clr-btn-4: hsl(52, 61%, 90%);
+  --clr-btn-1: hsl(227, 21%, 39%); //st0
+  --clr-btn-2: hsl(40, 5%, 12%); //st1
+  --clr-btn-3: hsl(193, 41%, 80%); //st2
+  --clr-btn-4: hsl(190, 24%, 72%); //st4
+  --clr-btn-5: hsl(206, 77%, 42%);
+  --clr-btn-6: hsl(52, 61%, 90%); //st5
+  --clr-btn-7: hsl(48, 89%, 79%); //st3
 
-  --clr-logo-1: hsl(274, 53%, 37%);
+  // --clr-logo-1: hsl(274, 53%, 37%);
 
   --cursor-stroke: none;
   --cursor-fill: hsl(225, 86%, 46%);
@@ -48,6 +57,7 @@
 
   @media (max-width: 35.5rem) {
     // --fs-240: 2rem;
-    --fs-180: clamp(1rem, 3vw, 1.8rem);
+    --fs-180: clamp(1rem, 2vw, 1.8rem);
+    --fs-160: clamp(1rem, 2vw, 1.4rem);
   }
 }

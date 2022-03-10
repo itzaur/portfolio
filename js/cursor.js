@@ -26,14 +26,14 @@ const getRandomFloat = function (min, max) {
   return (Math.random() * (max - min) + min).toFixed(2);
 };
 
-const getMousePosition = e => {
+const getMousePosition = (e) => {
   return {
     x: e.clientX,
     y: e.clientY,
   };
 };
 
-window.addEventListener('mousemove', function (ev) {
+window.addEventListener("mousemove", function (ev) {
   mouse = getMousePosition(ev);
 });
 
@@ -56,17 +56,17 @@ class Cursor {
       gsap.to(this.DOM.item, {
         duration: 0.85,
         opacity: 1,
-        ease: 'power3.easeOut',
+        ease: "power3.easeOut",
       });
       requestAnimationFrame(() => this.render());
-      window.removeEventListener('mousemove', this.onMouseMove);
+      window.removeEventListener("mousemove", this.onMouseMove);
     };
-    window.addEventListener('mousemove', this.onMouseMove);
+    window.addEventListener("mousemove", this.onMouseMove);
   }
 
   render() {
-    this.renderStyles['tx'].current = mouse.x - this.bounds.width / 2;
-    this.renderStyles['ty'].current = mouse.y - this.bounds.height / 2;
+    this.renderStyles["tx"].current = mouse.x - this.bounds.width / 2;
+    this.renderStyles["ty"].current = mouse.y - this.bounds.height / 2;
 
     for (const key in this.renderStyles) {
       this.renderStyles[key].previous = lerp(
@@ -77,20 +77,20 @@ class Cursor {
       // console.log(this.renderStyles[key].previous);
     }
 
-    this.DOM.item.style.transform = `translate(${this.renderStyles['tx'].previous}px, ${this.renderStyles['ty'].previous}px) scale(${this.renderStyles['scale'].previous})`;
-    this.DOM.item.style.opacity = this.renderStyles['opacity'].previous;
+    this.DOM.item.style.transform = `translate(${this.renderStyles["tx"].previous}px, ${this.renderStyles["ty"].previous}px) scale(${this.renderStyles["scale"].previous})`;
+    this.DOM.item.style.opacity = this.renderStyles["opacity"].previous;
 
     requestAnimationFrame(() => this.render());
   }
 
   enter() {
-    this.renderStyles['scale'].current = 2.5;
-    this.renderStyles['opacity'].current = 0.5;
+    this.renderStyles["scale"].current = 2.5;
+    this.renderStyles["opacity"].current = 0.5;
   }
 
   leave() {
-    this.renderStyles['scale'].current = 1;
-    this.renderStyles['opacity'].current = 1;
+    this.renderStyles["scale"].current = 1;
+    this.renderStyles["opacity"].current = 1;
   }
 }
 
@@ -119,8 +119,8 @@ class MagnetLogo {
 
   initEvent() {
     this.onResize = () => this.calculateSizePosition();
-    window.addEventListener('resize', this.onResize);
-    window.addEventListener('load', this.onResize);
+    window.addEventListener("resize", this.onResize);
+    window.addEventListener("load", this.onResize);
   }
 
   render() {
@@ -149,8 +149,8 @@ class MagnetLogo {
       this.leave();
     }
 
-    this.renderStyles['tx'].current = x;
-    this.renderStyles['ty'].current = y;
+    this.renderStyles["tx"].current = x;
+    this.renderStyles["ty"].current = y;
 
     for (const key in this.renderStyles) {
       this.renderStyles[key].previous = lerp(
@@ -160,44 +160,44 @@ class MagnetLogo {
       );
     }
 
-    this.DOM.item.style.transform = `translate(${this.renderStyles['tx'].previous}px, ${this.renderStyles['ty'].previous}px) scale(${this.renderStyles['scale'].previous})`;
+    this.DOM.item.style.transform = `translate(${this.renderStyles["tx"].previous}px, ${this.renderStyles["ty"].previous}px) scale(${this.renderStyles["scale"].previous})`;
 
     requestAnimationFrame(() => this.render());
   }
 
   enter() {
     this.state.hover = true;
-    this.renderStyles['scale'].current = 1.3;
+    this.renderStyles["scale"].current = 1.3;
     gsap.killTweensOf(this.DOM.item);
     gsap.to(this.DOM.item, {
       duration: 4,
       startAt: { yPercent: 75 },
       yPercent: 0,
-      ease: 'power3.easeOut',
+      ease: "power3.easeOut",
     });
   }
 
   leave() {
     this.state.hover = false;
-    this.renderStyles['scale'].current = 1;
+    this.renderStyles["scale"].current = 1;
 
     // gsap.killTweensOf(this.DOM.item);
 
     gsap.to(this.DOM.item, {
-      ease: 'power3.easeOut',
+      ease: "power3.easeOut",
       yPercent: -75,
     });
   }
 }
 
 function addCustomCursor() {
-  const cursor = new Cursor(document.querySelector('.cursor'));
+  const cursor = new Cursor(document.querySelector(".cursor"));
   // const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
   document
-    .querySelectorAll('button, .menu-btn-close, .logo, .color-game__item')
-    .forEach(el => {
-      el.addEventListener('mouseenter', () => cursor.enter());
-      el.addEventListener('mouseleave', () => cursor.leave());
+    .querySelectorAll("button, .menu-btn-close, .logo, .color-game__item")
+    .forEach((el) => {
+      el.addEventListener("mouseenter", () => cursor.enter());
+      el.addEventListener("mouseleave", () => cursor.leave());
     });
 
   // document.querySelectorAll('.logo').forEach(el => {

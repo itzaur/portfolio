@@ -17,7 +17,7 @@
     clip-path: polygon(0% 0%, 100% 0%, 100% 40.5%, 0% 45%);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       top: 1px;
@@ -26,33 +26,32 @@
       height: 99.2%;
       clip-path: polygon(0% 0%, 99.8% 0%, 99.8% 40.5%, 0% 45%);
 
-      background-color: var(--clr-primary);
-      background-image: url('../img/svg/blue_rays-dark.svg'),
-        url('../img/svg/blue_dots.svg'), url('../img/svg/blue_rays.svg');
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      background-position: top -12rem left -12rem, left -1rem top -8rem,
-        left 20rem top -15rem;
-      background-size: 150%, 100%, 120%;
-      background-attachment: fixed;
+      background-color: var(--clr-orange);
+      // background-image: url('../img/svg/blue_rays-dark.svg'),
+      //   url('../img/svg/blue_dots.svg'), url('../img/svg/blue_rays.svg');
+      // background-repeat: no-repeat, no-repeat, no-repeat;
+      // background-position: top -12rem left -12rem, left -1rem top -8rem,
+      //   left 20rem top -15rem;
+      // background-size: 150%, 100%, 120%;
+      // background-attachment: fixed;
     }
 
-    @media (max-width: 20em) {
-      &::before {
-        background-position: top -6rem center, top 10% center, left -5rem center;
-        // background-size: 200% 200% 200%;
-        background-size: cover, 100%, cover;
-      }
-    }
+    // @media (max-width: 20em) {
+    //   &::before {
+    //     background-position: top -6rem center, top 10% center, left -5rem center;
+    //     background-size: cover, 100%, cover;
+    //   }
+    // }
 
-    @include respond-to('320->') {
-      &::before {
-        background-position: top -10rem center, top center,
-          left -15rem top -20rem;
-        background-size: 200%, 100%, 200%;
-      }
-    }
+    // @include respond-to("320->") {
+    //   &::before {
+    //     background-position: top -10rem center, top center,
+    //       left -15rem top -20rem;
+    //     background-size: 200%, 100%, 200%;
+    //   }
+    // }
 
-    @include respond-to('568->') {
+    @include respond-to("568->") {
       clip-path: polygon(0% 0%, 49.5% 0%, 41.5% 69.4%, 0% 60%);
 
       &::before {
@@ -60,19 +59,19 @@
         height: 99.6%;
         clip-path: polygon(0% 0%, 49.5% 0%, 41.5% 69.4%, 0% 60%);
 
-        background-position: top -12rem left -25rem, left -4rem top 2rem,
-          left -20rem top -20rem;
-        background-size: cover, 70%, cover;
+        // background-position: top -12rem left -25rem, left -4rem top 2rem,
+        //   left -20rem top -20rem;
+        // background-size: cover, 70%, cover;
       }
     }
 
-    @include respond-to('1024->') {
-      &::before {
-        background-position: top -20rem left -27rem, left -2rem top 0rem,
-          left -30rem top -25rem;
-        background-size: cover, 50%, cover;
-      }
-    }
+    // @include respond-to("1024->") {
+    //   &::before {
+    //     background-position: top -20rem left -27rem, left -2rem top 0rem,
+    //       left -30rem top -25rem;
+    //     background-size: cover, 50%, cover;
+    //   }
+    // }
   }
 
   &__bg--2 {
@@ -81,7 +80,7 @@
     clip-path: polygon(0% 46%, 100% 41.5%, 100% 83%, 0% 67.8%);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       top: 1px;
@@ -91,8 +90,8 @@
       clip-path: polygon(0% 46.2%, 99.8% 41.7%, 99.8% 83%, 0% 67.8%);
 
       background-color: var(--clr-secondary);
-      background-image: url('../img/svg/yellow_rays.svg'),
-        url('../../img/svg/yellow_dots.svg');
+      background-image: url("../img/svg/yellow_rays.svg"),
+        url("../../img/svg/yellow_dots.svg");
       background-repeat: no-repeat, no-repeat;
       background-size: 200%, cover;
       background-position: left -15rem top 14rem;
@@ -106,13 +105,13 @@
       }
     }
 
-    @include respond-to('320->') {
-      &::before {
-        background-position: center top 5rem;
-      }
-    }
+    // @include respond-to("320->") {
+    //   &::before {
+    //     background-position: center top 5rem;
+    //   }
+    // }
 
-    @include respond-to('568->') {
+    @include respond-to("568->") {
       clip-path: polygon(50% 0%, 100% 0%, 100% 83.2%, 42% 69.6%);
 
       &::before {
@@ -124,16 +123,16 @@
       }
     }
 
-    @include respond-to('736->') {
+    @include respond-to("736->") {
       &::before {
         background-position: left 20rem top -10rem;
       }
     }
 
-    @include respond-to('1024->') {
+    @include respond-to("1024->") {
       &::before {
         clip-path: polygon(50.1% 0%, 100% 0%, 100% 83.2%, 42.1% 69.6%);
-        background-position: left 25rem top -30rem;
+        // background-position: left 25rem top -30rem;
       }
     }
   }
@@ -145,7 +144,7 @@
     clip-path: polygon(0% 69%, 100% 84%, 100% 100%, 0% 100%);
 
     &::before {
-      content: '';
+      content: "";
       position: absolute;
       display: block;
       top: 1px;
@@ -155,20 +154,20 @@
       clip-path: polygon(0% 69.2%, 99.9% 84.2%, 99.9% 100%, 0% 100%);
 
       background-color: var(--clr-footer);
-      background-image: url('../img/svg/orange_dots.svg');
+      background-image: url("../img/svg/dots_light_blue.svg");
       background-repeat: no-repeat;
       background-position: left -2rem bottom -5rem;
       background-size: 80%;
     }
 
-    @include respond-to('320->') {
+    @include respond-to("320->") {
       &::before {
         background-position: left -7rem bottom -6rem;
         background-size: 70%;
       }
     }
 
-    @include respond-to('568->') {
+    @include respond-to("568->") {
       clip-path: polygon(0% 61%, 100% 84%, 100% 100%, 0% 100%);
 
       &::before {
@@ -180,13 +179,13 @@
       }
     }
 
-    @include respond-to('736->') {
+    @include respond-to("736->") {
       &::before {
         background-size: 40%;
       }
     }
 
-    @include respond-to('1024->') {
+    @include respond-to("1024->") {
       &::before {
         width: 99.85%;
       }
@@ -236,7 +235,7 @@
   //   );
   // }
 
-  @include respond-to('320->') {
+  @include respond-to("320->") {
     border-image: linear-gradient(
         to bottom,
         transparent 41%,
@@ -246,7 +245,7 @@
       5;
   }
 
-  @include respond-to('568->') {
+  @include respond-to("568->") {
     grid-template-rows: 8rem repeat(4, 1fr);
     padding-block: 2rem 0;
     border-image: linear-gradient(
@@ -258,7 +257,7 @@
       5;
   }
 
-  @include respond-to('736->') {
+  @include respond-to("736->") {
     border-right: 0;
   }
 }

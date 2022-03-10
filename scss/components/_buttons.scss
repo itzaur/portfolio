@@ -25,6 +25,8 @@
     width: 3.35rem;
     height: auto;
 
+    box-shadow: none;
+
     @include respond-to("568->") {
       width: 5.6rem;
     }
@@ -88,18 +90,29 @@
   .cls-1 {
     fill: var(--clr-btn-1);
   }
+
   .cls-2 {
     fill: var(--clr-btn-2);
   }
+
   .cls-3 {
     fill: var(--clr-btn-3);
   }
+
   .cls-4 {
-    fill: hsl(58, 93%, 55%);
+    fill: var(--clr-btn-4);
   }
 
   .cls-5 {
-    fill: var(--clr-btn-4);
+    fill: var(--clr-btn-5);
+  }
+
+  .cls-6 {
+    fill: var(--clr-btn-6);
+  }
+
+  .cls-7 {
+    fill: var(--clr-btn-7);
   }
 }
 
@@ -145,9 +158,44 @@
 
   transition: background-color 0.4s linear;
 
+  &:nth-child(1) {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  &:nth-child(2) {
+    grid-column: 4;
+    grid-row: 2;
+  }
+
+  &:nth-child(3) {
+    grid-column: 3;
+    grid-row: 2;
+  }
+
+  @include respond-to("568->") {
+    &:nth-child(1) {
+      transform: translate(-3rem, 0);
+    }
+
+    &:nth-child(2) {
+      width: 96.28%;
+    }
+
+    &:nth-child(3) {
+      width: 90.58%;
+      transform: translate(-2rem, -1.5rem);
+    }
+  }
+
   span {
     @include abs-center;
+    line-height: 1.1;
     z-index: 1;
+
+    @include respond-to("568->") {
+      line-height: 1.5;
+    }
   }
 
   &[data-tab="1"] span {
@@ -162,26 +210,28 @@
 
   &.active {
     img {
-      filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
-        brightness(83%) contrast(127%);
+      // filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
+      //   brightness(83%) contrast(127%);
+      filter: invert(19%) sepia(50%) saturate(281%) hue-rotate(359deg)
+        brightness(104%) contrast(94%);
       transition: filter 0.2s linear;
     }
   }
 }
 
 .top-nav {
-  color: #310210;
-  background-color: var(--clr-secondary);
-  border: 0.5rem solid hsl(342, 92%, 10%);
-  box-shadow: 0px 10px 3px -6px rgba(49, 2, 16, 1);
+  color: var(--clr-btn-2);
+  background-color: var(--clr-btn-7);
+  border: 0.5rem solid var(--clr-btn-2);
+  box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
 
   @include respond-to("568->") {
     // padding: 0.3em 2em;
-    box-shadow: 6px 6px 3px -1px rgba(49, 2, 16, 1);
+    box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
   }
 
   span {
-    color: #e61c52;
+    color: var(--clr-orange);
     font-size: 1.5em;
     // text-shadow: 0.025em 0.025em 0 #310210, 0.05em 0.05em 0 green,
     //   0.075em 0.075em 0 orange, 0.1 0.1 0 black;
@@ -190,7 +240,8 @@
       -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
   }
 
-  &--skills {
+  &--skills,
+  &--about {
     position: absolute;
     top: 0;
     right: 0;
@@ -207,18 +258,28 @@
   }
 
   &--about {
-    position: absolute;
-    top: 0;
-    right: 0;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
 
-    padding: 0.3em 1em;
+    // padding: 0.3em 1em;
 
-    z-index: 2;
+    // z-index: 2;
 
     @include respond-to("568->") {
       // padding: 0.3em 2em;
-      // top: -1rem;
-      padding: 0.3em 2em;
+      top: 0;
+      // padding: 0.3em 2em;
     }
+  }
+
+  &--hobbies {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    padding: 0.3em 1em;
+
+    z-index: 3;
   }
 }
