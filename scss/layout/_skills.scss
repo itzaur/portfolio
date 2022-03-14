@@ -32,25 +32,7 @@
   @include flex(null, center, center);
   grid-column: 1 / span 2;
 
-  background-color: HSL(var(--primary-hs) 100%);
-
-  clip-path: polygon(
-    0% 0%,
-    100% 0%,
-    100% calc(100% - var(--about-section-gap)),
-    0% 100%
-  );
-
-  overflow: hidden;
-
-  &::before {
-    clip-path: polygon(
-      0% 0%,
-      100% 0%,
-      100% calc(100% - var(--about-section-gap)),
-      0% 100%
-    );
-  }
+  filter: drop-shadow(0px 1px 0px HSL(var(--primary-hs) 0%));
 
   &__content {
     @include flex(null, space-between, stretch);
@@ -58,6 +40,13 @@
     // max-width: 160rem;
     height: 49vh;
     max-height: 50rem;
+
+    clip-path: polygon(
+      -500% 0%,
+      100% -100%,
+      101% calc(100% - var(--about-section-gap) - 1px),
+      0% 100%
+    );
 
     & > div + div {
       margin-left: 1rem;
@@ -69,52 +58,58 @@
   position: relative;
 
   width: 15%;
-  height: 100%;
+  // height: 100%;
 
-  margin: 0 0 0 0;
-
-  border: 1px solid HSL(var(--primary-hs) 0%);
+  margin: 0;
 
   cursor: pointer;
   overflow: hidden;
 
-  transition: all 0.45s ease-in-out;
+  transition: width 0.45s ease-in-out;
 
   &.active {
     width: 100%;
   }
 
   &::before {
+    --gap-item: 1px;
     content: "";
     position: absolute;
     display: block;
 
-    width: 100%;
+    width: calc(100% - 2 * var(--gap-item));
     height: 100%;
+    top: var(--gap-item);
+    left: var(--gap-item);
+    right: var(--gap-item);
 
     background-size: cover;
-    background-position: center center;
+    background-position: top;
     background-repeat: no-repeat;
   }
 
   &--1,
   &--2,
   &--3 {
+    background: HSL(var(--primary-hs) 0%);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top;
   }
 
-  &--1::before,
-  &--2::before,
+  &--1::before {
+    background-image: url("../img/background_orange.png");
+  }
+
+  &--2::before {
+    background-image: url("../img/background_blue.png");
+  }
+
   &--3::before {
-    background: HSL(var(--primary-hs) 0%);
-    z-index: -1;
+    background-image: url("../img/background_yellow.png");
   }
 
   &--1 {
-    background-image: url("../img/background_orange.png");
-
     & div > *:nth-child(3) {
       z-index: 1;
 
@@ -127,8 +122,6 @@
   }
 
   &--2 {
-    background-image: url("../img/background_blue.png");
-
     & div > *:nth-child(3) img {
       width: 100%;
       height: 90%;
@@ -136,16 +129,11 @@
     }
   }
 
-  &--3 {
-    background-image: url("../img/background_yellow.png");
-  }
-
   &__content {
     grid-column: 2 / 6;
     grid-row: 2 / 3;
 
     font-family: var(--ff);
-    outline: 4px solid red;
 
     &-box {
       position: relative;

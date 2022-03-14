@@ -2708,15 +2708,8 @@ select {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1 / span 2;
-  background-color: HSL(var(--primary-hs) 100%);
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% -webkit-calc(100% - var(--about-section-gap)), 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--about-section-gap)), 0% 100%);
-  overflow: hidden;
-}
-
-.hobbies::before {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% -webkit-calc(100% - var(--about-section-gap)), 0% 100%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - var(--about-section-gap)), 0% 100%);
+  -webkit-filter: drop-shadow(0px 1px 0px HSL(var(--primary-hs) 0%));
+          filter: drop-shadow(0px 1px 0px HSL(var(--primary-hs) 0%));
 }
 
 .hobbies__content {
@@ -2736,6 +2729,8 @@ select {
   width: 100%;
   height: 49vh;
   max-height: 50rem;
+  -webkit-clip-path: polygon(-500% 0%, 100% -100%, 101% -webkit-calc(100% - var(--about-section-gap) - 1px), 0% 100%);
+          clip-path: polygon(-500% 0%, 100% -100%, 101% calc(100% - var(--about-section-gap) - 1px), 0% 100%);
 }
 
 .hobbies__content > div + div {
@@ -2745,14 +2740,12 @@ select {
 .hobbie {
   position: relative;
   width: 15%;
-  height: 100%;
-  margin: 0 0 0 0;
-  border: 1px solid HSL(var(--primary-hs) 0%);
+  margin: 0;
   cursor: pointer;
   overflow: hidden;
-  -webkit-transition: all 0.45s ease-in-out;
-  -o-transition: all 0.45s ease-in-out;
-  transition: all 0.45s ease-in-out;
+  -webkit-transition: width 0.45s ease-in-out;
+  -o-transition: width 0.45s ease-in-out;
+  transition: width 0.45s ease-in-out;
 }
 
 .hobbie.active {
@@ -2760,31 +2753,40 @@ select {
 }
 
 .hobbie::before {
+  --gap-item: 1px;
   content: "";
   position: absolute;
   display: block;
-  width: 100%;
+  width: -webkit-calc(100% - 2 * var(--gap-item));
+  width: calc(100% - 2 * var(--gap-item));
   height: 100%;
+  top: var(--gap-item);
+  left: var(--gap-item);
+  right: var(--gap-item);
   -webkit-background-size: cover;
           background-size: cover;
-  background-position: center center;
+  background-position: top;
   background-repeat: no-repeat;
 }
 
 .hobbie--1, .hobbie--2, .hobbie--3 {
+  background: HSL(var(--primary-hs) 0%);
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover;
   background-position: top;
 }
 
-.hobbie--1::before, .hobbie--2::before, .hobbie--3::before {
-  background: HSL(var(--primary-hs) 0%);
-  z-index: -1;
+.hobbie--1::before {
+  background-image: url("../img/background_orange.png");
 }
 
-.hobbie--1 {
-  background-image: url("../img/background_orange.png");
+.hobbie--2::before {
+  background-image: url("../img/background_blue.png");
+}
+
+.hobbie--3::before {
+  background-image: url("../img/background_yellow.png");
 }
 
 .hobbie--1 div > *:nth-child(3) {
@@ -2797,18 +2799,10 @@ select {
   margin: 1rem auto;
 }
 
-.hobbie--2 {
-  background-image: url("../img/background_blue.png");
-}
-
 .hobbie--2 div > *:nth-child(3) img {
   width: 100%;
   height: 90%;
   margin: 1rem auto;
-}
-
-.hobbie--3 {
-  background-image: url("../img/background_yellow.png");
 }
 
 .hobbie__content {
@@ -2819,7 +2813,6 @@ select {
   -ms-grid-row-span: 1;
   grid-row: 2 / 3;
   font-family: var(--ff);
-  outline: 4px solid red;
 }
 
 .hobbie__content-box {

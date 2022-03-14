@@ -127,10 +127,10 @@ function pageSkillsInit() {
     }
 
     function removeParallax() {
-      gymDots.style.transform = `translateX(0px) translateY(0px)`;
+      gymDots.style.transform = `translate3d(0px, 0px, 1px)`;
       gymDots.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
 
-      gymElements.style.transform = `translateX(0px) translateY(0px)`;
+      gymElements.style.transform = `translate3d(0px, 0px, 1px)`;
       gymElements.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
     }
 
@@ -173,16 +173,18 @@ function pageSkillsInit() {
     });
 
     cassetteItem.addEventListener("mouseout", () => {
-      cassette.style.transform = `rotateY(0deg) rotateX(0deg) `;
-      cassette.style.transform = `translateX(0px) translateY(0px)`;
-      cassette.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+      // cassette.style.transform = `rotateY(0deg) rotateX(0deg) `;
+      // cassette.style.transform = `translateX(0px) translateY(0px)`;
+      cassette.style.transform = `translate3d(0px, 0px, 1px)`;
+      cassette.style.transition = `transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
 
-      cassetteDots.style.transform = `rotateX(0deg) rotateY(0deg) translate(-50%, -50%)`;
-      cassetteDots.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+      cassetteDots.style.transform = `rotateX(0deg) rotateY(0deg) translate3d(-50%, -50%, 1px)`;
+      cassetteDots.style.transition = `transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
 
-      cassetteElements.style.transform = `rotateY(0deg) rotateX(0deg) `;
-      cassetteElements.style.transform = `translateX(0px) translateY(0px)`;
-      cassetteElements.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
+      // cassetteElements.style.transform = `rotateY(0deg) rotateX(0deg) `;
+      cassetteElements.style.transform = `translate3d(0px, 0px, 1px)`;
+      // cassetteElements.style.transform = `translateX(0px) translateY(0px)`;
+      cassetteElements.style.transition = `transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
     });
   }
   addHobbiesParallax();
@@ -221,21 +223,132 @@ function pageSkillsInit() {
     const posY = ((mouseYPercent * 2 - 1) * yMove) / 0.8;
 
     if (catItem.classList.contains("active")) {
-      eyeLeftPupil.style.transform = `translate(${eyeCoordsX + posX}px, ${
+      eyeLeftPupil.style.transform = `translate3d(${eyeCoordsX + posX}px, ${
         eyeCoordsY + posY + 2
-      }px)`;
-      eyeRightPupil.style.transform = `translate(${eyeCoordsX + posX}px, ${
+      }px, 1px)`;
+      eyeRightPupil.style.transform = `translate3d(${eyeCoordsX + posX}px, ${
         eyeCoordsY + posY + 2
-      }px)`;
+      }px, 1px)`;
 
-      eyeLeftHighlight.style.transform = `translate(${
+      eyeLeftHighlight.style.transform = `translate3d(${
         eyeCoordsX + posX + 2
-      }px, ${eyeCoordsY + posY + 2}px)`;
-      eyeRightHighlight.style.transform = `translate(${
+      }px, ${eyeCoordsY + posY + 2}px, 1px)`;
+      eyeRightHighlight.style.transform = `translate3d(${
         eyeCoordsX + posX + 4
-      }px, ${eyeCoordsY + posY}px)`;
+      }px, ${eyeCoordsY + posY}px, 1px)`;
     }
   }
+
+  const hobbiesTimeline = gsap.timeline();
+  const gsapEase = {
+    power4: "power4.out",
+    back: "back.out",
+  };
+
+  const hobbie1Before = window.getComputedStyle(
+    document.querySelector(".hobbie--1"),
+    ":before"
+  );
+
+  // const hobbie2Before = CSSRulePlugin.getRule(".hobbie--2::before");
+  // const hobbie3Before = CSSRulePlugin.getRule(".hobbie--3::before");
+  // console.log(hobbie1Before, hobbie2Before, hobbie3Before);
+
+  hobbiesTimeline
+    .set(".hobbie--1", {
+      xPercent: -100,
+      // opacity: 0,
+
+      // autoAlpha: 0,
+    })
+    // .set(hobbie1Before, {
+    //   xPercent: -100,
+    //   autoAlpha: 0,
+    // })
+    .set(".hobbie--2", {
+      yPercent: -100,
+      // autoAlpha: 0,
+    })
+    .set(".hobbie--3", {
+      xPercent: 100,
+      // autoAlpha: 0,
+    })
+    .set(".skills", {
+      yPercent: 100,
+      autoAlpha: 0,
+    })
+    .to(".hobbie--1", {
+      xPercent: 0,
+      // opacity: 1,
+      // autoAlpha: 1,
+      duration: 2,
+      ease: gsapEase.power4,
+      clearProps: "transform",
+    })
+    // .fromTo(
+    //   hobbie1Before,
+    //   {
+    //     backgroundColor: "transparent",
+    //   },
+    //   {
+    //     backgroundColor: "HSL(var(--primary-hs) 0%)",
+    //   }
+    // )
+    .to(
+      ".hobbie--2",
+      {
+        yPercent: 0,
+        // autoAlpha: 1,
+
+        duration: 2.5,
+        ease: gsapEase.power4,
+        clearProps: "all",
+      },
+      "<0"
+    )
+    .to(
+      ".hobbie--3",
+      {
+        xPercent: 0,
+        // autoAlpha: 1,
+
+        duration: 2.5,
+        ease: gsapEase.power4,
+        clearProps: "all",
+      },
+      "<0"
+    )
+    .to(
+      ".skills",
+      {
+        autoAlpha: 1,
+        yPercent: 0,
+        duration: 2,
+        ease: gsapEase.power4,
+        clearProps: "all",
+      },
+      "<0"
+    )
+    .from(
+      ".top-nav--hobbies",
+      {
+        yPercent: -130,
+        autoAlpha: 1,
+        duration: 0.8,
+        ease: gsapEase.back,
+      },
+      "<1.5"
+    )
+    .from(
+      ".top-nav--skills",
+      {
+        xPercent: 100,
+        autoAlpha: 1,
+        duration: 0.8,
+        ease: gsapEase.back,
+      },
+      "<0"
+    );
 }
 
 function aboutAnimationInit() {
