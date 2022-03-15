@@ -212,8 +212,9 @@
     img {
       // filter: invert(1%) sepia(136%) saturate(518%) hue-rotate(1394deg)
       //   brightness(83%) contrast(127%);
-      filter: invert(19%) sepia(50%) saturate(281%) hue-rotate(359deg)
-        brightness(104%) contrast(94%);
+      // filter: invert(19%) sepia(50%) saturate(281%) hue-rotate(359deg)
+      //   brightness(104%) contrast(94%);
+      filter: url(#changeColor);
       transition: filter 0.2s linear;
     }
   }

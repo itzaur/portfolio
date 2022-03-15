@@ -1169,7 +1169,9 @@
         </div>
       </section>
       <section class="skills grid">
-        <div class="top-nav top-nav--skills fs-240"><span>S</span>kills</div>
+        <div class="skills__btn-box">
+          <div class="top-nav top-nav--skills fs-240"><span>S</span>kills</div>
+        </div>
         <div class="skills__btns grid">
           <button class="skills__btn active" aria-expanded="true" data-tab="1">
             <span class="fs-180">freshman year</span>
@@ -1183,6 +1185,24 @@
             <span class="fs-180">wanna learn</span>
             <img src="img/svg/doodle-about3.svg" alt="" />
           </button>
+          <svg class="defs-only sr-only">
+            <filter
+              id="changeColor"
+              color-interpolation-filters="sRGB"
+              x="0"
+              y="0"
+              height="100%"
+              width="100%"
+            >
+              <feColorMatrix
+                type="matrix"
+                values="0.98  0     0     0   0
+                        0     0.90   0    0   0
+                        0     0     0.62  0   0
+                        0     0     0     1   0"
+              />
+            </filter>
+          </svg>
         </div>
         <ul class="skills__box skill grid" role="list">
           <li

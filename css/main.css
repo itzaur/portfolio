@@ -67,7 +67,7 @@
   --clr-btn-4: hsl(190, 24%, 72%);
   --clr-btn-5: hsl(206, 77%, 42%);
   --clr-btn-6: hsl(52, 61%, 90%);
-  --clr-btn-7: hsl(48, 89%, 79%);
+  --clr-btn-7: rgb(249, 230, 154);
   --cursor-stroke: none;
   --cursor-fill: hsl(225, 86%, 46%);
   --cursor-stroke-width: 1px;
@@ -539,8 +539,8 @@ select {
 }
 
 .skills__btn.active img {
-  -webkit-filter: invert(19%) sepia(50%) saturate(281%) hue-rotate(359deg) brightness(104%) contrast(94%);
-          filter: invert(19%) sepia(50%) saturate(281%) hue-rotate(359deg) brightness(104%) contrast(94%);
+  -webkit-filter: url(#changeColor);
+          filter: url(#changeColor);
   -webkit-transition: -webkit-filter 0.2s linear;
   transition: -webkit-filter 0.2s linear;
   -o-transition: filter 0.2s linear;
@@ -2917,6 +2917,14 @@ select {
     -webkit-background-size: 110% 110%;
             background-size: 110%;
   }
+}
+
+.skills__btn-box {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
 }
 
 .skills__btns {
