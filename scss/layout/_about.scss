@@ -107,8 +107,12 @@
 
   &__content {
     position: relative;
+    // display: -webkit-box;
+
     height: 100%;
     z-index: 1;
+
+    overflow: hidden;
   }
 }
 
@@ -121,6 +125,7 @@
   grid-template-rows: minmax(0, 1rem) repeat(4, 1fr);
   height: 100%;
   // place-self: end;
+  transition: transform 0.6s cubic-bezier(0.93, 0.02, 0.56, 0.95);
 
   @include respond-to("568->") {
     // grid-template-areas:
@@ -352,6 +357,7 @@
       z-index: 2;
       // transform: translate(0, -5.5rem);
       // height: 15rem;
+      // opacity: 0;
 
       @include respond-to("568->") {
         grid-column: 1 / span 7;
@@ -478,6 +484,171 @@
       border: none;
     }
   }
+
+  &--1 {
+    // transform: translate(0, 0);
+  }
+
+  &--2 {
+    position: absolute;
+    inset: 0;
+
+    @include flex(column, null, null);
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-footer);
+    // transform: translate(100%, 0);
+    z-index: 5;
+
+    &__bg1 {
+      height: 50%;
+      background-image: url("../img/svg/yellow_rays.svg");
+      background-repeat: no-repeat;
+      background-size: 400%;
+      background-position: center;
+      background-color: var(--clr-primary);
+
+      @include respond-to("568->") {
+        background-size: 130%;
+      }
+    }
+
+    &__bg2 {
+      height: 50%;
+    }
+
+    &__door {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      @include respond-to("568->") {
+        display: block;
+      }
+
+      & img {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: auto 0 0 auto;
+        transform: translateY(3.2vh);
+
+        @include respond-to("568->") {
+          width: auto;
+          height: 100%;
+          margin-left: auto;
+          transform: translateY(3.4vh);
+        }
+      }
+    }
+
+    &__face {
+      // @include flex(null, null, null);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+
+      &-img {
+        @include flex(column, flex-end, flex-end);
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../../img/svg/dots_orange.svg");
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: bottom -6rem left -4rem;
+
+        @include respond-to("568->") {
+          @include flex(row, space-between, flex-end);
+          background-position: bottom -20rem right 19rem;
+        }
+
+        @include respond-to("1024->") {
+          @include flex(null, null, center);
+          background-position: bottom -17rem left -16rem;
+        }
+
+        & img {
+          // width: Min(50vw, 100vw);
+          // height: 170%;
+
+          width: 80vw;
+          order: 1;
+
+          transform: translate(-34vw, Max(20%, 11vh));
+          // transform: translate(-17vw, clamp(1rem, 28vw, 12rem));
+
+          @media (max-width: 20em) {
+            transform: translate(-34vw, clamp(1rem, 28vw, 12rem));
+          }
+
+          @include respond-to("568->") {
+            order: 0;
+            transform: translate(-17vw, Max(20%, 11vh));
+          }
+
+          @include respond-to("1024->") {
+            width: Min(56vw, 100vw);
+
+            transform: translate(0, 0);
+          }
+        }
+
+        & svg {
+          height: 100%;
+          transform: translate(-19vw, 9vh);
+
+          & .cls-1 {
+            fill: HSL(var(--primary-hs) 100%);
+          }
+
+          & .cls-2 {
+            fill: #1d1d1b;
+          }
+        }
+
+        .face-doodle-desktop {
+          display: none;
+          height: auto;
+
+          @include respond-to("568->") {
+            display: block;
+          }
+
+          @media (min-width: 35.5em) and (max-width: 64em) {
+            min-width: clamp(34rem, 60vw, 60rem);
+            // height: auto;
+            transform: translate(-45vw, -5vh);
+          }
+        }
+
+        .face-doodle-mobile {
+          display: block;
+          width: 90%;
+          height: auto;
+          transform: translate(0, Max(20%, 30vh));
+          min-height: 27rem;
+
+          @media (max-width: 20em) {
+            transform: translate(0, Max(20%, 20vh));
+          }
+
+          @include respond-to("568->") {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__doodle {
+      @include flex(null, null, center);
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 
 // .home-page-leave {
@@ -554,3 +725,10 @@
 //   z-index: 10;
 //   pointer-events: none;
 // }
+.dots-box {
+  @include abs-center;
+  top: 95%;
+  transform: translate(-50%, -95%);
+  align-items: center;
+  z-index: 10;
+}

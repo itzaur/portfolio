@@ -14,9 +14,6 @@ function pageSkillsInit() {
     removeActiveClass();
     const target = e.currentTarget;
     target.classList.add("active");
-    // if (target.classList.contains("active")) {
-    //   addHobbiesParallax();
-    // }
   }
 
   function removeActiveClass() {
@@ -352,11 +349,14 @@ function pageSkillsInit() {
 }
 
 function aboutAnimationInit() {
-  //Slider
+  //Slider mobile
+  const storySlides = document.querySelectorAll(".story");
   const slidesBox = document.querySelector(".story__box");
   const slides = slidesBox.querySelectorAll(".story__photo");
-  const tabList = document.querySelector("[role='tablist']");
-  const aboutBtns = tabList.querySelectorAll("[role='tab']");
+  const tabList = slidesBox.querySelector("[role='tablist']");
+  // const aboutBtns = tabList.querySelectorAll("[role='tab']");
+  const dotsBox = document.querySelector(".dots-box");
+  const dots = dotsBox.querySelectorAll("[role='tab']");
 
   tabList.addEventListener("keydown", (e) => {
     const KEYDOWN_LEFT = 37;
@@ -370,7 +370,7 @@ function aboutAnimationInit() {
   });
 
   let currentSlide = 0;
-  function goToSlide(s) {
+  function mobileGoToSlide(s) {
     slides.forEach((slide) => {
       const gap = 20;
       slide.style.transform = `translate(calc(${100 * -s}% - ${
@@ -381,12 +381,57 @@ function aboutAnimationInit() {
 
   function nextSlide() {
     currentSlide === slides.length - 1 ? (currentSlide = 0) : currentSlide++;
-    goToSlide(currentSlide);
+    mobileGoToSlide(currentSlide);
   }
 
   function prevSlide() {
     currentSlide === 0 ? (currentSlide = slides.length - 1) : currentSlide--;
-    goToSlide(currentSlide);
+    mobileGoToSlide(currentSlide);
+  }
+
+  //Slider desktop
+  dotsBox.addEventListener("click", (e) => {
+    const dotClicked = e.target.getAttribute("aria-selected");
+
+    if (!dotClicked) return;
+
+    dots.forEach((dot) => {
+      dot.classList.remove("active");
+      dot.setAttribute("aria-selected", false);
+    });
+
+    e.target.classList.add("active");
+    e.target.setAttribute("aria-selected", true);
+
+    if (e.target.dataset.num === "2") {
+      desktopPrevSlide();
+    } else if (e.target.dataset.num === "3") {
+      desktopNextSlide();
+    }
+  });
+
+  storySlides.forEach((s, i) => {
+    s.style.transform = `translateX(${100 * i}%)`;
+    i === 0 ? (s.style.opacity = "1") : (s.style.opacity = "0");
+  });
+
+  function desktopGoToSlide(s) {
+    storySlides.forEach((el, i) => {
+      el.style.transform = `translateX(${100 * (i - s)}%)`;
+      el.style.opacity = "1";
+    });
+  }
+
+  function desktopNextSlide() {
+    currentSlide === storySlides.length - 1
+      ? (currentSlide = 1)
+      : currentSlide++;
+    desktopGoToSlide(currentSlide);
+  }
+
+  function desktopPrevSlide() {
+    currentSlide === 0 ? (currentSlide = 0) : currentSlide--;
+    desktopGoToSlide(currentSlide);
   }
 
   function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
@@ -452,6 +497,7 @@ function aboutAnimationInit() {
       x: -100,
       opacity: 0,
       ease: Back.easeOut.config(1.7),
+      clearProps: "transform",
     })
     .from(
       "[data-num='1']",
@@ -459,10 +505,11 @@ function aboutAnimationInit() {
         x: 100,
         opacity: 0,
         ease: Back.easeOut.config(1.7),
+        clearProps: "transform",
         onComplete: () => {
           installMediaQueryWatcher("(max-width: 568px)", function (matches) {
             if (matches) {
-              goToSlide(0);
+              mobileGoToSlide(0);
               tabList
                 .querySelector("[data-num='1']")
                 .addEventListener("click", nextSlide);

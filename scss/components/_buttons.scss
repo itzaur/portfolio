@@ -145,6 +145,26 @@
   // }
 }
 
+.about-dot {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  border: 0;
+  border-radius: 50%;
+
+  background-color: HSL(var(--primary-hs) 100%);
+
+  cursor: pointer;
+
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+
+  &.active {
+    transform: scale(1.4);
+    transition: transform 0.3s ease-in-out;
+  }
+}
+
 .skills__btn {
   position: relative;
   width: 100%;
