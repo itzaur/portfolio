@@ -2,6 +2,14 @@
 import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
+const gsapEase = {
+  power4: "power4.out",
+  back: "back.out",
+  elastic02: "elastic.out(1, 0.2)",
+  elastic03: "elastic.out(1, 0.3)",
+  elastic05: "elastic.out(1, 0.5)",
+};
+
 function pageSkillsInit() {
   const hobbiesItems = document.querySelectorAll(".hobbie");
 
@@ -36,7 +44,7 @@ function pageSkillsInit() {
         //   x: -10,
         opacity: 0,
         scale: 0,
-        ease: "elastic.out(1, 0.3)",
+        ease: gsapEase.elastic03,
         duration: 1.2,
         clearProps: "all",
       })
@@ -52,7 +60,6 @@ function pageSkillsInit() {
           opacity: 1,
           scale: 1,
           ease: "cubic",
-
           clearProps: "all",
           duration: 0.2,
         },
@@ -91,7 +98,7 @@ function pageSkillsInit() {
         },
         {
           scale: 1,
-          ease: "elastic.out(1, 0.5)",
+          ease: gsapEase.elastic05,
           clearProps: "transform",
         }
       );
@@ -237,19 +244,15 @@ function pageSkillsInit() {
   }
 
   const hobbiesTimeline = gsap.timeline();
-  const gsapEase = {
-    power4: "power4.out",
-    back: "back.out",
-  };
+  // const gsapEase = {
+  //   power4: "power4.out",
+  //   back: "back.out",
+  // };
 
   const hobbie1Before = window.getComputedStyle(
     document.querySelector(".hobbie--1"),
     ":before"
   );
-
-  // const hobbie2Before = CSSRulePlugin.getRule(".hobbie--2::before");
-  // const hobbie3Before = CSSRulePlugin.getRule(".hobbie--3::before");
-  // console.log(hobbie1Before, hobbie2Before, hobbie3Before);
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -258,10 +261,6 @@ function pageSkillsInit() {
 
       // autoAlpha: 0,
     })
-    // .set(hobbie1Before, {
-    //   xPercent: -100,
-    //   autoAlpha: 0,
-    // })
     .set(".hobbie--2", {
       yPercent: -100,
       // autoAlpha: 0,
@@ -282,15 +281,6 @@ function pageSkillsInit() {
       ease: gsapEase.power4,
       clearProps: "transform",
     })
-    // .fromTo(
-    //   hobbie1Before,
-    //   {
-    //     backgroundColor: "transparent",
-    //   },
-    //   {
-    //     backgroundColor: "HSL(var(--primary-hs) 0%)",
-    //   }
-    // )
     .to(
       ".hobbie--2",
       {
@@ -390,6 +380,17 @@ function aboutAnimationInit() {
   }
 
   //Slider desktop
+  dotsBox.addEventListener("keydown", (e) => {
+    const KEYDOWN_LEFT = 37;
+    const KEYDOWN_RIGHT = 39;
+
+    if (e.keyCode === KEYDOWN_RIGHT) {
+      desktopNextSlide();
+    } else if (e.keyCode === KEYDOWN_LEFT) {
+      desktopPrevSlide();
+    }
+  });
+
   dotsBox.addEventListener("click", (e) => {
     const dotClicked = e.target.getAttribute("aria-selected");
 
@@ -403,9 +404,9 @@ function aboutAnimationInit() {
     e.target.classList.add("active");
     e.target.setAttribute("aria-selected", true);
 
-    if (e.target.dataset.num === "2") {
+    if (e.target.dataset.slide === "0") {
       desktopPrevSlide();
-    } else if (e.target.dataset.num === "3") {
+    } else if (e.target.dataset.slide === "1") {
       desktopNextSlide();
     }
   });
@@ -427,11 +428,22 @@ function aboutAnimationInit() {
       ? (currentSlide = 1)
       : currentSlide++;
     desktopGoToSlide(currentSlide);
+    activeDot(currentSlide);
   }
 
   function desktopPrevSlide() {
     currentSlide === 0 ? (currentSlide = 0) : currentSlide--;
     desktopGoToSlide(currentSlide);
+    activeDot(currentSlide);
+  }
+
+  function activeDot(slide) {
+    dots.forEach((dot) => {
+      dot.classList.remove("active");
+      document
+        .querySelector(`.about-dot[data-slide="${slide}"]`)
+        .classList.add("active");
+    });
   }
 
   function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
@@ -447,14 +459,14 @@ function aboutAnimationInit() {
     .from(".top-nav--about", {
       xPercent: 100,
       duration: 0.5,
-      ease: "power1.out",
+      ease: gsapEase.back,
       delay: 1,
       clearProps: "all",
     })
     .from(".story__photo--person", {
       xPercent: 100,
       duration: 2,
-      ease: "elastic.out(1, 0.3)",
+      ease: gsapEase.elastic03,
       opacity: 0,
       clearProps: "all",
     })
@@ -463,7 +475,7 @@ function aboutAnimationInit() {
       {
         scale: 0,
         duration: 1.8,
-        ease: "elastic.out(1, 0.2)",
+        ease: gsapEase.elastic02,
         opacity: 0,
         clearProps: "all",
       },
@@ -475,7 +487,7 @@ function aboutAnimationInit() {
         scale: 0,
         y: -100,
         duration: 1.8,
-        ease: "elastic.out(1, 0.2)",
+        ease: gsapEase.elastic02,
         opacity: 0,
         clearProps: "all",
       },
@@ -487,7 +499,7 @@ function aboutAnimationInit() {
         scale: 0,
         y: -200,
         duration: 1.8,
-        ease: "elastic.out(1, 0.2)",
+        ease: gsapEase.elastic02,
         opacity: 0,
         clearProps: "all",
       },
@@ -531,23 +543,42 @@ function aboutAnimationInit() {
       "<0"
     );
 
-  // const cc = document.querySelectorAll("#corner-button svg .cls-3");
-  // console.log(cc);
-  // gsap.fromTo(
-  //   "#corner-button svg .cls-3, #corner-button svg .cls-2, #corner-button svg .cls-1, #corner-button svg .cls-4",
-  //   {
-  //     rotation: 0,
-  //     transformOrigin: "center center",
-  //     // opacity: 0,
-  //   },
-  //   {
-  //     rotation: 360,
-  //     opacity: 1,
-  //     ease: "none",
-  //     duration: 30,
-  //     transformOrigin: "center center",
-  //   }
-  // );
+  function addDoorAnimstionOnResize() {
+    const doodle = document.querySelector(".face-doodle-mobile .text-box");
+    const door = document.querySelector(".story--2__door svg");
+    const doodleCenterCoordX =
+      doodle.getBoundingClientRect().left +
+      door.getBoundingClientRect().width / 2;
+    const doodleCenterCoordY =
+      doodle.getBoundingClientRect().top +
+      door.getBoundingClientRect().height / 2;
+    const doorCenterCoordX =
+      door.getBoundingClientRect().left +
+      door.getBoundingClientRect().width / 2;
+    const doorCenterCoordY =
+      door.getBoundingClientRect().top +
+      door.getBoundingClientRect().height / 2;
+
+    if (
+      doodleCenterCoordY > doorCenterCoordY &&
+      doodleCenterCoordY >
+        doorCenterCoordY + door.getBoundingClientRect().height / 2
+    ) {
+      // doodle.style.fill = "white";
+      doodle.style.opacity = "1";
+    } else if (
+      doodleCenterCoordY <
+      doorCenterCoordY - doorCenterCoordY * 0.13
+    ) {
+      // doodle.style.fill = "white";
+      doodle.style.opacity = "1";
+    } else {
+      // doodle.style.fill = "red";
+      doodle.style.opacity = "0.8";
+    }
+  }
+  addDoorAnimstionOnResize();
+  window.addEventListener("resize", addDoorAnimstionOnResize);
 }
 
 // export default pageSkillsInit;

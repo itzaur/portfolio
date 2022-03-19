@@ -485,13 +485,16 @@
     }
   }
 
-  &--1 {
-    // transform: translate(0, 0);
-  }
+  // &--1 {
+  //   transition: opacity 4s linear, transform 0.5s ease;
+  //   // transform: translate(0, 0);
+  // }
 
   &--2 {
     position: absolute;
     inset: 0;
+    opacity: 0;
+    // transition: opacity 0.6s linear;
 
     @include flex(column, null, null);
 
@@ -499,7 +502,9 @@
     height: 100%;
     background-color: var(--clr-footer);
     // transform: translate(100%, 0);
-    z-index: 5;
+    // z-index: 5;
+
+    overflow: hidden;
 
     &__bg1 {
       height: 50%;
@@ -522,19 +527,53 @@
       display: flex;
       width: 100%;
       height: 100%;
+
       overflow: hidden;
 
       @include respond-to("568->") {
         display: block;
       }
 
-      & img {
+      & svg {
         display: block;
         width: 100%;
         max-width: 100%;
         height: auto;
         margin: auto 0 0 auto;
         transform: translateY(3.2vh);
+
+        & .cls-1 {
+          fill: #88b5c0;
+        }
+
+        & .cls-2 {
+          fill: #4e5778;
+        }
+
+        & .cls-3 {
+          fill: #1d1d1b;
+        }
+
+        & .cls-4 {
+          fill: #f9e69a;
+        }
+
+        & .cls-5 {
+          fill: #ee7950;
+        }
+
+        & .cls-6 {
+          fill: HSL(var(--primary-hs) 100%);
+        }
+
+        // & .it {
+        //   fill: purple;
+        // }
+
+        & > g {
+          position: absolute;
+          z-index: 100;
+        }
 
         @include respond-to("568->") {
           width: auto;
@@ -614,6 +653,12 @@
           display: none;
           height: auto;
 
+          & text {
+            text-anchor: middle;
+            font-size: 1rem;
+            font-family: var(--ff);
+          }
+
           @include respond-to("568->") {
             display: block;
           }
@@ -623,17 +668,28 @@
             // height: auto;
             transform: translate(-45vw, -5vh);
           }
+
+          @include respond-to("1024->") {
+            min-width: 50vw;
+          }
         }
 
         .face-doodle-mobile {
           display: block;
-          width: 90%;
+          width: 95%;
           height: auto;
-          transform: translate(0, Max(20%, 30vh));
-          min-height: 27rem;
+          transform: translate(0, Max(20%, 30vh)) scale(-1, 1); //48
+          min-height: 30rem;
+
+          & text {
+            text-anchor: middle;
+            font-size: 0.9rem;
+            font-family: var(--ff);
+            transform: scale(-1, 1);
+          }
 
           @media (max-width: 20em) {
-            transform: translate(0, Max(20%, 20vh));
+            transform: translate(0, Max(20%, 20vh)) scale(-1, 1); //24
           }
 
           @include respond-to("568->") {
