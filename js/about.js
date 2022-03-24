@@ -2,6 +2,8 @@
 import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
+CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
+
 const gsapEase = {
   power4: "power4.out",
   back: "back.out",
@@ -249,10 +251,10 @@ function pageSkillsInit() {
   //   back: "back.out",
   // };
 
-  const hobbie1Before = window.getComputedStyle(
-    document.querySelector(".hobbie--1"),
-    ":before"
-  );
+  // const hobbie1Before = window.getComputedStyle(
+  //   document.querySelector(".hobbie--1"),
+  //   ":before"
+  // );
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -345,6 +347,7 @@ function aboutAnimationInit() {
   const slides = slidesBox.querySelectorAll(".story__photo");
   const tabList = slidesBox.querySelector("[role='tablist']");
   // const aboutBtns = tabList.querySelectorAll("[role='tab']");
+  const btnAboutSection = document.querySelector(".top-nav--about");
   const dotsBox = document.querySelector(".dots-box");
   const dots = dotsBox.querySelectorAll("[role='tab']");
 
@@ -423,16 +426,76 @@ function aboutAnimationInit() {
     });
   }
 
+  // function changeCoords() {
+  //   const left = storySlides[1].getBoundingClientRect().left;
+
+  //   console.log(
+  //     +left.toFixed(0),
+  //     btnAboutSection.offsetWidth,
+  //     +left.toFixed(0) - btnAboutSection.offsetWidth
+  //   );
+  //   requestAnimationFrame(changeCoords);
+
+  //   if (+left.toFixed(0) === 700) {
+  //     btnAboutSection.style.borderColor = "red";
+  //     console.log("700 = jjjjj");
+  //   } else {
+  //     btnAboutSection.style.borderColor = "blue";
+  //   }
+  // }
+  // requestAnimationFrame(changeCoords);
+
+  storySlides.forEach((slide) => {
+    const aboutBtn2 = document.querySelector(".story--2 button");
+    const timer = setInterval(function () {
+      const resultX = +window
+        .getComputedStyle(slide, null)
+        .transform.match(/(-?[0-9\.]+)/g)[4];
+      const resultY = +window
+        .getComputedStyle(slide, null)
+        .transform.match(/(-?[0-9\.]+)/g)[5];
+      const res = window.innerWidth - btnAboutSection.offsetWidth;
+
+      if (resultX > res && resultX <= window.innerWidth) {
+        btnAboutSection.style.opacity = "1";
+        btnAboutSection.style.visibility = "visible";
+
+        aboutBtn2.style.opacity = "0";
+        aboutBtn2.style.visibility = "hidden";
+        aboutBtn2.style.zIndex = "-1";
+      } else if (resultX > 0 && resultX < res) {
+        btnAboutSection.style.opacity = "0";
+        btnAboutSection.style.visibility = "hidden";
+
+        aboutBtn2.style.opacity = "1";
+        aboutBtn2.style.visibility = "visible";
+        aboutBtn2.style.zIndex = "6";
+      }
+    }, 15);
+
+    function transitionstart() {
+      return timer;
+    }
+
+    slide.addEventListener("transitionstart", transitionstart);
+
+    slide.addEventListener("transitionend", (e) => {
+      slide.removeEventListener("transitionstart", transitionstart);
+    });
+  });
+
   function desktopNextSlide() {
     currentSlide === storySlides.length - 1
       ? (currentSlide = 1)
       : currentSlide++;
+
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
   }
 
   function desktopPrevSlide() {
     currentSlide === 0 ? (currentSlide = 0) : currentSlide--;
+
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
   }
@@ -456,8 +519,10 @@ function aboutAnimationInit() {
 
   const aboutTimeline = gsap.timeline();
   aboutTimeline
-    .from(".top-nav--about", {
-      xPercent: 100,
+    .from(btnAboutSection, {
+      // xPercent: 100,
+      right: btnAboutSection.offsetWidth * -1,
+      left: "inherit",
       duration: 0.5,
       ease: gsapEase.back,
       delay: 1,
@@ -546,6 +611,7 @@ function aboutAnimationInit() {
   function addDoorAnimstionOnResize() {
     const doodle = document.querySelector(".face-doodle-mobile .text-box");
     const door = document.querySelector(".story--2__door svg");
+    const textIT = document.querySelectorAll(".story--2__door svg .it");
     const doodleCenterCoordX =
       doodle.getBoundingClientRect().left +
       door.getBoundingClientRect().width / 2;
@@ -566,15 +632,18 @@ function aboutAnimationInit() {
     ) {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
+      textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
     } else if (
       doodleCenterCoordY <
       doorCenterCoordY - doorCenterCoordY * 0.13
     ) {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
+      textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
     } else {
       // doodle.style.fill = "red";
       doodle.style.opacity = "0.8";
+      textIT.forEach((text) => (text.style.fill = "#ee7950"));
     }
   }
   addDoorAnimstionOnResize();
