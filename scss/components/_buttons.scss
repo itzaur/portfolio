@@ -160,12 +160,12 @@
   cursor: pointer;
 
   transform: scale(1);
-  transition: transform 0.3s ease-in-out;
+  // transition: transform 0.3s ease-in-out;
 
   &.active {
     background-image: url("../../img/svg/circle4.svg");
     transform: scale(1.4);
-    transition: transform 0.3s ease-in-out;
+    // transition: transform 0.3s ease-in-out;
   }
 }
 

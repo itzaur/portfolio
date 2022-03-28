@@ -556,7 +556,7 @@
         max-width: 100%;
         height: auto;
         margin: auto 0 0 auto;
-        transform: translateY(3.2vh);
+        transform: translateY(3.4vh);
 
         & .cls-1 {
           fill: #88b5c0;
@@ -590,7 +590,7 @@
           width: auto;
           height: 100%;
           margin-left: auto;
-          transform: translateY(3.4vh);
+          // transform: translateY(3.4vh);
         }
       }
     }
@@ -650,6 +650,7 @@
         & svg {
           height: 100%;
           transform: translate(-19vw, 9vh);
+          overflow: visible;
 
           & .cls-1 {
             fill: HSL(var(--primary-hs) 100%);
@@ -689,7 +690,7 @@
           display: block;
           width: 95%;
           height: auto;
-          transform: translate(0, Max(20%, 30vh)) scale(-1, 1); //48
+          transform: translate(0, Max(120%, 30vh)) scale(-1, 1); //48
           min-height: 30rem;
 
           & text {

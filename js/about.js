@@ -5,6 +5,7 @@ import { MagnetLogo, addCustomCursor } from "./export";
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
 
 const gsapEase = {
+  power1: "power1.out",
   power4: "power4.out",
   back: "back.out",
   elastic02: "elastic.out(1, 0.2)",
@@ -426,25 +427,6 @@ function aboutAnimationInit() {
     });
   }
 
-  // function changeCoords() {
-  //   const left = storySlides[1].getBoundingClientRect().left;
-
-  //   console.log(
-  //     +left.toFixed(0),
-  //     btnAboutSection.offsetWidth,
-  //     +left.toFixed(0) - btnAboutSection.offsetWidth
-  //   );
-  //   requestAnimationFrame(changeCoords);
-
-  //   if (+left.toFixed(0) === 700) {
-  //     btnAboutSection.style.borderColor = "red";
-  //     console.log("700 = jjjjj");
-  //   } else {
-  //     btnAboutSection.style.borderColor = "blue";
-  //   }
-  // }
-  // requestAnimationFrame(changeCoords);
-
   storySlides.forEach((slide) => {
     const aboutBtn2 = document.querySelector(".story--2 button");
     const timer = setInterval(function () {
@@ -491,6 +473,7 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
+    aboutDoodlePart2Animation();
   }
 
   function desktopPrevSlide() {
@@ -506,7 +489,133 @@ function aboutAnimationInit() {
       document
         .querySelector(`.about-dot[data-slide="${slide}"]`)
         .classList.add("active");
+      dot.style.transition = `transform 0.3s ease-in-out`;
     });
+  }
+
+  function aboutDoodlePart2Animation() {
+    const ellipseTimlineDesktop = gsap.timeline({ duration: 1 });
+    const ellipseTimlineMobile = gsap.timeline({ duration: 1 });
+
+    ellipseTimlineDesktop
+      .from(".ellipse1", {
+        y: -400,
+        opacity: 0,
+        ease: gsapEase.power1,
+      })
+      .from(
+        ".ellipse2",
+        {
+          y: -400,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.3"
+      )
+      .from(
+        ".ellipse3a",
+        {
+          y: -1.91,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.3"
+      )
+      .from(
+        ".ellipse3b",
+        {
+          y: -400,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0"
+      )
+      .from(
+        ".ellipse4",
+        {
+          y: -400,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.4"
+      )
+      .from(
+        ".ellipse-text",
+        {
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.5"
+      );
+
+    ellipseTimlineMobile
+      .from(".ellipse-mobile1a", {
+        y: -390,
+        opacity: 0,
+        ease: gsapEase.power1,
+      })
+      .from(
+        ".ellipse-mobile1b",
+        {
+          y: -410,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0"
+      )
+      .from(
+        ".ellipse-mobile2a",
+        {
+          y: -380,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.3"
+      )
+      .from(
+        ".ellipse-mobile2b",
+        {
+          y: -410,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0"
+      )
+      .from(
+        ".ellipse-mobile3a",
+        {
+          y: 5.48,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.3"
+      )
+      .from(
+        ".ellipse-mobile3b",
+        {
+          y: -410,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0"
+      )
+      .from(
+        ".ellipse-mobile4",
+        {
+          y: -410,
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.4"
+      )
+      .from(
+        ".ellipse-mobile-text",
+        {
+          opacity: 0,
+          ease: gsapEase.power1,
+        },
+        "<0.5"
+      );
   }
 
   function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
@@ -520,7 +629,6 @@ function aboutAnimationInit() {
   const aboutTimeline = gsap.timeline();
   aboutTimeline
     .from(btnAboutSection, {
-      // xPercent: 100,
       right: btnAboutSection.offsetWidth * -1,
       left: "inherit",
       duration: 0.5,
@@ -562,14 +670,17 @@ function aboutAnimationInit() {
       ".about-dot",
       {
         // scale: 0,
-        y: 300,
+        y: 200,
         duration: 1,
         stagger: 0.2,
-        ease: "none",
+        ease: gsapEase.back,
         opacity: 0,
         clearProps: "all",
+        onComplete: () => {
+          activeDot(0);
+        },
       },
-      "<0.3"
+      "<0.8"
     )
     .from("[data-num='0']", {
       x: -100,
