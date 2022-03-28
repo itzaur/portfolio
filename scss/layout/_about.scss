@@ -44,15 +44,18 @@
   overflow: hidden;
   // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-  background: #f8edc5;
+  background: var(--clr-bg);
   background-image: url("../../img/about-bg.png"),
     url("../../img/svg/about-rays.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  background-position: bottom 0 right, top 0 center;
+  background-position-x: left, center;
+  background-position-y: bottom, bottom;
+  // background-position: bottom;
+  // background-position: bottom 0 right, top 0 center;
 
   @include respond-to("568->") {
-    background-size: 106%, cover;
+    background-size: 112%, cover;
     // background-position: top 80vh right, top -10vw center;
   }
 
@@ -63,8 +66,12 @@
 
   @include respond-to("1024->") {
     background-size: 100%, 150%;
-    background-position: bottom -7vw right, top -1vw center;
+    background-position: bottom -6.9vw right, top -1vw center;
     // background-position: top 67vh right, top -10vw center;
+  }
+
+  @include respond-to("1366->") {
+    background-position: bottom -9vw right, top -1vw center;
   }
 
   // &::before {
@@ -163,11 +170,11 @@
     @include respond-to("568->") {
       position: relative;
       grid-column: 2 / 9;
-      grid-row: 16 / span 3;
+      grid-row: 11 / span 3;
       align-self: end;
       // margin-bottom: 0.5rem;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       gap: 0;
       // display: block;
       // display: grid;
@@ -181,8 +188,8 @@
 
       @include respond-to("1024->") {
         // display: grid;
-        grid-row: 2 / -1;
-        grid-column: 1 / 9;
+        grid-row: 6 / span 3;
+        grid-column: 1 / 8;
 
         // grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 10rem)) minmax(
         //     2rem,
@@ -196,7 +203,7 @@
       }
 
       @include respond-to("1366->") {
-        grid-row: 2 / -1;
+        grid-row: 5 / span 3;
       }
     }
 
@@ -214,7 +221,7 @@
       text {
         // text-align: center;
         text-anchor: middle;
-        font-size: 2.5rem;
+        font-size: 2.2rem;
         font-family: var(--ff);
       }
 
@@ -222,6 +229,7 @@
         // position: absolute;
         height: auto;
         width: Min(112%, 55rem);
+
         // flex: 1 0 30%;
       }
 
@@ -233,17 +241,17 @@
         // min-width: 53.3rem;
         // width: 65%;
         // min-width: 53rem;
-        width: Min(100%, 53rem);
+        width: Min(100%, 64rem);
       }
 
       @include respond-to("1366->") {
         // width: 57%;
         // min-width: 62rem;
-        width: Min(100%, 62rem);
+        width: Min(100%, 80rem);
       }
 
       @include respond-to("1920->") {
-        width: 61%;
+        // width: 80%;
         // min-width: 50rem;
       }
     }
@@ -285,7 +293,7 @@
         // grid-column: 4 / span 8;
         grid-column: 6 / span 6;
         z-index: 1;
-        transform: translate(11rem, 0rem);
+        transform: translate(11rem, 0.9rem);
       }
 
       @include respond-to("1024->") {
@@ -343,7 +351,7 @@
       }
 
       @include respond-to("1366->") {
-        transform: translate(0rem, 13rem);
+        transform: translate(0rem, 16rem);
       }
 
       // @include respond-to("1920->") {
@@ -351,33 +359,30 @@
       // }
     }
 
-    &--doodle3 {
-      grid-column: 2 / -2;
-      grid-row: 4;
-      z-index: 2;
-      // transform: translate(0, -5.5rem);
-      // height: 15rem;
-      // opacity: 0;
+    // &--doodle3 {
+    //   grid-column: 2 / -2;
+    //   grid-row: 4;
+    //   z-index: 2;
 
-      @include respond-to("568->") {
-        grid-column: 1 / span 7;
-        // transform: translate(-5rem, -8.5rem);
-      }
+    //   @include respond-to("568->") {
+    //     grid-column: 1 / span 7;
+    //     // transform: translate(-5rem, -8.5rem);
+    //   }
 
-      @include respond-to("1024->") {
-        grid-column: 1 / span 8;
-        grid-row: 6;
-        transform: translate(9rem, 0rem);
-      }
+    //   @include respond-to("1024->") {
+    //     grid-column: 1 / span 8;
+    //     grid-row: 6;
+    //     transform: translate(9rem, 0rem);
+    //   }
 
-      @include respond-to("1366->") {
-        transform: translate(10rem, 4rem);
-      }
+    //   @include respond-to("1366->") {
+    //     transform: translate(10rem, 4rem);
+    //   }
 
-      @include respond-to("1920->") {
-        transform: translate(8rem, 3rem);
-      }
-    }
+    //   @include respond-to("1920->") {
+    //     transform: translate(8rem, 3rem);
+    //   }
+    // }
   }
 
   &__content {
@@ -458,9 +463,9 @@
 
   &__dots {
     position: absolute;
-    bottom: 0;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -15%);
 
     width: 100%;
     justify-content: space-between;

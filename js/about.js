@@ -556,19 +556,20 @@ function aboutAnimationInit() {
         opacity: 0,
         clearProps: "all",
       },
-      "+=0.5"
+      "<1"
     )
     .from(
-      ".story__photo--doodle3",
+      ".about-dot",
       {
-        scale: 0,
-        y: -200,
-        duration: 1.8,
-        ease: gsapEase.elastic02,
+        // scale: 0,
+        y: 300,
+        duration: 1,
+        stagger: 0.2,
+        ease: "none",
         opacity: 0,
         clearProps: "all",
       },
-      "+=0.5"
+      "<0.3"
     )
     .from("[data-num='0']", {
       x: -100,
@@ -608,7 +609,7 @@ function aboutAnimationInit() {
       "<0"
     );
 
-  function addDoorAnimstionOnResize() {
+  function addDoorAnimationOnResize() {
     const doodle = document.querySelector(".face-doodle-mobile .text-box");
     const door = document.querySelector(".story--2__door svg");
     const textIT = document.querySelectorAll(".story--2__door svg .it");
@@ -633,10 +634,7 @@ function aboutAnimationInit() {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
       textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-    } else if (
-      doodleCenterCoordY <
-      doorCenterCoordY - doorCenterCoordY * 0.13
-    ) {
+    } else if (doodleCenterCoordY < doorCenterCoordY + doorCenterCoordY * 0.1) {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
       textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
@@ -646,8 +644,8 @@ function aboutAnimationInit() {
       textIT.forEach((text) => (text.style.fill = "#ee7950"));
     }
   }
-  addDoorAnimstionOnResize();
-  window.addEventListener("resize", addDoorAnimstionOnResize);
+  addDoorAnimationOnResize();
+  window.addEventListener("resize", addDoorAnimationOnResize);
 }
 
 // export default pageSkillsInit;
