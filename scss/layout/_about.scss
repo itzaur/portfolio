@@ -220,7 +220,7 @@
       // grid-area: about-doodle-1;
       text {
         // text-align: center;
-        text-anchor: middle;
+        text-anchor: start;
         font-size: 2.2rem;
         font-family: var(--ff);
       }
@@ -463,9 +463,9 @@
 
   &__dots {
     position: absolute;
-    bottom: 15%;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, -15%);
+    transform: translate(-50%, -10%);
 
     width: 100%;
     justify-content: space-between;
@@ -666,7 +666,7 @@
           height: auto;
 
           & text {
-            text-anchor: middle;
+            text-anchor: start;
             font-size: 1rem;
             font-family: var(--ff);
           }
@@ -694,7 +694,7 @@
           min-height: 30rem;
 
           & text {
-            text-anchor: middle;
+            text-anchor: start;
             font-size: 0.9rem;
             font-family: var(--ff);
             transform: scale(-1, 1);

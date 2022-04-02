@@ -3,6 +3,7 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
+// gsap.registerPlugin(TextPlugin);
 
 const gsapEase = {
   power1: "power1.out",
@@ -247,15 +248,6 @@ function pageSkillsInit() {
   }
 
   const hobbiesTimeline = gsap.timeline();
-  // const gsapEase = {
-  //   power4: "power4.out",
-  //   back: "back.out",
-  // };
-
-  // const hobbie1Before = window.getComputedStyle(
-  //   document.querySelector(".hobbie--1"),
-  //   ":before"
-  // );
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -342,6 +334,7 @@ function pageSkillsInit() {
 }
 
 function aboutAnimationInit() {
+  gsap.registerPlugin(TextPlugin);
   //Slider mobile
   const storySlides = document.querySelectorAll(".story");
   const slidesBox = document.querySelector(".story__box");
@@ -473,7 +466,9 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
-    aboutDoodlePart2Animation();
+    // aboutDoodlePart2Animation();
+    ellipseTimlineDesktop.play();
+    ellipseTimlineMobile.play();
   }
 
   function desktopPrevSlide() {
@@ -481,6 +476,9 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
+
+    ellipseTimlineDesktop.pause();
+    ellipseTimlineMobile.pause();
   }
 
   function activeDot(slide) {
@@ -493,139 +491,15 @@ function aboutAnimationInit() {
     });
   }
 
-  function aboutDoodlePart2Animation() {
-    const ellipseTimlineDesktop = gsap.timeline({ duration: 1 });
-    const ellipseTimlineMobile = gsap.timeline({ duration: 1 });
-
-    ellipseTimlineDesktop
-      .from(".ellipse1", {
-        y: -400,
-        opacity: 0,
-        ease: gsapEase.power1,
-      })
-      .from(
-        ".ellipse2",
-        {
-          y: -400,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.3"
-      )
-      .from(
-        ".ellipse3a",
-        {
-          y: -1.91,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.3"
-      )
-      .from(
-        ".ellipse3b",
-        {
-          y: -400,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0"
-      )
-      .from(
-        ".ellipse4",
-        {
-          y: -400,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.4"
-      )
-      .from(
-        ".ellipse-text",
-        {
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.5"
-      );
-
-    ellipseTimlineMobile
-      .from(".ellipse-mobile1a", {
-        y: -390,
-        opacity: 0,
-        ease: gsapEase.power1,
-      })
-      .from(
-        ".ellipse-mobile1b",
-        {
-          y: -410,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0"
-      )
-      .from(
-        ".ellipse-mobile2a",
-        {
-          y: -380,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.3"
-      )
-      .from(
-        ".ellipse-mobile2b",
-        {
-          y: -410,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0"
-      )
-      .from(
-        ".ellipse-mobile3a",
-        {
-          y: 5.48,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.3"
-      )
-      .from(
-        ".ellipse-mobile3b",
-        {
-          y: -410,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0"
-      )
-      .from(
-        ".ellipse-mobile4",
-        {
-          y: -410,
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.4"
-      )
-      .from(
-        ".ellipse-mobile-text",
-        {
-          opacity: 0,
-          ease: gsapEase.power1,
-        },
-        "<0.5"
-      );
-  }
-
   function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
-    var mql = window.matchMedia(mediaQuery);
+    let mql = window.matchMedia(mediaQuery);
     mql.addListener(function (e) {
       return layoutChangedCallback(e.matches);
     });
     layoutChangedCallback(mql.matches);
   }
 
+  //ANCHOR About-page (part1) doodle text animation
   const aboutTimeline = gsap.timeline();
   aboutTimeline
     .from(btnAboutSection, {
@@ -642,46 +516,66 @@ function aboutAnimationInit() {
       ease: gsapEase.elastic03,
       opacity: 0,
       clearProps: "all",
-    })
-    .from(
-      ".story__photo--doodle1",
-      {
-        scale: 0,
-        duration: 1.8,
-        ease: gsapEase.elastic02,
-        opacity: 0,
-        clearProps: "all",
-      },
-      "<1.2"
-    )
-    .from(
-      ".story__photo--doodle2",
-      {
-        scale: 0,
-        y: -100,
-        duration: 1.8,
-        ease: gsapEase.elastic02,
-        opacity: 0,
-        clearProps: "all",
-      },
-      "<1"
-    )
-    .from(
-      ".about-dot",
-      {
-        // scale: 0,
-        y: 200,
-        duration: 1,
-        stagger: 0.2,
-        ease: gsapEase.back,
-        opacity: 0,
-        clearProps: "all",
-        onComplete: () => {
-          activeDot(0);
-        },
-      },
-      "<0.8"
-    )
+    });
+
+  const aboutTimeline2 = gsap.timeline();
+  aboutTimeline2.from(".story__photo--doodle1", {
+    scale: 0,
+    duration: 1.8,
+    ease: gsapEase.elastic02,
+    opacity: 0,
+    clearProps: "all",
+  });
+
+  const aboutTimeline3 = gsap.timeline();
+  aboutTimeline3.from(".story__photo--doodle1 text tspan", {
+    text: {
+      value: "",
+    },
+    duration: 2,
+    ease: "none",
+    stagger: {
+      each: 2,
+    },
+  });
+
+  const aboutTimeline4 = gsap.timeline();
+  aboutTimeline4.from(".story__photo--doodle2", {
+    scale: 0,
+    y: -100,
+    duration: 1.8,
+    ease: gsapEase.elastic02,
+    opacity: 0,
+    clearProps: "transform",
+  });
+
+  const aboutTimeline5 = gsap.timeline();
+  aboutTimeline5.from(".story__photo--doodle2 text tspan", {
+    text: {
+      value: "",
+    },
+    duration: 2,
+    ease: "none",
+    stagger: {
+      each: 2,
+    },
+  });
+
+  const aboutTimeline6 = gsap.timeline();
+  aboutTimeline6.from(".about-dot", {
+    y: 200,
+    duration: 1,
+    stagger: 0.2,
+    ease: gsapEase.back,
+    opacity: 0,
+    clearProps: "all",
+    onComplete: () => {
+      activeDot(0);
+    },
+  });
+
+  const aboutTimeline7 = gsap.timeline();
+  aboutTimeline7
     .from("[data-num='0']", {
       x: -100,
       opacity: 0,
@@ -720,16 +614,268 @@ function aboutAnimationInit() {
       "<0"
     );
 
+  let master;
+  const speed = {
+    t4: 4,
+    t6: 6,
+    t10: 10,
+  };
+
+  if (window.innerWidth < "568") {
+    master = gsap
+      .timeline()
+      .add(aboutTimeline)
+      .add(aboutTimeline2.delay(-1))
+      .add(aboutTimeline3.delay(-0.5))
+      .add(aboutTimeline7)
+      .add(aboutTimeline4.timeScale(speed.t4))
+      .add(aboutTimeline6.delay(-0.5))
+      .add(aboutTimeline5);
+  } else {
+    master = gsap
+      .timeline()
+      .add(aboutTimeline)
+      .add(aboutTimeline2.delay(-1))
+      .add(aboutTimeline3.delay(-0.5))
+      .add(aboutTimeline4)
+      .add(aboutTimeline5)
+      .add(aboutTimeline6)
+      .add(aboutTimeline7);
+  }
+
+  const ellipseTimlineDesktop = gsap.timeline({ duration: 1, paused: true });
+  const ellipseTimlineMobile = gsap.timeline({ duration: 1, paused: true });
+  const ellipseTimlineDesktopText = gsap.timeline({
+    duration: 1,
+    paused: true,
+  });
+
+  ellipseTimlineDesktop
+    .from(".ellipse1", {
+      y: -400,
+      opacity: 0,
+      ease: gsapEase.power1,
+    })
+    .from(
+      ".ellipse2",
+      {
+        y: -400,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.3"
+    )
+    .from(
+      ".ellipse3a",
+      {
+        y: -1.91,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.3"
+    )
+    .from(
+      ".ellipse3b",
+      {
+        y: -400,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0"
+    )
+    .from(
+      ".ellipse4",
+      {
+        y: -400,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.4"
+    )
+    .from(
+      ".ellipse-text",
+      {
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.5"
+    );
+
+  ellipseTimlineDesktopText.from(".ellipse-text tspan", {
+    text: {
+      value: "",
+    },
+    duration: 2,
+    delay: -1,
+    ease: "none",
+    stagger: {
+      each: 2,
+    },
+  });
+
+  ellipseTimlineMobile
+    .from(".ellipse-mobile1a", {
+      y: -390,
+      opacity: 0,
+      ease: gsapEase.power1,
+    })
+    .from(
+      ".ellipse-mobile1b",
+      {
+        y: -410,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0"
+    )
+    .from(
+      ".ellipse-mobile2a",
+      {
+        y: -380,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.3"
+    )
+    .from(
+      ".ellipse-mobile2b",
+      {
+        y: -410,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0"
+    )
+    .from(
+      ".ellipse-mobile3a",
+      {
+        y: 5.48,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.3"
+    )
+    .from(
+      ".ellipse-mobile3b",
+      {
+        y: -410,
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0"
+    )
+    .from(
+      ".ellipse-mobile4",
+      {
+        y: -410,
+        autoAlpha: 0,
+        // opacity: 0,
+        ease: gsapEase.power1,
+        onComplete: () => {
+          addDoorAnimationOnResize();
+        },
+      },
+      "<0.4"
+    )
+    .from(
+      ".ellipse-mobile-text",
+      {
+        opacity: 0,
+        ease: gsapEase.power1,
+      },
+      "<0.5"
+    )
+    .from(".ellipse-mobile-text tspan", {
+      text: {
+        value: "",
+      },
+      duration: 2,
+      ease: "none",
+      stagger: {
+        each: 2,
+      },
+    });
+
+  ellipseTimlineDesktop.eventCallback("onComplete", function () {
+    ellipseTimlineDesktopText.play(0);
+  });
+
+  slides.forEach((doodle) => {
+    doodle.addEventListener("click", (e) => {
+      installMediaQueryWatcher("(max-width: 568px)", function (matches) {
+        if (matches) {
+          if (e.target.closest(".story__photo--doodle1") === doodle) {
+            aboutTimeline3
+              .timeScale(speed.t6)
+              .eventCallback("onComplete", function () {
+                master = gsap
+                  .timeline()
+                  .remove(aboutTimeline)
+                  .remove(aboutTimeline2)
+                  .add(aboutTimeline7)
+                  .add(aboutTimeline4.timeScale(speed.t6))
+                  .add(aboutTimeline6.delay(-0.5))
+                  .add(aboutTimeline5);
+              });
+          } else if (e.target.closest(".story__photo--doodle2") === doodle) {
+            aboutTimeline5.timeScale(speed.t6);
+          }
+        } else {
+          if (e.target.closest(".story__photo--doodle1") === doodle) {
+            aboutTimeline3
+              .timeScale(speed.t6)
+              .eventCallback("onComplete", function () {
+                master = gsap
+                  .timeline()
+                  .remove(aboutTimeline)
+                  .remove(aboutTimeline2)
+                  .add(aboutTimeline4)
+                  .add(aboutTimeline5)
+                  .add(aboutTimeline6)
+                  .add(aboutTimeline7);
+              });
+          } else if (e.target.closest(".story__photo--doodle2") === doodle) {
+            aboutTimeline5
+              .timeScale(speed.t6)
+              .eventCallback("onComplete", function () {
+                master = gsap
+                  .timeline()
+                  .remove(aboutTimeline)
+                  .remove(aboutTimeline2)
+                  .remove(aboutTimeline3)
+                  .remove(aboutTimeline4)
+                  .add(aboutTimeline6)
+                  .add(aboutTimeline7);
+              });
+          }
+        }
+      });
+    });
+  });
+
+  document
+    .querySelector(".face-doodle-desktop")
+    .addEventListener("click", (e) => {
+      ellipseTimlineDesktopText.timeScale(speed.t10);
+    });
+
+  document
+    .querySelector(".face-doodle-mobile")
+    .addEventListener("click", (e) => {
+      ellipseTimlineMobile.timeScale(speed.t10);
+    });
+
+  //ANCHOR Door animation
   function addDoorAnimationOnResize() {
     const doodle = document.querySelector(".face-doodle-mobile .text-box");
     const door = document.querySelector(".story--2__door svg");
     const textIT = document.querySelectorAll(".story--2__door svg .it");
     const doodleCenterCoordX =
       doodle.getBoundingClientRect().left +
-      door.getBoundingClientRect().width / 2;
+      doodle.getBoundingClientRect().width / 2;
     const doodleCenterCoordY =
       doodle.getBoundingClientRect().top +
-      door.getBoundingClientRect().height / 2;
+      doodle.getBoundingClientRect().height / 2;
     const doorCenterCoordX =
       door.getBoundingClientRect().left +
       door.getBoundingClientRect().width / 2;
@@ -740,22 +886,28 @@ function aboutAnimationInit() {
     if (
       doodleCenterCoordY > doorCenterCoordY &&
       doodleCenterCoordY >
-        doorCenterCoordY + door.getBoundingClientRect().height / 2
+        doorCenterCoordY + doodle.getBoundingClientRect().height / 2
     ) {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
       textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-    } else if (doodleCenterCoordY < doorCenterCoordY + doorCenterCoordY * 0.1) {
+    } else if (
+      doodleCenterCoordY <
+      doorCenterCoordY -
+        doorCenterCoordY * 0.1 -
+        doodle.getBoundingClientRect().height / 2
+    ) {
       // doodle.style.fill = "white";
       doodle.style.opacity = "1";
       textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
     } else {
       // doodle.style.fill = "red";
       doodle.style.opacity = "0.8";
+      doodle.style.transition = "opacity 0.3s linear";
       textIT.forEach((text) => (text.style.fill = "#ee7950"));
     }
   }
-  addDoorAnimationOnResize();
+  // addDoorAnimationOnResize();
   window.addEventListener("resize", addDoorAnimationOnResize);
 }
 

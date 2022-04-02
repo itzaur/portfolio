@@ -2426,7 +2426,7 @@ select {
 }
 
 .story__box > svg text {
-  text-anchor: middle;
+  text-anchor: start;
   font-size: 2.2rem;
   font-family: var(--ff);
 }
@@ -2623,11 +2623,11 @@ select {
 
 .story__dots {
   position: absolute;
-  bottom: 15%;
+  bottom: 10%;
   left: 50%;
-  -webkit-transform: translate(-50%, -15%);
-      -ms-transform: translate(-50%, -15%);
-          transform: translate(-50%, -15%);
+  -webkit-transform: translate(-50%, -10%);
+      -ms-transform: translate(-50%, -10%);
+          transform: translate(-50%, -10%);
   width: 100%;
   -webkit-box-pack: justify;
   -webkit-justify-content: space-between;
@@ -2903,7 +2903,7 @@ select {
 }
 
 .story--2__face-img .face-doodle-desktop text {
-  text-anchor: middle;
+  text-anchor: start;
   font-size: 1rem;
   font-family: var(--ff);
 }
@@ -2940,7 +2940,7 @@ select {
 }
 
 .story--2__face-img .face-doodle-mobile text {
-  text-anchor: middle;
+  text-anchor: start;
   font-size: 0.9rem;
   font-family: var(--ff);
   -webkit-transform: scale(-1, 1);
