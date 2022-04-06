@@ -344,11 +344,10 @@ function aboutAnimationInit() {
   const btnAboutSection = document.querySelector(".top-nav--about");
   const dotsBox = document.querySelector(".dots-box");
   const dots = dotsBox.querySelectorAll("[role='tab']");
+  const KEYDOWN_LEFT = 37;
+  const KEYDOWN_RIGHT = 39;
 
   tabList.addEventListener("keydown", (e) => {
-    const KEYDOWN_LEFT = 37;
-    const KEYDOWN_RIGHT = 39;
-
     if (e.keyCode === KEYDOWN_RIGHT) {
       nextSlide();
     } else if (e.keyCode === KEYDOWN_LEFT) {
@@ -378,9 +377,6 @@ function aboutAnimationInit() {
 
   //Slider desktop
   dotsBox.addEventListener("keydown", (e) => {
-    const KEYDOWN_LEFT = 37;
-    const KEYDOWN_RIGHT = 39;
-
     if (e.keyCode === KEYDOWN_RIGHT) {
       desktopNextSlide();
     } else if (e.keyCode === KEYDOWN_LEFT) {
@@ -426,19 +422,19 @@ function aboutAnimationInit() {
       const resultX = +window
         .getComputedStyle(slide, null)
         .transform.match(/(-?[0-9\.]+)/g)[4];
-      const resultY = +window
-        .getComputedStyle(slide, null)
-        .transform.match(/(-?[0-9\.]+)/g)[5];
-      const res = window.innerWidth - btnAboutSection.offsetWidth;
+      // const resultY = +window
+      //   .getComputedStyle(slide, null)
+      //   .transform.match(/(-?[0-9\.]+)/g)[5];
+      const result = window.innerWidth - btnAboutSection.offsetWidth;
 
-      if (resultX > res && resultX <= window.innerWidth) {
+      if (resultX > result && resultX <= window.innerWidth) {
         btnAboutSection.style.opacity = "1";
         btnAboutSection.style.visibility = "visible";
 
         aboutBtn2.style.opacity = "0";
         aboutBtn2.style.visibility = "hidden";
         aboutBtn2.style.zIndex = "-1";
-      } else if (resultX > 0 && resultX < res) {
+      } else if (resultX > 0 && resultX < result) {
         btnAboutSection.style.opacity = "0";
         btnAboutSection.style.visibility = "hidden";
 
@@ -466,7 +462,7 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
-    // aboutDoodlePart2Animation();
+
     ellipseTimlineDesktop.play();
     ellipseTimlineMobile.play();
   }
@@ -870,15 +866,9 @@ function aboutAnimationInit() {
     const doodle = document.querySelector(".face-doodle-mobile .text-box");
     const door = document.querySelector(".story--2__door svg");
     const textIT = document.querySelectorAll(".story--2__door svg .it");
-    const doodleCenterCoordX =
-      doodle.getBoundingClientRect().left +
-      doodle.getBoundingClientRect().width / 2;
     const doodleCenterCoordY =
       doodle.getBoundingClientRect().top +
       doodle.getBoundingClientRect().height / 2;
-    const doorCenterCoordX =
-      door.getBoundingClientRect().left +
-      door.getBoundingClientRect().width / 2;
     const doorCenterCoordY =
       door.getBoundingClientRect().top +
       door.getBoundingClientRect().height / 2;
@@ -911,5 +901,4 @@ function aboutAnimationInit() {
   window.addEventListener("resize", addDoorAnimationOnResize);
 }
 
-// export default pageSkillsInit;
 export { pageSkillsInit, aboutAnimationInit };

@@ -2281,14 +2281,14 @@ select {
   background-repeat: no-repeat;
   -webkit-background-size: 100%, cover;
           background-size: 100%, cover;
-  background-position-x: left, center;
-  background-position-y: bottom, bottom;
+  background-position: bottom 0px left 65%;
 }
 
 @media (min-width: 35.5em) {
   .about {
     -webkit-background-size: 112%, cover;
             background-size: 112%, cover;
+    background-position: bottom, center;
   }
 }
 
