@@ -8,21 +8,12 @@
 
 .about-page {
   position: relative;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: 49vh 49vh;
-  //   grid-auto-rows: 1fr;
 
-  // max-width: 192rem;
   height: 100vh;
   // min-height: 100vh;
 
   padding: var(--padding-container);
   background-color: HSL(var(--primary-hs) 100%);
-  //   border: 5px solid green;
-  // @include respond-to("1024->") {
-  //   height: 100vh;
-  //   // min-height: 0;
-  // }
 }
 
 .about {
@@ -34,81 +25,41 @@
 
   border: 2px solid HSL(var(--primary-hs) 0%);
 
-  // background-position: center center;
-  // background-repeat: no-repeat;
-  // background-size: cover;
-  // grid-column: 1 / span 2;
-  // grid-row: 1 / 20;
-  //   min-height: 60vh;
-  // background-color: HSL(var(--primary-hs) 0%);
   overflow: hidden;
-  // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
 
-  background: #f8edc5;
+  background: var(--clr-bg);
   background-image: url("../../img/about-bg.png"),
     url("../../img/svg/about-rays.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
-  background-position: bottom 0 right, top 0 center;
+  background-position: bottom 0px left 65%;
 
   @include respond-to("568->") {
-    background-size: 106%, cover;
-    // background-position: top 80vh right, top -10vw center;
+    background-size: 112%, cover;
+    background-position: bottom, center;
   }
 
   @include respond-to("736->") {
     background-size: 100%, cover;
-    // background-position: top 77vh right, top -10vw center;
   }
 
   @include respond-to("1024->") {
     background-size: 100%, 150%;
-    background-position: bottom -7vw right, top -1vw center;
-    // background-position: top 67vh right, top -10vw center;
+    background-position: bottom -6.9vw right, top -1vw center;
   }
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 100%;
-  //   // top: 1px;
-  //   // left: 1px;
-  //   // background: #f8edc5;
-  //   // background-image: url("../../img/about-bg.png"),
-  //   //   url("../../img/svg/about-rays.svg");
-  //   // background-repeat: no-repeat;
-  //   // background-size: 100%, cover;
-  //   // background-position: bottom 0 right, top 0 center;
-
-  //   // clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
-
-  //   // @include respond-to("320->") {
-  //   //   background-size: 105%, cover;
-  //   //   //   background-position: top 70vh right, top -10vw center;
-  //   // }
-
-  //   // @include respond-to("568->") {
-  //   //   background-size: 106%, cover;
-  //   //   // background-position: top 80vh right, top -10vw center;
-  //   // }
-
-  //   // @include respond-to("736->") {
-  //   //   background-size: 100%, cover;
-  //   //   // background-position: top 77vh right, top -10vw center;
-  //   // }
-
-  //   // @include respond-to("1024->") {
-  //   //   background-size: 100%, 150%;
-  //   //   background-position: bottom -7vw right, top -1vw center;
-  //   //   // background-position: top 67vh right, top -10vw center;
-  //   // }
-  // }
+  @include respond-to("1366->") {
+    background-position: bottom -9vw right, top -1vw center;
+  }
 
   &__content {
     position: relative;
+    // display: -webkit-box;
+
     height: 100%;
     z-index: 1;
+
+    overflow: hidden;
   }
 }
 
@@ -121,6 +72,7 @@
   grid-template-rows: minmax(0, 1rem) repeat(4, 1fr);
   height: 100%;
   // place-self: end;
+  transition: transform 1s cubic-bezier(0.93, 0.02, 0.56, 0.95);
 
   @include respond-to("568->") {
     // grid-template-areas:
@@ -158,11 +110,11 @@
     @include respond-to("568->") {
       position: relative;
       grid-column: 2 / 9;
-      grid-row: 16 / span 3;
+      grid-row: 11 / span 3;
       align-self: end;
       // margin-bottom: 0.5rem;
       flex-direction: column;
-      justify-content: space-between;
+      justify-content: center;
       gap: 0;
       // display: block;
       // display: grid;
@@ -176,8 +128,8 @@
 
       @include respond-to("1024->") {
         // display: grid;
-        grid-row: 2 / -1;
-        grid-column: 1 / 9;
+        grid-row: 6 / span 3;
+        grid-column: 1 / 8;
 
         // grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 10rem)) minmax(
         //     2rem,
@@ -191,7 +143,7 @@
       }
 
       @include respond-to("1366->") {
-        grid-row: 2 / -1;
+        grid-row: 5 / span 3;
       }
     }
 
@@ -208,8 +160,8 @@
       // grid-area: about-doodle-1;
       text {
         // text-align: center;
-        text-anchor: middle;
-        font-size: 2.5rem;
+        text-anchor: start;
+        font-size: 2.2rem;
         font-family: var(--ff);
       }
 
@@ -217,6 +169,7 @@
         // position: absolute;
         height: auto;
         width: Min(112%, 55rem);
+
         // flex: 1 0 30%;
       }
 
@@ -228,17 +181,17 @@
         // min-width: 53.3rem;
         // width: 65%;
         // min-width: 53rem;
-        width: Min(100%, 53rem);
+        width: Min(100%, 64rem);
       }
 
       @include respond-to("1366->") {
         // width: 57%;
         // min-width: 62rem;
-        width: Min(100%, 62rem);
+        width: Min(100%, 80rem);
       }
 
       @include respond-to("1920->") {
-        width: 61%;
+        // width: 80%;
         // min-width: 50rem;
       }
     }
@@ -280,7 +233,7 @@
         // grid-column: 4 / span 8;
         grid-column: 6 / span 6;
         z-index: 1;
-        transform: translate(11rem, 0rem);
+        transform: translate(11rem, 0.9rem);
       }
 
       @include respond-to("1024->") {
@@ -338,7 +291,7 @@
       }
 
       @include respond-to("1366->") {
-        transform: translate(0rem, 13rem);
+        transform: translate(0rem, 16rem);
       }
 
       // @include respond-to("1920->") {
@@ -346,32 +299,30 @@
       // }
     }
 
-    &--doodle3 {
-      grid-column: 2 / -2;
-      grid-row: 4;
-      z-index: 2;
-      // transform: translate(0, -5.5rem);
-      // height: 15rem;
+    // &--doodle3 {
+    //   grid-column: 2 / -2;
+    //   grid-row: 4;
+    //   z-index: 2;
 
-      @include respond-to("568->") {
-        grid-column: 1 / span 7;
-        // transform: translate(-5rem, -8.5rem);
-      }
+    //   @include respond-to("568->") {
+    //     grid-column: 1 / span 7;
+    //     // transform: translate(-5rem, -8.5rem);
+    //   }
 
-      @include respond-to("1024->") {
-        grid-column: 1 / span 8;
-        grid-row: 6;
-        transform: translate(9rem, 0rem);
-      }
+    //   @include respond-to("1024->") {
+    //     grid-column: 1 / span 8;
+    //     grid-row: 6;
+    //     transform: translate(9rem, 0rem);
+    //   }
 
-      @include respond-to("1366->") {
-        transform: translate(10rem, 4rem);
-      }
+    //   @include respond-to("1366->") {
+    //     transform: translate(10rem, 4rem);
+    //   }
 
-      @include respond-to("1920->") {
-        transform: translate(8rem, 3rem);
-      }
-    }
+    //   @include respond-to("1920->") {
+    //     transform: translate(8rem, 3rem);
+    //   }
+    // }
   }
 
   &__content {
@@ -395,27 +346,6 @@
         line-height: 1.2;
       }
 
-      //   &::before {
-      //     content: "";
-      //     width: 50%;
-      //     height: 100%;
-      //     shape-outside: polygon(
-      //       0 0,
-      //       98% 0,
-      //       50% 6%,
-      //       23.4% 17.3%,
-      //       6% 32.6%,
-      //       0 50%,
-      //       6% 65.6%,
-      //       23.4% 82.7%,
-      //       50% 94%,
-      //       98% 100%,
-      //       0 100%
-      //     );
-      //     // shape-margin: 7%;
-      //     float: left;
-      //   }
-
       & div {
         width: 100%;
         height: 100%;
@@ -426,35 +356,14 @@
           rgba(255, 255, 255, 0) 70.3%
         );
       }
-
-      //   & div:before {
-      //     content: "";
-      //     width: 50%;
-      //     height: 100%;
-      //     float: right;
-      //     shape-outside: polygon(
-      //       2% 0%,
-      //       100% 0%,
-      //       100% 100%,
-      //       2% 100%,
-      //       50% 94%,
-      //       76.6% 82.7%,
-      //       94% 65.6%,
-      //       100% 50%,
-      //       94% 32.6%,
-      //       76.6% 17.3%,
-      //       50% 6%
-      //     );
-      //     // shape-margin: 7%;
-      //   }
     }
   }
 
   &__dots {
     position: absolute;
-    bottom: 0;
+    bottom: 10%;
     left: 50%;
-    transform: translate(-50%, 0);
+    transform: translate(-50%, -10%);
 
     width: 100%;
     justify-content: space-between;
@@ -476,6 +385,234 @@
       background-repeat: no-repeat;
 
       border: none;
+    }
+  }
+
+  // &--1,
+  // &--2 {
+  //   // & button {
+  //   //   opacity: 0;
+  //   //   visibility: hidden;
+  //   //   // transition: all 0.3s ease;
+  //   // }
+  //   // transition: opacity 4s linear, transform 0.5s ease;
+  //   // transform: translate(0, 0);
+  // }
+
+  &--2 {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    // transition: opacity 0.6s linear;
+    & button {
+      opacity: 0;
+      visibility: hidden;
+      // transition: all 0.3s ease;
+    }
+
+    @include flex(column, null, null);
+
+    width: 100%;
+    height: 100%;
+    background-color: var(--clr-footer);
+    // transform: translate(100%, 0);
+    z-index: 5;
+
+    overflow: hidden;
+
+    &__bg1 {
+      height: 50%;
+      background-image: url("../img/svg/yellow_rays.svg");
+      background-repeat: no-repeat;
+      background-size: 400%;
+      background-position: center;
+      background-color: var(--clr-primary);
+
+      @include respond-to("568->") {
+        background-size: 130%;
+      }
+    }
+
+    &__bg2 {
+      height: 50%;
+    }
+
+    &__door {
+      display: flex;
+      width: 100%;
+      height: 100%;
+
+      overflow: hidden;
+
+      @include respond-to("568->") {
+        display: block;
+      }
+
+      & svg {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        margin: auto 0 0 auto;
+        transform: translateY(3.4vh);
+
+        & .cls-1 {
+          fill: #88b5c0;
+        }
+
+        & .cls-2 {
+          fill: #4e5778;
+        }
+
+        & .cls-3 {
+          fill: #1d1d1b;
+        }
+
+        & .cls-4 {
+          fill: #f9e69a;
+        }
+
+        & .cls-5 {
+          fill: #ee7950;
+        }
+
+        & .cls-6 {
+          fill: HSL(var(--primary-hs) 100%);
+        }
+
+        // & .it {
+        //   fill: purple;
+        // }
+
+        @include respond-to("568->") {
+          width: auto;
+          height: 100%;
+          margin-left: auto;
+          // transform: translateY(3.4vh);
+        }
+      }
+    }
+
+    &__face {
+      // @include flex(null, null, null);
+      position: fixed;
+      width: 100%;
+      height: 100%;
+
+      &-img {
+        @include flex(column, flex-end, flex-end);
+        width: 100%;
+        height: 100%;
+
+        background-image: url("../../img/svg/dots_orange.svg");
+        background-repeat: no-repeat;
+        // background-size: cover;
+        background-position: bottom -6rem left -4rem;
+
+        @include respond-to("568->") {
+          @include flex(row, space-between, flex-end);
+          background-position: bottom -20rem right 19rem;
+        }
+
+        @include respond-to("1024->") {
+          @include flex(null, null, center);
+          background-position: bottom -17rem left -16rem;
+        }
+
+        & img {
+          // width: Min(50vw, 100vw);
+          // height: 170%;
+
+          width: 80vw;
+          order: 1;
+
+          transform: translate(-34vw, Max(20%, 11vh));
+          // transform: translate(-17vw, clamp(1rem, 28vw, 12rem));
+
+          @media (max-width: 20em) {
+            transform: translate(-34vw, clamp(1rem, 28vw, 12rem));
+          }
+
+          @include respond-to("568->") {
+            order: 0;
+            transform: translate(-17vw, Max(20%, 11vh));
+          }
+
+          @include respond-to("1024->") {
+            width: Min(56vw, 100vw);
+
+            transform: translate(0, 0);
+          }
+        }
+
+        & svg {
+          height: 100%;
+          transform: translate(-19vw, 9vh);
+          overflow: visible;
+
+          & .cls-1 {
+            fill: HSL(var(--primary-hs) 100%);
+          }
+
+          & .cls-2 {
+            fill: #1d1d1b;
+          }
+        }
+
+        .face-doodle-desktop {
+          display: none;
+          height: auto;
+
+          & text {
+            text-anchor: start;
+            font-size: 1rem;
+            font-family: var(--ff);
+          }
+
+          @include respond-to("568->") {
+            display: block;
+          }
+
+          @media (min-width: 35.5em) and (max-width: 64em) {
+            min-width: clamp(34rem, 60vw, 60rem);
+            // height: auto;
+            transform: translate(-45vw, -5vh);
+          }
+
+          @include respond-to("1024->") {
+            min-width: 50vw;
+          }
+        }
+
+        .face-doodle-mobile {
+          display: block;
+          width: 95%;
+          height: auto;
+          transform: translate(0, Max(120%, 30vh)) scale(-1, 1); //48
+          min-height: 30rem;
+
+          & text {
+            text-anchor: start;
+            font-size: 0.9rem;
+            font-family: var(--ff);
+            transform: scale(-1, 1);
+          }
+
+          @media (max-width: 20em) {
+            transform: translate(0, Max(20%, 20vh)) scale(-1, 1); //24
+          }
+
+          @include respond-to("568->") {
+            display: none;
+          }
+        }
+      }
+    }
+
+    &__doodle {
+      @include flex(null, null, center);
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -554,3 +691,10 @@
 //   z-index: 10;
 //   pointer-events: none;
 // }
+.dots-box {
+  @include abs-center;
+  top: 95%;
+  transform: translate(-50%, -95%);
+  align-items: center;
+  z-index: 10;
+}

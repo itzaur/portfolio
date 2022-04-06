@@ -145,6 +145,30 @@
   // }
 }
 
+.about-dot {
+  width: 1.8rem;
+  height: 1.8rem;
+
+  border: 0;
+  border-radius: 50%;
+
+  // background-color: HSL(var(--primary-hs) 100%);
+  background-image: url("../../img/svg/circle1.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  cursor: pointer;
+
+  transform: scale(1);
+  // transition: transform 0.3s ease-in-out;
+
+  &.active {
+    background-image: url("../../img/svg/circle4.svg");
+    transform: scale(1.4);
+    // transition: transform 0.3s ease-in-out;
+  }
+}
+
 .skills__btn {
   position: relative;
   width: 100%;
@@ -225,6 +249,7 @@
   background-color: var(--clr-btn-7);
   border: 0.5rem solid var(--clr-btn-2);
   box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
+  // cursor: pointer;
 
   @include respond-to("568->") {
     // padding: 0.3em 2em;
@@ -246,6 +271,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    // left: auto;
 
     padding: 0.3em 1em;
 
@@ -265,7 +291,7 @@
 
     // padding: 0.3em 1em;
 
-    // z-index: 2;
+    z-index: 6;
 
     @include respond-to("568->") {
       // padding: 0.3em 2em;
@@ -283,4 +309,10 @@
 
     z-index: 3;
   }
+}
+
+.story--2 .top-nav--about {
+  left: 0;
+  right: auto;
+  z-index: -1;
 }
