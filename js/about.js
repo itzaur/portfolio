@@ -332,7 +332,10 @@ function pageSkillsInit() {
       "<0"
     );
 }
-
+let resultX;
+// let id = null;
+let isPlaying = false;
+// gsap.registerPlugin(TextPlugin);
 function aboutAnimationInit() {
   gsap.registerPlugin(TextPlugin);
   //Slider mobile
@@ -353,6 +356,8 @@ function aboutAnimationInit() {
     } else if (e.keyCode === KEYDOWN_LEFT) {
       prevSlide();
     }
+
+    runBtnSliderAnimation();
   });
 
   let currentSlide = 0;
@@ -363,6 +368,8 @@ function aboutAnimationInit() {
         s * gap
       }rem), 0)`;
     });
+
+    runBtnSliderAnimation();
   }
 
   function nextSlide() {
@@ -382,6 +389,8 @@ function aboutAnimationInit() {
     } else if (e.keyCode === KEYDOWN_LEFT) {
       desktopPrevSlide();
     }
+
+    runBtnSliderAnimation();
   });
 
   dotsBox.addEventListener("click", (e) => {
@@ -414,46 +423,43 @@ function aboutAnimationInit() {
       el.style.transform = `translateX(${100 * (i - s)}%)`;
       el.style.opacity = "1";
     });
+
+    runBtnSliderAnimation();
   }
 
-  storySlides.forEach((slide) => {
-    const aboutBtn2 = document.querySelector(".story--2 button");
-    const timer = setInterval(function () {
-      const resultX = +window
-        .getComputedStyle(slide, null)
-        .transform.match(/(-?[0-9\.]+)/g)[4];
-      // const resultY = +window
-      //   .getComputedStyle(slide, null)
-      //   .transform.match(/(-?[0-9\.]+)/g)[5];
-      const result = window.innerWidth - btnAboutSection.offsetWidth;
+  function runBtnSliderAnimation() {
+    storySlides.forEach((slide) => {
+      const aboutBtn2 = document.querySelector(".story--2 button");
 
-      if (resultX > result && resultX <= window.innerWidth) {
-        btnAboutSection.style.opacity = "1";
-        btnAboutSection.style.visibility = "visible";
+      function getSlideCoordX() {
+        const result = window.innerWidth - btnAboutSection.offsetWidth;
+        resultX = +window
+          .getComputedStyle(slide, null)
+          .transform.match(/(-?[0-9\.]+)/g)[4];
 
-        aboutBtn2.style.opacity = "0";
-        aboutBtn2.style.visibility = "hidden";
-        aboutBtn2.style.zIndex = "-1";
-      } else if (resultX > 0 && resultX < result) {
-        btnAboutSection.style.opacity = "0";
-        btnAboutSection.style.visibility = "hidden";
+        if (resultX > 0 && resultX < result) {
+          btnAboutSection.style.opacity = "0";
+          btnAboutSection.style.visibility = "hidden";
 
-        aboutBtn2.style.opacity = "1";
-        aboutBtn2.style.visibility = "visible";
-        aboutBtn2.style.zIndex = "6";
+          aboutBtn2.style.opacity = "1";
+          aboutBtn2.style.visibility = "visible";
+          aboutBtn2.style.zIndex = "6";
+
+          isPlaying = false;
+        } else if (resultX < 0 && resultX > -btnAboutSection.offsetWidth) {
+          btnAboutSection.style.opacity = "1";
+          btnAboutSection.style.visibility = "visible";
+        }
+
+        if (resultX < 0 || (resultX > 0 && resultX < window.innerWidth)) {
+          requestAnimationFrame(getSlideCoordX);
+          isPlaying === true;
+        }
       }
-    }, 15);
 
-    function transitionstart() {
-      return timer;
-    }
-
-    slide.addEventListener("transitionstart", transitionstart);
-
-    slide.addEventListener("transitionend", (e) => {
-      slide.removeEventListener("transitionstart", transitionstart);
+      getSlideCoordX();
     });
-  });
+  }
 
   function desktopNextSlide() {
     currentSlide === storySlides.length - 1
@@ -462,6 +468,8 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
+    // storySlides[currentSlide].classList.add("visible");
+    // storySlides[currentSlide - 1].classList.remove("visible");
 
     ellipseTimlineDesktop.play();
     ellipseTimlineMobile.play();
@@ -472,6 +480,9 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
+
+    // storySlides[currentSlide].classList.add("visible");
+    // storySlides[currentSlide + 1].classList.remove("visible");
 
     ellipseTimlineDesktop.pause();
     ellipseTimlineMobile.pause();

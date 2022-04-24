@@ -541,6 +541,13 @@ function homeInit() {
   }
 
   colorGame();
+
+  // gsap.to(".glare", {
+  //   opacity: 0,
+  //   repeat: -1,
+  //   duration: 2,
+  //   yoyo: true,
+  // });
 }
 // export { colorGame };
 // colorGame();
@@ -666,5 +673,14 @@ const preloadImages = (selector = "svg") => {
 preloadImages().then(() => {
   document.body.classList.remove("loading");
 });
+
+// const whatNext = (yourOpinionOfMe) => {
+//   if (yourOpinionOfMe === "good") {
+//     console.log("please email me at adam.kuhn20@gmail.com");
+//   } else {
+//     console.log(`thank you for taking the time to review my credentials. And I’d
+//   appreciate any feedback you may have for me.`);
+//   }
+// };
 
 export { homeInit, doodlePositionResize };
