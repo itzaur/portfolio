@@ -3,7 +3,7 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
-// gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(TextPlugin);
 
 const gsapEase = {
   power1: "power1.out",
@@ -332,9 +332,10 @@ function pageSkillsInit() {
       "<0"
     );
 }
-let resultX;
+
+// let resultX;
 // let id = null;
-let isPlaying = false;
+// let isPlaying = false;
 // gsap.registerPlugin(TextPlugin);
 function aboutAnimationInit() {
   gsap.registerPlugin(TextPlugin);
@@ -429,6 +430,7 @@ function aboutAnimationInit() {
 
   function runBtnSliderAnimation() {
     storySlides.forEach((slide) => {
+      let resultX;
       const aboutBtn2 = document.querySelector(".story--2 button");
 
       function getSlideCoordX() {
@@ -445,7 +447,7 @@ function aboutAnimationInit() {
           aboutBtn2.style.visibility = "visible";
           aboutBtn2.style.zIndex = "6";
 
-          isPlaying = false;
+          // isPlaying = false;
         } else if (resultX < 0 && resultX > -btnAboutSection.offsetWidth) {
           btnAboutSection.style.opacity = "1";
           btnAboutSection.style.visibility = "visible";
@@ -453,7 +455,7 @@ function aboutAnimationInit() {
 
         if (resultX < 0 || (resultX > 0 && resultX < window.innerWidth)) {
           requestAnimationFrame(getSlideCoordX);
-          isPlaying === true;
+          // isPlaying === true;
         }
       }
 
@@ -578,8 +580,15 @@ function aboutAnimationInit() {
     clearProps: "all",
     onComplete: () => {
       activeDot(0);
+      activeTabindex();
     },
   });
+
+  function activeTabindex() {
+    document.querySelectorAll(".about-dot").forEach((dot) => {
+      dot.setAttribute("tabindex", "0");
+    });
+  }
 
   const aboutTimeline7 = gsap.timeline();
   aboutTimeline7

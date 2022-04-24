@@ -332,6 +332,13 @@ function homeInit() {
 
   getPageAnimation();
 
+  const nextPageLink = document.querySelectorAll("#corner-link");
+  nextPageLink.forEach((link) => {
+    link.addEventListener("click", () => {
+      tlPage.pause();
+    });
+  });
+
   //Menu animation
   //Menu transition
   const menuPage = document.querySelector(".menu");
@@ -549,6 +556,7 @@ function homeInit() {
   //   yoyo: true,
   // });
 }
+
 // export { colorGame };
 // colorGame();
 // const timelineColorGame = gsap.timeline().to('.color-game__item', {
