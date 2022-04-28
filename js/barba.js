@@ -7,6 +7,7 @@ import {
   homeInit,
 } from "./export";
 import { doodlePositionResize } from "./index";
+import { addDoorAnimationOnResize } from "./about";
 // import { pageSkillsInit } from './export';
 // import { Cursor } from './export';
 // import {
@@ -88,10 +89,11 @@ barba.init({
       namespace: "home-page",
       beforeEnter: () => {
         window.addEventListener("resize", doodlePositionResize);
+        window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
         homeInit();
-        addCustomCursor();
+        // addCustomCursor();
       },
     },
     {
@@ -101,17 +103,17 @@ barba.init({
       },
       afterEnter: () => {
         aboutAnimationInit();
-        addCustomCursor();
+        // addCustomCursor();
       },
     },
     {
       namespace: "skills-page",
       beforeEnter: () => {
         window.removeEventListener("resize", doodlePositionResize);
+        window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
         pageSkillsInit();
-        addCustomCursor();
       },
     },
     {
@@ -126,4 +128,8 @@ barba.init({
       },
     },
   ],
+});
+
+barba.hooks.afterEnter(() => {
+  addCustomCursor();
 });

@@ -591,6 +591,8 @@
           transform: translate(0, Max(120%, 30vh)) scale(-1, 1); //48
           min-height: 30rem;
 
+          z-index: 2;
+
           & text {
             text-anchor: start;
             font-size: 0.9rem;

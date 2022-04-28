@@ -505,15 +505,15 @@ select {
 }
 
 .skills__btn:nth-child(2) {
-  -ms-grid-column: 4;
-  grid-column: 4;
+  -ms-grid-column: 3;
+  grid-column: 3;
   -ms-grid-row: 2;
   grid-row: 2;
 }
 
 .skills__btn:nth-child(3) {
-  -ms-grid-column: 3;
-  grid-column: 3;
+  -ms-grid-column: 4;
+  grid-column: 4;
   -ms-grid-row: 2;
   grid-row: 2;
 }
@@ -2937,6 +2937,7 @@ select {
       -ms-transform: translate(0, Max(120%, 30vh)) scale(-1, 1);
           transform: translate(0, Max(120%, 30vh)) scale(-1, 1);
   min-height: 30rem;
+  z-index: 2;
 }
 
 .story--2__face-img .face-doodle-mobile text {

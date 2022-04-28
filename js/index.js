@@ -335,7 +335,7 @@ function homeInit() {
   const nextPageLink = document.querySelectorAll("#corner-link");
   nextPageLink.forEach((link) => {
     link.addEventListener("click", () => {
-      tlPage.pause();
+      tlPage.kill();
     });
   });
 

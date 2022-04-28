@@ -3,7 +3,7 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor } from "./export";
 
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
-gsap.registerPlugin(TextPlugin);
+// gsap.registerPlugin(TextPlugin);
 
 const gsapEase = {
   power1: "power1.out",
@@ -15,6 +15,7 @@ const gsapEase = {
 };
 
 function pageSkillsInit() {
+  gsap.registerPlugin(TextPlugin);
   const hobbiesItems = document.querySelectorAll(".hobbie");
 
   hobbiesItems.forEach((hobbie) => {
@@ -335,6 +336,7 @@ function pageSkillsInit() {
 
 // let resultX;
 // let id = null;
+
 // let isPlaying = false;
 // gsap.registerPlugin(TextPlugin);
 function aboutAnimationInit() {
@@ -497,6 +499,7 @@ function aboutAnimationInit() {
         .querySelector(`.about-dot[data-slide="${slide}"]`)
         .classList.add("active");
       dot.style.transition = `transform 0.3s ease-in-out`;
+      console.log(document.querySelector(`.about-dot[data-slide="${slide}"]`));
     });
   }
 
@@ -568,9 +571,12 @@ function aboutAnimationInit() {
     stagger: {
       each: 2,
     },
+    // onComplete: () => {
+    //   aboutTimeline6.play();
+    // },
   });
 
-  const aboutTimeline6 = gsap.timeline();
+  const aboutTimeline6 = gsap.timeline({ paused: true });
   aboutTimeline6.from(".about-dot", {
     y: 200,
     duration: 1,
@@ -579,18 +585,12 @@ function aboutAnimationInit() {
     opacity: 0,
     clearProps: "all",
     onComplete: () => {
-      activeDot(0);
+      // activeDot(0);
       activeTabindex();
     },
   });
 
-  function activeTabindex() {
-    document.querySelectorAll(".about-dot").forEach((dot) => {
-      dot.setAttribute("tabindex", "0");
-    });
-  }
-
-  const aboutTimeline7 = gsap.timeline();
+  const aboutTimeline7 = gsap.timeline({ paused: true });
   aboutTimeline7
     .from("[data-num='0']", {
       x: -100,
@@ -608,7 +608,7 @@ function aboutAnimationInit() {
         onComplete: () => {
           installMediaQueryWatcher("(max-width: 568px)", function (matches) {
             if (matches) {
-              mobileGoToSlide(0);
+              // mobileGoToSlide(0);
               tabList
                 .querySelector("[data-num='1']")
                 .addEventListener("click", nextSlide);
@@ -630,6 +630,12 @@ function aboutAnimationInit() {
       "<0"
     );
 
+  function activeTabindex() {
+    document.querySelectorAll(".about-dot").forEach((dot) => {
+      dot.setAttribute("tabindex", "0");
+    });
+  }
+
   let master;
   const speed = {
     t4: 4,
@@ -643,9 +649,9 @@ function aboutAnimationInit() {
       .add(aboutTimeline)
       .add(aboutTimeline2.delay(-1))
       .add(aboutTimeline3.delay(-0.5))
-      .add(aboutTimeline7)
+      .add(aboutTimeline7.play())
       .add(aboutTimeline4.timeScale(speed.t4))
-      .add(aboutTimeline6.delay(-0.5))
+      .add(aboutTimeline6.play().delay(-0.5))
       .add(aboutTimeline5);
   } else {
     master = gsap
@@ -655,8 +661,8 @@ function aboutAnimationInit() {
       .add(aboutTimeline3.delay(-0.5))
       .add(aboutTimeline4)
       .add(aboutTimeline5)
-      .add(aboutTimeline6)
-      .add(aboutTimeline7);
+      .add(aboutTimeline6.play())
+      .add(aboutTimeline7.play());
   }
 
   const ellipseTimlineDesktop = gsap.timeline({ duration: 1, paused: true });
@@ -881,44 +887,89 @@ function aboutAnimationInit() {
       ellipseTimlineMobile.timeScale(speed.t10);
     });
 
-  //ANCHOR Door animation
-  function addDoorAnimationOnResize() {
-    const doodle = document.querySelector(".face-doodle-mobile .text-box");
-    const door = document.querySelector(".story--2__door svg");
-    const textIT = document.querySelectorAll(".story--2__door svg .it");
-    const doodleCenterCoordY =
-      doodle.getBoundingClientRect().top +
-      doodle.getBoundingClientRect().height / 2;
-    const doorCenterCoordY =
-      door.getBoundingClientRect().top +
-      door.getBoundingClientRect().height / 2;
+  // //ANCHOR Door animation
+  // function addDoorAnimationOnResize() {
+  //   const doodle = document.querySelector(".face-doodle-mobile .text-box");
+  //   const door = document.querySelector(".story--2__door svg");
+  //   const textIT = document.querySelectorAll(".story--2__door svg .it");
+  //   const doodleCenterCoordY =
+  //     doodle.getBoundingClientRect().top +
+  //     doodle.getBoundingClientRect().height / 2;
+  //   const doorCenterCoordY =
+  //     door.getBoundingClientRect().top +
+  //     door.getBoundingClientRect().height / 2;
 
-    if (
-      doodleCenterCoordY > doorCenterCoordY &&
-      doodleCenterCoordY >
-        doorCenterCoordY + doodle.getBoundingClientRect().height / 2
-    ) {
-      // doodle.style.fill = "white";
-      doodle.style.opacity = "1";
-      textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-    } else if (
-      doodleCenterCoordY <
-      doorCenterCoordY -
-        doorCenterCoordY * 0.1 -
-        doodle.getBoundingClientRect().height / 2
-    ) {
-      // doodle.style.fill = "white";
-      doodle.style.opacity = "1";
-      textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-    } else {
-      // doodle.style.fill = "red";
-      doodle.style.opacity = "0.8";
-      doodle.style.transition = "opacity 0.3s linear";
-      textIT.forEach((text) => (text.style.fill = "#ee7950"));
-    }
-  }
-  // addDoorAnimationOnResize();
+  //   if (
+  //     doodleCenterCoordY > doorCenterCoordY &&
+  //     doodleCenterCoordY >
+  //       doorCenterCoordY + doodle.getBoundingClientRect().height / 2
+  //   ) {
+  //     // doodle.style.fill = "white";
+  //     doodle.style.opacity = "1";
+  //     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
+  //   } else if (
+  //     doodleCenterCoordY <
+  //     doorCenterCoordY -
+  //       doorCenterCoordY * 0.1 -
+  //       doodle.getBoundingClientRect().height / 2
+  //   ) {
+  //     // doodle.style.fill = "white";
+  //     doodle.style.opacity = "1";
+  //     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
+  //   } else {
+  //     // doodle.style.fill = "red";
+  //     doodle.style.opacity = "0.8";
+  //     doodle.style.transition = "opacity 0.3s linear";
+  //     textIT.forEach((text) => (text.style.fill = "#ee7950"));
+  //   }
+  // }
+  // // addDoorAnimationOnResize();
+
+  // // if (!window.location.href.includes("about")) {
+  // //   aboutTimeline6.kill();
+  // //   // console.log(window.location.href.includes("about"));
+  // //   window.removeEventListener("resize", addDoorAnimationOnResize);
+  // //   console.log("not about");
+  // // }
+
+  // window.addEventListener("resize", addDoorAnimationOnResize);
   window.addEventListener("resize", addDoorAnimationOnResize);
 }
 
-export { pageSkillsInit, aboutAnimationInit };
+//ANCHOR Door animation
+function addDoorAnimationOnResize() {
+  const doodle = document.querySelector(".face-doodle-mobile .text-box");
+  const door = document.querySelector(".story--2__door svg");
+  const textIT = document.querySelectorAll(".story--2__door svg .it");
+  const doodleCenterCoordY =
+    doodle.getBoundingClientRect().top +
+    doodle.getBoundingClientRect().height / 2;
+  const doorCenterCoordY =
+    door.getBoundingClientRect().top + door.getBoundingClientRect().height / 2;
+
+  if (
+    doodleCenterCoordY > doorCenterCoordY &&
+    doodleCenterCoordY >
+      doorCenterCoordY + doodle.getBoundingClientRect().height / 2
+  ) {
+    // doodle.style.fill = "white";
+    doodle.style.opacity = "1";
+    textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
+  } else if (
+    doodleCenterCoordY <
+    doorCenterCoordY -
+      doorCenterCoordY * 0.1 -
+      doodle.getBoundingClientRect().height / 2
+  ) {
+    // doodle.style.fill = "white";
+    doodle.style.opacity = "1";
+    textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
+  } else {
+    // doodle.style.fill = "red";
+    doodle.style.opacity = "0.8";
+    doodle.style.transition = "opacity 0.3s linear";
+    textIT.forEach((text) => (text.style.fill = "#ee7950"));
+  }
+}
+
+export { pageSkillsInit, aboutAnimationInit, addDoorAnimationOnResize };
