@@ -119,6 +119,7 @@ barba.init({
       },
       afterEnter: () => {
         pageSkillsInit();
+        buttonFunctionality();
       },
     },
     {

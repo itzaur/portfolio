@@ -18,6 +18,9 @@ function pageSkillsInit() {
   gsap.registerPlugin(TextPlugin);
   const hobbiesItems = document.querySelectorAll(".hobbie");
 
+  const btnBig = document.querySelector(".btn-big");
+  const btnSmall = document.querySelector(".btn-small");
+
   hobbiesItems.forEach((hobbie) => {
     hobbie.addEventListener("click", addClass);
   });
@@ -331,7 +334,14 @@ function pageSkillsInit() {
         ease: gsapEase.back,
       },
       "<0"
-    );
+    )
+    .from(btnBig, {
+      transform: "translate3d(0, 0, 1px) scale(0)",
+      opacity: 0,
+      ease: "Bounce.easeOut",
+      duration: 1,
+      clearProps: "transform",
+    });
 }
 
 // let resultX;

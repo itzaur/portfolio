@@ -661,6 +661,10 @@ select {
   }
 }
 
+.btns-box--skills {
+  top: 86vh;
+}
+
 .logo {
   width: 3.5rem;
   -ms-grid-column: 7;
