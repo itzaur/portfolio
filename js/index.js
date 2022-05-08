@@ -7,39 +7,43 @@
 import { MagnetLogo, addCustomCursor } from "./cursor";
 import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
 
-function homeInit() {
-  //ANCHOR Fonts
-  let font = new FontFaceObserver("d_CCMonologous", {
-    weight: 700,
-  });
-
-  font
-    .load()
-    .then(function () {
-      console.log("Font has loaded.");
-    })
-    .catch(function () {
-      console.log("Font failed to load.");
-    });
-
+function buttonFunctionality() {
   //ANCHOR Button
   const btnBig = document.querySelector(".btn-big");
   const btnSmall = document.querySelector(".btn-small");
+  const menuPage = document.querySelector(".menu");
+  const menuDoodle = document.querySelectorAll(
+    ".menu__box path, .menu__box polygon"
+  );
+  const menuNavDoodle = document.querySelector(".menu__img img");
+  const menuBtnClose = document.querySelector(".menu-btn-close");
+  const menuLinks = document.querySelectorAll(".nav__item");
+  let isOpen = false;
+  let mediaQueryTransformX = -16;
+  let mediaQueryTransformY = 5;
+  let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
+  let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
 
   btnBig.addEventListener("click", (e) => {
     btnBig.setAttribute("aria-selected", false);
     btnSmall.setAttribute("aria-selected", true);
+
+    menuTransitionRun();
   });
 
   btnSmall.addEventListener("click", (e) => {
     btnSmall.setAttribute("aria-selected", false);
     btnBig.setAttribute("aria-selected", true);
+
+    menuTransitionStop();
   });
 
   //ANCHOR Animations
   //Letters animation
   btnBig.addEventListener("mouseenter", animateTextHoverRun);
   btnBig.addEventListener("mouseleave", animateTextHoverStop);
+
+  checkMediaQuery();
 
   const timelineLetters = gsap.timeline({
     repeat: 0,
@@ -60,6 +64,162 @@ function homeInit() {
   function animateTextHoverStop() {
     timelineLetters.reverse();
   }
+
+  //Menu animation
+  //Menu transition
+  const tlMenuTransition = gsap.timeline({
+    paused: true,
+  });
+
+  tlMenuTransition
+    .to(menuPage, {
+      height: "calc(100vh - var(--padding-container) * 2)",
+      // height: "100vh",
+      ease: "bounce.out",
+    })
+    .from(
+      menuDoodle,
+      {
+        y: -600,
+        ease: "bounce.out",
+        opacity: 0,
+        duration: 0.3,
+        stagger: { each: 0.001, from: "random" },
+      },
+      "<0.1"
+    )
+    .from(".menu__box img", {
+      autoAlpha: 0,
+      scale: 0,
+      ease: "elastic.out(1, 0.3)",
+    })
+    .from(
+      menuNavDoodle,
+      {
+        opacity: 0,
+        ease: "elastic.out(1, 0.3)",
+        duration: 1.2,
+        transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
+      },
+      "<0.3"
+    )
+    .from(
+      menuLinks,
+      {
+        y: -60,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "back.out(1.7)",
+      },
+      "<0.6"
+    )
+    .from(
+      ".menu__star",
+      {
+        opacity: 0,
+        scale: 0,
+        stagger: 0.1,
+        ease: "elastic.out(1, 0.3)",
+      },
+      "-=1"
+    );
+
+  function checkMediaQuery() {
+    if (window.matchMedia("(max-width: 568px)").matches) {
+      menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
+    } else {
+      menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 15px) scale(1)`;
+    }
+  }
+
+  window.addEventListener("resize", checkMediaQuery);
+
+  function menuTransitionRun() {
+    if (window.matchMedia("(max-width: 568px)").matches) {
+      gsap.to(menuNavDoodle, {
+        transform: `translate3d(0, 0, 2px) scale(1)`,
+      });
+      gsap.from(
+        ".menu-btn-close",
+        {
+          y: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          duration: 0.6,
+        },
+        "+=1"
+      );
+    } else {
+      gsap.to(menuNavDoodle, {
+        transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
+      });
+      gsap.from(
+        ".menu-btn-close",
+        {
+          x: -100,
+          opacity: 0,
+          ease: "back.out(1.7)",
+          duration: 0.6,
+        },
+        "+=1.5"
+      );
+    }
+
+    setTimeout(() => {
+      tlMenuTransition.timeScale(0.8).play();
+      isOpen = true;
+    }, 100);
+  }
+
+  function menuTransitionStop() {
+    const closeMenu = gsap.to(menuPage, {
+      height: 0,
+      ease: "power4.out",
+      duration: 0.8,
+      paused: true,
+    });
+
+    isOpen = false;
+
+    if (!isOpen) {
+      //isOpen == false
+      closeMenu.play();
+    }
+
+    tlMenuTransition.pause(0).reversed(true);
+
+    gsap.to(".menu-btn-close", {
+      x: -100,
+      y: -100,
+      clearProps: "x, y",
+    });
+
+    btnBig.setAttribute("aria-selected", true);
+    btnSmall.setAttribute("aria-selected", false);
+  }
+
+  menuPage.addEventListener("click", menuTransitionStop);
+}
+
+function homeInit() {
+  //ANCHOR Button
+  const btnBig = document.querySelector(".btn-big");
+  const btnSmall = document.querySelector(".btn-small");
+  //ANCHOR Fonts
+  let font = new FontFaceObserver("d_CCMonologous", {
+    weight: 700,
+  });
+
+  font
+    .load()
+    .then(function () {
+      console.log("Font has loaded.");
+    })
+    .catch(function () {
+      console.log("Font failed to load.");
+    });
+
+  buttonFunctionality();
 
   //Glasses animation
   const timelineGlasses = gsap.timeline({
@@ -341,157 +501,160 @@ function homeInit() {
 
   //Menu animation
   //Menu transition
-  const menuPage = document.querySelector(".menu");
-  const menuDoodle = document.querySelectorAll(
-    ".menu__box path, .menu__box polygon"
-  );
-  const menuNavDoodle = document.querySelector(".menu__img img");
-  const menuBtnClose = document.querySelector(".menu-btn-close");
-  const menuLinks = document.querySelectorAll(".nav__item");
-  let isOpen = false;
-  let mediaQueryTransformX = -16;
-  let mediaQueryTransformY = 5;
-  let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
-  let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
+  // const menuPage = document.querySelector(".menu");
+  // const menuDoodle = document.querySelectorAll(
+  //   ".menu__box path, .menu__box polygon"
+  // );
+  // const menuNavDoodle = document.querySelector(".menu__img img");
+  // const menuBtnClose = document.querySelector(".menu-btn-close");
+  // const menuLinks = document.querySelectorAll(".nav__item");
+  // let isOpen = false;
+  // let mediaQueryTransformX = -16;
+  // let mediaQueryTransformY = 5;
+  // let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
+  // let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
 
-  function checkMediaQuery() {
-    if (window.matchMedia("(max-width: 568px)").matches) {
-      menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
-    } else {
-      menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 1px) scale(1)`;
-    }
-  }
-  checkMediaQuery();
-  window.addEventListener("resize", checkMediaQuery);
+  // function checkMediaQuery() {
+  //   if (window.matchMedia("(max-width: 568px)").matches) {
+  //     menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
+  //   } else {
+  //     menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 1px) scale(1)`;
+  //   }
+  // }
+  // checkMediaQuery();
+  // window.addEventListener("resize", checkMediaQuery);
 
-  const tlMenuTransition = gsap.timeline({
-    paused: true,
-  });
+  // const tlMenuTransition = gsap.timeline({
+  //   paused: true,
+  // });
 
-  function getMenuAnimation() {
-    tlMenuTransition
-      .to(menuPage, {
-        height: "calc(100vh - var(--padding-container) * 2)",
-        // height: "100vh",
-        ease: "bounce.out",
-      })
-      .from(
-        menuDoodle,
-        {
-          y: -600,
-          ease: "bounce.out",
-          opacity: 0,
-          duration: 0.3,
-          stagger: { each: 0.001, from: "random" },
-        },
-        "<0.1"
-      )
-      .from(".menu__box img", {
-        autoAlpha: 0,
-        scale: 0,
-        ease: "elastic.out(1, 0.3)",
-      })
-      .from(
-        menuNavDoodle,
-        {
-          opacity: 0,
-          ease: "elastic.out(1, 0.3)",
-          duration: 1.2,
-          transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
-        },
-        "<0.3"
-      )
-      .from(
-        menuLinks,
-        {
-          y: -60,
-          opacity: 0,
-          stagger: 0.2,
-          ease: "back.out(1.7)",
-        },
-        "<0.6"
-      )
-      .from(
-        ".menu__star",
-        {
-          opacity: 0,
-          scale: 0,
-          stagger: 0.1,
-          ease: "elastic.out(1, 0.3)",
-        },
-        "-=1"
-      );
-  }
+  // tlMenuTransition
+  //   .to(menuPage, {
+  //     height: "calc(100vh - var(--padding-container) * 2)",
+  //     // height: "100vh",
+  //     ease: "bounce.out",
+  //   })
+  //   .from(
+  //     menuDoodle,
+  //     {
+  //       y: -600,
+  //       ease: "bounce.out",
+  //       opacity: 0,
+  //       duration: 0.3,
+  //       stagger: { each: 0.001, from: "random" },
+  //     },
+  //     "<0.1"
+  //   )
+  //   .from(".menu__box img", {
+  //     autoAlpha: 0,
+  //     scale: 0,
+  //     ease: "elastic.out(1, 0.3)",
+  //   })
+  //   .from(
+  //     menuNavDoodle,
+  //     {
+  //       opacity: 0,
+  //       ease: "elastic.out(1, 0.3)",
+  //       duration: 1.2,
+  //       transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
+  //     },
+  //     "<0.3"
+  //   )
+  //   .from(
+  //     menuLinks,
+  //     {
+  //       y: -60,
+  //       opacity: 0,
+  //       stagger: 0.2,
+  //       ease: "back.out(1.7)",
+  //     },
+  //     "<0.6"
+  //   )
+  //   .from(
+  //     ".menu__star",
+  //     {
+  //       opacity: 0,
+  //       scale: 0,
+  //       stagger: 0.1,
+  //       ease: "elastic.out(1, 0.3)",
+  //     },
+  //     "-=1"
+  //   );
 
-  function menuTransitionRun() {
-    if (window.matchMedia("(max-width: 568px)").matches) {
-      gsap.to(menuNavDoodle, {
-        transform: `translate3d(0, 0, 2px) scale(1)`,
-      });
-      gsap.from(
-        ".menu-btn-close",
-        {
-          y: -100,
-          opacity: 0,
-          ease: "back.out(1.7)",
-          duration: 0.6,
-        },
-        "+=1"
-      );
-    } else {
-      gsap.to(menuNavDoodle, {
-        transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
-      });
-      gsap.from(
-        ".menu-btn-close",
-        {
-          x: -100,
-          opacity: 0,
-          ease: "back.out(1.7)",
-          duration: 0.6,
-        },
-        "+=1.5"
-      );
-    }
+  // function getMenuAnimation() {
+  //   tlMenuTransition.play();
+  // }
 
-    setTimeout(() => {
-      tlMenuTransition.timeScale(0.8).play();
-      isOpen = true;
-    }, 100);
-  }
+  // function menuTransitionRun() {
+  //   if (window.matchMedia("(max-width: 568px)").matches) {
+  //     gsap.to(menuNavDoodle, {
+  //       transform: `translate3d(0, 0, 2px) scale(1)`,
+  //     });
+  //     gsap.from(
+  //       ".menu-btn-close",
+  //       {
+  //         y: -100,
+  //         opacity: 0,
+  //         ease: "back.out(1.7)",
+  //         duration: 0.6,
+  //       },
+  //       "+=1"
+  //     );
+  //   } else {
+  //     gsap.to(menuNavDoodle, {
+  //       transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
+  //     });
+  //     gsap.from(
+  //       ".menu-btn-close",
+  //       {
+  //         x: -100,
+  //         opacity: 0,
+  //         ease: "back.out(1.7)",
+  //         duration: 0.6,
+  //       },
+  //       "+=1.5"
+  //     );
+  //   }
 
-  function menuTransitionStop() {
-    const closeMenu = gsap.to(menuPage, {
-      height: 0,
-      ease: "power4.out",
-      duration: 0.8,
-      paused: true,
-    });
+  //   setTimeout(() => {
+  //     tlMenuTransition.timeScale(0.8).play();
+  //     isOpen = true;
+  //   }, 100);
+  // }
 
-    isOpen = false;
+  // function menuTransitionStop() {
+  //   const closeMenu = gsap.to(menuPage, {
+  //     height: 0,
+  //     ease: "power4.out",
+  //     duration: 0.8,
+  //     paused: true,
+  //   });
 
-    if (!isOpen) {
-      //isOpen == false
-      closeMenu.play();
-    }
+  //   isOpen = false;
 
-    tlMenuTransition.pause(0).reversed(true);
+  //   if (!isOpen) {
+  //     //isOpen == false
+  //     closeMenu.play();
+  //   }
 
-    gsap.to(".menu-btn-close", {
-      x: -100,
-      y: -100,
-      clearProps: "x, y",
-    });
+  //   tlMenuTransition.pause(0).reversed(true);
 
-    btnBig.setAttribute("aria-selected", true);
-    btnSmall.setAttribute("aria-selected", false);
-  }
+  //   gsap.to(".menu-btn-close", {
+  //     x: -100,
+  //     y: -100,
+  //     clearProps: "x, y",
+  //   });
 
-  getMenuAnimation();
-  btnBig.addEventListener("click", menuTransitionRun);
+  //   btnBig.setAttribute("aria-selected", true);
+  //   btnSmall.setAttribute("aria-selected", false);
+  // }
+
+  // getMenuAnimation();
+
+  // btnBig.addEventListener("click", menuTransitionRun);
   // btnBig.addEventListener("click", getMenuAnimation);
   // menuBtnClose.addEventListener("click", menuTransitionStop);
-  menuPage.addEventListener("click", menuTransitionStop);
+  // menuPage.addEventListener("click", menuTransitionStop);
   // gsap.to('.st19', {
   //   repeat: -1,
   //   duration: 2,
@@ -691,4 +854,4 @@ preloadImages().then(() => {
 //   }
 // };
 
-export { homeInit, doodlePositionResize };
+export { homeInit, buttonFunctionality, doodlePositionResize };

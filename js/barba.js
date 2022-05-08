@@ -5,6 +5,7 @@ import {
   aboutAnimationInit,
   addCustomCursor,
   homeInit,
+  buttonFunctionality,
 } from "./export";
 import { doodlePositionResize } from "./index";
 import { addDoorAnimationOnResize } from "./about";
@@ -90,10 +91,13 @@ barba.init({
       beforeEnter: () => {
         window.addEventListener("resize", doodlePositionResize);
         window.removeEventListener("resize", addDoorAnimationOnResize);
+        // console.log(document.querySelector(".btn-big"));
       },
       afterEnter: () => {
         homeInit();
+        // buttonFunctionality();
         // addCustomCursor();
+        // console.log(document.querySelector(".btn-big"));
       },
     },
     {
@@ -103,6 +107,7 @@ barba.init({
       },
       afterEnter: () => {
         aboutAnimationInit();
+        buttonFunctionality();
         // addCustomCursor();
       },
     },
@@ -130,6 +135,41 @@ barba.init({
   ],
 });
 
-barba.hooks.afterEnter(() => {
-  addCustomCursor();
+// barba.hooks.afterEnter(() => {
+//   addCustomCursor();
+// });
+
+barba.hooks.beforeEnter(({ current, next }) => {
+  let beforeEnterPromiseAll = new Promise(function (resolve) {
+    // killOldScrollTriggers();
+    // destroySmoothScrollbar();
+
+    resolve();
+  });
+
+  return beforeEnterPromiseAll;
+});
+
+barba.hooks.enter(({ current, next }) => {
+  var enterPromiseAll = new Promise(function (resolve) {
+    current.container.remove();
+
+    resolve();
+  });
+
+  return enterPromiseAll;
+});
+
+barba.hooks.afterEnter(({ current, next }) => {
+  let afterEnterPromiseAll = new Promise(function (resolve) {
+    addCustomCursor();
+    // checkMediaQuery();
+    // buttonFunctionality();
+    // initSmoothScrollbar();
+    // initScrollTriggers();
+
+    resolve();
+  });
+
+  return afterEnterPromiseAll;
 });

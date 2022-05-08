@@ -348,11 +348,19 @@ select {
   -webkit-border-radius: 50%;
           border-radius: 50%;
   cursor: pointer;
-  -webkit-box-shadow: 0 10px 10px HSL(var(--primary-hs) 0%/0.3);
-          box-shadow: 0 10px 10px HSL(var(--primary-hs) 0%/0.3);
   background: none;
   border: 0;
   z-index: 20;
+}
+
+.btn svg {
+  -webkit-transition: -webkit-filter 0.3s linear;
+  transition: -webkit-filter 0.3s linear;
+  -o-transition: filter 0.3s linear;
+  transition: filter 0.3s linear;
+  transition: filter 0.3s linear, -webkit-filter 0.3s linear;
+  -webkit-filter: drop-shadow(0px 6px 2px HSL(var(--primary-hs) 0%/0.2));
+          filter: drop-shadow(0px 6px 2px HSL(var(--primary-hs) 0%/0.2));
 }
 
 @media (min-width: 35.5em) {
@@ -418,8 +426,12 @@ select {
 }
 
 .btn__text .text-cls-1 {
-  fill: #f5f1d6;
+  fill: var(--clr-btn-6);
   opacity: 0;
+}
+
+.btn__text .text-cls-1--about {
+  fill: HSL(var(--primary-hs) 100%);
 }
 
 .btn .cls-1 {
@@ -630,6 +642,23 @@ select {
   left: 0;
   right: auto;
   z-index: -1;
+}
+
+.btns-box {
+  position: absolute;
+  top: 0;
+  -ms-grid-columns: minmax(5vw, 1fr);
+      grid-template-columns: minmax(5vw, 1fr);
+  -ms-grid-rows: 5rem (1fr)[2];
+      grid-template-rows: 5rem repeat(2, 1fr);
+}
+
+@media (min-width: 35.5em) {
+  .btns-box {
+    top: 3rem;
+    -ms-grid-rows: 6rem (1fr)[2];
+        grid-template-rows: 6rem repeat(2, 1fr);
+  }
 }
 
 .logo {

@@ -4,7 +4,7 @@ export { pageSkillsInit, aboutAnimationInit } from "./about";
 export { default as Cursor } from "./cursor";
 export { MagnetLogo, addCustomCursor } from "./cursor";
 // export { doodleInit } from './index';
-export { homeInit } from "./index";
+export { homeInit, buttonFunctionality, doodlePositionResize } from "./index";
 // export { colorGame } from './index';
 // export { default as Cursor } from './cursor';
 // export { default as MagnetLogo } from './cursor';
