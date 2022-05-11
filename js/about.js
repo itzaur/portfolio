@@ -437,6 +437,7 @@ function aboutAnimationInit() {
     dots.forEach((dot) => {
       dot.classList.remove("active");
       dot.setAttribute("aria-selected", false);
+      dot.style.transition = `transform 0.8s ease-in-out`;
     });
 
     e.target.classList.add("active");
@@ -543,7 +544,7 @@ function aboutAnimationInit() {
       document
         .querySelector(`.about-dot[data-slide="${slide}"]`)
         .classList.add("active");
-      dot.style.transition = `transform 0.3s ease-in-out`;
+      // dot.style.transition = `transform 0.3s ease-in-out`;
     });
   }
 

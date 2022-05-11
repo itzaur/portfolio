@@ -1813,7 +1813,7 @@ select {
   width: calc(100vw - var(--padding-container) * 2);
   background-color: var(--clr-footer);
   overflow: hidden;
-  z-index: 999;
+  z-index: 20;
   height: 0;
 }
 
