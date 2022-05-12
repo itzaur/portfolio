@@ -1027,4 +1027,91 @@ function addDoorAnimationOnResize() {
   }
 }
 
-export { pageSkillsInit, aboutAnimationInit, addDoorAnimationOnResize };
+function contactPageInit() {
+  const mailWiggle = gsap.timeline({
+    repeat: -1,
+    repeatDelay: 2,
+  });
+  mailWiggle.set(".laptop-mail", { transformOrigin: "60% 60%" });
+
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: -30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: -30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: -30,
+    // xPercent: 0,
+    // yPercent: 5,
+  });
+  mailWiggle.to(".laptop-mail", 0.05, {
+    rotation: 0,
+    xPercent: 0,
+    yPercent: 0,
+  });
+
+  // window.setInterval(() => mailWiggle.play(0), 1500);
+
+  // gsap.to(".laptop-mail", {
+  //   xPercent: "1",
+  //   yPercent: "1",
+  //   rotation: "10deg",
+  //   ease: "power1.out",
+  //   yoyo: true,
+  //   repeat: -1,
+  //   // duration: 0.4,
+  //   repeatDelay: 3,
+  // });
+}
+
+export {
+  pageSkillsInit,
+  aboutAnimationInit,
+  addDoorAnimationOnResize,
+  contactPageInit,
+};
