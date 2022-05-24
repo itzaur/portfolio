@@ -3,6 +3,10 @@ import { Cursor } from "./export";
 import { MagnetLogo, addCustomCursor, buttonFunctionality } from "./export";
 
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
+// CustomEase.create(
+//   "backToBack",
+//   "M0,0 C0.128,0.572 0.052,1.374 0.15,1.374 0.28,1.374 0.226,0.528 0.358,0.528 0.466,0.528 0.442,1.164 0.552,1.164 0.694,1.164 0.62,0.764 0.736,0.764 0.788,0.764 0.798,1.044 0.856,1.044 0.88,1.044 0.924,0.948 0.94,0.948 0.961,0.948 0.993,1 1,1"
+// );
 // gsap.registerPlugin(TextPlugin);
 
 const gsapEase = {
@@ -12,6 +16,7 @@ const gsapEase = {
   elastic02: "elastic.out(1, 0.2)",
   elastic03: "elastic.out(1, 0.3)",
   elastic05: "elastic.out(1, 0.5)",
+  elastic05_04: "elastic.out(0.5, 0.4)",
 };
 
 function pageSkillsInit() {
@@ -1028,72 +1033,137 @@ function addDoorAnimationOnResize() {
 }
 
 function contactPageInit() {
+  const coffee = document.querySelector(".coffee");
+  const flower = document.querySelector(".flower");
+  const laptop = document.querySelector(".contact__laptop");
+  const laptopDots = document.querySelector(".contact-dots");
+  const laptopElements = document.querySelectorAll(".laptop-element");
+
+  const contactPageAnimationRun = gsap.timeline();
+  contactPageAnimationRun
+    .from(
+      ".top-nav--contact",
+      {
+        x: 600,
+        autoAlpha: 0,
+        duration: 1,
+        ease: gsapEase.back,
+      },
+      "<0.6"
+    )
+    .from(laptop, {
+      yPercent: 100,
+      ease: gsapEase.elastic05_04,
+      duration: 1,
+    })
+    .from(laptopDots, {
+      scale: 0,
+      autoAlpha: 0,
+      ease: gsapEase.back,
+      duration: 0.5,
+      clearProps: "all",
+    })
+    .from(".paper", {
+      x: 200,
+      autoAlpha: 0,
+      ease: gsapEase.back,
+      duration: 0.5,
+    })
+    .from(".pen", {
+      x: 200,
+      autoAlpha: 0,
+      ease: gsapEase.back,
+      duration: 0.5,
+    })
+
+    .from(flower, {
+      y: -500,
+      ease: gsapEase.back,
+      duration: 0.5,
+    })
+    .from(coffee, {
+      x: -500,
+      ease: gsapEase.back,
+      duration: 0.5,
+      onComplete: () => {
+        iconsTimeline.play(0.5);
+        laptopElementsTimeline.play();
+      },
+    })
+    .from(".btn-big", {
+      transform: "translate3d(0, 0, 1px) scale(0)",
+      opacity: 0,
+      ease: "Bounce.easeOut",
+      duration: 1,
+      clearProps: "transform",
+    })
+    .from(
+      ".laptop-text > *, .laptop-text > * > *, .laptop-mail-arrow, .laptop-mail",
+      {
+        // scale: 0,
+        autoAlpha: 0,
+        ease: gsapEase.elastic02,
+        duration: 0.6,
+        stagger: { each: 0.05, from: "random" },
+        clearProps: "all",
+      }
+    );
+
   const mailWiggle = gsap.timeline({
     repeat: -1,
     repeatDelay: 2,
   });
-  mailWiggle.set(".laptop-mail", { transformOrigin: "60% 60%" });
 
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: -30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: -30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: -30,
-    // xPercent: 0,
-    // yPercent: 5,
-  });
-  mailWiggle.to(".laptop-mail", 0.05, {
-    rotation: 0,
-    xPercent: 0,
-    yPercent: 0,
-  });
+  mailWiggle
+    .set(".laptop-mail", { transformOrigin: "60% 60%" })
+    .to(".laptop-mail", 0.05, {
+      rotation: 30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: -30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: -30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: -30,
+    })
+    .to(".laptop-mail", 0.05, {
+      rotation: 0,
+      xPercent: 0,
+      yPercent: 0,
+    });
 
   // window.setInterval(() => mailWiggle.play(0), 1500);
 
@@ -1106,6 +1176,229 @@ function contactPageInit() {
   //   repeat: -1,
   //   // duration: 0.4,
   //   repeatDelay: 3,
+  // });
+  const iconsTimeline = gsap.timeline({ paused: true });
+  iconsTimeline.from(
+    ".social__item",
+    {
+      x: 400,
+      rotation: 360,
+      ease: "power1.out",
+      stagger: { each: 0.2 },
+      duration: 1,
+    },
+    "<1"
+  );
+
+  const laptopElementsTimeline = gsap.timeline({
+    paused: true,
+    repeat: -1,
+    repeatDelay: 3,
+  });
+  laptopElementsTimeline
+    .to(".laptop-element--6", {
+      opacity: 1,
+      scale: 0.95,
+      duration: 0.55,
+      ease: "none",
+    })
+    .to(
+      ".laptop-element--7",
+      {
+        opacity: 1,
+        scale: 0.95,
+        duration: 0.55,
+        ease: "none",
+      },
+      "+=0.05"
+    )
+    .to(
+      ".laptop-element--6",
+      {
+        opacity: 0,
+      },
+      "<-0.05"
+    )
+    .to(
+      ".laptop-element--7",
+      {
+        opacity: 0,
+      },
+      "<0"
+    )
+    .from(
+      ".laptop-element--1, .laptop-element--2, .laptop-element--3, .laptop-element--4, .laptop-element--5, .laptop-element--6, .laptop-element--7",
+      {
+        // keyframes: {
+        //   "0%": { opacity: 0.1 },
+        //   "2%": { opacity: 1 },
+        //   "8%": { opacity: 0.1 },
+        //   "9%": { opacity: 1 },
+        //   "12%": { opacity: 0.1 },
+        //   "20%": { opacity: 1 },
+        //   "25%": { opacity: 0.3 },
+        //   "30%": { opacity: 1 },
+        //   "70%": { opacity: 0.7 },
+        //   "72%": { opacity: 0.2 },
+        //   "77%": { opacity: 0.9 },
+        //   "100%": { opacity: 0 },
+        // },
+        keyframes: {
+          "0%": { opacity: 0 },
+          "77%": { opacity: 0.9 },
+          "100%": { opacity: 0 },
+        },
+        scale: 0.95,
+        stagger: {
+          each: 0.2,
+          from: "random",
+        },
+        duration: 0.55,
+        ease: "none",
+      },
+      "<-0.06"
+    );
+
+  // const blink = gsap.timeline({ repeat: -1, repeatDelay: 3 });
+  // blink
+  //   .from(".laptop-element--6", {
+  //     opacity: 0,
+  //     scale: 0.95,
+
+  //     duration: 0.15,
+  //     ease: "none",
+  //     // repeatDelay: 6,
+  //   })
+  //   .from(
+  //     ".laptop-element--7",
+  //     {
+  //       opacity: 0,
+  //       scale: 0.95,
+
+  //       duration: 0.15,
+  //       ease: "none",
+  //       // repeatDelay: 6,
+  //     },
+  //     "+=0.05"
+  //   )
+  //   .to(
+  //     ".laptop-element--6",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     "<-0.05"
+  //   )
+  //   .to(
+  //     ".laptop-element--7",
+  //     {
+  //       opacity: 0,
+  //     },
+  //     "<0"
+  //   );
+
+  //ANCHOR Social icons animation
+  const socialItems = document.querySelectorAll(".social__item");
+
+  socialItems.forEach((item) => {
+    const socialWindow = {
+      w: item.offsetWidth,
+      h: item.offsetHeight,
+    };
+
+    const leftTop = {
+      x: 0,
+      y: 0,
+    };
+
+    const rightTop = {
+      x: socialWindow.w,
+      y: 0,
+    };
+
+    const middleTop = {
+      x: socialWindow.w / 2,
+      y: 0,
+    };
+
+    let socialActive = false;
+    let d = "";
+
+    const socialAnimate = () => {
+      d = `
+      M ${socialWindow.w}, 0
+      L 0, 0
+      L ${leftTop.x} ${leftTop.y}
+      Q ${middleTop.x} ${middleTop.y}
+      ${rightTop.x} ${rightTop.y}
+      `;
+
+      item.querySelector("path").setAttribute("d", d);
+      requestAnimationFrame(socialAnimate);
+    };
+
+    socialAnimate();
+
+    item.addEventListener("mouseover", () => {
+      socialActive = !socialActive;
+
+      gsap.to([leftTop, rightTop], {
+        y: socialActive ? socialWindow.h : 0,
+        ease: "power3.out",
+      });
+
+      gsap.to(middleTop, {
+        y: socialActive ? socialWindow.h : 0,
+        ease: "power3.out",
+        delay: 0.1,
+      });
+    });
+
+    item.addEventListener("mouseout", () => {
+      socialActive = false;
+      gsap.to([leftTop, rightTop], {
+        y: socialActive ? socialWindow.h : 0,
+        ease: "power3.out",
+      });
+
+      gsap.to(middleTop, {
+        y: socialActive ? socialWindow.h : 0,
+        ease: "power3.out",
+        delay: 0.1,
+      });
+    });
+
+    const handleResize = () => {
+      socialWindow.w = item.offsetWidth;
+      socialWindow.h = item.offsetHeight;
+      item.querySelector("svg").setAttribute("width", socialWindow.w);
+      item.querySelector("svg").setAttribute("height", socialWindow.h / 2);
+      middleTop.x = socialWindow.w / 2;
+      rightTop.x = socialWindow.w;
+    };
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+  });
+
+  // socialBox.addEventListener("mouseover", (e) => {
+  //   const hovered = e.target.closest(".social__item");
+  //   if (!hovered) return;
+
+  //   socialItems.forEach((item) => {
+  //     item.classList.remove("active");
+  //   });
+
+  //   hovered.classList.add("active");
+
+  //   const activeSocialItem = document.querySelector(".active");
+  //   console.log(activeSocialItem);
+  // });
+
+  // socialBox.addEventListener("mouseout", (e) => {
+  //   socialItems.forEach((item) => {
+  //     item.classList.remove("active");
+  //   });
   // });
 }
 

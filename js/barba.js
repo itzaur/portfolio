@@ -132,7 +132,7 @@ barba.init({
         // homeInit();
         // addCustomCursor();
         contactPageInit();
-        console.log("test afterEnter");
+        buttonFunctionality();
       },
     },
   ],

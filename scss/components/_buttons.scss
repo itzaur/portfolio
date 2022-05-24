@@ -279,7 +279,8 @@
   }
 
   &--skills,
-  &--about {
+  &--about,
+  &--contact {
     position: absolute;
     top: 0;
     right: 0;
@@ -291,7 +292,8 @@
 
     @include respond-to("568->") {
       // padding: 0.3em 2em;
-      top: -1rem;
+      // top: -1rem;
+      top: -0.2rem;
       padding: 0.3em 2em;
     }
   }
@@ -355,5 +357,30 @@
 
   &--skills {
     top: 86vh;
+  }
+
+  &--contact {
+    --gap: 1rem;
+    position: relative;
+
+    grid-template-columns: none;
+    grid-template-rows: none;
+    grid-column: 1;
+    grid-row: 1;
+    align-self: flex-end;
+
+    top: 1rem;
+
+    @include respond-to("568->") {
+      --gap: 0;
+      position: relative;
+
+      grid-template-columns: none;
+      grid-template-rows: none;
+      grid-column: 2;
+      grid-row: 1;
+
+      top: 3rem;
+    }
   }
 }
