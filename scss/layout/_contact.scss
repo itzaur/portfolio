@@ -193,6 +193,10 @@
 
   z-index: 1;
 
+  & svg {
+    overflow: visible;
+  }
+
   & .cls-1 {
     fill: #bf5c42;
   }
@@ -316,13 +320,13 @@
 
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2.3rem, 5rem;
+    background-size: 5rem;
 
     border-radius: 50%;
 
     overflow: hidden;
 
-    & svg {
+    & .social__svg {
       position: absolute;
       top: 0;
       left: 0;
@@ -330,34 +334,79 @@
       height: 100%;
       pointer-events: none;
 
-      & path {
+      & .social__path {
         fill: var(--clr-btn-1);
-        // fill-opacity: 0.5;
+
         border: none;
+      }
+
+      & svg circle {
+        transition: fill 0.2s linear;
+      }
+    }
+
+    & .social__bg {
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #1d1d1b;
+      }
+    }
+
+    & .social-icon {
+      position: fixed;
+
+      width: 2.6rem;
+      aspect-ratio: 1;
+      margin: auto;
+      inset: 0;
+
+      // transition: fill 0.2s linear;
+    }
+
+    & .github-icon {
+      .cls-1 {
+        fill: #b7d8e1;
+      }
+
+      .cls-2 {
+        fill: #1e1e1c;
+      }
+
+      @include respond-to("736->") {
+        width: 4rem;
+      }
+    }
+
+    & .linkedin-icon {
+      .cls-1 {
+        fill: #4f5878;
+      }
+
+      .cls-2 {
+        fill: #1e1e1c;
       }
     }
 
     & a {
       position: absolute;
+      top: 0;
+      left: 0;
       width: 100%;
       height: 100%;
-    }
-
-    @include respond-to("568->") {
-      background-size: 2.6rem, 5rem;
     }
 
     @include respond-to("736->") {
       width: 7rem;
       aspect-ratio: 1;
       border-radius: 50%;
-      background-size: 2.6rem, 7rem;
+      background-size: 7rem;
     }
 
     &:nth-child(1) {
       grid-column: 1;
-      background-image: url("../img/svg/contact/github.svg"),
-        url("../img/svg/circle1.svg");
 
       @include respond-to("568->") {
         grid-column: 1;
@@ -367,8 +416,6 @@
 
     &:nth-child(2) {
       grid-column: 2;
-      background-image: url("../img/svg/contact/linkedIn.svg"),
-        url("../img/svg/circle4.svg");
 
       @include respond-to("568->") {
         grid-column: 1;
@@ -376,11 +423,38 @@
       }
     }
 
-    // & img {
-    //   width: 100%;
-    //   height: 100%;
-    //   object-fit: cover;
-    // }
+    /* github icon color*/
+    &:hover.social__item:nth-child(1) svg:nth-child(3) .cls-1 {
+      fill: var(--clr-btn-1);
+      transition: fill 0.4s linear;
+    }
+
+    &:hover.social__item:nth-child(2) svg:nth-child(3) .cls-1 {
+      fill: var(--clr-btn-3);
+      transition: fill 0.4s linear;
+    }
+
+    /* github icon stroke*/
+    &:hover.social__item svg:nth-child(3) .cls-2 {
+      fill: var(--clr-btn-1);
+      transition: fill 0.4s linear;
+    }
+
+    /* icons background circle*/
+    &:hover.social__item:nth-child(1) svg:nth-child(1) svg circle {
+      fill: var(--clr-btn-3);
+      transition: fill 0.6s linear;
+    }
+
+    &:hover.social__item:nth-child(2) svg:nth-child(1) svg circle {
+      fill: var(--clr-btn-1);
+      transition: fill 0.6s linear;
+    }
+
+    &:hover.social__item svg:nth-child(1) svg path {
+      fill: var(--clr-orange);
+      transition: fill 0.4s linear;
+    }
   }
 }
 

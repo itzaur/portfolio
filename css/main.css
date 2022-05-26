@@ -3919,6 +3919,10 @@ select {
   z-index: 1;
 }
 
+.coffee svg {
+  overflow: visible;
+}
+
 .coffee .cls-1 {
   fill: #bf5c42;
 }
@@ -4051,14 +4055,17 @@ select {
   aspect-ratio: 1;
   background-repeat: no-repeat;
   background-position: center;
-  -webkit-background-size: 2.3rem, 5rem;
-          background-size: 2.3rem, 5rem;
+  -webkit-background-size: 5rem 5rem;
+          background-size: 5rem;
   -webkit-border-radius: 50%;
           border-radius: 50%;
   overflow: hidden;
+  /* github icon color*/
+  /* github icon stroke*/
+  /* icons background circle*/
 }
 
-.social > * svg {
+.social > * .social__svg {
   position: absolute;
   top: 0;
   left: 0;
@@ -4067,22 +4074,61 @@ select {
   pointer-events: none;
 }
 
-.social > * svg path {
+.social > * .social__svg .social__path {
   fill: var(--clr-btn-1);
   border: none;
 }
 
-.social > * a {
-  position: absolute;
-  width: 100%;
-  height: 100%;
+.social > * .social__svg svg circle {
+  -webkit-transition: fill 0.2s linear;
+  -o-transition: fill 0.2s linear;
+  transition: fill 0.2s linear;
 }
 
-@media (min-width: 35.5em) {
-  .social > * {
-    -webkit-background-size: 2.6rem, 5rem;
-            background-size: 2.6rem, 5rem;
+.social > * .social__bg .cls-1 {
+  fill: #fff;
+}
+
+.social > * .social__bg .cls-2 {
+  fill: #1d1d1b;
+}
+
+.social > * .social-icon {
+  position: fixed;
+  width: 2.6rem;
+  aspect-ratio: 1;
+  margin: auto;
+  inset: 0;
+}
+
+.social > * .github-icon .cls-1 {
+  fill: #b7d8e1;
+}
+
+.social > * .github-icon .cls-2 {
+  fill: #1e1e1c;
+}
+
+@media (min-width: 46em) {
+  .social > * .github-icon {
+    width: 4rem;
   }
+}
+
+.social > * .linkedin-icon .cls-1 {
+  fill: #4f5878;
+}
+
+.social > * .linkedin-icon .cls-2 {
+  fill: #1e1e1c;
+}
+
+.social > * a {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 46em) {
@@ -4091,15 +4137,14 @@ select {
     aspect-ratio: 1;
     -webkit-border-radius: 50%;
             border-radius: 50%;
-    -webkit-background-size: 2.6rem, 7rem;
-            background-size: 2.6rem, 7rem;
+    -webkit-background-size: 7rem 7rem;
+            background-size: 7rem;
   }
 }
 
 .social > *:nth-child(1) {
   -ms-grid-column: 1;
   grid-column: 1;
-  background-image: url("../img/svg/contact/github.svg"), url("../img/svg/circle1.svg");
 }
 
 @media (min-width: 35.5em) {
@@ -4114,7 +4159,6 @@ select {
 .social > *:nth-child(2) {
   -ms-grid-column: 2;
   grid-column: 2;
-  background-image: url("../img/svg/contact/linkedIn.svg"), url("../img/svg/circle4.svg");
 }
 
 @media (min-width: 35.5em) {
@@ -4124,6 +4168,48 @@ select {
     -ms-grid-row: 2;
     grid-row: 2;
   }
+}
+
+.social > *:hover.social__item:nth-child(1) svg:nth-child(3) .cls-1 {
+  fill: var(--clr-btn-1);
+  -webkit-transition: fill 0.4s linear;
+  -o-transition: fill 0.4s linear;
+  transition: fill 0.4s linear;
+}
+
+.social > *:hover.social__item:nth-child(2) svg:nth-child(3) .cls-1 {
+  fill: var(--clr-btn-3);
+  -webkit-transition: fill 0.4s linear;
+  -o-transition: fill 0.4s linear;
+  transition: fill 0.4s linear;
+}
+
+.social > *:hover.social__item svg:nth-child(3) .cls-2 {
+  fill: var(--clr-btn-1);
+  -webkit-transition: fill 0.4s linear;
+  -o-transition: fill 0.4s linear;
+  transition: fill 0.4s linear;
+}
+
+.social > *:hover.social__item:nth-child(1) svg:nth-child(1) svg circle {
+  fill: var(--clr-btn-3);
+  -webkit-transition: fill 0.6s linear;
+  -o-transition: fill 0.6s linear;
+  transition: fill 0.6s linear;
+}
+
+.social > *:hover.social__item:nth-child(2) svg:nth-child(1) svg circle {
+  fill: var(--clr-btn-1);
+  -webkit-transition: fill 0.6s linear;
+  -o-transition: fill 0.6s linear;
+  transition: fill 0.6s linear;
+}
+
+.social > *:hover.social__item svg:nth-child(1) svg path {
+  fill: var(--clr-orange);
+  -webkit-transition: fill 0.4s linear;
+  -o-transition: fill 0.4s linear;
+  transition: fill 0.4s linear;
 }
 
 .laptop__elements .cls-1,

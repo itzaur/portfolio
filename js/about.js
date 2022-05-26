@@ -1056,35 +1056,38 @@ function contactPageInit() {
       ease: gsapEase.elastic05_04,
       duration: 1,
     })
-    .from(laptopDots, {
-      scale: 0,
-      autoAlpha: 0,
-      ease: gsapEase.back,
-      duration: 0.5,
-      clearProps: "all",
-    })
+    .from(
+      laptopDots,
+      {
+        scale: 0,
+        autoAlpha: 0,
+        ease: gsapEase.back,
+        duration: 0.5,
+        clearProps: "all",
+      },
+      "<0.5"
+    )
     .from(".paper", {
       x: 200,
       autoAlpha: 0,
       ease: gsapEase.back,
-      duration: 0.5,
+      duration: 0.3,
     })
     .from(".pen", {
       x: 200,
       autoAlpha: 0,
       ease: gsapEase.back,
-      duration: 0.5,
+      duration: 0.3,
     })
-
     .from(flower, {
-      y: -500,
+      y: -900,
       ease: gsapEase.back,
-      duration: 0.5,
+      duration: 0.4,
     })
     .from(coffee, {
       x: -500,
       ease: gsapEase.back,
-      duration: 0.5,
+      duration: 0.4,
       onComplete: () => {
         iconsTimeline.play(0.5);
         laptopElementsTimeline.play();
@@ -1100,18 +1103,21 @@ function contactPageInit() {
     .from(
       ".laptop-text > *, .laptop-text > * > *, .laptop-mail-arrow, .laptop-mail",
       {
-        // scale: 0,
         autoAlpha: 0,
         ease: gsapEase.elastic02,
         duration: 0.6,
-        stagger: { each: 0.05, from: "random" },
+        stagger: { each: 0.1, from: "random" },
         clearProps: "all",
+        onComplete: () => {
+          mailWiggle.play();
+        },
       }
     );
 
   const mailWiggle = gsap.timeline({
     repeat: -1,
     repeatDelay: 2,
+    paused: true,
   });
 
   mailWiggle
@@ -1165,18 +1171,6 @@ function contactPageInit() {
       yPercent: 0,
     });
 
-  // window.setInterval(() => mailWiggle.play(0), 1500);
-
-  // gsap.to(".laptop-mail", {
-  //   xPercent: "1",
-  //   yPercent: "1",
-  //   rotation: "10deg",
-  //   ease: "power1.out",
-  //   yoyo: true,
-  //   repeat: -1,
-  //   // duration: 0.4,
-  //   repeatDelay: 3,
-  // });
   const iconsTimeline = gsap.timeline({ paused: true });
   iconsTimeline.from(
     ".social__item",
@@ -1195,6 +1189,7 @@ function contactPageInit() {
     repeat: -1,
     repeatDelay: 3,
   });
+
   laptopElementsTimeline
     .to(".laptop-element--6", {
       opacity: 1,
@@ -1223,11 +1218,12 @@ function contactPageInit() {
       ".laptop-element--7",
       {
         opacity: 0,
+        clearProps: "opacity",
       },
-      "<0"
+      "<-0.02"
     )
     .from(
-      ".laptop-element--1, .laptop-element--2, .laptop-element--3, .laptop-element--4, .laptop-element--5, .laptop-element--6, .laptop-element--7",
+      ".laptop-element",
       {
         // keyframes: {
         //   "0%": { opacity: 0.1 },
@@ -1256,8 +1252,39 @@ function contactPageInit() {
         duration: 0.55,
         ease: "none",
       },
-      "<-0.06"
+      "<-0.07"
     );
+
+  let vapor = gsap.utils.toArray(".vapor");
+  gsap.set(vapor, {
+    autoAlpha: 0,
+    scale: 0.5,
+    transformOrigin: "center bottom",
+  });
+  let vaporDuration = 4;
+
+  vapor.forEach((el, i) => {
+    gsap
+      .timeline({ repeat: -1, delay: i * 0.5 })
+      .to(el, {
+        duration: vaporDuration * 0.4,
+        autoAlpha: 1,
+        repeat: 1,
+        yoyo: true,
+        repeatDelay: vaporDuration * 0.2,
+        ease: "none",
+      })
+      .to(
+        el,
+        {
+          duration: vaporDuration,
+          y: "-=15",
+          ease: "none",
+          scale: 1,
+        },
+        0
+      );
+  });
 
   // const blink = gsap.timeline({ repeat: -1, repeatDelay: 3 });
   // blink
@@ -1332,7 +1359,7 @@ function contactPageInit() {
       ${rightTop.x} ${rightTop.y}
       `;
 
-      item.querySelector("path").setAttribute("d", d);
+      item.querySelector(".social__svg path").setAttribute("d", d);
       requestAnimationFrame(socialAnimate);
     };
 
