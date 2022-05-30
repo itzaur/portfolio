@@ -1067,6 +1067,22 @@ function contactPageInit() {
       },
       "<0.5"
     )
+    .from(flower, {
+      y: -900,
+      ease: gsapEase.back,
+      duration: 0.4,
+      clearProps: "all",
+    })
+    .from(coffee, {
+      x: -500,
+      ease: gsapEase.back,
+      duration: 0.4,
+      clearProps: "all",
+      onComplete: () => {
+        iconsTimeline.play(0.5);
+        laptopElementsTimeline.play();
+      },
+    })
     .from(".paper", {
       x: 200,
       autoAlpha: 0,
@@ -1078,20 +1094,6 @@ function contactPageInit() {
       autoAlpha: 0,
       ease: gsapEase.back,
       duration: 0.3,
-    })
-    .from(flower, {
-      y: -900,
-      ease: gsapEase.back,
-      duration: 0.4,
-    })
-    .from(coffee, {
-      x: -500,
-      ease: gsapEase.back,
-      duration: 0.4,
-      onComplete: () => {
-        iconsTimeline.play(0.5);
-        laptopElementsTimeline.play();
-      },
     })
     .from(".btn-big", {
       transform: "translate3d(0, 0, 1px) scale(0)",
@@ -1106,7 +1108,7 @@ function contactPageInit() {
         autoAlpha: 0,
         ease: gsapEase.elastic02,
         duration: 0.6,
-        stagger: { each: 0.1, from: "random" },
+        stagger: { each: 0.1 },
         clearProps: "all",
         onComplete: () => {
           mailWiggle.play();
@@ -1175,9 +1177,9 @@ function contactPageInit() {
   iconsTimeline.from(
     ".social__item",
     {
-      x: 400,
+      x: 500,
       rotation: 360,
-      ease: "power1.out",
+      ease: gsapEase.back,
       stagger: { each: 0.2 },
       duration: 1,
     },
@@ -1188,6 +1190,7 @@ function contactPageInit() {
     paused: true,
     repeat: -1,
     repeatDelay: 3,
+    clearProps: "all",
   });
 
   laptopElementsTimeline

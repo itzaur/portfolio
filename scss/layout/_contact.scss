@@ -42,10 +42,9 @@
     height: 100%;
     grid-column: 1 / -1;
     grid-row: 1 / -1;
-    grid-template-columns: minmax(5vw, 1fr) repeat(3, minmax(min-content, 1fr)) minmax(
-        2vw,
-        1fr
-      );
+    grid-template-columns:
+      minmax(2rem, 1fr) repeat(3, minmax(min-content, 1fr))
+      minmax(2vw, 1fr);
     grid-template-rows: 6rem 1fr repeat(6, min-content);
     // grid-template-columns: inherit;
     // grid-template-rows: inherit;
@@ -57,7 +56,11 @@
       grid-template-columns:
         minmax(5vw, 1fr) minmax(5rem, 1fr) repeat(6, minmax(0, 45rem))
         minmax(8rem, 1fr) minmax(2vw, 1fr);
-      grid-template-rows: 6rem 1fr repeat(5, max-content) 1fr;
+      grid-template-rows: 6rem repeat(2, 1fr) repeat(5, min-content);
+    }
+
+    @include respond-to("1366->") {
+      grid-template-rows: 6rem minmax(16rem, 1fr) repeat(6, min-content);
     }
   }
 }
@@ -68,7 +71,8 @@
   height: 100%;
 
   grid-column: 1 / -1;
-  grid-row: 4 / -1;
+  // grid-row: 4 / -1;
+  grid-row: 5 / -1;
   align-self: flex-end;
 
   // grid-template-columns: repeat(13, 1fr);
@@ -80,6 +84,11 @@
   // background-color: var(--clr-orange);
 
   @include respond-to("568->") {
+    // @include flex(column, flex-end, null);
+    // grid-row: 1 / -1;
+  }
+
+  @include respond-to("736->") {
     @include flex(column, flex-end, null);
     grid-row: 1 / -1;
   }
@@ -92,7 +101,11 @@
     // height: 100%;
     & .laptop {
       width: 130%;
-      transform: translate(-23vw, 30vw);
+      transform: translate(-23vw, 15vw);
+
+      @include respond-to("736->") {
+        transform: translate(-23vw, 25vw);
+      }
 
       @include respond-to("1366->") {
         width: 110%;
@@ -163,6 +176,8 @@
     @include respond-to("568->") {
       grid-column: 4 / -1;
       grid-row: 4 / -1;
+      align-self: flex-end;
+
       opacity: 1;
       overflow: visible;
     }
@@ -184,12 +199,13 @@
 }
 
 .coffee {
-  grid-column: 2 / span 1;
-  grid-row: 7 / span 1;
+  // grid-column: 2 / span 1;
+  grid-column: 1;
+  grid-row: 5 / span 4;
 
-  align-self: flex-end;
+  align-self: center;
 
-  transform: translateX(-10vw);
+  transform: translateX(2vw);
 
   z-index: 1;
 
@@ -219,17 +235,35 @@
 
   @include respond-to("568->") {
     grid-column: 2 / span 2;
-    grid-row: 3 / span 4;
+    // grid-row: 6 / span 3;
 
+    align-self: center;
+    // grid-row: 2 / span 4;
+
+    // align-self: flex-end;
+    transform: translateX(-5vw);
+  }
+
+  @include respond-to("736->") {
+    grid-row: 5 / span 2;
+    // transform: translateX(0);
+  }
+
+  @include respond-to("1024->") {
+    grid-row: 3;
     align-self: flex-end;
+    transform: translateX(-2vw);
+  }
 
-    transform: translateX(0);
+  @include respond-to("1366->") {
+    grid-row: 3 / span 4;
+    transform: translateX(-4vw);
   }
 }
 
 .flower {
   grid-column: 4 / span 2;
-  grid-row: 4 / span 3;
+  grid-row: 4 / span 2;
   align-self: center;
 
   z-index: 0;
@@ -255,73 +289,80 @@
   }
 
   @include respond-to("568->") {
-    grid-column: 3 / span 2;
-    grid-row: 1 / span 2;
+    grid-column: 7 / span 3;
+    grid-row: 5 / span 2;
+    // grid-row: 6 / span 2;
     // align-self: flex-end;
   }
 
-  // @include respond-to("1366->") {
-  //   grid-column: 4 / span 2;
-  //   // grid-row: 1 / span 3;
-  // }
+  @include respond-to("736->") {
+    grid-column: 3 / span 2;
+    grid-row: 3 / span 2;
+    // align-self: flex-end;
+  }
+
+  @include respond-to("1024->") {
+    grid-column: 4 / span 2;
+    grid-row: 1 / span 2;
+    align-self: center;
+  }
+
+  @include respond-to("1366->") {
+    // grid-column: 3 / span 2;
+    grid-row: 1;
+    transform: translateY(5vw);
+  }
 }
 
-// .paper {
-//   grid-column: 2 / span 1;
-//   grid-row: 8 / span 1;
-
-//   z-index: 0;
-
-//   & .cls-1 {
-//     fill: #bf5c42;
-//   }
-
-//   & .cls-2 {
-//     fill: #fff;
-//   }
-
-//   & .cls-3 {
-//     fill: #4f5878;
-//   }
-
-//   & .cls-4 {
-//     fill: #fae79a;
-//   }
-
-//   & .cls-5 {
-//     fill: #1e1e1c;
-//   }
-
-//   @include respond-to("568->") {
-//     grid-column: 4 / span 2;
-//     grid-row: 4 / span 3;
-//   }
-// }
-
 .social {
-  --gap: 2rem;
+  --gap: clamp(2rem, 10vw, 5rem);
+  position: absolute;
+  top: 12rem;
+  left: 50%;
+  transform: translateX(-50%);
   @include flex(row, center, center);
-  grid-template-rows: 1fr;
-  grid-column: 2 / span 3;
-  grid-row: 3 / span 1;
+  // grid-template-rows: 1fr;
+  // grid-column: 2 / span 3;
+  // grid-row: 3 / span 1;
   z-index: 4;
 
   @include respond-to("568->") {
+    // --gap: 3rem;
+    // grid-column: 1 / -1;
+    // grid-row: 4;
+    // grid-row: 2 / span 1;
+  }
+
+  @include respond-to("736->") {
+    // --gap: 4rem;
+    // position: fixed;
+    top: auto;
+    left: auto;
+    right: 4rem;
+    bottom: 18rem;
     display: grid;
     grid-template-rows: repeat(2, 1fr);
-    grid-column: -2 / -3;
-    grid-row: 6 / span 2;
+    // grid-column: -2 / -3;
+    // grid-row: 4 / span 4;
+    // align-self: flex-end;
+  }
+
+  @include respond-to("1024->") {
+    grid-row: 4 / span 5;
+    align-self: center;
   }
 
   & > * {
     position: relative;
+    // width: clamp(5rem, 9vw, 9rem);
     min-height: 5rem;
     aspect-ratio: 1;
 
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 5rem;
+    // background-repeat: no-repeat;
+    // background-position: center;
+    // background-size: 5rem;
 
+    // border: none;
     border-radius: 50%;
 
     overflow: hidden;
@@ -364,6 +405,9 @@
       inset: 0;
 
       // transition: fill 0.2s linear;
+      @include respond-to("568->") {
+        width: 3rem;
+      }
     }
 
     & .github-icon {
@@ -375,9 +419,9 @@
         fill: #1e1e1c;
       }
 
-      @include respond-to("736->") {
-        width: 4rem;
-      }
+      // @include respond-to("736->") {
+      //   width: 5rem;
+      // }
     }
 
     & .linkedin-icon {
@@ -398,8 +442,9 @@
       height: 100%;
     }
 
-    @include respond-to("736->") {
+    @include respond-to("568->") {
       width: 7rem;
+      // width: clamp(5rem, 9vw, 9rem);
       aspect-ratio: 1;
       border-radius: 50%;
       background-size: 7rem;
@@ -547,3 +592,28 @@
 //     opacity: 0;
 //   }
 // }
+
+#wrapper__corner-box {
+  &:hover .corner-text {
+    opacity: 1;
+  }
+}
+
+#corner-button {
+  text-align: end;
+  padding-right: 2rem;
+}
+
+.corner-text {
+  font-size: var(--fs-120);
+
+  color: var(--clr-orange);
+  text-align: end;
+  // background-color: HSL(var(--primary-hs) 0% / 0.2);
+  text-shadow: 1px 1px 1px HSL(var(--primary-hs) 0%);
+  // text-shadow: -0.05em 0.05em 0 var(--clr-orange),
+  //   -0.075em 0.075em 0 var(--clr-orange), -0.1em 0.1em 0 var(--clr-orange),
+  //   -0.125em 0.125em 0 var(--clr-orange);
+  opacity: 0;
+  transition: opacity 0.3s linear;
+}
