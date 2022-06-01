@@ -193,12 +193,10 @@ class MagnetLogo {
 function addCustomCursor() {
   const cursor = new Cursor(document.querySelector(".cursor"));
   // const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
-  document
-    .querySelectorAll("button, .menu-btn-close, .logo, .color-game__item")
-    .forEach((el) => {
-      el.addEventListener("mouseenter", () => cursor.enter());
-      el.addEventListener("mouseleave", () => cursor.leave());
-    });
+  document.querySelectorAll(".nav__link, [data-hover-star]").forEach((el) => {
+    el.addEventListener("mouseenter", () => cursor.enter());
+    el.addEventListener("mouseleave", () => cursor.leave());
+  });
 
   // document.querySelectorAll('.logo').forEach(el => {
   //   el.addEventListener('mouseenter', () => magnetLogo.enter());

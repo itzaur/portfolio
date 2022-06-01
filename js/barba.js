@@ -6,6 +6,7 @@ import {
   addCustomCursor,
   homeInit,
   buttonFunctionality,
+  contactPageInit,
 } from "./export";
 import { doodlePositionResize } from "./index";
 import { addDoorAnimationOnResize } from "./about";
@@ -123,14 +124,15 @@ barba.init({
       },
     },
     {
-      namespace: "test-page",
+      namespace: "contact-page",
       beforeEnter: () => {
         // window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
         // homeInit();
         // addCustomCursor();
-        console.log("test afterEnter");
+        contactPageInit();
+        buttonFunctionality();
       },
     },
   ],

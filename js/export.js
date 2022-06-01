@@ -1,5 +1,5 @@
 // export { default as pageSkillsInit } from "./about";
-export { pageSkillsInit, aboutAnimationInit } from "./about";
+export { pageSkillsInit, aboutAnimationInit, contactPageInit } from "./about";
 // export { Cursor, MagnetLogo } from './cursor';
 export { default as Cursor } from "./cursor";
 export { MagnetLogo, addCustomCursor } from "./cursor";

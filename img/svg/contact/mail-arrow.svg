@@ -1,0 +1,10 @@
+  <svg id="Слой_1" data-name="Слой 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 75.77 42.03">
+  <defs>
+  <style>.cls-1{fill:none;}.cls-2{fill:#fff;}.cls-3{fill:#1e1e1c;}.cls-4{isolation:isolate;}.cls-5{clip-path:url(#clip-path);}.cls-6{fill:#1e1e1d;}</style>
+  <clipPath id="clip-path" transform="translate(-470.32 -526.59)">
+  <polygon class="cls-1" points="503.5 548.6 503.58 521.78 546.06 546.31 545.99 573.13 503.5 548.6"/>
+  </clipPath>
+  </defs>
+  <polygon class="cls-2" points="0.1 33.64 40.03 22.35 52.97 30 0.1 33.64"/>
+  <path class="cls-3" d="M470.32,560.25c6.11-1.79,12.56-4,19.32-6.13s13.86-3.7,20.63-5.49c4.42,2.38,8.82,5.12,13.34,7.44a.61.61,0,0,1-.27,1.14c-17.21,2.08-35.75,2.13-53,3Zm.2,0c17.45-1.38,35.26-4,52.73-4.24l-.27,1.15c-4.21-2.72-8.44-5.42-12.79-7.91l.25,0c-6.55,2-12.66,4.26-19.3,5.81s-13.41,3.19-20.62,5.16Z" transform="translate(-470.32 -526.59)"/>
+  </svg>   
