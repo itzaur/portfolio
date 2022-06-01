@@ -171,7 +171,7 @@ function buttonFunctionality() {
     }, 100);
   }
 
-  function menuTransitionStop() {
+  function menuTransitionStop(e) {
     const closeMenu = gsap.to(menuPage, {
       height: 0,
       ease: "power4.out",
@@ -181,18 +181,24 @@ function buttonFunctionality() {
 
     isOpen = false;
 
-    if (!isOpen) {
-      //isOpen == false
+    // if (!isOpen) {
+    //   //isOpen == false
+    //   closeMenu.play();
+    // }
+
+    // tlMenuTransition.pause(0).reversed(true);
+
+    if (e.target.getAttribute("href")) {
+      closeMenu.pause();
+    } else {
       closeMenu.play();
+      tlMenuTransition.pause(0).reversed(true);
+      gsap.to(".menu-btn-close", {
+        x: -100,
+        y: -100,
+        clearProps: "x, y",
+      });
     }
-
-    tlMenuTransition.pause(0).reversed(true);
-
-    gsap.to(".menu-btn-close", {
-      x: -100,
-      y: -100,
-      clearProps: "x, y",
-    });
 
     btnBig.setAttribute("aria-selected", true);
     btnSmall.setAttribute("aria-selected", false);

@@ -360,8 +360,6 @@ select {
   -o-transition: filter 0.3s linear;
   transition: filter 0.3s linear;
   transition: filter 0.3s linear, -webkit-filter 0.3s linear;
-  -webkit-filter: drop-shadow(0px 6px 2px HSL(var(--primary-hs) 0%/0.2));
-          filter: drop-shadow(0px 6px 2px HSL(var(--primary-hs) 0%/0.2));
 }
 
 @media (min-width: 35.5em) {
@@ -4347,13 +4345,24 @@ select {
   opacity: 0;
 }
 
-#wrapper__corner-box:hover .corner-text {
-  opacity: 1;
+#wrapper__corner-box:hover #corner-button[data-corner-name="contact"] {
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
-#corner-button {
+#corner-link[data-pointer-events="none"] {
+  pointer-events: none;
+}
+
+#corner-button[data-corner-name="contact"] {
   text-align: end;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .corner-text {
@@ -4361,8 +4370,4 @@ select {
   color: var(--clr-orange);
   text-align: end;
   text-shadow: 1px 1px 1px HSL(var(--primary-hs) 0%);
-  opacity: 0;
-  -webkit-transition: opacity 0.3s linear;
-  -o-transition: opacity 0.3s linear;
-  transition: opacity 0.3s linear;
 }

@@ -594,14 +594,20 @@
 // }
 
 #wrapper__corner-box {
-  &:hover .corner-text {
-    opacity: 1;
+  &:hover #corner-button[data-corner-name="contact"] {
+    // opacity: 1;
+    transform: scale(1.1);
   }
 }
 
-#corner-button {
+#corner-link[data-pointer-events="none"] {
+  pointer-events: none;
+}
+
+#corner-button[data-corner-name="contact"] {
   text-align: end;
-  padding-right: 2rem;
+  padding-right: 2.5rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .corner-text {
@@ -614,6 +620,7 @@
   // text-shadow: -0.05em 0.05em 0 var(--clr-orange),
   //   -0.075em 0.075em 0 var(--clr-orange), -0.1em 0.1em 0 var(--clr-orange),
   //   -0.125em 0.125em 0 var(--clr-orange);
-  opacity: 0;
-  transition: opacity 0.3s linear;
+  // opacity: 0;
+
+  // transition: transform 0.3s linear;
 }
