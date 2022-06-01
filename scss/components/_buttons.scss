@@ -126,6 +126,10 @@
   .cls-7 {
     fill: var(--clr-btn-7);
   }
+
+  &--skills {
+    grid-row: 3;
+  }
 }
 
 .menu-btn-close {
@@ -356,7 +360,8 @@
   }
 
   &--skills {
-    top: 86vh;
+    // top: 86vh;
+    bottom: 4rem;
   }
 
   &--contact {

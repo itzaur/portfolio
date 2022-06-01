@@ -60,7 +60,7 @@
 
   @media (max-width: 35.5rem) {
     // --fs-240: 2rem;
-    --fs-180: clamp(1rem, 2vw, 1.8rem);
+    --fs-180: clamp(0.6rem, 2.5vw, 1.8rem);
     --fs-160: clamp(1rem, 2vw, 1.4rem);
   }
 }

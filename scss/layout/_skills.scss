@@ -8,7 +8,7 @@
   grid-template-rows: 49vh 48.4vh;
   //   grid-auto-rows: 1fr;
 
-  max-width: 192rem;
+  // max-width: 192rem;
   min-height: 100vh;
 
   padding: var(--padding-container);
@@ -25,6 +25,8 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  overflow: hidden;
 }
 
 .hobbies {
@@ -39,7 +41,7 @@
     width: 100%;
     // max-width: 160rem;
     height: 49vh;
-    max-height: 50rem;
+    // max-height: 50rem;
 
     clip-path: polygon(
       -500% 0%,
@@ -172,10 +174,10 @@
       z-index: 2;
     }
 
-    &:nth-child(2).hobbie__img--2 > * {
-      @include abs-center;
-      left: 33%;
-    }
+    // &:nth-child(2).hobbie__img--2 > * {
+    //   @include abs-center;
+    //   left: 33%;
+    // }
 
     &--3 > * {
       height: 85%;
@@ -233,7 +235,7 @@
       0% 100%
     );
 
-    @include respond-to("736->") {
+    @include respond-to("1024->") {
       background-size: 110%;
     }
   }
@@ -248,6 +250,7 @@
       100% 100%,
       0% 100%
     );
+    z-index: 2;
   }
 
   &__btns {
@@ -269,7 +272,10 @@
       grid-row: 3;
 
       @include flex(column, center, center);
-      max-width: 30rem;
+      // max-width: 30rem;
+      height: 37vmin;
+      aspect-ratio: 1;
+      min-height: 20rem;
     }
   }
 
@@ -386,7 +392,7 @@
     }
 
     [data-tool="CSS"] {
-      grid-column: 10;
+      grid-column: 10 / span 2;
       grid-row: 2;
     }
 
@@ -409,7 +415,7 @@
     }
 
     [data-tool="Figma"] {
-      grid-column: 10 / 12;
+      grid-column: 10 / span 3;
       grid-row: 19;
       align-self: flex-start;
     }
@@ -420,24 +426,24 @@
     // }
 
     [data-tool="React"] {
-      grid-column: 9;
+      grid-column: 9 / span 2;
       grid-row: 20;
     }
 
     [data-tool="Three.js"] {
-      grid-column: 8 / span 2;
+      grid-column: 8 / span 3;
       grid-row: 1;
       align-self: flex-end;
     }
 
     [data-tool="Svelte"] {
-      grid-column: 2;
+      grid-column: 2 / span 2;
       grid-row: 2;
       justify-content: flex-end;
     }
 
     [data-tool="WebGL"] {
-      grid-column: 2;
+      grid-column: 2 / span 2;
       grid-row: 19;
     }
   }
@@ -459,15 +465,17 @@
   }
 
   &__star {
-    width: 1.3rem;
+    // width: 1.3rem;
+    width: clamp(1.3rem, 3vw, 3rem);
+
     aspect-ratio: 1;
 
     animation: rotateItSelf 25s infinite linear;
     // animation-direction: reverse;
 
-    @include respond-to("568->") {
-      width: 3rem;
-    }
+    // @include respond-to("568->") {
+    //   // width: 3rem;
+    // }
   }
 }
 
@@ -491,6 +499,7 @@
         transform: scale(1.6);
 
         // transform-origin: 50% 50%;
+        // transition: transform 0.3s linear;
       }
     }
 
@@ -519,6 +528,7 @@
           brightness(100%) contrast(52%);
         transform: scale(0.8);
 
+        transition: transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
         // transform-origin: 50% 50%;
       }
     }
