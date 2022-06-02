@@ -170,9 +170,11 @@ function pageSkillsInit() {
         clicked,
         {
           scale: 0,
+          // transform: `translate3d(0, 0, 1px) scale(0)`,
         },
         {
           scale: 1,
+          // transform: `translate3d(0, 0, 1px) scale(1)`,
           duration: 0.4,
           ease: gsapEase.elastic05,
           clearProps: "transform",
@@ -298,14 +300,20 @@ function pageSkillsInit() {
   const eyeLeftHighlight = cat.querySelector(".eye-left-highlight");
   const eyeRightHighlight = cat.querySelector(".eye-right-highlight");
 
-  const eyeWidth = eyeLeft.getBoundingClientRect().width;
-  const eyeHeight = eyeLeft.getBoundingClientRect().height;
+  // const eyeWidth = eyeLeft.getBoundingClientRect().width;
+  // const eyeHeight = eyeLeft.getBoundingClientRect().height;
+  const eyeWidth = eyeLeft.getBBox().width;
+  const eyeHeight = eyeLeft.getBBox().height;
 
-  const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
-  const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
+  // const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
+  // const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
+  const pupilWidth = eyeLeftPupil.getBBox().width;
+  const pupilHeight = eyeLeftPupil.getBBox().height;
   const xMove = (eyeWidth - pupilWidth) / 2;
   const yMove = (eyeHeight - pupilHeight) / 2;
 
+  // const eyeCoordsX = -698;
+  // const eyeCoordsY = -340.1;
   const eyeCoordsX = -698;
   const eyeCoordsY = -340.1;
 
@@ -315,11 +323,12 @@ function pageSkillsInit() {
   });
 
   catItem.addEventListener("mousemove", moveEyes);
+
   function moveEyes(e) {
     const mouseXPercent = e.clientX / catItem.clientWidth;
     const mouseYPercent = e.clientY / catItem.clientHeight;
-    const posX = ((mouseXPercent * 2 - 1) * xMove) / 0.8;
-    const posY = ((mouseYPercent * 2 - 1) * yMove) / 0.8;
+    const posX = ((mouseXPercent * 2 - 1) * xMove) / 0.9;
+    const posY = ((mouseYPercent * 2 - 1) * yMove) / 0.9;
 
     if (catItem.classList.contains("active")) {
       eyeLeftPupil.style.transform = `translate3d(${eyeCoordsX + posX}px, ${
@@ -335,10 +344,21 @@ function pageSkillsInit() {
       eyeRightHighlight.style.transform = `translate3d(${
         eyeCoordsX + posX + 4
       }px, ${eyeCoordsY + posY}px, 1px)`;
+
+      console.log(eyeLeft.getBoundingClientRect());
     }
   }
 
   const hobbiesTimeline = gsap.timeline();
+
+  // hobbiesTimeline.set(".skills__btn span", {
+  //   yPercent: -50,
+  //   xPercent: -50,
+  //   z: 1,
+  //   x: 0,
+  //   y: 0,
+  //   // transform: `translate3d(-50%, -50%, 1px)`,
+  // });
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -406,10 +426,23 @@ function pageSkillsInit() {
       ".skills__btn",
       {
         y: 800,
+        // transform: `translate3d(0, 800px, 1px) scale(0)`,
         duration: 1,
         stagger: { each: 0.2 },
         ease: gsapEase.back,
         clearProps: "all",
+      },
+      "<0"
+    )
+    .from(
+      ".skills__btn span",
+      {
+        yPercent: 250,
+        z: 1,
+        duration: 1,
+        stagger: { each: 0.2 },
+        ease: gsapEase.back,
+        clearProps: "transform",
       },
       "<0"
     )

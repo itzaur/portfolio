@@ -510,6 +510,8 @@ select {
   cursor: pointer;
   background-color: transparent;
   border: none;
+  -webkit-transform: translate3d(0, 0, 0px);
+          transform: translate3d(0, 0, 0px);
   -webkit-transition: background-color 0.4s linear;
   -o-transition: background-color 0.4s linear;
   transition: background-color 0.4s linear;
@@ -538,18 +540,16 @@ select {
 
 @media (min-width: 35.5em) {
   .skills__btn:nth-child(1) {
-    -webkit-transform: translate(-3rem, 0);
-        -ms-transform: translate(-3rem, 0);
-            transform: translate(-3rem, 0);
+    -webkit-transform: translate3d(-3rem, 0, 0px);
+            transform: translate3d(-3rem, 0, 0px);
   }
   .skills__btn:nth-child(2) {
     width: 96.28%;
   }
   .skills__btn:nth-child(3) {
     width: 90.58%;
-    -webkit-transform: translate(-2rem, -1.5rem);
-        -ms-transform: translate(-2rem, -1.5rem);
-            transform: translate(-2rem, -1.5rem);
+    -webkit-transform: translate3d(-2rem, -1.5rem, 0px);
+            transform: translate3d(-2rem, -1.5rem, 0px);
   }
 }
 
@@ -3246,8 +3246,15 @@ select {
 }
 
 .hobbie__item, .hobbie__img {
+  position: relative;
   width: 100%;
   height: 100%;
+}
+
+.hobbie__item {
+  width: -webkit-calc(100% - 1px);
+  width: calc(100% - 1px);
+  overflow: hidden;
 }
 
 .hobbie__img {

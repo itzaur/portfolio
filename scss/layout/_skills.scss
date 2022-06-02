@@ -165,8 +165,14 @@
 
   &__item,
   &__img {
+    position: relative;
     width: 100%;
     height: 100%;
+  }
+
+  &__item {
+    width: calc(100% - 1px);
+    overflow: hidden;
   }
 
   &__img {
