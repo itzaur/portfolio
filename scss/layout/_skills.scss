@@ -365,6 +365,14 @@
     // grid-template-rows: repeat(8, 1fr);
     align-self: auto;
   }
+
+  @include respond-to("1024->") {
+    // width: 100%;
+    grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 15rem)) minmax(
+        2rem,
+        1fr
+      );
+  }
 }
 
 .skill-list {
