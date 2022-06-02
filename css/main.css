@@ -3298,7 +3298,6 @@ select {
   -ms-grid-rows: minmax(2rem, 1fr) (min-content)[2] minmax(2rem, 1fr);
       grid-template-rows: minmax(2rem, 1fr) repeat(2, -webkit-min-content) minmax(2rem, 1fr);
       grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
-  place-items: center;
   border: 1px solid HSL(var(--primary-hs) 0%);
   background-color: HSL(var(--primary-hs) 0%);
   -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
@@ -3341,6 +3340,20 @@ select {
     -webkit-background-size: 110% 110%;
             background-size: 110%;
   }
+}
+
+.skills__content {
+  grid-row: 1 / -1;
+  grid-column: 1 / -1;
+  place-items: center;
+  height: 100%;
+  width: 100%;
+  -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
+  -ms-grid-columns: inherit;
+      grid-template-columns: inherit;
+  -ms-grid-rows: inherit;
+      grid-template-rows: inherit;
 }
 
 .skills__btn-box {
@@ -3508,7 +3521,8 @@ select {
 @media (min-width: 35.5em) {
   .skill-list [data-tool="JS"] {
     -ms-grid-column: 3;
-    grid-column: 3;
+    -ms-grid-column-span: 2;
+    grid-column: 3 / span 2;
     -ms-grid-row: 5;
     grid-row: 5;
   }
