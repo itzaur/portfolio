@@ -28,6 +28,19 @@ function buttonFunctionality() {
     btnBig.setAttribute("aria-selected", false);
     btnSmall.setAttribute("aria-selected", true);
 
+    document.querySelectorAll('[data-tabindex="0"]').forEach((tab) => {
+      tab.setAttribute("data-tabindex", "-1");
+      tab.setAttribute("tabindex", "-1");
+    });
+
+    menuPage.querySelectorAll('[tabindex="-1"]').forEach((tab) => {
+      tab.setAttribute("tabindex", "0");
+    });
+
+    document.querySelectorAll(".about-dot").forEach((dot) => {
+      dot.setAttribute("tabindex", "-1");
+    });
+
     menuTransitionRun();
   });
 
@@ -74,6 +87,7 @@ function buttonFunctionality() {
   tlMenuTransition
     .to(menuPage, {
       height: "calc(100vh - var(--padding-container) * 2)",
+
       // height: "100vh",
       ease: "bounce.out",
     })
@@ -92,6 +106,7 @@ function buttonFunctionality() {
       autoAlpha: 0,
       scale: 0,
       ease: "elastic.out(1, 0.3)",
+      clearProps: "transform",
     })
     .from(
       menuNavDoodle,
@@ -140,7 +155,7 @@ function buttonFunctionality() {
         transform: `translate3d(0, 0, 2px) scale(1)`,
       });
       gsap.from(
-        ".menu-btn-close",
+        menuBtnClose,
         {
           y: -100,
           opacity: 0,
@@ -154,7 +169,7 @@ function buttonFunctionality() {
         transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
       });
       gsap.from(
-        ".menu-btn-close",
+        menuBtnClose,
         {
           x: -100,
           opacity: 0,
@@ -202,6 +217,19 @@ function buttonFunctionality() {
 
     btnBig.setAttribute("aria-selected", true);
     btnSmall.setAttribute("aria-selected", false);
+
+    document.querySelectorAll('[data-tabindex="-1"]').forEach((tab) => {
+      tab.setAttribute("data-tabindex", "0");
+      tab.setAttribute("tabindex", "0");
+    });
+
+    menuPage.querySelectorAll('[tabindex="0"]').forEach((tab) => {
+      tab.setAttribute("tabindex", "-1");
+    });
+
+    document.querySelectorAll(".about-dot").forEach((dot) => {
+      dot.setAttribute("tabindex", "0");
+    });
   }
 
   menuPage.addEventListener("click", menuTransitionStop);
@@ -689,30 +717,42 @@ function homeInit() {
     const beard = photo.querySelectorAll(".beard");
 
     colorBtns.forEach((btn) => {
-      btn.addEventListener("click", (e) => {
-        let hexColor = "#";
-        const HEX_COLOR_LENGTH = 6;
-        for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
-          hexColor += hex[getRandomNumber()];
-        }
+      btn.addEventListener("click", changeColor);
+    });
 
-        const attr = e.target.getAttribute("data-name");
-        if (attr === "glasses") {
-          glassesElements.forEach(
-            (glassesEl) => (glassesEl.style.fill = hexColor)
-          );
-        } else if (attr === "pullover") {
-          pullover.forEach((el) => (el.style.fill = hexColor));
-        } else if (attr === "beard") {
-          beard.forEach((el) => (el.style.fill = hexColor));
-        } else if (attr === "grayscale") {
-          document.querySelector(".page").classList.toggle("grayscale");
+    colorBtns.forEach((btn) => {
+      btn.addEventListener("keydown", (e) => {
+        const KEYDOWN_SPACE = 32;
+        const KEYDOWN_ENTER = 13;
+        if (e.keyCode === KEYDOWN_SPACE || e.keyCode === KEYDOWN_ENTER) {
+          changeColor(e);
         }
       });
     });
 
     function getRandomNumber() {
       return Math.floor(Math.random() * hex.length);
+    }
+
+    function changeColor(e) {
+      let hexColor = "#";
+      const HEX_COLOR_LENGTH = 6;
+      for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
+        hexColor += hex[getRandomNumber()];
+      }
+
+      const attr = e.target.getAttribute("data-name");
+      if (attr === "glasses") {
+        glassesElements.forEach(
+          (glassesEl) => (glassesEl.style.fill = hexColor)
+        );
+      } else if (attr === "pullover") {
+        pullover.forEach((el) => (el.style.fill = hexColor));
+      } else if (attr === "beard") {
+        beard.forEach((el) => (el.style.fill = hexColor));
+      } else if (attr === "grayscale") {
+        document.querySelector(".page").classList.toggle("grayscale");
+      }
     }
   }
 

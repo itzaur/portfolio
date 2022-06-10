@@ -64,10 +64,11 @@
 
         <div class="content grid">
           <button
-            class="btn btn-big"
+            class="btn btn-big btn--outline"
             aria-selected="true"
             data-attribute="Click"
             data-hover-star="hover"
+            data-tabindex="0"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.81 110.87">
               <g>
@@ -226,6 +227,7 @@
             class="btn btn-small"
             aria-selected="false"
             data-hover-star="hover"
+            tabindex="-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -7089,6 +7091,8 @@
               class="color-game__item"
               data-name="glasses"
               data-hover-star="hover"
+              data-tabindex="0"
+              tabindex="0"
             >
               P
               <div data-name="P">
@@ -7099,6 +7103,8 @@
               class="color-game__item"
               data-name="pullover"
               data-hover-star="hover"
+              data-tabindex="0"
+              tabindex="0"
             >
               L
               <div data-name="L">
@@ -7109,6 +7115,8 @@
               class="color-game__item"
               data-name="beard"
               data-hover-star="hover"
+              data-tabindex="0"
+              tabindex="0"
             >
               A
               <div data-name="A">
@@ -7119,6 +7127,8 @@
               class="color-game__item"
               data-name="grayscale"
               data-hover-star="hover"
+              data-tabindex="0"
+              tabindex="0"
             >
               Y
               <div data-name="Y">
@@ -7128,6 +7138,13 @@
           </div>
 
           <section class="menu grid">
+            <button
+              class="top-nav menu-btn-close fs-240"
+              data-hover-star="hover"
+              tabindex="-1"
+            >
+              <span>B</span>ack
+            </button>
             <div class="menu__img">
               <img src="img/svg/boom_white.svg" alt="boom.svg" />
             </div>
@@ -7138,6 +7155,7 @@
                   <a
                     href="about.html"
                     class="nav__link clr-black uppercase fs-600"
+                    tabindex="-1"
                     >About me</a
                   >
                 </li>
@@ -7145,6 +7163,7 @@
                   <a
                     href="skills.html"
                     class="nav__link clr-black uppercase fs-600"
+                    tabindex="-1"
                     >Hobbies / Skills</a
                   >
                 </li>
@@ -7152,6 +7171,7 @@
                   <a
                     href="contact.html"
                     class="nav__link clr-black uppercase fs-600"
+                    tabindex="-1"
                     >Contact</a
                   >
                 </li>
@@ -7747,12 +7767,7 @@
               </svg>
               <img src="img/svg/dots_blue.svg" alt="blue dots" />
             </div>
-            <button
-              class="top-nav menu-btn-close fs-240"
-              data-hover-star="hover"
-            >
-              <span>B</span>ack
-            </button>
+
             <div class="menu__stars grid">
               <figure>
                 <img class="menu__star" src="img/svg/star.svg" alt="Star" />

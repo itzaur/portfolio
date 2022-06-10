@@ -20,6 +20,45 @@ const gsapEase = {
   elastic05_04: "elastic.out(0.5, 0.4)",
 };
 
+//ANCHOR Vapor animation functionality
+let vaporAnimationDuration, vaporMinValueX, vaporMaxValueX, vaporValueY;
+
+function randomNumber(max, min) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
+}
+
+function vaporAnimation(items) {
+  gsap.set(items, {
+    autoAlpha: 0,
+    scale: 0.5,
+    transformOrigin: "center bottom",
+  });
+
+  items.forEach((item, i) => {
+    gsap
+      .timeline({ repeat: -1, delay: i * 0.5 })
+      .to(item, {
+        repeat: 1,
+        autoAlpha: 1,
+        duration: vaporAnimationDuration * 0.4,
+        repeatDelay: vaporAnimationDuration * 0.2,
+        yoyo: true,
+        ease: "none",
+      })
+      .to(
+        item,
+        {
+          y: `-=${vaporValueY}`,
+          x: `-=${randomNumber(vaporMinValueX, vaporMaxValueX)}`,
+          scale: 1,
+          duration: vaporAnimationDuration,
+          ease: "none",
+        },
+        0
+      );
+  });
+}
+
 function pageSkillsInit() {
   gsap.registerPlugin(TextPlugin);
   const hobbiesItems = document.querySelectorAll(".hobbie");
@@ -426,7 +465,6 @@ function pageSkillsInit() {
       ".skills__btn",
       {
         y: 800,
-        // transform: `translate3d(0, 800px, 1px) scale(0)`,
         duration: 1,
         stagger: { each: 0.2 },
         ease: gsapEase.back,
@@ -585,7 +623,7 @@ function aboutAnimationInit() {
       desktopPrevSlide();
     }
 
-    runBtnSliderAnimation();
+    // runBtnSliderAnimation();
   });
 
   dotsBox.addEventListener("click", (e) => {
@@ -1036,57 +1074,100 @@ function aboutAnimationInit() {
     ellipseTimlineDesktopText.play(0);
   });
 
-  slides.forEach((doodle) => {
-    doodle.addEventListener("click", (e) => {
-      installMediaQueryWatcher("(max-width: 568px)", function (matches) {
-        if (matches) {
-          if (e.target.closest(".story__photo--doodle1") === doodle) {
-            aboutTimeline3
-              .timeScale(speed.t6)
-              .eventCallback("onComplete", function () {
-                master = gsap
-                  .timeline()
-                  .remove(aboutTimeline)
-                  .remove(aboutTimeline2)
-                  .add(aboutTimeline7)
-                  .add(aboutTimeline4.timeScale(speed.t6))
-                  .add(aboutTimeline6.delay(-0.5))
-                  .add(aboutTimeline5);
-              });
-          } else if (e.target.closest(".story__photo--doodle2") === doodle) {
-            aboutTimeline5.timeScale(speed.t6);
-          }
-        } else {
-          if (e.target.closest(".story__photo--doodle1") === doodle) {
-            aboutTimeline3
-              .timeScale(speed.t6)
-              .eventCallback("onComplete", function () {
-                master = gsap
-                  .timeline()
-                  .remove(aboutTimeline)
-                  .remove(aboutTimeline2)
-                  .add(aboutTimeline4)
-                  .add(aboutTimeline5)
-                  .add(aboutTimeline6)
-                  .add(aboutTimeline7);
-              });
-          } else if (e.target.closest(".story__photo--doodle2") === doodle) {
-            aboutTimeline5
-              .timeScale(speed.t6)
-              .eventCallback("onComplete", function () {
-                master = gsap
-                  .timeline()
-                  .remove(aboutTimeline)
-                  .remove(aboutTimeline2)
-                  .remove(aboutTimeline3)
-                  .remove(aboutTimeline4)
-                  .add(aboutTimeline6)
-                  .add(aboutTimeline7);
-              });
-          }
+  function changeTextAnimationSpeed(e) {
+    installMediaQueryWatcher("(max-width: 568px)", function (matches) {
+      if (matches) {
+        if (e.target.closest(".story__photo--doodle1")) {
+          aboutTimeline3
+            .timeScale(speed.t6)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .add(aboutTimeline7)
+                .add(aboutTimeline4.timeScale(speed.t6))
+                .add(aboutTimeline6.delay(-0.5))
+                .add(aboutTimeline5);
+            });
+        } else if (e.target.closest(".story__photo--doodle2")) {
+          aboutTimeline5.timeScale(speed.t6);
+        } else if (e.target.className.includes("skip-text-animation")) {
+          aboutTimeline3
+            .timeScale(speed.t6)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .add(aboutTimeline7)
+                .add(aboutTimeline4.timeScale(speed.t6))
+                .add(aboutTimeline6.delay(-0.5))
+                .add(aboutTimeline5);
+            });
+          aboutTimeline5.timeScale(speed.t6);
+          ellipseTimlineMobile.timeScale(speed.t10);
         }
-      });
+      } else {
+        if (e.target.closest(".story__photo--doodle1")) {
+          aboutTimeline3
+            .timeScale(speed.t6)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .add(aboutTimeline4)
+                .add(aboutTimeline5)
+                .add(aboutTimeline6)
+                .add(aboutTimeline7);
+            });
+        } else if (e.target.closest(".story__photo--doodle2")) {
+          aboutTimeline5
+            .timeScale(speed.t6)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .remove(aboutTimeline3)
+                .remove(aboutTimeline4)
+                .add(aboutTimeline6)
+                .add(aboutTimeline7);
+            });
+        } else if (e.target.className.includes("skip-text-animation")) {
+          aboutTimeline3
+            .timeScale(speed.t10)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .add(aboutTimeline4)
+                .add(aboutTimeline5)
+                .add(aboutTimeline6)
+                .add(aboutTimeline7);
+            });
+          aboutTimeline5
+            .timeScale(speed.t10)
+            .eventCallback("onComplete", function () {
+              master = gsap
+                .timeline()
+                .remove(aboutTimeline)
+                .remove(aboutTimeline2)
+                .remove(aboutTimeline3)
+                .remove(aboutTimeline4)
+                .add(aboutTimeline6)
+                .add(aboutTimeline7);
+            });
+          ellipseTimlineDesktopText.timeScale(speed.t10);
+        }
+      }
     });
+  }
+
+  slides.forEach((doodle) => {
+    doodle.addEventListener("click", changeTextAnimationSpeed);
   });
 
   document
@@ -1100,6 +1181,18 @@ function aboutAnimationInit() {
     .addEventListener("click", (e) => {
       ellipseTimlineMobile.timeScale(speed.t10);
     });
+
+  document
+    .querySelector(".skip-text-animation")
+    .addEventListener("click", changeTextAnimationSpeed);
+
+  //About section part 2 (IT-door) vapor animation run
+  let doorElements = gsap.utils.toArray(".door-element");
+  vaporAnimationDuration = 1.5;
+  vaporMinValueX = -10;
+  vaporMaxValueX = 10;
+  vaporValueY = 15;
+  vaporAnimation(doorElements);
 
   // //ANCHOR Door animation
   // function addDoorAnimationOnResize() {
@@ -1412,73 +1505,13 @@ function contactPageInit() {
       "<-0.07"
     );
 
-  let vapor = gsap.utils.toArray(".vapor");
-  gsap.set(vapor, {
-    autoAlpha: 0,
-    scale: 0.5,
-    transformOrigin: "center bottom",
-  });
-  let vaporDuration = 4;
-
-  vapor.forEach((el, i) => {
-    gsap
-      .timeline({ repeat: -1, delay: i * 0.5 })
-      .to(el, {
-        duration: vaporDuration * 0.4,
-        autoAlpha: 1,
-        repeat: 1,
-        yoyo: true,
-        repeatDelay: vaporDuration * 0.2,
-        ease: "none",
-      })
-      .to(
-        el,
-        {
-          duration: vaporDuration,
-          y: "-=15",
-          ease: "none",
-          scale: 1,
-        },
-        0
-      );
-  });
-
-  // const blink = gsap.timeline({ repeat: -1, repeatDelay: 3 });
-  // blink
-  //   .from(".laptop-element--6", {
-  //     opacity: 0,
-  //     scale: 0.95,
-
-  //     duration: 0.15,
-  //     ease: "none",
-  //     // repeatDelay: 6,
-  //   })
-  //   .from(
-  //     ".laptop-element--7",
-  //     {
-  //       opacity: 0,
-  //       scale: 0.95,
-
-  //       duration: 0.15,
-  //       ease: "none",
-  //       // repeatDelay: 6,
-  //     },
-  //     "+=0.05"
-  //   )
-  //   .to(
-  //     ".laptop-element--6",
-  //     {
-  //       opacity: 0,
-  //     },
-  //     "<-0.05"
-  //   )
-  //   .to(
-  //     ".laptop-element--7",
-  //     {
-  //       opacity: 0,
-  //     },
-  //     "<0"
-  //   );
+  //Coffee vapor animation run
+  let coffeeVapor = gsap.utils.toArray(".vapor");
+  vaporAnimationDuration = 4;
+  vaporMinValueX = 0;
+  vaporMaxValueX = 0;
+  vaporValueY = 15;
+  vaporAnimation(coffeeVapor);
 
   //ANCHOR Social icons animation
   const socialItems = document.querySelectorAll(".social__item");

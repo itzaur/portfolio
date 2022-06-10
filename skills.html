@@ -58,7 +58,7 @@
     >
       <section class="hobbies grid">
         <div class="hobbies__content">
-          <button class="top-nav top-nav--hobbies fs-240">
+          <button class="top-nav top-nav--hobbies fs-240" tabindex="-1">
             <span>H</span>obbies
           </button>
           <div class="hobbie hobbie--1 active">
@@ -1179,6 +1179,7 @@
               aria-expanded="true"
               data-tab="1"
               data-hover-star="hover"
+              data-tabindex="0"
             >
               <span class="fs-180">freshman year</span>
               <img src="img/svg/doodle-abou1.svg" alt="" />
@@ -1188,6 +1189,7 @@
               aria-expanded="false"
               data-tab="2"
               data-hover-star="hover"
+              data-tabindex="0"
             >
               <span class="fs-180">learn</span>
               <img src="img/svg/doodle-abou2.svg" alt="" />
@@ -1197,6 +1199,7 @@
               aria-expanded="false"
               data-tab="3"
               data-hover-star="hover"
+              data-tabindex="0"
             >
               <span class="fs-180">wanna learn</span>
               <img src="img/svg/doodle-about3.svg" alt="" />
@@ -1497,6 +1500,7 @@
           class="btn btn-small btn--skills"
           aria-selected="false"
           data-hover-star="hover"
+          tabindex="-1"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -1735,19 +1739,31 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
       </div>
 
       <section class="menu grid">
+        <button
+          class="top-nav menu-btn-close fs-240"
+          data-hover-star="hover"
+          tabindex="-1"
+        >
+          <span>B</span>ack
+        </button>
         <div class="menu__img">
           <img src="img/svg/boom_white.svg" alt="boom.svg" />
         </div>
-
         <nav class="nav">
           <ul class="nav__list flow" role="list">
             <li class="nav__item">
-              <a href="about.html" class="nav__link clr-black uppercase fs-600"
+              <a
+                href="about.html"
+                class="nav__link clr-black uppercase fs-600"
+                tabindex="-1"
                 >About me</a
               >
             </li>
             <li class="nav__item">
-              <a href="skills.html" class="nav__link clr-black uppercase fs-600"
+              <a
+                href="skills.html"
+                class="nav__link clr-black uppercase fs-600"
+                tabindex="-1"
                 >Hobbies / Skills</a
               >
             </li>
@@ -1755,12 +1771,12 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
               <a
                 href="contact.html"
                 class="nav__link clr-black uppercase fs-600"
+                tabindex="-1"
                 >Contact</a
               >
             </li>
           </ul>
         </nav>
-
         <div class="menu__box">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -2350,9 +2366,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
           </svg>
           <img src="img/svg/dots_blue.svg" alt="blue dots" />
         </div>
-        <button class="top-nav menu-btn-close fs-240" data-hover-star="hover">
-          <span>B</span>ack
-        </button>
+
         <div class="menu__stars grid">
           <figure>
             <img class="menu__star" src="img/svg/star.svg" alt="Star" />

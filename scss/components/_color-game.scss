@@ -12,14 +12,14 @@
   //   margin-top: 45vh;
   // }
 
-  @include respond-to('320->') {
+  @include respond-to("320->") {
     --gap: 2rem;
     @include flex(row, flex-start, null);
     align-self: flex-end;
     grid-column: 2 / span 5;
   }
 
-  @include respond-to('568->') {
+  @include respond-to("568->") {
     flex-direction: column;
     margin-bottom: 2vw;
   }
@@ -48,22 +48,22 @@
     cursor: pointer;
 
     &:nth-child(1) {
-      background-image: url('../img/svg/circle1.svg');
+      background-image: url("../img/svg/circle1.svg");
     }
 
     &:nth-child(2) {
-      background-image: url('../img/svg/circle4.svg');
+      background-image: url("../img/svg/circle4.svg");
     }
 
     &:nth-child(3) {
-      background-image: url('../img/svg/circle3.svg');
+      background-image: url("../img/svg/circle3.svg");
     }
 
     &:nth-child(4) {
-      background-image: url('../img/svg/circle4.svg');
+      background-image: url("../img/svg/circle4.svg");
     }
 
-    @include respond-to('320->') {
+    @include respond-to("320->") {
       width: 5rem;
     }
   }
@@ -92,35 +92,35 @@
       // overflow: hidden;
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
-      &[data-name='P'] {
-        background-image: url('../img/svg/rectangle1.svg');
+      &[data-name="P"] {
+        background-image: url("../img/svg/rectangle1.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          background-image: url('../img/svg/rectangle1d.svg');
+          background-image: url("../img/svg/rectangle1d.svg");
         }
       }
 
-      &[data-name='L'] {
-        background-image: url('../img/svg/rectangle2.svg');
+      &[data-name="L"] {
+        background-image: url("../img/svg/rectangle2.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          background-image: url('../img/svg/rectangle2d.svg');
+          background-image: url("../img/svg/rectangle2d.svg");
         }
       }
 
-      &[data-name='A'] {
-        background-image: url('../img/svg/rectangle3.svg');
+      &[data-name="A"] {
+        background-image: url("../img/svg/rectangle3.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          background-image: url('../img/svg/rectangle3d.svg');
+          background-image: url("../img/svg/rectangle3d.svg");
         }
       }
 
-      &[data-name='Y'] {
-        background-image: url('../img/svg/rectangle4.svg');
+      &[data-name="Y"] {
+        background-image: url("../img/svg/rectangle4.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          background-image: url('../img/svg/rectangle4d.svg');
+          background-image: url("../img/svg/rectangle4d.svg");
         }
       }
 
@@ -141,7 +141,7 @@
         // transform: translate(-50%, 0) rotate(45deg);
       }
 
-      @include respond-to('320->') {
+      @include respond-to("320->") {
         height: 4rem;
       }
 
@@ -165,7 +165,8 @@
       // }
     }
 
-    &:hover div {
+    &:hover div,
+    &:focus div {
       transform: translate(clamp(2rem, 6vw, 4rem), -50%);
       opacity: 1;
       pointer-events: auto;
@@ -173,6 +174,10 @@
       @media (min-width: 20em) and (max-width: 35.499em) {
         transform: translate(-50%, -8rem);
       }
+    }
+
+    &:focus {
+      outline: 2px solid var(--clr-btn-6);
     }
   }
 }

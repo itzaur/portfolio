@@ -154,7 +154,7 @@ barba.hooks.beforeEnter(({ current, next }) => {
 });
 
 barba.hooks.enter(({ current, next }) => {
-  var enterPromiseAll = new Promise(function (resolve) {
+  let enterPromiseAll = new Promise(function (resolve) {
     current.container.remove();
 
     resolve();

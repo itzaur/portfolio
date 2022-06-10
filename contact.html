@@ -59,10 +59,10 @@
       <div class="contact-page__content grid">
         <div class="btns-box btns-box--contact grid">
           <button
-            class="btn btn-big"
+            class="btn btn-big btn--outline"
             aria-selected="true"
-            data-attribute="Click"
             data-hover-star="hover"
+            data-tabindex="0"
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 106.81 110.87">
               <g>
@@ -221,6 +221,7 @@
             class="btn btn-small"
             aria-selected="false"
             data-hover-star="hover"
+            tabindex="-1"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -1019,12 +1020,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
         </div>
 
         <div class="social">
-          <div
-            class="social__item"
-            data-name="github"
-            data-hover-star="hover"
-            tabindex="0"
-          >
+          <div class="social__item" data-name="github" data-hover-star="hover">
             <svg class="social__svg">
               <path class="social__path" fill="none" />
               <svg
@@ -1098,7 +1094,10 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
 
             <!-- <img src="img/svg/contact/github.svg" alt="" /> -->
 
-            <a href="https://github.com/itzaur" target="_blank"
+            <a
+              href="https://github.com/itzaur"
+              target="_blank"
+              data-tabindex="0"
               ><span class="sr-only">Github</span></a
             >
           </div>
@@ -1106,7 +1105,6 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
             class="social__item"
             data-name="linkedin"
             data-hover-star="hover"
-            tabindex="0"
           >
             <svg class="social__svg">
               <path class="social__path" fill="none" />
@@ -1204,6 +1202,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
             <a
               href="https://www.linkedin.com/in/pavel-drazdou-b703a51b6/"
               target="_blank"
+              data-tabindex="0"
               ><span class="sr-only">LinkedIn</span></a
             >
           </div>
@@ -1746,6 +1745,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
                           <a
                             href="mailto: preneur85@gmail.com"
                             data-hover-star="hover"
+                            data-tabindex="0"
                           >
                             preneur85@gmail.com
                           </a>
@@ -2912,16 +2912,23 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
         </div>
 
         <section class="menu grid">
+          <button
+            class="top-nav menu-btn-close fs-240"
+            data-hover-star="hover"
+            tabindex="-1"
+          >
+            <span>B</span>ack
+          </button>
           <div class="menu__img">
             <img src="img/svg/boom_white.svg" alt="boom.svg" />
           </div>
-
           <nav class="nav">
             <ul class="nav__list flow" role="list">
               <li class="nav__item">
                 <a
                   href="about.html"
                   class="nav__link clr-black uppercase fs-600"
+                  tabindex="-1"
                   >About me</a
                 >
               </li>
@@ -2929,6 +2936,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
                 <a
                   href="skills.html"
                   class="nav__link clr-black uppercase fs-600"
+                  tabindex="-1"
                   >Hobbies / Skills</a
                 >
               </li>
@@ -2936,12 +2944,12 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
                 <a
                   href="index.html"
                   class="nav__link clr-black uppercase fs-600"
+                  tabindex="-1"
                   >Home</a
                 >
               </li>
             </ul>
           </nav>
-
           <div class="menu__box">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -3531,9 +3539,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
             </svg>
             <img src="img/svg/dots_blue.svg" alt="blue dots" />
           </div>
-          <button class="top-nav menu-btn-close fs-240" data-hover-star="hover">
-            <span>B</span>ack
-          </button>
+
           <div class="menu__stars grid">
             <figure>
               <img class="menu__star" src="img/svg/star.svg" alt="Star" />
@@ -3549,7 +3555,7 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
       </div>
 
       <div id="wrapper__corner-box">
-        <a id="corner-link" href="#" data-pointer-events="none">
+        <a id="corner-link" href="#" data-pointer-events="none" tabindex="-1">
           <div id="corner-content">
             <div id="corner-button" data-corner-name="contact">
               <span class="corner-text">To be continued...</span>
