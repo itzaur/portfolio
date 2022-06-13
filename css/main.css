@@ -3193,7 +3193,7 @@ select {
           clip-path: polygon(-500% 0%, 100% -100%, 101% calc(100% - var(--about-section-gap) - 1px), 0% 100%);
 }
 
-.hobbies__content > div + div {
+.hobbies__content > .hobbie + .hobbie {
   margin-left: 1rem;
 }
 
