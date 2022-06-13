@@ -25,8 +25,10 @@ function buttonFunctionality() {
   let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
 
   btnBig.addEventListener("click", (e) => {
-    btnBig.setAttribute("aria-selected", false);
-    btnSmall.setAttribute("aria-selected", true);
+    // btnBig.setAttribute("aria-selected", false);
+    // btnSmall.setAttribute("aria-selected", true);
+    btnBig.setAttribute("aria-expanded", false);
+    btnSmall.setAttribute("aria-expanded", true);
 
     document.querySelectorAll('[data-tabindex="0"]').forEach((tab) => {
       tab.setAttribute("data-tabindex", "-1");
@@ -45,8 +47,10 @@ function buttonFunctionality() {
   });
 
   btnSmall.addEventListener("click", (e) => {
-    btnSmall.setAttribute("aria-selected", false);
-    btnBig.setAttribute("aria-selected", true);
+    // btnSmall.setAttribute("aria-selected", false);
+    // btnBig.setAttribute("aria-selected", true);
+    btnSmall.setAttribute("aria-expanded", false);
+    btnBig.setAttribute("aria-expanded", true);
 
     menuTransitionStop();
   });
@@ -54,7 +58,9 @@ function buttonFunctionality() {
   //ANCHOR Animations
   //Letters animation
   btnBig.addEventListener("mouseenter", animateTextHoverRun);
+  btnBig.addEventListener("focus", animateTextHoverRun);
   btnBig.addEventListener("mouseleave", animateTextHoverStop);
+  btnBig.addEventListener("focusout", animateTextHoverStop);
 
   checkMediaQuery();
 
@@ -215,8 +221,10 @@ function buttonFunctionality() {
       });
     }
 
-    btnBig.setAttribute("aria-selected", true);
-    btnSmall.setAttribute("aria-selected", false);
+    // btnBig.setAttribute("aria-selected", true);
+    // btnSmall.setAttribute("aria-selected", false);
+    btnBig.setAttribute("aria-expanded", true);
+    btnSmall.setAttribute("aria-expanded", false);
 
     document.querySelectorAll('[data-tabindex="-1"]').forEach((tab) => {
       tab.setAttribute("data-tabindex", "0");

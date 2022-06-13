@@ -390,13 +390,13 @@ select {
   }
 }
 
-.btn[aria-selected="false"] {
+.btn[aria-expanded="false"] {
   display: none;
   -ms-grid-column: 2;
   grid-column: 2;
 }
 
-.btn[aria-selected="true"] {
+.btn[aria-expanded="true"] {
   -ms-grid-column: 2;
   grid-column: 2;
   display: -webkit-box;
@@ -1386,7 +1386,7 @@ select {
 }
 
 .hello .cls-3 {
-  fill: url(#Super_Soft_Black_Vignette_2);
+  fill: url(#Super_Soft_Black_Vignette_2h);
 }
 
 .hello .cls-4 {
@@ -1403,19 +1403,19 @@ select {
 }
 
 .hello .cls-7 {
-  fill: url(#Super_Soft_Black_Vignette_2-2);
+  fill: url(#Super_Soft_Black_Vignette_2h-2);
 }
 
 .hello .cls-8 {
-  fill: url(#Super_Soft_Black_Vignette_2-3);
+  fill: url(#Super_Soft_Black_Vignette_2h-3);
 }
 
 .hello .cls-9 {
-  fill: url(#Super_Soft_Black_Vignette_2-4);
+  fill: url(#Super_Soft_Black_Vignette_2h-4);
 }
 
 .hello .cls-10 {
-  fill: url(#Super_Soft_Black_Vignette_2-5);
+  fill: url(#Super_Soft_Black_Vignette_2h-5);
 }
 
 .hello .cls-11,
@@ -1978,15 +1978,15 @@ select {
 }
 
 .menu__box > svg .cls-3 {
-  fill: url(#Super_Soft_Black_Vignette_2);
+  fill: url(#Super_Soft_Black_Vignette_2mb);
 }
 
 .menu__box > svg .cls-4 {
-  fill: url(#Super_Soft_Black_Vignette_2-2);
+  fill: url(#Super_Soft_Black_Vignette_2mb-2);
 }
 
 .menu__box > svg .cls-5 {
-  fill: url(#Super_Soft_Black_Vignette_2-3);
+  fill: url(#Super_Soft_Black_Vignette_2mb-3);
 }
 
 .menu__box > svg .cls-6 {
@@ -1994,11 +1994,11 @@ select {
 }
 
 .menu__box > svg .cls-7 {
-  fill: url(#Super_Soft_Black_Vignette_2-4);
+  fill: url(#Super_Soft_Black_Vignette_2mb-4);
 }
 
 .menu__box > svg .cls-8 {
-  fill: url(#Super_Soft_Black_Vignette_2-5);
+  fill: url(#Super_Soft_Black_Vignette_2mb-5);
 }
 
 .menu__box > svg .cls-9 {
@@ -2006,75 +2006,75 @@ select {
 }
 
 .menu__box > svg .cls-10 {
-  fill: url(#Super_Soft_Black_Vignette_2-6);
+  fill: url(#Super_Soft_Black_Vignette_2mb-6);
 }
 
 .menu__box > svg .cls-11 {
-  fill: url(#Super_Soft_Black_Vignette_2-7);
+  fill: url(#Super_Soft_Black_Vignette_2mb-7);
 }
 
 .menu__box > svg .cls-12 {
-  fill: url(#Super_Soft_Black_Vignette_2-8);
+  fill: url(#Super_Soft_Black_Vignette_2mb-8);
 }
 
 .menu__box > svg .cls-13 {
-  fill: url(#Super_Soft_Black_Vignette_2-9);
+  fill: url(#Super_Soft_Black_Vignette_2mb-9);
 }
 
 .menu__box > svg .cls-14 {
-  fill: url(#Super_Soft_Black_Vignette_2-10);
+  fill: url(#Super_Soft_Black_Vignette_2mb-10);
 }
 
 .menu__box > svg .cls-15 {
-  fill: url(#Super_Soft_Black_Vignette_2-11);
+  fill: url(#Super_Soft_Black_Vignette_2mb-11);
 }
 
 .menu__box > svg .cls-16 {
-  fill: url(#Super_Soft_Black_Vignette_2-12);
+  fill: url(#Super_Soft_Black_Vignette_2mb-12);
 }
 
 .menu__box > svg .cls-17 {
-  fill: url(#Super_Soft_Black_Vignette_2-13);
+  fill: url(#Super_Soft_Black_Vignette_2mb-13);
 }
 
 .menu__box > svg .cls-18 {
-  fill: url(#Super_Soft_Black_Vignette_2-14);
+  fill: url(#Super_Soft_Black_Vignette_2mb-14);
 }
 
 .menu__box > svg .cls-19 {
-  fill: url(#Super_Soft_Black_Vignette_2-15);
+  fill: url(#Super_Soft_Black_Vignette_2mb-15);
 }
 
 .menu__box > svg .cls-20 {
-  fill: url(#Super_Soft_Black_Vignette_2-16);
+  fill: url(#Super_Soft_Black_Vignette_2mb-16);
 }
 
 .menu__box > svg .cls-21 {
-  fill: url(#Super_Soft_Black_Vignette_2-17);
+  fill: url(#Super_Soft_Black_Vignette_2mb-17);
 }
 
 .menu__box > svg .cls-22 {
-  fill: url(#Super_Soft_Black_Vignette_2-18);
+  fill: url(#Super_Soft_Black_Vignette_2mb-18);
 }
 
 .menu__box > svg .cls-23 {
-  fill: url(#Super_Soft_Black_Vignette_2-19);
+  fill: url(#Super_Soft_Black_Vignette_2mb-19);
 }
 
 .menu__box > svg .cls-24 {
-  fill: url(#Super_Soft_Black_Vignette_2-20);
+  fill: url(#Super_Soft_Black_Vignette_2mb-20);
 }
 
 .menu__box > svg .cls-25 {
-  fill: url(#Super_Soft_Black_Vignette_2-21);
+  fill: url(#Super_Soft_Black_Vignette_2mb-21);
 }
 
 .menu__box > svg .cls-26 {
-  fill: url(#Super_Soft_Black_Vignette_2-22);
+  fill: url(#Super_Soft_Black_Vignette_2mb-22);
 }
 
 .menu__box > svg .cls-27 {
-  fill: url(#Super_Soft_Black_Vignette_2-23);
+  fill: url(#Super_Soft_Black_Vignette_2mb-23);
 }
 
 .menu__box > svg .cls-28 {
@@ -2082,19 +2082,19 @@ select {
 }
 
 .menu__box > svg .cls-29 {
-  fill: url(#Super_Soft_Black_Vignette_2-24);
+  fill: url(#Super_Soft_Black_Vignette_2mb-24);
 }
 
 .menu__box > svg .cls-30 {
-  fill: url(#Super_Soft_Black_Vignette_2-25);
+  fill: url(#Super_Soft_Black_Vignette_2mb-25);
 }
 
 .menu__box > svg .cls-31 {
-  fill: url(#Super_Soft_Black_Vignette_2-26);
+  fill: url(#Super_Soft_Black_Vignette_2mb-26);
 }
 
 .menu__box > svg .cls-32 {
-  fill: url(#Super_Soft_Black_Vignette_2-27);
+  fill: url(#Super_Soft_Black_Vignette_2mb-27);
 }
 
 .menu__box > svg .cls-33 {
@@ -2104,11 +2104,11 @@ select {
 }
 
 .menu__box > svg .cls-34 {
-  fill: url(#Super_Soft_Black_Vignette_2-28);
+  fill: url(#Super_Soft_Black_Vignette_2mb-28);
 }
 
 .menu__box > svg .cls-35 {
-  fill: url(#Super_Soft_Black_Vignette_2-29);
+  fill: url(#Super_Soft_Black_Vignette_2mb-29);
 }
 
 .menu__box > svg .cls-36 {
@@ -2116,39 +2116,39 @@ select {
 }
 
 .menu__box > svg .cls-37 {
-  fill: url(#Super_Soft_Black_Vignette_2-30);
+  fill: url(#Super_Soft_Black_Vignette_2mb-30);
 }
 
 .menu__box > svg .cls-38 {
-  fill: url(#Super_Soft_Black_Vignette_2-31);
+  fill: url(#Super_Soft_Black_Vignette_2mb-31);
 }
 
 .menu__box > svg .cls-39 {
-  fill: url(#Super_Soft_Black_Vignette_2-32);
+  fill: url(#Super_Soft_Black_Vignette_2mb-32);
 }
 
 .menu__box > svg .cls-40 {
-  fill: url(#Super_Soft_Black_Vignette_2-33);
+  fill: url(#Super_Soft_Black_Vignette_2mb-33);
 }
 
 .menu__box > svg .cls-41 {
-  fill: url(#Super_Soft_Black_Vignette_2-34);
+  fill: url(#Super_Soft_Black_Vignette_2mb-34);
 }
 
 .menu__box > svg .cls-42 {
-  fill: url(#Super_Soft_Black_Vignette_2-35);
+  fill: url(#Super_Soft_Black_Vignette_2mb-35);
 }
 
 .menu__box > svg .cls-43 {
-  fill: url(#Super_Soft_Black_Vignette_2-36);
+  fill: url(#Super_Soft_Black_Vignette_2mb-36);
 }
 
 .menu__box > svg .cls-44 {
-  fill: url(#Super_Soft_Black_Vignette_2-37);
+  fill: url(#Super_Soft_Black_Vignette_2mb-37);
 }
 
 .menu__box > svg .cls-45 {
-  fill: url(#Super_Soft_Black_Vignette_2-38);
+  fill: url(#Super_Soft_Black_Vignette_2mb-38);
 }
 
 @media (min-width: 35.5em) {

@@ -61,12 +61,23 @@
   //   // display: none;
   // }
 
-  &[aria-selected="false"] {
+  // &[aria-selected="false"] {
+  //   display: none;
+  //   grid-column: 2;
+  // }
+
+  // &[aria-selected="true"] {
+  //   grid-column: 2;
+  //   display: flex;
+  //   align-items: flex-end;
+  // }
+
+  &[aria-expanded="false"] {
     display: none;
     grid-column: 2;
   }
 
-  &[aria-selected="true"] {
+  &[aria-expanded="true"] {
     grid-column: 2;
     display: flex;
     align-items: flex-end;
