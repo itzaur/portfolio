@@ -5,13 +5,15 @@
 .skills-page {
   position: relative;
   grid-template-columns: repeat(2, 1fr);
+  // grid-template-rows: max-content;
   grid-template-rows: 49vh 48.4vh;
   //   grid-auto-rows: 1fr;
 
   // max-width: 192rem;
   min-height: 100vh;
 
-  padding: var(--padding-container);
+  padding: calc(var(--padding-container) + 1px) var(--padding-container)
+    var(--padding-container) var(--padding-container);
   background-color: HSL(var(--primary-hs) 100%);
 }
 
@@ -26,7 +28,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  overflow: hidden;
+  // overflow: hidden;
 }
 
 .hobbies {
@@ -240,6 +242,8 @@
 
   clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
   margin-top: calc(var(--about-section-gap) * -1 - 0.2rem);
+
+  overflow: hidden;
 
   @include respond-to("568->") {
     grid-template-columns: minmax(2rem, 1fr) repeat(8, minmax(0, 11rem)) minmax(

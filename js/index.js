@@ -87,7 +87,7 @@ function buttonFunctionality() {
   tlMenuTransition
     .to(menuPage, {
       height: "calc(100vh - var(--padding-container) * 2)",
-
+      // border: "1px solid black",
       // height: "100vh",
       ease: "bounce.out",
     })
