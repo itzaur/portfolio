@@ -84,9 +84,11 @@
 
   &-mobile {
     display: block;
+    min-width: 15rem;
     grid-column: 3 / -3;
     grid-row: 2 / -1;
     align-self: center;
+    justify-self: center;
     opacity: 0;
 
     z-index: -1;

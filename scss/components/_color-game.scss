@@ -47,6 +47,8 @@
 
     cursor: pointer;
 
+    z-index: 1;
+
     &:nth-child(1) {
       background-image: url("../img/svg/circle1.svg");
     }
