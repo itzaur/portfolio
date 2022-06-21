@@ -154,9 +154,9 @@
     fill: var(--clr-btn-7);
   }
 
-  &--skills {
-    grid-row: 3;
-  }
+  // &--skills {
+  //   grid-row: 3;
+  // }
 }
 
 .skip-text-animation {
@@ -426,13 +426,16 @@
 
 .btns-box {
   position: absolute;
-  top: 0;
+  // top: 0;
   // left: 4rem;
 
   grid-row: 2;
   grid-template-columns: minmax(5vw, 1fr);
   // grid-template-rows: min-content 1fr;
-  grid-template-rows: 5rem repeat(2, 1fr);
+  grid-template-rows: 1fr;
+  // grid-template-rows: 5rem repeat(2, 1fr);
+
+  z-index: 10;
 
   // & > * {
   //   transform: scale(0);
@@ -445,8 +448,18 @@
   }
 
   @include respond-to("568->") {
-    top: 3rem;
-    grid-template-rows: 6rem repeat(2, 1fr);
+    // top: 3rem;
+    // grid-template-rows: 6rem repeat(2, 1fr);
+  }
+
+  &--about {
+    // top: 86vh;
+    top: 0;
+    grid-template-rows: 5rem;
+
+    @include respond-to("568->") {
+      top: 3rem;
+    }
   }
 
   &--skills {

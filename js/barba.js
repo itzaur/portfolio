@@ -116,7 +116,7 @@ barba.init({
       namespace: "skills-page",
       beforeEnter: () => {
         window.removeEventListener("resize", doodlePositionResize);
-        window.removeEventListener("resize", addDoorAnimationOnResize);
+        // window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
         pageSkillsInit();
