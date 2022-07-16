@@ -337,3 +337,7 @@
 //     margin-top: -10rem;
 //   }
 // }
+.header {
+  grid-column: 1 / -1;
+  grid-template-columns: inherit;
+}

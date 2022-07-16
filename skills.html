@@ -2767,8 +2767,38 @@ C57.2,68.1,51.9,67.3,46.6,66.9z"
         </div>
       </div>
 
-      <div id="wrapper__corner-box">
+      <div id="wrapper__corner-box" tabindex="0">
         <a id="corner-link" href="contact.html">
+          <span class="sr-only">Next Page</span>
+          <svg class="corner-border" viewBox="0 0 100 100">
+            <defs>
+              <linearGradient
+                id="corner-arc-left"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="rotate(65)"
+              >
+                <stop offset="79%" stop-color="var(--clr-stop1)" />
+                <stop offset="100%" stop-color="var(--clr-stop2)" />
+              </linearGradient>
+              <linearGradient
+                id="corner-arc-top"
+                gradientUnits="userSpaceOnUse"
+                gradientTransform="rotate(10)"
+              >
+                <stop offset="75%" stop-color="var(--clr-arc-top-stop1)" />
+                <stop offset="100%" stop-color="var(--clr-arc-top-stop2)" />
+              </linearGradient>
+            </defs>
+            <path
+              class="corner-arc-top"
+              d="M -0.48 0 L 76 0 Q96 0, 100.4 -20"
+              fill="none"
+            ></path>
+            <path
+              class="corner-arc-left"
+              d="M 0 0 L 0 80 Q0 97, -20, 100.4"
+            ></path>
+          </svg>
           <div id="corner-content">
             <div id="corner-button">
               <svg

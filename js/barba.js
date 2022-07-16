@@ -7,6 +7,8 @@ import {
   homeInit,
   buttonFunctionality,
   contactPageInit,
+  cornerArrowAnimation,
+  cornerArrowHoverEffect,
 } from "./export";
 import { doodlePositionResize } from "./index";
 import { addDoorAnimationOnResize } from "./about";
@@ -21,22 +23,41 @@ import { addDoorAnimationOnResize } from "./about";
 // } from './export';
 // import { doodleInit } from './export';
 // import MagnetLogo from './export';
+// function randomNumber(max, min) {
+//   return Math.floor(Math.random() * (max - min + 1)) + min;
+// }
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
-  // container.querySelector('#corner-content').style.background = 'red';
-  const tl = gsap.timeline();
+  gsap.set("#corner-button svg g g path", {
+    autoAlpha: 0,
+  });
+  const tl = gsap.timeline({ repeat: 0 });
+  tl.set("#corner-button svg", {
+    autoAlpha: 0,
+  });
 
   tl.from(cornerBox, {
-    width: 2000,
-    height: 2000,
+    // width: 2000,
+    // height: 2000,
+    // immediateRender: false,
+    scale: 170,
+    transformOrigin: "right bottom",
     duration: 1,
+
     clearProps: "all",
   }).from(
     container,
     {
       opacity: 0,
       clearProps: "all",
+      onComplete: () => {
+        cornerArrowHoverEffect();
+        tl.set("#corner-button svg", {
+          autoAlpha: 1,
+          clearProps: "all",
+        });
+      },
     },
     "<0.2"
   );
@@ -48,20 +69,24 @@ function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
 
   const tl = gsap.timeline();
-
-  tl.to(cornerBox, {
-    width: 2000,
-    height: 2000,
-    duration: 1,
-    clearProps: "all",
-    onComplete: () => done(),
-  }).to(
-    container,
-    {
-      opacity: 0,
-    },
-    "<0.4"
-  );
+  tl.set("#corner-button svg", {
+    autoAlpha: 0,
+  })
+    .to(cornerBox, {
+      // width: 2000,
+      // height: 2000,
+      scale: 170,
+      duration: 1,
+      clearProps: "all",
+      onComplete: () => done(),
+    })
+    .to(
+      container,
+      {
+        opacity: 0,
+      },
+      "<0.4"
+    );
 
   return tl;
 }
@@ -109,6 +134,7 @@ barba.init({
       afterEnter: () => {
         aboutAnimationInit();
         buttonFunctionality();
+
         // addCustomCursor();
       },
     },
@@ -166,6 +192,8 @@ barba.hooks.enter(({ current, next }) => {
 barba.hooks.afterEnter(({ current, next }) => {
   let afterEnterPromiseAll = new Promise(function (resolve) {
     addCustomCursor();
+    // cornerArrowHoverEffect();
+
     // checkMediaQuery();
     // buttonFunctionality();
     // initSmoothScrollbar();

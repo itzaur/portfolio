@@ -10,6 +10,40 @@ CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
 // );
 // gsap.registerPlugin(TextPlugin);
 
+// const cornerFlip = document.querySelector("#wrapper__corner-box");
+// const cornerArrow = document.querySelector("#corner-button svg");
+// // console.log(cornerFlip.offsetWidth);
+// // console.log(cornerFlip.getBoundingClientRect());
+// // cornerArrow.style.transform = `scale(${1 / cornerFlip.offsetWidth})`;
+// function changeScale() {
+//   let cornerScaleX = cornerFlip.getBoundingClientRect().width;
+//   let cornerScaleY = cornerFlip.getBoundingClientRect().height;
+//   let arrowScaleX = cornerArrow.getBoundingClientRect().width;
+//   let arrowScaleY = cornerArrow.getBoundingClientRect().height;
+//   const ARROW_SIZE = 140;
+
+//   const a = cornerScaleX / 20;
+//   const f = arrowScaleX / ARROW_SIZE;
+//   arrowScaleX = (arrowScaleX * 1) / a;
+//   const arrowWidth = ARROW_SIZE / a;
+
+//   cornerArrow.style.width = `${arrowWidth}px`;
+//   cornerArrow.style.transition = `width 0.1s cubic-bezier(0, 0.35, 0.5, 1.7)`;
+
+//   // cornerArrow.style.transform = `scale(${(1 / arrowScaleX) * 0.14})`;
+//   // console.log(cornerArrow.getBoundingClientRect().width);
+//   // cornerArrow.style.transform = `scale(${
+//   //   arrowScaleX / arrowScaleX / arrowScaleX / 140
+//   // }`;
+//   requestAnimationFrame(changeScale);
+//   // cornerArrow.style.transform = `transform3d(0,0,1px)`;
+
+//   // console.log(cornerScaleX, arrowScaleX);
+//   // console.log(a, f);
+//   console.log(cornerArrow.style.width, a);
+// }
+// requestAnimationFrame(changeScale);
+
 const gsapEase = {
   power1: "power1.out",
   power4: "power4.out",
@@ -19,6 +53,104 @@ const gsapEase = {
   elastic05: "elastic.out(1, 0.5)",
   elastic05_04: "elastic.out(0.5, 0.4)",
 };
+
+//ANCHOR Next page button animation
+// const cornerArrow = document.querySelector("#wrapper__corner-box");
+let animStatusRun = false;
+
+function cornerArrowAnimation() {
+  const cornerArrowTimeline = gsap.timeline({ paused: true });
+  cornerArrowTimeline.set("#corner-button svg g g path", {
+    autoAlpha: 0,
+  });
+
+  cornerArrowTimeline.fromTo(
+    "#corner-button svg g g path",
+    {
+      y: `-=${randomNumber(40, -40)}`,
+      x: `+=${randomNumber(40, -40)}`,
+    },
+    {
+      autoAlpha: 1,
+      x: 0,
+      y: 0,
+      duration: 0.2,
+      ease: "back.out",
+      stagger: { each: 0.01 },
+    }
+  );
+
+  if (!animStatusRun) {
+    cornerArrowTimeline.play();
+    document
+      .querySelector("#corner-button svg")
+      .classList.remove("inactive-hover");
+  } else {
+    document
+      .querySelector("#corner-button svg")
+      .classList.add("inactive-hover");
+  }
+
+  document.querySelector("#corner-link").addEventListener("focus", () => {
+    document
+      .querySelector("#corner-button svg")
+      .classList.remove("inactive-hover");
+    cornerArrowTimeline.play();
+  });
+}
+
+function cornerArrowHoverEffect() {
+  const cornerArrow = document.querySelector("#wrapper__corner-box");
+
+  //Contact section corner element
+  let contactCornerLetters = gsap.utils.toArray(".contact-elements");
+
+  contactCornerLetters.forEach((letter) => {
+    const lettersTimeline = gsap.timeline({ paused: true });
+    lettersTimeline.from(letter, {
+      x: randomNumber(-600, 600),
+      y: randomNumber(-400, 400),
+      scale: 0,
+      duration: 1,
+      rotation: randomNumber(-720, 720),
+      transformOrigin: "center center",
+    });
+
+    cornerArrow.addEventListener("mouseenter", () => {
+      // animStatusRun = false;
+      lettersTimeline.play(0);
+    });
+
+    cornerArrow.addEventListener("mouseleave", () => {
+      // animStatusRun = true;
+      lettersTimeline.reverse();
+    });
+
+    cornerArrow.addEventListener("focus", () => {
+      lettersTimeline.play(0);
+    });
+  });
+
+  cornerArrow.addEventListener("mouseenter", () => {
+    animStatusRun = false;
+    cornerArrowAnimation();
+  });
+
+  cornerArrow.addEventListener("mouseleave", () => {
+    animStatusRun = true;
+    cornerArrowAnimation();
+  });
+
+  cornerArrow.addEventListener("focus", () => {
+    animStatusRun = false;
+    cornerArrowAnimation();
+  });
+
+  cornerArrow.addEventListener("focusout", () => {
+    animStatusRun = true;
+    cornerArrowAnimation();
+  });
+}
 
 //ANCHOR Vapor animation functionality
 let vaporAnimationDuration, vaporMinValueX, vaporMaxValueX, vaporValueY;
@@ -383,8 +515,6 @@ function pageSkillsInit() {
       eyeRightHighlight.style.transform = `translate3d(${
         eyeCoordsX + posX + 4
       }px, ${eyeCoordsY + posY}px, 1px)`;
-
-      console.log(eyeLeft.getBoundingClientRect());
     }
   }
 
@@ -1619,9 +1749,35 @@ function contactPageInit() {
   // });
 }
 
+//Contact section corner element
+// let contactCornerLetters = gsap.utils.toArray(".contact-elements");
+
+// let lettersAnimationDuration = 0.8;
+// let lettersMinValueX = -50;
+// let lettersMaxValueX = 100;
+// let lettersValueY = 150;
+// contactLettersAnim(contactCornerLetters);
+
+// function contactLettersAnim(items) {
+//   items.forEach((item, i) => {
+//     gsap.timeline({}).from(item, {
+//       x: randomNumber(-400, 400),
+//       y: randomNumber(-200, 200),
+//       scale: 0,
+//       duration: lettersAnimationDuration,
+//       rotation: randomNumber(-720, 720),
+//       transformOrigin: "center center",
+//       // ease: "none",
+//       clearProps: "all",
+//     });
+//   });
+// }
+
 export {
   pageSkillsInit,
   aboutAnimationInit,
   addDoorAnimationOnResize,
   contactPageInit,
+  cornerArrowAnimation,
+  cornerArrowHoverEffect,
 };

@@ -765,13 +765,6 @@ function homeInit() {
   }
 
   colorGame();
-
-  // gsap.to(".glare", {
-  //   opacity: 0,
-  //   repeat: -1,
-  //   duration: 2,
-  //   yoyo: true,
-  // });
 }
 
 // export { colorGame };
@@ -864,7 +857,7 @@ function doodlePositionResize() {
   }px)`;
 }
 
-window.addEventListener("DOMContentLoaded", addCustomCursor);
+// window.addEventListener("DOMContentLoaded", addCustomCursor);
 
 // imagesLoaded(
 //   document.querySelector('.page'),

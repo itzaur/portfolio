@@ -16,6 +16,7 @@
   --primary-hs: 0 0%;
 
   --nn: hsl(0, 0%, 100%);
+  --l: #4f5878;
 
   --clr-btn-1: hsl(227, 21%, 39%); //st0
   --clr-btn-2: hsl(40, 5%, 12%); //st1
@@ -58,6 +59,8 @@
   --corner-flip-size-0: 2rem;
   --corner-flip-size-1: 7.5rem;
   --corner-flip-size-2: 16rem;
+  --scale-1: 3.75;
+  --scale-2: 8;
 
   @media (max-width: 35.5rem) {
     // --fs-240: 2rem;

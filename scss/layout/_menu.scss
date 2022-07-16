@@ -344,6 +344,8 @@
   justify-self: center;
   align-self: center;
 
+  z-index: 1;
+
   @include respond-to("568->") {
     --flow-space: 2rem;
     grid-column: 1 / span 3;
@@ -359,8 +361,11 @@
   &__item {
     position: relative;
     width: fit-content;
+
     padding: 0.05rem 3rem 0.05rem 2rem;
+
     transition: filter 0.6s ease;
+
     overflow: hidden;
 
     &::before {
