@@ -1,4 +1,6 @@
 "use strict";
+import "../scss/main.scss";
+// import FDF from "../img/tlqmz5qzwoexbzbhkbvf.jpg";
 // import barba from '@barba/core';
 // import barbaCss from '@barba/css';
 // import Barba from 'barba.js';
@@ -884,7 +886,11 @@ function doodlePositionResize() {
 
 const preloadImages = (selector = "svg") => {
   return new Promise((resolve) => {
-    imagesLoaded(document.querySelectorAll(selector), resolve);
+    imagesLoaded(
+      document.querySelectorAll(selector),
+      { background: true },
+      resolve
+    );
   });
 };
 

@@ -1,12 +1,12 @@
 @font-face {
-  font-family: 'd_CCMonologous';
+  font-family: "d_CCMonologous";
   font-weight: bold;
   font-style: italic;
   font-display: swap; /* Read next point */
   unicode-range: U+000-5FF; /* Download only latin glyphs */
-  src: local('d_CCMonologous'),
-    url('../fonts/d_ccmonologous_bolditalic.woff2') format('woff2'),
-    url('../fonts/d_ccmonologous_bolditalic.woff2') format('woff');
+  src: local("d_CCMonologous"),
+    url("../fonts/d_ccmonologous_bolditalic.woff2") format("woff2"),
+    url("../fonts/d_ccmonologous_bolditalic.woff2") format("woff");
 }
 
 .fs-900 {

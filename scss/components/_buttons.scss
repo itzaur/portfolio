@@ -251,7 +251,7 @@
   border-radius: 50%;
 
   // background-color: HSL(var(--primary-hs) 100%);
-  background-image: url("../../img/svg/circle1.svg");
+  background-image: url("../img/svg/circle1.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -261,7 +261,7 @@
   // transition: transform 0.3s ease-in-out;
 
   &.active {
-    background-image: url("../../img/svg/circle4.svg");
+    background-image: url("../img/svg/circle4.svg");
     transform: scale(1.4);
     // transition: transform 0.3s ease-in-out;
   }
