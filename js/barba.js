@@ -12,20 +12,6 @@ import {
 } from "./export";
 import { doodlePositionResize } from "./index";
 import { addDoorAnimationOnResize } from "./about";
-// import { pageSkillsInit } from './export';
-// import { Cursor } from './export';
-// import {
-//   // MagnetLogo,
-//   addCustomCursor,
-//   homeInit,
-//   // doodlePositionResize,
-//   // doodlePositionStart,
-// } from './export';
-// import { doodleInit } from './export';
-// import MagnetLogo from './export';
-// function randomNumber(max, min) {
-//   return Math.floor(Math.random() * (max - min + 1)) + min;
-// }
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
@@ -38,13 +24,9 @@ function animationEnter(container) {
   });
 
   tl.from(cornerBox, {
-    // width: 2000,
-    // height: 2000,
-    // immediateRender: false,
     scale: 170,
     transformOrigin: "right bottom",
     duration: 1,
-
     clearProps: "all",
   }).from(
     container,
@@ -73,8 +55,6 @@ function animationLeave(container, done) {
     autoAlpha: 0,
   })
     .to(cornerBox, {
-      // width: 2000,
-      // height: 2000,
       scale: 170,
       duration: 1,
       clearProps: "all",
@@ -117,13 +97,9 @@ barba.init({
       beforeEnter: () => {
         window.addEventListener("resize", doodlePositionResize);
         window.removeEventListener("resize", addDoorAnimationOnResize);
-        // console.log(document.querySelector(".btn-big"));
       },
       afterEnter: () => {
         homeInit();
-        // buttonFunctionality();
-        // addCustomCursor();
-        // console.log(document.querySelector(".btn-big"));
       },
     },
     {
@@ -134,8 +110,6 @@ barba.init({
       afterEnter: () => {
         aboutAnimationInit();
         buttonFunctionality();
-
-        // addCustomCursor();
       },
     },
     {
@@ -164,15 +138,8 @@ barba.init({
   ],
 });
 
-// barba.hooks.afterEnter(() => {
-//   addCustomCursor();
-// });
-
 barba.hooks.beforeEnter(({ current, next }) => {
   let beforeEnterPromiseAll = new Promise(function (resolve) {
-    // killOldScrollTriggers();
-    // destroySmoothScrollbar();
-
     resolve();
   });
 
@@ -192,13 +159,6 @@ barba.hooks.enter(({ current, next }) => {
 barba.hooks.afterEnter(({ current, next }) => {
   let afterEnterPromiseAll = new Promise(function (resolve) {
     addCustomCursor();
-    // cornerArrowHoverEffect();
-
-    // checkMediaQuery();
-    // buttonFunctionality();
-    // initSmoothScrollbar();
-    // initScrollTriggers();
-
     resolve();
   });
 

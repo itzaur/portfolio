@@ -4,13 +4,8 @@
   grid-column: 2;
   grid-row: 2 / -1;
   align-self: end;
-  // align-self: center;
 
   @include flex(column, center, null);
-
-  // @media (max-width: 19.999em) {
-  //   margin-top: 45vh;
-  // }
 
   @include respond-to("320->") {
     --gap: 2rem;
@@ -31,15 +26,8 @@
     width: 3.5rem;
     aspect-ratio: 1;
 
-    // background: radial-gradient(
-    //   circle,
-    //   HSL(var(--primary-hs) 100%),
-    //   HSL(var(--primary-hs) 80%)
-    // );
-
     background-repeat: no-repeat;
     background-color: transparent;
-    // background-color: HSL(var(--primary-hs) 100%);
 
     box-shadow: 0 10px 10px HSL(var(--primary-hs) 0% / 0.3);
 
@@ -81,67 +69,86 @@
       height: 3rem;
       padding: 0.5rem 0.8rem;
       border-radius: 1rem;
-      // background-image: url('../../img/svg/rectangle1.svg');
+
       background-repeat: no-repeat;
-      background-position: center;
-      // background-size: cover;
-      background-size: 35%, 100%;
+      background-position: 58%;
+
+      background-size: 30%, 70%;
       background-color: transparent;
-      // background-color: HSL(var(--primary-hs) 100%);
-      // box-shadow: 0 10px 10px HSL(var(--primary-hs) 0% / 0.2);
+
       filter: drop-shadow(0 10px 10px HSL(var(--primary-hs) 0% / 0.2));
       opacity: 0;
       pointer-events: none;
-      // overflow: hidden;
+
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
       &[data-name="P"] {
-        // background-image: url("../img/svg/rectangle1.svg");
-        background-image: url("../img/glasses.png"),
+        background-image: url("../img/glasses.svg"),
           url("../img/svg/rectangle1.svg");
-        // background-size: 50%, 100%;
+        background-image: -webkit-image-set(url("../img/glasses.webp") 1x),
+          url("../img/svg/rectangle1.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          // background-image: url("../img/svg/rectangle1d.svg");
-          background-image: url("../img/glasses.png"),
+          background-image: url("../img/glasses.svg"),
             url("../img/svg/rectangle1d.svg");
-          background-size: 50%, 100%;
+          background-image: -webkit-image-set(url("../img/glasses.webp") 1x),
+            url("../img/svg/rectangle1d.svg");
+          background-size: 53%, 100%;
         }
       }
 
       &[data-name="L"] {
-        // background-image: url("../img/svg/rectangle2.svg");
-        background-image: url("../img/pullover.png"),
+        background-image: url("../img/pullover.svg"),
           url("../img/svg/rectangle2.svg");
+        background-image: -webkit-image-set(url("../img/pullover.webp") 1x),
+          url("../img/svg/rectangle2.svg");
+        background-size: 25%, 70%;
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          // background-image: url("../img/svg/rectangle2d.svg");
-          background-image: url("../img/pullover.png"),
+          background-image: url("../img/pullover.svg"),
             url("../img/svg/rectangle2d.svg");
+          background-image: -webkit-image-set(url("../img/pullover.webp") 1x),
+            url("../img/svg/rectangle2d.svg");
+          background-size: 35%, 100%;
+        }
+
+        @include respond-to("568->") {
+          background-size: 35%, 100%;
         }
       }
 
       &[data-name="A"] {
-        // background-image: url("../img/svg/rectangle3.svg");
-        background-image: url("../img/beard.png"),
+        background-image: url("../img/beard.svg"),
+          url("../img/svg/rectangle3.svg");
+        background-image: -webkit-image-set(url("../img/beard.webp") 1x),
           url("../img/svg/rectangle3.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          // background-image: url("../img/svg/rectangle3d.svg");
-          background-image: url("../img/beard.png"),
+          background-image: url("../img/beard.svg"),
             url("../img/svg/rectangle3d.svg");
+          background-image: -webkit-image-set(url("../img/beard.webp") 1x),
+            url("../img/svg/rectangle3d.svg");
+          background-size: 50%, 100%;
         }
       }
 
       &[data-name="Y"] {
-        // background-image: url("../img/svg/rectangle4.svg");
-        background-image: url("../img/noir.png"),
+        background-image: url("../img/noir.svg"),
           url("../img/svg/rectangle4.svg");
+        background-image: -webkit-image-set(url("../img/noir.webp") 1x),
+          url("../img/svg/rectangle4.svg");
+        background-size: 25%, 70%;
 
         @media (min-width: 20em) and (max-width: 35.499em) {
-          // background-image: url("../img/svg/rectangle4d.svg");
-          background-image: url("../img/noir.png"),
+          background-image: url("../img/noir.svg"),
             url("../img/svg/rectangle4d.svg");
+          background-image: -webkit-image-set(url("../img/noir.webp") 1x),
+            url("../img/svg/rectangle4d.svg");
+          background-size: 35%, 100%;
+        }
+
+        @include respond-to("568->") {
+          background-size: 35%, 100%;
         }
       }
 
@@ -162,31 +169,12 @@
         left: 50%;
         background-position: 50% 35%, center;
         background-size: 40%, 100%;
-        // transform: translate(-50%, 0) rotate(45deg);
       }
 
       @include respond-to("320->") {
         height: 4rem;
+        background-size: 40%, 100%;
       }
-
-      // &::before {
-      //   content: '';
-      //   position: absolute;
-      //   width: 1rem;
-      //   height: 1rem;
-      //   top: 50%;
-      //   left: -5px;
-      //   transform: translate(0, -50%) rotate(45deg);
-      //   background-color: HSL(var(--primary-hs) 100%);
-      //   transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-
-      //   @media (min-width: 320px) and (max-width: 567px) {
-      //     top: calc(100% - 0.5rem);
-      //     // bottom: 0rem;
-      //     left: 50%;
-      //     transform: translate(-50%, 0) rotate(45deg);
-      //   }
-      // }
     }
 
     &:hover div,

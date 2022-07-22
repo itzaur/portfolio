@@ -4,8 +4,7 @@
   grid-row: 2 / span 4;
   align-self: end;
   transform: translate(2rem, 4rem);
-  // transition: transform 0.2s linear;
-  // transform: translate(0, 0);
+
   z-index: -1;
 
   & > * {
@@ -28,8 +27,6 @@
   }
 
   @include respond-to("568->") {
-    // grid-column: 3 / span 5;
-    // grid-row: 2 / span 4;
     transform: translate(13rem, 7rem);
 
     & > * {
@@ -39,15 +36,13 @@
 
   @include respond-to("736->") {
     grid-column: 4 / span 4;
-    // grid-row: 5 / span 1;
-    // grid-row: 1 / span 5;
-    // transform: translateY(15rem);
+
     transform: translate(9rem, 7rem);
   }
 
   @include respond-to("1024->") {
     grid-column: 5 / span 4;
-    // grid-row: 1 / span 5;
+
     transform: translate(0, 9.5rem);
   }
 }
@@ -209,168 +204,12 @@
   & .cls-51 {
     fill: url(#linear-gradient-7);
   }
-
-  // .st0 {
-  //   fill: #ffc8a9;
-  // }
-  // .st1 {
-  //   fill: #aa745c;
-  // }
-  // .st2 {
-  //   fill: #8c6239;
-  // }
-  // .st3 {
-  //   fill: #754c24;
-  // }
-  // .st4 {
-  //   fill: #262525;
-  // }
-  // .st5 {
-  //   fill: #e5a785;
-  // }
-  // .st6 {
-  //   fill: #da9973;
-  // }
-  // .st7 {
-  //   fill: #f7bb94;
-  // }
-  // .st8 {
-  //   fill: #d79a79;
-  // }
-  // .st9 {
-  //   fill: #cc8d6d;
-  // }
-  // .st10 {
-  //   fill: #e2a586;
-  // }
-  // .st11 {
-  //   fill: #fbd5bc;
-  // }
-  // .st12 {
-  //   fill: #bf8166;
-  // }
-  // .st13 {
-  //   fill: #7a5231;
-  // }
-  // .st14 {
-  //   fill: none;
-  // }
-  // .st15 {
-  //   fill: #353535;
-  // }
-  // .st16 {
-  //   fill: #303030;
-  // }
-  // .st17 {
-  //   fill: #191616;
-  // }
-  // .st18 {
-  //   fill: #3f3a36;
-  // }
-  // .st19 {
-  //   fill: #4c4c4c;
-  // }
-  // .st20 {
-  //   fill: #ad6859;
-  // }
-  // .st21 {
-  //   fill: #a05c50;
-  // }
-  // .st22 {
-  //   fill: #934e45;
-  // }
-  // .st23 {
-  //   fill: #ffffff;
-  // }
-  // .st24 {
-  //   fill: url(#SVGID_1_);
-  // }
-  // .st25 {
-  //   fill: #e1e8f4;
-  // }
-  // .st26 {
-  //   fill: #c3d0e5;
-  // }
-  // .st27 {
-  //   fill: #d1dae5;
-  // }
-  // .st28 {
-  //   fill: #afbbce;
-  // }
-  // .st29 {
-  //   fill: #082456;
-  // }
-  // .st30 {
-  //   fill: #01143f;
-  // }
-  // .st31 {
-  //   fill: #140a32;
-  // }
-  // .st32 {
-  //   fill: #093468;
-  // }
-  // .st33 {
-  //   fill: #1e1d1d;
-  // }
-  // .st34 {
-  //   opacity: 0.33;
-  //   fill: #ffffff;
-  //   enable-background: new;
-  // }
-  // .st35 {
-  //   fill: #100f38;
-  // }
-  // .st36 {
-  //   fill: #1b1464;
-  // }
-  // .st37 {
-  //   opacity: 0.21;
-  // }
-  // .st38 {
-  //   fill: #0c0b51;
-  // }
-  // .st39 {
-  //   fill: #151449;
-  // }
-  // .st40 {
-  //   fill: url(#SVGID_2_);
-  // }
-  // .st41 {
-  //   fill: url(#SVGID_3_);
-  // }
-  // .st42 {
-  //   fill: url(#SVGID_4_);
-  // }
-  // .st43 {
-  //   fill: url(#SVGID_5_);
-  // }
-  // .st44 {
-  //   fill: url(#SVGID_6_);
-  // }
-  // .st45 {
-  //   fill: url(#SVGID_7_);
-  // }
 }
-// .photo {
-//   // position: relative;
-//   // outline: 3px solid green;
-//   z-index: 2;
-// }
-
-// .pre-photo {
-//   z-index: 0;
-// }
 
 .pre-photo .cls-1 {
-  // fill: HSL(var(--primary-hs) 100%);
   fill: var(--clr-orange);
 }
 
-// .st34.glass {
-//   width: 100%;
-//   height: 100%;
-//   // fill: url(#bg-glass);
-// }
 .st37.glass {
   overflow: hidden;
   z-index: -1;

@@ -10,7 +10,7 @@
   position: relative;
 
   height: 100vh;
-  // min-height: 100vh;
+  
 
   padding: var(--padding-container);
   background-color: HSL(var(--primary-hs) 100%);
@@ -19,8 +19,7 @@
 .about {
   position: relative;
 
-  // width: auto;
-  // min-height: 0;
+  
   height: 100%;
 
   border: 2px solid HSL(var(--primary-hs) 0%);
@@ -74,20 +73,14 @@
   transition: transform 1s cubic-bezier(0.93, 0.02, 0.56, 0.95);
 
   @include respond-to("568->") {
-    // grid-template-areas:
-    //   ". . . . . ."
-    //   ". about-doodle-1 about-photo about-photo about-photo about-photo"
-    //   ". about-doodle-2 about-photo about-photo about-photo about-photo"
-    //   ". about-doodle-3 about-photo about-photo about-photo about-photo";
+    
     grid-template-rows: minmax(2rem, 1fr) repeat(17, 1fr);
   }
 
-  // @include respond-to("736->") {
-  //   // grid-template-rows: minmax(0, 4rem) repeat(3, min-content) 1fr 7vh;
-  // }
+ 
 
   @include respond-to("1024->") {
-    // grid-template-rows: minmax(0, 4rem) repeat(3, min-content) 1fr 2vh;
+    
     grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 10rem)) minmax(
         2rem,
         1fr
@@ -104,7 +97,7 @@
     display: flex;
     gap: 20rem;
 
-    // overflow: hidden;
+   
 
     @include respond-to("568->") {
       position: relative;
@@ -115,30 +108,16 @@
       flex-direction: column;
       justify-content: center;
       gap: 0;
-      // display: block;
-      // display: grid;
-      // grid-template-columns: minmax(2rem, 1fr) repeat(10, minmax(0, 10rem)) minmax(
-      //     2rem,
-      //     1fr
-      //   );
-      // grid-template-rows: minmax(0, 2rem) repeat(4, 1fr);
+      
       overflow: visible;
-      // background: #2e3cf56e;
+      
 
       @include respond-to("1024->") {
-        // display: grid;
+        
         grid-row: 6 / span 3;
         grid-column: 1 / 8;
 
-        // grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 10rem)) minmax(
-        //     2rem,
-        //     1fr
-        //   );
-        // grid-template-columns: repeat(auto-fit, minmax(5rem, 1fr));
-        // grid-template-rows: minmax(2rem, 1fr) repeat(8, 1fr) minmax(2rem, 1fr);
-        // justify-content: normal;
-        // align-self: auto;
-        // margin-bottom: 0;
+        
       }
 
       @include respond-to("1366->") {
@@ -148,51 +127,40 @@
 
     & > svg {
       width: 100%;
-      // max-width: 65rem;
+      
       height: max-content;
 
       flex: 1 0 100%;
       align-self: center;
       margin-inline: auto;
-      // outline: 2px solid blue;
-      // min-width: 50rem;
-      // grid-area: about-doodle-1;
+      
       text {
-        // text-align: center;
+        
         text-anchor: start;
         font-size: 2.2rem;
         font-family: var(--ff);
       }
 
       @include respond-to("568->") {
-        // position: absolute;
+        
         height: auto;
         width: Min(112%, 55rem);
 
-        // flex: 1 0 30%;
+        
       }
 
       @include respond-to("1024->") {
-        align-self: auto;
-        // width: 100%;
-        height: auto;
-        // width: 80%;
-        // min-width: 53.3rem;
-        // width: 65%;
-        // min-width: 53rem;
         width: Min(100%, 64rem);
+        height: auto;
+        align-self: auto;
       }
 
       @include respond-to("1366->") {
-        // width: 57%;
-        // min-width: 62rem;
+       
         width: Min(100%, 80rem);
       }
 
-      @include respond-to("1920->") {
-        // width: 80%;
-        // min-width: 50rem;
-      }
+     
     }
   }
 
@@ -200,36 +168,25 @@
     & img {
       width: 100%;
       height: 100%;
-      // outline: 2px solid green;
-      // object-fit: cover;
+      
     }
 
     &--person {
       grid-column: 2 / -2;
       grid-row: 4 / span 2;
-      // grid-area: about-photo;
-
-      //   width: Min(30rem, 75vw);
+      
 
       height: fit-content;
-      // margin-bottom: 0.5rem;
+      
       align-self: flex-end;
       z-index: 4;
-      // outline: 2px solid green;
-      // transform: translate(0, -3%);
+      
 
-      // & img {
-      //   // transform: translateY(-3rem);
-      // }
-
-      @include respond-to("320->") {
-        // grid-row: 3 / span 5;
-      }
+      
 
       @include respond-to("568->") {
         grid-row: 15 / span 2;
-        // grid-row: 4;
-        // grid-column: 4 / span 8;
+        
         grid-column: 6 / span 6;
         z-index: 1;
         transform: translate(11rem, 0.9rem);
@@ -240,7 +197,6 @@
         grid-row: 7 / span 3;
         margin-bottom: 0;
 
-        // align-self: flex-end;
         transform: translate(0, 0);
       }
     }
@@ -248,7 +204,7 @@
     &--doodle1 {
       grid-row: 2;
       grid-column: 2 / -2;
-      // height: 15rem;
+      
 
       z-index: 4;
 
@@ -261,7 +217,7 @@
       @include respond-to("1024->") {
         grid-column: 1 / span 8;
         grid-row: 1;
-        // transform: translate(0, 1vw);
+        
         transform: translate(13rem, 8rem);
       }
 
@@ -274,9 +230,7 @@
       grid-column: 2 / -2;
       grid-row: 3;
       z-index: 3;
-      // transform: translate(0, -1.5rem);
-
-      // height: 15rem;
+      
       @include respond-to("568->") {
         grid-column: 2 / span 6;
         align-self: end;
@@ -293,45 +247,20 @@
         transform: translate(0rem, 16rem);
       }
 
-      // @include respond-to("1920->") {
-      //   transform: translate(0rem, 13rem);
-      // }
+      
     }
 
-    // &--doodle3 {
-    //   grid-column: 2 / -2;
-    //   grid-row: 4;
-    //   z-index: 2;
-
-    //   @include respond-to("568->") {
-    //     grid-column: 1 / span 7;
-    //     // transform: translate(-5rem, -8.5rem);
-    //   }
-
-    //   @include respond-to("1024->") {
-    //     grid-column: 1 / span 8;
-    //     grid-row: 6;
-    //     transform: translate(9rem, 0rem);
-    //   }
-
-    //   @include respond-to("1366->") {
-    //     transform: translate(10rem, 4rem);
-    //   }
-
-    //   @include respond-to("1920->") {
-    //     transform: translate(8rem, 3rem);
-    //   }
-    // }
+    
   }
 
   &__content {
     grid-column: 2 / 8;
     grid-row: 1 / 4;
 
-    // min-width: 45rem;
+    
 
     font-family: var(--ff);
-    // outline: 4px solid red;
+   
 
     &-box {
       position: relative;
@@ -373,40 +302,20 @@
       display: none;
     }
 
-    // button {
-    //   @include flex(null, center, center);
-
-    //   width: 4rem;
-    //   aspect-ratio: 1;
-
-    //   background-color: transparent;
-    //   background-image: url("../img/svg/circle4.svg");
-    //   background-repeat: no-repeat;
-
-    //   border: none;
-    // }
+    
   }
 
-  // &--1,
-  // &--2 {
-  //   // & button {
-  //   //   opacity: 0;
-  //   //   visibility: hidden;
-  //   //   // transition: all 0.3s ease;
-  //   // }
-  //   // transition: opacity 4s linear, transform 0.5s ease;
-  //   // transform: translate(0, 0);
-  // }
+ 
 
   &--2 {
     position: absolute;
     inset: 0;
     opacity: 0;
-    // transition: opacity 0.6s linear;
+   
     & button {
       opacity: 0;
       visibility: hidden;
-      // transition: all 0.3s ease;
+      
     }
 
     @include flex(column, null, null);
@@ -414,7 +323,7 @@
     width: 100%;
     height: 100%;
     background-color: var(--clr-footer);
-    // transform: translate(100%, 0);
+    
     z-index: 5;
 
     overflow: hidden;
@@ -480,21 +389,19 @@
           fill: HSL(var(--primary-hs) 100%);
         }
 
-        // & .it {
-        //   fill: purple;
-        // }
+        
 
         @include respond-to("568->") {
           width: auto;
           height: 100%;
           margin-left: auto;
-          // transform: translateY(3.4vh);
+          
         }
       }
     }
 
     &__face {
-      // @include flex(null, null, null);
+      
       position: fixed;
       width: 100%;
       height: 100%;
@@ -506,7 +413,7 @@
 
         background-image: url("../img/svg/dots_orange.svg");
         background-repeat: no-repeat;
-        // background-size: cover;
+        
         background-position: bottom -6rem left -4rem;
 
         @include respond-to("568->") {
@@ -520,14 +427,13 @@
         }
 
         & img {
-          // width: Min(50vw, 100vw);
-          // height: 170%;
+          
 
           width: 80vw;
           order: 1;
 
           transform: translate(-34vw, Max(20%, 11vh));
-          // transform: translate(-17vw, clamp(1rem, 28vw, 12rem));
+          
 
           @media (max-width: 20em) {
             transform: translate(-34vw, clamp(1rem, 28vw, 12rem));
@@ -575,7 +481,7 @@
 
           @media (min-width: 35.5em) and (max-width: 64em) {
             min-width: clamp(34rem, 60vw, 60rem);
-            // height: auto;
+            
             transform: translate(-45vw, -5vh);
           }
 
@@ -619,80 +525,7 @@
   }
 }
 
-// .home-page-leave {
-//   opacity: 1;
-// }
 
-// .home-page-leave-active {
-//   transition: opacity 0.75s linear;
-// }
-
-// .home-page-leave-to {
-//   opacity: 0;
-// }
-
-// .home-page-enter {
-//   clip-path: circle(0%);
-// }
-
-// .home-page-active {
-//   transition: opacity 0.75s linear;
-//   position: absolute;
-//   top: 0;
-//   z-index: 9999999;
-// }
-
-// .home-page-enter-to {
-//   clip-path: circle(75%);
-// }
-
-// .home-page-once {
-//   opacity: 0;
-// }
-
-// .home-page-once-active {
-//   transition: opacity 3s linear;
-// }
-
-// .home-page-once-to {
-//   opacity: 1;
-// }
-
-// .loader {
-//   position: fixed;
-//   width: 100vw;
-//   height: 200vh;
-//   pointer-events: none;
-//   background-color: #fff6ed;
-//   z-index: 1;
-//   visibility: hidden;
-//   opacity: 0;
-// }
-
-// .is-transitioning {
-//   pointer-events: none;
-//   cursor: progress;
-// }
-// .loading-screen {
-//   position: relative;
-//   padding-left: 0;
-//   padding-right: 0;
-//   padding-top: 0;
-//   background-color: #4bedc2;
-//   width: 0%;
-//   height: 100%;
-// }
-
-// .load-container {
-//   position: fixed;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100vh;
-//   overflow: hidden;
-//   z-index: 10;
-//   pointer-events: none;
-// }
 .dots-box {
   @include abs-center;
   top: 95%;

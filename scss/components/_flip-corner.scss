@@ -38,9 +38,6 @@
 
   & &__corner-box:hover,
   & &__corner-box:focus-within {
-    // width: var(--corner-flip-size-2);
-    // height: var(--corner-flip-size-2);
-
     transform: scale(var(--scale-2));
   }
 
@@ -148,29 +145,6 @@
     outline: none;
   }
 }
-
-// #wrapper div#wrapper__corner-box:hover #corner-link {
-//   // border-top: solid 2px HSL(var(--primary-hs) 100%);
-//   // border-left: solid 2px HSL(var(--primary-hs) 100%);
-// }
-
-// #wrapper:hover #corner-link:before {
-//   // border-right: solid 1px HSL(var(--primary-hs) 100%);
-//   // border-bottom: solid 1px HSL(var(--primary-hs) 100%);
-// }
-
-// #wrapper:hover #corner-link:after {
-//   // border-bottom: solid 1px HSL(var(--primary-hs) 100%);
-// }
-
-// #wrapper div#wrapper__corner-box:hover #corner-link:before {
-//   // border-right: solid 2px HSL(var(--primary-hs) 100%);
-//   // border-bottom: solid 1px HSL(var(--primary-hs) 100%);
-// }
-
-// #wrapper div#wrapper__corner-box:hover #corner-link:after {
-//   // border-bottom: solid 2px HSL(var(--primary-hs) 100%);
-// }
 
 #wrapper:hover #corner-button,
 #wrapper:focus-visible #corner-button {

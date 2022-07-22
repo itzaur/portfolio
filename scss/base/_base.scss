@@ -71,34 +71,16 @@ body {
   }
 
   &:after {
-    // height: 8rem;
-    top: 50%;
-    left: 50%;
-
-    // font-size: 4rem;
-    // letter-spacing: 3px;
-    // text-transform: uppercase;
-
-    background: var(--clr-footer);
-    // transform: translate(-50%, -50%);
-
     width: 6rem;
     height: 6rem;
+    top: 50%;
+    left: 50%;
     margin: -3rem 0 0 -3rem;
     border-radius: 50%;
+
+    background: var(--clr-footer);
 
     opacity: 0.4;
     animation: loaderAnim 0.7s linear infinite alternate forwards;
   }
 }
-
-// #wrapper.active {
-//   animation: tr 5s ease;
-// }
-
-// @keyframes tr {
-//   to {
-//     transform: translate(-100%, -100%) rotate(390deg) skew(-20deg, -10deg)
-//       scaleZ(20);
-//   }
-// }

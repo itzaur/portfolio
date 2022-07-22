@@ -179,14 +179,14 @@ body {
 }
 
 .loading:after {
-  top: 50%;
-  left: 50%;
-  background: var(--clr-footer);
   width: 6rem;
   height: 6rem;
+  top: 50%;
+  left: 50%;
   margin: -3rem 0 0 -3rem;
   -webkit-border-radius: 50%;
           border-radius: 50%;
+  background: var(--clr-footer);
   opacity: 0.4;
   -webkit-animation: loaderAnim 0.7s linear infinite alternate forwards;
           animation: loaderAnim 0.7s linear infinite alternate forwards;
@@ -1666,9 +1666,9 @@ select {
   -webkit-border-radius: 1rem;
           border-radius: 1rem;
   background-repeat: no-repeat;
-  background-position: center;
-  -webkit-background-size: 35%, 100%;
-          background-size: 35%, 100%;
+  background-position: 58%;
+  -webkit-background-size: 30%, 70%;
+          background-size: 30%, 70%;
   background-color: transparent;
   -webkit-filter: drop-shadow(0 10px 10px HSL(var(--primary-hs) 0%/0.2));
           filter: drop-shadow(0 10px 10px HSL(var(--primary-hs) 0%/0.2));
@@ -1680,44 +1680,76 @@ select {
 }
 
 .color-game__item div[data-name="P"] {
-  background-image: url("../img/glasses.png"), url("../img/svg/rectangle1.svg");
+  background-image: url("../img/glasses.svg"), url("../img/svg/rectangle1.svg");
+  background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/svg/rectangle1.svg");
 }
 
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name="P"] {
-    background-image: url("../img/glasses.png"), url("../img/svg/rectangle1d.svg");
+    background-image: url("../img/glasses.svg"), url("../img/svg/rectangle1d.svg");
+    background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/svg/rectangle1d.svg");
+    -webkit-background-size: 53%, 100%;
+            background-size: 53%, 100%;
+  }
+}
+
+.color-game__item div[data-name="L"] {
+  background-image: url("../img/pullover.svg"), url("../img/svg/rectangle2.svg");
+  background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/svg/rectangle2.svg");
+  -webkit-background-size: 25%, 70%;
+          background-size: 25%, 70%;
+}
+
+@media (min-width: 20em) and (max-width: 35.499em) {
+  .color-game__item div[data-name="L"] {
+    background-image: url("../img/pullover.svg"), url("../img/svg/rectangle2d.svg");
+    background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/svg/rectangle2d.svg");
+    -webkit-background-size: 35%, 100%;
+            background-size: 35%, 100%;
+  }
+}
+
+@media (min-width: 35.5em) {
+  .color-game__item div[data-name="L"] {
+    -webkit-background-size: 35%, 100%;
+            background-size: 35%, 100%;
+  }
+}
+
+.color-game__item div[data-name="A"] {
+  background-image: url("../img/beard.svg"), url("../img/svg/rectangle3.svg");
+  background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/svg/rectangle3.svg");
+}
+
+@media (min-width: 20em) and (max-width: 35.499em) {
+  .color-game__item div[data-name="A"] {
+    background-image: url("../img/beard.svg"), url("../img/svg/rectangle3d.svg");
+    background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/svg/rectangle3d.svg");
     -webkit-background-size: 50%, 100%;
             background-size: 50%, 100%;
   }
 }
 
-.color-game__item div[data-name="L"] {
-  background-image: url("../img/pullover.png"), url("../img/svg/rectangle2.svg");
-}
-
-@media (min-width: 20em) and (max-width: 35.499em) {
-  .color-game__item div[data-name="L"] {
-    background-image: url("../img/pullover.png"), url("../img/svg/rectangle2d.svg");
-  }
-}
-
-.color-game__item div[data-name="A"] {
-  background-image: url("../img/beard.png"), url("../img/svg/rectangle3.svg");
-}
-
-@media (min-width: 20em) and (max-width: 35.499em) {
-  .color-game__item div[data-name="A"] {
-    background-image: url("../img/beard.png"), url("../img/svg/rectangle3d.svg");
-  }
-}
-
 .color-game__item div[data-name="Y"] {
-  background-image: url("../img/noir.png"), url("../img/svg/rectangle4.svg");
+  background-image: url("../img/noir.svg"), url("../img/svg/rectangle4.svg");
+  background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/svg/rectangle4.svg");
+  -webkit-background-size: 25%, 70%;
+          background-size: 25%, 70%;
 }
 
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name="Y"] {
-    background-image: url("../img/noir.png"), url("../img/svg/rectangle4d.svg");
+    background-image: url("../img/noir.svg"), url("../img/svg/rectangle4d.svg");
+    background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/svg/rectangle4d.svg");
+    -webkit-background-size: 35%, 100%;
+            background-size: 35%, 100%;
+  }
+}
+
+@media (min-width: 35.5em) {
+  .color-game__item div[data-name="Y"] {
+    -webkit-background-size: 35%, 100%;
+            background-size: 35%, 100%;
   }
 }
 
@@ -1754,6 +1786,8 @@ select {
 @media (min-width: 20em) {
   .color-game__item div {
     height: 4rem;
+    -webkit-background-size: 40%, 100%;
+            background-size: 40%, 100%;
   }
 }
 
@@ -2024,11 +2058,11 @@ select {
 .menu {
   --gap: 0;
   position: fixed;
-  inset: -webkit-calc(var(--padding-container) + 1px);
-  inset: calc(var(--padding-container) + 1px);
   width: -webkit-calc(100vw - var(--padding-container) * 2 - 2px);
   width: calc(100vw - var(--padding-container) * 2 - 2px);
   height: 0;
+  inset: -webkit-calc(var(--padding-container) + 1px);
+  inset: calc(var(--padding-container) + 1px);
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
   -ms-grid-rows: min-content minmax(2rem, 1fr) (1fr)[6] minmax(2rem, 1fr);
@@ -2696,12 +2730,12 @@ select {
 
 @media (min-width: 64em) {
   .story__box > svg {
+    width: Min(100%, 64rem);
+    height: auto;
     -webkit-align-self: auto;
         -ms-flex-item-align: auto;
                 -ms-grid-row-align: auto;
             align-self: auto;
-    height: auto;
-    width: Min(100%, 64rem);
   }
 }
 

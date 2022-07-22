@@ -5,7 +5,7 @@
   z-index: 1;
   transform: scale(0);
   opacity: 0;
-  // transform: translate(0, 0);
+
   transition: transform 0s, opacity 2s ease-in-out;
 
   & svg {
@@ -17,70 +17,11 @@
     filter: drop-shadow(10px 5px 2px HSL(var(--primary-hs) 0% / 0.4));
   }
 
-  // & > svg:not(text) {
-  //   stroke-linecap: square;
-  //   stroke-linejoin: miter;
-  //   stroke-miterlimit: 0;
-  //   stroke-dasharray: 2000;
-  //   stroke-dashoffset: 100;
-  //   stroke-opacity: 1;
-
-  //   animation-fill-mode: forwards;
-  //   animation-delay: 1s;
-  //   animation: doodle 3s linear;
-  // }
-
-  // &-cls-1 {
-  //   stroke-miterlimit: 10;
-  // }
-
-  // &-cls-2 {
-  //   stroke-width: 0.4rem;
-  //   // filter: drop-shadow(-20px 28px 2px HSL(var(--primary-hs) 0% / 0.4));
-  // }
-
-  // &-cls-3 {
-  //   fill: HSL(var(--primary-hs) 90%);
-  // }
-
-  // &-cls-1,
-  // &-cls-2 {
-  //   fill: HSL(var(--primary-hs) 100%);
-  // }
-
-  // &-cls-1,
-  // &-cls-3 {
-  //   stroke-width: 0.3rem;
-  // }
-
-  // &-cls-2,
-  // &-cls-3 {
-  //   stroke-linecap: round;
-  //   stroke-linejoin: round;
-  // }
-
-  // &-cls-1,
-  // &-cls-2 {
-  //   stroke: HSL(var(--primary-hs) 0%);
-  // }
-
   @media (max-width: 20em) {
     &__desktop {
       width: 0;
     }
   }
-
-  // @media (min-width: 20em) and (max-width: 35.5em) {
-  //   width: 22rem;
-  // }
-  // @include respond-to('568->') {
-  //   width: 40vw;
-  // }
-
-  // @include respond-to('736->') {
-  //   // grid-column: 3 / span 2;
-  //   // grid-row: 3;
-  // }
 
   &-mobile {
     display: block;
@@ -92,7 +33,7 @@
     opacity: 0;
 
     z-index: -1;
-    // transform: scale(0);
+
     transition: opacity 2s ease-in-out;
 
     .cls-1 {
@@ -108,17 +49,3 @@
     }
   }
 }
-
-// @keyframes doodle {
-//   1% {
-//     stroke-opacity: 1;
-//   }
-//   75% {
-//     stroke-dashoffset: 2000;
-//   }
-//   100% {
-//     stroke-dashoffset: 0;
-//     // fill: rgba(255, 255, 255, 0.4);
-//     stroke-opacity: 1;
-//   }
-// }

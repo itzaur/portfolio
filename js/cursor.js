@@ -74,7 +74,6 @@ class Cursor {
         this.renderStyles[key].current,
         this.renderStyles[key].amount
       );
-      // console.log(this.renderStyles[key].previous);
     }
 
     this.DOM.item.style.transform = `translate(${this.renderStyles["tx"].previous}px, ${this.renderStyles["ty"].previous}px) scale(${this.renderStyles["scale"].previous})`;
@@ -197,37 +196,7 @@ function addCustomCursor() {
     el.addEventListener("mouseenter", () => cursor.enter());
     el.addEventListener("mouseleave", () => cursor.leave());
   });
-
-  // document.querySelectorAll('.logo').forEach(el => {
-  //   el.addEventListener('mouseenter', () => magnetLogo.enter());
-  //   el.addEventListener('mouseleave', () => magnetLogo.leave());
-  // });
 }
 
-// window.addEventListener('DOMContentLoaded', () => {
-//   const cursor = new Cursor(document.querySelector('.cursor'));
-//   // const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
-//   document
-//     .querySelectorAll('a, .btn, .menu-btn-close, .logo, .color-game__item')
-//     .forEach(el => {
-//       el.addEventListener('mouseenter', () => cursor.enter());
-//       el.addEventListener('mouseleave', () => cursor.leave());
-//     });
-// });
-
-// const cursor = new Cursor(document.querySelector('.cursor'));
-// document
-//   .querySelectorAll('a, .btn, .menu-btn-close, .logo, .color-game__item')
-//   .forEach(el => {
-//     el.addEventListener('mouseenter', () => cursor.enter());
-//     el.addEventListener('mouseleave', () => cursor.leave());
-//   });
-
-// const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
-
-// document.querySelectorAll('.logo').forEach(el => {
-//   el.addEventListener('mouseenter', () => magnetLogo.enter());
-//   el.addEventListener('mouseleave', () => magnetLogo.leave());
-// });
 export { MagnetLogo, addCustomCursor };
 export default Cursor;

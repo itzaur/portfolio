@@ -4,45 +4,6 @@ import { MagnetLogo, addCustomCursor, buttonFunctionality } from "./export";
 
 CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
-// CustomEase.create(
-//   "backToBack",
-//   "M0,0 C0.128,0.572 0.052,1.374 0.15,1.374 0.28,1.374 0.226,0.528 0.358,0.528 0.466,0.528 0.442,1.164 0.552,1.164 0.694,1.164 0.62,0.764 0.736,0.764 0.788,0.764 0.798,1.044 0.856,1.044 0.88,1.044 0.924,0.948 0.94,0.948 0.961,0.948 0.993,1 1,1"
-// );
-// gsap.registerPlugin(TextPlugin);
-
-// const cornerFlip = document.querySelector("#wrapper__corner-box");
-// const cornerArrow = document.querySelector("#corner-button svg");
-// // console.log(cornerFlip.offsetWidth);
-// // console.log(cornerFlip.getBoundingClientRect());
-// // cornerArrow.style.transform = `scale(${1 / cornerFlip.offsetWidth})`;
-// function changeScale() {
-//   let cornerScaleX = cornerFlip.getBoundingClientRect().width;
-//   let cornerScaleY = cornerFlip.getBoundingClientRect().height;
-//   let arrowScaleX = cornerArrow.getBoundingClientRect().width;
-//   let arrowScaleY = cornerArrow.getBoundingClientRect().height;
-//   const ARROW_SIZE = 140;
-
-//   const a = cornerScaleX / 20;
-//   const f = arrowScaleX / ARROW_SIZE;
-//   arrowScaleX = (arrowScaleX * 1) / a;
-//   const arrowWidth = ARROW_SIZE / a;
-
-//   cornerArrow.style.width = `${arrowWidth}px`;
-//   cornerArrow.style.transition = `width 0.1s cubic-bezier(0, 0.35, 0.5, 1.7)`;
-
-//   // cornerArrow.style.transform = `scale(${(1 / arrowScaleX) * 0.14})`;
-//   // console.log(cornerArrow.getBoundingClientRect().width);
-//   // cornerArrow.style.transform = `scale(${
-//   //   arrowScaleX / arrowScaleX / arrowScaleX / 140
-//   // }`;
-//   requestAnimationFrame(changeScale);
-//   // cornerArrow.style.transform = `transform3d(0,0,1px)`;
-
-//   // console.log(cornerScaleX, arrowScaleX);
-//   // console.log(a, f);
-//   console.log(cornerArrow.style.width, a);
-// }
-// requestAnimationFrame(changeScale);
 
 const gsapEase = {
   power1: "power1.out",
@@ -55,7 +16,6 @@ const gsapEase = {
 };
 
 //ANCHOR Next page button animation
-// const cornerArrow = document.querySelector("#wrapper__corner-box");
 let animStatusRun = false;
 
 function cornerArrowAnimation() {
@@ -221,66 +181,6 @@ function pageSkillsInit() {
   const skillsBtnContainer = document.querySelector(".skills__btns");
   const skillsLevel = document.querySelectorAll(".skills-level");
 
-  // const skillsTimeline = gsap.timeline({ duration: 1, paused: true });
-
-  // skillsTimeline
-  //   .from(".starSkill", {
-  //     //   x: -10,
-  //     opacity: 0,
-  //     scale: 0,
-  //     ease: gsapEase.elastic03,
-  //     duration: 1.2,
-  //     clearProps: "all",
-  //   })
-  //   .fromTo(
-  //     ".point span",
-  //     {
-  //       // x: -60,
-  //       opacity: 0,
-  //       scale: 0,
-  //     },
-  //     {
-  //       // x: 0,
-  //       opacity: 1,
-  //       scale: 1,
-  //       ease: "cubic",
-  //       clearProps: "all",
-  //       duration: 0.2,
-  //     },
-  //     "<0.3"
-  //   );
-
-  // function getSkillsAnim() {
-  //   // CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
-
-  //   skillsTimeline
-  //     .from(".starSkill", {
-  //       //   x: -10,
-  //       opacity: 0,
-  //       scale: 0,
-  //       ease: gsapEase.elastic03,
-  //       duration: 1.2,
-  //       clearProps: "all",
-  //     })
-  //     .fromTo(
-  //       ".point span",
-  //       {
-  //         // x: -60,
-  //         opacity: 0,
-  //         scale: 0,
-  //       },
-  //       {
-  //         // x: 0,
-  //         opacity: 1,
-  //         scale: 1,
-  //         ease: "cubic",
-  //         clearProps: "all",
-  //         duration: 0.2,
-  //       },
-  //       "<0.3"
-  //     );
-  // }
-
   skillsBtnContainer.addEventListener("click", (e) => {
     // e.preventDefault();
 
@@ -303,36 +203,6 @@ function pageSkillsInit() {
     clicked.classList.add("active");
     clicked.setAttribute("aria-expanded", true);
     selectSkillsLevel.setAttribute("aria-hidden", false);
-
-    // getSkillsAnim();
-    // skillsTimeline.play();
-
-    // skillsTimeline
-    //   .from(`[aria-hidden="false"] .starSkill`, {
-    //     //   x: -10,
-    //     opacity: 0,
-    //     scale: 0,
-    //     ease: gsapEase.elastic03,
-    //     duration: 0.5,
-    //     clearProps: "all",
-    //   })
-    //   .fromTo(
-    //     ".point span",
-    //     {
-    //       // x: -60,
-    //       opacity: 0,
-    //       scale: 0,
-    //     },
-    //     {
-    //       // x: 0,
-    //       opacity: 1,
-    //       scale: 1,
-    //       ease: "cubic",
-    //       clearProps: "all",
-    //       duration: 0.2,
-    //     },
-    //     "<0.3"
-    //   );
 
     //Skills btns animation
     const skillsTimeline = gsap.timeline({ paused: true });
@@ -466,25 +336,15 @@ function pageSkillsInit() {
   const cat = document.getElementById("cat");
   const eyeLeftPupil = cat.querySelector(".eye-left-pupil");
   const eyeRightPupil = cat.querySelector(".eye-right-pupil");
-
   const eyeLeft = cat.querySelector(".eye-left");
   const eyeLeftHighlight = cat.querySelector(".eye-left-highlight");
   const eyeRightHighlight = cat.querySelector(".eye-right-highlight");
-
-  // const eyeWidth = eyeLeft.getBoundingClientRect().width;
-  // const eyeHeight = eyeLeft.getBoundingClientRect().height;
   const eyeWidth = eyeLeft.getBBox().width;
   const eyeHeight = eyeLeft.getBBox().height;
-
-  // const pupilWidth = eyeLeftPupil.getBoundingClientRect().width;
-  // const pupilHeight = eyeLeftPupil.getBoundingClientRect().height;
   const pupilWidth = eyeLeftPupil.getBBox().width;
   const pupilHeight = eyeLeftPupil.getBBox().height;
   const xMove = (eyeWidth - pupilWidth) / 2;
   const yMove = (eyeHeight - pupilHeight) / 2;
-
-  // const eyeCoordsX = -698;
-  // const eyeCoordsY = -340.1;
   const eyeCoordsX = -698;
   const eyeCoordsY = -340.1;
 
@@ -520,29 +380,15 @@ function pageSkillsInit() {
 
   const hobbiesTimeline = gsap.timeline();
 
-  // hobbiesTimeline.set(".skills__btn span", {
-  //   yPercent: -50,
-  //   xPercent: -50,
-  //   z: 1,
-  //   x: 0,
-  //   y: 0,
-  //   // transform: `translate3d(-50%, -50%, 1px)`,
-  // });
-
   hobbiesTimeline
     .set(".hobbie--1", {
       xPercent: -100,
-      // opacity: 0,
-
-      // autoAlpha: 0,
     })
     .set(".hobbie--2", {
       yPercent: -100,
-      // autoAlpha: 0,
     })
     .set(".hobbie--3", {
       xPercent: 100,
-      // autoAlpha: 0,
     })
     .set(".skills", {
       yPercent: 100,
@@ -550,8 +396,6 @@ function pageSkillsInit() {
     })
     .to(".hobbie--1", {
       xPercent: 0,
-      // opacity: 1,
-      // autoAlpha: 1,
       duration: 2,
       ease: gsapEase.power4,
       clearProps: "transform",
@@ -560,8 +404,6 @@ function pageSkillsInit() {
       ".hobbie--2",
       {
         yPercent: 0,
-        // autoAlpha: 1,
-
         duration: 2.5,
         ease: gsapEase.power4,
         clearProps: "all",
@@ -572,8 +414,6 @@ function pageSkillsInit() {
       ".hobbie--3",
       {
         xPercent: 0,
-        // autoAlpha: 1,
-
         duration: 2.5,
         ease: gsapEase.power4,
         clearProps: "all",
@@ -618,8 +458,6 @@ function pageSkillsInit() {
       ".starSkill",
       {
         scale: 0,
-        // opacity: 0,
-        // autoAlpha: 0,
         duration: 0.5,
         stagger: { each: 0.05, from: "random" },
         ease: gsapEase.back,
@@ -670,28 +508,6 @@ function pageSkillsInit() {
       "<0.4"
     );
 }
-
-// let resultX;
-// let id = null;
-
-// let isPlaying = false;
-// gsap.registerPlugin(TextPlugin);
-
-// //ANCHOR Button
-// const btnBig = document.querySelector(".btn-big");
-// const btnSmall = document.querySelector(".btn-small");
-
-// const menuNavDoodle = document.querySelector(".menu__img img");
-
-// function checkMediaQuery() {
-//   if (window.matchMedia("(max-width: 568px)").matches) {
-//     menuNavDoodle.style.transform = `translate3d(0, 0, 1px) scale(1)`;
-//   } else {
-//     menuNavDoodle.style.transform = `translate3d(-16vw, 5vw, 1px) scale(1)`;
-//   }
-// }
-
-// checkMediaQuery();
 
 function aboutAnimationInit() {
   // buttonFunctionality();
@@ -943,9 +759,6 @@ function aboutAnimationInit() {
     stagger: {
       each: 2,
     },
-    // onComplete: () => {
-    //   aboutTimeline6.play();
-    // },
   });
 
   const aboutTimeline6 = gsap.timeline({ paused: true });
@@ -969,8 +782,6 @@ function aboutAnimationInit() {
       duration: 1,
       clearProps: "transform",
     });
-
-  // document.querySelector(".btns-box")
 
   const aboutTimeline7 = gsap.timeline({ paused: true });
   aboutTimeline7
@@ -1324,52 +1135,6 @@ function aboutAnimationInit() {
   vaporValueY = 15;
   vaporAnimation(doorElements);
 
-  // //ANCHOR Door animation
-  // function addDoorAnimationOnResize() {
-  //   const doodle = document.querySelector(".face-doodle-mobile .text-box");
-  //   const door = document.querySelector(".story--2__door svg");
-  //   const textIT = document.querySelectorAll(".story--2__door svg .it");
-  //   const doodleCenterCoordY =
-  //     doodle.getBoundingClientRect().top +
-  //     doodle.getBoundingClientRect().height / 2;
-  //   const doorCenterCoordY =
-  //     door.getBoundingClientRect().top +
-  //     door.getBoundingClientRect().height / 2;
-
-  //   if (
-  //     doodleCenterCoordY > doorCenterCoordY &&
-  //     doodleCenterCoordY >
-  //       doorCenterCoordY + doodle.getBoundingClientRect().height / 2
-  //   ) {
-  //     // doodle.style.fill = "white";
-  //     doodle.style.opacity = "1";
-  //     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-  //   } else if (
-  //     doodleCenterCoordY <
-  //     doorCenterCoordY -
-  //       doorCenterCoordY * 0.1 -
-  //       doodle.getBoundingClientRect().height / 2
-  //   ) {
-  //     // doodle.style.fill = "white";
-  //     doodle.style.opacity = "1";
-  //     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
-  //   } else {
-  //     // doodle.style.fill = "red";
-  //     doodle.style.opacity = "0.8";
-  //     doodle.style.transition = "opacity 0.3s linear";
-  //     textIT.forEach((text) => (text.style.fill = "#ee7950"));
-  //   }
-  // }
-  // // addDoorAnimationOnResize();
-
-  // // if (!window.location.href.includes("about")) {
-  // //   aboutTimeline6.kill();
-  // //   // console.log(window.location.href.includes("about"));
-  // //   window.removeEventListener("resize", addDoorAnimationOnResize);
-  // //   console.log("not about");
-  // // }
-
-  // window.addEventListener("resize", addDoorAnimationOnResize);
   window.addEventListener("resize", addDoorAnimationOnResize);
 }
 
@@ -1605,20 +1370,6 @@ function contactPageInit() {
     .from(
       ".laptop-element",
       {
-        // keyframes: {
-        //   "0%": { opacity: 0.1 },
-        //   "2%": { opacity: 1 },
-        //   "8%": { opacity: 0.1 },
-        //   "9%": { opacity: 1 },
-        //   "12%": { opacity: 0.1 },
-        //   "20%": { opacity: 1 },
-        //   "25%": { opacity: 0.3 },
-        //   "30%": { opacity: 1 },
-        //   "70%": { opacity: 0.7 },
-        //   "72%": { opacity: 0.2 },
-        //   "77%": { opacity: 0.9 },
-        //   "100%": { opacity: 0 },
-        // },
         keyframes: {
           "0%": { opacity: 0 },
           "77%": { opacity: 0.9 },
@@ -1727,51 +1478,7 @@ function contactPageInit() {
 
     window.addEventListener("resize", handleResize);
   });
-
-  // socialBox.addEventListener("mouseover", (e) => {
-  //   const hovered = e.target.closest(".social__item");
-  //   if (!hovered) return;
-
-  //   socialItems.forEach((item) => {
-  //     item.classList.remove("active");
-  //   });
-
-  //   hovered.classList.add("active");
-
-  //   const activeSocialItem = document.querySelector(".active");
-  //   console.log(activeSocialItem);
-  // });
-
-  // socialBox.addEventListener("mouseout", (e) => {
-  //   socialItems.forEach((item) => {
-  //     item.classList.remove("active");
-  //   });
-  // });
 }
-
-//Contact section corner element
-// let contactCornerLetters = gsap.utils.toArray(".contact-elements");
-
-// let lettersAnimationDuration = 0.8;
-// let lettersMinValueX = -50;
-// let lettersMaxValueX = 100;
-// let lettersValueY = 150;
-// contactLettersAnim(contactCornerLetters);
-
-// function contactLettersAnim(items) {
-//   items.forEach((item, i) => {
-//     gsap.timeline({}).from(item, {
-//       x: randomNumber(-400, 400),
-//       y: randomNumber(-200, 200),
-//       scale: 0,
-//       duration: lettersAnimationDuration,
-//       rotation: randomNumber(-720, 720),
-//       transformOrigin: "center center",
-//       // ease: "none",
-//       clearProps: "all",
-//     });
-//   });
-// }
 
 export {
   pageSkillsInit,
