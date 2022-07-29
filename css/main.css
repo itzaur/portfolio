@@ -1063,6 +1063,7 @@ select {
   transform-origin: bottom right;
   aspect-ratio: 1;
   border-right: 0.5rem solid transparent;
+  opacity: 0;
 }
 
 .corner-border {
@@ -2931,7 +2932,7 @@ select {
 .contact__laptop .laptop text > * .laptop-row2-1 {
   color: HSL(var(--primary-hs) 100%);
 }
-.contact__laptop .laptop text > * .laptop-row2-2 {
+.contact__laptop .laptop text > * .laptop-row2-2, .contact__laptop .laptop text > * .laptop-row2-2 a {
   color: var(--clr-bg);
 }
 .contact__laptop .laptop image {

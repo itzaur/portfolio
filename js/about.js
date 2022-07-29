@@ -184,6 +184,7 @@ function vaporAnimation(items) {
         duration: vaporAnimationDuration * 0.4,
         repeatDelay: vaporAnimationDuration * 0.2,
         yoyo: true,
+
         ease: "none",
       })
       .to(
@@ -192,6 +193,7 @@ function vaporAnimation(items) {
           y: `-=${vaporValueY}`,
           x: `-=${randomNumber(vaporMinValueX, vaporMaxValueX)}`,
           scale: 1,
+          rotation: 0.5,
           duration: vaporAnimationDuration,
           ease: "none",
         },

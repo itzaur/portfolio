@@ -42,6 +42,7 @@ function animationEnter(container) {
         pointerEvents: "auto",
         cursor: "auto",
       });
+
       ["mouseenter", "mousemove", "focusin"].forEach((event) => {
         container.addEventListener(event, controlHoverOnCornerButton);
       });

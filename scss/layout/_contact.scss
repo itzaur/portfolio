@@ -113,7 +113,8 @@
             color: HSL(var(--primary-hs) 100%);
           }
 
-          & .laptop-row2-2 {
+          & .laptop-row2-2,
+          & .laptop-row2-2 a {
             color: var(--clr-bg);
           }
         }
