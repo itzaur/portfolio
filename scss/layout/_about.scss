@@ -103,7 +103,7 @@
       position: relative;
       grid-column: 2 / 9;
       grid-row: 11 / span 3;
-      align-self: end;
+      align-self: flex-end;
       // margin-bottom: 0.5rem;
       flex-direction: column;
       justify-content: center;
@@ -210,7 +210,7 @@
 
       @include respond-to("568->") {
         grid-column: 3 / span 6;
-        align-self: end;
+        align-self: flex-end;
         transform: translate(8rem, 7rem);
       }
 
@@ -233,7 +233,7 @@
       
       @include respond-to("568->") {
         grid-column: 2 / span 6;
-        align-self: end;
+        align-self: flex-end;
         transform: translate(-2rem, 5rem);
       }
 

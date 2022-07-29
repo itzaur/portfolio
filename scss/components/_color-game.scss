@@ -3,7 +3,7 @@
 
   grid-column: 2;
   grid-row: 2 / -1;
-  align-self: end;
+  align-self: flex-end;
 
   @include flex(column, center, null);
 
@@ -78,6 +78,7 @@
 
       filter: drop-shadow(0 10px 10px HSL(var(--primary-hs) 0% / 0.2));
       opacity: 0;
+      visibility: hidden;
       pointer-events: none;
 
       transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -181,6 +182,7 @@
     &:focus div {
       transform: translate(clamp(2rem, 6vw, 4rem), -50%);
       opacity: 1;
+      visibility: visible;
       pointer-events: auto;
 
       @media (min-width: 20em) and (max-width: 35.499em) {

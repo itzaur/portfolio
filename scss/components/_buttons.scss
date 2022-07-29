@@ -1,20 +1,16 @@
 .btn {
   position: relative;
-  
 
   width: 3.5rem;
   aspect-ratio: 1;
   align-self: flex-end;
   border-radius: 50%;
 
-  
   cursor: pointer;
-  
+
   background: none;
   border: 0;
   z-index: 20;
-
-  
 
   &:focus-visible {
     outline: 2px solid var(--clr-orange);
@@ -27,7 +23,6 @@
 
   & svg {
     transition: filter 0.3s linear;
-    
   }
 
   @include respond-to("568->") {
@@ -45,7 +40,6 @@
     }
   }
 
-  
   &[aria-expanded="false"] {
     display: none;
     grid-column: 2;
@@ -57,10 +51,7 @@
     align-items: flex-end;
   }
 
-  
-
   &__text {
-    
     position: absolute;
     top: 0;
     left: -1.5rem;
@@ -68,14 +59,14 @@
     fill: var(--clr-btn-4);
     stroke: HSL(var(--primary-hs) 0%);
     stroke-width: 1px;
-    
+
     @include respond-to("568->") {
       left: -3rem;
     }
 
     & svg {
       width: 2.5rem;
-      
+
       overflow: visible;
 
       @include respond-to("568->") {
@@ -84,7 +75,6 @@
     }
 
     .text-cls-1 {
-     
       fill: var(--clr-btn-6);
       opacity: 0;
 
@@ -121,8 +111,6 @@
   .cls-7 {
     fill: var(--clr-btn-7);
   }
-
-  
 }
 
 .skip-text-animation {
@@ -136,12 +124,9 @@
   color: HSL(var(--primary-hs) 0%);
   background-color: HSL(var(--primary-hs) 100%);
 
-  
   border-top: none;
   border-bottom-left-radius: 0.5em;
   border-bottom-right-radius: 0.5em;
-
-  
 
   z-index: 1000;
 
@@ -151,7 +136,6 @@
     transform: translate(-50%, 0);
     outline: 2px solid var(--clr-orange);
     outline-offset: 1px;
-   
   }
 
   @include respond-to("568->") {
@@ -162,18 +146,14 @@
 
 .menu-btn-close {
   grid-column: 1;
-  
+
   padding: 0;
 
-  
   cursor: pointer;
 
   @include respond-to("568->") {
     padding: 0.3em 2em;
-    
   }
-
-  
 }
 
 .story__dots button {
@@ -202,7 +182,6 @@
   border: 0;
   border-radius: 50%;
 
-  
   background-image: url("../img/svg/circle1.svg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -210,20 +189,16 @@
   cursor: pointer;
 
   transform: scale(1);
-  
 
   &.active {
     background-image: url("../img/svg/circle4.svg");
     transform: scale(1.4);
-    
   }
 }
 
 .skills__btn {
   position: relative;
   width: 100%;
-
-  
 
   cursor: pointer;
 
@@ -266,11 +241,9 @@
 
   span {
     @include abs-center;
-    
+
     line-height: 1.1;
     z-index: 1;
-
-    
 
     @include respond-to("568->") {
       line-height: 1.5;
@@ -289,7 +262,6 @@
 
   &.active {
     img {
-      
       filter: url(#changeColor);
       transition: filter 0.2s linear;
     }
@@ -301,10 +273,8 @@
   background-color: var(--clr-btn-7);
   border: 0.5rem solid var(--clr-btn-2);
   box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
-  
 
   @include respond-to("568->") {
-    
     box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
   }
 
@@ -312,7 +282,6 @@
     color: var(--clr-orange);
 
     font-size: 1.5em;
-   
 
     text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black,
       -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
@@ -324,28 +293,22 @@
     position: absolute;
     top: 0;
     right: 0;
-    
 
     padding: 0.3em 1em;
 
     z-index: 3;
 
     @include respond-to("568->") {
-     
       top: -0.2rem;
       padding: 0.3em 2em;
     }
   }
 
   &--about {
-    
-
     z-index: 6;
 
     @include respond-to("568->") {
-      
       top: 0;
-      
     }
   }
 
@@ -368,20 +331,14 @@
 
 .btns-box {
   position: absolute;
-  
 
   grid-row: 2;
   grid-template-columns: minmax(5vw, 1fr);
   grid-template-rows: 1fr;
-  
 
   z-index: 10;
 
- 
-  
-
   &--about {
-    
     top: 0;
     grid-template-rows: 5rem;
 
@@ -391,7 +348,6 @@
   }
 
   &--skills {
-   
     bottom: 4rem;
   }
 

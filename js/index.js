@@ -355,10 +355,10 @@ function homeInit() {
     setTimeout(animateLetters4, 100);
   }
 
-  setTimeout(animateLetters1, 5500);
-  setTimeout(animateLetters2, 6200);
-  setTimeout(animateLetters3, 7200);
-  setTimeout(animateLetters4, 8500);
+  // setTimeout(animateLetters1, 5500);
+  // setTimeout(animateLetters2, 6200);
+  // setTimeout(animateLetters3, 7200);
+  // setTimeout(animateLetters4, 8500);
 
   //ANCHOR Photo
   const photo = document.querySelector(".photo");
@@ -392,102 +392,113 @@ function homeInit() {
   const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
   const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
 
-  const tlPage = gsap.timeline({
-    defaults: { duration: 1, repeat: 0, rotation: 0.05 },
-  });
+  const tlPage = gsap.timeline({ duration: 1, rotation: 0.05, paused: true });
 
-  function getPageAnimation() {
-    tlPage
-      .fromTo(
-        ".photo",
-        {
-          x: 2400,
-          transformOrigin: "top top",
-          rotation: "50deg",
-        },
-        {
-          x: photoTransformX,
-          rotation: "0deg",
-          // ease: 'elastic.out(1, 0.6)',
-          clearProps: "transform",
-          // duration: 1.5,
-        }
-      )
-      .from(dots, {
+  // function getPageAnimation() {}
+  tlPage
+    .fromTo(
+      ".photo",
+      {
+        x: 2400,
+        transformOrigin: "top top",
+        rotation: "50deg",
+      },
+      {
+        x: photoTransformX,
+        rotation: "0deg",
+        ease: "elastic.out(0.5, 0.4)",
+        clearProps: "transform",
+        delay: 0.2,
+        duration: 1.2,
+      }
+    )
+    .from(dots, {
+      opacity: 0,
+      scale: 0,
+      stagger: {
+        each: 0.002,
+        from: 15,
+      },
+      ease: "back.out(1.7)",
+    })
+    .from(
+      helloDots,
+      0.5,
+      {
+        y: -500,
+        ease: "bounce.out",
         opacity: 0,
-        scale: 0,
-        stagger: {
-          each: 0.002,
-          from: 15,
-        },
-
+        stagger: { each: 0.003, from: "random" },
+      },
+      "<0.6"
+    )
+    .from(
+      helloDoodle,
+      0.6,
+      { y: -300, ease: "bounce.out", opacity: 0, stagger: 0.03 },
+      "<1.3"
+    )
+    .to(
+      [".doodle", ".doodle-mobile"],
+      {
+        opacity: 1,
         ease: "back.out(1.7)",
-      })
-      .from(
-        helloDots,
-        0.5,
-        {
-          y: -100,
-          ease: "bounce.out",
-          opacity: 0,
-          stagger: { each: 0.003, from: "random" },
+        onComplete: () => {
+          setTimeout(animateLetters1, 500);
+          setTimeout(animateLetters2, 1200);
+          setTimeout(animateLetters3, 2200);
+          setTimeout(animateLetters4, 3500);
         },
-        "<0.6"
-      )
-      .from(
-        helloDoodle,
-        0.6,
-        { y: -300, ease: "bounce.out", opacity: 0, stagger: 0.03 },
-        "<1.3"
-      )
-      .to(
-        [".doodle", ".doodle-mobile"],
-        {
-          opacity: 1,
-          ease: "back.out(1.7)",
+      },
+      "<0.5"
+    )
+    .from(
+      btnBig,
+      {
+        transform: "translate3d(0, 0, 1px) scale(0)",
+        opacity: 0,
+        ease: "Bounce.easeOut",
+        delay: 1,
+        duration: 1,
+      },
+      "<3.8"
+    )
+    .from(
+      ".logo",
+      {
+        transform: "translate3d(0, 0, 1px) scale(0)",
+        opacity: 0,
+        ease: "Bounce.easeOut",
+        duration: 1,
+        onComplete: () => {
+          const magnetLogo = new MagnetLogo(document.querySelector(".logo"));
         },
-        "<0.5"
-      )
-      .from(
-        btnBig,
-        {
-          transform: "translate3d(0, 0, 1px) scale(0)",
-          opacity: 0,
-          ease: "Bounce.easeOut",
-          delay: 1,
-        },
-        "<4.8"
-      )
-      .from(
-        ".logo",
-        {
-          transform: "translate3d(0, 0, 1px) scale(0)",
-          opacity: 0,
-          ease: "Bounce.easeOut",
-          onComplete: () => {
-            const magnetLogo = new MagnetLogo(document.querySelector(".logo"));
-          },
-        },
-        "<0"
-      )
-      .from(".color-game__item", {
-        x: "-100%",
-        autoAlpha: 0,
-        stagger: {
-          each: 0.2,
-        },
-        ease: "back.out(1.7)",
-      });
-  }
-
-  getPageAnimation();
-
-  const nextPageLink = document.querySelectorAll("#corner-link");
-  nextPageLink.forEach((link) => {
-    link.addEventListener("click", () => {
-      tlPage.kill();
+      },
+      "<0"
+    )
+    .from(".color-game__item", {
+      x: "-100%",
+      autoAlpha: 0,
+      stagger: {
+        each: 0.2,
+      },
+      duration: 1,
+      ease: "back.out(1.7)",
     });
+
+  tlPage.play();
+
+  // getPageAnimation();
+  window.addEventListener("DOMContentLoaded", () => {
+    tlPage.play();
   });
+
+  // const nextPageLink = document.querySelectorAll("#corner-link");
+  // nextPageLink.forEach((link) => {
+  //   link.addEventListener("click", () => {
+  //     tlPage.kill();
+  //   });
+  // });
 
   // //ANCHOR Next page animation
   // const cornerBtn = document.getElementById('corner-link');
@@ -571,6 +582,10 @@ function doodlePositionResize() {
 //ANCHOR Preloader
 const preloadImages = (selector = "svg") => {
   return new Promise((resolve) => {
+    // const cornerBox = document.querySelector("#wrapper__corner-box");
+    // gsap.set(cornerBox, {
+    //   scale: 170,
+    // });
     imagesLoaded(
       document.querySelectorAll(selector),
       { background: true },
@@ -581,6 +596,11 @@ const preloadImages = (selector = "svg") => {
 
 preloadImages().then(() => {
   document.body.classList.remove("loading");
+  // const cornerBox = document.querySelector("#wrapper__corner-box");
+  // gsap.to(cornerBox, {
+  //   scale: 1,
+  //   duration: 2,
+  // });
 });
 
 export { homeInit, buttonFunctionality, doodlePositionResize };

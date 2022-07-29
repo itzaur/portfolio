@@ -59,8 +59,19 @@ function cornerArrowAnimation() {
   });
 }
 
-function cornerArrowHoverEffect() {
+function controlHoverOnCornerButton(e) {
   const cornerArrow = document.querySelector("#wrapper__corner-box");
+  if (e.target.closest("#wrapper__corner-box")) {
+    cornerArrow.style.transform = `scale(8)`;
+  } else {
+    cornerArrow.style.transform = `scale(3.75)`;
+  }
+}
+
+function cornerArrowHoverEffect() {
+  // const wrapper = document.getElementById("wrapper");
+  const cornerArrow = document.querySelector("#wrapper__corner-box");
+  const cornerBox = document.querySelector("#corner-box");
 
   //Contact section corner element
   let contactCornerLetters = gsap.utils.toArray(".contact-elements");
@@ -91,6 +102,42 @@ function cornerArrowHoverEffect() {
     });
   });
 
+  // function controlHoverOnCornerButton() {
+  //   const wrapper = document.getElementById("wrapper");
+  //   const cornerArrow = document.querySelector("#wrapper__corner-box");
+  //   ["mouseenter", "mousemove"].forEach((event) => {
+  //     wrapper.addEventListener(event, (e) => {
+  //       if (e.target.closest("#wrapper__corner-box")) {
+  //         cornerArrow.style.transform = `scale(8)`;
+  //       } else {
+  //         cornerArrow.style.transform = `scale(3.75)`;
+  //       }
+  //     });
+  //   });
+  // }
+
+  // controlHoverOnCornerButton();
+
+  // //   const wrapper = document.getElementById("wrapper");
+  // // const cornerArrow = document.querySelector("#wrapper__corner-box");
+  // function controlHoverOnCornerButton(e) {
+  //   if (e.target.closest("#wrapper__corner-box")) {
+  //     cornerArrow.style.transform = `scale(8)`;
+  //     // console.log(cornerArrow);
+  //   } else {
+  //     cornerArrow.style.transform = `scale(3.75)`;
+  //     // console.log(cornerArrow);
+  //   }
+  // }
+
+  // ["mouseenter", "mousemove"].forEach((event) => {
+  //   wrapper.addEventListener(event, controlHoverOnCornerButton);
+  // });
+
+  wrapper.addEventListener("mouseleave", () => {
+    cornerArrow.style.transform = `scale(1)`;
+  });
+
   cornerArrow.addEventListener("mouseenter", () => {
     animStatusRun = false;
     cornerArrowAnimation();
@@ -104,11 +151,13 @@ function cornerArrowHoverEffect() {
   cornerArrow.addEventListener("focus", () => {
     animStatusRun = false;
     cornerArrowAnimation();
+    cornerArrow.style.transform = `scale(8)`;
   });
 
   cornerArrow.addEventListener("focusout", () => {
     animStatusRun = true;
     cornerArrowAnimation();
+    cornerArrow.style.transform = `scale(3.75)`;
   });
 }
 
@@ -1487,4 +1536,5 @@ export {
   contactPageInit,
   cornerArrowAnimation,
   cornerArrowHoverEffect,
+  controlHoverOnCornerButton,
 };

@@ -2,7 +2,7 @@
 .pre-photo {
   grid-column: 2 / span 6;
   grid-row: 2 / span 4;
-  align-self: end;
+  align-self: flex-end;
   transform: translate(2rem, 4rem);
 
   z-index: -1;

@@ -488,7 +488,7 @@
 }
 
 #corner-button[data-corner-name="contact"] {
-  @include flex(null, null, end);
+  @include flex(null, null, flex-end);
   padding-right: 1.5rem;
   padding-bottom: 1vw;
   opacity: 0;
@@ -499,4 +499,6 @@
   font-size: var(--fs-140);
   fill: var(--clr-orange);
   text-shadow: 1px 1px 1px HSL(var(--primary-hs) 0%);
+  opacity: 0;
+  visibility: hidden;
 }

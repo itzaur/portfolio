@@ -62,6 +62,8 @@ class Cursor {
       window.removeEventListener("mousemove", this.onMouseMove);
     };
     window.addEventListener("mousemove", this.onMouseMove);
+
+    if (this.DOM.item === null) return;
   }
 
   render() {
@@ -105,6 +107,8 @@ class MagnetLogo {
     this.state = {
       hover: false,
     };
+
+    if (this.DOM.item === null) return;
 
     this.initEvent();
     this.calculateSizePosition();

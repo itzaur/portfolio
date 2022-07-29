@@ -1,7 +1,7 @@
 #wrapper {
   &:hover #wrapper__corner-box,
   &:focus-visible #wrapper__corner-box {
-    transform: scale(var(--scale-1));
+    // transform: scale(var(--scale-1));
   }
 
   &__box {
@@ -19,6 +19,7 @@
 
     z-index: 20;
 
+    transform: scale(170);
     transform-origin: right bottom;
 
     transition: transform 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
@@ -34,11 +35,15 @@
       width: 133%;
       height: 133%;
     }
+
+    // &:hover {
+    //   pointer-events: none;
+    // }
   }
 
   & &__corner-box:hover,
   & &__corner-box:focus-within {
-    transform: scale(var(--scale-2));
+    // transform: scale(var(--scale-2));
   }
 
   & &__corner-box:focus-visible {
@@ -248,6 +253,8 @@
 
     aspect-ratio: 1;
     border-right: 0.5rem solid transparent;
+
+    // transition: transform 0.3s ease-out;
   }
 }
 
