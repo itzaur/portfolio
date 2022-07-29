@@ -357,24 +357,24 @@ function pageSkillsInit() {
           partallaxDots.style.transform = `translateX(${-itemAngleY}px) translateY(${-itemAngleX}px)`;
           partallaxDots.style.transition = `none`;
 
-          parallaxElements.style.transform = `translateX(${itemAngleY}px) translateY(${itemAngleX}px)`;
+          parallaxElements.style.transform = `translateX(${itemAngleY}px) translateY(${itemAngleX}px) rotate(0.01deg)`;
           parallaxElements.style.transition = `none`;
         }
 
         if (item.classList.contains("active") && item.closest(".hobbie--2")) {
-          cassette.style.transform = `translateX(${posX}px) translateY(${posY}px)`;
+          cassette.style.transform = `translateX(${posX}px) translateY(${posY}px) rotate(0.01deg)`;
           cassette.style.transition = `none`;
         }
       }
 
       function removeParallax() {
-        partallaxDots.style.transform = `translate3d(0px, 0px, 1px)`;
+        partallaxDots.style.transform = `translate3d(0px, 0px, 1px) rotate(0.01deg)`;
         partallaxDots.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
 
-        parallaxElements.style.transform = `translate3d(0px, 0px, 1px)`;
+        parallaxElements.style.transform = `translate3d(0px, 0px, 1px) rotate(0.01deg)`;
         parallaxElements.style.transition = `1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
 
-        cassette.style.transform = `translate3d(0px, 0px, 1px)`;
+        cassette.style.transform = `translate3d(0px, 0px, 1px) rotate(0.01deg)`;
         cassette.style.transition = `transform 1s cubic-bezier(0.445, 0.05, 0.55, 0.95)`;
       }
     });
@@ -1298,6 +1298,7 @@ function contactPageInit() {
     .from(
       ".laptop-text > *, .laptop-text > * > *, .laptop-mail-arrow, .laptop-mail",
       {
+        scale: 1.2,
         autoAlpha: 0,
         ease: gsapEase.elastic02,
         duration: 0.6,
