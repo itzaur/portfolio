@@ -455,6 +455,7 @@ function pageSkillsInit() {
       ".hobbie--2",
       {
         yPercent: 0,
+
         duration: 2.5,
         ease: gsapEase.power4,
         clearProps: "all",

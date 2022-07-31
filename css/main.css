@@ -2403,10 +2403,12 @@ select {
   margin: 0;
   cursor: pointer;
   overflow: hidden;
+  transform: translate3d(0, 0, 1px);
   transition: width 0.45s ease-in-out;
 }
 .hobbie.active {
   width: 100%;
+  cursor: auto;
   transition: width 0.3s linear;
 }
 .hobbie.active .hobbie__img {
@@ -2512,11 +2514,13 @@ select {
   grid-template-columns: minmax(0rem, 1fr) repeat(3, minmax(0, 11rem)) minmax(0rem, 1fr);
   grid-template-rows: minmax(2rem, 1fr) repeat(2, -webkit-min-content) minmax(2rem, 1fr);
   grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
+  height: calc(100% + var(--about-section-gap) * 1 - 0.1rem);
   border: 1px solid HSL(var(--primary-hs) 0%);
   background-color: HSL(var(--primary-hs) 0%);
   -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
-  margin-top: calc(var(--about-section-gap) * -1 - 0.2rem);
+  margin-top: calc(var(--about-section-gap) * -1 - 0.1rem);
+  transform: translate3d(0, 0, 1px);
   overflow: hidden;
 }
 @media (min-width: 35.5em) {
