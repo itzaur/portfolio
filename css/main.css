@@ -98,7 +98,6 @@ html {
 }
 
 body {
-  border: 0.02rem solid HSL(var(--primary-hs) 100%);
   font-family: var(--ff-comic);
   font-weight: 700;
   font-style: italic;
@@ -541,7 +540,7 @@ select {
 .top-nav {
   color: var(--clr-btn-2);
   background-color: var(--clr-btn-7);
-  border: 0.5rem solid var(--clr-btn-2);
+  border: 0.4rem solid var(--clr-btn-2);
   box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
 }
 @media (min-width: 35.5em) {
@@ -577,7 +576,7 @@ select {
 }
 .top-nav--hobbies {
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
   padding: 0.3em 1em;
   z-index: 3;
@@ -606,7 +605,7 @@ select {
   }
 }
 .btns-box--skills {
-  bottom: 4rem;
+  bottom: 3rem;
 }
 .btns-box--contact {
   --gap: 1rem;
@@ -1557,10 +1556,10 @@ select {
 
 .menu {
   --gap: 0;
-  position: fixed;
-  width: calc(100vw - var(--padding-container) * 2 - 2px);
-  height: 0;
-  inset: calc(var(--padding-container) + 1px);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -100%);
   grid-template-columns: 1fr;
   grid-template-rows: -webkit-min-content minmax(2rem, 1fr) repeat(6, 1fr) minmax(2rem, 1fr);
   grid-template-rows: min-content minmax(2rem, 1fr) repeat(6, 1fr) minmax(2rem, 1fr);
@@ -1888,6 +1887,11 @@ select {
   text-decoration: none;
 }
 
+.inactive-cursor {
+  cursor: none;
+  pointer-events: none;
+}
+
 [data-scroll=true] {
   overflow-y: auto;
 }
@@ -1907,7 +1911,7 @@ select {
 .about {
   position: relative;
   height: 100%;
-  border: 2px solid HSL(var(--primary-hs) 0%);
+  border: 1px solid HSL(var(--primary-hs) 0%);
   overflow: hidden;
   background: var(--clr-bg);
   background-image: url("../img/about-bg.png"), url("../img/svg/about-rays.svg");
@@ -2355,13 +2359,15 @@ select {
 }
 
 .skills-page {
+  height: 100vh;
+  padding: var(--padding-container);
+}
+.skills-page__container {
   position: relative;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: -webkit-max-content;
   grid-template-rows: max-content;
-  min-height: 100vh;
-  padding: calc(var(--padding-container) + 1px) var(--padding-container) var(--padding-container) var(--padding-container);
-  background-color: HSL(var(--primary-hs) 100%);
+  overflow: hidden;
 }
 
 .hobbies,
@@ -2514,12 +2520,12 @@ select {
   grid-template-columns: minmax(0rem, 1fr) repeat(3, minmax(0, 11rem)) minmax(0rem, 1fr);
   grid-template-rows: minmax(2rem, 1fr) repeat(2, -webkit-min-content) minmax(2rem, 1fr);
   grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
-  height: calc(100% + var(--about-section-gap) * 1 - 0.1rem);
+  height: calc(100% + var(--about-section-gap));
   border: 1px solid HSL(var(--primary-hs) 0%);
   background-color: HSL(var(--primary-hs) 0%);
   -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
-  margin-top: calc(var(--about-section-gap) * -1 - 0.1rem);
+  margin-top: calc(var(--about-section-gap) * -1);
   transform: translate3d(0, 0, 1px);
   overflow: hidden;
 }
@@ -2533,10 +2539,8 @@ select {
 .skills::before {
   content: "";
   position: absolute;
-  width: calc(100% - 2px);
-  height: calc(100% - 2px);
-  top: 1px;
-  left: 1px;
+  width: 100%;
+  height: 100%;
   background-image: url("../img/svg/skills__bg.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -2545,7 +2549,7 @@ select {
   -webkit-clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
           clip-path: polygon(0% var(--about-section-gap), 100% 0%, 100% 100%, 0% 100%);
 }
-@media (min-width: 64em) {
+@media (min-width: 46em) {
   .skills::before {
     background-size: 110%;
   }
@@ -2860,7 +2864,7 @@ select {
   grid-template-rows: 6rem 1fr repeat(6, -webkit-min-content);
   grid-template-rows: 6rem 1fr repeat(6, min-content);
   overflow: hidden;
-  border: 2px solid HSL(var(--primary-hs) 0%);
+  border: 1px solid HSL(var(--primary-hs) 0%);
   background-color: var(--clr-orange);
 }
 @media (min-width: 35.5em) {

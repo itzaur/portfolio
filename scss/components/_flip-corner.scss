@@ -292,3 +292,29 @@
   transform: translateX(100%);
   transition: all 0.3s linear;
 }
+
+// .cornerActive {
+//   animation: cornerActive 1s forwards ease-out;
+// }
+
+// .cornerInactive {
+//   animation: cornerInactive 1s forwards ease-out;
+// }
+
+// @keyframes cornerActive {
+//   from {
+//     transform: scale(170);
+//   }
+//   to {
+//     transform: scale(1);
+//   }
+// }
+
+// @keyframes cornerInactive {
+//   from {
+//     transform: scale(1);
+//   }
+//   to {
+//     transform: scale(170);
+//   }
+// }

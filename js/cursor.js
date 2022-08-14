@@ -1,36 +1,9 @@
 //ANCHOR Cursor
+import { gsapEase, lerp, getMousePosition, distance } from "./utils";
+
 let mouse = {
   x: 0,
   y: 0,
-};
-
-const lerp = function (start, end, n) {
-  return (1 - n) * start + n * end;
-};
-
-const distance = function (x1, y1, x2, y2) {
-  let a = x1 - x2;
-  let b = y1 - y2;
-
-  return Math.hypot(a, b);
-};
-
-const calcWindowSize = () => {
-  return {
-    width: window.innerWidth,
-    height: window.innerHeight,
-  };
-};
-
-const getRandomFloat = function (min, max) {
-  return (Math.random() * (max - min) + min).toFixed(2);
-};
-
-const getMousePosition = (e) => {
-  return {
-    x: e.clientX,
-    y: e.clientY,
-  };
 };
 
 window.addEventListener("mousemove", function (ev) {
@@ -56,7 +29,7 @@ class Cursor {
       gsap.to(this.DOM.item, {
         duration: 0.85,
         opacity: 1,
-        ease: "power3.easeOut",
+        ease: gsapEase.power3_ease_out,
       });
       requestAnimationFrame(() => this.render());
       window.removeEventListener("mousemove", this.onMouseMove);
@@ -176,7 +149,7 @@ class MagnetLogo {
       duration: 4,
       startAt: { yPercent: 75 },
       yPercent: 0,
-      ease: "power3.easeOut",
+      ease: gsapEase.power3_ease_out,
     });
   }
 
@@ -195,7 +168,6 @@ class MagnetLogo {
 
 function addCustomCursor() {
   const cursor = new Cursor(document.querySelector(".cursor"));
-  // const magnetLogo = new MagnetLogo(document.querySelector('.logo'));
   document.querySelectorAll(".nav__link, [data-hover-star]").forEach((el) => {
     el.addEventListener("mouseenter", () => cursor.enter());
     el.addEventListener("mouseleave", () => cursor.leave());
@@ -203,4 +175,3 @@ function addCustomCursor() {
 }
 
 export { MagnetLogo, addCustomCursor };
-export default Cursor;

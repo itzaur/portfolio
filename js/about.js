@@ -1,19 +1,8 @@
 "use strict";
-import { Cursor } from "./export";
-import { MagnetLogo, addCustomCursor, buttonFunctionality } from "./export";
+import { gsapEase, randomNumber, installMediaQueryWatcher } from "./utils";
 
 CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
 CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
-
-const gsapEase = {
-  power1: "power1.out",
-  power4: "power4.out",
-  back: "back.out",
-  elastic02: "elastic.out(1, 0.2)",
-  elastic03: "elastic.out(1, 0.3)",
-  elastic05: "elastic.out(1, 0.5)",
-  elastic05_04: "elastic.out(0.5, 0.4)",
-};
 
 //ANCHOR Next page button animation
 let animStatusRun = false;
@@ -35,7 +24,7 @@ function cornerArrowAnimation() {
       x: 0,
       y: 0,
       duration: 0.2,
-      ease: "back.out",
+      ease: gsapEase.back,
       stagger: { each: 0.01 },
     }
   );
@@ -69,7 +58,6 @@ function controlHoverOnCornerButton(e) {
 }
 
 function cornerArrowHoverEffect() {
-  // const wrapper = document.getElementById("wrapper");
   const cornerArrow = document.querySelector("#wrapper__corner-box");
   const cornerBox = document.querySelector("#corner-box");
 
@@ -102,38 +90,6 @@ function cornerArrowHoverEffect() {
     });
   });
 
-  // function controlHoverOnCornerButton() {
-  //   const wrapper = document.getElementById("wrapper");
-  //   const cornerArrow = document.querySelector("#wrapper__corner-box");
-  //   ["mouseenter", "mousemove"].forEach((event) => {
-  //     wrapper.addEventListener(event, (e) => {
-  //       if (e.target.closest("#wrapper__corner-box")) {
-  //         cornerArrow.style.transform = `scale(8)`;
-  //       } else {
-  //         cornerArrow.style.transform = `scale(3.75)`;
-  //       }
-  //     });
-  //   });
-  // }
-
-  // controlHoverOnCornerButton();
-
-  // //   const wrapper = document.getElementById("wrapper");
-  // // const cornerArrow = document.querySelector("#wrapper__corner-box");
-  // function controlHoverOnCornerButton(e) {
-  //   if (e.target.closest("#wrapper__corner-box")) {
-  //     cornerArrow.style.transform = `scale(8)`;
-  //     // console.log(cornerArrow);
-  //   } else {
-  //     cornerArrow.style.transform = `scale(3.75)`;
-  //     // console.log(cornerArrow);
-  //   }
-  // }
-
-  // ["mouseenter", "mousemove"].forEach((event) => {
-  //   wrapper.addEventListener(event, controlHoverOnCornerButton);
-  // });
-
   wrapper.addEventListener("mouseleave", () => {
     cornerArrow.style.transform = `scale(1)`;
   });
@@ -164,10 +120,6 @@ function cornerArrowHoverEffect() {
 //ANCHOR Vapor animation functionality
 let vaporAnimationDuration, vaporMinValueX, vaporMaxValueX, vaporValueY;
 
-function randomNumber(max, min) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
 function vaporAnimation(items) {
   gsap.set(items, {
     autoAlpha: 0,
@@ -184,7 +136,6 @@ function vaporAnimation(items) {
         duration: vaporAnimationDuration * 0.4,
         repeatDelay: vaporAnimationDuration * 0.2,
         yoyo: true,
-
         ease: "none",
       })
       .to(
@@ -204,17 +155,17 @@ function vaporAnimation(items) {
 
 function pageSkillsInit() {
   gsap.registerPlugin(TextPlugin);
-  const hobbiesItems = document.querySelectorAll(".hobbie");
-
   const btnBig = document.querySelector(".btn-big");
-  const btnSmall = document.querySelector(".btn-small");
+  const hobbiesItems = document.querySelectorAll(".hobbie");
+  const skillsBtn = document.querySelectorAll(".skills__btn");
+  const skillsBtnContainer = document.querySelector(".skills__btns");
+  const skillsLevel = document.querySelectorAll(".skills-level");
 
   hobbiesItems.forEach((hobbie) => {
     hobbie.addEventListener("click", addClass);
   });
 
   function addClass(e) {
-    // e.preventDefault();
     e.stopPropagation();
     removeActiveClass();
     const target = e.currentTarget;
@@ -228,13 +179,7 @@ function pageSkillsInit() {
     }
   }
 
-  const skillsBtn = document.querySelectorAll(".skills__btn");
-  const skillsBtnContainer = document.querySelector(".skills__btns");
-  const skillsLevel = document.querySelectorAll(".skills-level");
-
   skillsBtnContainer.addEventListener("click", (e) => {
-    // e.preventDefault();
-
     const clicked = e.target.closest(".skills__btn");
     const selectSkillsLevel = document.querySelector(
       `.skills-level--${clicked.dataset.tab}`
@@ -275,7 +220,6 @@ function pageSkillsInit() {
       .from(
         `[aria-hidden="false"] .starSkill`,
         {
-          //   x: -10,
           opacity: 0,
           scale: 0,
           ease: gsapEase.elastic03,
@@ -455,7 +399,6 @@ function pageSkillsInit() {
       ".hobbie--2",
       {
         yPercent: 0,
-
         duration: 2.5,
         ease: gsapEase.power4,
         clearProps: "all",
@@ -484,7 +427,7 @@ function pageSkillsInit() {
       "<0"
     )
     .from(
-      ".skills__btn",
+      skillsBtn,
       {
         y: 800,
         duration: 1,
@@ -562,13 +505,9 @@ function pageSkillsInit() {
 }
 
 function aboutAnimationInit() {
-  // buttonFunctionality();
-
-  const btnBig = document.querySelector(".btn-big");
-  const btnSmall = document.querySelector(".btn-small");
-  // const menuNavDoodle = document.querySelector(".menu__img img");
-
   gsap.registerPlugin(TextPlugin);
+  const btnBig = document.querySelector(".btn-big");
+
   //Slider mobile
   const storySlides = document.querySelectorAll(".story");
   const slidesBox = document.querySelector(".story__box");
@@ -620,8 +559,6 @@ function aboutAnimationInit() {
     } else if (e.keyCode === KEYDOWN_LEFT) {
       desktopPrevSlide();
     }
-
-    // runBtnSliderAnimation();
   });
 
   dotsBox.addEventListener("click", (e) => {
@@ -713,8 +650,6 @@ function aboutAnimationInit() {
 
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
-    // storySlides[currentSlide].classList.add("visible");
-    // storySlides[currentSlide - 1].classList.remove("visible");
 
     ellipseTimlineDesktop.play();
     ellipseTimlineMobile.play();
@@ -726,9 +661,6 @@ function aboutAnimationInit() {
     desktopGoToSlide(currentSlide);
     activeDot(currentSlide);
 
-    // storySlides[currentSlide].classList.add("visible");
-    // storySlides[currentSlide + 1].classList.remove("visible");
-
     ellipseTimlineDesktop.pause();
     ellipseTimlineMobile.pause();
   }
@@ -739,16 +671,7 @@ function aboutAnimationInit() {
       document
         .querySelector(`.about-dot[data-slide="${slide}"]`)
         .classList.add("active");
-      // dot.style.transition = `transform 0.3s ease-in-out`;
     });
-  }
-
-  function installMediaQueryWatcher(mediaQuery, layoutChangedCallback) {
-    let mql = window.matchMedia(mediaQuery);
-    mql.addListener(function (e) {
-      return layoutChangedCallback(e.matches);
-    });
-    layoutChangedCallback(mql.matches);
   }
 
   //ANCHOR About-page (part1) doodle text animation
@@ -764,8 +687,8 @@ function aboutAnimationInit() {
     })
     .from(".story__photo--person", {
       xPercent: 100,
-      duration: 2,
-      ease: gsapEase.elastic03,
+      duration: 1,
+      ease: gsapEase.elastic05_04,
       opacity: 0,
       clearProps: "all",
     });
@@ -830,7 +753,7 @@ function aboutAnimationInit() {
     .from(btnBig, {
       transform: "translate3d(0, 0, 1px) scale(0)",
       opacity: 0,
-      ease: "Bounce.easeOut",
+      ease: gsapEase.bounce_ease_out,
       duration: 1,
       clearProps: "transform",
     });
@@ -1206,7 +1129,6 @@ function addDoorAnimationOnResize() {
     doodleCenterCoordY >
       doorCenterCoordY + doodle.getBoundingClientRect().height / 2
   ) {
-    // doodle.style.fill = "white";
     doodle.style.opacity = "1";
     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
   } else if (
@@ -1215,11 +1137,9 @@ function addDoorAnimationOnResize() {
       doorCenterCoordY * 0.1 -
       doodle.getBoundingClientRect().height / 2
   ) {
-    // doodle.style.fill = "white";
     doodle.style.opacity = "1";
     textIT.forEach((text) => (text.style.fill = "#1d1d1b"));
   } else {
-    // doodle.style.fill = "red";
     doodle.style.opacity = "0.8";
     doodle.style.transition = "opacity 0.3s linear";
     textIT.forEach((text) => (text.style.fill = "#ee7950"));
@@ -1238,7 +1158,7 @@ function contactPageInit() {
     .from(
       ".top-nav--contact",
       {
-        x: 600,
+        xPercent: 100,
         autoAlpha: 0,
         duration: 1,
         ease: gsapEase.back,
@@ -1292,7 +1212,7 @@ function contactPageInit() {
     .from(".btn-big", {
       transform: "translate3d(0, 0, 1px) scale(0)",
       opacity: 0,
-      ease: "Bounce.easeOut",
+      ease: gsapEase.bounce_ease_out,
       duration: 1,
       clearProps: "transform",
     })
@@ -1385,6 +1305,7 @@ function contactPageInit() {
     paused: true,
     repeat: -1,
     repeatDelay: 3,
+
     clearProps: "all",
   });
 
@@ -1400,6 +1321,7 @@ function contactPageInit() {
       {
         opacity: 1,
         scale: 0.95,
+        rotation: 0.5,
         duration: 0.55,
         ease: "none",
       },
@@ -1416,12 +1338,13 @@ function contactPageInit() {
       ".laptop-element--7",
       {
         opacity: 0,
+        rotation: 0.5,
         clearProps: "opacity",
       },
       "<-0.02"
     )
     .from(
-      ".laptop-element",
+      laptopElements,
       {
         keyframes: {
           "0%": { opacity: 0 },
@@ -1429,6 +1352,7 @@ function contactPageInit() {
           "100%": { opacity: 0 },
         },
         scale: 0.95,
+
         stagger: {
           each: 0.2,
           from: "random",
@@ -1494,12 +1418,12 @@ function contactPageInit() {
 
       gsap.to([leftTop, rightTop], {
         y: socialActive ? socialWindow.h : 0,
-        ease: "power3.out",
+        ease: gsapEase.power3,
       });
 
       gsap.to(middleTop, {
         y: socialActive ? socialWindow.h : 0,
-        ease: "power3.out",
+        ease: gsapEase.power3,
         delay: 0.1,
       });
     });
@@ -1508,12 +1432,12 @@ function contactPageInit() {
       socialActive = false;
       gsap.to([leftTop, rightTop], {
         y: socialActive ? socialWindow.h : 0,
-        ease: "power3.out",
+        ease: gsapEase.power3,
       });
 
       gsap.to(middleTop, {
         y: socialActive ? socialWindow.h : 0,
-        ease: "power3.out",
+        ease: gsapEase.power3,
         delay: 0.1,
       });
     });

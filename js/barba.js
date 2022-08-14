@@ -1,72 +1,53 @@
 import barba from "@barba/core";
-import {
-  MagnetLogo,
-  pageSkillsInit,
-  aboutAnimationInit,
-  addCustomCursor,
-  homeInit,
-  buttonFunctionality,
-  contactPageInit,
-  cornerArrowAnimation,
-  cornerArrowHoverEffect,
-} from "./export";
 import { doodlePositionResize } from "./index";
 import { addDoorAnimationOnResize, controlHoverOnCornerButton } from "./about";
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
+
   gsap.set("#corner-button svg g g path", {
     autoAlpha: 0,
   });
-  const tl = gsap.timeline();
-  tl.set("#corner-button svg", {
-    autoAlpha: 0,
-  }).set(cornerBox, {
-    pointerEvents: "none",
-    cursor: "none",
-  });
+  const timelineEnter = gsap.timeline();
 
-  tl.to(cornerBox, {
-    scale: 1,
-    z: 1,
-    transformOrigin: "right bottom",
-    duration: 1,
-    // clearProps: "transform",
-    onComplete: () => {
-      cornerArrowHoverEffect();
-      tl.to(["#corner-button svg, .contact-elements"], {
-        autoAlpha: 1,
-        duration: 1,
-        // clearProps: "all",
-      }).to(cornerBox, {
-        pointerEvents: "auto",
-        cursor: "auto",
-      });
+  timelineEnter
+    .set("#corner-button svg", {
+      autoAlpha: 0,
+    })
+    .set(cornerBox, {
+      pointerEvents: "none",
+      cursor: "none",
+    })
+    .to(cornerBox, {
+      scale: 1,
+      transformOrigin: "right bottom",
+      duration: 1,
 
-      ["mouseenter", "mousemove", "focusin"].forEach((event) => {
-        container.addEventListener(event, controlHoverOnCornerButton);
-      });
-    },
-  }).from(".corner-border path", {
-    strokeWidth: "0.5",
-  });
-  // .from(
-  //   container,
-  //   {
-  //     opacity: 0,
-  //     clearProps: "all",
-  //     // onComplete: () => {
-  //     //   cornerArrowHoverEffect();
-  //     //   tl.set("#corner-button svg", {
-  //     //     autoAlpha: 1,
-  //     //     clearProps: "all",
-  //     //   });
-  //     // },
-  //   },
-  //   "<0.2"
-  // );
+      onComplete: () => {
+        import("./about.js").then(({ cornerArrowHoverEffect }) => {
+          cornerArrowHoverEffect();
+        });
 
-  return tl;
+        timelineEnter
+          .to(["#corner-button svg, .contact-elements"], {
+            autoAlpha: 1,
+            duration: 1,
+          })
+          .to(cornerBox, {
+            pointerEvents: "auto",
+            cursor: "auto",
+          });
+
+        ["mouseenter", "mousemove", "focusin"].forEach((event) => {
+          container.addEventListener(event, controlHoverOnCornerButton);
+        });
+      },
+    })
+    .from(".corner-border path", {
+      strokeWidth: "0.5",
+    });
+
+  return timelineEnter;
 }
 
 function animationLeave(container, done) {
@@ -76,19 +57,18 @@ function animationLeave(container, done) {
     container.removeEventListener(event, controlHoverOnCornerButton);
   });
 
-  const tl = gsap.timeline();
+  const timelineLeave = gsap.timeline();
 
-  tl.set("#corner-button svg", {
-    autoAlpha: 0,
-  })
+  timelineLeave
+    .set("#corner-button svg", {
+      autoAlpha: 0,
+    })
     .to(cornerBox, {
       scale: 170,
-      z: 1,
       pointerEvents: "none",
       cursor: "none",
       duration: 1,
       transformOrigin: "right bottom",
-      // clearProps: "transform",
       onComplete: () => done(),
     })
     .to(
@@ -98,21 +78,13 @@ function animationLeave(container, done) {
       },
       "<0"
     );
-  // .to(
-  //   container,
-  //   {
-  //     opacity: 0,
-  //     duration: 1,
-  //     clearProps: "all",
-  //   },
-  //   "<0"
-  // );
 
-  return tl;
+  return timelineLeave;
 }
 
 barba.init({
   debug: true,
+
   transitions: [
     {
       name: "default-transition",
@@ -139,7 +111,9 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        homeInit();
+        import("./index").then(({ homeInit }) => {
+          homeInit();
+        });
       },
     },
     {
@@ -148,8 +122,9 @@ barba.init({
         window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
-        aboutAnimationInit();
-        buttonFunctionality();
+        import("./about.js").then(({ aboutAnimationInit }) => {
+          aboutAnimationInit();
+        });
       },
     },
     {
@@ -159,8 +134,9 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        pageSkillsInit();
-        buttonFunctionality();
+        import("./about.js").then(({ pageSkillsInit }) => {
+          pageSkillsInit();
+        });
       },
     },
     {
@@ -169,10 +145,9 @@ barba.init({
         window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
-        // homeInit();
-        // addCustomCursor();
-        contactPageInit();
-        buttonFunctionality();
+        import("./about.js").then(({ contactPageInit }) => {
+          contactPageInit();
+        });
       },
     },
   ],
@@ -198,7 +173,14 @@ barba.hooks.enter(({ current, next }) => {
 
 barba.hooks.afterEnter(({ current, next }) => {
   let afterEnterPromiseAll = new Promise(function (resolve) {
-    addCustomCursor();
+    import("./cursor").then(({ addCustomCursor }) => {
+      addCustomCursor();
+    });
+
+    import("./index.js").then(({ buttonFunctionality }) => {
+      buttonFunctionality();
+    });
+
     resolve();
   });
 

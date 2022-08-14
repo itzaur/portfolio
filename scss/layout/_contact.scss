@@ -36,7 +36,7 @@
     grid-template-rows: 6rem 1fr repeat(6, min-content);
 
     overflow: hidden;
-    border: 2px solid HSL(var(--primary-hs) 0%);
+    border: 1px solid HSL(var(--primary-hs) 0%);
     background-color: var(--clr-orange);
 
     @include respond-to("568->") {

@@ -1,12 +1,6 @@
 "use strict";
 import "../scss/main.scss";
-// import FDF from "../img/tlqmz5qzwoexbzbhkbvf.jpg";
-// import barba from '@barba/core';
-// import barbaCss from '@barba/css';
-// import Barba from 'barba.js';
-// import { Cursor } from './export';
-// import { MagnetLogo, addCustomCursor } from './cursor';
-import { MagnetLogo, addCustomCursor } from "./cursor";
+import { gsapEase, randomNumber } from "./utils";
 import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
 
 function buttonFunctionality() {
@@ -71,7 +65,7 @@ function buttonFunctionality() {
     timelineLetters.to(".text-cls-1", {
       translateX: "-1rem",
       duration: 0.2,
-      ease: "back.out(1.7)",
+      ease: gsapEase.back_1_7,
       stagger: 0.05,
       opacity: 1,
     });
@@ -90,14 +84,15 @@ function buttonFunctionality() {
 
   tlMenuTransition
     .to(menuPage, {
-      height: "calc(100vh - var(--padding-container) * 2 + 1px)",
-      ease: "bounce.out",
+      // height: "calc(100vh - var(--padding-container) * 2 + 1px)",
+      y: 0,
+      ease: gsapEase.bounce_out,
     })
     .from(
       menuDoodle,
       {
         y: -600,
-        ease: "bounce.out",
+        ease: gsapEase.bounce_out,
         opacity: 0,
         duration: 0.3,
         stagger: { each: 0.001, from: "random" },
@@ -107,14 +102,14 @@ function buttonFunctionality() {
     .from(".menu__box img", {
       autoAlpha: 0,
       scale: 0,
-      ease: "elastic.out(1, 0.3)",
+      ease: gsapEase.elastic03,
       clearProps: "transform",
     })
     .from(
       menuNavDoodle,
       {
         opacity: 0,
-        ease: "elastic.out(1, 0.3)",
+        ease: gsapEase.elastic03,
         duration: 1.2,
         transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
       },
@@ -126,7 +121,7 @@ function buttonFunctionality() {
         y: -60,
         opacity: 0,
         stagger: 0.2,
-        ease: "back.out(1.7)",
+        ease: gsapEase.back_1_7,
       },
       "<0.6"
     )
@@ -136,9 +131,9 @@ function buttonFunctionality() {
         opacity: 0,
         scale: 0,
         stagger: 0.1,
-        ease: "elastic.out(1, 0.3)",
+        ease: gsapEase.elastic03,
       },
-      "-=1"
+      "<0.5"
     );
 
   function checkMediaQuery() {
@@ -161,10 +156,11 @@ function buttonFunctionality() {
         {
           y: -100,
           opacity: 0,
-          ease: "back.out(1.7)",
           duration: 0.6,
-        },
-        "+=1"
+          delay: 2.8,
+          ease: gsapEase.back_1_7,
+        }
+        // "+=1"
       );
     } else {
       gsap.to(menuNavDoodle, {
@@ -175,39 +171,46 @@ function buttonFunctionality() {
         {
           x: -100,
           opacity: 0,
-          ease: "back.out(1.7)",
           duration: 0.6,
-        },
-        "+=1.5"
+          delay: 2.8,
+          ease: gsapEase.back_1_7,
+        }
+        // "+=1.5"
       );
     }
 
     setTimeout(() => {
-      tlMenuTransition.timeScale(0.8).play();
+      tlMenuTransition.timeScale(0.8).play(0);
       isOpen = true;
     }, 100);
   }
 
   function menuTransitionStop(e) {
     const closeMenu = gsap.to(menuPage, {
-      height: 0,
+      // height: 0,
+      yPercent: -100,
       ease: "power4.out",
       duration: 0.8,
       paused: true,
+      clearProps: "transform",
     });
 
     isOpen = false;
 
     if (e.target.getAttribute("href")) {
       closeMenu.pause();
+      e.target.classList.add("inactive-cursor");
     } else {
-      closeMenu.play();
-      tlMenuTransition.pause(0).reversed(true);
-      gsap.to(".menu-btn-close", {
-        x: -100,
-        y: -100,
-        clearProps: "x, y",
-      });
+      closeMenu.play(0);
+
+      // tlMenuTransition.reverse();
+
+      // tlMenuTransition.pause(0).reversed(true);
+      // gsap.to(".menu-btn-close", {
+      //   x: -100,
+      //   y: -100,
+      //   clearProps: "x, y",
+      // });
     }
 
     btnBig.setAttribute("aria-expanded", true);
@@ -231,9 +234,8 @@ function buttonFunctionality() {
 }
 
 function homeInit() {
-  //ANCHOR Button
   const btnBig = document.querySelector(".btn-big");
-  const btnSmall = document.querySelector(".btn-small");
+  // const btnSmall = document.querySelector(".btn-small");
   //ANCHOR Fonts
   let font = new FontFaceObserver("d_CCMonologous", {
     weight: 700,
@@ -248,45 +250,47 @@ function homeInit() {
       console.log("Font failed to load.");
     });
 
-  buttonFunctionality();
+  //ANCHOR Glasses animation
+  const timelineGlasses = gsap.timeline();
 
-  //Glasses animation
-  const timelineGlasses = gsap.timeline({
-    repeat: -1,
-    yoyo: false,
-  });
-
-  gsap.fromTo(
-    ".glass",
-    {
-      x: -25,
-      y: 8.5,
-      ease: "none",
-      opacity: 1,
-    },
-    {
-      x: 55,
-      y: -25,
-      duration: 0.5,
-      ease: "none",
-      repeat: -1,
-      repeatDelay: 6,
-    }
-  );
-
-  timelineGlasses.to(".glass rect", {
-    keyframes: [{ height: 80 }, { height: 22, x: -336, y: 160, opacity: 1 }],
-    duration: 0.5,
-    ease: "none",
-    repeat: -1,
-    repeatDelay: 6,
-  });
+  timelineGlasses
+    .fromTo(
+      ".glass",
+      {
+        x: -25,
+        y: 8.5,
+        opacity: 0.8,
+      },
+      {
+        x: 55,
+        y: -25,
+        duration: 0.5,
+        repeatDelay: 6,
+        ease: "none",
+        repeat: -1,
+      }
+    )
+    .to(
+      ".glass rect",
+      {
+        keyframes: [
+          { height: 80 },
+          { height: 22, x: -336, y: 160, opacity: 0.8 },
+        ],
+        duration: 0.5,
+        ease: "none",
+        repeat: -1,
+        repeatDelay: 6,
+      },
+      "<0"
+    );
 
   //ANCHOR Doodle
-  const textSpan0 = document.querySelector(".span0");
-  const textSpan1 = document.querySelector(".span1");
-  const textSpan2 = document.querySelector(".span2");
-  const textSpan3 = document.querySelector(".span3");
+  const doodle = document.querySelector(".doodle");
+  const textSpan0 = doodle.querySelector(".span0");
+  const textSpan1 = doodle.querySelector(".span1");
+  const textSpan2 = doodle.querySelector(".span2");
+  const textSpan3 = doodle.querySelector(".span3");
 
   const doodleMobile = document.querySelector(".doodle-mobile");
   const textSpan0Mobile = doodleMobile.querySelector(".span0");
@@ -355,15 +359,8 @@ function homeInit() {
     setTimeout(animateLetters4, 100);
   }
 
-  // setTimeout(animateLetters1, 5500);
-  // setTimeout(animateLetters2, 6200);
-  // setTimeout(animateLetters3, 7200);
-  // setTimeout(animateLetters4, 8500);
-
   //ANCHOR Photo
   const photo = document.querySelector(".photo");
-  const doodle = document.querySelector(".doodle");
-
   const photoTransformY = +window
     .getComputedStyle(photo, null)
     .transform.match(/(-?[0-9\.]+)/g)[5];
@@ -386,63 +383,117 @@ function homeInit() {
   doodlePositionStart();
 
   //ANCHOR Page animations
+  const logo = document.querySelector(".logo");
   const helloDots = document.querySelectorAll(
     '.hello-dots path:not([data-item="hello-doodle"])'
   );
   const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
   const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
 
-  const tlPage = gsap.timeline({ duration: 1, rotation: 0.05, paused: true });
+  const timelinePageAnimation = gsap.timeline({
+    duration: 1,
+    rotation: 0.05,
+    paused: true,
+  });
 
-  // function getPageAnimation() {}
-  tlPage
-    .fromTo(
-      ".photo",
-      {
-        x: 2400,
-        transformOrigin: "top top",
-        rotation: "50deg",
-      },
-      {
-        x: photoTransformX,
-        rotation: "0deg",
-        ease: "elastic.out(0.5, 0.4)",
-        clearProps: "transform",
-        delay: 0.2,
-        duration: 1.2,
-      }
-    )
-    .from(dots, {
-      opacity: 0,
-      scale: 0,
-      stagger: {
-        each: 0.002,
-        from: 15,
-      },
-      ease: "back.out(1.7)",
+  // gsap.set(helloDots, {
+  //   autoAlpha: 0,
+  // });
+
+  // gsap.set(dots, {
+  //   autoAlpha: 0,
+  // });
+
+  // function helloDotsAnim() {
+  //   const tl = gsap.timeline();
+  //   tl.from(helloDots, {
+  //     y: -500,
+  //     stagger: { each: 0.003, from: "random" },
+  //     duration: 0.8,
+  //     delay: 0.5,
+  //     ease: gsapEase.bounce_out,
+  //   }).to(
+  //     helloDots,
+  //     {
+  //       autoAlpha: 1,
+  //     },
+  //     "<0"
+  //   );
+  // }
+
+  // function dotsAnim() {
+  //   const tl = gsap.timeline();
+  //   tl.from(dots, {
+  //     scale: 0,
+  //     delay: 0.5,
+  //     stagger: {
+  //       each: 0.002,
+  //       from: 15,
+  //     },
+  //     duration: 0.6,
+  //     ease: gsapEase.elastic05,
+  //   }).to(
+  //     dots,
+  //     {
+  //       autoAlpha: 1,
+  //     },
+  //     "<0"
+  //   );
+  // }
+
+  timelinePageAnimation
+    .from(photo, {
+      xPercent: 200,
+      transformOrigin: "center",
+      rotation: 50,
+      delay: 0.4,
+      duration: 1.2,
+      ease: gsapEase.elastic05_04,
+      clearProps: "transform",
+      // onStart: () => {
+      //   dotsAnim();
+      //   helloDotsAnim();
+      // },
     })
     .from(
+      dots,
+      {
+        opacity: 0,
+        scale: 0,
+        stagger: {
+          each: 0.002,
+          from: 15,
+        },
+        duration: 0.6,
+        ease: gsapEase.elastic05,
+      },
+      "<0.5"
+    )
+    .from(
       helloDots,
-      0.5,
       {
         y: -500,
-        ease: "bounce.out",
+        ease: gsapEase.bounce_out,
         opacity: 0,
         stagger: { each: 0.003, from: "random" },
       },
-      "<0.6"
+      "<0.4"
     )
     .from(
       helloDoodle,
-      0.6,
-      { y: -300, ease: "bounce.out", opacity: 0, stagger: 0.03 },
-      "<1.3"
+      {
+        y: -300,
+        ease: gsapEase.bounce_out,
+        opacity: 0,
+        stagger: 0.03,
+      },
+      "<1.2"
     )
     .to(
-      [".doodle", ".doodle-mobile"],
+      [doodle, doodleMobile],
       {
         opacity: 1,
-        ease: "back.out(1.7)",
+        ease: gsapEase.back_1_7,
         onComplete: () => {
           setTimeout(animateLetters1, 500);
           setTimeout(animateLetters2, 1200);
@@ -457,41 +508,39 @@ function homeInit() {
       {
         transform: "translate3d(0, 0, 1px) scale(0)",
         opacity: 0,
-        ease: "Bounce.easeOut",
+        ease: gsapEase.bounce_ease_out,
         delay: 1,
         duration: 1,
       },
       "<3.8"
     )
     .from(
-      ".logo",
+      logo,
       {
         transform: "translate3d(0, 0, 1px) scale(0)",
         opacity: 0,
-        ease: "Bounce.easeOut",
+        ease: gsapEase.bounce_ease_out,
         duration: 1,
         onComplete: () => {
-          const magnetLogo = new MagnetLogo(document.querySelector(".logo"));
+          import("./cursor").then(({ MagnetLogo }) => {
+            const magnetLogo = new MagnetLogo(logo);
+          });
         },
       },
       "<0"
     )
     .from(".color-game__item", {
-      x: "-100%",
+      xPercent: -100,
       autoAlpha: 0,
       stagger: {
         each: 0.2,
       },
       duration: 1,
-      ease: "back.out(1.7)",
+      ease: gsapEase.back,
+      onComplete: () => colorGame(),
     });
 
-  tlPage.play();
-
-  // getPageAnimation();
-  window.addEventListener("DOMContentLoaded", () => {
-    tlPage.play();
-  });
+  timelinePageAnimation.play();
 
   // const nextPageLink = document.querySelectorAll("#corner-link");
   // nextPageLink.forEach((link) => {
@@ -499,67 +548,6 @@ function homeInit() {
   //     tlPage.kill();
   //   });
   // });
-
-  // //ANCHOR Next page animation
-  // const cornerBtn = document.getElementById('corner-link');
-  // cornerBtn.addEventListener('click', e => {
-  //   // e.preventDefault();
-  //   document.getElementById('wrapper').classList.add('flip');
-
-  //   // window.setTimeout(() => {
-  //   //   window.location.href = 'about.html';
-  //   // }, 250);
-  // });
-
-  //ANCHOR Color game
-  function colorGame() {
-    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-    const colorBtns = document.querySelectorAll(".color-game__item");
-    const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
-    const pullover = photo.querySelectorAll(".pullover");
-    const beard = photo.querySelectorAll(".beard");
-
-    colorBtns.forEach((btn) => {
-      btn.addEventListener("click", changeColor);
-    });
-
-    colorBtns.forEach((btn) => {
-      btn.addEventListener("keydown", (e) => {
-        const KEYDOWN_SPACE = 32;
-        const KEYDOWN_ENTER = 13;
-        if (e.keyCode === KEYDOWN_SPACE || e.keyCode === KEYDOWN_ENTER) {
-          changeColor(e);
-        }
-      });
-    });
-
-    function getRandomNumber() {
-      return Math.floor(Math.random() * hex.length);
-    }
-
-    function changeColor(e) {
-      let hexColor = "#";
-      const HEX_COLOR_LENGTH = 6;
-      for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
-        hexColor += hex[getRandomNumber()];
-      }
-
-      const attr = e.target.getAttribute("data-name");
-      if (attr === "glasses") {
-        glassesElements.forEach(
-          (glassesEl) => (glassesEl.style.fill = hexColor)
-        );
-      } else if (attr === "pullover") {
-        pullover.forEach((el) => (el.style.fill = hexColor));
-      } else if (attr === "beard") {
-        beard.forEach((el) => (el.style.fill = hexColor));
-      } else if (attr === "grayscale") {
-        document.querySelector(".page").classList.toggle("grayscale");
-      }
-    }
-  }
-
-  colorGame();
 }
 
 function doodlePositionResize() {
@@ -579,13 +567,52 @@ function doodlePositionResize() {
   }px)`;
 }
 
+//ANCHOR Color game
+function colorGame() {
+  const photo = document.querySelector(".photo");
+  const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+  const colorBtns = document.querySelectorAll(".color-game__item");
+  const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
+  const pullover = photo.querySelectorAll(".pullover");
+  const beard = photo.querySelectorAll(".beard");
+
+  colorBtns.forEach((btn) => {
+    btn.addEventListener("click", changeColor);
+  });
+
+  colorBtns.forEach((btn) => {
+    btn.addEventListener("keydown", (e) => {
+      const KEYDOWN_SPACE = 32;
+      const KEYDOWN_ENTER = 13;
+      if (e.keyCode === KEYDOWN_SPACE || e.keyCode === KEYDOWN_ENTER) {
+        changeColor(e);
+      }
+    });
+  });
+
+  function changeColor(e) {
+    let hexColor = "#";
+    const HEX_COLOR_LENGTH = 6;
+    for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
+      hexColor += hex[randomNumber(hex.length, 0)];
+    }
+
+    const attr = e.target.getAttribute("data-name");
+    if (attr === "glasses") {
+      glassesElements.forEach((glassesEl) => (glassesEl.style.fill = hexColor));
+    } else if (attr === "pullover") {
+      pullover.forEach((el) => (el.style.fill = hexColor));
+    } else if (attr === "beard") {
+      beard.forEach((el) => (el.style.fill = hexColor));
+    } else if (attr === "grayscale") {
+      document.querySelector(".page").classList.toggle("grayscale");
+    }
+  }
+}
+
 //ANCHOR Preloader
 const preloadImages = (selector = "svg") => {
   return new Promise((resolve) => {
-    // const cornerBox = document.querySelector("#wrapper__corner-box");
-    // gsap.set(cornerBox, {
-    //   scale: 170,
-    // });
     imagesLoaded(
       document.querySelectorAll(selector),
       { background: true },
@@ -596,11 +623,6 @@ const preloadImages = (selector = "svg") => {
 
 preloadImages().then(() => {
   document.body.classList.remove("loading");
-  // const cornerBox = document.querySelector("#wrapper__corner-box");
-  // gsap.to(cornerBox, {
-  //   scale: 1,
-  //   duration: 2,
-  // });
 });
 
 export { homeInit, buttonFunctionality, doodlePositionResize };
