@@ -178,6 +178,11 @@
       }
     }
 
+    & img {
+      position: absolute;
+      z-index: -1;
+    }
+
     &:hover div,
     &:focus div {
       transform: translate(clamp(2rem, 6vw, 4rem), -50%);

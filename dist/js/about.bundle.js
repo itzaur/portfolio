@@ -1,2 +1,0 @@
-!function(){"use strict";var e={822:function(e,t,r){}},t={};function r(o){var n=t[o];if(void 0!==n)return n.exports;var c=t[o]={exports:{}};return e[o](c,c.exports,r),c.exports}r.d=function(e,t){for(var o in t)r.o(t,o)&&!r.o(e,o)&&Object.defineProperty(e,o,{enumerable:!0,get:t[o]})},r.o=function(e,t){return Object.prototype.hasOwnProperty.call(e,t)},r(822),CustomEase.create("cubic","0.175, 0.885, 0.32, 1.275"),CustomEase.create("cubic2","0.93, 0.02, 0.56, 0.95")}();
-//# sourceMappingURL=about.bundle.js.map

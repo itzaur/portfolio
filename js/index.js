@@ -1,9 +1,12 @@
 "use strict";
 import "../scss/main.scss";
-import { gsapEase, randomNumber } from "./utils";
-import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
+import { gsapEase } from "./utils";
+import { MagnetLogo } from "./cursor";
+// import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
 
 function buttonFunctionality() {
+  console.log("buttonFunctionality() started");
+
   //ANCHOR Button
   const btnBig = document.querySelector(".btn-big");
   const btnSmall = document.querySelector(".btn-small");
@@ -83,6 +86,10 @@ function buttonFunctionality() {
   });
 
   tlMenuTransition
+    .set(".menu__box img", {
+      xPercent: -50,
+      yPercent: -50,
+    })
     .to(menuPage, {
       // height: "calc(100vh - var(--padding-container) * 2 + 1px)",
       y: 0,
@@ -234,21 +241,23 @@ function buttonFunctionality() {
 }
 
 function homeInit() {
+  console.log("homeInit() started");
+
   const btnBig = document.querySelector(".btn-big");
   // const btnSmall = document.querySelector(".btn-small");
   //ANCHOR Fonts
-  let font = new FontFaceObserver("d_CCMonologous", {
-    weight: 700,
-  });
+  // let font = new FontFaceObserver("d_CCMonologous", {
+  //   weight: 700,
+  // });
 
-  font
-    .load()
-    .then(function () {
-      console.log("Font has loaded.");
-    })
-    .catch(function () {
-      console.log("Font failed to load.");
-    });
+  // font
+  //   .load()
+  //   .then(function () {
+  //     console.log("Font has loaded.");
+  //   })
+  //   .catch(function () {
+  //     console.log("Font failed to load.");
+  //   });
 
   //ANCHOR Glasses animation
   const timelineGlasses = gsap.timeline();
@@ -287,77 +296,77 @@ function homeInit() {
 
   //ANCHOR Doodle
   const doodle = document.querySelector(".doodle");
-  const textSpan0 = doodle.querySelector(".span0");
-  const textSpan1 = doodle.querySelector(".span1");
-  const textSpan2 = doodle.querySelector(".span2");
-  const textSpan3 = doodle.querySelector(".span3");
+  // const textSpan0 = doodle.querySelector(".span0");
+  // const textSpan1 = doodle.querySelector(".span1");
+  // const textSpan2 = doodle.querySelector(".span2");
+  // const textSpan3 = doodle.querySelector(".span3");
 
   const doodleMobile = document.querySelector(".doodle-mobile");
-  const textSpan0Mobile = doodleMobile.querySelector(".span0");
-  const textSpan1Mobile = doodleMobile.querySelector(".span1");
-  const textSpan2Mobile = doodleMobile.querySelector(".span2");
-  const textSpan3Mobile = doodleMobile.querySelector(".span3");
+  // const textSpan0Mobile = doodleMobile.querySelector(".span0");
+  // const textSpan1Mobile = doodleMobile.querySelector(".span1");
+  // const textSpan2Mobile = doodleMobile.querySelector(".span2");
+  // const textSpan3Mobile = doodleMobile.querySelector(".span3");
 
-  const text = {
-    string0: "My name",
-    string1: "is Pavel!",
-    string2: "Welcome to",
-    string3: "my page!",
-  };
-  const str0 = text.string0.split("");
-  const str1 = text.string1.split("");
-  const str2 = text.string2.split("");
-  const str3 = text.string3.split("");
+  // const text = {
+  //   string0: "My name",
+  //   string1: "is Pavel!",
+  //   string2: "Welcome to",
+  //   string3: "my page!",
+  // };
+  // const str0 = text.string0.split("");
+  // const str1 = text.string1.split("");
+  // const str2 = text.string2.split("");
+  // const str3 = text.string3.split("");
 
-  const str0Mobile = text.string0.split("");
-  const str1Mobile = text.string1.split("");
-  const str2Mobile = text.string2.split("");
-  const str3Mobile = text.string3.split("");
+  // const str0Mobile = text.string0.split("");
+  // const str1Mobile = text.string1.split("");
+  // const str2Mobile = text.string2.split("");
+  // const str3Mobile = text.string3.split("");
 
-  //Doodle animation
-  function animateLetters1() {
-    if (str0.length > 0) {
-      textSpan0.innerHTML += str0.shift();
-      textSpan0Mobile.innerHTML += str0Mobile.shift();
-    } else {
-      clearTimeout(animateLetters1);
-    }
+  // //Doodle animation
+  // function animateLetters1() {
+  //   if (str0.length > 0) {
+  //     textSpan0.innerHTML += str0.shift();
+  //     textSpan0Mobile.innerHTML += str0Mobile.shift();
+  //   } else {
+  //     clearTimeout(animateLetters1);
+  //   }
 
-    setTimeout(animateLetters1, 100);
-  }
+  //   setTimeout(animateLetters1, 100);
+  // }
 
-  function animateLetters2() {
-    if (str1.length > 0) {
-      textSpan1.innerHTML += str1.shift();
-      textSpan1Mobile.innerHTML += str1Mobile.shift();
-    } else {
-      clearTimeout(animateLetters2);
-    }
+  // function animateLetters2() {
+  //   if (str1.length > 0) {
+  //     textSpan1.innerHTML += str1.shift();
+  //     textSpan1Mobile.innerHTML += str1Mobile.shift();
+  //   } else {
+  //     clearTimeout(animateLetters2);
+  //   }
 
-    setTimeout(animateLetters2, 100);
-  }
+  //   setTimeout(animateLetters2, 100);
+  // }
 
-  function animateLetters3() {
-    if (str2.length > 0) {
-      textSpan2.innerHTML += str2.shift();
-      textSpan2Mobile.innerHTML += str2Mobile.shift();
-    } else {
-      clearTimeout(animateLetters3);
-    }
+  // function animateLetters3() {
+  //   if (str2.length > 0) {
+  //     textSpan2.innerHTML += str2.shift();
+  //     textSpan2Mobile.innerHTML += str2Mobile.shift();
+  //   } else {
+  //     clearTimeout(animateLetters3);
+  //   }
 
-    setTimeout(animateLetters3, 100);
-  }
+  //   setTimeout(animateLetters3, 100);
+  // }
 
-  function animateLetters4() {
-    if (str3.length > 0) {
-      textSpan3.innerHTML += str3.shift();
-      textSpan3Mobile.innerHTML += str3Mobile.shift();
-    } else {
-      clearTimeout(animateLetters4);
-    }
+  // function animateLetters4() {
+  //   if (str3.length > 0) {
+  //     textSpan3.innerHTML += str3.shift();
+  //     textSpan3Mobile.innerHTML += str3Mobile.shift();
+  //   } else {
+  //     clearTimeout(animateLetters4);
+  //   }
 
-    setTimeout(animateLetters4, 100);
-  }
+  //   setTimeout(animateLetters4, 100);
+  // }
 
   //ANCHOR Photo
   const photo = document.querySelector(".photo");
@@ -380,7 +389,7 @@ function homeInit() {
     }px)`;
   }
 
-  doodlePositionStart();
+  // doodlePositionStart();
 
   //ANCHOR Page animations
   const logo = document.querySelector(".logo");
@@ -389,6 +398,7 @@ function homeInit() {
   );
   const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
   const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
+  const colorGameItem = document.querySelectorAll(".color-game__item");
 
   const timelinePageAnimation = gsap.timeline({
     duration: 1,
@@ -450,6 +460,9 @@ function homeInit() {
       duration: 1.2,
       ease: gsapEase.elastic05_04,
       clearProps: "transform",
+      onComplete: () => {
+        return doodlePositionStart();
+      },
       // onStart: () => {
       //   dotsAnim();
       //   helloDotsAnim();
@@ -494,14 +507,38 @@ function homeInit() {
       {
         opacity: 1,
         ease: gsapEase.back_1_7,
-        onComplete: () => {
-          setTimeout(animateLetters1, 500);
-          setTimeout(animateLetters2, 1200);
-          setTimeout(animateLetters3, 2200);
-          setTimeout(animateLetters4, 3500);
-        },
+        // onComplete: () => {
+        //   setTimeout(animateLetters1, 500);
+        //   setTimeout(animateLetters2, 1200);
+        //   setTimeout(animateLetters3, 2200);
+        //   setTimeout(animateLetters4, 3500);
+        // },
       },
       "<0.5"
+    )
+    .from(".doodle .doodle__text tspan", {
+      text: {
+        value: "",
+      },
+      duration: 1,
+      ease: "none",
+      stagger: {
+        each: 1,
+      },
+    })
+    .from(
+      ".doodle-mobile .doodle__text tspan",
+      {
+        text: {
+          value: "",
+        },
+        duration: 1,
+        ease: "none",
+        stagger: {
+          each: 1,
+        },
+      },
+      "<0"
     )
     .from(
       btnBig,
@@ -512,7 +549,7 @@ function homeInit() {
         delay: 1,
         duration: 1,
       },
-      "<3.8"
+      "<3"
     )
     .from(
       logo,
@@ -522,23 +559,31 @@ function homeInit() {
         ease: gsapEase.bounce_ease_out,
         duration: 1,
         onComplete: () => {
-          import("./cursor").then(({ MagnetLogo }) => {
-            const magnetLogo = new MagnetLogo(logo);
-          });
+          const magnetLogo = new MagnetLogo(logo);
+          return magnetLogo;
+          // import("./cursor").then(({ MagnetLogo }) => {
+          //   const magnetLogo = new MagnetLogo(logo);
+          // });
         },
       },
       "<0"
     )
-    .from(".color-game__item", {
-      xPercent: -100,
-      autoAlpha: 0,
-      stagger: {
-        each: 0.2,
+    .from(
+      colorGameItem,
+      {
+        xPercent: -100,
+        autoAlpha: 0,
+        stagger: {
+          each: 0.2,
+        },
+        duration: 1,
+        ease: gsapEase.back,
+        onComplete: () => {
+          return colorGame();
+        },
       },
-      duration: 1,
-      ease: gsapEase.back,
-      onComplete: () => colorGame(),
-    });
+      "<0.5"
+    );
 
   timelinePageAnimation.play();
 
@@ -548,9 +593,59 @@ function homeInit() {
   //     tlPage.kill();
   //   });
   // });
+  //ANCHOR Color game
+  function colorGame() {
+    // const photo = document.querySelector(".photo");
+    const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
+    const colorBtns = document.querySelectorAll(".color-game__item");
+    const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
+    const pullover = photo.querySelectorAll(".pullover");
+    const beard = photo.querySelectorAll(".beard");
+
+    colorBtns.forEach((btn) => {
+      btn.addEventListener("click", changeColor);
+    });
+
+    colorBtns.forEach((btn) => {
+      btn.addEventListener("keydown", (e) => {
+        const KEYDOWN_SPACE = 32;
+        const KEYDOWN_ENTER = 13;
+        if (e.keyCode === KEYDOWN_SPACE || e.keyCode === KEYDOWN_ENTER) {
+          changeColor(e);
+        }
+      });
+    });
+
+    function getRandomNumber() {
+      return Math.floor(Math.random() * hex.length);
+    }
+
+    function changeColor(e) {
+      let hexColor = "#";
+      const HEX_COLOR_LENGTH = 6;
+      for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
+        hexColor += hex[getRandomNumber()];
+      }
+
+      const attr = e.target.getAttribute("data-name");
+      if (attr === "glasses") {
+        glassesElements.forEach(
+          (glassesEl) => (glassesEl.style.fill = hexColor)
+        );
+      } else if (attr === "pullover") {
+        pullover.forEach((el) => (el.style.fill = hexColor));
+      } else if (attr === "beard") {
+        beard.forEach((el) => (el.style.fill = hexColor));
+      } else if (attr === "grayscale") {
+        document.querySelector(".page").classList.toggle("grayscale");
+      }
+    }
+  }
 }
 
 function doodlePositionResize() {
+  console.log("doodlePositionResize() started");
+
   const photo = document.querySelector(".photo");
   const doodle = document.querySelector(".doodle");
 
@@ -567,62 +662,50 @@ function doodlePositionResize() {
   }px)`;
 }
 
-//ANCHOR Color game
-function colorGame() {
-  const photo = document.querySelector(".photo");
-  const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
-  const colorBtns = document.querySelectorAll(".color-game__item");
-  const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
-  const pullover = photo.querySelectorAll(".pullover");
-  const beard = photo.querySelectorAll(".beard");
-
-  colorBtns.forEach((btn) => {
-    btn.addEventListener("click", changeColor);
-  });
-
-  colorBtns.forEach((btn) => {
-    btn.addEventListener("keydown", (e) => {
-      const KEYDOWN_SPACE = 32;
-      const KEYDOWN_ENTER = 13;
-      if (e.keyCode === KEYDOWN_SPACE || e.keyCode === KEYDOWN_ENTER) {
-        changeColor(e);
-      }
-    });
-  });
-
-  function changeColor(e) {
-    let hexColor = "#";
-    const HEX_COLOR_LENGTH = 6;
-    for (let i = 0; i < HEX_COLOR_LENGTH; i++) {
-      hexColor += hex[randomNumber(hex.length, 0)];
-    }
-
-    const attr = e.target.getAttribute("data-name");
-    if (attr === "glasses") {
-      glassesElements.forEach((glassesEl) => (glassesEl.style.fill = hexColor));
-    } else if (attr === "pullover") {
-      pullover.forEach((el) => (el.style.fill = hexColor));
-    } else if (attr === "beard") {
-      beard.forEach((el) => (el.style.fill = hexColor));
-    } else if (attr === "grayscale") {
-      document.querySelector(".page").classList.toggle("grayscale");
-    }
-  }
-}
-
 //ANCHOR Preloader
-const preloadImages = (selector = "svg") => {
-  return new Promise((resolve) => {
-    imagesLoaded(
-      document.querySelectorAll(selector),
-      { background: true },
-      resolve
-    );
-  });
-};
+// const preloadImages = (selector = "svg") => {
+//   return new Promise((resolve) => {
+//     imagesLoaded(
+//       document.querySelectorAll(selector),
+//       { background: ".color-game__item" },
+//       resolve
+//     );
 
-preloadImages().then(() => {
-  document.body.classList.remove("loading");
-});
+//     // imagesLoaded(
+//     //   "#wrapper",
+//     //   {
+//     //     background: ".color-game__item",
+//     //   },
+//     //   function (imgLoad) {
+//     //     return imgLoad;
+//     //     // console.log(imgLoad);
+//     //   }
+//     // );
+//     // console.log(document.querySelectorAll(selector));
+//   });
+// };
+
+// preloadImages().then(() => {
+//   document.body.classList.remove("loading");
+// });
+
+// var hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
+
+// document.addEventListener(
+//   "visibilitychange",
+//   (event) => {
+//     hiddenTime = Math.min(hiddenTime, event.timeStamp);
+//   },
+//   { once: true }
+// );
+
+// new PerformanceObserver((entryList) => {
+//   entryList.getEntries().forEach((entry) => {
+//     if (entry.startTime < hiddenTime) {
+//       // This entry occurred before the page was hidden
+//       console.log(entry);
+//     }
+//   });
+// }).observe({ type: "largest-contentful-paint", buffered: true });
 
 export { homeInit, buttonFunctionality, doodlePositionResize };

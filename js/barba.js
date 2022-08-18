@@ -1,16 +1,27 @@
 import barba from "@barba/core";
-import { doodlePositionResize } from "./index";
-import { addDoorAnimationOnResize, controlHoverOnCornerButton } from "./about";
+import { homeInit, buttonFunctionality, doodlePositionResize } from "./index";
+import {
+  addDoorAnimationOnResize,
+  controlHoverOnCornerButton,
+  cornerArrowHoverEffect,
+  aboutAnimationInit,
+  pageSkillsInit,
+  contactPageInit,
+} from "./about";
+import { addCustomCursor } from "./cursor";
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
+  const timelineEnter = gsap.timeline({ duration: 0.5 });
 
-  gsap.set("#corner-button svg g g path", {
-    autoAlpha: 0,
-  });
-  const timelineEnter = gsap.timeline();
+  // gsap.set("#corner-button svg g g path", {
+  //   autoAlpha: 0,
+  // });
 
   timelineEnter
+    .set("#corner-button svg g g path", {
+      autoAlpha: 0,
+    })
     .set("#corner-button svg", {
       autoAlpha: 0,
     })
@@ -24,9 +35,10 @@ function animationEnter(container) {
       duration: 1,
 
       onComplete: () => {
-        import("./about.js").then(({ cornerArrowHoverEffect }) => {
-          cornerArrowHoverEffect();
-        });
+        // import("./about.js").then(({ cornerArrowHoverEffect }) => {
+        //   cornerArrowHoverEffect();
+        // });
+        cornerArrowHoverEffect();
 
         timelineEnter
           .to(["#corner-button svg, .contact-elements"], {
@@ -52,12 +64,11 @@ function animationEnter(container) {
 
 function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
+  const timelineLeave = gsap.timeline({ duration: 0.1 });
 
   ["mouseenter", "mousemove"].forEach((event) => {
     container.removeEventListener(event, controlHoverOnCornerButton);
   });
-
-  const timelineLeave = gsap.timeline();
 
   timelineLeave
     .set("#corner-button svg", {
@@ -111,9 +122,10 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        import("./index").then(({ homeInit }) => {
-          homeInit();
-        });
+        // import("./index").then(({ homeInit }) => {
+        //   homeInit();
+        // });
+        homeInit();
       },
     },
     {
@@ -122,9 +134,10 @@ barba.init({
         window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
-        import("./about.js").then(({ aboutAnimationInit }) => {
-          aboutAnimationInit();
-        });
+        // import("./about.js").then(({ aboutAnimationInit }) => {
+        //   aboutAnimationInit();
+        // });
+        aboutAnimationInit();
       },
     },
     {
@@ -134,9 +147,10 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        import("./about.js").then(({ pageSkillsInit }) => {
-          pageSkillsInit();
-        });
+        // import("./about.js").then(({ pageSkillsInit }) => {
+        //   pageSkillsInit();
+        // });
+        pageSkillsInit();
       },
     },
     {
@@ -145,9 +159,10 @@ barba.init({
         window.removeEventListener("resize", doodlePositionResize);
       },
       afterEnter: () => {
-        import("./about.js").then(({ contactPageInit }) => {
-          contactPageInit();
-        });
+        // import("./about.js").then(({ contactPageInit }) => {
+        //   contactPageInit();
+        // });
+        contactPageInit();
       },
     },
   ],
@@ -173,16 +188,59 @@ barba.hooks.enter(({ current, next }) => {
 
 barba.hooks.afterEnter(({ current, next }) => {
   let afterEnterPromiseAll = new Promise(function (resolve) {
-    import("./cursor").then(({ addCustomCursor }) => {
-      addCustomCursor();
-    });
+    // import("./cursor").then(({ addCustomCursor }) => {
+    //   addCustomCursor();
+    // });
+    addCustomCursor();
 
-    import("./index.js").then(({ buttonFunctionality }) => {
-      buttonFunctionality();
-    });
+    // import("./index.js").then(({ buttonFunctionality }) => {
+    //   buttonFunctionality();
+    // });
+    buttonFunctionality();
 
     resolve();
   });
 
   return afterEnterPromiseAll;
 });
+
+const preloadImages = (selector = "svg") => {
+  return new Promise((resolve) => {
+    imagesLoaded(document.querySelectorAll(selector), resolve);
+
+    // imagesLoaded(
+    //   "#wrapper",
+    //   {
+    //     background: ".color-game__item",
+    //   },
+    //   function (imgLoad) {
+    //     return imgLoad;
+    //     // console.log(imgLoad);
+    //   }
+    // );
+    // console.log(document.querySelectorAll(selector));
+  });
+};
+
+preloadImages().then(() => {
+  document.body.classList.remove("loading");
+});
+
+var hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
+
+document.addEventListener(
+  "visibilitychange",
+  (event) => {
+    hiddenTime = Math.min(hiddenTime, event.timeStamp);
+  },
+  { once: true }
+);
+
+new PerformanceObserver((entryList) => {
+  entryList.getEntries().forEach((entry) => {
+    if (entry.startTime < hiddenTime) {
+      // This entry occurred before the page was hidden
+      console.log(entry);
+    }
+  });
+}).observe({ type: "largest-contentful-paint", buffered: true });

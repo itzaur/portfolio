@@ -6,9 +6,9 @@ let mouse = {
   y: 0,
 };
 
-window.addEventListener("mousemove", function (ev) {
-  mouse = getMousePosition(ev);
-});
+// window.addEventListener("mousemove", function (ev) {
+//   mouse = getMousePosition(ev);
+// });
 
 class Cursor {
   constructor(item) {
@@ -171,6 +171,10 @@ function addCustomCursor() {
   document.querySelectorAll(".nav__link, [data-hover-star]").forEach((el) => {
     el.addEventListener("mouseenter", () => cursor.enter());
     el.addEventListener("mouseleave", () => cursor.leave());
+  });
+
+  window.addEventListener("mousemove", function (ev) {
+    mouse = getMousePosition(ev);
   });
 }
 

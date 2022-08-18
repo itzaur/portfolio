@@ -1,8 +1,8 @@
 "use strict";
 import { gsapEase, randomNumber, installMediaQueryWatcher } from "./utils";
 
-CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
-CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
+// CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
+// CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
 
 //ANCHOR Next page button animation
 let animStatusRun = false;
@@ -154,6 +154,8 @@ function vaporAnimation(items) {
 }
 
 function pageSkillsInit() {
+  console.log("pageSkillsInit() started");
+
   gsap.registerPlugin(TextPlugin);
   const btnBig = document.querySelector(".btn-big");
   const hobbiesItems = document.querySelectorAll(".hobbie");
@@ -239,7 +241,7 @@ function pageSkillsInit() {
           x: 0,
           opacity: 1,
           scale: 1,
-          ease: "cubic",
+          ease: gsapEase.back_1_7,
           clearProps: "all",
           duration: 0.2,
         },
@@ -373,7 +375,7 @@ function pageSkillsInit() {
     }
   }
 
-  const hobbiesTimeline = gsap.timeline();
+  const hobbiesTimeline = gsap.timeline({ delay: 0.5 });
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -505,6 +507,8 @@ function pageSkillsInit() {
 }
 
 function aboutAnimationInit() {
+  console.log("aboutAnimationInit() started");
+
   gsap.registerPlugin(TextPlugin);
   const btnBig = document.querySelector(".btn-big");
 
@@ -675,7 +679,7 @@ function aboutAnimationInit() {
   }
 
   //ANCHOR About-page (part1) doodle text animation
-  const aboutTimeline = gsap.timeline();
+  const aboutTimeline = gsap.timeline({ delay: 0.5 });
   aboutTimeline
     .from(btnAboutSection, {
       right: btnAboutSection.offsetWidth * -1,
@@ -1115,6 +1119,8 @@ function aboutAnimationInit() {
 
 //ANCHOR Door animation
 function addDoorAnimationOnResize() {
+  console.log("addDoorAnimationOnResize() started");
+
   const doodle = document.querySelector(".face-doodle-mobile .text-box");
   const door = document.querySelector(".story--2__door svg");
   const textIT = document.querySelectorAll(".story--2__door svg .it");
@@ -1147,13 +1153,15 @@ function addDoorAnimationOnResize() {
 }
 
 function contactPageInit() {
+  console.log("contactPageInit() started");
+
   const coffee = document.querySelector(".coffee");
   const flower = document.querySelector(".flower");
   const laptop = document.querySelector(".contact__laptop");
   const laptopDots = document.querySelector(".contact-dots");
   const laptopElements = document.querySelectorAll(".laptop-element");
 
-  const contactPageAnimationRun = gsap.timeline();
+  const contactPageAnimationRun = gsap.timeline({ delay: 0.5 });
   contactPageAnimationRun
     .from(
       ".top-nav--contact",

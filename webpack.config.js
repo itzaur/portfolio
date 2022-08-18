@@ -4,6 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
+// const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -12,58 +13,76 @@ if (process.env.NODE_ENV === "production") {
   target = "browserslist";
 }
 
-const pages = ["index", "about", "barba"];
+// const pages = ["index", "about", "barba"];
 
 module.exports = {
   mode: mode,
   target: target,
 
   devtool: "source-map",
+  // devtool: "inline-source-map",
 
-  devServer: {
-    static: {
-      directory: path.join(__dirname, "/"),
-      // publicPath: "/",
-    },
-    hot: false,
-    open: true,
-    liveReload: true,
-    compress: true,
-    devMiddleware: {
-      writeToDisk: true,
-    },
-  },
   // devtool: 'eval-cheap-source-map',
   // watch: true,
-  entry: pages.reduce((config, page) => {
-    config[page] = path.resolve(__dirname, `js/${page}.js`);
-    return config;
-  }, {}),
-  // entry: {
-  //   home: "./js/index.js",
-  //   about: "./js/about.js",
-  //   barba: "./js/barba.js",
-  // },
+  // entry: pages.reduce((config, page) => {
+  //   config[page] = path.resolve(__dirname, `js/${page}.js`);
+  //   return config;
+  // }, {}),
+  entry: {
+    // home: "./js/index.js",
+    // about: "./js/about.js",
+    main: "./js/barba.js",
+  },
   output: {
-    filename: "js/[name].bundle.js",
+    filename: "js/[name][contenthash].js",
+    // filename: "js/[name].js",
+    // chunkFilename: "js/[name].[id].js",
+    // chunkFilename: "js/chunk.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[name].[ext][query]",
     // publicPath: "/",
     clean: true,
   },
 
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "/"),
+      // directory: path.join(__dirname, "dist"),
+      // publicPath: "/",
+    },
+    hot: false,
+    open: true,
+    liveReload: true,
+    compress: true,
+    // historyApiFallback: true,
+    devMiddleware: {
+      // index: true,
+      // serverSideRender: true,
+      writeToDisk: true,
+    },
+  },
+
   optimization: {
     // runtimeChunk: "single",
+    // usedExports: true,
+    // splitChunks: {
+    //   cacheGroups: {
+    //     styles: {
+    //       name: "styles",
+    //       type: "css/mini-extract",
+    //       chunks: "all",
+    //       // enforce: true,
+    //     },
+    //   },
+    // },
     splitChunks: {
       cacheGroups: {
-        styles: {
-          name: "styles",
-          type: "css/mini-extract",
+        commons: {
+          test: /[\\/]node_modules[\\/]/,
+          name: "vendors",
           chunks: "all",
-          enforce: true,
         },
       },
-      // chunks: "all",
     },
   },
   module: {
@@ -104,13 +123,19 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
       protectWebpackAssets: false,
+      // verbose: true,
+      // cleanOnceBeforeBuildPatterns: ["**/*", "!stats.json"],
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
     }),
     new BundleAnalyzerPlugin({
-      // analyzerMode: 'static'
+      // analyzerMode: 'static',
+      // analyzerMode: process.env.STATS || "disabled",
       generateStatsFile: true,
+      // statsOptions: {
+      //   exclude: /node_modules/,
+      // },
     }),
     new HtmlWebpackPlugin({
       filename: "index.html",
@@ -128,5 +153,20 @@ module.exports = {
       filename: "contact.html",
       template: "/contact.html",
     }),
+    // new FaviconsWebpackPlugin({
+    //   logo: "img/svg/logo.svg",
+    //   // mode: "webapp",
+    //   // devMode: "webapp",
+    //   prefix: "assets/favicons/",
+    //   // cach: true,
+    //   // inject: (htmlPlugin) => {
+    //   //   return true;
+    //   // },
+    //   manifest: "./favicon/site.webmanifest",
+    //   favicons: {
+    //     background: "#fff",
+    //     theme_color: "#5bbad5",
+    //   },
+    // }),
   ],
 };
