@@ -1,5 +1,5 @@
 "use strict";
-import "../scss/main.scss";
+// import "../scss/main.scss";
 import { gsapEase } from "./utils";
 import { MagnetLogo } from "./cursor";
 // import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";

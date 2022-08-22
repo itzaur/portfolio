@@ -1,7 +1,7 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
-const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 // const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
@@ -12,7 +12,7 @@ let target = "web";
 if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
-  devtool = false;
+  // devtool = false;
 }
 
 // const pages = ["index", "about", "barba"];

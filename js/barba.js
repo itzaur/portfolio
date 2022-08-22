@@ -1,3 +1,4 @@
+import "../scss/main.scss";
 import barba from "@barba/core";
 import { homeInit, buttonFunctionality, doodlePositionResize } from "./index";
 import {
