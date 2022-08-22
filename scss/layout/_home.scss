@@ -58,8 +58,8 @@
       clip-path: polygon(0% 46.2%, 99.8% 41.7%, 99.8% 83%, 0% 67.8%);
 
       background-color: var(--clr-secondary);
-      background-image: url("../img/svg/yellow_rays.svg"),
-        url("../img/svg/yellow_dots.svg");
+      background-image: url("../img/yellow_rays.svg"),
+        url("../img/yellow_dots.svg");
       background-repeat: no-repeat, no-repeat;
       // background-size: 200%, cover;
       background-size: cover, 200%;
@@ -118,7 +118,7 @@
       clip-path: polygon(0% 69.2%, 99.9% 84.2%, 99.9% 100%, 0% 100%);
 
       background-color: var(--clr-footer);
-      background-image: url("../img/svg/dots_light_blue.svg");
+      background-image: url("../img/dots_light_blue.svg");
       background-repeat: no-repeat;
       background-position: left -2rem bottom -5rem;
       background-size: 80%;

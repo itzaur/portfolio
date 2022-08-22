@@ -38,19 +38,19 @@
     z-index: 1;
 
     &:nth-child(1) {
-      background-image: url("../img/svg/circle1.svg");
+      background-image: url("../img/circle1.svg");
     }
 
     &:nth-child(2) {
-      background-image: url("../img/svg/circle4.svg");
+      background-image: url("../img/circle4.svg");
     }
 
     &:nth-child(3) {
-      background-image: url("../img/svg/circle3.svg");
+      background-image: url("../img/circle3.svg");
     }
 
     &:nth-child(4) {
-      background-image: url("../img/svg/circle4.svg");
+      background-image: url("../img/circle4.svg");
     }
 
     @include respond-to("320->") {
@@ -85,31 +85,31 @@
 
       &[data-name="P"] {
         background-image: url("../img/glasses.svg"),
-          url("../img/svg/rectangle1.svg");
+          url("../img/rectangle1.svg");
         background-image: -webkit-image-set(url("../img/glasses.webp") 1x),
-          url("../img/svg/rectangle1.svg");
+          url("../img/rectangle1.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
           background-image: url("../img/glasses.svg"),
-            url("../img/svg/rectangle1d.svg");
+            url("../img/rectangle1d.svg");
           background-image: -webkit-image-set(url("../img/glasses.webp") 1x),
-            url("../img/svg/rectangle1d.svg");
+            url("../img/rectangle1d.svg");
           background-size: 53%, 100%;
         }
       }
 
       &[data-name="L"] {
         background-image: url("../img/pullover.svg"),
-          url("../img/svg/rectangle2.svg");
+          url("../img/rectangle2.svg");
         background-image: -webkit-image-set(url("../img/pullover.webp") 1x),
-          url("../img/svg/rectangle2.svg");
+          url("../img/rectangle2.svg");
         background-size: 25%, 70%;
 
         @media (min-width: 20em) and (max-width: 35.499em) {
           background-image: url("../img/pullover.svg"),
-            url("../img/svg/rectangle2d.svg");
+            url("../img/rectangle2d.svg");
           background-image: -webkit-image-set(url("../img/pullover.webp") 1x),
-            url("../img/svg/rectangle2d.svg");
+            url("../img/rectangle2d.svg");
           background-size: 35%, 100%;
         }
 
@@ -120,31 +120,31 @@
 
       &[data-name="A"] {
         background-image: url("../img/beard.svg"),
-          url("../img/svg/rectangle3.svg");
+          url("../img/rectangle3.svg");
         background-image: -webkit-image-set(url("../img/beard.webp") 1x),
-          url("../img/svg/rectangle3.svg");
+          url("../img/rectangle3.svg");
 
         @media (min-width: 20em) and (max-width: 35.499em) {
           background-image: url("../img/beard.svg"),
-            url("../img/svg/rectangle3d.svg");
+            url("../img/rectangle3d.svg");
           background-image: -webkit-image-set(url("../img/beard.webp") 1x),
-            url("../img/svg/rectangle3d.svg");
+            url("../img/rectangle3d.svg");
           background-size: 50%, 100%;
         }
       }
 
       &[data-name="Y"] {
         background-image: url("../img/noir.svg"),
-          url("../img/svg/rectangle4.svg");
+          url("../img/rectangle4.svg");
         background-image: -webkit-image-set(url("../img/noir.webp") 1x),
-          url("../img/svg/rectangle4.svg");
+          url("../img/rectangle4.svg");
         background-size: 25%, 70%;
 
         @media (min-width: 20em) and (max-width: 35.499em) {
           background-image: url("../img/noir.svg"),
-            url("../img/svg/rectangle4d.svg");
+            url("../img/rectangle4d.svg");
           background-image: -webkit-image-set(url("../img/noir.webp") 1x),
-            url("../img/svg/rectangle4d.svg");
+            url("../img/rectangle4d.svg");
           background-size: 35%, 100%;
         }
 

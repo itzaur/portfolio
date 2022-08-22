@@ -1,4 +1,6 @@
 import "../scss/main.scss";
+// import "../img/svg/boom_white.svg";
+
 import barba from "@barba/core";
 import { homeInit, buttonFunctionality, doodlePositionResize } from "./index";
 import {
@@ -11,6 +13,12 @@ import {
 } from "./about";
 import { addCustomCursor } from "./cursor";
 // import { timelineLetters } from "./animations";
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 
 // const btnBig = document.querySelector(".btn-big");
 
@@ -237,24 +245,26 @@ preloadImages().then(() => {
   document.body.classList.remove("loading");
 });
 
-var hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
+//ANCHOR largest-contentful-paint API
+// let hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
 
-document.addEventListener(
-  "visibilitychange",
-  (event) => {
-    hiddenTime = Math.min(hiddenTime, event.timeStamp);
-  },
-  { once: true }
-);
+// document.addEventListener(
+//   "visibilitychange",
+//   (event) => {
+//     hiddenTime = Math.min(hiddenTime, event.timeStamp);
+//   },
+//   { once: true }
+// );
 
-new PerformanceObserver((entryList) => {
-  entryList.getEntries().forEach((entry) => {
-    if (entry.startTime < hiddenTime) {
-      // This entry occurred before the page was hidden
-      console.log(entry);
-    }
-  });
-}).observe({ type: "largest-contentful-paint", buffered: true });
+// new PerformanceObserver((entryList) => {
+//   entryList.getEntries().forEach((entry) => {
+//     if (entry.startTime < hiddenTime) {
+//       // This entry occurred before the page was hidden
+//       console.log(entry);
+//     }
+//   });
+// }).observe({ type: "largest-contentful-paint", buffered: true });
+
 // window.addEventListener("DOMContentLoaded", () => {
 //   document.body.classList.add("first-load");
 

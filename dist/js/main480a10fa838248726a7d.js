@@ -1,6 +1,121 @@
 /******/ (() => { // webpackBootstrap
-/******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
+
+/***/ "./img sync .(png%7Cjpe?g%7Csvg)$":
+/*!******************************************************!*\
+  !*** ./img/ sync nonrecursive .(png%7Cjpe?g%7Csvg)$ ***!
+  \******************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+var map = {
+	"./about-bg.png": "./img/about-bg.png",
+	"./about-bg1.svg": "./img/about-bg1.svg",
+	"./about-bg2.svg": "./img/about-bg2.svg",
+	"./about-bg3.svg": "./img/about-bg3.svg",
+	"./about-doodle-1.svg": "./img/about-doodle-1.svg",
+	"./about-doodle-2.svg": "./img/about-doodle-2.svg",
+	"./about-doodle-3.svg": "./img/about-doodle-3.svg",
+	"./about-doodle-4-mobile.svg": "./img/about-doodle-4-mobile.svg",
+	"./about-doodle-4.svg": "./img/about-doodle-4.svg",
+	"./about-door.svg": "./img/about-door.svg",
+	"./about-face.svg": "./img/about-face.svg",
+	"./about-photo.png": "./img/about-photo.png",
+	"./about-rays.svg": "./img/about-rays.svg",
+	"./arrow.svg": "./img/arrow.svg",
+	"./background_blue.png": "./img/background_blue.png",
+	"./background_orange.png": "./img/background_orange.png",
+	"./background_yellow.png": "./img/background_yellow.png",
+	"./beard.svg": "./img/beard.svg",
+	"./black_dots.svg": "./img/black_dots.svg",
+	"./blue_dots.svg": "./img/blue_dots.svg",
+	"./blue_rays-dark.svg": "./img/blue_rays-dark.svg",
+	"./blue_rays.svg": "./img/blue_rays.svg",
+	"./boom.svg": "./img/boom.svg",
+	"./boom_1.png": "./img/boom_1.png",
+	"./boom_white.svg": "./img/boom_white.svg",
+	"./cat.svg": "./img/cat.svg",
+	"./cat_dots.svg": "./img/cat_dots.svg",
+	"./cat_elements.svg": "./img/cat_elements.svg",
+	"./circle1.svg": "./img/circle1.svg",
+	"./circle2.svg": "./img/circle2.svg",
+	"./circle3.svg": "./img/circle3.svg",
+	"./circle4.svg": "./img/circle4.svg",
+	"./click_1.svg": "./img/click_1.svg",
+	"./click_2.svg": "./img/click_2.svg",
+	"./click_3.svg": "./img/click_3.svg",
+	"./coffee.svg": "./img/coffee.svg",
+	"./doodle-abou1.svg": "./img/doodle-abou1.svg",
+	"./doodle-abou2.svg": "./img/doodle-abou2.svg",
+	"./doodle-about3.svg": "./img/doodle-about3.svg",
+	"./doodle.svg": "./img/doodle.svg",
+	"./dots_blue.svg": "./img/dots_blue.svg",
+	"./dots_light_blue.svg": "./img/dots_light_blue.svg",
+	"./dots_orange.svg": "./img/dots_orange.svg",
+	"./flower.svg": "./img/flower.svg",
+	"./full-laptop.svg": "./img/full-laptop.svg",
+	"./full-mail.svg": "./img/full-mail.svg",
+	"./github.svg": "./img/github.svg",
+	"./glasses.svg": "./img/glasses.svg",
+	"./gym.svg": "./img/gym.svg",
+	"./gym_dots_yellow.svg": "./img/gym_dots_yellow.svg",
+	"./gym_elements.svg": "./img/gym_elements.svg",
+	"./hands.svg": "./img/hands.svg",
+	"./hello_1.svg": "./img/hello_1.svg",
+	"./hello_2.svg": "./img/hello_2.svg",
+	"./hello_doudle.svg": "./img/hello_doudle.svg",
+	"./laptop.svg": "./img/laptop.svg",
+	"./linkedIn.svg": "./img/linkedIn.svg",
+	"./list.svg": "./img/list.svg",
+	"./logo.svg": "./img/logo.svg",
+	"./logo_yellow.svg": "./img/logo_yellow.svg",
+	"./mail-arrow.svg": "./img/mail-arrow.svg",
+	"./mail.svg": "./img/mail.svg",
+	"./man.svg": "./img/man.svg",
+	"./menu-boom.svg": "./img/menu-boom.svg",
+	"./music_cassette.svg": "./img/music_cassette.svg",
+	"./music_dots.svg": "./img/music_dots.svg",
+	"./music_elements.svg": "./img/music_elements.svg",
+	"./noir.svg": "./img/noir.svg",
+	"./orange_dots.svg": "./img/orange_dots.svg",
+	"./pen and paper.svg": "./img/pen and paper.svg",
+	"./pullover.svg": "./img/pullover.svg",
+	"./rectangle1.svg": "./img/rectangle1.svg",
+	"./rectangle1d.svg": "./img/rectangle1d.svg",
+	"./rectangle2.svg": "./img/rectangle2.svg",
+	"./rectangle2d.svg": "./img/rectangle2d.svg",
+	"./rectangle3.svg": "./img/rectangle3.svg",
+	"./rectangle3d.svg": "./img/rectangle3d.svg",
+	"./rectangle4.svg": "./img/rectangle4.svg",
+	"./rectangle4d.svg": "./img/rectangle4d.svg",
+	"./skills__bg.svg": "./img/skills__bg.svg",
+	"./star.svg": "./img/star.svg",
+	"./star_transparent.svg": "./img/star_transparent.svg",
+	"./white_dots.svg": "./img/white_dots.svg",
+	"./yellow_dots.svg": "./img/yellow_dots.svg",
+	"./yellow_rays.svg": "./img/yellow_rays.svg"
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = "./img sync .(png%7Cjpe?g%7Csvg)$";
+
+/***/ }),
 
 /***/ "./js/about.js":
 /*!*********************!*\
@@ -8,6 +123,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "aboutAnimationInit": () => (/* binding */ aboutAnimationInit),
@@ -1122,6 +1238,7 @@ function contactPageInit() {
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_main_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/main.scss */ "./scss/main.scss");
 /* harmony import */ var _barba_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @barba/core */ "./node_modules/@barba/core/dist/barba.umd.js");
@@ -1129,12 +1246,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _index__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./index */ "./js/index.js");
 /* harmony import */ var _about__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./about */ "./js/about.js");
 /* harmony import */ var _cursor__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./cursor */ "./js/cursor.js");
+ // import "../img/svg/boom_white.svg";
 
 
 
 
  // import { timelineLetters } from "./animations";
-// const btnBig = document.querySelector(".btn-big");
+
+function importAll(r) {
+  return r.keys().map(r);
+}
+
+var images = importAll(__webpack_require__("./img sync .(png%7Cjpe?g%7Csvg)$")); // const btnBig = document.querySelector(".btn-big");
 
 function animationEnter(container) {
   var cornerBox = container.querySelector("#wrapper__corner-box");
@@ -1326,24 +1449,24 @@ var preloadImages = function preloadImages() {
 
 preloadImages().then(function () {
   document.body.classList.remove("loading");
-});
-var hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
-document.addEventListener("visibilitychange", function (event) {
-  hiddenTime = Math.min(hiddenTime, event.timeStamp);
-}, {
-  once: true
-});
-new PerformanceObserver(function (entryList) {
-  entryList.getEntries().forEach(function (entry) {
-    if (entry.startTime < hiddenTime) {
-      // This entry occurred before the page was hidden
-      console.log(entry);
-    }
-  });
-}).observe({
-  type: "largest-contentful-paint",
-  buffered: true
-}); // window.addEventListener("DOMContentLoaded", () => {
+}); //ANCHOR largest-contentful-paint API
+// let hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
+// document.addEventListener(
+//   "visibilitychange",
+//   (event) => {
+//     hiddenTime = Math.min(hiddenTime, event.timeStamp);
+//   },
+//   { once: true }
+// );
+// new PerformanceObserver((entryList) => {
+//   entryList.getEntries().forEach((entry) => {
+//     if (entry.startTime < hiddenTime) {
+//       // This entry occurred before the page was hidden
+//       console.log(entry);
+//     }
+//   });
+// }).observe({ type: "largest-contentful-paint", buffered: true });
+// window.addEventListener("DOMContentLoaded", () => {
 //   document.body.classList.add("first-load");
 //   transitionCheckupOutside();
 //   transitionCheckupInside();
@@ -1583,6 +1706,7 @@ new PerformanceObserver(function (entryList) {
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "MagnetLogo": () => (/* binding */ MagnetLogo),
@@ -1834,6 +1958,7 @@ function addCustomCursor() {
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "buttonFunctionality": () => (/* binding */ buttonFunctionality),
@@ -2415,6 +2540,7 @@ function doodlePositionResize() {
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "distance": () => (/* binding */ distance),
@@ -2478,9 +2604,945 @@ var getMousePosition = function getMousePosition(e) {
   \************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
+"use strict";
 __webpack_require__.r(__webpack_exports__);
 // extracted by mini-css-extract-plugin
 
+
+/***/ }),
+
+/***/ "./img/about-bg.png":
+/*!**************************!*\
+  !*** ./img/about-bg.png ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-bg..png";
+
+/***/ }),
+
+/***/ "./img/about-bg1.svg":
+/*!***************************!*\
+  !*** ./img/about-bg1.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-bg1..svg";
+
+/***/ }),
+
+/***/ "./img/about-bg2.svg":
+/*!***************************!*\
+  !*** ./img/about-bg2.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-bg2..svg";
+
+/***/ }),
+
+/***/ "./img/about-bg3.svg":
+/*!***************************!*\
+  !*** ./img/about-bg3.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-bg3..svg";
+
+/***/ }),
+
+/***/ "./img/about-doodle-1.svg":
+/*!********************************!*\
+  !*** ./img/about-doodle-1.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-doodle-1..svg";
+
+/***/ }),
+
+/***/ "./img/about-doodle-2.svg":
+/*!********************************!*\
+  !*** ./img/about-doodle-2.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-doodle-2..svg";
+
+/***/ }),
+
+/***/ "./img/about-doodle-3.svg":
+/*!********************************!*\
+  !*** ./img/about-doodle-3.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-doodle-3..svg";
+
+/***/ }),
+
+/***/ "./img/about-doodle-4-mobile.svg":
+/*!***************************************!*\
+  !*** ./img/about-doodle-4-mobile.svg ***!
+  \***************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-doodle-4-mobile..svg";
+
+/***/ }),
+
+/***/ "./img/about-doodle-4.svg":
+/*!********************************!*\
+  !*** ./img/about-doodle-4.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-doodle-4..svg";
+
+/***/ }),
+
+/***/ "./img/about-door.svg":
+/*!****************************!*\
+  !*** ./img/about-door.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-door..svg";
+
+/***/ }),
+
+/***/ "./img/about-face.svg":
+/*!****************************!*\
+  !*** ./img/about-face.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-face..svg";
+
+/***/ }),
+
+/***/ "./img/about-photo.png":
+/*!*****************************!*\
+  !*** ./img/about-photo.png ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-photo..png";
+
+/***/ }),
+
+/***/ "./img/about-rays.svg":
+/*!****************************!*\
+  !*** ./img/about-rays.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/about-rays..svg";
+
+/***/ }),
+
+/***/ "./img/arrow.svg":
+/*!***********************!*\
+  !*** ./img/arrow.svg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/arrow..svg";
+
+/***/ }),
+
+/***/ "./img/background_blue.png":
+/*!*********************************!*\
+  !*** ./img/background_blue.png ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/background_blue..png";
+
+/***/ }),
+
+/***/ "./img/background_orange.png":
+/*!***********************************!*\
+  !*** ./img/background_orange.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/background_orange..png";
+
+/***/ }),
+
+/***/ "./img/background_yellow.png":
+/*!***********************************!*\
+  !*** ./img/background_yellow.png ***!
+  \***********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/background_yellow..png";
+
+/***/ }),
+
+/***/ "./img/beard.svg":
+/*!***********************!*\
+  !*** ./img/beard.svg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/beard..svg";
+
+/***/ }),
+
+/***/ "./img/black_dots.svg":
+/*!****************************!*\
+  !*** ./img/black_dots.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/black_dots..svg";
+
+/***/ }),
+
+/***/ "./img/blue_dots.svg":
+/*!***************************!*\
+  !*** ./img/blue_dots.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/blue_dots..svg";
+
+/***/ }),
+
+/***/ "./img/blue_rays-dark.svg":
+/*!********************************!*\
+  !*** ./img/blue_rays-dark.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/blue_rays-dark..svg";
+
+/***/ }),
+
+/***/ "./img/blue_rays.svg":
+/*!***************************!*\
+  !*** ./img/blue_rays.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/blue_rays..svg";
+
+/***/ }),
+
+/***/ "./img/boom.svg":
+/*!**********************!*\
+  !*** ./img/boom.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/boom..svg";
+
+/***/ }),
+
+/***/ "./img/boom_1.png":
+/*!************************!*\
+  !*** ./img/boom_1.png ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/boom_1..png";
+
+/***/ }),
+
+/***/ "./img/boom_white.svg":
+/*!****************************!*\
+  !*** ./img/boom_white.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/boom_white..svg";
+
+/***/ }),
+
+/***/ "./img/cat.svg":
+/*!*********************!*\
+  !*** ./img/cat.svg ***!
+  \*********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cat..svg";
+
+/***/ }),
+
+/***/ "./img/cat_dots.svg":
+/*!**************************!*\
+  !*** ./img/cat_dots.svg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cat_dots..svg";
+
+/***/ }),
+
+/***/ "./img/cat_elements.svg":
+/*!******************************!*\
+  !*** ./img/cat_elements.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/cat_elements..svg";
+
+/***/ }),
+
+/***/ "./img/circle1.svg":
+/*!*************************!*\
+  !*** ./img/circle1.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/circle1..svg";
+
+/***/ }),
+
+/***/ "./img/circle2.svg":
+/*!*************************!*\
+  !*** ./img/circle2.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/circle2..svg";
+
+/***/ }),
+
+/***/ "./img/circle3.svg":
+/*!*************************!*\
+  !*** ./img/circle3.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/circle3..svg";
+
+/***/ }),
+
+/***/ "./img/circle4.svg":
+/*!*************************!*\
+  !*** ./img/circle4.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/circle4..svg";
+
+/***/ }),
+
+/***/ "./img/click_1.svg":
+/*!*************************!*\
+  !*** ./img/click_1.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/click_1..svg";
+
+/***/ }),
+
+/***/ "./img/click_2.svg":
+/*!*************************!*\
+  !*** ./img/click_2.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/click_2..svg";
+
+/***/ }),
+
+/***/ "./img/click_3.svg":
+/*!*************************!*\
+  !*** ./img/click_3.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/click_3..svg";
+
+/***/ }),
+
+/***/ "./img/coffee.svg":
+/*!************************!*\
+  !*** ./img/coffee.svg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/coffee..svg";
+
+/***/ }),
+
+/***/ "./img/doodle-abou1.svg":
+/*!******************************!*\
+  !*** ./img/doodle-abou1.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/doodle-abou1..svg";
+
+/***/ }),
+
+/***/ "./img/doodle-abou2.svg":
+/*!******************************!*\
+  !*** ./img/doodle-abou2.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/doodle-abou2..svg";
+
+/***/ }),
+
+/***/ "./img/doodle-about3.svg":
+/*!*******************************!*\
+  !*** ./img/doodle-about3.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/doodle-about3..svg";
+
+/***/ }),
+
+/***/ "./img/doodle.svg":
+/*!************************!*\
+  !*** ./img/doodle.svg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/doodle..svg";
+
+/***/ }),
+
+/***/ "./img/dots_blue.svg":
+/*!***************************!*\
+  !*** ./img/dots_blue.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/dots_blue..svg";
+
+/***/ }),
+
+/***/ "./img/dots_light_blue.svg":
+/*!*********************************!*\
+  !*** ./img/dots_light_blue.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/dots_light_blue..svg";
+
+/***/ }),
+
+/***/ "./img/dots_orange.svg":
+/*!*****************************!*\
+  !*** ./img/dots_orange.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/dots_orange..svg";
+
+/***/ }),
+
+/***/ "./img/flower.svg":
+/*!************************!*\
+  !*** ./img/flower.svg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/flower..svg";
+
+/***/ }),
+
+/***/ "./img/full-laptop.svg":
+/*!*****************************!*\
+  !*** ./img/full-laptop.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/full-laptop..svg";
+
+/***/ }),
+
+/***/ "./img/full-mail.svg":
+/*!***************************!*\
+  !*** ./img/full-mail.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/full-mail..svg";
+
+/***/ }),
+
+/***/ "./img/github.svg":
+/*!************************!*\
+  !*** ./img/github.svg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/github..svg";
+
+/***/ }),
+
+/***/ "./img/glasses.svg":
+/*!*************************!*\
+  !*** ./img/glasses.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/glasses..svg";
+
+/***/ }),
+
+/***/ "./img/gym.svg":
+/*!*********************!*\
+  !*** ./img/gym.svg ***!
+  \*********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/gym..svg";
+
+/***/ }),
+
+/***/ "./img/gym_dots_yellow.svg":
+/*!*********************************!*\
+  !*** ./img/gym_dots_yellow.svg ***!
+  \*********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/gym_dots_yellow..svg";
+
+/***/ }),
+
+/***/ "./img/gym_elements.svg":
+/*!******************************!*\
+  !*** ./img/gym_elements.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/gym_elements..svg";
+
+/***/ }),
+
+/***/ "./img/hands.svg":
+/*!***********************!*\
+  !*** ./img/hands.svg ***!
+  \***********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/hands..svg";
+
+/***/ }),
+
+/***/ "./img/hello_1.svg":
+/*!*************************!*\
+  !*** ./img/hello_1.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/hello_1..svg";
+
+/***/ }),
+
+/***/ "./img/hello_2.svg":
+/*!*************************!*\
+  !*** ./img/hello_2.svg ***!
+  \*************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/hello_2..svg";
+
+/***/ }),
+
+/***/ "./img/hello_doudle.svg":
+/*!******************************!*\
+  !*** ./img/hello_doudle.svg ***!
+  \******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/hello_doudle..svg";
+
+/***/ }),
+
+/***/ "./img/laptop.svg":
+/*!************************!*\
+  !*** ./img/laptop.svg ***!
+  \************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/laptop..svg";
+
+/***/ }),
+
+/***/ "./img/linkedIn.svg":
+/*!**************************!*\
+  !*** ./img/linkedIn.svg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/linkedIn..svg";
+
+/***/ }),
+
+/***/ "./img/list.svg":
+/*!**********************!*\
+  !*** ./img/list.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/list..svg";
+
+/***/ }),
+
+/***/ "./img/logo.svg":
+/*!**********************!*\
+  !*** ./img/logo.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/logo..svg";
+
+/***/ }),
+
+/***/ "./img/logo_yellow.svg":
+/*!*****************************!*\
+  !*** ./img/logo_yellow.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/logo_yellow..svg";
+
+/***/ }),
+
+/***/ "./img/mail-arrow.svg":
+/*!****************************!*\
+  !*** ./img/mail-arrow.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/mail-arrow..svg";
+
+/***/ }),
+
+/***/ "./img/mail.svg":
+/*!**********************!*\
+  !*** ./img/mail.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/mail..svg";
+
+/***/ }),
+
+/***/ "./img/man.svg":
+/*!*********************!*\
+  !*** ./img/man.svg ***!
+  \*********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/man..svg";
+
+/***/ }),
+
+/***/ "./img/menu-boom.svg":
+/*!***************************!*\
+  !*** ./img/menu-boom.svg ***!
+  \***************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/menu-boom..svg";
+
+/***/ }),
+
+/***/ "./img/music_cassette.svg":
+/*!********************************!*\
+  !*** ./img/music_cassette.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/music_cassette..svg";
+
+/***/ }),
+
+/***/ "./img/music_dots.svg":
+/*!****************************!*\
+  !*** ./img/music_dots.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/music_dots..svg";
+
+/***/ }),
+
+/***/ "./img/music_elements.svg":
+/*!********************************!*\
+  !*** ./img/music_elements.svg ***!
+  \********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/music_elements..svg";
+
+/***/ }),
+
+/***/ "./img/noir.svg":
+/*!**********************!*\
+  !*** ./img/noir.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/noir..svg";
+
+/***/ }),
+
+/***/ "./img/orange_dots.svg":
+/*!*****************************!*\
+  !*** ./img/orange_dots.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/orange_dots..svg";
+
+/***/ }),
+
+/***/ "./img/pen and paper.svg":
+/*!*******************************!*\
+  !*** ./img/pen and paper.svg ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/pen and paper..svg";
+
+/***/ }),
+
+/***/ "./img/pullover.svg":
+/*!**************************!*\
+  !*** ./img/pullover.svg ***!
+  \**************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/pullover..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle1.svg":
+/*!****************************!*\
+  !*** ./img/rectangle1.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle1..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle1d.svg":
+/*!*****************************!*\
+  !*** ./img/rectangle1d.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle1d..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle2.svg":
+/*!****************************!*\
+  !*** ./img/rectangle2.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle2..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle2d.svg":
+/*!*****************************!*\
+  !*** ./img/rectangle2d.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle2d..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle3.svg":
+/*!****************************!*\
+  !*** ./img/rectangle3.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle3..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle3d.svg":
+/*!*****************************!*\
+  !*** ./img/rectangle3d.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle3d..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle4.svg":
+/*!****************************!*\
+  !*** ./img/rectangle4.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle4..svg";
+
+/***/ }),
+
+/***/ "./img/rectangle4d.svg":
+/*!*****************************!*\
+  !*** ./img/rectangle4d.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/rectangle4d..svg";
+
+/***/ }),
+
+/***/ "./img/skills__bg.svg":
+/*!****************************!*\
+  !*** ./img/skills__bg.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/skills__bg..svg";
+
+/***/ }),
+
+/***/ "./img/star.svg":
+/*!**********************!*\
+  !*** ./img/star.svg ***!
+  \**********************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/star..svg";
+
+/***/ }),
+
+/***/ "./img/star_transparent.svg":
+/*!**********************************!*\
+  !*** ./img/star_transparent.svg ***!
+  \**********************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/star_transparent..svg";
+
+/***/ }),
+
+/***/ "./img/white_dots.svg":
+/*!****************************!*\
+  !*** ./img/white_dots.svg ***!
+  \****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/white_dots..svg";
+
+/***/ }),
+
+/***/ "./img/yellow_dots.svg":
+/*!*****************************!*\
+  !*** ./img/yellow_dots.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/yellow_dots..svg";
+
+/***/ }),
+
+/***/ "./img/yellow_rays.svg":
+/*!*****************************!*\
+  !*** ./img/yellow_rays.svg ***!
+  \*****************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/yellow_rays..svg";
 
 /***/ })
 
@@ -2572,7 +3634,19 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("d4df876100e48b3584f7")
+/******/ 		__webpack_require__.h = () => ("297b83008cbea1f3e3da")
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
@@ -2589,6 +3663,26 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 			}
 /******/ 			Object.defineProperty(exports, '__esModule', { value: true });
 /******/ 		};
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl + "../";
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/jsonp chunk loading */
@@ -2655,4 +3749,4 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main32ff3997b5bafdd061af.js.map
+//# sourceMappingURL=main480a10fa838248726a7d.js.map

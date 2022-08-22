@@ -43,13 +43,13 @@ module.exports = {
     // chunkFilename: "js/chunk.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[name].[ext][query]",
-    // publicPath: "/",
+    // publicPath: ".",
     clean: true,
   },
 
   devServer: {
     static: {
-      directory: path.join(__dirname, "./"),
+      directory: path.join(__dirname, "/"),
       // directory: path.join(__dirname, "dist"),
       // publicPath: "/",
     },
@@ -113,6 +113,9 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp)$/i,
         type: "asset/resource",
+        // generator: {
+        //   filename: "images/[name]-[hash][ext]",
+        // },
       },
       {
         test: /\.(eot|woff|woff2|ttf|otf)$/,

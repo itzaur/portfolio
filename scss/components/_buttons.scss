@@ -166,7 +166,7 @@
     aspect-ratio: 1;
 
     background-color: transparent;
-    background-image: url("../img/svg/circle4.svg");
+    background-image: url("../img/circle4.svg");
     background-repeat: no-repeat;
 
     border: none;
@@ -182,7 +182,7 @@
   border: 0;
   border-radius: 50%;
 
-  background-image: url("../img/svg/circle1.svg");
+  background-image: url("../img/circle1.svg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -191,7 +191,7 @@
   transform: scale(1);
 
   &.active {
-    background-image: url("../img/svg/circle4.svg");
+    background-image: url("../img/circle4.svg");
     transform: scale(1.4);
   }
 }

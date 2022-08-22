@@ -448,7 +448,7 @@ select {
   width: 4rem;
   aspect-ratio: 1;
   background-color: transparent;
-  background-image: url("../img/svg/circle4.svg");
+  background-image: url("../img/circle4.svg");
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -459,14 +459,14 @@ select {
   height: 1.8rem;
   border: 0;
   border-radius: 50%;
-  background-image: url("../img/svg/circle1.svg");
+  background-image: url("../img/circle1.svg");
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
   transform: scale(1);
 }
 .about-dot.active {
-  background-image: url("../img/svg/circle4.svg");
+  background-image: url("../img/circle4.svg");
   transform: scale(1.4);
 }
 
@@ -1203,16 +1203,16 @@ select {
   z-index: 1;
 }
 .color-game > *:nth-child(1) {
-  background-image: url("../img/svg/circle1.svg");
+  background-image: url("../img/circle1.svg");
 }
 .color-game > *:nth-child(2) {
-  background-image: url("../img/svg/circle4.svg");
+  background-image: url("../img/circle4.svg");
 }
 .color-game > *:nth-child(3) {
-  background-image: url("../img/svg/circle3.svg");
+  background-image: url("../img/circle3.svg");
 }
 .color-game > *:nth-child(4) {
-  background-image: url("../img/svg/circle4.svg");
+  background-image: url("../img/circle4.svg");
 }
 @media (min-width: 20em) {
   .color-game > * {
@@ -1246,25 +1246,25 @@ select {
   transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 .color-game__item div[data-name=P] {
-  background-image: url("../img/glasses.svg"), url("../img/svg/rectangle1.svg");
-  background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/svg/rectangle1.svg");
+  background-image: url("../img/glasses.svg"), url("../img/rectangle1.svg");
+  background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/rectangle1.svg");
 }
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name=P] {
-    background-image: url("../img/glasses.svg"), url("../img/svg/rectangle1d.svg");
-    background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/svg/rectangle1d.svg");
+    background-image: url("../img/glasses.svg"), url("../img/rectangle1d.svg");
+    background-image: -webkit-image-set(url("../img/glasses.webp") 1x), url("../img/rectangle1d.svg");
     background-size: 53%, 100%;
   }
 }
 .color-game__item div[data-name=L] {
-  background-image: url("../img/pullover.svg"), url("../img/svg/rectangle2.svg");
-  background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/svg/rectangle2.svg");
+  background-image: url("../img/pullover.svg"), url("../img/rectangle2.svg");
+  background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/rectangle2.svg");
   background-size: 25%, 70%;
 }
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name=L] {
-    background-image: url("../img/pullover.svg"), url("../img/svg/rectangle2d.svg");
-    background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/svg/rectangle2d.svg");
+    background-image: url("../img/pullover.svg"), url("../img/rectangle2d.svg");
+    background-image: -webkit-image-set(url("../img/pullover.webp") 1x), url("../img/rectangle2d.svg");
     background-size: 35%, 100%;
   }
 }
@@ -1274,25 +1274,25 @@ select {
   }
 }
 .color-game__item div[data-name=A] {
-  background-image: url("../img/beard.svg"), url("../img/svg/rectangle3.svg");
-  background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/svg/rectangle3.svg");
+  background-image: url("../img/beard.svg"), url("../img/rectangle3.svg");
+  background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/rectangle3.svg");
 }
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name=A] {
-    background-image: url("../img/beard.svg"), url("../img/svg/rectangle3d.svg");
-    background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/svg/rectangle3d.svg");
+    background-image: url("../img/beard.svg"), url("../img/rectangle3d.svg");
+    background-image: -webkit-image-set(url("../img/beard.webp") 1x), url("../img/rectangle3d.svg");
     background-size: 50%, 100%;
   }
 }
 .color-game__item div[data-name=Y] {
-  background-image: url("../img/noir.svg"), url("../img/svg/rectangle4.svg");
-  background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/svg/rectangle4.svg");
+  background-image: url("../img/noir.svg"), url("../img/rectangle4.svg");
+  background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/rectangle4.svg");
   background-size: 25%, 70%;
 }
 @media (min-width: 20em) and (max-width: 35.499em) {
   .color-game__item div[data-name=Y] {
-    background-image: url("../img/noir.svg"), url("../img/svg/rectangle4d.svg");
-    background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/svg/rectangle4d.svg");
+    background-image: url("../img/noir.svg"), url("../img/rectangle4d.svg");
+    background-image: -webkit-image-set(url("../img/noir.webp") 1x), url("../img/rectangle4d.svg");
     background-size: 35%, 100%;
   }
 }
@@ -1423,7 +1423,7 @@ select {
   -webkit-clip-path: polygon(0% 46.2%, 99.8% 41.7%, 99.8% 83%, 0% 67.8%);
           clip-path: polygon(0% 46.2%, 99.8% 41.7%, 99.8% 83%, 0% 67.8%);
   background-color: var(--clr-secondary);
-  background-image: url("../img/svg/yellow_rays.svg"), url("../img/svg/yellow_dots.svg");
+  background-image: url("../img/yellow_rays.svg"), url("../img/yellow_dots.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: cover, 200%;
   background-position: top 14rem left -15rem;
@@ -1477,7 +1477,7 @@ select {
   -webkit-clip-path: polygon(0% 69.2%, 99.9% 84.2%, 99.9% 100%, 0% 100%);
           clip-path: polygon(0% 69.2%, 99.9% 84.2%, 99.9% 100%, 0% 100%);
   background-color: var(--clr-footer);
-  background-image: url("../img/svg/dots_light_blue.svg");
+  background-image: url("../img/dots_light_blue.svg");
   background-repeat: no-repeat;
   background-position: left -2rem bottom -5rem;
   background-size: 80%;
@@ -1910,7 +1910,7 @@ select {
   border: 1px solid HSL(var(--primary-hs) 0%);
   overflow: hidden;
   background: var(--clr-bg);
-  background-image: url("../img/about-bg.png"), url("../img/svg/about-rays.svg");
+  background-image: url("../img/about-bg.png"), url("../img/about-rays.svg");
   background-repeat: no-repeat;
   background-size: 100%, cover;
   background-position: bottom 0px left 65%;
@@ -2155,7 +2155,7 @@ select {
 }
 .story--2__bg1 {
   height: 50%;
-  background-image: url("../img/svg/yellow_rays.svg");
+  background-image: url("../img/yellow_rays.svg");
   background-repeat: no-repeat;
   background-size: 400%;
   background-position: center;
@@ -2227,7 +2227,7 @@ select {
   gap: var(--gap, 1rem);
   width: 100%;
   height: 100%;
-  background-image: url("../img/svg/dots_orange.svg");
+  background-image: url("../img/dots_orange.svg");
   background-repeat: no-repeat;
   background-position: bottom -6rem left -4rem;
 }
@@ -2537,7 +2537,7 @@ select {
   position: absolute;
   width: 100%;
   height: 100%;
-  background-image: url("../img/svg/skills__bg.svg");
+  background-image: url("../img/skills__bg.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
