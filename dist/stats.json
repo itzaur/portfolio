@@ -1,14 +1,14 @@
 {
-  "hash": "2b3d0fadfe1c9cdc456f",
+  "hash": "dc1fc32472f796915765",
   "version": "5.74.0",
-  "time": 10626,
-  "builtAt": 1661198271533,
+  "time": 13501,
+  "builtAt": 1661200810476,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/main18acdc65975f74d5d4b7.js"
+      "js/mainb0191fefabc3213d9542.js"
     ],
     "vendors": [
       "js/vendorsab36d2c239a8c5173273.js"
@@ -42,12 +42,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 539789,
+      "size": 539630,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 539789
+        "size": 539630
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -85,12 +85,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 294329,
+      "size": 294101,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 294329
+        "size": 294101
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -128,12 +128,12 @@
     {
       "type": "asset",
       "name": "skills.html",
-      "size": 254009,
+      "size": 253402,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 254009
+        "size": 253402
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -278,12 +278,12 @@
     {
       "type": "asset",
       "name": "about.html",
-      "size": 207581,
+      "size": 207322,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 207581
+        "size": 207322
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -392,17 +392,17 @@
     },
     {
       "type": "asset",
-      "name": "js/main18acdc65975f74d5d4b7.js",
+      "name": "js/mainb0191fefabc3213d9542.js",
       "size": 118168,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "18acdc65975f74d5d4b7",
+        "contenthash": "b0191fefabc3213d9542",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "js/main18acdc65975f74d5d4b7.js.map"
+          "sourceMap": "js/mainb0191fefabc3213d9542.js.map"
         },
         "size": 118168
       },
@@ -416,7 +416,7 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/main18acdc65975f74d5d4b7.js.map",
+          "name": "js/mainb0191fefabc3213d9542.js.map",
           "size": 159013,
           "emitted": true,
           "comparedForEmit": false,
@@ -2440,7 +2440,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/main18acdc65975f74d5d4b7.js"
+        "js/mainb0191fefabc3213d9542.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2534,9 +2534,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/main18acdc65975f74d5d4b7.js.map"
+        "js/mainb0191fefabc3213d9542.js.map"
       ],
-      "hash": "efda748a515ca496b52a",
+      "hash": "6f3b5274a0cde44a84ea",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -25377,7 +25377,7 @@
           "size": 95024
         },
         {
-          "name": "js/main18acdc65975f74d5d4b7.js",
+          "name": "js/mainb0191fefabc3213d9542.js",
           "size": 118168
         }
       ],
@@ -25749,7 +25749,7 @@
           "size": 25997
         },
         {
-          "name": "js/main18acdc65975f74d5d4b7.js.map",
+          "name": "js/mainb0191fefabc3213d9542.js.map",
           "size": 159013
         },
         {
@@ -25781,7 +25781,7 @@
           "size": 95024
         },
         {
-          "name": "js/main18acdc65975f74d5d4b7.js",
+          "name": "js/mainb0191fefabc3213d9542.js",
           "size": 118168
         }
       ],
@@ -26153,7 +26153,7 @@
           "size": 25997
         },
         {
-          "name": "js/main18acdc65975f74d5d4b7.js.map",
+          "name": "js/mainb0191fefabc3213d9542.js.map",
           "size": 159013
         },
         {
@@ -26175,10 +26175,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "98b485f940180db32779",
+      "hash": "10b02966286937246d19",
       "version": "5.74.0",
-      "time": 5065,
-      "builtAt": 1661198266015,
+      "time": 6048,
+      "builtAt": 1661200803074,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -26189,9 +26189,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 548917,
+          "size": 548750,
           "sizes": {
-            "javascript": 548183,
+            "javascript": 548016,
             "runtime": 734
           },
           "names": [
@@ -26203,7 +26203,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "7327b89133646c74b557",
+          "hash": "52dfcc3e588e7e42dc97",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_0-0",
           "siblings": [],
@@ -26214,9 +26214,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 548106,
+              "size": 547939,
               "sizes": {
-                "javascript": 548106
+                "javascript": 547939
               },
               "built": true,
               "codeGenerated": true,
@@ -26563,9 +26563,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 210634,
+          "size": 210363,
           "sizes": {
-            "javascript": 209900,
+            "javascript": 209629,
             "runtime": 734
           },
           "names": [
@@ -26577,7 +26577,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "5ff9ed49fcc748de8707",
+          "hash": "b354398cb4b125ab9d20",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_1-0",
           "siblings": [],
@@ -26588,9 +26588,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 209823,
+              "size": 209552,
               "sizes": {
-                "javascript": 209823
+                "javascript": 209552
               },
               "built": true,
               "codeGenerated": true,
@@ -26937,9 +26937,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 257719,
+          "size": 257088,
           "sizes": {
-            "javascript": 256985,
+            "javascript": 256354,
             "runtime": 734
           },
           "names": [
@@ -26951,7 +26951,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "e5c76b19be280b63a76e",
+          "hash": "91ee375b0bbf7e16de34",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_2-0",
           "siblings": [],
@@ -26962,9 +26962,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 256908,
+              "size": 256277,
               "sizes": {
-                "javascript": 256908
+                "javascript": 256277
               },
               "built": true,
               "codeGenerated": true,
@@ -27311,9 +27311,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298893,
+          "size": 298653,
           "sizes": {
-            "javascript": 298159,
+            "javascript": 297919,
             "runtime": 734
           },
           "names": [
@@ -27325,7 +27325,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "2ac0bf48eac91bb11214",
+          "hash": "cce78daab13823f5beea",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_3-0",
           "siblings": [],
@@ -27336,9 +27336,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 298082,
+              "size": 297842,
               "sizes": {
-                "javascript": 298082
+                "javascript": 297842
               },
               "built": true,
               "codeGenerated": true,
@@ -27786,9 +27786,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 548106,
+          "size": 547939,
           "sizes": {
-            "javascript": 548106
+            "javascript": 547939
           },
           "built": true,
           "codeGenerated": true,
@@ -27870,9 +27870,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 209823,
+          "size": 209552,
           "sizes": {
-            "javascript": 209823
+            "javascript": 209552
           },
           "built": true,
           "codeGenerated": true,
@@ -27954,9 +27954,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 256908,
+          "size": 256277,
           "sizes": {
-            "javascript": 256908
+            "javascript": 256277
           },
           "built": true,
           "codeGenerated": true,
@@ -28038,9 +28038,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 298082,
+          "size": 297842,
           "sizes": {
-            "javascript": 298082
+            "javascript": 297842
           },
           "built": true,
           "codeGenerated": true,
