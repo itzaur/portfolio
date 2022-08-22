@@ -8,9 +8,11 @@ const BundleAnalyzerPlugin =
 
 let mode = "development";
 let target = "web";
+let devtool = "source-map";
 if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
+  devtool = false;
 }
 
 // const pages = ["index", "about", "barba"];
@@ -19,7 +21,8 @@ module.exports = {
   mode: mode,
   target: target,
 
-  devtool: "source-map",
+  devtool: devtool,
+  // devtool: "source-map",
   // devtool: "inline-source-map",
 
   // devtool: 'eval-cheap-source-map',
@@ -100,6 +103,7 @@ module.exports = {
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
+          // mode === "development" ? "style-loader" : MiniCssExtractPlugin.loader,
           MiniCssExtractPlugin.loader,
           "css-loader",
           "sass-loader",

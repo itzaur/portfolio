@@ -1,17 +1,17 @@
 {
-  "hash": "74050942767e09aed21a",
+  "hash": "99dae4945bb2beeccde0",
   "version": "5.74.0",
-  "time": 6012,
-  "builtAt": 1660847023020,
+  "time": 6667,
+  "builtAt": 1661165095051,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/main022507963369a0773449.js"
+      "js/main6c0c9596a488ac851423.js"
     ],
     "vendors": [
-      "js/vendors1bf5425334865c5870a6.js"
+      "js/vendors31a9da8afa46db988970.js"
     ]
   },
   "assets": [
@@ -77,12 +77,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 243240,
+      "size": 243210,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 243240
+        "size": 243210
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -194,15 +194,12 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 53844,
+      "size": 53808,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "related": {
-          "sourceMap": "css/main.css.map"
-        },
-        "size": 53844
+        "size": 53808
       },
       "chunkNames": [
         "main"
@@ -210,33 +207,7 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 0,
-      "related": [
-        {
-          "type": "sourceMap",
-          "name": "css/main.css.map",
-          "size": 90251,
-          "emitted": true,
-          "comparedForEmit": false,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 90251
-          },
-          "chunkNames": [],
-          "chunkIdHints": [],
-          "auxiliaryChunkNames": [
-            "main"
-          ],
-          "auxiliaryChunkIdHints": [],
-          "related": {},
-          "chunks": [],
-          "auxiliaryChunks": [
-            179
-          ],
-          "isOverSizeLimit": false
-        }
-      ],
+      "related": {},
       "chunks": [
         179
       ],
@@ -265,20 +236,17 @@
     },
     {
       "type": "asset",
-      "name": "js/main022507963369a0773449.js",
-      "size": 32602,
+      "name": "js/main6c0c9596a488ac851423.js",
+      "size": 32405,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "022507963369a0773449",
+        "contenthash": "6c0c9596a488ac851423",
         "javascriptModule": false,
         "minimized": true,
-        "related": {
-          "sourceMap": "js/main022507963369a0773449.js.map"
-        },
-        "size": 32602
+        "size": 32405
       },
       "chunkNames": [
         "main"
@@ -286,33 +254,7 @@
       "chunkIdHints": [],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 0,
-      "related": [
-        {
-          "type": "sourceMap",
-          "name": "js/main022507963369a0773449.js.map",
-          "size": 112764,
-          "emitted": true,
-          "comparedForEmit": false,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 112764
-          },
-          "chunkNames": [],
-          "chunkIdHints": [],
-          "auxiliaryChunkNames": [
-            "main"
-          ],
-          "auxiliaryChunkIdHints": [],
-          "related": {},
-          "chunks": [],
-          "auxiliaryChunks": [
-            179
-          ],
-          "isOverSizeLimit": false
-        }
-      ],
+      "related": {},
       "chunks": [
         179
       ],
@@ -321,20 +263,17 @@
     },
     {
       "type": "asset",
-      "name": "js/vendors1bf5425334865c5870a6.js",
-      "size": 28885,
+      "name": "js/vendors31a9da8afa46db988970.js",
+      "size": 28829,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "1bf5425334865c5870a6",
+        "contenthash": "31a9da8afa46db988970",
         "javascriptModule": false,
         "minimized": true,
-        "related": {
-          "sourceMap": "js/vendors1bf5425334865c5870a6.js.map"
-        },
-        "size": 28885
+        "size": 28829
       },
       "chunkNames": [
         "vendors"
@@ -344,35 +283,7 @@
       ],
       "auxiliaryChunkNames": [],
       "auxiliaryChunkIdHints": [],
-      "filteredRelated": 0,
-      "related": [
-        {
-          "type": "sourceMap",
-          "name": "js/vendors1bf5425334865c5870a6.js.map",
-          "size": 70220,
-          "emitted": true,
-          "comparedForEmit": false,
-          "cached": false,
-          "info": {
-            "development": true,
-            "size": 70220
-          },
-          "chunkNames": [],
-          "chunkIdHints": [],
-          "auxiliaryChunkNames": [
-            "vendors"
-          ],
-          "auxiliaryChunkIdHints": [
-            "commons"
-          ],
-          "related": {},
-          "chunks": [],
-          "auxiliaryChunks": [
-            216
-          ],
-          "isOverSizeLimit": false
-        }
-      ],
+      "related": {},
       "chunks": [
         216
       ],
@@ -866,9 +777,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 125535,
+      "size": 133339,
       "sizes": {
-        "javascript": 64483,
+        "javascript": 72287,
         "css/mini-extract": 57759,
         "runtime": 3293
       },
@@ -881,13 +792,10 @@
       ],
       "files": [
         "css/main.css",
-        "js/main022507963369a0773449.js"
+        "js/main6c0c9596a488ac851423.js"
       ],
-      "auxiliaryFiles": [
-        "css/main.css.map",
-        "js/main022507963369a0773449.js.map"
-      ],
-      "hash": "fa7844a8ae30f0b0de1b",
+      "auxiliaryFiles": [],
+      "hash": "087136213ff962e00368",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -900,9 +808,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 64483,
+          "size": 72287,
           "sizes": {
-            "javascript": 64483
+            "javascript": 72287
           },
           "built": true,
           "codeGenerated": true,
@@ -954,9 +862,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 6089,
+              "size": 13937,
               "sizes": {
-                "javascript": 6089
+                "javascript": 13937
               },
               "built": true,
               "codeGenerated": false,
@@ -987,7 +895,7 @@
               "usedExports": [],
               "providedExports": [],
               "optimizationBailout": [
-                "Statement (ExpressionStatement) with side effects in source code at 72:0-137:3"
+                "Statement (ExpressionStatement) with side effects in source code at 73:0-138:3"
               ],
               "depth": 0
             },
@@ -995,9 +903,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 16741,
+              "size": 16697,
               "sizes": {
-                "javascript": 16741
+                "javascript": 16697
               },
               "built": true,
               "codeGenerated": false,
@@ -1055,7 +963,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "93:40-60",
+                  "loc": "94:40-60",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1069,7 +977,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "100:6-14",
+                  "loc": "101:6-14",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1083,7 +991,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "105:43-63",
+                  "loc": "106:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1097,7 +1005,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "116:43-63",
+                  "loc": "117:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1111,7 +1019,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "128:43-63",
+                  "loc": "129:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1125,7 +1033,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "166:4-23",
+                  "loc": "167:4-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -1209,7 +1117,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./cursor",
-                  "loc": "162:4-19",
+                  "loc": "163:4-19",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1319,7 +1227,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "29:6-28",
+                  "loc": "30:6-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1333,7 +1241,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "38:42-68",
+                  "loc": "39:42-68",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1347,7 +1255,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "53:41-67",
+                  "loc": "54:41-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1361,7 +1269,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "94:43-67",
+                  "loc": "95:43-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1375,7 +1283,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "111:6-24",
+                  "loc": "112:6-24",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1389,7 +1297,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "117:43-67",
+                  "loc": "118:43-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1403,7 +1311,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "123:6-20",
+                  "loc": "124:6-20",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -1417,7 +1325,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "134:6-21",
+                  "loc": "135:6-21",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -1467,8 +1375,8 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "issuerName": "./js/index.js",
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+              "issuerName": "./js/cursor.js",
               "issuerPath": [
                 {
                   "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -1476,8 +1384,8 @@
                   "id": null
                 },
                 {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "name": "./js/index.js",
+                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+                  "name": "./js/cursor.js",
                   "id": null
                 }
               ],
@@ -2409,7 +2317,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "58:12-29",
+                  "loc": "57:10-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2423,7 +2331,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "80:10-29",
+                  "loc": "81:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2437,7 +2345,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "83:10-29",
+                  "loc": "84:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2451,7 +2359,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "93:10-28",
+                  "loc": "94:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2465,7 +2373,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "97:10-28",
+                  "loc": "98:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2479,7 +2387,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "105:10-27",
+                  "loc": "106:10-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2493,7 +2401,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "110:10-28",
+                  "loc": "111:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2507,7 +2415,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "133:14-31",
+                  "loc": "134:14-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2521,7 +2429,21 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "145:14-31",
+                  "loc": "146:14-31",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "module": "./js/index.js",
+                  "moduleName": "./js/index.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "resolvedModule": "./js/index.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./utils",
+                  "loc": "161:12-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -2944,12 +2866,10 @@
         "main"
       ],
       "files": [
-        "js/vendors1bf5425334865c5870a6.js"
+        "js/vendors31a9da8afa46db988970.js"
       ],
-      "auxiliaryFiles": [
-        "js/vendors1bf5425334865c5870a6.js.map"
-      ],
-      "hash": "87224dcf5dc152853080",
+      "auxiliaryFiles": [],
+      "hash": "33a8a7285d7331841141",
       "childrenByOrder": {},
       "id": 216,
       "siblings": [
@@ -3052,7 +2972,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "72:0-10",
+              "loc": "73:0-10",
               "moduleId": 549,
               "resolvedModuleId": null
             },
@@ -3066,7 +2986,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "138:0-23",
+              "loc": "139:0-23",
               "moduleId": 549,
               "resolvedModuleId": null
             },
@@ -3080,7 +3000,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "146:0-17",
+              "loc": "147:0-17",
               "moduleId": 549,
               "resolvedModuleId": null
             },
@@ -3094,7 +3014,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "155:0-22",
+              "loc": "156:0-22",
               "moduleId": 549,
               "resolvedModuleId": null
             }
@@ -3126,9 +3046,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 64483,
+      "size": 72287,
       "sizes": {
-        "javascript": 64483
+        "javascript": 72287
       },
       "built": true,
       "codeGenerated": true,
@@ -3179,9 +3099,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 6089,
+          "size": 13937,
           "sizes": {
-            "javascript": 6089
+            "javascript": 13937
           },
           "built": true,
           "codeGenerated": false,
@@ -3211,7 +3131,7 @@
           "usedExports": [],
           "providedExports": [],
           "optimizationBailout": [
-            "Statement (ExpressionStatement) with side effects in source code at 72:0-137:3"
+            "Statement (ExpressionStatement) with side effects in source code at 73:0-138:3"
           ],
           "depth": 0
         },
@@ -3219,9 +3139,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 16741,
+          "size": 16697,
           "sizes": {
-            "javascript": 16741
+            "javascript": 16697
           },
           "built": true,
           "codeGenerated": false,
@@ -3278,7 +3198,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "93:40-60",
+              "loc": "94:40-60",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3292,7 +3212,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "100:6-14",
+              "loc": "101:6-14",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3306,7 +3226,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "105:43-63",
+              "loc": "106:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3320,7 +3240,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "116:43-63",
+              "loc": "117:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3334,7 +3254,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "128:43-63",
+              "loc": "129:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3348,7 +3268,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "166:4-23",
+              "loc": "167:4-23",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -3431,7 +3351,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./cursor",
-              "loc": "162:4-19",
+              "loc": "163:4-19",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3540,7 +3460,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "29:6-28",
+              "loc": "30:6-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3554,7 +3474,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "38:42-68",
+              "loc": "39:42-68",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3568,7 +3488,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "53:41-67",
+              "loc": "54:41-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3582,7 +3502,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "94:43-67",
+              "loc": "95:43-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3596,7 +3516,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "111:6-24",
+              "loc": "112:6-24",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3610,7 +3530,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "117:43-67",
+              "loc": "118:43-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3624,7 +3544,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "123:6-20",
+              "loc": "124:6-20",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -3638,7 +3558,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "134:6-21",
+              "loc": "135:6-21",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -3687,8 +3607,8 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "issuerName": "./js/index.js",
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+          "issuerName": "./js/cursor.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -3696,8 +3616,8 @@
               "id": null
             },
             {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "name": "./js/index.js",
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+              "name": "./js/cursor.js",
               "id": null
             }
           ],
@@ -4629,7 +4549,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "58:12-29",
+              "loc": "57:10-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4643,7 +4563,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "80:10-29",
+              "loc": "81:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4657,7 +4577,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "83:10-29",
+              "loc": "84:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4671,7 +4591,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "93:10-28",
+              "loc": "94:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4685,7 +4605,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "97:10-28",
+              "loc": "98:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4699,7 +4619,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "105:10-27",
+              "loc": "106:10-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4713,7 +4633,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "110:10-28",
+              "loc": "111:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4727,7 +4647,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "133:14-31",
+              "loc": "134:14-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4741,7 +4661,21 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "145:14-31",
+              "loc": "146:14-31",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "module": "./js/index.js",
+              "moduleName": "./js/index.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "resolvedModule": "./js/index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./utils",
+              "loc": "161:12-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -4974,7 +4908,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "72:0-10",
+          "loc": "73:0-10",
           "moduleId": 549,
           "resolvedModuleId": null
         },
@@ -4988,7 +4922,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "138:0-23",
+          "loc": "139:0-23",
           "moduleId": 549,
           "resolvedModuleId": null
         },
@@ -5002,7 +4936,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "146:0-17",
+          "loc": "147:0-17",
           "moduleId": 549,
           "resolvedModuleId": null
         },
@@ -5016,7 +4950,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "155:0-22",
+          "loc": "156:0-22",
           "moduleId": 549,
           "resolvedModuleId": null
         }
@@ -5035,9 +4969,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 16741,
+      "size": 16697,
       "sizes": {
-        "javascript": 16741
+        "javascript": 16697
       },
       "built": true,
       "codeGenerated": false,
@@ -5094,7 +5028,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "93:40-60",
+          "loc": "94:40-60",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5108,7 +5042,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "100:6-14",
+          "loc": "101:6-14",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5122,7 +5056,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "105:43-63",
+          "loc": "106:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5136,7 +5070,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "116:43-63",
+          "loc": "117:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5150,7 +5084,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "128:43-63",
+          "loc": "129:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5164,7 +5098,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "166:4-23",
+          "loc": "167:4-23",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -5247,7 +5181,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./cursor",
-          "loc": "162:4-19",
+          "loc": "163:4-19",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5356,7 +5290,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "29:6-28",
+          "loc": "30:6-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5370,7 +5304,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "38:42-68",
+          "loc": "39:42-68",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5384,7 +5318,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "53:41-67",
+          "loc": "54:41-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5398,7 +5332,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "94:43-67",
+          "loc": "95:43-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5412,7 +5346,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "111:6-24",
+          "loc": "112:6-24",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5426,7 +5360,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "117:43-67",
+          "loc": "118:43-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5440,7 +5374,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "123:6-20",
+          "loc": "124:6-20",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -5454,7 +5388,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "134:6-21",
+          "loc": "135:6-21",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -5503,8 +5437,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-      "issuerName": "./js/index.js",
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+      "issuerName": "./js/cursor.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -5512,8 +5446,8 @@
           "id": null
         },
         {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "name": "./js/index.js",
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+          "name": "./js/cursor.js",
           "id": null
         }
       ],
@@ -6445,7 +6379,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "58:12-29",
+          "loc": "57:10-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6459,7 +6393,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "80:10-29",
+          "loc": "81:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6473,7 +6407,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "83:10-29",
+          "loc": "84:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6487,7 +6421,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "93:10-28",
+          "loc": "94:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6501,7 +6435,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "97:10-28",
+          "loc": "98:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6515,7 +6449,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "105:10-27",
+          "loc": "106:10-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6529,7 +6463,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "110:10-28",
+          "loc": "111:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6543,7 +6477,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "133:14-31",
+          "loc": "134:14-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6557,7 +6491,21 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "145:14-31",
+          "loc": "146:14-31",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "module": "./js/index.js",
+          "moduleName": "./js/index.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "resolvedModule": "./js/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./utils",
+          "loc": "161:12-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -6881,9 +6829,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 159799,
+      "size": 61197,
       "sizes": {
-        "javascript": 159799
+        "javascript": 61197
       },
       "built": true,
       "codeGenerated": true,
@@ -6946,7 +6894,7 @@
         "default"
       ],
       "optimizationBailout": [
-        "Statement (VariableDeclaration) with side effects in source code at 35:0-97",
+        "Statement (VariableDeclaration) with side effects in source code at 35:0-100",
         "ModuleConcatenation bailout: Module uses module.id"
       ],
       "depth": null
@@ -7573,17 +7521,17 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 688,
+      "size": 64,
       "sizes": {
-        "javascript": 688
+        "javascript": 64
       },
       "built": true,
       "codeGenerated": true,
       "buildTimeExecuted": true,
       "cached": false,
-      "identifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/sourceMaps.js",
-      "name": "./node_modules/css-loader/dist/runtime/sourceMaps.js",
-      "nameForCondition": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/sourceMaps.js",
+      "identifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/noSourceMaps.js",
+      "name": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+      "nameForCondition": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/noSourceMaps.js",
       "index": null,
       "preOrderIndex": null,
       "index2": null,
@@ -7632,8 +7580,8 @@
           "type": "harmony side effect evaluation",
           "active": true,
           "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "loc": "2:0-106",
+          "userRequest": "../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "2:0-111",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -7646,17 +7594,17 @@
           "type": "harmony import specifier",
           "active": true,
           "explanation": "",
-          "userRequest": "../node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "loc": "35:58-95",
+          "userRequest": "../node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "loc": "35:58-98",
           "moduleId": null,
           "resolvedModuleId": null
         },
         {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "module": "./node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "moduleName": "./node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/sourceMaps.js",
-          "resolvedModule": "./node_modules/css-loader/dist/runtime/sourceMaps.js",
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "module": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "moduleName": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/css-loader/dist/runtime/noSourceMaps.js",
+          "resolvedModule": "./node_modules/css-loader/dist/runtime/noSourceMaps.js",
           "type": "cjs self exports reference",
           "active": true,
           "explanation": "",
@@ -7670,7 +7618,7 @@
       "providedExports": null,
       "optimizationBailout": [
         "CommonJS bailout: module.exports is used directly at 3:0-14",
-        "Statement (ExpressionStatement) with side effects in source code at 3:0-22:2",
+        "Statement (ExpressionStatement) with side effects in source code at 3:0-5:2",
         "ModuleConcatenation bailout: Module is not an ECMAScript module"
       ],
       "depth": null
@@ -10380,36 +10328,23 @@
       ],
       "assets": [
         {
-          "name": "js/vendors1bf5425334865c5870a6.js",
-          "size": 28885
+          "name": "js/vendors31a9da8afa46db988970.js",
+          "size": 28829
         },
         {
           "name": "css/main.css",
-          "size": 53844
+          "size": 53808
         },
         {
-          "name": "js/main022507963369a0773449.js",
-          "size": 32602
+          "name": "js/main6c0c9596a488ac851423.js",
+          "size": 32405
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 115331,
-      "auxiliaryAssets": [
-        {
-          "name": "css/main.css.map",
-          "size": 90251
-        },
-        {
-          "name": "js/main022507963369a0773449.js.map",
-          "size": 112764
-        },
-        {
-          "name": "js/vendors1bf5425334865c5870a6.js.map",
-          "size": 70220
-        }
-      ],
+      "assetsSize": 115042,
+      "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 273235,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -10424,36 +10359,23 @@
       ],
       "assets": [
         {
-          "name": "js/vendors1bf5425334865c5870a6.js",
-          "size": 28885
+          "name": "js/vendors31a9da8afa46db988970.js",
+          "size": 28829
         },
         {
           "name": "css/main.css",
-          "size": 53844
+          "size": 53808
         },
         {
-          "name": "js/main022507963369a0773449.js",
-          "size": 32602
+          "name": "js/main6c0c9596a488ac851423.js",
+          "size": 32405
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 115331,
-      "auxiliaryAssets": [
-        {
-          "name": "css/main.css.map",
-          "size": 90251
-        },
-        {
-          "name": "js/main022507963369a0773449.js.map",
-          "size": 112764
-        },
-        {
-          "name": "js/vendors1bf5425334865c5870a6.js.map",
-          "size": 70220
-        }
-      ],
+      "assetsSize": 115042,
+      "auxiliaryAssets": [],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 273235,
+      "auxiliaryAssetsSize": 0,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -10475,10 +10397,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "fe838c13aa2a5fc21305",
+      "hash": "9fa8504fd00ac69cf80b",
       "version": "5.74.0",
-      "time": 236,
-      "builtAt": 1660847017299,
+      "time": 285,
+      "builtAt": 1661165088725,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -10503,7 +10425,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "14c408e70c6b90390ce3",
+          "hash": "15135eabb8b5e2fd7ad2",
           "childrenByOrder": {},
           "id": 251,
           "siblings": [],
@@ -10845,7 +10767,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "549e7c3b9fe6d0c7b04a",
+          "hash": "8c92f04d6706a675c790",
           "childrenByOrder": {},
           "id": 563,
           "siblings": [],
@@ -11173,9 +11095,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298404,
+          "size": 298374,
           "sizes": {
-            "javascript": 297949,
+            "javascript": 297919,
             "runtime": 455
           },
           "names": [
@@ -11187,7 +11109,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "bba4ec62a5579338441c",
+          "hash": "685574150fe61bc9e7f1",
           "childrenByOrder": {},
           "id": 631,
           "siblings": [],
@@ -11198,9 +11120,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 297872,
+              "size": 297842,
               "sizes": {
-                "javascript": 297872
+                "javascript": 297842
               },
               "built": true,
               "codeGenerated": true,
@@ -11529,7 +11451,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "105a3045e3761b0ab58d",
+          "hash": "402765202b4c1923ba42",
           "childrenByOrder": {},
           "id": 922,
           "siblings": [],
@@ -12218,9 +12140,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 297872,
+          "size": 297842,
           "sizes": {
-            "javascript": 297872
+            "javascript": 297842
           },
           "built": true,
           "codeGenerated": true,

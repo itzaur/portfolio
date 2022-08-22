@@ -3,10 +3,9 @@ import "../scss/main.scss";
 import { gsapEase } from "./utils";
 import { MagnetLogo } from "./cursor";
 // import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
+// import { animateTextHoverRun, animateTextHoverStop } from "./animations";
 
 function buttonFunctionality() {
-  console.log("buttonFunctionality() started");
-
   //ANCHOR Button
   const btnBig = document.querySelector(".btn-big");
   const btnSmall = document.querySelector(".btn-small");
@@ -23,7 +22,7 @@ function buttonFunctionality() {
   let deltaX = window.innerWidth > 568 ? mediaQueryTransformX : 0;
   let deltaY = window.innerWidth > 568 ? mediaQueryTransformY : 0;
 
-  btnBig.addEventListener("click", (e) => {
+  btnBig.addEventListener("click", () => {
     btnBig.setAttribute("aria-expanded", false);
     btnSmall.setAttribute("aria-expanded", true);
 
@@ -43,7 +42,7 @@ function buttonFunctionality() {
     menuTransitionRun();
   });
 
-  btnSmall.addEventListener("click", (e) => {
+  btnSmall.addEventListener("click", () => {
     btnSmall.setAttribute("aria-expanded", false);
     btnBig.setAttribute("aria-expanded", true);
 
@@ -60,23 +59,25 @@ function buttonFunctionality() {
   checkMediaQuery();
 
   const timelineLetters = gsap.timeline({
-    repeat: 0,
-    yoyo: false,
+    // repeat: 0,
+    // yoyo: false,
+    paused: true,
+  });
+
+  timelineLetters.to(".text-cls-1", {
+    x: -10,
+    duration: 0.2,
+    ease: gsapEase.back_1_7,
+    stagger: 0.05,
+    opacity: 1,
   });
 
   function animateTextHoverRun() {
-    timelineLetters.to(".text-cls-1", {
-      translateX: "-1rem",
-      duration: 0.2,
-      ease: gsapEase.back_1_7,
-      stagger: 0.05,
-      opacity: 1,
-    });
-    timelineLetters.play();
+    return timelineLetters.play();
   }
 
   function animateTextHoverStop() {
-    timelineLetters.reverse();
+    return timelineLetters.reverse();
   }
 
   //Menu animation
@@ -196,7 +197,7 @@ function buttonFunctionality() {
     const closeMenu = gsap.to(menuPage, {
       // height: 0,
       yPercent: -100,
-      ease: "power4.out",
+      ease: gsapEase.power4,
       duration: 0.8,
       paused: true,
       clearProps: "transform",
@@ -241,8 +242,6 @@ function buttonFunctionality() {
 }
 
 function homeInit() {
-  console.log("homeInit() started");
-
   const btnBig = document.querySelector(".btn-big");
   // const btnSmall = document.querySelector(".btn-small");
   //ANCHOR Fonts
@@ -644,8 +643,6 @@ function homeInit() {
 }
 
 function doodlePositionResize() {
-  console.log("doodlePositionResize() started");
-
   const photo = document.querySelector(".photo");
   const doodle = document.querySelector(".doodle");
 
