@@ -8,7 +8,7 @@ const BundleAnalyzerPlugin =
 
 let mode = "development";
 let target = "web";
-let devtool = "source-map";
+// let devtool = "source-map";
 if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
@@ -21,8 +21,8 @@ module.exports = {
   mode: mode,
   target: target,
 
-  devtool: devtool,
-  // devtool: "source-map",
+  // devtool: devtool,
+  devtool: "source-map",
   // devtool: "inline-source-map",
 
   // devtool: 'eval-cheap-source-map',
