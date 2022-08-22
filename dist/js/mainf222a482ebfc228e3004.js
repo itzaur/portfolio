@@ -1259,13 +1259,26 @@ function importAll(r) {
 
 var images = importAll(__webpack_require__("./img sync .(png%7Cjpe?g%7Csvg)$")); // const btnBig = document.querySelector(".btn-big");
 //ANCHOR Fix viewport units on mobile
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty("--vh", `${vh}px`);
+// window.addEventListener("resize", () => {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+//   console.log(document.documentElement);
+// });
 
-var vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
-window.addEventListener("resize", function () {
-  var vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
-});
+function set100vhVar() {
+  // If less than most tablets, set CSS var to window height.
+  var value = "100vh"; // If window size is iPad or smaller, then use JS to set screen height.
+
+  if (window.innerWidth && window.innerWidth <= 1024) {
+    value = "".concat(window.innerHeight, "px");
+  }
+
+  document.documentElement.style.setProperty("--real100vh", value);
+}
+
+set100vhVar();
 
 function animationEnter(container) {
   var cornerBox = container.querySelector("#wrapper__corner-box");
@@ -3642,7 +3655,7 @@ module.exports = __webpack_require__.p + "images/yellow_rays..svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("fe346e152109f2dcd413")
+/******/ 		__webpack_require__.h = () => ("36b36f60cf7accca3b56")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -3757,4 +3770,4 @@ module.exports = __webpack_require__.p + "images/yellow_rays..svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=main6af8e92898c9ed608eaa.js.map
+//# sourceMappingURL=mainf222a482ebfc228e3004.js.map

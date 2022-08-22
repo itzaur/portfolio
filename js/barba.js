@@ -21,14 +21,29 @@ function importAll(r) {
 const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 
 // const btnBig = document.querySelector(".btn-big");
-//ANCHOR Fix viewport units on mobile
-let vh = window.innerHeight * 0.01;
-document.documentElement.style.setProperty("--vh", `${vh}px`);
 
-window.addEventListener("resize", () => {
-  let vh = window.innerHeight * 0.01;
-  document.documentElement.style.setProperty("--vh", `${vh}px`);
-});
+//ANCHOR Fix viewport units on mobile
+// let vh = window.innerHeight * 0.01;
+// document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+// window.addEventListener("resize", () => {
+//   let vh = window.innerHeight * 0.01;
+//   document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+//   console.log(document.documentElement);
+// });
+
+function set100vhVar() {
+  // If less than most tablets, set CSS var to window height.
+  let value = "100vh";
+
+  // If window size is iPad or smaller, then use JS to set screen height.
+  if (window.innerWidth && window.innerWidth <= 1024) {
+    value = `${window.innerHeight}px`;
+  }
+  document.documentElement.style.setProperty("--real100vh", value);
+}
+set100vhVar();
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
