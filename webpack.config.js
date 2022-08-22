@@ -49,7 +49,7 @@ module.exports = {
 
   devServer: {
     static: {
-      directory: path.join(__dirname, "/"),
+      directory: path.join(__dirname, "./"),
       // directory: path.join(__dirname, "dist"),
       // publicPath: "/",
     },
@@ -106,8 +106,8 @@ module.exports = {
           // mode === "development" ? "style-loader" : MiniCssExtractPlugin.loader,
           MiniCssExtractPlugin.loader,
           "css-loader",
-          "sass-loader",
           "postcss-loader",
+          "sass-loader",
         ],
       },
       {
@@ -143,19 +143,19 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       filename: "index.html",
-      template: "/index.html",
+      template: "./index.html",
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
-      template: "/about.html",
+      template: "./about.html",
     }),
     new HtmlWebpackPlugin({
       filename: "skills.html",
-      template: "/skills.html",
+      template: "./skills.html",
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
-      template: "/contact.html",
+      template: "./contact.html",
     }),
     // new FaviconsWebpackPlugin({
     //   logo: "img/svg/logo.svg",
