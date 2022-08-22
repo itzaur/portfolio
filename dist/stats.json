@@ -1,14 +1,14 @@
 {
-  "hash": "dc1fc32472f796915765",
+  "hash": "fe346e152109f2dcd413",
   "version": "5.74.0",
-  "time": 13501,
-  "builtAt": 1661200810476,
+  "time": 11173,
+  "builtAt": 1661202873714,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/mainb0191fefabc3213d9542.js"
+      "js/main6af8e92898c9ed608eaa.js"
     ],
     "vendors": [
       "js/vendorsab36d2c239a8c5173273.js"
@@ -85,12 +85,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 294101,
+      "size": 294085,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 294101
+        "size": 294085
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -392,19 +392,19 @@
     },
     {
       "type": "asset",
-      "name": "js/mainb0191fefabc3213d9542.js",
-      "size": 118168,
+      "name": "js/main6af8e92898c9ed608eaa.js",
+      "size": 118481,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "b0191fefabc3213d9542",
+        "contenthash": "6af8e92898c9ed608eaa",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "js/mainb0191fefabc3213d9542.js.map"
+          "sourceMap": "js/main6af8e92898c9ed608eaa.js.map"
         },
-        "size": 118168
+        "size": 118481
       },
       "chunkNames": [
         "main"
@@ -416,14 +416,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/mainb0191fefabc3213d9542.js.map",
-          "size": 159013,
+          "name": "js/main6af8e92898c9ed608eaa.js.map",
+          "size": 159677,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 159013
+            "size": 159677
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -496,7 +496,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 95024,
+      "size": 95133,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -504,7 +504,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 95024
+        "size": 95133
       },
       "chunkNames": [
         "main"
@@ -517,13 +517,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 168061,
+          "size": 168225,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 168061
+            "size": 168225
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2424,11 +2424,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4970942,
+      "size": 4971364,
       "sizes": {
-        "javascript": 78089,
+        "javascript": 78402,
         "asset": 4788624,
-        "css/mini-extract": 99697,
+        "css/mini-extract": 99806,
         "runtime": 4532
       },
       "names": [
@@ -2440,7 +2440,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/mainb0191fefabc3213d9542.js"
+        "js/main6af8e92898c9ed608eaa.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2534,9 +2534,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/mainb0191fefabc3213d9542.js.map"
+        "js/main6af8e92898c9ed608eaa.js.map"
       ],
-      "hash": "6f3b5274a0cde44a84ea",
+      "hash": "c2e2db80b0df47896c45",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -8802,7 +8802,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "37:6-28",
+              "loc": "45:6-28",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8816,7 +8816,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "46:42-68",
+              "loc": "54:42-68",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8830,7 +8830,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "61:41-67",
+              "loc": "69:41-67",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8844,7 +8844,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "102:43-67",
+              "loc": "110:43-67",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8858,7 +8858,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "119:6-24",
+              "loc": "127:6-24",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8872,7 +8872,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "125:43-67",
+              "loc": "133:43-67",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8886,7 +8886,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "131:6-20",
+              "loc": "139:6-20",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -8900,7 +8900,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "142:6-21",
+              "loc": "150:6-21",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             }
@@ -8922,9 +8922,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 14212,
+          "size": 14525,
           "sizes": {
-            "javascript": 14212
+            "javascript": 14525
           },
           "built": true,
           "codeGenerated": true,
@@ -9040,7 +9040,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./cursor",
-              "loc": "170:4-19",
+              "loc": "178:4-19",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9147,7 +9147,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "101:40-60",
+              "loc": "109:40-60",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9161,7 +9161,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "108:6-14",
+              "loc": "116:6-14",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9175,7 +9175,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "113:43-63",
+              "loc": "121:43-63",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9189,7 +9189,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "124:43-63",
+              "loc": "132:43-63",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9203,7 +9203,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "136:43-63",
+              "loc": "144:43-63",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -9217,7 +9217,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "174:4-23",
+              "loc": "182:4-23",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             }
@@ -10549,9 +10549,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 99697,
+          "size": 99806,
           "sizes": {
-            "css/mini-extract": 99697
+            "css/mini-extract": 99806
           },
           "built": true,
           "codeGenerated": true,
@@ -11081,7 +11081,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "80:0-10",
+              "loc": "88:0-10",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -11095,7 +11095,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "146:0-23",
+              "loc": "154:0-23",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -11109,7 +11109,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "154:0-17",
+              "loc": "162:0-17",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             },
@@ -11123,7 +11123,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "163:0-22",
+              "loc": "171:0-22",
               "moduleId": "./js/barba.js",
               "resolvedModuleId": "./js/barba.js"
             }
@@ -13449,9 +13449,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 14212,
+      "size": 14525,
       "sizes": {
-        "javascript": 14212
+        "javascript": 14525
       },
       "built": true,
       "codeGenerated": true,
@@ -14887,7 +14887,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "80:0-10",
+          "loc": "88:0-10",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -14901,7 +14901,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "146:0-23",
+          "loc": "154:0-23",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -14915,7 +14915,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "154:0-17",
+          "loc": "162:0-17",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -14929,7 +14929,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "163:0-22",
+          "loc": "171:0-22",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         }
@@ -15007,7 +15007,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "101:40-60",
+          "loc": "109:40-60",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15021,7 +15021,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "108:6-14",
+          "loc": "116:6-14",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15035,7 +15035,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "113:43-63",
+          "loc": "121:43-63",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15049,7 +15049,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "124:43-63",
+          "loc": "132:43-63",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15063,7 +15063,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "136:43-63",
+          "loc": "144:43-63",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15077,7 +15077,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "174:4-23",
+          "loc": "182:4-23",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         }
@@ -15156,7 +15156,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./cursor",
-          "loc": "170:4-19",
+          "loc": "178:4-19",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15262,7 +15262,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "37:6-28",
+          "loc": "45:6-28",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15276,7 +15276,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "46:42-68",
+          "loc": "54:42-68",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15290,7 +15290,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "61:41-67",
+          "loc": "69:41-67",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15304,7 +15304,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "102:43-67",
+          "loc": "110:43-67",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15318,7 +15318,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "119:6-24",
+          "loc": "127:6-24",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15332,7 +15332,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "125:43-67",
+          "loc": "133:43-67",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15346,7 +15346,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "131:6-20",
+          "loc": "139:6-20",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         },
@@ -15360,7 +15360,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "142:6-21",
+          "loc": "150:6-21",
           "moduleId": "./js/barba.js",
           "resolvedModuleId": "./js/barba.js"
         }
@@ -16087,9 +16087,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 99697,
+      "size": 99806,
       "sizes": {
-        "css/mini-extract": 99697
+        "css/mini-extract": 99806
       },
       "built": true,
       "codeGenerated": true,
@@ -23731,9 +23731,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 286057,
+      "size": 286358,
       "sizes": {
-        "javascript": 286057
+        "javascript": 286358
       },
       "built": true,
       "codeGenerated": true,
@@ -25374,19 +25374,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 95024
+          "size": 95133
         },
         {
-          "name": "js/mainb0191fefabc3213d9542.js",
-          "size": 118168
+          "name": "js/main6af8e92898c9ed608eaa.js",
+          "size": 118481
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 421459,
+      "assetsSize": 421881,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 168061
+          "size": 168225
         },
         {
           "name": "fonts/d_ccmonologous_bolditalic..woff2",
@@ -25749,8 +25749,8 @@
           "size": 25997
         },
         {
-          "name": "js/mainb0191fefabc3213d9542.js.map",
-          "size": 159013
+          "name": "js/main6af8e92898c9ed608eaa.js.map",
+          "size": 159677
         },
         {
           "name": "js/vendorsab36d2c239a8c5173273.js.map",
@@ -25758,7 +25758,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5435691,
+      "auxiliaryAssetsSize": 5436519,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -25778,19 +25778,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 95024
+          "size": 95133
         },
         {
-          "name": "js/mainb0191fefabc3213d9542.js",
-          "size": 118168
+          "name": "js/main6af8e92898c9ed608eaa.js",
+          "size": 118481
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 421459,
+      "assetsSize": 421881,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 168061
+          "size": 168225
         },
         {
           "name": "fonts/d_ccmonologous_bolditalic..woff2",
@@ -26153,8 +26153,8 @@
           "size": 25997
         },
         {
-          "name": "js/mainb0191fefabc3213d9542.js.map",
-          "size": 159013
+          "name": "js/main6af8e92898c9ed608eaa.js.map",
+          "size": 159677
         },
         {
           "name": "js/vendorsab36d2c239a8c5173273.js.map",
@@ -26162,7 +26162,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5435691,
+      "auxiliaryAssetsSize": 5436519,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -26175,10 +26175,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "10b02966286937246d19",
+      "hash": "ab5aaf38f22f47570b52",
       "version": "5.74.0",
-      "time": 6048,
-      "builtAt": 1661200803074,
+      "time": 5213,
+      "builtAt": 1661202867796,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -27311,9 +27311,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298653,
+          "size": 298637,
           "sizes": {
-            "javascript": 297919,
+            "javascript": 297903,
             "runtime": 734
           },
           "names": [
@@ -27325,7 +27325,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "cce78daab13823f5beea",
+          "hash": "f9d906e8ad4ce16b41d2",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_3-0",
           "siblings": [],
@@ -27336,9 +27336,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 297842,
+              "size": 297826,
               "sizes": {
-                "javascript": 297842
+                "javascript": 297826
               },
               "built": true,
               "codeGenerated": true,
@@ -28038,9 +28038,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 297842,
+          "size": 297826,
           "sizes": {
-            "javascript": 297842
+            "javascript": 297826
           },
           "built": true,
           "codeGenerated": true,

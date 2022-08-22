@@ -21,6 +21,14 @@ function importAll(r) {
 const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 
 // const btnBig = document.querySelector(".btn-big");
+//ANCHOR Fix viewport units on mobile
+let vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", `${vh}px`);
+
+window.addEventListener("resize", () => {
+  let vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+});
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");

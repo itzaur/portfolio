@@ -1258,6 +1258,14 @@ function importAll(r) {
 }
 
 var images = importAll(__webpack_require__("./img sync .(png%7Cjpe?g%7Csvg)$")); // const btnBig = document.querySelector(".btn-big");
+//ANCHOR Fix viewport units on mobile
+
+var vh = window.innerHeight * 0.01;
+document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
+window.addEventListener("resize", function () {
+  var vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", "".concat(vh, "px"));
+});
 
 function animationEnter(container) {
   var cornerBox = container.querySelector("#wrapper__corner-box");
@@ -3634,7 +3642,7 @@ module.exports = __webpack_require__.p + "images/yellow_rays..svg";
 /******/ 	
 /******/ 	/* webpack/runtime/getFullHash */
 /******/ 	(() => {
-/******/ 		__webpack_require__.h = () => ("dc1fc32472f796915765")
+/******/ 		__webpack_require__.h = () => ("fe346e152109f2dcd413")
 /******/ 	})();
 /******/ 	
 /******/ 	/* webpack/runtime/global */
@@ -3749,4 +3757,4 @@ module.exports = __webpack_require__.p + "images/yellow_rays..svg";
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=mainb0191fefabc3213d9542.js.map
+//# sourceMappingURL=main6af8e92898c9ed608eaa.js.map
