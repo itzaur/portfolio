@@ -8,13 +8,14 @@
   @include flex(column, center, null);
 
   @include respond-to("320->") {
-    --gap: 1.5rem;
+    // --gap: 1.5rem;
     @include flex(row, flex-start, null);
     align-self: flex-end;
     grid-column: 2 / span 5;
   }
 
   @include respond-to("568->") {
+    --gap: 1.5rem;
     flex-direction: column;
     margin-bottom: 2vw;
   }

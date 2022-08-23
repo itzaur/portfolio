@@ -342,7 +342,7 @@ select {
   }
 }
 .btn-small {
-  width: 3.35rem;
+  width: 4rem;
   height: auto;
   box-shadow: none;
 }
@@ -1188,7 +1188,6 @@ select {
 }
 @media (min-width: 20em) {
   .color-game {
-    --gap: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -1199,6 +1198,7 @@ select {
 }
 @media (min-width: 35.5em) {
   .color-game {
+    --gap: 1.5rem;
     flex-direction: column;
     margin-bottom: 2vw;
   }
@@ -1915,7 +1915,6 @@ select {
 
 .about-page {
   position: relative;
-  height: 100vh;
   padding: var(--padding-container);
   background-color: HSL(var(--primary-hs) 100%);
 }
@@ -2372,7 +2371,6 @@ select {
 
 .skills-page {
   position: relative;
-  height: 100vh;
   padding: var(--padding-container);
 }
 .skills-page__container {
@@ -2852,7 +2850,6 @@ select {
 
 .contact-page {
   position: relative;
-  height: 100vh;
   grid-template-columns: minmax(5vw, 1fr) minmax(5rem, 1fr) minmax(5rem, 1fr) minmax(2vw, 1fr);
   grid-template-rows: 6rem 1fr repeat(10, minmax(-webkit-min-content, -webkit-max-content)) repeat(3, -webkit-min-content);
   grid-template-rows: 6rem 1fr repeat(10, minmax(min-content, max-content)) repeat(3, min-content);
