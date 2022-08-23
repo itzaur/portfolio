@@ -44,6 +44,12 @@ const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 //   document.documentElement.style.setProperty("--real100vh", value);
 // }
 // set100vhVar();
+function documentHeight() {
+  const doc = document.documentElement;
+  doc.style.setProperty("--real-height", `${window.innerHeight}px`);
+}
+window.addEventListener("resize", documentHeight);
+documentHeight();
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
