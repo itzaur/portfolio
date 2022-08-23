@@ -26,6 +26,7 @@
 
   .cls-1 {
     isolation: isolate;
+    fill: var(--clr-btn-6);
   }
 
   .cls-2 {
@@ -39,6 +40,7 @@
   .cls-4 {
     fill: var(--clr-btn-7);
   }
+
   .cls-5 {
     mix-blend-mode: multiply;
     opacity: 0.5;

@@ -41,10 +41,10 @@
     // }
   }
 
-  & &__corner-box:hover,
-  & &__corner-box:focus-within {
-    // transform: scale(var(--scale-2));
-  }
+  // & &__corner-box:hover,
+  // & &__corner-box:focus-within {
+  //   // transform: scale(var(--scale-2));
+  // }
 
   & &__corner-box:focus-visible {
     outline: 1px solid var(--clr-orange);
@@ -256,6 +256,22 @@
 
     // transition: transform 0.3s ease-out;
     opacity: 0;
+
+    & .cls-1 {
+      fill: #f5f1d6;
+    }
+
+    & .cls-2 {
+      fill: #201f1d;
+    }
+
+    & .cls-3 {
+      fill: #ccc9b2;
+    }
+
+    & .cls-4 {
+      fill: #a6a48f;
+    }
   }
 }
 

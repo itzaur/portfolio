@@ -203,6 +203,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   height: calc(var(--vh, 1vh) * 100);
+  max-height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }
@@ -1058,6 +1059,18 @@ select {
   border-right: 0.5rem solid transparent;
   opacity: 0;
 }
+#corner-button svg .cls-1 {
+  fill: #f5f1d6;
+}
+#corner-button svg .cls-2 {
+  fill: #201f1d;
+}
+#corner-button svg .cls-3 {
+  fill: #ccc9b2;
+}
+#corner-button svg .cls-4 {
+  fill: #a6a48f;
+}
 
 .corner-border {
   --clr-stop1: HSL(var(--primary-hs) 100%);
@@ -1117,6 +1130,7 @@ select {
 }
 .hello .cls-1 {
   isolation: isolate;
+  fill: var(--clr-btn-6);
 }
 .hello .cls-2 {
   fill: var(--clr-btn-1);
@@ -1174,7 +1188,7 @@ select {
 }
 @media (min-width: 20em) {
   .color-game {
-    --gap: 2rem;
+    --gap: 1.5rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;

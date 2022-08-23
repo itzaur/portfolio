@@ -8,7 +8,7 @@
   @include flex(column, center, null);
 
   @include respond-to("320->") {
-    --gap: 2rem;
+    --gap: 1.5rem;
     @include flex(row, flex-start, null);
     align-self: flex-end;
     grid-column: 2 / span 5;
@@ -119,8 +119,7 @@
       }
 
       &[data-name="A"] {
-        background-image: url("../img/beard.svg"),
-          url("../img/rectangle3.svg");
+        background-image: url("../img/beard.svg"), url("../img/rectangle3.svg");
         background-image: -webkit-image-set(url("../img/beard.webp") 1x),
           url("../img/rectangle3.svg");
 
@@ -134,8 +133,7 @@
       }
 
       &[data-name="Y"] {
-        background-image: url("../img/noir.svg"),
-          url("../img/rectangle4.svg");
+        background-image: url("../img/noir.svg"), url("../img/rectangle4.svg");
         background-image: -webkit-image-set(url("../img/noir.webp") 1x),
           url("../img/rectangle4.svg");
         background-size: 25%, 70%;

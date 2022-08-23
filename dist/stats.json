@@ -1,14 +1,14 @@
 {
-  "hash": "36b36f60cf7accca3b56",
+  "hash": "2d38371157abae0a5dd7",
   "version": "5.74.0",
-  "time": 11823,
-  "builtAt": 1661204599309,
+  "time": 10358,
+  "builtAt": 1661252654388,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/mainf222a482ebfc228e3004.js"
+      "js/main7fbba6f328203a63fa3a.js"
     ],
     "vendors": [
       "js/vendorsab36d2c239a8c5173273.js"
@@ -42,12 +42,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 539630,
+      "size": 539240,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 539630
+        "size": 539240
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -85,12 +85,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 294085,
+      "size": 294147,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 294085
+        "size": 294147
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -128,12 +128,12 @@
     {
       "type": "asset",
       "name": "skills.html",
-      "size": 253402,
+      "size": 253464,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 253402
+        "size": 253464
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -278,12 +278,12 @@
     {
       "type": "asset",
       "name": "about.html",
-      "size": 207322,
+      "size": 207384,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 207322
+        "size": 207384
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -392,17 +392,17 @@
     },
     {
       "type": "asset",
-      "name": "js/mainf222a482ebfc228e3004.js",
+      "name": "js/main7fbba6f328203a63fa3a.js",
       "size": 118896,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "f222a482ebfc228e3004",
+        "contenthash": "7fbba6f328203a63fa3a",
         "javascriptModule": false,
         "related": {
-          "sourceMap": "js/mainf222a482ebfc228e3004.js.map"
+          "sourceMap": "js/main7fbba6f328203a63fa3a.js.map"
         },
         "size": 118896
       },
@@ -416,7 +416,7 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/mainf222a482ebfc228e3004.js.map",
+          "name": "js/main7fbba6f328203a63fa3a.js.map",
           "size": 160137,
           "emitted": true,
           "comparedForEmit": false,
@@ -496,7 +496,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 95155,
+      "size": 95418,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -504,7 +504,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 95155
+        "size": 95418
       },
       "chunkNames": [
         "main"
@@ -517,13 +517,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 168276,
+          "size": 168849,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 168276
+            "size": 168849
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2424,11 +2424,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4971801,
+      "size": 4972064,
       "sizes": {
         "javascript": 78817,
         "asset": 4788624,
-        "css/mini-extract": 99828,
+        "css/mini-extract": 100091,
         "runtime": 4532
       },
       "names": [
@@ -2440,7 +2440,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/mainf222a482ebfc228e3004.js"
+        "js/main7fbba6f328203a63fa3a.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2534,9 +2534,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/mainf222a482ebfc228e3004.js.map"
+        "js/main7fbba6f328203a63fa3a.js.map"
       ],
-      "hash": "a1612c77918033bcc451",
+      "hash": "76900eaaa166a4146106",
       "childrenByOrder": {},
       "id": "main",
       "siblings": [
@@ -10549,9 +10549,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 99828,
+          "size": 100091,
           "sizes": {
-            "css/mini-extract": 99828
+            "css/mini-extract": 100091
           },
           "built": true,
           "codeGenerated": true,
@@ -16087,9 +16087,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 99828,
+      "size": 100091,
       "sizes": {
-        "css/mini-extract": 99828
+        "css/mini-extract": 100091
       },
       "built": true,
       "codeGenerated": true,
@@ -23731,9 +23731,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 286438,
+      "size": 287327,
       "sizes": {
-        "javascript": 286438
+        "javascript": 287327
       },
       "built": true,
       "codeGenerated": true,
@@ -25374,19 +25374,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 95155
+          "size": 95418
         },
         {
-          "name": "js/mainf222a482ebfc228e3004.js",
+          "name": "js/main7fbba6f328203a63fa3a.js",
           "size": 118896
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 422318,
+      "assetsSize": 422581,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 168276
+          "size": 168849
         },
         {
           "name": "fonts/d_ccmonologous_bolditalic..woff2",
@@ -25749,7 +25749,7 @@
           "size": 25997
         },
         {
-          "name": "js/mainf222a482ebfc228e3004.js.map",
+          "name": "js/main7fbba6f328203a63fa3a.js.map",
           "size": 160137
         },
         {
@@ -25758,7 +25758,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5437030,
+      "auxiliaryAssetsSize": 5437603,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -25778,19 +25778,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 95155
+          "size": 95418
         },
         {
-          "name": "js/mainf222a482ebfc228e3004.js",
+          "name": "js/main7fbba6f328203a63fa3a.js",
           "size": 118896
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 422318,
+      "assetsSize": 422581,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 168276
+          "size": 168849
         },
         {
           "name": "fonts/d_ccmonologous_bolditalic..woff2",
@@ -26153,7 +26153,7 @@
           "size": 25997
         },
         {
-          "name": "js/mainf222a482ebfc228e3004.js.map",
+          "name": "js/main7fbba6f328203a63fa3a.js.map",
           "size": 160137
         },
         {
@@ -26162,7 +26162,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5437030,
+      "auxiliaryAssetsSize": 5437603,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -26175,10 +26175,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "ab5aaf38f22f47570b52",
+      "hash": "e0b9981d34e799670c29",
       "version": "5.74.0",
-      "time": 5055,
-      "builtAt": 1661204592586,
+      "time": 4638,
+      "builtAt": 1661252648709,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -26189,9 +26189,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 548750,
+          "size": 548345,
           "sizes": {
-            "javascript": 548016,
+            "javascript": 547611,
             "runtime": 734
           },
           "names": [
@@ -26203,7 +26203,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "52dfcc3e588e7e42dc97",
+          "hash": "961f8124fa1af7d24b6f",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_0-0",
           "siblings": [],
@@ -26214,9 +26214,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 547939,
+              "size": 547534,
               "sizes": {
-                "javascript": 547939
+                "javascript": 547534
               },
               "built": true,
               "codeGenerated": true,
@@ -26563,9 +26563,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 210363,
+          "size": 210426,
           "sizes": {
-            "javascript": 209629,
+            "javascript": 209692,
             "runtime": 734
           },
           "names": [
@@ -26577,7 +26577,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "b354398cb4b125ab9d20",
+          "hash": "62d84cd338a33350f396",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_1-0",
           "siblings": [],
@@ -26588,9 +26588,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 209552,
+              "size": 209615,
               "sizes": {
-                "javascript": 209552
+                "javascript": 209615
               },
               "built": true,
               "codeGenerated": true,
@@ -26937,9 +26937,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 257088,
+          "size": 257151,
           "sizes": {
-            "javascript": 256354,
+            "javascript": 256417,
             "runtime": 734
           },
           "names": [
@@ -26951,7 +26951,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "91ee375b0bbf7e16de34",
+          "hash": "3cfe71eedfeed4f8790e",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_2-0",
           "siblings": [],
@@ -26962,9 +26962,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 256277,
+              "size": 256340,
               "sizes": {
-                "javascript": 256277
+                "javascript": 256340
               },
               "built": true,
               "codeGenerated": true,
@@ -27311,9 +27311,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298637,
+          "size": 298700,
           "sizes": {
-            "javascript": 297903,
+            "javascript": 297966,
             "runtime": 734
           },
           "names": [
@@ -27325,7 +27325,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "f9d906e8ad4ce16b41d2",
+          "hash": "b3fe118d5dc27f336684",
           "childrenByOrder": {},
           "id": "HtmlWebpackPlugin_3-0",
           "siblings": [],
@@ -27336,9 +27336,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 297826,
+              "size": 297889,
               "sizes": {
-                "javascript": 297826
+                "javascript": 297889
               },
               "built": true,
               "codeGenerated": true,
@@ -27786,9 +27786,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 547939,
+          "size": 547534,
           "sizes": {
-            "javascript": 547939
+            "javascript": 547534
           },
           "built": true,
           "codeGenerated": true,
@@ -27870,9 +27870,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 209552,
+          "size": 209615,
           "sizes": {
-            "javascript": 209552
+            "javascript": 209615
           },
           "built": true,
           "codeGenerated": true,
@@ -27954,9 +27954,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 256277,
+          "size": 256340,
           "sizes": {
-            "javascript": 256277
+            "javascript": 256340
           },
           "built": true,
           "codeGenerated": true,
@@ -28038,9 +28038,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 297826,
+          "size": 297889,
           "sizes": {
-            "javascript": 297826
+            "javascript": 297889
           },
           "built": true,
           "codeGenerated": true,
