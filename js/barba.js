@@ -33,17 +33,17 @@ const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 //   console.log(document.documentElement);
 // });
 
-function set100vhVar() {
-  // If less than most tablets, set CSS var to window height.
-  let value = "100vh";
+// function set100vhVar() {
+//   // If less than most tablets, set CSS var to window height.
+//   let value = "100vh";
 
-  // If window size is iPad or smaller, then use JS to set screen height.
-  if (window.innerWidth && window.innerWidth <= 1024) {
-    value = `${window.innerHeight}px`;
-  }
-  document.documentElement.style.setProperty("--real100vh", value);
-}
-set100vhVar();
+//   // If window size is iPad or smaller, then use JS to set screen height.
+//   if (window.innerWidth && window.innerWidth <= 1024) {
+//     value = `${window.innerHeight}px`;
+//   }
+//   document.documentElement.style.setProperty("--real100vh", value);
+// }
+// set100vhVar();
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
