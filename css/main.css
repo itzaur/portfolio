@@ -99,6 +99,10 @@ body {
   z-index: -1;
 }
 
+main {
+  height: 100%;
+}
+
 .container {
   position: relative;
   width: 100%;
@@ -202,7 +206,7 @@ html:focus-within {
 /* Set core body defaults */
 body {
   min-height: -webkit-fill-available;
-  height: 100vh;
+  height: 100%;
   text-rendering: optimizeSpeed;
   line-height: 1.5;
 }

@@ -1,8 +1,8 @@
 {
-  "hash": "52fa68205d930f5d75fb",
+  "hash": "1c8477d96533d39b5880",
   "version": "5.74.0",
-  "time": 6668,
-  "builtAt": 1661254193124,
+  "time": 6737,
+  "builtAt": 1661254852780,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
@@ -454,7 +454,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 77904,
+      "size": 77920,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -462,7 +462,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 77904
+        "size": 77920
       },
       "chunkNames": [
         "main"
@@ -475,13 +475,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 91847,
+          "size": 91907,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 91847
+            "size": 91907
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2406,11 +2406,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4954833,
+      "size": 4954849,
       "sizes": {
         "javascript": 78785,
         "asset": 4788624,
-        "css/mini-extract": 83035,
+        "css/mini-extract": 83051,
         "runtime": 4389
       },
       "names": [
@@ -2513,7 +2513,7 @@
         "images/yellow_rays..svg",
         "js/mainfd9cec7ab323eca56fcc.js.map"
       ],
-      "hash": "b6b35e408f1303b2d6cd",
+      "hash": "5cec8c6c20da21ca4d33",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -10497,9 +10497,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 83035,
+          "size": 83051,
           "sizes": {
-            "css/mini-extract": 83035
+            "css/mini-extract": 83051
           },
           "built": true,
           "codeGenerated": true,
@@ -13552,9 +13552,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 83035,
+      "size": 83051,
       "sizes": {
-        "css/mini-extract": 83035
+        "css/mini-extract": 83051
       },
       "built": true,
       "codeGenerated": true,
@@ -20892,9 +20892,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 191460,
+      "size": 191541,
       "sizes": {
-        "javascript": 191460
+        "javascript": 191541
       },
       "built": true,
       "codeGenerated": true,
@@ -22496,7 +22496,7 @@
         },
         {
           "name": "css/main.css",
-          "size": 77904
+          "size": 77920
         },
         {
           "name": "js/mainfd9cec7ab323eca56fcc.js",
@@ -22504,11 +22504,11 @@
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147993,
+      "assetsSize": 148009,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 91847
+          "size": 91907
         },
         {
           "name": "images/about-bg..png",
@@ -22860,7 +22860,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079004,
+      "auxiliaryAssetsSize": 5079064,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -22880,7 +22880,7 @@
         },
         {
           "name": "css/main.css",
-          "size": 77904
+          "size": 77920
         },
         {
           "name": "js/mainfd9cec7ab323eca56fcc.js",
@@ -22888,11 +22888,11 @@
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147993,
+      "assetsSize": 148009,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 91847
+          "size": 91907
         },
         {
           "name": "images/about-bg..png",
@@ -23244,7 +23244,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079004,
+      "auxiliaryAssetsSize": 5079064,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -23268,8 +23268,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "d5cf750cec49a5ded64e",
       "version": "5.74.0",
-      "time": 230,
-      "builtAt": 1661254186735,
+      "time": 243,
+      "builtAt": 1661254846333,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
