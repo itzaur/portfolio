@@ -87,10 +87,11 @@ function buttonFunctionality() {
   });
 
   tlMenuTransition
-    .set(".menu__box img", {
-      xPercent: -50,
-      yPercent: -50,
-    })
+    // .set(".menu__box img", {
+    //   xPercent: -50,
+    //   yPercent: -50,
+    //   transformOrigin: "center",
+    // })
     .to(menuPage, {
       // height: "calc(100vh - var(--padding-container) * 2 + 1px)",
       y: 0,

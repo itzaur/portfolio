@@ -173,6 +173,7 @@ barba.init({
       namespace: "about-page",
       beforeEnter: () => {
         window.removeEventListener("resize", doodlePositionResize);
+        window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
         // import("./about.js").then(({ aboutAnimationInit }) => {
@@ -198,6 +199,7 @@ barba.init({
       namespace: "contact-page",
       beforeEnter: () => {
         window.removeEventListener("resize", doodlePositionResize);
+        window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
         // import("./about.js").then(({ contactPageInit }) => {
