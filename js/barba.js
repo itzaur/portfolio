@@ -12,6 +12,7 @@ import {
   contactPageInit,
 } from "./about";
 import { addCustomCursor } from "./cursor";
+import { installMediaQueryWatcher } from "./utils";
 // import { timelineLetters } from "./animations";
 
 function importAll(r) {
@@ -30,7 +31,8 @@ documentHeight();
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
-  const timelineEnter = gsap.timeline({ duration: 0.5 });
+  const timelineEnter = gsap.timeline({ duration: 0.1 });
+  let durationEnter = window.innerWidth < 568 ? 1 : 1;
 
   timelineEnter
     .set("#corner-button svg g g path", {
@@ -46,7 +48,7 @@ function animationEnter(container) {
     .to(cornerBox, {
       scale: 1,
       transformOrigin: "right bottom",
-      duration: 1.2,
+      duration: durationEnter,
 
       onComplete: () => {
         // import("./about.js").then(({ cornerArrowHoverEffect }) => {
@@ -57,7 +59,7 @@ function animationEnter(container) {
         timelineEnter
           .to(["#corner-button svg, .contact-elements"], {
             autoAlpha: 1,
-            duration: 1,
+            // duration: 1,
           })
           .to(cornerBox, {
             pointerEvents: "auto",
@@ -79,6 +81,7 @@ function animationEnter(container) {
 function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
   const timelineLeave = gsap.timeline({ duration: 0.1 });
+  let durationLeave = window.innerWidth < 568 ? 2 : 1.5;
 
   ["mouseenter", "mousemove"].forEach((event) => {
     container.removeEventListener(event, controlHoverOnCornerButton);
@@ -92,7 +95,8 @@ function animationLeave(container, done) {
       scale: 170,
       pointerEvents: "none",
       cursor: "none",
-      duration: 1.5,
+      duration: durationLeave,
+
       transformOrigin: "right bottom",
       onComplete: () => done(),
     })

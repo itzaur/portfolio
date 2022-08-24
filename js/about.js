@@ -368,7 +368,7 @@ function pageSkillsInit() {
     }
   }
 
-  const hobbiesTimeline = gsap.timeline({ delay: 0.7 });
+  const hobbiesTimeline = gsap.timeline({ delay: 0.5 });
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -670,7 +670,7 @@ function aboutAnimationInit() {
   }
 
   //ANCHOR About-page (part1) doodle text animation
-  const aboutTimeline = gsap.timeline({ delay: 0.5 });
+  const aboutTimeline = gsap.timeline({ delay: 0.3 });
   aboutTimeline
     .from(btnAboutSection, {
       right: btnAboutSection.offsetWidth * -1,
@@ -1148,7 +1148,7 @@ function contactPageInit() {
   const laptopDots = document.querySelector(".contact-dots");
   const laptopElements = document.querySelectorAll(".laptop-element");
 
-  const contactPageAnimationRun = gsap.timeline({ delay: 0.5 });
+  const contactPageAnimationRun = gsap.timeline({ delay: 0.2 });
   contactPageAnimationRun
     .from(
       ".top-nav--contact",

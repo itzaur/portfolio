@@ -1,14 +1,14 @@
 {
-  "hash": "4671789344ab1beebc22",
+  "hash": "e2a34afb5b2670fab36c",
   "version": "5.74.0",
-  "time": 6480,
-  "builtAt": 1661334794384,
+  "time": 7805,
+  "builtAt": 1661341004992,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/mainb97769bbd5703f89c5da.js"
+      "js/mainc085c79a7704bc10c34e.js"
     ],
     "vendors": [
       "js/vendors048effe0f82af22a89c7.js"
@@ -745,20 +745,20 @@
     },
     {
       "type": "asset",
-      "name": "js/mainb97769bbd5703f89c5da.js",
-      "size": 41167,
+      "name": "js/mainc085c79a7704bc10c34e.js",
+      "size": 41206,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "b97769bbd5703f89c5da",
+        "contenthash": "c085c79a7704bc10c34e",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "js/mainb97769bbd5703f89c5da.js.map"
+          "sourceMap": "js/mainc085c79a7704bc10c34e.js.map"
         },
-        "size": 41167
+        "size": 41206
       },
       "chunkNames": [
         "main"
@@ -770,14 +770,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/mainb97769bbd5703f89c5da.js.map",
-          "size": 127483,
+          "name": "js/mainc085c79a7704bc10c34e.js.map",
+          "size": 127768,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 127483
+            "size": 127768
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2406,9 +2406,9 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4954070,
+      "size": 4954250,
       "sizes": {
-        "javascript": 77988,
+        "javascript": 78168,
         "asset": 4788624,
         "css/mini-extract": 83069,
         "runtime": 4389
@@ -2422,7 +2422,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/mainb97769bbd5703f89c5da.js"
+        "js/mainc085c79a7704bc10c34e.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2511,9 +2511,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/mainb97769bbd5703f89c5da.js.map"
+        "js/mainc085c79a7704bc10c34e.js.map"
       ],
-      "hash": "3eab056a9add59c28b00",
+      "hash": "87477ebad1a23b53a33b",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -2573,7 +2573,7 @@
               "active": true,
               "explanation": "",
               "userRequest": null,
-              "loc": "12:23-76",
+              "loc": "13:23-76",
               "moduleId": 2549,
               "resolvedModuleId": null
             }
@@ -8719,9 +8719,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 72514,
+          "size": 72694,
           "sizes": {
-            "javascript": 72514
+            "javascript": 72694
           },
           "built": true,
           "codeGenerated": true,
@@ -8773,9 +8773,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 14482,
+              "size": 14662,
               "sizes": {
-                "javascript": 14482
+                "javascript": 14662
               },
               "built": true,
               "codeGenerated": false,
@@ -8806,7 +8806,7 @@
               "usedExports": [],
               "providedExports": [],
               "optimizationBailout": [
-                "Statement (VariableDeclaration) with side effects in source code at 12:0-78"
+                "Statement (VariableDeclaration) with side effects in source code at 13:0-78"
               ],
               "depth": 0
             },
@@ -8874,7 +8874,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "106:40-60",
+                  "loc": "109:40-60",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8888,7 +8888,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "113:6-14",
+                  "loc": "116:6-14",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8902,7 +8902,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "118:43-63",
+                  "loc": "121:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8916,7 +8916,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "130:43-63",
+                  "loc": "133:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8930,7 +8930,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "142:43-63",
+                  "loc": "145:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8944,7 +8944,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "181:4-23",
+                  "loc": "184:4-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -8961,333 +8961,6 @@
               ],
               "optimizationBailout": [
                 "Dependency (harmony side effect evaluation) with side effects at 3:0-35"
-              ],
-              "depth": 1
-            },
-            {
-              "type": "module",
-              "moduleType": "javascript/auto",
-              "layer": null,
-              "size": 7008,
-              "sizes": {
-                "javascript": 7008
-              },
-              "built": true,
-              "codeGenerated": false,
-              "buildTimeExecuted": false,
-              "cached": false,
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-              "name": "./js/cursor.js",
-              "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
-              "index": 5,
-              "preOrderIndex": 5,
-              "index2": 3,
-              "postOrderIndex": 3,
-              "cacheable": true,
-              "optional": false,
-              "orphan": false,
-              "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "issuerName": "./js/barba.js",
-              "issuerPath": [
-                {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "name": "./js/barba.js",
-                  "id": null
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": null,
-              "issuerId": null,
-              "chunks": [],
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony side effect evaluation",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./cursor",
-                  "loc": "6:0-43",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./cursor",
-                  "loc": "177:4-19",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "module": "./js/index.js",
-                  "moduleName": "./js/index.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "resolvedModule": "./js/index.js",
-                  "type": "harmony side effect evaluation",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./cursor",
-                  "loc": "4:0-38",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "module": "./js/index.js",
-                  "moduleName": "./js/index.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "resolvedModule": "./js/index.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./cursor",
-                  "loc": "435:27-37",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                }
-              ],
-              "usedExports": [
-                "MagnetLogo",
-                "addCustomCursor"
-              ],
-              "providedExports": [
-                "MagnetLogo",
-                "addCustomCursor"
-              ],
-              "optimizationBailout": [
-                "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
-              ],
-              "depth": 1
-            },
-            {
-              "type": "module",
-              "moduleType": "javascript/auto",
-              "layer": null,
-              "size": 33287,
-              "sizes": {
-                "javascript": 33287
-              },
-              "built": true,
-              "codeGenerated": false,
-              "buildTimeExecuted": false,
-              "cached": false,
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
-              "name": "./js/about.js",
-              "nameForCondition": "/home/user/projects/portfolio/js/about.js",
-              "index": 6,
-              "preOrderIndex": 6,
-              "index2": 5,
-              "postOrderIndex": 5,
-              "cacheable": true,
-              "optional": false,
-              "orphan": false,
-              "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "issuerName": "./js/barba.js",
-              "issuerPath": [
-                {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "name": "./js/barba.js",
-                  "id": null
-                }
-              ],
-              "failed": false,
-              "errors": 0,
-              "warnings": 0,
-              "id": null,
-              "issuerId": null,
-              "chunks": [],
-              "assets": [],
-              "reasons": [
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony side effect evaluation",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "5:0-156",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "42:6-28",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "51:42-68",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "66:41-67",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "107:43-67",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "119:43-67",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "125:6-24",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "131:43-67",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "137:6-20",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "143:43-67",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                },
-                {
-                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "module": "./js/barba.js",
-                  "moduleName": "./js/barba.js",
-                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-                  "resolvedModule": "./js/barba.js",
-                  "type": "harmony import specifier",
-                  "active": true,
-                  "explanation": "",
-                  "userRequest": "./about",
-                  "loc": "149:6-21",
-                  "moduleId": null,
-                  "resolvedModuleId": null
-                }
-              ],
-              "usedExports": [
-                "aboutAnimationInit",
-                "addDoorAnimationOnResize",
-                "contactPageInit",
-                "controlHoverOnCornerButton",
-                "cornerArrowHoverEffect",
-                "pageSkillsInit"
-              ],
-              "providedExports": [
-                "aboutAnimationInit",
-                "addDoorAnimationOnResize",
-                "contactPageInit",
-                "controlHoverOnCornerButton",
-                "cornerArrowAnimation",
-                "cornerArrowHoverEffect",
-                "pageSkillsInit"
-              ],
-              "optimizationBailout": [
-                "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
               ],
               "depth": 1
             },
@@ -9314,17 +8987,12 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "issuerName": "./js/index.js",
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "issuerName": "./js/barba.js",
               "issuerPath": [
                 {
                   "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
                   "name": "./js/barba.js",
-                  "id": null
-                },
-                {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "name": "./js/index.js",
                   "id": null
                 }
               ],
@@ -10135,6 +9803,20 @@
                   "resolvedModuleId": null
                 },
                 {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./utils",
+                  "loc": "7:0-51",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
                   "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
                   "module": "./js/cursor.js",
                   "moduleName": "./js/cursor.js",
@@ -10518,7 +10200,334 @@
               "optimizationBailout": [
                 "Statement (VariableDeclaration) with side effects in source code at 1:0-14:2"
               ],
-              "depth": 2
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 7008,
+              "sizes": {
+                "javascript": 7008
+              },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+              "name": "./js/cursor.js",
+              "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
+              "index": 5,
+              "preOrderIndex": 5,
+              "index2": 3,
+              "postOrderIndex": 3,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "issuerName": "./js/barba.js",
+              "issuerPath": [
+                {
+                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "name": "./js/barba.js",
+                  "id": null
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./cursor",
+                  "loc": "6:0-43",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./cursor",
+                  "loc": "180:4-19",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "module": "./js/index.js",
+                  "moduleName": "./js/index.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "resolvedModule": "./js/index.js",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./cursor",
+                  "loc": "4:0-38",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "module": "./js/index.js",
+                  "moduleName": "./js/index.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "resolvedModule": "./js/index.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./cursor",
+                  "loc": "435:27-37",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": [
+                "MagnetLogo",
+                "addCustomCursor"
+              ],
+              "providedExports": [
+                "MagnetLogo",
+                "addCustomCursor"
+              ],
+              "optimizationBailout": [
+                "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
+              ],
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "layer": null,
+              "size": 33287,
+              "sizes": {
+                "javascript": 33287
+              },
+              "built": true,
+              "codeGenerated": false,
+              "buildTimeExecuted": false,
+              "cached": false,
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
+              "name": "./js/about.js",
+              "nameForCondition": "/home/user/projects/portfolio/js/about.js",
+              "index": 6,
+              "preOrderIndex": 6,
+              "index2": 5,
+              "postOrderIndex": 5,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "issuerName": "./js/barba.js",
+              "issuerPath": [
+                {
+                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "name": "./js/barba.js",
+                  "id": null
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": null,
+              "issuerId": null,
+              "chunks": [],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "5:0-156",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "44:6-28",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "53:42-68",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "69:41-67",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "110:43-67",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "122:43-67",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "128:6-24",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "134:43-67",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "140:6-20",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "146:43-67",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "module": "./js/barba.js",
+                  "moduleName": "./js/barba.js",
+                  "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+                  "resolvedModule": "./js/barba.js",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "./about",
+                  "loc": "152:6-21",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": [
+                "aboutAnimationInit",
+                "addDoorAnimationOnResize",
+                "contactPageInit",
+                "controlHoverOnCornerButton",
+                "cornerArrowHoverEffect",
+                "pageSkillsInit"
+              ],
+              "providedExports": [
+                "aboutAnimationInit",
+                "addDoorAnimationOnResize",
+                "contactPageInit",
+                "controlHoverOnCornerButton",
+                "cornerArrowAnimation",
+                "cornerArrowHoverEffect",
+                "pageSkillsInit"
+              ],
+              "optimizationBailout": [
+                "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
+              ],
+              "depth": 1
             }
           ]
         },
@@ -10980,7 +10989,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "85:0-10",
+              "loc": "88:0-10",
               "moduleId": 2549,
               "resolvedModuleId": null
             },
@@ -10994,7 +11003,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "153:0-23",
+              "loc": "156:0-23",
               "moduleId": 2549,
               "resolvedModuleId": null
             },
@@ -11008,7 +11017,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "161:0-17",
+              "loc": "164:0-17",
               "moduleId": 2549,
               "resolvedModuleId": null
             },
@@ -11022,7 +11031,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "170:0-22",
+              "loc": "173:0-22",
               "moduleId": 2549,
               "resolvedModuleId": null
             }
@@ -11054,9 +11063,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 72514,
+      "size": 72694,
       "sizes": {
-        "javascript": 72514
+        "javascript": 72694
       },
       "built": true,
       "codeGenerated": true,
@@ -11107,9 +11116,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 14482,
+          "size": 14662,
           "sizes": {
-            "javascript": 14482
+            "javascript": 14662
           },
           "built": true,
           "codeGenerated": false,
@@ -11139,7 +11148,7 @@
           "usedExports": [],
           "providedExports": [],
           "optimizationBailout": [
-            "Statement (VariableDeclaration) with side effects in source code at 12:0-78"
+            "Statement (VariableDeclaration) with side effects in source code at 13:0-78"
           ],
           "depth": 0
         },
@@ -11206,7 +11215,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "106:40-60",
+              "loc": "109:40-60",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11220,7 +11229,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "113:6-14",
+              "loc": "116:6-14",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11234,7 +11243,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "118:43-63",
+              "loc": "121:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11248,7 +11257,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "130:43-63",
+              "loc": "133:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11262,7 +11271,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "142:43-63",
+              "loc": "145:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11276,7 +11285,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "181:4-23",
+              "loc": "184:4-23",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -11293,331 +11302,6 @@
           ],
           "optimizationBailout": [
             "Dependency (harmony side effect evaluation) with side effects at 3:0-35"
-          ],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "layer": null,
-          "size": 7008,
-          "sizes": {
-            "javascript": 7008
-          },
-          "built": true,
-          "codeGenerated": false,
-          "buildTimeExecuted": false,
-          "cached": false,
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-          "name": "./js/cursor.js",
-          "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
-          "index": 5,
-          "preOrderIndex": 5,
-          "index2": 3,
-          "postOrderIndex": 3,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "issuerName": "./js/barba.js",
-          "issuerPath": [
-            {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "name": "./js/barba.js",
-              "id": null
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": null,
-          "issuerId": null,
-          "chunks": [],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./cursor",
-              "loc": "6:0-43",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./cursor",
-              "loc": "177:4-19",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "module": "./js/index.js",
-              "moduleName": "./js/index.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "resolvedModule": "./js/index.js",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./cursor",
-              "loc": "4:0-38",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "module": "./js/index.js",
-              "moduleName": "./js/index.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "resolvedModule": "./js/index.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./cursor",
-              "loc": "435:27-37",
-              "moduleId": null,
-              "resolvedModuleId": null
-            }
-          ],
-          "usedExports": [
-            "MagnetLogo",
-            "addCustomCursor"
-          ],
-          "providedExports": [
-            "MagnetLogo",
-            "addCustomCursor"
-          ],
-          "optimizationBailout": [
-            "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
-          ],
-          "depth": 1
-        },
-        {
-          "type": "module",
-          "moduleType": "javascript/auto",
-          "layer": null,
-          "size": 33287,
-          "sizes": {
-            "javascript": 33287
-          },
-          "built": true,
-          "codeGenerated": false,
-          "buildTimeExecuted": false,
-          "cached": false,
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
-          "name": "./js/about.js",
-          "nameForCondition": "/home/user/projects/portfolio/js/about.js",
-          "index": 6,
-          "preOrderIndex": 6,
-          "index2": 5,
-          "postOrderIndex": 5,
-          "cacheable": true,
-          "optional": false,
-          "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "issuerName": "./js/barba.js",
-          "issuerPath": [
-            {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "name": "./js/barba.js",
-              "id": null
-            }
-          ],
-          "failed": false,
-          "errors": 0,
-          "warnings": 0,
-          "id": null,
-          "issuerId": null,
-          "chunks": [],
-          "assets": [],
-          "reasons": [
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony side effect evaluation",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "5:0-156",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "42:6-28",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "51:42-68",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "66:41-67",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "107:43-67",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "119:43-67",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "125:6-24",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "131:43-67",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "137:6-20",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "143:43-67",
-              "moduleId": null,
-              "resolvedModuleId": null
-            },
-            {
-              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "module": "./js/barba.js",
-              "moduleName": "./js/barba.js",
-              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-              "resolvedModule": "./js/barba.js",
-              "type": "harmony import specifier",
-              "active": true,
-              "explanation": "",
-              "userRequest": "./about",
-              "loc": "149:6-21",
-              "moduleId": null,
-              "resolvedModuleId": null
-            }
-          ],
-          "usedExports": [
-            "aboutAnimationInit",
-            "addDoorAnimationOnResize",
-            "contactPageInit",
-            "controlHoverOnCornerButton",
-            "cornerArrowHoverEffect",
-            "pageSkillsInit"
-          ],
-          "providedExports": [
-            "aboutAnimationInit",
-            "addDoorAnimationOnResize",
-            "contactPageInit",
-            "controlHoverOnCornerButton",
-            "cornerArrowAnimation",
-            "cornerArrowHoverEffect",
-            "pageSkillsInit"
-          ],
-          "optimizationBailout": [
-            "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
           ],
           "depth": 1
         },
@@ -11643,17 +11327,12 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "issuerName": "./js/index.js",
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "issuerName": "./js/barba.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
               "name": "./js/barba.js",
-              "id": null
-            },
-            {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "name": "./js/index.js",
               "id": null
             }
           ],
@@ -12464,6 +12143,20 @@
               "resolvedModuleId": null
             },
             {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./utils",
+              "loc": "7:0-51",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
               "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
               "module": "./js/cursor.js",
               "moduleName": "./js/cursor.js",
@@ -12847,7 +12540,332 @@
           "optimizationBailout": [
             "Statement (VariableDeclaration) with side effects in source code at 1:0-14:2"
           ],
-          "depth": 2
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 7008,
+          "sizes": {
+            "javascript": 7008
+          },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+          "name": "./js/cursor.js",
+          "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "issuerName": "./js/barba.js",
+          "issuerPath": [
+            {
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "name": "./js/barba.js",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./cursor",
+              "loc": "6:0-43",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./cursor",
+              "loc": "180:4-19",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "module": "./js/index.js",
+              "moduleName": "./js/index.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "resolvedModule": "./js/index.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./cursor",
+              "loc": "4:0-38",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "module": "./js/index.js",
+              "moduleName": "./js/index.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "resolvedModule": "./js/index.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./cursor",
+              "loc": "435:27-37",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [
+            "MagnetLogo",
+            "addCustomCursor"
+          ],
+          "providedExports": [
+            "MagnetLogo",
+            "addCustomCursor"
+          ],
+          "optimizationBailout": [
+            "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "layer": null,
+          "size": 33287,
+          "sizes": {
+            "javascript": 33287
+          },
+          "built": true,
+          "codeGenerated": false,
+          "buildTimeExecuted": false,
+          "cached": false,
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
+          "name": "./js/about.js",
+          "nameForCondition": "/home/user/projects/portfolio/js/about.js",
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "issuerName": "./js/barba.js",
+          "issuerPath": [
+            {
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "name": "./js/barba.js",
+              "id": null
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": null,
+          "issuerId": null,
+          "chunks": [],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "5:0-156",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "44:6-28",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "53:42-68",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "69:41-67",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "110:43-67",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "122:43-67",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "128:6-24",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "134:43-67",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "140:6-20",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "146:43-67",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "module": "./js/barba.js",
+              "moduleName": "./js/barba.js",
+              "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+              "resolvedModule": "./js/barba.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./about",
+              "loc": "152:6-21",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": [
+            "aboutAnimationInit",
+            "addDoorAnimationOnResize",
+            "contactPageInit",
+            "controlHoverOnCornerButton",
+            "cornerArrowHoverEffect",
+            "pageSkillsInit"
+          ],
+          "providedExports": [
+            "aboutAnimationInit",
+            "addDoorAnimationOnResize",
+            "contactPageInit",
+            "controlHoverOnCornerButton",
+            "cornerArrowAnimation",
+            "cornerArrowHoverEffect",
+            "pageSkillsInit"
+          ],
+          "optimizationBailout": [
+            "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
+          ],
+          "depth": 1
         }
       ]
     },
@@ -12944,7 +12962,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "85:0-10",
+          "loc": "88:0-10",
           "moduleId": 2549,
           "resolvedModuleId": null
         },
@@ -12958,7 +12976,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "153:0-23",
+          "loc": "156:0-23",
           "moduleId": 2549,
           "resolvedModuleId": null
         },
@@ -12972,7 +12990,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "161:0-17",
+          "loc": "164:0-17",
           "moduleId": 2549,
           "resolvedModuleId": null
         },
@@ -12986,7 +13004,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "170:0-22",
+          "loc": "173:0-22",
           "moduleId": 2549,
           "resolvedModuleId": null
         }
@@ -13064,7 +13082,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "106:40-60",
+          "loc": "109:40-60",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13078,7 +13096,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "113:6-14",
+          "loc": "116:6-14",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13092,7 +13110,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "118:43-63",
+          "loc": "121:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13106,7 +13124,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "130:43-63",
+          "loc": "133:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13120,7 +13138,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "142:43-63",
+          "loc": "145:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13134,7 +13152,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "181:4-23",
+          "loc": "184:4-23",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -13158,551 +13176,6 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 7008,
-      "sizes": {
-        "javascript": 7008
-      },
-      "built": true,
-      "codeGenerated": false,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-      "name": "./js/cursor.js",
-      "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
-      "index": 5,
-      "preOrderIndex": 5,
-      "index2": 3,
-      "postOrderIndex": 3,
-      "cacheable": true,
-      "optional": false,
-      "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-      "issuerName": "./js/barba.js",
-      "issuerPath": [
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "name": "./js/barba.js",
-          "id": null
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./cursor",
-          "loc": "6:0-43",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./cursor",
-          "loc": "177:4-19",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "module": "./js/index.js",
-          "moduleName": "./js/index.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "resolvedModule": "./js/index.js",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./cursor",
-          "loc": "4:0-38",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "module": "./js/index.js",
-          "moduleName": "./js/index.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "resolvedModule": "./js/index.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./cursor",
-          "loc": "435:27-37",
-          "moduleId": null,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": [
-        "MagnetLogo",
-        "addCustomCursor"
-      ],
-      "providedExports": [
-        "MagnetLogo",
-        "addCustomCursor"
-      ],
-      "optimizationBailout": [
-        "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
-      ],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "layer": null,
-      "size": 33287,
-      "sizes": {
-        "javascript": 33287
-      },
-      "built": true,
-      "codeGenerated": false,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
-      "name": "./js/about.js",
-      "nameForCondition": "/home/user/projects/portfolio/js/about.js",
-      "index": 6,
-      "preOrderIndex": 6,
-      "index2": 5,
-      "postOrderIndex": 5,
-      "cacheable": true,
-      "optional": false,
-      "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-      "issuerName": "./js/barba.js",
-      "issuerPath": [
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "name": "./js/barba.js",
-          "id": null
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": null,
-      "chunks": [],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "5:0-156",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "42:6-28",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "51:42-68",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "66:41-67",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "107:43-67",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "119:43-67",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "125:6-24",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "131:43-67",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "137:6-20",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "143:43-67",
-          "moduleId": null,
-          "resolvedModuleId": null
-        },
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "module": "./js/barba.js",
-          "moduleName": "./js/barba.js",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony import specifier",
-          "active": true,
-          "explanation": "",
-          "userRequest": "./about",
-          "loc": "149:6-21",
-          "moduleId": null,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": [
-        "aboutAnimationInit",
-        "addDoorAnimationOnResize",
-        "contactPageInit",
-        "controlHoverOnCornerButton",
-        "cornerArrowHoverEffect",
-        "pageSkillsInit"
-      ],
-      "providedExports": [
-        "aboutAnimationInit",
-        "addDoorAnimationOnResize",
-        "contactPageInit",
-        "controlHoverOnCornerButton",
-        "cornerArrowAnimation",
-        "cornerArrowHoverEffect",
-        "pageSkillsInit"
-      ],
-      "optimizationBailout": [
-        "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
-      ],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/dynamic",
-      "layer": null,
-      "size": 1904,
-      "sizes": {
-        "javascript": 1904
-      },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/home/user/projects/portfolio/img|sync|nonrecursive|/.(png%7Cjpe?g%7Csvg)$/",
-      "name": "./img/ sync nonrecursive .(png%7Cjpe?g%7Csvg)$",
-      "nameForCondition": null,
-      "index": 7,
-      "preOrderIndex": 7,
-      "index2": 91,
-      "postOrderIndex": 91,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-      "issuerName": "./js/barba.js",
-      "issuerPath": [
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "name": "./js/barba.js",
-          "id": null
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": 160,
-      "issuerId": null,
-      "chunks": [
-        179
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js|fdf62a32447aa39e3bfdb37d631985b3",
-          "module": "./js/barba.js + 4 modules",
-          "moduleName": "./js/barba.js + 4 modules",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "require.context",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "loc": "12:23-76",
-          "moduleId": 2549,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": true,
-      "providedExports": [],
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule"
-      ],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "layer": null,
-      "size": 50,
-      "sizes": {
-        "javascript": 50
-      },
-      "built": true,
-      "codeGenerated": false,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
-      "name": "./scss/main.scss",
-      "nameForCondition": "/home/user/projects/portfolio/scss/main.scss",
-      "index": null,
-      "preOrderIndex": null,
-      "index2": null,
-      "postOrderIndex": null,
-      "cacheable": true,
-      "optional": false,
-      "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-      "issuerName": "./js/barba.js",
-      "issuerPath": [
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "name": "./js/barba.js",
-          "id": null
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": null,
-      "chunks": [],
-      "assets": [
-        "images/circle4..svg",
-        "images/circle1..svg",
-        "images/circle3..svg",
-        "images/glasses..svg",
-        "images/rectangle1..svg",
-        "images/rectangle1d..svg",
-        "images/pullover..svg",
-        "images/rectangle2..svg",
-        "images/rectangle2d..svg",
-        "images/beard..svg",
-        "images/rectangle3..svg",
-        "images/rectangle3d..svg",
-        "images/noir..svg",
-        "images/rectangle4..svg",
-        "images/rectangle4d..svg",
-        "images/yellow_rays..svg",
-        "images/yellow_dots..svg",
-        "images/dots_light_blue..svg",
-        "images/about-bg..png",
-        "images/about-rays..svg",
-        "images/dots_orange..svg",
-        "images/background_orange..png",
-        "images/background_blue..png",
-        "images/background_yellow..png",
-        "images/skills__bg..svg",
-        "images/glasses..webp",
-        "images/pullover..webp",
-        "images/beard..webp",
-        "images/noir..webp",
-        "fonts/d_ccmonologous_bolditalic..woff2"
-      ],
-      "reasons": [
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js|fdf62a32447aa39e3bfdb37d631985b3",
-          "module": "./js/barba.js + 4 modules",
-          "moduleName": "./js/barba.js + 4 modules",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "resolvedModule": "./js/barba.js",
-          "type": "harmony side effect evaluation",
-          "active": true,
-          "explanation": "",
-          "userRequest": "../scss/main.scss",
-          "loc": "1:0-27",
-          "moduleId": 2549,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": false,
-      "providedExports": [],
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module is not in any chunk"
-      ],
-      "depth": 1
-    },
-    {
-      "type": "module",
-      "moduleType": "css/mini-extract",
-      "size": 83069,
-      "sizes": {
-        "css/mini-extract": 83069
-      },
-      "built": true,
-      "codeGenerated": true,
-      "buildTimeExecuted": false,
-      "cached": false,
-      "identifier": "css|/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss|0",
-      "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/main.scss",
-      "nameForCondition": "/home/user/projects/portfolio/scss/main.scss",
-      "index": 1,
-      "preOrderIndex": 1,
-      "index2": 0,
-      "postOrderIndex": 0,
-      "cacheable": true,
-      "optional": false,
-      "orphan": false,
-      "issuer": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
-      "issuerName": "./scss/main.scss",
-      "issuerPath": [
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
-          "name": "./js/barba.js",
-          "id": null
-        },
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
-          "name": "./scss/main.scss",
-          "id": null
-        }
-      ],
-      "failed": false,
-      "errors": 0,
-      "warnings": 0,
-      "id": null,
-      "issuerId": null,
-      "chunks": [
-        179
-      ],
-      "assets": [],
-      "reasons": [
-        {
-          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
-          "module": "./scss/main.scss",
-          "moduleName": "./scss/main.scss",
-          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
-          "resolvedModule": "./scss/main.scss",
-          "type": "unknown",
-          "active": true,
-          "explanation": "",
-          "userRequest": null,
-          "moduleId": null,
-          "resolvedModuleId": null
-        }
-      ],
-      "usedExports": null,
-      "providedExports": null,
-      "optimizationBailout": [
-        "ModuleConcatenation bailout: Module Concatenation is not implemented for CssModule"
-      ],
-      "depth": 2
-    },
-    {
-      "type": "module",
-      "moduleType": "javascript/auto",
-      "layer": null,
       "size": 1133,
       "sizes": {
         "javascript": 1133
@@ -13721,17 +13194,12 @@
       "cacheable": true,
       "optional": false,
       "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-      "issuerName": "./js/index.js",
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+      "issuerName": "./js/barba.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
           "name": "./js/barba.js",
-          "id": null
-        },
-        {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "name": "./js/index.js",
           "id": null
         }
       ],
@@ -14542,6 +14010,20 @@
           "resolvedModuleId": null
         },
         {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./utils",
+          "loc": "7:0-51",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
           "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
           "module": "./js/cursor.js",
           "moduleName": "./js/cursor.js",
@@ -14924,6 +14406,551 @@
       ],
       "optimizationBailout": [
         "Statement (VariableDeclaration) with side effects in source code at 1:0-14:2"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 7008,
+      "sizes": {
+        "javascript": 7008
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+      "name": "./js/cursor.js",
+      "nameForCondition": "/home/user/projects/portfolio/js/cursor.js",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+      "issuerName": "./js/barba.js",
+      "issuerPath": [
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "name": "./js/barba.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./cursor",
+          "loc": "6:0-43",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./cursor",
+          "loc": "180:4-19",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "module": "./js/index.js",
+          "moduleName": "./js/index.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "resolvedModule": "./js/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./cursor",
+          "loc": "4:0-38",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "module": "./js/index.js",
+          "moduleName": "./js/index.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "resolvedModule": "./js/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./cursor",
+          "loc": "435:27-37",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [
+        "MagnetLogo",
+        "addCustomCursor"
+      ],
+      "providedExports": [
+        "MagnetLogo",
+        "addCustomCursor"
+      ],
+      "optimizationBailout": [
+        "Statement (VariableDeclaration) with side effects in source code at 9:0-12:2"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 33287,
+      "sizes": {
+        "javascript": 33287
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/about.js",
+      "name": "./js/about.js",
+      "nameForCondition": "/home/user/projects/portfolio/js/about.js",
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+      "issuerName": "./js/barba.js",
+      "issuerPath": [
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "name": "./js/barba.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "5:0-156",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "44:6-28",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "53:42-68",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "69:41-67",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "110:43-67",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "122:43-67",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "128:6-24",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "134:43-67",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "140:6-20",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "146:43-67",
+          "moduleId": null,
+          "resolvedModuleId": null
+        },
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "module": "./js/barba.js",
+          "moduleName": "./js/barba.js",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./about",
+          "loc": "152:6-21",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": [
+        "aboutAnimationInit",
+        "addDoorAnimationOnResize",
+        "contactPageInit",
+        "controlHoverOnCornerButton",
+        "cornerArrowHoverEffect",
+        "pageSkillsInit"
+      ],
+      "providedExports": [
+        "aboutAnimationInit",
+        "addDoorAnimationOnResize",
+        "contactPageInit",
+        "controlHoverOnCornerButton",
+        "cornerArrowAnimation",
+        "cornerArrowHoverEffect",
+        "pageSkillsInit"
+      ],
+      "optimizationBailout": [
+        "Dependency (harmony side effect evaluation) with side effects at 3:0-75"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/dynamic",
+      "layer": null,
+      "size": 1904,
+      "sizes": {
+        "javascript": 1904
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/home/user/projects/portfolio/img|sync|nonrecursive|/.(png%7Cjpe?g%7Csvg)$/",
+      "name": "./img/ sync nonrecursive .(png%7Cjpe?g%7Csvg)$",
+      "nameForCondition": null,
+      "index": 7,
+      "preOrderIndex": 7,
+      "index2": 91,
+      "postOrderIndex": 91,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+      "issuerName": "./js/barba.js",
+      "issuerPath": [
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "name": "./js/barba.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": 160,
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js|fdf62a32447aa39e3bfdb37d631985b3",
+          "module": "./js/barba.js + 4 modules",
+          "moduleName": "./js/barba.js + 4 modules",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "require.context",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "13:23-76",
+          "moduleId": 2549,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": true,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for ContextModule"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 50,
+      "sizes": {
+        "javascript": 50
+      },
+      "built": true,
+      "codeGenerated": false,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
+      "name": "./scss/main.scss",
+      "nameForCondition": "/home/user/projects/portfolio/scss/main.scss",
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "cacheable": true,
+      "optional": false,
+      "orphan": true,
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+      "issuerName": "./js/barba.js",
+      "issuerPath": [
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "name": "./js/barba.js",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [],
+      "assets": [
+        "images/circle4..svg",
+        "images/circle1..svg",
+        "images/circle3..svg",
+        "images/glasses..svg",
+        "images/rectangle1..svg",
+        "images/rectangle1d..svg",
+        "images/pullover..svg",
+        "images/rectangle2..svg",
+        "images/rectangle2d..svg",
+        "images/beard..svg",
+        "images/rectangle3..svg",
+        "images/rectangle3d..svg",
+        "images/noir..svg",
+        "images/rectangle4..svg",
+        "images/rectangle4d..svg",
+        "images/yellow_rays..svg",
+        "images/yellow_dots..svg",
+        "images/dots_light_blue..svg",
+        "images/about-bg..png",
+        "images/about-rays..svg",
+        "images/dots_orange..svg",
+        "images/background_orange..png",
+        "images/background_blue..png",
+        "images/background_yellow..png",
+        "images/skills__bg..svg",
+        "images/glasses..webp",
+        "images/pullover..webp",
+        "images/beard..webp",
+        "images/noir..webp",
+        "fonts/d_ccmonologous_bolditalic..woff2"
+      ],
+      "reasons": [
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js|fdf62a32447aa39e3bfdb37d631985b3",
+          "module": "./js/barba.js + 4 modules",
+          "moduleName": "./js/barba.js + 4 modules",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "resolvedModule": "./js/barba.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "../scss/main.scss",
+          "loc": "1:0-27",
+          "moduleId": 2549,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": false,
+      "providedExports": [],
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module is not in any chunk"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "css/mini-extract",
+      "size": 83069,
+      "sizes": {
+        "css/mini-extract": 83069
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "css|/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss|0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./node_modules/postcss-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./scss/main.scss",
+      "nameForCondition": "/home/user/projects/portfolio/scss/main.scss",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
+      "issuerName": "./scss/main.scss",
+      "issuerPath": [
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
+          "name": "./js/barba.js",
+          "id": null
+        },
+        {
+          "identifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
+          "name": "./scss/main.scss",
+          "id": null
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": null,
+      "issuerId": null,
+      "chunks": [
+        179
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
+          "module": "./scss/main.scss",
+          "moduleName": "./scss/main.scss",
+          "resolvedModuleIdentifier": "/home/user/projects/portfolio/node_modules/mini-css-extract-plugin/dist/loader.js!/home/user/projects/portfolio/node_modules/css-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/postcss-loader/dist/cjs.js!/home/user/projects/portfolio/node_modules/sass-loader/dist/cjs.js!/home/user/projects/portfolio/scss/main.scss",
+          "resolvedModule": "./scss/main.scss",
+          "type": "unknown",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "ModuleConcatenation bailout: Module Concatenation is not implemented for CssModule"
       ],
       "depth": 2
     },
@@ -22583,12 +22610,12 @@
           "size": 77938
         },
         {
-          "name": "js/mainb97769bbd5703f89c5da.js",
-          "size": 41167
+          "name": "js/mainc085c79a7704bc10c34e.js",
+          "size": 41206
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147992,
+      "assetsSize": 148031,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
@@ -22935,8 +22962,8 @@
           "size": 25997
         },
         {
-          "name": "js/mainb97769bbd5703f89c5da.js.map",
-          "size": 127483
+          "name": "js/mainc085c79a7704bc10c34e.js.map",
+          "size": 127768
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -22944,7 +22971,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5078968,
+      "auxiliaryAssetsSize": 5079253,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -22967,12 +22994,12 @@
           "size": 77938
         },
         {
-          "name": "js/mainb97769bbd5703f89c5da.js",
-          "size": 41167
+          "name": "js/mainc085c79a7704bc10c34e.js",
+          "size": 41206
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147992,
+      "assetsSize": 148031,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
@@ -23319,8 +23346,8 @@
           "size": 25997
         },
         {
-          "name": "js/mainb97769bbd5703f89c5da.js.map",
-          "size": 127483
+          "name": "js/mainc085c79a7704bc10c34e.js.map",
+          "size": 127768
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -23328,7 +23355,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5078968,
+      "auxiliaryAssetsSize": 5079253,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -23352,8 +23379,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "fac2d2ddb6f652863f7f",
       "version": "5.74.0",
-      "time": 234,
-      "builtAt": 1661334788183,
+      "time": 303,
+      "builtAt": 1661340997545,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
