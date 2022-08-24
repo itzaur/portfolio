@@ -368,7 +368,7 @@ function pageSkillsInit() {
     }
   }
 
-  const hobbiesTimeline = gsap.timeline({ delay: 0.5 });
+  const hobbiesTimeline = gsap.timeline();
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -670,7 +670,7 @@ function aboutAnimationInit() {
   }
 
   //ANCHOR About-page (part1) doodle text animation
-  const aboutTimeline = gsap.timeline({ delay: 0.3 });
+  const aboutTimeline = gsap.timeline();
   aboutTimeline
     .from(btnAboutSection, {
       right: btnAboutSection.offsetWidth * -1,
