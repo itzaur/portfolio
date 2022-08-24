@@ -87,11 +87,6 @@ function buttonFunctionality() {
   });
 
   tlMenuTransition
-    // .set(".menu__box img", {
-    //   xPercent: -50,
-    //   yPercent: -50,
-    //   transformOrigin: "center",
-    // })
     .to(menuPage, {
       // height: "calc(100vh - var(--padding-container) * 2 + 1px)",
       y: 0,
@@ -103,16 +98,15 @@ function buttonFunctionality() {
         y: -600,
         ease: gsapEase.bounce_out,
         opacity: 0,
-        duration: 0.3,
-        stagger: { each: 0.001, from: "random" },
+        duration: 0.4,
+        stagger: { each: 0.002, from: "random" },
       },
       "<0.1"
     )
-    .from(".menu__box img", {
-      autoAlpha: 0,
-      scale: 0,
+    .to(".menu__box img", {
+      autoAlpha: 1,
+      scale: 1,
       ease: gsapEase.elastic03,
-      clearProps: "transform",
     })
     .from(
       menuNavDoodle,
@@ -129,7 +123,7 @@ function buttonFunctionality() {
       {
         y: -60,
         opacity: 0,
-        stagger: 0.2,
+        stagger: 0.15,
         ease: gsapEase.back_1_7,
       },
       "<0.6"

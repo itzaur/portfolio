@@ -154,8 +154,6 @@ function vaporAnimation(items) {
 }
 
 function pageSkillsInit() {
-  console.log("pageSkillsInit() started");
-
   gsap.registerPlugin(TextPlugin);
   const btnBig = document.querySelector(".btn-big");
   const hobbiesItems = document.querySelectorAll(".hobbie");
@@ -230,20 +228,15 @@ function pageSkillsInit() {
         },
         "<0"
       )
-      .fromTo(
+      .from(
         `[aria-hidden="false"] .point span`,
         {
-          x: -60,
+          x: -30,
           opacity: 0,
           scale: 0,
-        },
-        {
-          x: 0,
-          opacity: 1,
-          scale: 1,
+          duration: 0.2,
           ease: gsapEase.back_1_7,
           clearProps: "all",
-          duration: 0.2,
         },
         "<0.3"
       );
@@ -252,7 +245,7 @@ function pageSkillsInit() {
       skillsTimeline.play();
 
       gsap.to(`[aria-hidden="true"] .point span`, {
-        x: -60,
+        x: -30,
         opacity: 0,
         scale: 0,
         duration: 0.25,
@@ -375,7 +368,7 @@ function pageSkillsInit() {
     }
   }
 
-  const hobbiesTimeline = gsap.timeline({ delay: 0.5 });
+  const hobbiesTimeline = gsap.timeline({ delay: 0.7 });
 
   hobbiesTimeline
     .set(".hobbie--1", {
@@ -507,8 +500,6 @@ function pageSkillsInit() {
 }
 
 function aboutAnimationInit() {
-  console.log("aboutAnimationInit() started");
-
   gsap.registerPlugin(TextPlugin);
   const btnBig = document.querySelector(".btn-big");
 
@@ -1119,8 +1110,6 @@ function aboutAnimationInit() {
 
 //ANCHOR Door animation
 function addDoorAnimationOnResize() {
-  console.log("addDoorAnimationOnResize() started");
-
   const doodle = document.querySelector(".face-doodle-mobile .text-box");
   const door = document.querySelector(".story--2__door svg");
   const textIT = document.querySelectorAll(".story--2__door svg .it");
@@ -1153,8 +1142,6 @@ function addDoorAnimationOnResize() {
 }
 
 function contactPageInit() {
-  console.log("contactPageInit() started");
-
   const coffee = document.querySelector(".coffee");
   const flower = document.querySelector(".flower");
   const laptop = document.querySelector(".contact__laptop");
@@ -1168,7 +1155,8 @@ function contactPageInit() {
       {
         xPercent: 100,
         autoAlpha: 0,
-        duration: 1,
+        duration: 0.5,
+        delay: 0.5,
         ease: gsapEase.back,
       },
       "<0.6"

@@ -20,30 +20,7 @@ function importAll(r) {
 
 const images = importAll(require.context("../img", false, /.(png|jpe?g|svg)$/));
 
-// const btnBig = document.querySelector(".btn-big");
-
 //ANCHOR Fix viewport units on mobile
-// let vh = window.innerHeight * 0.01;
-// document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-// window.addEventListener("resize", () => {
-//   let vh = window.innerHeight * 0.01;
-//   document.documentElement.style.setProperty("--vh", `${vh}px`);
-
-//   console.log(document.documentElement);
-// });
-
-// function set100vhVar() {
-//   // If less than most tablets, set CSS var to window height.
-//   let value = "100vh";
-
-//   // If window size is iPad or smaller, then use JS to set screen height.
-//   if (window.innerWidth && window.innerWidth <= 1024) {
-//     value = `${window.innerHeight}px`;
-//   }
-//   document.documentElement.style.setProperty("--real100vh", value);
-// }
-// set100vhVar();
 function documentHeight() {
   const doc = document.documentElement;
   doc.style.setProperty("--real-height", `${window.innerHeight}px`);
@@ -54,10 +31,6 @@ documentHeight();
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
   const timelineEnter = gsap.timeline({ duration: 0.5 });
-
-  // gsap.set("#corner-button svg g g path", {
-  //   autoAlpha: 0,
-  // });
 
   timelineEnter
     .set("#corner-button svg g g path", {
@@ -73,7 +46,7 @@ function animationEnter(container) {
     .to(cornerBox, {
       scale: 1,
       transformOrigin: "right bottom",
-      duration: 1,
+      duration: 1.2,
 
       onComplete: () => {
         // import("./about.js").then(({ cornerArrowHoverEffect }) => {
@@ -105,7 +78,7 @@ function animationEnter(container) {
 
 function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
-  const timelineLeave = gsap.timeline({ duration: 0.1 });
+  const timelineLeave = gsap.timeline({ duration: 0.2 });
 
   ["mouseenter", "mousemove"].forEach((event) => {
     container.removeEventListener(event, controlHoverOnCornerButton);
@@ -119,7 +92,7 @@ function animationLeave(container, done) {
       scale: 170,
       pointerEvents: "none",
       cursor: "none",
-      duration: 1,
+      duration: 1.2,
       transformOrigin: "right bottom",
       onComplete: () => done(),
     })
@@ -234,6 +207,7 @@ barba.hooks.afterEnter(({ current, next }) => {
     // import("./cursor").then(({ addCustomCursor }) => {
     //   addCustomCursor();
     // });
+
     addCustomCursor();
 
     // import("./index.js").then(({ buttonFunctionality }) => {
