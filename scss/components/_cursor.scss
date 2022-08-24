@@ -1,10 +1,11 @@
 .cursor {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: block;
-  pointer-events: none;
-  z-index: 1000;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // display: block;
+  // pointer-events: none;
+  // z-index: 1000;
+  display: none;
 
   width: 5rem;
   aspect-ratio: 1;
@@ -16,5 +17,12 @@
     stroke-miterlimit: 10;
   }
 
-  
+  @media (any-pointer: fine) {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    pointer-events: none;
+    z-index: 1000;
+  }
 }

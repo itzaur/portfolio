@@ -78,7 +78,7 @@ function animationEnter(container) {
 
 function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
-  const timelineLeave = gsap.timeline({ duration: 0.2 });
+  const timelineLeave = gsap.timeline({ duration: 0.1 });
 
   ["mouseenter", "mousemove"].forEach((event) => {
     container.removeEventListener(event, controlHoverOnCornerButton);
@@ -92,7 +92,7 @@ function animationLeave(container, done) {
       scale: 170,
       pointerEvents: "none",
       cursor: "none",
-      duration: 1.2,
+      duration: 1.5,
       transformOrigin: "right bottom",
       onComplete: () => done(),
     })
