@@ -13,8 +13,11 @@ body {
 }
 
 main {
-  height: var(--real-height);
   height: 100vh;
+
+  @media not all and (hover: hover) {
+    height: var(--real-height);
+  }
 }
 
 .container {

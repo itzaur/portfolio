@@ -100,8 +100,12 @@ body {
 }
 
 main {
-  height: var(--real-height);
   height: 100vh;
+}
+@media not all and (hover: hover) {
+  main {
+    height: var(--real-height);
+  }
 }
 
 .container {
@@ -206,7 +210,6 @@ html:focus-within {
 
 /* Set core body defaults */
 body {
-  min-height: -webkit-fill-available;
   height: 100vh;
   height: var(--real-height);
   text-rendering: optimizeSpeed;
