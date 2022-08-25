@@ -1,8 +1,12 @@
 "use strict";
 import { gsapEase, randomNumber, installMediaQueryWatcher } from "./utils";
 
-// CustomEase.create("cubic", "0.175, 0.885, 0.32, 1.275");
-// CustomEase.create("cubic2", "0.93, 0.02, 0.56, 0.95");
+const scaleProperty1 = getComputedStyle(
+  document.documentElement
+).getPropertyValue("--scale-1"); //3.75
+const scaleProperty2 = getComputedStyle(
+  document.documentElement
+).getPropertyValue("--scale-2"); //8
 
 //ANCHOR Next page button animation
 let animStatusRun = false;
@@ -50,16 +54,17 @@ function cornerArrowAnimation() {
 
 function controlHoverOnCornerButton(e) {
   const cornerArrow = document.querySelector("#wrapper__corner-box");
+
   if (e.target.closest("#wrapper__corner-box")) {
-    cornerArrow.style.transform = `scale(8)`;
+    cornerArrow.style.transform = `scale(${scaleProperty2})`;
   } else {
-    cornerArrow.style.transform = `scale(3.75)`;
+    cornerArrow.style.transform = `scale(${scaleProperty1})`;
   }
 }
 
 function cornerArrowHoverEffect() {
   const cornerArrow = document.querySelector("#wrapper__corner-box");
-  const cornerBox = document.querySelector("#corner-box");
+  // const cornerBox = document.querySelector("#corner-box");
 
   //Contact section corner element
   let contactCornerLetters = gsap.utils.toArray(".contact-elements");
@@ -107,13 +112,13 @@ function cornerArrowHoverEffect() {
   cornerArrow.addEventListener("focus", () => {
     animStatusRun = false;
     cornerArrowAnimation();
-    cornerArrow.style.transform = `scale(8)`;
+    cornerArrow.style.transform = `scale(${scaleProperty2})`;
   });
 
   cornerArrow.addEventListener("focusout", () => {
     animStatusRun = true;
     cornerArrowAnimation();
-    cornerArrow.style.transform = `scale(3.75)`;
+    cornerArrow.style.transform = `scale(${scaleProperty1})`;
   });
 }
 
@@ -491,7 +496,7 @@ function pageSkillsInit() {
       {
         transform: "translate3d(0, 0, 1px) scale(0)",
         opacity: 0,
-        ease: "Bounce.easeOut",
+        ease: gsapEase.bounce_ease_out,
         duration: 1,
         clearProps: "transform",
       },
@@ -1083,13 +1088,13 @@ function aboutAnimationInit() {
 
   document
     .querySelector(".face-doodle-desktop")
-    .addEventListener("click", (e) => {
+    .addEventListener("click", () => {
       ellipseTimlineDesktopText.timeScale(speed.t10);
     });
 
   document
     .querySelector(".face-doodle-mobile")
-    .addEventListener("click", (e) => {
+    .addEventListener("click", () => {
       ellipseTimlineMobile.timeScale(speed.t10);
     });
 

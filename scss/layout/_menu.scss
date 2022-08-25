@@ -348,7 +348,7 @@
     grid-column: 1 / span 3;
     grid-row: 3;
     justify-self: flex-start;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 
   @include respond-to("1024->") {

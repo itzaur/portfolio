@@ -19,7 +19,7 @@
 
     z-index: 20;
 
-    transform: scale(170);
+    transform: scale(60);
     transform-origin: right bottom;
 
     transition: transform 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
@@ -34,6 +34,10 @@
 
       width: 133%;
       height: 133%;
+    }
+
+    @include respond-to("568->") {
+      transform: scale(120);
     }
 
     // &:hover {

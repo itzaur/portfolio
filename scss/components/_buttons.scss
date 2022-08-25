@@ -55,7 +55,7 @@
   &__text {
     position: absolute;
     top: 0;
-    left: -1.5rem;
+    left: -1.6rem;
 
     fill: var(--clr-btn-4);
     stroke: HSL(var(--primary-hs) 0%);
@@ -76,12 +76,13 @@
     }
 
     .text-cls-1 {
-      fill: var(--clr-btn-6);
+      // fill: var(--clr-btn-6);
+      fill: HSL(var(--primary-hs) 100%);
       opacity: 0;
 
-      &--about {
-        fill: HSL(var(--primary-hs) 100%);
-      }
+      // &--about {
+      //   fill: HSL(var(--primary-hs) 100%);
+      // }
     }
   }
 
@@ -274,11 +275,12 @@
   background-color: var(--clr-btn-7);
   border: 0.4rem solid var(--clr-btn-2);
   // box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
-  box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
+  box-shadow: 6px 4px 0px HSL(var(--primary-hs) 0%/0.4);
 
-  // @include respond-to("568->") {
-  //   box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
-  // }
+  @include respond-to("568->") {
+    box-shadow: 6px 5px 0px HSL(var(--primary-hs) 0%/0.4);
+    // box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
+  }
 
   span {
     color: var(--clr-orange);
@@ -290,6 +292,7 @@
   }
 
   &--skills,
+  &--hobbies,
   &--about,
   &--contact {
     position: absolute;
@@ -301,7 +304,7 @@
     z-index: 3;
 
     @include respond-to("568->") {
-      top: -0.2rem;
+      // top: -0.2rem;
       padding: 0.3em 2em;
     }
   }
@@ -309,20 +312,20 @@
   &--about {
     z-index: 6;
 
-    @include respond-to("568->") {
-      top: 0;
-    }
+    // @include respond-to("568->") {
+    //   top: 0;
+    // }
   }
 
-  &--hobbies {
-    position: absolute;
-    top: 0;
-    left: 0;
+  // &--hobbies {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
 
-    padding: 0.3em 1em;
+  //   padding: 0.3em 1em;
 
-    z-index: 3;
-  }
+  //   z-index: 3;
+  // }
 }
 
 .story--2 .top-nav--about {

@@ -30,7 +30,7 @@ documentHeight();
 
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
-  const timelineEnter = gsap.timeline();
+  const timelineEnter = gsap.timeline({ duration: 0.5 });
 
   timelineEnter
     .set("#corner-button svg g g path", {
@@ -79,6 +79,7 @@ function animationEnter(container) {
 function animationLeave(container, done) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
   const timelineLeave = gsap.timeline();
+  const scaleValue = window.innerWidth > 568 ? 120 : 60;
 
   ["mouseenter", "mousemove"].forEach((event) => {
     container.removeEventListener(event, controlHoverOnCornerButton);
@@ -89,10 +90,10 @@ function animationLeave(container, done) {
       autoAlpha: 0,
     })
     .to(cornerBox, {
-      scale: 170,
+      scale: scaleValue,
       pointerEvents: "none",
       cursor: "none",
-      duration: 1.5,
+      duration: 1,
       transformOrigin: "right bottom",
       onComplete: () => done(),
     })

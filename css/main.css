@@ -100,7 +100,7 @@ body {
 }
 
 main {
-  height: 100%;
+  height: 100vh;
 }
 
 .container {
@@ -363,7 +363,7 @@ select {
 .btn__text {
   position: absolute;
   top: 0;
-  left: -1.5rem;
+  left: -1.6rem;
   fill: var(--clr-btn-4);
   stroke: HSL(var(--primary-hs) 0%);
   stroke-width: 1px;
@@ -383,11 +383,8 @@ select {
   }
 }
 .btn__text .text-cls-1 {
-  fill: var(--clr-btn-6);
-  opacity: 0;
-}
-.btn__text .text-cls-1--about {
   fill: HSL(var(--primary-hs) 100%);
+  opacity: 0;
 }
 .btn .cls-1 {
   fill: var(--clr-btn-1);
@@ -541,14 +538,19 @@ select {
   color: var(--clr-btn-2);
   background-color: var(--clr-btn-7);
   border: 0.4rem solid var(--clr-btn-2);
-  box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
+  box-shadow: 6px 4px 0px HSL(var(--primary-hs) 0%/0.4);
+}
+@media (min-width: 35.5em) {
+  .top-nav {
+    box-shadow: 6px 5px 0px HSL(var(--primary-hs) 0%/0.4);
+  }
 }
 .top-nav span {
   color: var(--clr-orange);
   font-size: 1.5em;
   text-shadow: -0.05em 0.05em 0 black, -0.075em 0.075em 0 black, -0.1em 0.1em 0 black, -0.125em 0.125em 0 black;
 }
-.top-nav--skills, .top-nav--about, .top-nav--contact {
+.top-nav--skills, .top-nav--hobbies, .top-nav--about, .top-nav--contact {
   position: absolute;
   top: 0;
   right: 0;
@@ -556,25 +558,12 @@ select {
   z-index: 3;
 }
 @media (min-width: 35.5em) {
-  .top-nav--skills, .top-nav--about, .top-nav--contact {
-    top: -0.2rem;
+  .top-nav--skills, .top-nav--hobbies, .top-nav--about, .top-nav--contact {
     padding: 0.3em 2em;
   }
 }
 .top-nav--about {
   z-index: 6;
-}
-@media (min-width: 35.5em) {
-  .top-nav--about {
-    top: 0;
-  }
-}
-.top-nav--hobbies {
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 0.3em 1em;
-  z-index: 3;
 }
 
 .story--2 .top-nav--about {
@@ -923,7 +912,7 @@ select {
   width: var(--corner-flip-size-0);
   height: var(--corner-flip-size-0);
   z-index: 20;
-  transform: scale(170);
+  transform: scale(60);
   transform-origin: right bottom;
   transition: transform 0.3s cubic-bezier(0, 0.35, 0.5, 1.7);
 }
@@ -935,6 +924,11 @@ select {
   display: block;
   width: 133%;
   height: 133%;
+}
+@media (min-width: 35.5em) {
+  #wrapper__corner-box {
+    transform: scale(120);
+  }
 }
 #wrapper #wrapper__corner-box:focus-visible {
   outline: 1px solid var(--clr-orange);
@@ -1856,7 +1850,7 @@ select {
     grid-column: 1/span 3;
     grid-row: 3;
     justify-self: flex-start;
-    padding-left: 1rem;
+    padding-left: 2rem;
   }
 }
 @media (min-width: 64em) {

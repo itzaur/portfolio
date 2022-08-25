@@ -152,7 +152,7 @@ function buttonFunctionality() {
   function menuTransitionRun() {
     if (window.matchMedia("(max-width: 568px)").matches) {
       gsap.to(menuNavDoodle, {
-        transform: `translate3d(0, 0, 2px) scale(1)`,
+        transform: `translate3d(0, 0, 1px) scale(1)`,
       });
       gsap.from(
         menuBtnClose,
