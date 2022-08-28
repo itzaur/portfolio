@@ -1,8 +1,8 @@
 {
-  "hash": "10b22f190cd0b6fc0fce",
+  "hash": "fb7823f9a858b89321cb",
   "version": "5.74.0",
-  "time": 35322,
-  "builtAt": 1661694232642,
+  "time": 32895,
+  "builtAt": 1661719706443,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
@@ -109,12 +109,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 249618,
+      "size": 249470,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 249618
+        "size": 249470
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -798,13 +798,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 93034,
+          "size": 93162,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 93034
+            "size": 93162
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -3691,7 +3691,7 @@
         "images/yellow_rays..svg",
         "js/main201d9c3166ca024b86fe.js.map"
       ],
-      "hash": "ebd949aad9973c2f4c26",
+      "hash": "53b1378966ff2417f210",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -10492,8 +10492,8 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "issuerName": "./js/index.js",
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+              "issuerName": "./js/cursor.js",
               "issuerPath": [
                 {
                   "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -10501,8 +10501,8 @@
                   "id": null
                 },
                 {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-                  "name": "./js/index.js",
+                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+                  "name": "./js/cursor.js",
                   "id": null
                 }
               ],
@@ -12835,8 +12835,8 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "issuerName": "./js/index.js",
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+          "issuerName": "./js/cursor.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -12844,8 +12844,8 @@
               "id": null
             },
             {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-              "name": "./js/index.js",
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+              "name": "./js/cursor.js",
               "id": null
             }
           ],
@@ -14927,8 +14927,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-      "issuerName": "./js/index.js",
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+      "issuerName": "./js/cursor.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -14936,8 +14936,8 @@
           "id": null
         },
         {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
-          "name": "./js/index.js",
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
+          "name": "./js/cursor.js",
           "id": null
         }
       ],
@@ -22196,9 +22196,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 193163,
+      "size": 193291,
       "sizes": {
-        "javascript": 193163
+        "javascript": 193291
       },
       "built": true,
       "codeGenerated": true,
@@ -23812,7 +23812,7 @@
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93034
+          "size": 93162
         },
         {
           "name": "images/about-bg..png",
@@ -24164,7 +24164,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079739,
+      "auxiliaryAssetsSize": 5079867,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24196,7 +24196,7 @@
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93034
+          "size": 93162
         },
         {
           "name": "images/about-bg..png",
@@ -24548,7 +24548,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079739,
+      "auxiliaryAssetsSize": 5079867,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24570,10 +24570,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "8e40d561748bb088fd4f",
+      "hash": "968c4e7fde642eb7a90c",
       "version": "5.74.0",
-      "time": 26599,
-      "builtAt": 1661694223984,
+      "time": 24937,
+      "builtAt": 1661719698551,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -25268,9 +25268,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298642,
+          "size": 301106,
           "sizes": {
-            "javascript": 298187,
+            "javascript": 300651,
             "runtime": 455
           },
           "names": [
@@ -25282,7 +25282,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "8f795ce02aea0089b92c",
+          "hash": "c276ad075727d531e14f",
           "childrenByOrder": {},
           "id": 631,
           "siblings": [],
@@ -25293,9 +25293,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 298110,
+              "size": 300574,
               "sizes": {
-                "javascript": 298110
+                "javascript": 300574
               },
               "built": true,
               "codeGenerated": true,
@@ -26313,9 +26313,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 298110,
+          "size": 300574,
           "sizes": {
-            "javascript": 298110
+            "javascript": 300574
           },
           "built": true,
           "codeGenerated": true,

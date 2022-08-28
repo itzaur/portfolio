@@ -2946,7 +2946,7 @@ select {
 .contact__laptop .laptop text {
   font-size: 1.1rem;
   fill: currentColor;
-  transform: rotateX(33deg) rotateY(49deg) rotateX(-18deg) translate3d(51%, -44%, 0) skew(6deg, -2deg);
+  transform: rotateX(33deg) rotateY(49deg) rotateX(-18deg) translate3d(20%, -37%, 0) skew(3deg, -2deg);
 }
 .contact__laptop .laptop text > * {
   font-family: var(--ff);
