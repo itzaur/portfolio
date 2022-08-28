@@ -177,7 +177,7 @@ module.exports = {
       manifest: "./favicon/site.webmanifest",
       favicons: {
         background: "#fff",
-        theme_color: "#1976be",
+        theme_color: "#4f5878",
         // theme_color: "#5bbad5",
       },
     }),

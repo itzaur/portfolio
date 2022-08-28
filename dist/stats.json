@@ -1,8 +1,8 @@
 {
-  "hash": "0a72cdb329b970ae1968",
+  "hash": "ab85e002c8d33d41cbe5",
   "version": "5.74.0",
-  "time": 31420,
-  "builtAt": 1661720096361,
+  "time": 32000,
+  "builtAt": 1661720302042,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
@@ -3691,7 +3691,7 @@
         "images/yellow_rays..svg",
         "js/main201d9c3166ca024b86fe.js.map"
       ],
-      "hash": "53b1378966ff2417f210",
+      "hash": "b439ad01661023f8c2ed",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -24572,8 +24572,8 @@
       "name": "HtmlWebpackCompiler",
       "hash": "891363b339a29ccc7dca",
       "version": "5.74.0",
-      "time": 23760,
-      "builtAt": 1661720088759,
+      "time": 24288,
+      "builtAt": 1661720294387,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
