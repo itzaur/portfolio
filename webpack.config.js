@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const BundleAnalyzerPlugin =
   require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
-// const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
+const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 let mode = "development";
 let target = "web";
@@ -111,7 +111,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp)$/i,
+        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
         type: "asset/resource",
         // generator: {
         //   filename: "images/[name]-[hash][ext]",
@@ -147,33 +147,38 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./index.html",
+      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       template: "./about.html",
+      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "skills.html",
       template: "./skills.html",
+      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
       template: "./contact.html",
+      // favicon: "./favicon/favicon.ico",
     }),
-    // new FaviconsWebpackPlugin({
-    //   logo: "img/svg/logo.svg",
-    //   // mode: "webapp",
-    //   // devMode: "webapp",
-    //   prefix: "assets/favicons/",
-    //   // cach: true,
-    //   // inject: (htmlPlugin) => {
-    //   //   return true;
-    //   // },
-    //   manifest: "./favicon/site.webmanifest",
-    //   favicons: {
-    //     background: "#fff",
-    //     theme_color: "#5bbad5",
-    //   },
-    // }),
+    // new FaviconsWebpackPlugin("./favicon/logo.svg"),
+    new FaviconsWebpackPlugin({
+      logo: "img/logo.svg",
+      // mode: "webapp",
+      // devMode: "webapp",
+      prefix: "favicons/",
+      // cach: true,
+      // inject: (htmlPlugin) => {
+      //   return true;
+      // },
+      manifest: "./favicon/site.webmanifest",
+      favicons: {
+        background: "#fff",
+        theme_color: "#5bbad5",
+      },
+    }),
   ],
 };

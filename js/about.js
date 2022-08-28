@@ -373,7 +373,7 @@ function pageSkillsInit() {
     }
   }
 
-  const hobbiesTimeline = gsap.timeline();
+  const hobbiesTimeline = gsap.timeline({ delay: 0.7 });
 
   hobbiesTimeline
     .set(".hobbie--1", {

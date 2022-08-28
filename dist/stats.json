@@ -1,14 +1,14 @@
 {
-  "hash": "46f941c19194c150a695",
+  "hash": "10b22f190cd0b6fc0fce",
   "version": "5.74.0",
-  "time": 7302,
-  "builtAt": 1661442438390,
+  "time": 35322,
+  "builtAt": 1661694232642,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/main519e60966a313cb73fd5.js"
+      "js/main201d9c3166ca024b86fe.js"
     ],
     "vendors": [
       "js/vendors048effe0f82af22a89c7.js"
@@ -41,6 +41,25 @@
     },
     {
       "type": "asset",
+      "name": "index.html",
+      "size": 393493,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 393493
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": true
+    },
+    {
+      "type": "asset",
       "name": "images/yellow_dots..svg",
       "size": 388664,
       "emitted": true,
@@ -61,25 +80,6 @@
       "auxiliaryChunks": [
         179
       ],
-      "isOverSizeLimit": true
-    },
-    {
-      "type": "asset",
-      "name": "index.html",
-      "size": 386718,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 386718
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
       "isOverSizeLimit": true
     },
     {
@@ -108,6 +108,25 @@
     },
     {
       "type": "asset",
+      "name": "contact.html",
+      "size": 249618,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 249618
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/dots_light_blue..svg",
       "size": 247294,
       "emitted": true,
@@ -128,25 +147,6 @@
       "auxiliaryChunks": [
         179
       ],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "contact.html",
-      "size": 243287,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 243287
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -199,6 +199,44 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2048x2732.png",
+      "size": 221380,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 221380
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "skills.html",
+      "size": 206776,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 206776
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/about-photo..png",
       "size": 204388,
       "emitted": true,
@@ -223,13 +261,32 @@
     },
     {
       "type": "asset",
-      "name": "skills.html",
-      "size": 200482,
+      "name": "favicons/apple-touch-startup-image-2732x2048.png",
+      "size": 187984,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 200482
+        "size": 187984
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1668x2388.png",
+      "size": 177958,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 177958
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -266,13 +323,127 @@
     },
     {
       "type": "asset",
-      "name": "about.html",
-      "size": 168068,
+      "name": "favicons/apple-touch-startup-image-1668x2224.png",
+      "size": 177017,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 168068
+        "size": 177017
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "about.html",
+      "size": 174362,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 174362
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1620x2160.png",
+      "size": 171785,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 171785
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1536x2048.png",
+      "size": 161437,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 161437
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2388x1668.png",
+      "size": 149940,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 149940
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2224x1668.png",
+      "size": 148552,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 148552
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2160x1620.png",
+      "size": 143091,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 143091
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -309,6 +480,44 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1242x2688.png",
+      "size": 136222,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 136222
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2048x1536.png",
+      "size": 135632,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 135632
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/background_blue..png",
       "size": 135522,
       "emitted": true,
@@ -329,6 +538,63 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1242x2208.png",
+      "size": 132704,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 132704
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1125x2436.png",
+      "size": 121431,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 121431
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2688x1242.png",
+      "size": 113756,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 113756
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -357,6 +623,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2208x1242.png",
+      "size": 112017,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 112017
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/about-face..svg",
       "size": 106511,
       "emitted": true,
@@ -377,6 +662,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2436x1125.png",
+      "size": 102108,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 102108
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -453,8 +757,27 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-828x1792.png",
+      "size": 88185,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 88185
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "css/main.css",
-      "size": 78159,
+      "size": 78342,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -462,7 +785,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 78159
+        "size": 78342
       },
       "chunkNames": [
         "main"
@@ -475,13 +798,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 92945,
+          "size": 93034,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 92945
+            "size": 93034
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -500,6 +823,25 @@
       "chunks": [
         179
       ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-750x1334.png",
+      "size": 77504,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 77504
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
@@ -553,6 +895,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1792x828.png",
+      "size": 73116,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 73116
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/background_orange..png",
       "size": 72393,
       "emitted": true,
@@ -573,6 +934,63 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-640x1136.png",
+      "size": 66005,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 66005
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1334x750.png",
+      "size": 64097,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 64097
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1136x640.png",
+      "size": 54569,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 54569
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -621,6 +1039,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-1024x1024.png",
+      "size": 47595,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 47595
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -745,20 +1182,20 @@
     },
     {
       "type": "asset",
-      "name": "js/main519e60966a313cb73fd5.js",
-      "size": 41296,
+      "name": "js/main201d9c3166ca024b86fe.js",
+      "size": 41306,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "519e60966a313cb73fd5",
+        "contenthash": "201d9c3166ca024b86fe",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "js/main519e60966a313cb73fd5.js.map"
+          "sourceMap": "js/main201d9c3166ca024b86fe.js.map"
         },
-        "size": 41296
+        "size": 41306
       },
       "chunkNames": [
         "main"
@@ -770,14 +1207,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/main519e60966a313cb73fd5.js.map",
-          "size": 127827,
+          "name": "js/main201d9c3166ca024b86fe.js.map",
+          "size": 127861,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 127827
+            "size": 127861
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -825,6 +1262,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/firefox_app_512x512.png",
+      "size": 38942,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 38942
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/music_cassette..svg",
       "size": 36651,
       "emitted": true,
@@ -845,6 +1301,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/favicon.ico",
+      "size": 33310,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 33310
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1121,6 +1596,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/android-chrome-512x512.png",
+      "size": 15398,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 15398
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/click_2..svg",
       "size": 14432,
       "emitted": true,
@@ -1201,6 +1695,25 @@
       "info": {
         "sourceFilename": "img/pullover.webp",
         "size": 11752
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/android-chrome-384x384.png",
+      "size": 11117,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 11117
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -1301,6 +1814,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/coast-228x228.png",
+      "size": 9831,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 9831
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/beard..svg",
       "size": 9827,
       "emitted": true,
@@ -1397,6 +1929,139 @@
     },
     {
       "type": "asset",
+      "name": "favicons/mstile-310x310.png",
+      "size": 8940,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 8940
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/mstile-310x150.png",
+      "size": 8507,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 8507
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/firefox_app_128x128.png",
+      "size": 8089,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 8089
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-180x180.png",
+      "size": 7736,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 7736
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-precomposed.png",
+      "size": 7736,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 7736
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon.png",
+      "size": 7736,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 7736
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/android-chrome-256x256.png",
+      "size": 7479,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 7479
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/pullover..svg",
       "size": 7402,
       "emitted": true,
@@ -1417,6 +2082,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-167x167.png",
+      "size": 7168,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 7168
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1445,6 +2129,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-icon-152x152.png",
+      "size": 6470,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 6470
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/doodle-about3..svg",
       "size": 6307,
       "emitted": true,
@@ -1465,6 +2168,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-144x144.png",
+      "size": 6177,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 6177
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1561,6 +2283,44 @@
     },
     {
       "type": "asset",
+      "name": "favicons/android-chrome-192x192.png",
+      "size": 5456,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 5456
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-76x76.png",
+      "size": 5257,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 5257
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/about-doodle-1..svg",
       "size": 5251,
       "emitted": true,
@@ -1581,6 +2341,101 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-120x120.png",
+      "size": 5198,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 5198
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/android-chrome-96x96.png",
+      "size": 5176,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 5176
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/firefox_app_60x60.png",
+      "size": 4953,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4953
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-114x114.png",
+      "size": 4838,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4838
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-72x72.png",
+      "size": 4772,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4772
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1657,6 +2512,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/mstile-150x150.png",
+      "size": 4283,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4283
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/about-doodle-4-mobile..svg",
       "size": 4169,
       "emitted": true,
@@ -1681,6 +2555,44 @@
     },
     {
       "type": "asset",
+      "name": "favicons/android-chrome-144x144.png",
+      "size": 4097,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4097
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/mstile-144x144.png",
+      "size": 4097,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4097
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/click_3..svg",
       "size": 4069,
       "emitted": true,
@@ -1701,6 +2613,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-60x60.png",
+      "size": 4004,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 4004
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1869,6 +2800,63 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-icon-57x57.png",
+      "size": 3652,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 3652
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/mstile-70x70.png",
+      "size": 3638,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 3638
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/android-chrome-72x72.png",
+      "size": 3593,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 3593
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -2089,6 +3077,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/yandex-browser-50x50.png",
+      "size": 2366,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 2366
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/blue_rays..svg",
       "size": 2352,
       "emitted": true,
@@ -2109,6 +3116,44 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/android-chrome-48x48.png",
+      "size": 2291,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 2291
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/favicon-48x48.png",
+      "size": 2291,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 2291
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -2185,6 +3230,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/android-chrome-36x36.png",
+      "size": 1650,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 1650
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/circle2..svg",
       "size": 1492,
       "emitted": true,
@@ -2205,6 +3269,44 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/favicon-32x32.png",
+      "size": 1482,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 1482
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/manifest.json",
+      "size": 1445,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 1445
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -2353,6 +3455,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/favicon-16x16.png",
+      "size": 620,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 620
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/star..svg",
       "size": 530,
       "emitted": true,
@@ -2373,6 +3494,44 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/yandex-browser-manifest.json",
+      "size": 520,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 520
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/browserconfig.xml",
+      "size": 413,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 413
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -2398,6 +3557,25 @@
         179
       ],
       "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/manifest.webapp",
+      "size": 252,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 252
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
     }
   ],
   "chunks": [
@@ -2406,11 +3584,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4954479,
+      "size": 4954682,
       "sizes": {
-        "javascript": 78176,
+        "javascript": 78196,
         "asset": 4788624,
-        "css/mini-extract": 83290,
+        "css/mini-extract": 83473,
         "runtime": 4389
       },
       "names": [
@@ -2422,7 +3600,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/main519e60966a313cb73fd5.js"
+        "js/main201d9c3166ca024b86fe.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2511,9 +3689,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/main519e60966a313cb73fd5.js.map"
+        "js/main201d9c3166ca024b86fe.js.map"
       ],
-      "hash": "9a5c62fd910a28712576",
+      "hash": "ebd949aad9973c2f4c26",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -8719,9 +9897,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 72702,
+          "size": 72722,
           "sizes": {
-            "javascript": 72702
+            "javascript": 72722
           },
           "built": true,
           "codeGenerated": true,
@@ -9078,9 +10256,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 33440,
+              "size": 33460,
               "sizes": {
-                "javascript": 33440
+                "javascript": 33460
               },
               "built": true,
               "codeGenerated": false,
@@ -9500,7 +10678,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "322:10-25",
+                  "loc": "324:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9514,7 +10692,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "327:10-25",
+                  "loc": "329:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9528,7 +10706,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "332:10-25",
+                  "loc": "334:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9542,7 +10720,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "338:10-25",
+                  "loc": "340:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9556,7 +10734,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "346:10-23",
+                  "loc": "348:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9570,7 +10748,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "355:10-23",
+                  "loc": "357:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9584,7 +10762,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "364:10-23",
+                  "loc": "366:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9598,7 +10776,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "369:10-23",
+                  "loc": "371:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9612,7 +10790,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "379:10-23",
+                  "loc": "381:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9626,7 +10804,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "384:10-23",
+                  "loc": "386:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9640,7 +10818,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "388:10-34",
+                  "loc": "390:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9654,7 +10832,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "542:10-23",
+                  "loc": "544:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9668,7 +10846,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "548:10-31",
+                  "loc": "550:10-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9682,7 +10860,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "556:10-28",
+                  "loc": "558:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9696,7 +10874,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "576:10-28",
+                  "loc": "578:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9710,7 +10888,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "598:10-23",
+                  "loc": "600:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9724,7 +10902,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "608:10-34",
+                  "loc": "610:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9738,7 +10916,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "626:6-30",
+                  "loc": "628:6-30",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9752,7 +10930,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "677:10-25",
+                  "loc": "679:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9766,7 +10944,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "681:10-25",
+                  "loc": "683:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9780,7 +10958,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "685:10-25",
+                  "loc": "687:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9794,7 +10972,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "689:10-25",
+                  "loc": "691:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9808,7 +10986,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "693:10-25",
+                  "loc": "695:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9822,7 +11000,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "696:10-25",
+                  "loc": "698:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9836,7 +11014,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "712:10-25",
+                  "loc": "714:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9850,7 +11028,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "716:10-25",
+                  "loc": "718:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9864,7 +11042,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "720:10-25",
+                  "loc": "722:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9878,7 +11056,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "724:10-25",
+                  "loc": "726:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9892,7 +11070,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "728:10-25",
+                  "loc": "730:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9906,7 +11084,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "732:10-25",
+                  "loc": "734:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9920,7 +11098,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "737:10-25",
+                  "loc": "739:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9934,7 +11112,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "743:10-25",
+                  "loc": "745:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9948,7 +11126,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "759:4-28",
+                  "loc": "761:4-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9962,7 +11140,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "857:10-23",
+                  "loc": "859:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9976,7 +11154,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "860:10-31",
+                  "loc": "862:10-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -9990,7 +11168,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "865:10-23",
+                  "loc": "867:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10004,7 +11182,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "870:10-23",
+                  "loc": "872:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10018,7 +11196,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "875:10-23",
+                  "loc": "877:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10032,7 +11210,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "885:10-23",
+                  "loc": "887:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10046,7 +11224,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "890:10-23",
+                  "loc": "892:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10060,7 +11238,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "895:10-34",
+                  "loc": "897:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10074,7 +11252,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "901:10-28",
+                  "loc": "903:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10088,7 +11266,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "961:10-23",
+                  "loc": "963:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10102,7 +11280,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1050:14-29",
+                  "loc": "1052:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10116,7 +11294,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1054:14-29",
+                  "loc": "1056:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10130,7 +11308,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1062:14-29",
+                  "loc": "1064:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10144,7 +11322,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1066:14-29",
+                  "loc": "1068:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -10539,9 +11717,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 83290,
+          "size": 83473,
           "sizes": {
-            "css/mini-extract": 83290
+            "css/mini-extract": 83473
           },
           "built": true,
           "codeGenerated": true,
@@ -11068,9 +12246,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 72702,
+      "size": 72722,
       "sizes": {
-        "javascript": 72702
+        "javascript": 72722
       },
       "built": true,
       "codeGenerated": true,
@@ -11423,9 +12601,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 33440,
+          "size": 33460,
           "sizes": {
-            "javascript": 33440
+            "javascript": 33460
           },
           "built": true,
           "codeGenerated": false,
@@ -11843,7 +13021,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "322:10-25",
+              "loc": "324:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11857,7 +13035,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "327:10-25",
+              "loc": "329:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11871,7 +13049,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "332:10-25",
+              "loc": "334:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11885,7 +13063,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "338:10-25",
+              "loc": "340:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11899,7 +13077,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "346:10-23",
+              "loc": "348:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11913,7 +13091,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "355:10-23",
+              "loc": "357:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11927,7 +13105,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "364:10-23",
+              "loc": "366:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11941,7 +13119,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "369:10-23",
+              "loc": "371:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11955,7 +13133,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "379:10-23",
+              "loc": "381:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11969,7 +13147,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "384:10-23",
+              "loc": "386:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11983,7 +13161,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "388:10-34",
+              "loc": "390:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -11997,7 +13175,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "542:10-23",
+              "loc": "544:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12011,7 +13189,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "548:10-31",
+              "loc": "550:10-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12025,7 +13203,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "556:10-28",
+              "loc": "558:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12039,7 +13217,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "576:10-28",
+              "loc": "578:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12053,7 +13231,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "598:10-23",
+              "loc": "600:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12067,7 +13245,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "608:10-34",
+              "loc": "610:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12081,7 +13259,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "626:6-30",
+              "loc": "628:6-30",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12095,7 +13273,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "677:10-25",
+              "loc": "679:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12109,7 +13287,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "681:10-25",
+              "loc": "683:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12123,7 +13301,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "685:10-25",
+              "loc": "687:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12137,7 +13315,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "689:10-25",
+              "loc": "691:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12151,7 +13329,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "693:10-25",
+              "loc": "695:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12165,7 +13343,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "696:10-25",
+              "loc": "698:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12179,7 +13357,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "712:10-25",
+              "loc": "714:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12193,7 +13371,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "716:10-25",
+              "loc": "718:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12207,7 +13385,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "720:10-25",
+              "loc": "722:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12221,7 +13399,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "724:10-25",
+              "loc": "726:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12235,7 +13413,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "728:10-25",
+              "loc": "730:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12249,7 +13427,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "732:10-25",
+              "loc": "734:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12263,7 +13441,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "737:10-25",
+              "loc": "739:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12277,7 +13455,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "743:10-25",
+              "loc": "745:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12291,7 +13469,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "759:4-28",
+              "loc": "761:4-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12305,7 +13483,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "857:10-23",
+              "loc": "859:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12319,7 +13497,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "860:10-31",
+              "loc": "862:10-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12333,7 +13511,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "865:10-23",
+              "loc": "867:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12347,7 +13525,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "870:10-23",
+              "loc": "872:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12361,7 +13539,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "875:10-23",
+              "loc": "877:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12375,7 +13553,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "885:10-23",
+              "loc": "887:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12389,7 +13567,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "890:10-23",
+              "loc": "892:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12403,7 +13581,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "895:10-34",
+              "loc": "897:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12417,7 +13595,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "901:10-28",
+              "loc": "903:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12431,7 +13609,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "961:10-23",
+              "loc": "963:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12445,7 +13623,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1050:14-29",
+              "loc": "1052:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12459,7 +13637,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1054:14-29",
+              "loc": "1056:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12473,7 +13651,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1062:14-29",
+              "loc": "1064:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -12487,7 +13665,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1066:14-29",
+              "loc": "1068:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -13295,9 +14473,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 33440,
+      "size": 33460,
       "sizes": {
-        "javascript": 33440
+        "javascript": 33460
       },
       "built": true,
       "codeGenerated": false,
@@ -13664,9 +14842,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 83290,
+      "size": 83473,
       "sizes": {
-        "css/mini-extract": 83290
+        "css/mini-extract": 83473
       },
       "built": true,
       "codeGenerated": true,
@@ -13935,7 +15113,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "322:10-25",
+          "loc": "324:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13949,7 +15127,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "327:10-25",
+          "loc": "329:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13963,7 +15141,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "332:10-25",
+          "loc": "334:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13977,7 +15155,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "338:10-25",
+          "loc": "340:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -13991,7 +15169,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "346:10-23",
+          "loc": "348:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14005,7 +15183,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "355:10-23",
+          "loc": "357:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14019,7 +15197,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "364:10-23",
+          "loc": "366:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14033,7 +15211,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "369:10-23",
+          "loc": "371:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14047,7 +15225,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "379:10-23",
+          "loc": "381:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14061,7 +15239,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "384:10-23",
+          "loc": "386:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14075,7 +15253,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "388:10-34",
+          "loc": "390:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14089,7 +15267,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "542:10-23",
+          "loc": "544:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14103,7 +15281,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "548:10-31",
+          "loc": "550:10-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14117,7 +15295,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "556:10-28",
+          "loc": "558:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14131,7 +15309,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "576:10-28",
+          "loc": "578:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14145,7 +15323,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "598:10-23",
+          "loc": "600:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14159,7 +15337,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "608:10-34",
+          "loc": "610:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14173,7 +15351,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "626:6-30",
+          "loc": "628:6-30",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14187,7 +15365,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "677:10-25",
+          "loc": "679:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14201,7 +15379,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "681:10-25",
+          "loc": "683:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14215,7 +15393,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "685:10-25",
+          "loc": "687:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14229,7 +15407,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "689:10-25",
+          "loc": "691:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14243,7 +15421,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "693:10-25",
+          "loc": "695:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14257,7 +15435,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "696:10-25",
+          "loc": "698:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14271,7 +15449,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "712:10-25",
+          "loc": "714:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14285,7 +15463,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "716:10-25",
+          "loc": "718:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14299,7 +15477,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "720:10-25",
+          "loc": "722:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14313,7 +15491,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "724:10-25",
+          "loc": "726:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14327,7 +15505,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "728:10-25",
+          "loc": "730:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14341,7 +15519,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "732:10-25",
+          "loc": "734:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14355,7 +15533,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "737:10-25",
+          "loc": "739:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14369,7 +15547,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "743:10-25",
+          "loc": "745:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14383,7 +15561,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "759:4-28",
+          "loc": "761:4-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14397,7 +15575,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "857:10-23",
+          "loc": "859:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14411,7 +15589,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "860:10-31",
+          "loc": "862:10-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14425,7 +15603,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "865:10-23",
+          "loc": "867:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14439,7 +15617,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "870:10-23",
+          "loc": "872:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14453,7 +15631,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "875:10-23",
+          "loc": "877:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14467,7 +15645,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "885:10-23",
+          "loc": "887:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14481,7 +15659,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "890:10-23",
+          "loc": "892:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14495,7 +15673,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "895:10-34",
+          "loc": "897:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14509,7 +15687,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "901:10-28",
+          "loc": "903:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14523,7 +15701,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "961:10-23",
+          "loc": "963:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14537,7 +15715,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1050:14-29",
+          "loc": "1052:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14551,7 +15729,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1054:14-29",
+          "loc": "1056:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14565,7 +15743,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1062:14-29",
+          "loc": "1064:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -14579,7 +15757,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1066:14-29",
+          "loc": "1068:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -21018,9 +22196,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 192865,
+      "size": 193163,
       "sizes": {
-        "javascript": 192865
+        "javascript": 193163
       },
       "built": true,
       "codeGenerated": true,
@@ -22622,19 +23800,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 78159
+          "size": 78342
         },
         {
-          "name": "js/main519e60966a313cb73fd5.js",
-          "size": 41296
+          "name": "js/main201d9c3166ca024b86fe.js",
+          "size": 41306
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148342,
+      "assetsSize": 148535,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 92945
+          "size": 93034
         },
         {
           "name": "images/about-bg..png",
@@ -22977,8 +24155,8 @@
           "size": 25997
         },
         {
-          "name": "js/main519e60966a313cb73fd5.js.map",
-          "size": 127827
+          "name": "js/main201d9c3166ca024b86fe.js.map",
+          "size": 127861
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -22986,7 +24164,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079616,
+      "auxiliaryAssetsSize": 5079739,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -23006,19 +24184,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 78159
+          "size": 78342
         },
         {
-          "name": "js/main519e60966a313cb73fd5.js",
-          "size": 41296
+          "name": "js/main201d9c3166ca024b86fe.js",
+          "size": 41306
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148342,
+      "assetsSize": 148535,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 92945
+          "size": 93034
         },
         {
           "name": "images/about-bg..png",
@@ -23361,8 +24539,8 @@
           "size": 25997
         },
         {
-          "name": "js/main519e60966a313cb73fd5.js.map",
-          "size": 127827
+          "name": "js/main201d9c3166ca024b86fe.js.map",
+          "size": 127861
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -23370,7 +24548,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079616,
+      "auxiliaryAssetsSize": 5079739,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -23380,8 +24558,8 @@
   "errorsCount": 0,
   "warnings": [
     {
-      "message": "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  images/yellow_dots..svg (380 KiB)\n  images/about-bg1..svg (1.18 MiB)\n  images/blue_dots..svg (259 KiB)\n  index.html (378 KiB)",
-      "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  images/yellow_dots..svg (380 KiB)\n  images/about-bg1..svg (1.18 MiB)\n  images/blue_dots..svg (259 KiB)\n  index.html (378 KiB)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:134:7\n    at Hook.eval [as callAsync] (eval at create (/home/user/projects/portfolio/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/home/user/projects/portfolio/node_modules/tapable/lib/Hook.js:18:14)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/Compiler.js:882:27\n    at /home/user/projects/portfolio/node_modules/neo-async/async.js:2818:7\n    at done (/home/user/projects/portfolio/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/home/user/projects/portfolio/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/Compiler.js:736:33\n    at /home/user/projects/portfolio/node_modules/graceful-fs/graceful-fs.js:143:16\n    at /home/user/projects/portfolio/node_modules/graceful-fs/graceful-fs.js:61:14"
+      "message": "asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  images/yellow_dots..svg (380 KiB)\n  images/about-bg1..svg (1.18 MiB)\n  images/blue_dots..svg (259 KiB)\n  index.html (384 KiB)",
+      "stack": "AssetsOverSizeLimitWarning: asset size limit: The following asset(s) exceed the recommended size limit (244 KiB).\nThis can impact web performance.\nAssets: \n  images/yellow_dots..svg (380 KiB)\n  images/about-bg1..svg (1.18 MiB)\n  images/blue_dots..svg (259 KiB)\n  index.html (384 KiB)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/performance/SizeLimitsPlugin.js:134:7\n    at Hook.eval [as callAsync] (eval at create (/home/user/projects/portfolio/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:9:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (/home/user/projects/portfolio/node_modules/tapable/lib/Hook.js:18:14)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/Compiler.js:882:27\n    at /home/user/projects/portfolio/node_modules/neo-async/async.js:2818:7\n    at done (/home/user/projects/portfolio/node_modules/neo-async/async.js:3522:9)\n    at Hook.eval [as callAsync] (eval at create (/home/user/projects/portfolio/node_modules/tapable/lib/HookCodeFactory.js:33:10), <anonymous>:6:1)\n    at /home/user/projects/portfolio/node_modules/webpack/lib/Compiler.js:736:33\n    at /home/user/projects/portfolio/node_modules/graceful-fs/graceful-fs.js:143:16\n    at /home/user/projects/portfolio/node_modules/graceful-fs/graceful-fs.js:61:14"
     },
     {
       "message": "webpack performance recommendations: \nYou can limit the size of your bundles by using import() or require.ensure to lazy load some parts of your application.\nFor more info visit https://webpack.js.org/guides/code-splitting/",
@@ -23392,10 +24570,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "fac2d2ddb6f652863f7f",
+      "hash": "8e40d561748bb088fd4f",
       "version": "5.74.0",
-      "time": 246,
-      "builtAt": 1661442431385,
+      "time": 26599,
+      "builtAt": 1661694223984,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -23406,9 +24584,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 210147,
+          "size": 210156,
           "sizes": {
-            "javascript": 209692,
+            "javascript": 209701,
             "runtime": 455
           },
           "names": [
@@ -23420,7 +24598,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "d0c97ebe3fc25ee04746",
+          "hash": "cc9c364e43b12a35cfd9",
           "childrenByOrder": {},
           "id": 251,
           "siblings": [],
@@ -23431,9 +24609,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 209615,
+              "size": 209624,
               "sizes": {
-                "javascript": 209615
+                "javascript": 209624
               },
               "built": true,
               "codeGenerated": true,
@@ -23748,9 +24926,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 548066,
+          "size": 548068,
           "sizes": {
-            "javascript": 547611,
+            "javascript": 547613,
             "runtime": 455
           },
           "names": [
@@ -23762,7 +24940,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "36cb8286e726584bacdd",
+          "hash": "dfc74ae52b2fcdfc2d32",
           "childrenByOrder": {},
           "id": 563,
           "siblings": [],
@@ -23773,9 +24951,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 547534,
+              "size": 547536,
               "sizes": {
-                "javascript": 547534
+                "javascript": 547536
               },
               "built": true,
               "codeGenerated": true,
@@ -24090,9 +25268,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298516,
+          "size": 298642,
           "sizes": {
-            "javascript": 298061,
+            "javascript": 298187,
             "runtime": 455
           },
           "names": [
@@ -24104,7 +25282,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "1c64a468d8c06fc4bc1e",
+          "hash": "8f795ce02aea0089b92c",
           "childrenByOrder": {},
           "id": 631,
           "siblings": [],
@@ -24115,9 +25293,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 297984,
+              "size": 298110,
               "sizes": {
-                "javascript": 297984
+                "javascript": 298110
               },
               "built": true,
               "codeGenerated": true,
@@ -24432,9 +25610,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 256872,
+          "size": 256881,
           "sizes": {
-            "javascript": 256417,
+            "javascript": 256426,
             "runtime": 455
           },
           "names": [
@@ -24446,7 +25624,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "409dfb0cbbd9391cb08a",
+          "hash": "97145ef757b1468ec532",
           "childrenByOrder": {},
           "id": 922,
           "siblings": [],
@@ -24457,9 +25635,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 256340,
+              "size": 256349,
               "sizes": {
-                "javascript": 256340
+                "javascript": 256349
               },
               "built": true,
               "codeGenerated": true,
@@ -24877,9 +26055,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 547534,
+          "size": 547536,
           "sizes": {
-            "javascript": 547534
+            "javascript": 547536
           },
           "built": true,
           "codeGenerated": true,
@@ -24963,9 +26141,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 209615,
+          "size": 209624,
           "sizes": {
-            "javascript": 209615
+            "javascript": 209624
           },
           "built": true,
           "codeGenerated": true,
@@ -25049,9 +26227,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 256340,
+          "size": 256349,
           "sizes": {
-            "javascript": 256340
+            "javascript": 256349
           },
           "built": true,
           "codeGenerated": true,
@@ -25135,9 +26313,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 297984,
+          "size": 298110,
           "sizes": {
-            "javascript": 297984
+            "javascript": 298110
           },
           "built": true,
           "codeGenerated": true,

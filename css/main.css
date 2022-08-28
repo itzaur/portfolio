@@ -542,7 +542,7 @@ select {
   color: var(--clr-btn-2);
   background-color: var(--clr-btn-7);
   border: 0.4rem solid var(--clr-btn-2);
-  box-shadow: 6px 4px 0px HSL(var(--primary-hs) 0%/0.4);
+  box-shadow: 4px 4px 0px HSL(var(--primary-hs) 0%/0.4);
 }
 @media (min-width: 35.5em) {
   .top-nav {
@@ -557,7 +557,6 @@ select {
 .top-nav--skills, .top-nav--hobbies, .top-nav--about, .top-nav--contact {
   position: absolute;
   top: 0;
-  right: 0;
   padding: 0.3em 1em;
   z-index: 3;
 }
@@ -566,8 +565,14 @@ select {
     padding: 0.3em 2em;
   }
 }
+.top-nav--skills, .top-nav--about, .top-nav--contact {
+  right: 0;
+}
 .top-nav--about {
   z-index: 6;
+}
+.top-nav--hobbies {
+  left: 0;
 }
 
 .story--2 .top-nav--about {
@@ -1102,7 +1107,7 @@ select {
   grid-column: 2/-1;
   grid-row: 2;
   justify-self: center;
-  align-self: center;
+  align-self: flex-start;
   z-index: -1;
 }
 @media (min-width: 35.5em) {
@@ -1388,7 +1393,12 @@ select {
   padding: var(--padding-container);
 }
 .page.grayscale {
-  mix-blend-mode: luminosity;
+  filter: grayscale(1);
+}
+@supports (mix-blend-mode: luminosity) {
+  .page.grayscale {
+    mix-blend-mode: luminosity;
+  }
 }
 .page__bg {
   width: 100%;
@@ -1407,7 +1417,7 @@ select {
   top: 1px;
   left: 1px;
   width: 99.6%;
-  height: 99.5%;
+  height: 99.3%;
   -webkit-clip-path: polygon(0% 0%, 99.8% 0%, 99.8% 40.5%, 0% 45%);
           clip-path: polygon(0% 0%, 99.8% 0%, 99.8% 40.5%, 0% 45%);
   background-color: var(--clr-orange);

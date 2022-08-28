@@ -12,6 +12,7 @@ import {
   contactPageInit,
 } from "./about";
 import { addCustomCursor } from "./cursor";
+
 // import { timelineLetters } from "./animations";
 
 function importAll(r) {
