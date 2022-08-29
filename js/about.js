@@ -1340,7 +1340,7 @@ function contactPageInit() {
       {
         opacity: 0,
         rotation: 0.5,
-        clearProps: "opacity",
+        // clearProps: "opacity",
       },
       "<-0.02"
     )
