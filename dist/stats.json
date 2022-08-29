@@ -1,8 +1,8 @@
 {
-  "hash": "2d7f253d801d92b9e76f",
+  "hash": "7e753a1798f7d16db4d2",
   "version": "5.74.0",
-  "time": 33235,
-  "builtAt": 1661783510432,
+  "time": 32792,
+  "builtAt": 1661790629868,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
@@ -42,12 +42,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 393496,
+      "size": 393493,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 393496
+        "size": 393493
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -109,12 +109,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 249599,
+      "size": 249689,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 249599
+        "size": 249689
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -200,12 +200,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2048x2732.png",
-      "size": 218004,
+      "size": 221380,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 218004
+        "size": 221380
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -219,12 +219,12 @@
     {
       "type": "asset",
       "name": "skills.html",
-      "size": 206779,
+      "size": 206776,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 206779
+        "size": 206776
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -262,12 +262,31 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2732x2048.png",
-      "size": 184773,
+      "size": 187984,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 184773
+        "size": 187984
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1668x2388.png",
+      "size": 177958,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 177958
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -304,13 +323,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-1668x2388.png",
-      "size": 175246,
+      "name": "favicons/apple-touch-startup-image-1668x2224.png",
+      "size": 177017,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 175246
+        "size": 177017
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -324,31 +343,12 @@
     {
       "type": "asset",
       "name": "about.html",
-      "size": 174365,
+      "size": 174362,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 174365
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "favicons/apple-touch-startup-image-1668x2224.png",
-      "size": 174217,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 174217
+        "size": 174362
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -362,12 +362,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-1620x2160.png",
-      "size": 168770,
+      "size": 171785,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 168770
+        "size": 171785
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -381,12 +381,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-1536x2048.png",
-      "size": 158922,
+      "size": 161437,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 158922
+        "size": 161437
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -400,12 +400,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2388x1668.png",
-      "size": 147278,
+      "size": 149940,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 147278
+        "size": 149940
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -419,12 +419,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2224x1668.png",
-      "size": 145781,
+      "size": 148552,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 145781
+        "size": 148552
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -438,12 +438,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2160x1620.png",
-      "size": 140288,
+      "size": 143091,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 140288
+        "size": 143091
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -480,6 +480,44 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1242x2688.png",
+      "size": 136222,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 136222
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2048x1536.png",
+      "size": 135632,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 135632
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/background_blue..png",
       "size": 135522,
       "emitted": true,
@@ -504,51 +542,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-1242x2688.png",
-      "size": 133545,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 133545
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "favicons/apple-touch-startup-image-2048x1536.png",
-      "size": 133167,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 133167
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "favicons/apple-touch-startup-image-1242x2208.png",
-      "size": 130314,
+      "size": 132704,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 130314
+        "size": 132704
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -562,12 +562,31 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-1125x2436.png",
-      "size": 119321,
+      "size": 121431,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 119321
+        "size": 121431
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-2688x1242.png",
+      "size": 113756,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 113756
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -604,32 +623,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-2688x1242.png",
-      "size": 111626,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 111626
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "favicons/apple-touch-startup-image-2208x1242.png",
-      "size": 109746,
+      "size": 112017,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 109746
+        "size": 112017
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -667,12 +667,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-2436x1125.png",
-      "size": 100128,
+      "size": 102108,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 100128
+        "size": 102108
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -758,12 +758,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-828x1792.png",
-      "size": 86041,
+      "size": 88185,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 86041
+        "size": 88185
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -777,7 +777,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 78489,
+      "size": 78465,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -785,7 +785,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 78489
+        "size": 78465
       },
       "chunkNames": [
         "main"
@@ -798,13 +798,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 93330,
+          "size": 93322,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 93330
+            "size": 93322
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -823,6 +823,25 @@
       "chunks": [
         179
       ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-750x1334.png",
+      "size": 77504,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 77504
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
       "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
@@ -852,25 +871,6 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-750x1334.png",
-      "size": 76146,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 76146
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "images/full-laptop..svg",
       "size": 74253,
       "emitted": true,
@@ -891,6 +891,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1792x828.png",
+      "size": 73116,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 73116
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -919,32 +938,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-1792x828.png",
-      "size": 71552,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 71552
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "favicons/apple-touch-startup-image-640x1136.png",
-      "size": 64840,
+      "size": 66005,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 64840
+        "size": 66005
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -958,12 +958,31 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-startup-image-1334x750.png",
-      "size": 62728,
+      "size": 64097,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 62728
+        "size": 64097
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/apple-touch-startup-image-1136x640.png",
+      "size": 54569,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 54569
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -1000,25 +1019,6 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-startup-image-1136x640.png",
-      "size": 53380,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 53380
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "images/laptop..svg",
       "size": 50442,
       "emitted": true,
@@ -1044,12 +1044,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-1024x1024.png",
-      "size": 47464,
+      "size": 47595,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 47464
+        "size": 47595
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -1182,25 +1182,6 @@
     },
     {
       "type": "asset",
-      "name": "favicons/firefox_app_512x512.png",
-      "size": 41867,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 41867
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "js/main8980b082b3501871d565.js",
       "size": 41267,
       "emitted": true,
@@ -1277,6 +1258,25 @@
       "auxiliaryChunks": [
         179
       ],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "favicons/firefox_app_512x512.png",
+      "size": 38942,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 38942
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1814,6 +1814,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/coast-228x228.png",
+      "size": 9831,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 9831
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/beard..svg",
       "size": 9827,
       "emitted": true,
@@ -1834,25 +1853,6 @@
       "auxiliaryChunks": [
         179
       ],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
-      "name": "favicons/coast-228x228.png",
-      "size": 9813,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 9813
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
       "isOverSizeLimit": false
     },
     {
@@ -1968,12 +1968,12 @@
     {
       "type": "asset",
       "name": "favicons/firefox_app_128x128.png",
-      "size": 8376,
+      "size": 8089,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 8376
+        "size": 8089
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -1987,12 +1987,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-180x180.png",
-      "size": 7712,
+      "size": 7736,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 7712
+        "size": 7736
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2006,12 +2006,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-precomposed.png",
-      "size": 7712,
+      "size": 7736,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 7712
+        "size": 7736
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2025,12 +2025,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon.png",
-      "size": 7712,
+      "size": 7736,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 7712
+        "size": 7736
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2087,12 +2087,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-167x167.png",
-      "size": 7149,
+      "size": 7168,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 7149
+        "size": 7168
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2130,12 +2130,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-152x152.png",
-      "size": 6459,
+      "size": 6470,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 6459
+        "size": 6470
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2173,12 +2173,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-144x144.png",
-      "size": 6181,
+      "size": 6177,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 6181
+        "size": 6177
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2302,6 +2302,25 @@
     },
     {
       "type": "asset",
+      "name": "favicons/apple-touch-icon-76x76.png",
+      "size": 5257,
+      "emitted": true,
+      "comparedForEmit": false,
+      "cached": false,
+      "info": {
+        "size": 5257
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
       "name": "images/about-doodle-1..svg",
       "size": 5251,
       "emitted": true,
@@ -2327,12 +2346,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-120x120.png",
-      "size": 5210,
+      "size": 5198,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 5210
+        "size": 5198
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2364,32 +2383,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-icon-76x76.png",
-      "size": 5174,
-      "emitted": true,
-      "comparedForEmit": false,
-      "cached": false,
-      "info": {
-        "size": 5174
-      },
-      "chunkNames": [],
-      "chunkIdHints": [],
-      "auxiliaryChunkNames": [],
-      "auxiliaryChunkIdHints": [],
-      "related": {},
-      "chunks": [],
-      "auxiliaryChunks": [],
-      "isOverSizeLimit": false
-    },
-    {
-      "type": "asset",
       "name": "favicons/firefox_app_60x60.png",
-      "size": 4955,
+      "size": 4953,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 4955
+        "size": 4953
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2403,12 +2403,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-114x114.png",
-      "size": 4828,
+      "size": 4838,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 4828
+        "size": 4838
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2422,12 +2422,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-72x72.png",
-      "size": 4713,
+      "size": 4772,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 4713
+        "size": 4772
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2618,12 +2618,12 @@
     {
       "type": "asset",
       "name": "favicons/apple-touch-icon-60x60.png",
-      "size": 3958,
+      "size": 4004,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 3958
+        "size": 4004
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2804,13 +2804,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/mstile-70x70.png",
-      "size": 3638,
+      "name": "favicons/apple-touch-icon-57x57.png",
+      "size": 3652,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 3638
+        "size": 3652
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -2823,13 +2823,13 @@
     },
     {
       "type": "asset",
-      "name": "favicons/apple-touch-icon-57x57.png",
-      "size": 3612,
+      "name": "favicons/mstile-70x70.png",
+      "size": 3638,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 3612
+        "size": 3638
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -3499,12 +3499,12 @@
     {
       "type": "asset",
       "name": "favicons/yandex-browser-manifest.json",
-      "size": 523,
+      "size": 520,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 523
+        "size": 520
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -3518,12 +3518,12 @@
     {
       "type": "asset",
       "name": "favicons/browserconfig.xml",
-      "size": 416,
+      "size": 413,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 416
+        "size": 413
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -3584,11 +3584,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4954839,
+      "size": 4954815,
       "sizes": {
         "javascript": 78206,
         "asset": 4788624,
-        "css/mini-extract": 83620,
+        "css/mini-extract": 83596,
         "runtime": 4389
       },
       "names": [
@@ -3691,7 +3691,7 @@
         "images/yellow_rays..svg",
         "js/main8980b082b3501871d565.js.map"
       ],
-      "hash": "31f6c7185e7468da7249",
+      "hash": "83dc3a67220d0787a606",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -10492,8 +10492,8 @@
               "optional": false,
               "orphan": false,
               "dependent": true,
-              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-              "issuerName": "./js/cursor.js",
+              "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "issuerName": "./js/index.js",
               "issuerPath": [
                 {
                   "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -10501,8 +10501,8 @@
                   "id": null
                 },
                 {
-                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-                  "name": "./js/cursor.js",
+                  "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+                  "name": "./js/index.js",
                   "id": null
                 }
               ],
@@ -11717,9 +11717,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 83620,
+          "size": 83596,
           "sizes": {
-            "css/mini-extract": 83620
+            "css/mini-extract": 83596
           },
           "built": true,
           "codeGenerated": true,
@@ -12835,8 +12835,8 @@
           "cacheable": true,
           "optional": false,
           "orphan": false,
-          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-          "issuerName": "./js/cursor.js",
+          "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "issuerName": "./js/index.js",
           "issuerPath": [
             {
               "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -12844,8 +12844,8 @@
               "id": null
             },
             {
-              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-              "name": "./js/cursor.js",
+              "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+              "name": "./js/index.js",
               "id": null
             }
           ],
@@ -14842,9 +14842,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 83620,
+      "size": 83596,
       "sizes": {
-        "css/mini-extract": 83620
+        "css/mini-extract": 83596
       },
       "built": true,
       "codeGenerated": true,
@@ -14927,8 +14927,8 @@
       "cacheable": true,
       "optional": false,
       "orphan": true,
-      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-      "issuerName": "./js/cursor.js",
+      "issuer": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+      "issuerName": "./js/index.js",
       "issuerPath": [
         {
           "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/barba.js",
@@ -14936,8 +14936,8 @@
           "id": null
         },
         {
-          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/cursor.js",
-          "name": "./js/cursor.js",
+          "identifier": "/home/user/projects/portfolio/node_modules/babel-loader/lib/index.js??ruleSet[1].rules[0].use!/home/user/projects/portfolio/js/index.js",
+          "name": "./js/index.js",
           "id": null
         }
       ],
@@ -22196,9 +22196,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 193637,
+      "size": 193595,
       "sizes": {
-        "javascript": 193637
+        "javascript": 193595
       },
       "built": true,
       "codeGenerated": true,
@@ -23800,7 +23800,7 @@
         },
         {
           "name": "css/main.css",
-          "size": 78489
+          "size": 78465
         },
         {
           "name": "js/main8980b082b3501871d565.js",
@@ -23808,11 +23808,11 @@
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148643,
+      "assetsSize": 148619,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93330
+          "size": 93322
         },
         {
           "name": "images/about-bg..png",
@@ -24164,7 +24164,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5080020,
+      "auxiliaryAssetsSize": 5080012,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24184,7 +24184,7 @@
         },
         {
           "name": "css/main.css",
-          "size": 78489
+          "size": 78465
         },
         {
           "name": "js/main8980b082b3501871d565.js",
@@ -24192,11 +24192,11 @@
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148643,
+      "assetsSize": 148619,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93330
+          "size": 93322
         },
         {
           "name": "images/about-bg..png",
@@ -24548,7 +24548,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5080020,
+      "auxiliaryAssetsSize": 5080012,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24570,10 +24570,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "3e920d784f3090b07628",
+      "hash": "7250226c374916c3df90",
       "version": "5.74.0",
-      "time": 25746,
-      "builtAt": 1661783502999,
+      "time": 25392,
+      "builtAt": 1661790622524,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -25268,9 +25268,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 298406,
+          "size": 298549,
           "sizes": {
-            "javascript": 297951,
+            "javascript": 298094,
             "runtime": 455
           },
           "names": [
@@ -25282,7 +25282,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "f11493be4ab335e1c253",
+          "hash": "dd1a126e638d365f208c",
           "childrenByOrder": {},
           "id": 631,
           "siblings": [],
@@ -25293,9 +25293,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 297874,
+              "size": 298017,
               "sizes": {
-                "javascript": 297874
+                "javascript": 298017
               },
               "built": true,
               "codeGenerated": true,
@@ -26313,9 +26313,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 297874,
+          "size": 298017,
           "sizes": {
-            "javascript": 297874
+            "javascript": 298017
           },
           "built": true,
           "codeGenerated": true,
