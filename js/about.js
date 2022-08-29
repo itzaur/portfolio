@@ -1325,8 +1325,8 @@ function contactPageInit() {
         rotation: 0.5,
         duration: 0.55,
         ease: "none",
-      },
-      "+=0.05"
+      }
+      // "+=0.05"
     )
     .to(
       ".laptop-element--6",
@@ -1341,8 +1341,8 @@ function contactPageInit() {
         opacity: 0,
         rotation: 0.5,
         // clearProps: "opacity",
-      },
-      "<-0.02"
+      }
+      // "<-0.02"
     )
     .from(
       laptopElements,

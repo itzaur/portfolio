@@ -1,14 +1,14 @@
 {
-  "hash": "a9a6ab31c8b0b4ed4fe9",
+  "hash": "abda35687a9fafaf086a",
   "version": "5.74.0",
-  "time": 37472,
-  "builtAt": 1661771755874,
+  "time": 32519,
+  "builtAt": 1661777380865,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/main9d41fa0c492666224591.js"
+      "js/main8980b082b3501871d565.js"
     ],
     "vendors": [
       "js/vendors048effe0f82af22a89c7.js"
@@ -109,12 +109,12 @@
     {
       "type": "asset",
       "name": "contact.html",
-      "size": 249616,
+      "size": 249614,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 249616
+        "size": 249614
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -777,7 +777,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 78342,
+      "size": 78489,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -785,7 +785,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 78342
+        "size": 78489
       },
       "chunkNames": [
         "main"
@@ -798,13 +798,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 93162,
+          "size": 93330,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 93162
+            "size": 93330
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -1182,20 +1182,20 @@
     },
     {
       "type": "asset",
-      "name": "js/main9d41fa0c492666224591.js",
-      "size": 41285,
+      "name": "js/main8980b082b3501871d565.js",
+      "size": 41267,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "9d41fa0c492666224591",
+        "contenthash": "8980b082b3501871d565",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "js/main9d41fa0c492666224591.js.map"
+          "sourceMap": "js/main8980b082b3501871d565.js.map"
         },
-        "size": 41285
+        "size": 41267
       },
       "chunkNames": [
         "main"
@@ -1207,14 +1207,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/main9d41fa0c492666224591.js.map",
-          "size": 127852,
+          "name": "js/main8980b082b3501871d565.js.map",
+          "size": 127846,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 127852
+            "size": 127846
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -3584,11 +3584,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 4954682,
+      "size": 4954839,
       "sizes": {
-        "javascript": 78196,
+        "javascript": 78206,
         "asset": 4788624,
-        "css/mini-extract": 83473,
+        "css/mini-extract": 83620,
         "runtime": 4389
       },
       "names": [
@@ -3600,7 +3600,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/main9d41fa0c492666224591.js"
+        "js/main8980b082b3501871d565.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -3689,9 +3689,9 @@
         "images/white_dots..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/main9d41fa0c492666224591.js.map"
+        "js/main8980b082b3501871d565.js.map"
       ],
-      "hash": "8650267fe55a03470505",
+      "hash": "a5951596449fb4668cde",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -9897,9 +9897,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 72722,
+          "size": 72732,
           "sizes": {
-            "javascript": 72722
+            "javascript": 72732
           },
           "built": true,
           "codeGenerated": true,
@@ -10256,9 +10256,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 33460,
+              "size": 33470,
               "sizes": {
-                "javascript": 33460
+                "javascript": 33470
               },
               "built": true,
               "codeGenerated": false,
@@ -11280,7 +11280,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1052:14-29",
+                  "loc": "1054:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -11294,7 +11294,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1056:14-29",
+                  "loc": "1058:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -11308,7 +11308,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1064:14-29",
+                  "loc": "1066:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -11322,7 +11322,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1068:14-29",
+                  "loc": "1070:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -11717,9 +11717,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 83473,
+          "size": 83620,
           "sizes": {
-            "css/mini-extract": 83473
+            "css/mini-extract": 83620
           },
           "built": true,
           "codeGenerated": true,
@@ -12246,9 +12246,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 72722,
+      "size": 72732,
       "sizes": {
-        "javascript": 72722
+        "javascript": 72732
       },
       "built": true,
       "codeGenerated": true,
@@ -12601,9 +12601,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 33460,
+          "size": 33470,
           "sizes": {
-            "javascript": 33460
+            "javascript": 33470
           },
           "built": true,
           "codeGenerated": false,
@@ -13623,7 +13623,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1052:14-29",
+              "loc": "1054:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -13637,7 +13637,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1056:14-29",
+              "loc": "1058:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -13651,7 +13651,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1064:14-29",
+              "loc": "1066:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -13665,7 +13665,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1068:14-29",
+              "loc": "1070:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -14473,9 +14473,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 33460,
+      "size": 33470,
       "sizes": {
-        "javascript": 33460
+        "javascript": 33470
       },
       "built": true,
       "codeGenerated": false,
@@ -14842,9 +14842,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 83473,
+      "size": 83620,
       "sizes": {
-        "css/mini-extract": 83473
+        "css/mini-extract": 83620
       },
       "built": true,
       "codeGenerated": true,
@@ -15715,7 +15715,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1052:14-29",
+          "loc": "1054:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -15729,7 +15729,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1056:14-29",
+          "loc": "1058:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -15743,7 +15743,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1064:14-29",
+          "loc": "1066:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -15757,7 +15757,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1068:14-29",
+          "loc": "1070:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -22196,9 +22196,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 193291,
+      "size": 193637,
       "sizes": {
-        "javascript": 193291
+        "javascript": 193637
       },
       "built": true,
       "codeGenerated": true,
@@ -23800,19 +23800,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 78342
+          "size": 78489
         },
         {
-          "name": "js/main9d41fa0c492666224591.js",
-          "size": 41285
+          "name": "js/main8980b082b3501871d565.js",
+          "size": 41267
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148514,
+      "assetsSize": 148643,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93162
+          "size": 93330
         },
         {
           "name": "images/about-bg..png",
@@ -24155,8 +24155,8 @@
           "size": 25997
         },
         {
-          "name": "js/main9d41fa0c492666224591.js.map",
-          "size": 127852
+          "name": "js/main8980b082b3501871d565.js.map",
+          "size": 127846
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -24164,7 +24164,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079858,
+      "auxiliaryAssetsSize": 5080020,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24184,19 +24184,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 78342
+          "size": 78489
         },
         {
-          "name": "js/main9d41fa0c492666224591.js",
-          "size": 41285
+          "name": "js/main8980b082b3501871d565.js",
+          "size": 41267
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 148514,
+      "assetsSize": 148643,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 93162
+          "size": 93330
         },
         {
           "name": "images/about-bg..png",
@@ -24539,8 +24539,8 @@
           "size": 25997
         },
         {
-          "name": "js/main9d41fa0c492666224591.js.map",
-          "size": 127852
+          "name": "js/main8980b082b3501871d565.js.map",
+          "size": 127846
         },
         {
           "name": "js/vendors048effe0f82af22a89c7.js.map",
@@ -24548,7 +24548,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 5079858,
+      "auxiliaryAssetsSize": 5080020,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -24570,10 +24570,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "e0f4e07bdbe8675bba17",
+      "hash": "4def0a6ec163f893ff44",
       "version": "5.74.0",
-      "time": 28306,
-      "builtAt": 1661771746797,
+      "time": 25110,
+      "builtAt": 1661777373513,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -25268,9 +25268,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 301109,
+          "size": 298424,
           "sizes": {
-            "javascript": 300654,
+            "javascript": 297969,
             "runtime": 455
           },
           "names": [
@@ -25282,7 +25282,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "a2c2d652053da1ed491b",
+          "hash": "14f99d9ae7f56700430e",
           "childrenByOrder": {},
           "id": 631,
           "siblings": [],
@@ -25293,9 +25293,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 300577,
+              "size": 297892,
               "sizes": {
-                "javascript": 300577
+                "javascript": 297892
               },
               "built": true,
               "codeGenerated": true,
@@ -26313,9 +26313,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 300577,
+          "size": 297892,
           "sizes": {
-            "javascript": 300577
+            "javascript": 297892
           },
           "built": true,
           "codeGenerated": true,

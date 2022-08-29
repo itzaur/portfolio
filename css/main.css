@@ -37,7 +37,7 @@
   --clr-primary: hsl(193, 43%, 80%);
   --clr-secondary: hsl(50, 85%, 79%);
   --clr-orange: hsl(15, 83%, 63%);
-  --clr-bg: hsl(47, 78%, 87%);
+  --clr-bg: hsl(47, 79%, 87%);
   --clr-footer: hsl(227, 21%, 39%);
   --clr-menu: #8a2ce2;
   --clr-white: 0 0% 100%;
@@ -2929,11 +2929,18 @@ select {
   z-index: 2;
 }
 .contact__laptop .laptop {
-  width: 130%;
-  transform: translate(-23vw, 15vw);
+  width: 160%;
+  transform: translate(-48vw, 15vw);
+}
+@media (min-width: 35.5em) {
+  .contact__laptop .laptop {
+    width: 140%;
+    transform: translate(-29vw, 16vw);
+  }
 }
 @media (min-width: 46em) {
   .contact__laptop .laptop {
+    width: 130%;
     transform: translate(-23vw, 25vw);
   }
 }
@@ -2944,9 +2951,9 @@ select {
   }
 }
 .contact__laptop .laptop text {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   fill: currentColor;
-  transform: rotateX(33deg) rotateY(49deg) rotateX(-18deg) translate3d(51%, -44%, 0) skew(6deg, -2deg);
+  transform: rotateX(33deg) rotateY(49deg) rotateX(-18deg) translate3d(49%, -44%, 0) skew(6deg, -2deg);
 }
 .contact__laptop .laptop text > * {
   font-family: var(--ff);
@@ -3007,7 +3014,7 @@ select {
 
 .coffee {
   grid-column: 1/span 2;
-  grid-row: 5/span 4;
+  grid-row: 4/span 4;
   align-self: center;
   transform: translateX(2vw);
   z-index: 3;
@@ -3057,7 +3064,7 @@ select {
 }
 
 .flower {
-  grid-column: 4/span 2;
+  grid-column: 5/span 2;
   grid-row: 4/span 2;
   align-self: center;
   z-index: 0;
@@ -3106,7 +3113,7 @@ select {
 .social {
   --gap: clamp(2rem, 10vw, 5rem);
   position: absolute;
-  top: 12rem;
+  top: 7rem;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
