@@ -29,6 +29,14 @@ function documentHeight() {
 window.addEventListener("resize", documentHeight);
 documentHeight();
 
+// document.querySelector(".top-nav").addEventListener("click", () => {
+//   const hoverElements = document.querySelectorAll('[data-hover-star="hover"]');
+//   hoverElements.forEach((el) => {
+//     el.removeAttribute("data-hover-star");
+//   });
+//   console.log(hoverElements);
+// });
+
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
   const timelineEnter = gsap.timeline({ duration: 0.5 });
@@ -96,6 +104,14 @@ function animationLeave(container, done) {
       cursor: "none",
       duration: 1,
       transformOrigin: "right bottom",
+      onStart: () => {
+        const hoverElements = container.querySelectorAll(
+          ".nav__link, [data-hover-star='hover']"
+        );
+        hoverElements.forEach((el) => {
+          el.setAttribute("data-hover-star", "not-hover");
+        });
+      },
       onComplete: () => done(),
     })
     .to(
@@ -122,6 +138,7 @@ barba.init({
       leave(data) {
         const done = this.async();
         animationLeave(data.current.container, done);
+
         console.log("leaving");
       },
       enter(data) {

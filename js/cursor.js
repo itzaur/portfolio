@@ -168,10 +168,18 @@ class MagnetLogo {
 
 function addCustomCursor() {
   const cursor = new Cursor(document.querySelector(".cursor"));
-  document.querySelectorAll(".nav__link, [data-hover-star]").forEach((el) => {
-    el.addEventListener("mouseenter", () => cursor.enter());
-    el.addEventListener("mouseleave", () => cursor.leave());
-  });
+  document
+    .querySelectorAll(".nav__link, [data-hover-star='hover']")
+    .forEach((el) => {
+      el.addEventListener("mouseenter", () => {
+        cursor.enter();
+
+        if (el.getAttribute("data-hover-star") === "not-hover") {
+          cursor.leave();
+        }
+      });
+      el.addEventListener("mouseleave", () => cursor.leave());
+    });
 
   window.addEventListener("mousemove", function (ev) {
     mouse = getMousePosition(ev);
