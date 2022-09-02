@@ -1121,6 +1121,11 @@ select {
     grid-row: 2/span 2;
   }
 }
+@media (min-width: 64em) {
+  .hello {
+    grid-row: 1/span 2;
+  }
+}
 .hello svg {
   width: clamp(20rem, 35vw, 48rem);
   overflow: visible;
@@ -1574,6 +1579,7 @@ select {
 }
 
 .header {
+  grid-row: 1;
   grid-column: 1/-1;
   grid-template-columns: inherit;
 }
@@ -2862,6 +2868,9 @@ select {
 #cat .cls-14 {
   fill: hsl(48deg, 74%, 86%);
 }
+#cat .cls-15 {
+  fill: #ee7aaa;
+}
 
 .contact-page {
   position: relative;
@@ -2932,6 +2941,63 @@ select {
   width: 160%;
   transform: translate(-48vw, 20vw);
 }
+.contact__laptop .laptop .st0 {
+  fill: #bf5c41;
+}
+.contact__laptop .laptop .st1 {
+  fill: #ffffff;
+}
+.contact__laptop .laptop .st2 {
+  fill: #4e5778;
+}
+.contact__laptop .laptop .st3 {
+  fill: #f9e69a;
+}
+.contact__laptop .laptop .st4 {
+  fill: #1d1d1b;
+}
+.contact__laptop .laptop .st5 {
+  fill: #b7d8e1;
+}
+.contact__laptop .laptop .st6 {
+  fill: #444d66;
+}
+.contact__laptop .laptop .st7 {
+  fill: #a5c2c8;
+}
+.contact__laptop .laptop .st8 {
+  fill: #f9c6a9;
+}
+.contact__laptop .laptop .st9 {
+  fill: #f7edc4;
+}
+.contact__laptop .laptop .st10 {
+  fill: #f6bb93;
+}
+.contact__laptop .laptop .st11 {
+  fill: #e4a684;
+}
+.contact__laptop .laptop .st12 {
+  fill: #1d1e1c;
+}
+.contact__laptop .laptop .st13 {
+  fill: #f9e599;
+}
+.contact__laptop .laptop .st14 {
+  fill: #b6d7e0;
+}
+.contact__laptop .laptop .st15 {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+}
+.contact__laptop .laptop .st16 {
+  fill: #ffffff;
+  stroke: #000000;
+  stroke-width: 1.19;
+  stroke-miterlimit: 10;
+}
 @media (min-width: 35.5em) {
   .contact__laptop .laptop {
     width: 140%;
@@ -2981,6 +3047,20 @@ select {
 }
 .contact__laptop .laptop .laptop-mail-arrow {
   transform: translate(64rem, 15.8rem);
+}
+.contact__laptop .laptop .download-icon {
+  cursor: pointer;
+}
+.contact__laptop .laptop .download-icon .cls-1 {
+  fill: transparent;
+}
+.contact__laptop .laptop .download-icon path {
+  transition: fill 0.3s ease, stroke 0.8s linear;
+}
+.contact__laptop .laptop .download-icon:hover path:not(:nth-child(2), :nth-child(3)) {
+  fill: var(--clr-btn-1);
+  stroke: var(--clr-btn-1);
+  stroke-width: 0.7;
 }
 .contact-dots {
   grid-column: 1/-1;
@@ -3318,4 +3398,8 @@ select {
   text-shadow: 1px 1px 1px HSL(var(--primary-hs) 0%);
   opacity: 0;
   visibility: hidden;
+}
+
+[data-name=mailto] {
+  cursor: pointer;
 }/*# sourceMappingURL=main.css.map */

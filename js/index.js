@@ -379,7 +379,7 @@ function homeInit() {
       photoTransformX
     }px, ${
       window.innerHeight -
-      (photo.offsetHeight - photo.offsetHeight * 0.25 + -photoTransformY)
+      (photo.offsetHeight - photo.offsetHeight * 0.3 + -photoTransformY)
     }px)`;
   }
 
@@ -649,7 +649,7 @@ function doodlePositionResize() {
   }px, ${
     window.innerHeight -
     (photo.offsetHeight -
-      photo.offsetHeight * 0.25 -
+      photo.offsetHeight * 0.3 -
       +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[5])
   }px)`;
 }

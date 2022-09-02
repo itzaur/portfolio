@@ -1210,6 +1210,26 @@ function contactPageInit() {
       ease: gsapEase.back,
       duration: 0.3,
     })
+    .from(".download-icon path", {
+      autoAlpha: 0,
+      scale: 0,
+      ease: gsapEase.back,
+      duration: 0.5,
+      onComplete: () => {
+        const cvTimeline = gsap.timeline({
+          repeat: -1,
+          repeatDelay: 3,
+          delay: 2,
+        });
+        cvTimeline.to(".cv-push", 0.5, {
+          x: "+=2",
+          y: "-=2",
+          yoyo: true,
+          repeat: 7,
+        });
+      },
+    })
+
     .from(".btn-big", {
       transform: "translate3d(0, 0, 1px) scale(0)",
       opacity: 0,
@@ -1456,6 +1476,13 @@ function contactPageInit() {
 
     window.addEventListener("resize", handleResize);
   });
+
+  document
+    .querySelector("[data-name='mailto']")
+    .addEventListener("click", () => {
+      // e.target.setAttribute("target", "_blank");
+      window.location.href = "mailto: preneur85@gmail.com";
+    });
 }
 
 export {

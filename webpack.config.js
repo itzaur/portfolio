@@ -43,7 +43,6 @@ module.exports = {
     // chunkFilename: "js/chunk.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[name].[ext][query]",
-    // publicPath: ".",
     clean: true,
   },
 
@@ -66,18 +65,6 @@ module.exports = {
   },
 
   optimization: {
-    // runtimeChunk: "single",
-    // usedExports: true,
-    // splitChunks: {
-    //   cacheGroups: {
-    //     styles: {
-    //       name: "styles",
-    //       type: "css/mini-extract",
-    //       chunks: "all",
-    //       // enforce: true,
-    //     },
-    //   },
-    // },
     splitChunks: {
       cacheGroups: {
         commons: {
@@ -111,7 +98,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.(png|jpe?g|gif|svg|webp|ico)$/i,
+        test: /\.(png|jpe?g|gif|svg|webp|ico|pdf)$/i,
         type: "asset/resource",
         // generator: {
         //   filename: "images/[name]-[hash][ext]",
