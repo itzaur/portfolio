@@ -1,18 +1,12 @@
 .cursor {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // display: block;
-  // pointer-events: none;
-  // z-index: 1000;
   display: none;
 
   width: 5rem;
   aspect-ratio: 1;
 
   & path {
-    fill: #f4e600;
-    stroke: #020203;
+    fill: var(--clr-cursor);
+    stroke: var(--clr-black);
     stroke-width: 22.4366;
     stroke-miterlimit: 10;
   }

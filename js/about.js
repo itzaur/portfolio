@@ -64,7 +64,6 @@ function controlHoverOnCornerButton(e) {
 
 function cornerArrowHoverEffect() {
   const cornerArrow = document.querySelector("#wrapper__corner-box");
-  // const cornerBox = document.querySelector("#corner-box");
 
   //Contact section corner element
   let contactCornerLetters = gsap.utils.toArray(".contact-elements");
@@ -81,12 +80,10 @@ function cornerArrowHoverEffect() {
     });
 
     cornerArrow.addEventListener("mouseenter", () => {
-      // animStatusRun = false;
       lettersTimeline.play(0);
     });
 
     cornerArrow.addEventListener("mouseleave", () => {
-      // animStatusRun = true;
       lettersTimeline.reverse();
     });
 
@@ -212,11 +209,9 @@ function pageSkillsInit() {
         clicked,
         {
           scale: 0,
-          // transform: `translate3d(0, 0, 1px) scale(0)`,
         },
         {
           scale: 1,
-          // transform: `translate3d(0, 0, 1px) scale(1)`,
           duration: 0.4,
           ease: gsapEase.elastic05,
           clearProps: "transform",
@@ -513,7 +508,6 @@ function aboutAnimationInit() {
   const slidesBox = document.querySelector(".story__box");
   const slides = slidesBox.querySelectorAll(".story__photo");
   const tabList = slidesBox.querySelector("[role='tablist']");
-  // const aboutBtns = tabList.querySelectorAll("[role='tab']");
   const btnAboutSection = document.querySelector(".top-nav--about");
   const dotsBox = document.querySelector(".dots-box");
   const dots = dotsBox.querySelectorAll("[role='tab']");
@@ -614,8 +608,6 @@ function aboutAnimationInit() {
           aboutBtn2.style.opacity = "1";
           aboutBtn2.style.visibility = "visible";
           aboutBtn2.style.zIndex = "6";
-
-          // isPlaying = false;
         } else if (resultX < 0 && resultX > -btnAboutSection.offsetWidth) {
           btnAboutSection.style.opacity = "1";
           btnAboutSection.style.visibility = "visible";
@@ -623,7 +615,6 @@ function aboutAnimationInit() {
 
         if (resultX < 0 || (resultX > 0 && resultX < window.innerWidth)) {
           requestAnimationFrame(getSlideCoordX);
-          // isPlaying === true;
         }
 
         //Menu button animation
@@ -746,7 +737,6 @@ function aboutAnimationInit() {
       opacity: 0,
       clearProps: "all",
       onComplete: () => {
-        // activeDot(0);
         activeTabindex();
       },
     })
@@ -776,7 +766,6 @@ function aboutAnimationInit() {
         onComplete: () => {
           installMediaQueryWatcher("(max-width: 568px)", function (matches) {
             if (matches) {
-              // mobileGoToSlide(0);
               tabList
                 .querySelector("[data-num='1']")
                 .addEventListener("click", nextSlide);
@@ -959,7 +948,6 @@ function aboutAnimationInit() {
       {
         y: -410,
         autoAlpha: 0,
-        // opacity: 0,
         ease: gsapEase.power1,
         onComplete: () => {
           addDoorAnimationOnResize();
@@ -1337,17 +1325,13 @@ function contactPageInit() {
       duration: 0.55,
       ease: "none",
     })
-    .to(
-      ".laptop-element--7",
-      {
-        opacity: 1,
-        scale: 0.95,
-        rotation: 0.5,
-        duration: 0.55,
-        ease: "none",
-      }
-      // "+=0.05"
-    )
+    .to(".laptop-element--7", {
+      opacity: 1,
+      scale: 0.95,
+      rotation: 0.5,
+      duration: 0.55,
+      ease: "none",
+    })
     .to(
       ".laptop-element--6",
       {
@@ -1355,15 +1339,10 @@ function contactPageInit() {
       },
       "<-0.05"
     )
-    .to(
-      ".laptop-element--7",
-      {
-        opacity: 0,
-        rotation: 0.5,
-        // clearProps: "opacity",
-      }
-      // "<-0.02"
-    )
+    .to(".laptop-element--7", {
+      opacity: 0,
+      rotation: 0.5,
+    })
     .from(
       laptopElements,
       {
@@ -1480,7 +1459,6 @@ function contactPageInit() {
   document
     .querySelector("[data-name='mailto']")
     .addEventListener("click", () => {
-      // e.target.setAttribute("target", "_blank");
       window.location.href = "mailto: preneur85@gmail.com";
     });
 }

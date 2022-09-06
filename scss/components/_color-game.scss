@@ -8,7 +8,6 @@
   @include flex(column, center, null);
 
   @include respond-to("320->") {
-    // --gap: 1.5rem;
     @include flex(row, flex-start, null);
     align-self: flex-end;
     grid-column: 2 / span 5;
@@ -68,12 +67,12 @@
 
       width: 8rem;
       height: 3rem;
+
       padding: 0.5rem 0.8rem;
       border-radius: 1rem;
 
       background-repeat: no-repeat;
       background-position: 58%;
-
       background-size: 30%, 70%;
       background-color: transparent;
 

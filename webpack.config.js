@@ -8,39 +8,24 @@ const FaviconsWebpackPlugin = require("favicons-webpack-plugin");
 
 let mode = "development";
 let target = "web";
-// let devtool = "source-map";
+
 if (process.env.NODE_ENV === "production") {
   mode = "production";
   target = "browserslist";
-  // devtool = false;
 }
-
-// const pages = ["index", "about", "barba"];
 
 module.exports = {
   mode: mode,
   target: target,
 
-  // devtool: devtool,
   devtool: "source-map",
-  // devtool: "inline-source-map",
 
-  // devtool: 'eval-cheap-source-map',
-  // watch: true,
-  // entry: pages.reduce((config, page) => {
-  //   config[page] = path.resolve(__dirname, `js/${page}.js`);
-  //   return config;
-  // }, {}),
   entry: {
-    // home: "./js/index.js",
-    // about: "./js/about.js",
     main: "./js/barba.js",
   },
+
   output: {
     filename: "js/[name][contenthash].js",
-    // filename: "js/[name].js",
-    // chunkFilename: "js/[name].[id].js",
-    // chunkFilename: "js/chunk.js",
     path: path.resolve(__dirname, "dist"),
     assetModuleFilename: "images/[name].[ext][query]",
     clean: true,
@@ -49,8 +34,6 @@ module.exports = {
   devServer: {
     static: {
       directory: path.join(__dirname, "/"),
-      // directory: path.join(__dirname, "dist"),
-      // publicPath: "/",
     },
     hot: false,
     open: true,
@@ -58,8 +41,6 @@ module.exports = {
     compress: true,
     // historyApiFallback: true,
     devMiddleware: {
-      // index: true,
-      // serverSideRender: true,
       writeToDisk: true,
     },
   },
@@ -90,7 +71,6 @@ module.exports = {
       {
         test: /\.(s[ac]|c)ss$/i,
         use: [
-          // mode === "development" ? "style-loader" : MiniCssExtractPlugin.loader,
           MiniCssExtractPlugin.loader,
           "css-loader",
           "postcss-loader",
@@ -100,9 +80,6 @@ module.exports = {
       {
         test: /\.(png|jpe?g|gif|svg|webp|ico|pdf)$/i,
         type: "asset/resource",
-        // generator: {
-        //   filename: "images/[name]-[hash][ext]",
-        // },
       },
       {
         test: /\.(eot|woff|woff2|ttf|otf)$/,
@@ -117,8 +94,6 @@ module.exports = {
     new CleanWebpackPlugin({
       cleanStaleWebpackAssets: false,
       protectWebpackAssets: false,
-      // verbose: true,
-      // cleanOnceBeforeBuildPatterns: ["**/*", "!stats.json"],
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].css",
@@ -134,39 +109,26 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: "index.html",
       template: "./index.html",
-      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "about.html",
       template: "./about.html",
-      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "skills.html",
       template: "./skills.html",
-      // favicon: "./favicon/favicon.ico",
     }),
     new HtmlWebpackPlugin({
       filename: "contact.html",
       template: "./contact.html",
-      // favicon: "./favicon/favicon.ico",
     }),
-    // new FaviconsWebpackPlugin("./favicon/logo.svg"),
     new FaviconsWebpackPlugin({
       logo: "img/logo.svg",
-      // mode: "webapp",
-      // devMode: "webapp",
       prefix: "favicons/",
-      // cach: true,
-      // inject: (htmlPlugin) => {
-      //   return true;
-      // },
       manifest: "./favicon/site.webmanifest",
       favicons: {
         background: "#fff",
         theme_color: "#f8edc4",
-        // theme_color: "#b7d8e1",
-        // theme_color: "#5bbad5",
       },
     }),
   ],

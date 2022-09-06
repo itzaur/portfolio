@@ -9,9 +9,8 @@
 .about-page {
   position: relative;
 
-  // height: 100vh;
-
   padding: var(--padding-container);
+
   background-color: HSL(var(--primary-hs) 100%);
 }
 
@@ -50,7 +49,6 @@
 
   &__content {
     position: relative;
-    // display: -webkit-box;
 
     height: 100%;
     z-index: 1;
@@ -66,8 +64,9 @@
       1fr
     );
   grid-template-rows: minmax(0, 1rem) repeat(4, 1fr);
+
   height: 100%;
-  // place-self: end;
+
   transition: transform 1s cubic-bezier(0.93, 0.02, 0.56, 0.95);
 
   @include respond-to("568->") {
@@ -95,8 +94,8 @@
       position: relative;
       grid-column: 2 / 9;
       grid-row: 11 / span 3;
+
       align-self: flex-end;
-      // margin-bottom: 0.5rem;
       flex-direction: column;
       justify-content: center;
       gap: 0;
@@ -224,37 +223,6 @@
     }
   }
 
-  &__content {
-    grid-column: 2 / 8;
-    grid-row: 1 / 4;
-
-    font-family: var(--ff);
-
-    &-box {
-      position: relative;
-      width: 100%;
-      height: 100%;
-
-      & div > p {
-        text-indent: 2rem;
-        width: 85%;
-        margin: 0 auto;
-        line-height: 1.2;
-      }
-
-      & div {
-        width: 100%;
-        height: 100%;
-        background: radial-gradient(
-          ellipse at center,
-          rgb(255, 255, 255) 0%,
-          rgb(253, 253, 253) 70%,
-          rgba(255, 255, 255, 0) 70.3%
-        );
-      }
-    }
-  }
-
   &__dots {
     position: absolute;
     bottom: 10%;
@@ -285,7 +253,7 @@
 
     width: 100%;
     height: 100%;
-    background-color: var(--clr-footer);
+    background-color: var(--clr-btn-1);
 
     z-index: 5;
 

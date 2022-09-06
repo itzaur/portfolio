@@ -26,14 +26,6 @@ function documentHeight() {
 window.addEventListener("resize", documentHeight);
 documentHeight();
 
-// document.querySelector(".top-nav").addEventListener("click", () => {
-//   const hoverElements = document.querySelectorAll('[data-hover-star="hover"]');
-//   hoverElements.forEach((el) => {
-//     el.removeAttribute("data-hover-star");
-//   });
-//   console.log(hoverElements);
-// });
-
 function animationEnter(container) {
   const cornerBox = container.querySelector("#wrapper__corner-box");
   const timelineEnter = gsap.timeline({ duration: 0.5 });
@@ -55,9 +47,6 @@ function animationEnter(container) {
       duration: 1,
 
       onComplete: () => {
-        // import("./about.js").then(({ cornerArrowHoverEffect }) => {
-        //   cornerArrowHoverEffect();
-        // });
         cornerArrowHoverEffect();
 
         timelineEnter
@@ -123,23 +112,19 @@ function animationLeave(container, done) {
 }
 
 barba.init({
-  debug: true,
+  // debug: true,
 
   transitions: [
     {
       name: "default-transition",
       once(data) {
         animationEnter(data.next.container);
-        console.log("once");
       },
       leave(data) {
         const done = this.async();
         animationLeave(data.current.container, done);
-
-        console.log("leaving");
       },
       enter(data) {
-        console.log("entering");
         animationEnter(data.next.container);
       },
     },
@@ -152,9 +137,6 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        // import("./index").then(({ homeInit }) => {
-        //   homeInit();
-        // });
         homeInit();
       },
     },
@@ -165,9 +147,6 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        // import("./about.js").then(({ aboutAnimationInit }) => {
-        //   aboutAnimationInit();
-        // });
         aboutAnimationInit();
       },
     },
@@ -178,9 +157,6 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        // import("./about.js").then(({ pageSkillsInit }) => {
-        //   pageSkillsInit();
-        // });
         pageSkillsInit();
       },
     },
@@ -191,9 +167,6 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        // import("./about.js").then(({ contactPageInit }) => {
-        //   contactPageInit();
-        // });
         contactPageInit();
       },
     },
@@ -220,17 +193,8 @@ barba.hooks.enter(({ current, next }) => {
 
 barba.hooks.afterEnter(({ current, next }) => {
   let afterEnterPromiseAll = new Promise(function (resolve) {
-    // import("./cursor").then(({ addCustomCursor }) => {
-    //   addCustomCursor();
-    // });
-
     addCustomCursor();
-
-    // import("./index.js").then(({ buttonFunctionality }) => {
-    //   buttonFunctionality();
-    // });
     buttonFunctionality();
-
     resolve();
   });
 
@@ -240,41 +204,9 @@ barba.hooks.afterEnter(({ current, next }) => {
 const preloadImages = (selector = "svg") => {
   return new Promise((resolve) => {
     imagesLoaded(document.querySelectorAll(selector), resolve);
-
-    // imagesLoaded(
-    //   "#wrapper",
-    //   {
-    //     background: ".color-game__item",
-    //   },
-    //   function (imgLoad) {
-    //     return imgLoad;
-    //     // console.log(imgLoad);
-    //   }
-    // );
-    // console.log(document.querySelectorAll(selector));
   });
 };
 
 preloadImages().then(() => {
   document.body.classList.remove("loading");
 });
-
-//ANCHOR largest-contentful-paint API
-// let hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
-
-// document.addEventListener(
-//   "visibilitychange",
-//   (event) => {
-//     hiddenTime = Math.min(hiddenTime, event.timeStamp);
-//   },
-//   { once: true }
-// );
-
-// new PerformanceObserver((entryList) => {
-//   entryList.getEntries().forEach((entry) => {
-//     if (entry.startTime < hiddenTime) {
-//       // This entry occurred before the page was hidden
-//       console.log(entry);
-//     }
-//   });
-// }).observe({ type: "largest-contentful-paint", buffered: true });

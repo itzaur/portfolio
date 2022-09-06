@@ -3,13 +3,17 @@
 
   width: 3.5rem;
   aspect-ratio: 1;
+
   align-self: flex-end;
+
   border-radius: 50%;
 
   cursor: pointer;
 
   background: none;
+
   border: 0;
+
   z-index: 20;
 
   &:focus-visible {
@@ -30,7 +34,6 @@
   }
 
   &-small {
-    // width: 3.35rem;
     width: 4rem;
     height: auto;
 
@@ -58,6 +61,7 @@
     left: -1.6rem;
 
     fill: var(--clr-btn-4);
+
     stroke: HSL(var(--primary-hs) 0%);
     stroke-width: 1px;
 
@@ -76,13 +80,8 @@
     }
 
     .text-cls-1 {
-      // fill: var(--clr-btn-6);
       fill: HSL(var(--primary-hs) 100%);
       opacity: 0;
-
-      // &--about {
-      //   fill: HSL(var(--primary-hs) 100%);
-      // }
     }
   }
 
@@ -273,13 +272,13 @@
 .top-nav {
   color: var(--clr-btn-2);
   background-color: var(--clr-btn-7);
+
   border: 0.4rem solid var(--clr-btn-2);
-  // box-shadow: 0px 10px 3px -6px var(--clr-btn-2);
+
   box-shadow: 4px 4px 0px HSL(var(--primary-hs) 0%/0.4);
 
   @include respond-to("568->") {
     box-shadow: 6px 5px 0px HSL(var(--primary-hs) 0%/0.4);
-    // box-shadow: 6px 6px 3px -1px var(--clr-btn-2);
   }
 
   span {
@@ -303,7 +302,6 @@
     z-index: 3;
 
     @include respond-to("568->") {
-      // top: -0.2rem;
       padding: 0.3em 2em;
     }
   }
@@ -316,10 +314,6 @@
 
   &--about {
     z-index: 6;
-
-    // @include respond-to("568->") {
-    //   top: 0;
-    // }
   }
 
   &--hobbies {
@@ -348,7 +342,7 @@
     grid-template-rows: 5rem;
 
     @include respond-to("568->") {
-      top: 3rem;
+      top: 5rem;
     }
   }
 
@@ -361,13 +355,10 @@
     position: relative;
 
     grid-template-columns: none;
-    // grid-template-rows: none;
     grid-column: 2;
     grid-row: 1;
     align-self: flex-end;
     justify-self: flex-start;
-
-    // top: 1rem;
 
     @include respond-to("568->") {
       --gap: 0;
@@ -377,8 +368,6 @@
       grid-template-rows: none;
       grid-column: 2;
       grid-row: 1;
-
-      // top: 3rem;
     }
   }
 }

@@ -1,9 +1,4 @@
 #wrapper {
-  // &:hover #wrapper__corner-box,
-  // &:focus-visible #wrapper__corner-box {
-  //   // transform: scale(var(--scale-1));
-  // }
-
   &__box {
     position: relative;
     z-index: 0;
@@ -40,15 +35,10 @@
       transform: scale(120);
     }
 
-    // &:hover {
-    //   pointer-events: none;
-    // }
+    
   }
 
-  // & &__corner-box:hover,
-  // & &__corner-box:focus-within {
-  //   // transform: scale(var(--scale-2));
-  // }
+  
 
   & &__corner-box:focus-visible {
     outline: 1px solid var(--clr-orange);
@@ -115,8 +105,7 @@
       transparent 91%
     );
 
-    // box-shadow: 3px 3px 1px HSL(var(--primary-hs) 93%/0.988),
-    //   1px 3px 0px HSL(var(--primary-hs) 89%/0.97);
+   
     box-shadow: 2px 2px 1px -1px HSL(var(--primary-hs) 86%/0.988),
       4px 7px 3px HSL(var(--primary-hs) 90%/1);
     border-radius: 0% 0% 55% 0%;
@@ -134,9 +123,7 @@
       hsla(218, 83%, 18%, 0.2)
     );
 
-    // box-shadow: 3px 1px 1px 0px HSL(var(--primary-hs) 89%/0.988),
-    //   3px 1px 1px 0px HSL(var(--primary-hs) 86%/0.1),
-    //   1px 1px 1px 0px HSL(var(--primary-hs) 89%/0.988);
+    
     box-shadow: 2px 1px 1px 0px HSL(var(--primary-hs) 89%/0.988),
       4px 1px 1px 0px HSL(var(--primary-hs) 99%/0.1);
     border-radius: 0% 0% 59% 0%;
@@ -258,7 +245,7 @@
     aspect-ratio: 1;
     border-right: 0.5rem solid transparent;
 
-    // transition: transform 0.3s ease-out;
+   
     opacity: 0;
 
     & .cls-1 {
@@ -313,28 +300,3 @@
   transition: all 0.3s linear;
 }
 
-// .cornerActive {
-//   animation: cornerActive 1s forwards ease-out;
-// }
-
-// .cornerInactive {
-//   animation: cornerInactive 1s forwards ease-out;
-// }
-
-// @keyframes cornerActive {
-//   from {
-//     transform: scale(170);
-//   }
-//   to {
-//     transform: scale(1);
-//   }
-// }
-
-// @keyframes cornerInactive {
-//   from {
-//     transform: scale(1);
-//   }
-//   to {
-//     transform: scale(170);
-//   }
-// }

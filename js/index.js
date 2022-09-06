@@ -1,9 +1,7 @@
 "use strict";
-// import "../scss/main.scss";
 import { gsapEase } from "./utils";
 import { MagnetLogo } from "./cursor";
 // import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
-// import { animateTextHoverRun, animateTextHoverStop } from "./animations";
 
 function buttonFunctionality() {
   //ANCHOR Button
@@ -59,8 +57,6 @@ function buttonFunctionality() {
   checkMediaQuery();
 
   const timelineLetters = gsap.timeline({
-    // repeat: 0,
-    // yoyo: false,
     paused: true,
   });
 
@@ -88,7 +84,6 @@ function buttonFunctionality() {
 
   tlMenuTransition
     .to(menuPage, {
-      // height: "calc(100vh - var(--padding-container) * 2 + 1px)",
       y: 0,
       ease: gsapEase.bounce_out,
     })
@@ -154,32 +149,24 @@ function buttonFunctionality() {
       gsap.to(menuNavDoodle, {
         transform: `translate3d(0, 0, 1px) scale(1)`,
       });
-      gsap.from(
-        menuBtnClose,
-        {
-          y: -100,
-          opacity: 0,
-          duration: 0.6,
-          delay: 2.8,
-          ease: gsapEase.back_1_7,
-        }
-        // "+=1"
-      );
+      gsap.from(menuBtnClose, {
+        y: -100,
+        opacity: 0,
+        duration: 0.6,
+        delay: 2.8,
+        ease: gsapEase.back_1_7,
+      });
     } else {
       gsap.to(menuNavDoodle, {
         transform: `translate3d(-16vw, 5vw, 10px) scale(1)`,
       });
-      gsap.from(
-        menuBtnClose,
-        {
-          x: -100,
-          opacity: 0,
-          duration: 0.6,
-          delay: 2.8,
-          ease: gsapEase.back_1_7,
-        }
-        // "+=1.5"
-      );
+      gsap.from(menuBtnClose, {
+        x: -100,
+        opacity: 0,
+        duration: 0.6,
+        delay: 2.8,
+        ease: gsapEase.back_1_7,
+      });
     }
 
     setTimeout(() => {
@@ -190,7 +177,6 @@ function buttonFunctionality() {
 
   function menuTransitionStop(e) {
     const closeMenu = gsap.to(menuPage, {
-      // height: 0,
       yPercent: -100,
       ease: gsapEase.power4,
       duration: 0.8,
@@ -205,15 +191,6 @@ function buttonFunctionality() {
       e.target.classList.add("inactive-cursor");
     } else {
       closeMenu.play(0);
-
-      // tlMenuTransition.reverse();
-
-      // tlMenuTransition.pause(0).reversed(true);
-      // gsap.to(".menu-btn-close", {
-      //   x: -100,
-      //   y: -100,
-      //   clearProps: "x, y",
-      // });
     }
 
     btnBig.setAttribute("aria-expanded", true);
@@ -238,7 +215,7 @@ function buttonFunctionality() {
 
 function homeInit() {
   const btnBig = document.querySelector(".btn-big");
-  // const btnSmall = document.querySelector(".btn-small");
+
   //ANCHOR Fonts
   // let font = new FontFaceObserver("d_CCMonologous", {
   //   weight: 700,
@@ -290,77 +267,7 @@ function homeInit() {
 
   //ANCHOR Doodle
   const doodle = document.querySelector(".doodle");
-  // const textSpan0 = doodle.querySelector(".span0");
-  // const textSpan1 = doodle.querySelector(".span1");
-  // const textSpan2 = doodle.querySelector(".span2");
-  // const textSpan3 = doodle.querySelector(".span3");
-
   const doodleMobile = document.querySelector(".doodle-mobile");
-  // const textSpan0Mobile = doodleMobile.querySelector(".span0");
-  // const textSpan1Mobile = doodleMobile.querySelector(".span1");
-  // const textSpan2Mobile = doodleMobile.querySelector(".span2");
-  // const textSpan3Mobile = doodleMobile.querySelector(".span3");
-
-  // const text = {
-  //   string0: "My name",
-  //   string1: "is Pavel!",
-  //   string2: "Welcome to",
-  //   string3: "my page!",
-  // };
-  // const str0 = text.string0.split("");
-  // const str1 = text.string1.split("");
-  // const str2 = text.string2.split("");
-  // const str3 = text.string3.split("");
-
-  // const str0Mobile = text.string0.split("");
-  // const str1Mobile = text.string1.split("");
-  // const str2Mobile = text.string2.split("");
-  // const str3Mobile = text.string3.split("");
-
-  // //Doodle animation
-  // function animateLetters1() {
-  //   if (str0.length > 0) {
-  //     textSpan0.innerHTML += str0.shift();
-  //     textSpan0Mobile.innerHTML += str0Mobile.shift();
-  //   } else {
-  //     clearTimeout(animateLetters1);
-  //   }
-
-  //   setTimeout(animateLetters1, 100);
-  // }
-
-  // function animateLetters2() {
-  //   if (str1.length > 0) {
-  //     textSpan1.innerHTML += str1.shift();
-  //     textSpan1Mobile.innerHTML += str1Mobile.shift();
-  //   } else {
-  //     clearTimeout(animateLetters2);
-  //   }
-
-  //   setTimeout(animateLetters2, 100);
-  // }
-
-  // function animateLetters3() {
-  //   if (str2.length > 0) {
-  //     textSpan2.innerHTML += str2.shift();
-  //     textSpan2Mobile.innerHTML += str2Mobile.shift();
-  //   } else {
-  //     clearTimeout(animateLetters3);
-  //   }
-
-  //   setTimeout(animateLetters3, 100);
-  // }
-
-  // function animateLetters4() {
-  //   if (str3.length > 0) {
-  //     textSpan3.innerHTML += str3.shift();
-  //     textSpan3Mobile.innerHTML += str3Mobile.shift();
-  //   } else {
-  //     clearTimeout(animateLetters4);
-  //   }
-
-  //   setTimeout(animateLetters4, 100);
-  // }
 
   //ANCHOR Photo
   const photo = document.querySelector(".photo");
@@ -383,8 +290,6 @@ function homeInit() {
     }px)`;
   }
 
-  // doodlePositionStart();
-
   //ANCHOR Page animations
   const logo = document.querySelector(".logo");
   const helloDots = document.querySelectorAll(
@@ -400,51 +305,6 @@ function homeInit() {
     paused: true,
   });
 
-  // gsap.set(helloDots, {
-  //   autoAlpha: 0,
-  // });
-
-  // gsap.set(dots, {
-  //   autoAlpha: 0,
-  // });
-
-  // function helloDotsAnim() {
-  //   const tl = gsap.timeline();
-  //   tl.from(helloDots, {
-  //     y: -500,
-  //     stagger: { each: 0.003, from: "random" },
-  //     duration: 0.8,
-  //     delay: 0.5,
-  //     ease: gsapEase.bounce_out,
-  //   }).to(
-  //     helloDots,
-  //     {
-  //       autoAlpha: 1,
-  //     },
-  //     "<0"
-  //   );
-  // }
-
-  // function dotsAnim() {
-  //   const tl = gsap.timeline();
-  //   tl.from(dots, {
-  //     scale: 0,
-  //     delay: 0.5,
-  //     stagger: {
-  //       each: 0.002,
-  //       from: 15,
-  //     },
-  //     duration: 0.6,
-  //     ease: gsapEase.elastic05,
-  //   }).to(
-  //     dots,
-  //     {
-  //       autoAlpha: 1,
-  //     },
-  //     "<0"
-  //   );
-  // }
-
   timelinePageAnimation
     .from(photo, {
       xPercent: 200,
@@ -457,10 +317,6 @@ function homeInit() {
       onComplete: () => {
         return doodlePositionStart();
       },
-      // onStart: () => {
-      //   dotsAnim();
-      //   helloDotsAnim();
-      // },
     })
     .from(
       dots,
@@ -501,12 +357,6 @@ function homeInit() {
       {
         opacity: 1,
         ease: gsapEase.back_1_7,
-        // onComplete: () => {
-        //   setTimeout(animateLetters1, 500);
-        //   setTimeout(animateLetters2, 1200);
-        //   setTimeout(animateLetters3, 2200);
-        //   setTimeout(animateLetters4, 3500);
-        // },
       },
       "<0.5"
     )
@@ -555,9 +405,6 @@ function homeInit() {
         onComplete: () => {
           const magnetLogo = new MagnetLogo(logo);
           return magnetLogo;
-          // import("./cursor").then(({ MagnetLogo }) => {
-          //   const magnetLogo = new MagnetLogo(logo);
-          // });
         },
       },
       "<0"
@@ -581,15 +428,8 @@ function homeInit() {
 
   timelinePageAnimation.play();
 
-  // const nextPageLink = document.querySelectorAll("#corner-link");
-  // nextPageLink.forEach((link) => {
-  //   link.addEventListener("click", () => {
-  //     tlPage.kill();
-  //   });
-  // });
   //ANCHOR Color game
   function colorGame() {
-    // const photo = document.querySelector(".photo");
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
     const colorBtns = document.querySelectorAll(".color-game__item");
     const glassesElements = photo.querySelectorAll('[class*="glasses-el"]');
@@ -653,51 +493,5 @@ function doodlePositionResize() {
       +window.getComputedStyle(photo, null).transform.match(/(-?[0-9\.]+)/g)[5])
   }px)`;
 }
-
-//ANCHOR Preloader
-// const preloadImages = (selector = "svg") => {
-//   return new Promise((resolve) => {
-//     imagesLoaded(
-//       document.querySelectorAll(selector),
-//       { background: ".color-game__item" },
-//       resolve
-//     );
-
-//     // imagesLoaded(
-//     //   "#wrapper",
-//     //   {
-//     //     background: ".color-game__item",
-//     //   },
-//     //   function (imgLoad) {
-//     //     return imgLoad;
-//     //     // console.log(imgLoad);
-//     //   }
-//     // );
-//     // console.log(document.querySelectorAll(selector));
-//   });
-// };
-
-// preloadImages().then(() => {
-//   document.body.classList.remove("loading");
-// });
-
-// var hiddenTime = document.visibilityState === "hidden" ? 0 : Infinity;
-
-// document.addEventListener(
-//   "visibilitychange",
-//   (event) => {
-//     hiddenTime = Math.min(hiddenTime, event.timeStamp);
-//   },
-//   { once: true }
-// );
-
-// new PerformanceObserver((entryList) => {
-//   entryList.getEntries().forEach((entry) => {
-//     if (entry.startTime < hiddenTime) {
-//       // This entry occurred before the page was hidden
-//       console.log(entry);
-//     }
-//   });
-// }).observe({ type: "largest-contentful-paint", buffered: true });
 
 export { homeInit, buttonFunctionality, doodlePositionResize };
