@@ -98,11 +98,16 @@ function buttonFunctionality() {
       },
       "<0.1"
     )
-    .to(".menu__box img", {
-      autoAlpha: 1,
-      scale: 1,
-      ease: gsapEase.elastic03,
-    })
+    .to(
+      ".menu__box img",
+      {
+        autoAlpha: 1,
+        scale: 1,
+        ease: gsapEase.elastic03,
+        duration: 1,
+      },
+      "<0.1"
+    )
     .from(
       menuNavDoodle,
       {
@@ -340,7 +345,7 @@ function homeInit() {
         opacity: 0,
         stagger: { each: 0.003, from: "random" },
       },
-      "<0.4"
+      "<0"
     )
     .from(
       helloDoodle,
@@ -350,7 +355,7 @@ function homeInit() {
         opacity: 0,
         stagger: 0.03,
       },
-      "<1.2"
+      "<0.6"
     )
     .to(
       [doodle, doodleMobile],
@@ -364,10 +369,10 @@ function homeInit() {
       text: {
         value: "",
       },
-      duration: 1,
+      duration: 0.6,
       ease: "none",
       stagger: {
-        each: 1,
+        each: 0.6,
       },
     })
     .from(
@@ -376,10 +381,10 @@ function homeInit() {
         text: {
           value: "",
         },
-        duration: 1,
+        duration: 0.6,
         ease: "none",
         stagger: {
-          each: 1,
+          each: 0.6,
         },
       },
       "<0"
@@ -393,7 +398,7 @@ function homeInit() {
         delay: 1,
         duration: 1,
       },
-      "<3"
+      "<1.5"
     )
     .from(
       logo,

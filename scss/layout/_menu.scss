@@ -26,12 +26,16 @@
 
   &__box {
     position: relative;
-    @include flex(null, center, null);
+    // @include flex(null, center, null);
+    display: grid;
+    place-items: center;
     grid-column: 1;
     grid-row: 3 / span 4;
     margin: 0;
 
     & > svg {
+      grid-column: 1;
+      grid-row: 1;
       width: clamp(15rem, 100%, 80rem);
       margin: 0 auto;
 
@@ -221,19 +225,23 @@
     }
 
     & img {
-      @include abs-center;
+      // @include abs-center;
+      grid-column: 1;
+      grid-row: 1;
       width: 80%;
 
       opacity: 0;
       visibility: hidden;
 
-      transform: translate(-50%, -50%) scale(0);
-      
+      transform: scale(0);
+
+      // transform: translate(-50%, -50%) scale(0);
+
       z-index: -1;
     }
 
     @include respond-to("568->") {
-      @include flex(column, center, flex-start);
+      // @include flex(column, center, flex-start);
       grid-column: 3 / span 3;
       grid-row: 3;
     }
