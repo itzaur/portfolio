@@ -218,7 +218,7 @@
       0rem,
       1fr
     );
-  grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
+  grid-template-rows: minmax(6rem, 1fr) repeat(2, min-content) minmax(2rem, 1fr);
 
   border: 1px solid HSL(var(--primary-hs) 0%);
 
@@ -325,13 +325,25 @@
   &-level {
     grid-column: 1 / -1;
     grid-row: 1/ -1;
+
+    &--1 {
+      grid-column: 2;
+    }
+
+    &--2 {
+      grid-column: 3;
+    }
+
+    &--3 {
+      grid-column: 4;
+    }
   }
 }
 
 .skill {
+  --gap: 0.5rem;
   grid-column: 1 / -1;
-  grid-row: 2 / 4;
-
+  grid-row: 3;
   grid-template-columns: minmax(0rem, 1fr) repeat(3, minmax(0, 14rem)) minmax(
       0rem,
       1fr
@@ -340,19 +352,24 @@
   align-self: flex-start;
 
   z-index: 1;
+}
 
+.skill,
+.skill-desktop {
   @include respond-to("568->") {
     height: 100%;
-    grid-row: 1 / -1;
+
+    grid-column: 1 / -1;
+    grid-row: 1/-1;
     grid-template-columns: minmax(2rem, 1fr) repeat(9, minmax(0, 11rem)) minmax(
         2rem,
         1fr
       );
+
     grid-template-rows: minmax(2rem, 1fr) repeat(2, min-content) minmax(
         2rem,
         1fr
       );
-
     align-self: auto;
   }
 
@@ -365,39 +382,42 @@
 }
 
 .skill-list {
+  justify-content: flex-start;
+  align-self: flex-start;
+
   [data-tool="JS"] {
     grid-column: 2;
-    grid-row: 5;
+    grid-row: 1;
   }
 
   [data-tool="HTML"] {
     grid-column: 2;
-    grid-row: 6;
+    grid-row: 2;
   }
 
   [data-tool="CSS"] {
     grid-column: 2;
-    grid-row: 7;
+    grid-row: 3;
   }
 
   [data-tool="SASS"] {
     grid-column: 2;
-    grid-row: 8;
+    grid-row: 4;
   }
 
   [data-tool="Git"] {
-    grid-column: 3;
-    grid-row: 5;
+    grid-column: 2;
+    grid-row: 1;
   }
 
   [data-tool="Gsap"] {
-    grid-column: 3;
-    grid-row: 6;
+    grid-column: 2;
+    grid-row: 2;
   }
 
   [data-tool="Figma"] {
-    grid-column: 3;
-    grid-row: 7;
+    grid-column: 2;
+    grid-row: 3;
   }
 
   // [data-tool='Empty'] {
@@ -406,23 +426,23 @@
   // }
 
   [data-tool="React"] {
-    grid-column: 4;
-    grid-row: 5;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   [data-tool="Three.js"] {
-    grid-column: 4;
-    grid-row: 6;
+    grid-column: 1;
+    grid-row: 2;
   }
 
   [data-tool="Svelte"] {
-    grid-column: 4;
-    grid-row: 7;
+    grid-column: 1;
+    grid-row: 3;
   }
 
   [data-tool="WebGL"] {
-    grid-column: 4;
-    grid-row: 8;
+    grid-column: 1;
+    grid-row: 4;
   }
 
   @include respond-to("568->") {

@@ -277,6 +277,8 @@
 
   box-shadow: 4px 4px 0px HSL(var(--primary-hs) 0%/0.4);
 
+  z-index: 1;
+
   @include respond-to("568->") {
     box-shadow: 6px 5px 0px HSL(var(--primary-hs) 0%/0.4);
   }

@@ -91,10 +91,10 @@ function buttonFunctionality() {
       menuDoodle,
       {
         y: -600,
-        ease: gsapEase.bounce_out,
         opacity: 0,
         duration: 0.4,
         stagger: { each: 0.002, from: "random" },
+        ease: gsapEase.bounce_out,
       },
       "<0.1"
     )
@@ -104,9 +104,9 @@ function buttonFunctionality() {
         autoAlpha: 1,
         scale: 1,
         ease: gsapEase.elastic03,
-        duration: 1,
+        duration: 1.2,
       },
-      "<0.1"
+      "<0.3"
     )
     .from(
       menuNavDoodle,
@@ -116,7 +116,7 @@ function buttonFunctionality() {
         duration: 1.2,
         transform: `translate3d(${deltaX}vw, ${deltaY}vw, 1px) scale(0)`, //fix firefox bug
       },
-      "<0.3"
+      "<0"
     )
     .from(
       menuLinks,
@@ -156,7 +156,7 @@ function buttonFunctionality() {
       });
       gsap.from(menuBtnClose, {
         y: -100,
-        opacity: 0,
+        autoAlpha: 0,
         duration: 0.6,
         delay: 2.8,
         ease: gsapEase.back_1_7,
@@ -167,9 +167,9 @@ function buttonFunctionality() {
       });
       gsap.from(menuBtnClose, {
         x: -100,
-        opacity: 0,
+        autoAlpha: 0,
         duration: 0.6,
-        delay: 2.8,
+        delay: 2.5,
         ease: gsapEase.back_1_7,
       });
     }

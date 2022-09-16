@@ -26,20 +26,55 @@
 
   &__box {
     position: relative;
-    // @include flex(null, center, null);
-    display: grid;
+    @include flex(null, center, null);
+    // display: grid;
+    // grid-template-columns: max-content;
     place-items: center;
+    align-items: flex-end;
+
+    justify-content: center;
     grid-column: 1;
     grid-row: 3 / span 4;
-    margin: 0;
+    // margin: 0;
+
+    @include respond-to("568->") {
+      // @include flex(column, center, flex-start);
+      display: grid;
+      grid-template-columns: max-content;
+      grid-column: 3 / span 3;
+      grid-row: 1 / -1;
+      align-items: center;
+      // grid-row: 3;
+    }
+
+    & img {
+      // @include abs-center;
+      position: absolute;
+      grid-column: 1;
+      grid-row: 1;
+      width: 80%;
+      // height: 100%;
+
+      opacity: 0;
+      visibility: hidden;
+
+      transform: scale(0);
+
+      // transform: translate(-50%, -50%) scale(0);
+
+      z-index: -1;
+    }
 
     & > svg {
       grid-column: 1;
       grid-row: 1;
-      width: clamp(15rem, 100%, 80rem);
-      margin: 0 auto;
+      width: clamp(15rem, 100%, 48rem);
 
       overflow: visible;
+
+      @include respond-to("568->") {
+        width: clamp(36rem, 50vw, 80rem);
+      }
 
       & .cls-1 {
         isolation: isolate;
@@ -222,28 +257,6 @@
       & .cls-45 {
         fill: url(#Super_Soft_Black_Vignette_2mb-38);
       }
-    }
-
-    & img {
-      // @include abs-center;
-      grid-column: 1;
-      grid-row: 1;
-      width: 80%;
-
-      opacity: 0;
-      visibility: hidden;
-
-      transform: scale(0);
-
-      // transform: translate(-50%, -50%) scale(0);
-
-      z-index: -1;
-    }
-
-    @include respond-to("568->") {
-      // @include flex(column, center, flex-start);
-      grid-column: 3 / span 3;
-      grid-row: 3;
     }
   }
 

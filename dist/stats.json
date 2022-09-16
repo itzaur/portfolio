@@ -1,14 +1,14 @@
 {
-  "hash": "e6f828b4eb8a172f127b",
+  "hash": "124bb96c9addfcd0a828",
   "version": "5.74.0",
-  "time": 32587,
-  "builtAt": 1663239900080,
+  "time": 30523,
+  "builtAt": 1663318622378,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/main03a85dab9edeba23032d.js"
+      "js/maine48c7369035e4abb0451.js"
     ],
     "vendors": [
       "js/vendors1bf5425334865c5870a6.js"
@@ -147,12 +147,12 @@
     {
       "type": "asset",
       "name": "skills.html",
-      "size": 208726,
+      "size": 208774,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 208726
+        "size": 208774
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -247,12 +247,12 @@
     {
       "type": "asset",
       "name": "about.html",
-      "size": 173694,
+      "size": 173742,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 173694
+        "size": 173742
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -609,7 +609,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 80504,
+      "size": 81249,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -617,7 +617,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 80504
+        "size": 81249
       },
       "chunkNames": [
         "main"
@@ -630,13 +630,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 90723,
+          "size": 91509,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 90723
+            "size": 91509
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -961,20 +961,20 @@
     },
     {
       "type": "asset",
-      "name": "js/main03a85dab9edeba23032d.js",
-      "size": 37849,
+      "name": "js/maine48c7369035e4abb0451.js",
+      "size": 37853,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "03a85dab9edeba23032d",
+        "contenthash": "e48c7369035e4abb0451",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "js/main03a85dab9edeba23032d.js.map"
+          "sourceMap": "js/maine48c7369035e4abb0451.js.map"
         },
-        "size": 37849
+        "size": 37853
       },
       "chunkNames": [
         "main"
@@ -986,14 +986,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/main03a85dab9edeba23032d.js.map",
-          "size": 111038,
+          "name": "js/maine48c7369035e4abb0451.js.map",
+          "size": 111045,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 111038
+            "size": 111045
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2648,11 +2648,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 2439882,
+      "size": 2440631,
       "sizes": {
-        "javascript": 61383,
+        "javascript": 61387,
         "asset": 2288475,
-        "css/mini-extract": 85635,
+        "css/mini-extract": 86380,
         "runtime": 4389
       },
       "names": [
@@ -2664,7 +2664,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/main03a85dab9edeba23032d.js"
+        "js/maine48c7369035e4abb0451.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2714,9 +2714,9 @@
         "images/star..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/main03a85dab9edeba23032d.js.map"
+        "js/maine48c7369035e4abb0451.js.map"
       ],
-      "hash": "73f686b80a21882563a4",
+      "hash": "32a95a178a6a8fc9ecd9",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -6202,9 +6202,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 58339,
+          "size": 58343,
           "sizes": {
-            "javascript": 58339
+            "javascript": 58343
           },
           "built": true,
           "codeGenerated": true,
@@ -6360,9 +6360,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 11237,
+              "size": 11241,
               "sizes": {
-                "javascript": 11237
+                "javascript": 11241
               },
               "built": true,
               "codeGenerated": false,
@@ -7858,7 +7858,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "76:10-29",
+                  "loc": "82:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8162,9 +8162,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 85635,
+          "size": 86380,
           "sizes": {
-            "css/mini-extract": 85635
+            "css/mini-extract": 86380
           },
           "built": true,
           "codeGenerated": true,
@@ -8691,9 +8691,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 58339,
+      "size": 58343,
       "sizes": {
-        "javascript": 58339
+        "javascript": 58343
       },
       "built": true,
       "codeGenerated": true,
@@ -8846,9 +8846,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 11237,
+          "size": 11241,
           "sizes": {
-            "javascript": 11237
+            "javascript": 11241
           },
           "built": true,
           "codeGenerated": false,
@@ -10340,7 +10340,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "76:10-29",
+              "loc": "82:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10794,9 +10794,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 11237,
+      "size": 11241,
       "sizes": {
-        "javascript": 11237
+        "javascript": 11241
       },
       "built": true,
       "codeGenerated": false,
@@ -11425,9 +11425,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 85635,
+      "size": 86380,
       "sizes": {
-        "css/mini-extract": 85635
+        "css/mini-extract": 86380
       },
       "built": true,
       "codeGenerated": true,
@@ -12508,7 +12508,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "76:10-29",
+          "loc": "82:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -16113,9 +16113,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 193316,
+      "size": 195041,
       "sizes": {
-        "javascript": 193316
+        "javascript": 195041
       },
       "built": true,
       "codeGenerated": true,
@@ -17717,19 +17717,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 80504
+          "size": 81249
         },
         {
-          "name": "js/main03a85dab9edeba23032d.js",
-          "size": 37849
+          "name": "js/maine48c7369035e4abb0451.js",
+          "size": 37853
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147238,
+      "assetsSize": 147987,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 90723
+          "size": 91509
         },
         {
           "name": "images/about-bg..png",
@@ -17916,8 +17916,8 @@
           "size": 25997
         },
         {
-          "name": "js/main03a85dab9edeba23032d.js.map",
-          "size": 111038
+          "name": "js/maine48c7369035e4abb0451.js.map",
+          "size": 111045
         },
         {
           "name": "js/vendors1bf5425334865c5870a6.js.map",
@@ -17925,7 +17925,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 2560456,
+      "auxiliaryAssetsSize": 2561249,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -17945,19 +17945,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 80504
+          "size": 81249
         },
         {
-          "name": "js/main03a85dab9edeba23032d.js",
-          "size": 37849
+          "name": "js/maine48c7369035e4abb0451.js",
+          "size": 37853
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147238,
+      "assetsSize": 147987,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 90723
+          "size": 91509
         },
         {
           "name": "images/about-bg..png",
@@ -18144,8 +18144,8 @@
           "size": 25997
         },
         {
-          "name": "js/main03a85dab9edeba23032d.js.map",
-          "size": 111038
+          "name": "js/maine48c7369035e4abb0451.js.map",
+          "size": 111045
         },
         {
           "name": "js/vendors1bf5425334865c5870a6.js.map",
@@ -18153,7 +18153,7 @@
         }
       ],
       "filteredAuxiliaryAssets": 0,
-      "auxiliaryAssetsSize": 2560456,
+      "auxiliaryAssetsSize": 2561249,
       "children": {},
       "childAssets": {},
       "isOverSizeLimit": false
@@ -18175,10 +18175,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "1a14b9764343ba44b130",
+      "hash": "5ede6d105d072eaefc26",
       "version": "5.74.0",
-      "time": 24414,
-      "builtAt": 1663239891967,
+      "time": 23783,
+      "builtAt": 1663318615694,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -18189,9 +18189,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 207381,
+          "size": 207459,
           "sizes": {
-            "javascript": 206926,
+            "javascript": 207004,
             "runtime": 455
           },
           "names": [
@@ -18203,7 +18203,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "2455a1620b714f97fe5a",
+          "hash": "dfb813f3baca8e227aec",
           "childrenByOrder": {},
           "id": 251,
           "siblings": [],
@@ -18214,9 +18214,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 206849,
+              "size": 206927,
               "sizes": {
-                "javascript": 206849
+                "javascript": 206927
               },
               "built": true,
               "codeGenerated": true,
@@ -19215,9 +19215,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 258510,
+          "size": 258558,
           "sizes": {
-            "javascript": 258055,
+            "javascript": 258103,
             "runtime": 455
           },
           "names": [
@@ -19229,7 +19229,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "d6bdef6230c2b1446f30",
+          "hash": "afbbdcd0ecd232c68a8b",
           "childrenByOrder": {},
           "id": 922,
           "siblings": [],
@@ -19240,9 +19240,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 257978,
+              "size": 258026,
               "sizes": {
-                "javascript": 257978
+                "javascript": 258026
               },
               "built": true,
               "codeGenerated": true,
@@ -19746,9 +19746,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 206849,
+          "size": 206927,
           "sizes": {
-            "javascript": 206849
+            "javascript": 206927
           },
           "built": true,
           "codeGenerated": true,
@@ -19832,9 +19832,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 257978,
+          "size": 258026,
           "sizes": {
-            "javascript": 257978
+            "javascript": 258026
           },
           "built": true,
           "codeGenerated": true,
