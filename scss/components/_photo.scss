@@ -258,6 +258,7 @@
 
 .pre-photo .cls-1 {
   fill: var(--clr-orange);
+  will-change: opacity, transform;
 }
 
 .st37.glass {

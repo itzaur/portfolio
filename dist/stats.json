@@ -1,14 +1,14 @@
 {
-  "hash": "124bb96c9addfcd0a828",
+  "hash": "7f71313a165025bc4261",
   "version": "5.74.0",
-  "time": 30523,
-  "builtAt": 1663318622378,
+  "time": 31821,
+  "builtAt": 1667223684630,
   "publicPath": "auto",
   "outputPath": "/home/user/projects/portfolio/dist",
   "assetsByChunkName": {
     "main": [
       "css/main.css",
-      "js/maine48c7369035e4abb0451.js"
+      "js/main5324965e0a44231f1499.js"
     ],
     "vendors": [
       "js/vendors1bf5425334865c5870a6.js"
@@ -18,12 +18,12 @@
     {
       "type": "asset",
       "name": "index.html",
-      "size": 393480,
+      "size": 393403,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
-        "size": 393480
+        "size": 393403
       },
       "chunkNames": [],
       "chunkIdHints": [],
@@ -609,7 +609,7 @@
     {
       "type": "asset",
       "name": "css/main.css",
-      "size": 81249,
+      "size": 81258,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
@@ -617,7 +617,7 @@
         "related": {
           "sourceMap": "css/main.css.map"
         },
-        "size": 81249
+        "size": 81258
       },
       "chunkNames": [
         "main"
@@ -630,13 +630,13 @@
         {
           "type": "sourceMap",
           "name": "css/main.css.map",
-          "size": 91509,
+          "size": 91620,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 91509
+            "size": 91620
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -961,20 +961,20 @@
     },
     {
       "type": "asset",
-      "name": "js/maine48c7369035e4abb0451.js",
-      "size": 37853,
+      "name": "js/main5324965e0a44231f1499.js",
+      "size": 37877,
       "emitted": true,
       "comparedForEmit": false,
       "cached": false,
       "info": {
         "immutable": true,
-        "contenthash": "e48c7369035e4abb0451",
+        "contenthash": "5324965e0a44231f1499",
         "javascriptModule": false,
         "minimized": true,
         "related": {
-          "sourceMap": "js/maine48c7369035e4abb0451.js.map"
+          "sourceMap": "js/main5324965e0a44231f1499.js.map"
         },
-        "size": 37853
+        "size": 37877
       },
       "chunkNames": [
         "main"
@@ -986,14 +986,14 @@
       "related": [
         {
           "type": "sourceMap",
-          "name": "js/maine48c7369035e4abb0451.js.map",
-          "size": 111045,
+          "name": "js/main5324965e0a44231f1499.js.map",
+          "size": 110934,
           "emitted": true,
           "comparedForEmit": false,
           "cached": false,
           "info": {
             "development": true,
-            "size": 111045
+            "size": 110934
           },
           "chunkNames": [],
           "chunkIdHints": [],
@@ -2648,11 +2648,11 @@
       "initial": true,
       "entry": true,
       "recorded": false,
-      "size": 2440631,
+      "size": 2440457,
       "sizes": {
-        "javascript": 61387,
+        "javascript": 61204,
         "asset": 2288475,
-        "css/mini-extract": 86380,
+        "css/mini-extract": 86389,
         "runtime": 4389
       },
       "names": [
@@ -2664,7 +2664,7 @@
       ],
       "files": [
         "css/main.css",
-        "js/maine48c7369035e4abb0451.js"
+        "js/main5324965e0a44231f1499.js"
       ],
       "auxiliaryFiles": [
         "css/main.css.map",
@@ -2714,9 +2714,9 @@
         "images/star..svg",
         "images/yellow_dots..svg",
         "images/yellow_rays..svg",
-        "js/maine48c7369035e4abb0451.js.map"
+        "js/main5324965e0a44231f1499.js.map"
       ],
-      "hash": "32a95a178a6a8fc9ecd9",
+      "hash": "b90a7dca5d84ddf47902",
       "childrenByOrder": {},
       "id": 179,
       "siblings": [
@@ -6202,9 +6202,9 @@
           "type": "module",
           "moduleType": "javascript/esm",
           "layer": null,
-          "size": 58343,
+          "size": 58160,
           "sizes": {
-            "javascript": 58343
+            "javascript": 58160
           },
           "built": true,
           "codeGenerated": true,
@@ -6256,9 +6256,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 5279,
+              "size": 5328,
               "sizes": {
-                "javascript": 5279
+                "javascript": 5328
               },
               "built": true,
               "codeGenerated": false,
@@ -6360,9 +6360,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 11241,
+              "size": 10921,
               "sizes": {
-                "javascript": 11241
+                "javascript": 10921
               },
               "built": true,
               "codeGenerated": false,
@@ -6434,7 +6434,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "109:6-14",
+                  "loc": "110:15-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6448,7 +6448,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "114:43-63",
+                  "loc": "116:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6462,7 +6462,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "123:43-63",
+                  "loc": "125:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6476,7 +6476,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "132:43-63",
+                  "loc": "134:43-63",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6490,7 +6490,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./index",
-                  "loc": "162:4-23",
+                  "loc": "164:4-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -6574,7 +6574,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./cursor",
-                  "loc": "161:4-19",
+                  "loc": "163:4-19",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6602,7 +6602,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./cursor",
-                  "loc": "311:27-37",
+                  "loc": "271:27-37",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -6624,9 +6624,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 33542,
+              "size": 33630,
               "sizes": {
-                "javascript": 33542
+                "javascript": 33630
               },
               "built": true,
               "codeGenerated": false,
@@ -6740,7 +6740,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "115:43-67",
+                  "loc": "117:43-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6754,7 +6754,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "118:6-24",
+                  "loc": "120:6-24",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6768,7 +6768,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "124:43-67",
+                  "loc": "126:43-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6782,7 +6782,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "127:6-20",
+                  "loc": "129:6-20",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6796,7 +6796,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "133:43-67",
+                  "loc": "135:43-67",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6810,7 +6810,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./about",
-                  "loc": "136:6-21",
+                  "loc": "138:6-21",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -6906,7 +6906,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "19:19-31",
+                  "loc": "21:19-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6920,7 +6920,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "20:19-31",
+                  "loc": "22:19-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6934,7 +6934,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "26:10-23",
+                  "loc": "28:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6948,7 +6948,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "64:9-21",
+                  "loc": "66:9-21",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6962,7 +6962,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "65:9-21",
+                  "loc": "67:9-21",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6976,7 +6976,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "68:16-28",
+                  "loc": "70:16-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -6990,7 +6990,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "126:21-33",
+                  "loc": "128:21-33",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7004,7 +7004,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "184:12-30",
+                  "loc": "186:12-30",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7018,7 +7018,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "189:12-30",
+                  "loc": "191:12-30",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7032,7 +7032,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "197:12-29",
+                  "loc": "199:12-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7046,7 +7046,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "319:10-25",
+                  "loc": "321:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7060,7 +7060,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "324:10-25",
+                  "loc": "326:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7074,7 +7074,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "329:10-25",
+                  "loc": "331:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7088,7 +7088,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "335:10-25",
+                  "loc": "337:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7102,7 +7102,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "343:10-23",
+                  "loc": "345:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7116,7 +7116,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "352:10-23",
+                  "loc": "354:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7130,7 +7130,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "361:10-23",
+                  "loc": "363:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7144,7 +7144,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "366:10-23",
+                  "loc": "368:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7158,7 +7158,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "376:10-23",
+                  "loc": "378:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7172,7 +7172,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "381:10-23",
+                  "loc": "383:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7186,7 +7186,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "385:10-34",
+                  "loc": "387:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7200,7 +7200,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "538:10-23",
+                  "loc": "540:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7214,7 +7214,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "544:10-31",
+                  "loc": "546:10-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7228,7 +7228,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "552:10-28",
+                  "loc": "554:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7242,7 +7242,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "572:10-28",
+                  "loc": "574:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7256,7 +7256,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "594:10-23",
+                  "loc": "596:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7270,7 +7270,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "603:10-34",
+                  "loc": "605:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7284,7 +7284,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "621:6-30",
+                  "loc": "623:6-30",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7298,7 +7298,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "671:10-25",
+                  "loc": "673:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7312,7 +7312,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "675:10-25",
+                  "loc": "677:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7326,7 +7326,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "679:10-25",
+                  "loc": "681:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7340,7 +7340,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "683:10-25",
+                  "loc": "685:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7354,7 +7354,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "687:10-25",
+                  "loc": "689:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7368,7 +7368,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "690:10-25",
+                  "loc": "692:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7382,7 +7382,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "706:10-25",
+                  "loc": "708:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7396,7 +7396,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "710:10-25",
+                  "loc": "712:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7410,7 +7410,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "714:10-25",
+                  "loc": "716:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7424,7 +7424,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "718:10-25",
+                  "loc": "720:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7438,7 +7438,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "722:10-25",
+                  "loc": "724:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7452,7 +7452,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "726:10-25",
+                  "loc": "728:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7466,7 +7466,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "730:10-25",
+                  "loc": "732:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7480,7 +7480,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "736:10-25",
+                  "loc": "738:10-25",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7494,7 +7494,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "752:4-28",
+                  "loc": "754:4-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7508,7 +7508,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "850:10-23",
+                  "loc": "852:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7522,7 +7522,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "853:10-31",
+                  "loc": "855:10-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7536,7 +7536,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "858:10-23",
+                  "loc": "860:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7550,7 +7550,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "863:10-23",
+                  "loc": "865:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7564,7 +7564,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "868:10-23",
+                  "loc": "870:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7578,7 +7578,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "878:10-23",
+                  "loc": "880:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7592,7 +7592,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "883:10-23",
+                  "loc": "885:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7606,7 +7606,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "888:10-23",
+                  "loc": "890:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7620,7 +7620,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "906:10-34",
+                  "loc": "908:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7634,7 +7634,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "912:10-28",
+                  "loc": "913:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7648,7 +7648,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "972:10-23",
+                  "loc": "1026:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7662,7 +7662,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1060:14-29",
+                  "loc": "1063:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7676,7 +7676,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1064:14-29",
+                  "loc": "1067:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7690,7 +7690,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1072:14-29",
+                  "loc": "1075:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7704,7 +7704,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "1076:14-29",
+                  "loc": "1079:14-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7844,7 +7844,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "73:10-29",
+                  "loc": "72:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7858,7 +7858,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "82:10-29",
+                  "loc": "81:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7872,7 +7872,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "86:10-28",
+                  "loc": "85:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7886,7 +7886,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "90:10-28",
+                  "loc": "89:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7900,7 +7900,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "98:10-27",
+                  "loc": "97:10-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7914,7 +7914,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "103:10-28",
+                  "loc": "102:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7928,7 +7928,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "126:14-31",
+                  "loc": "125:14-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7942,7 +7942,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "137:14-31",
+                  "loc": "136:14-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7956,7 +7956,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "150:12-27",
+                  "loc": "149:12-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7970,7 +7970,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "251:10-31",
+                  "loc": "209:10-31",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7984,7 +7984,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "264:10-28",
+                  "loc": "223:10-28",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -7998,7 +7998,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "267:10-29",
+                  "loc": "226:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8012,7 +8012,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "275:10-29",
+                  "loc": "235:10-29",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8026,7 +8026,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "280:10-27",
+                  "loc": "240:10-27",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8040,7 +8040,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "302:10-34",
+                  "loc": "262:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8054,7 +8054,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "308:10-34",
+                  "loc": "268:10-34",
                   "moduleId": null,
                   "resolvedModuleId": null
                 },
@@ -8068,7 +8068,7 @@
                   "active": true,
                   "explanation": "",
                   "userRequest": "./utils",
-                  "loc": "321:10-23",
+                  "loc": "281:10-23",
                   "moduleId": null,
                   "resolvedModuleId": null
                 }
@@ -8162,9 +8162,9 @@
         {
           "type": "module",
           "moduleType": "css/mini-extract",
-          "size": 86380,
+          "size": 86389,
           "sizes": {
-            "css/mini-extract": 86380
+            "css/mini-extract": 86389
           },
           "built": true,
           "codeGenerated": true,
@@ -8631,7 +8631,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "140:0-23",
+              "loc": "142:0-23",
               "moduleId": 163,
               "resolvedModuleId": null
             },
@@ -8645,7 +8645,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "148:0-17",
+              "loc": "150:0-17",
               "moduleId": 163,
               "resolvedModuleId": null
             },
@@ -8659,7 +8659,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "@barba/core",
-              "loc": "157:0-22",
+              "loc": "159:0-22",
               "moduleId": 163,
               "resolvedModuleId": null
             }
@@ -8691,9 +8691,9 @@
       "type": "module",
       "moduleType": "javascript/esm",
       "layer": null,
-      "size": 58343,
+      "size": 58160,
       "sizes": {
-        "javascript": 58343
+        "javascript": 58160
       },
       "built": true,
       "codeGenerated": true,
@@ -8744,9 +8744,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 5279,
+          "size": 5328,
           "sizes": {
-            "javascript": 5279
+            "javascript": 5328
           },
           "built": true,
           "codeGenerated": false,
@@ -8846,9 +8846,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 11241,
+          "size": 10921,
           "sizes": {
-            "javascript": 11241
+            "javascript": 10921
           },
           "built": true,
           "codeGenerated": false,
@@ -8919,7 +8919,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "109:6-14",
+              "loc": "110:15-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8933,7 +8933,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "114:43-63",
+              "loc": "116:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8947,7 +8947,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "123:43-63",
+              "loc": "125:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8961,7 +8961,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "132:43-63",
+              "loc": "134:43-63",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -8975,7 +8975,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./index",
-              "loc": "162:4-23",
+              "loc": "164:4-23",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -9058,7 +9058,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./cursor",
-              "loc": "161:4-19",
+              "loc": "163:4-19",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9086,7 +9086,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./cursor",
-              "loc": "311:27-37",
+              "loc": "271:27-37",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -9108,9 +9108,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 33542,
+          "size": 33630,
           "sizes": {
-            "javascript": 33542
+            "javascript": 33630
           },
           "built": true,
           "codeGenerated": false,
@@ -9223,7 +9223,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "115:43-67",
+              "loc": "117:43-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9237,7 +9237,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "118:6-24",
+              "loc": "120:6-24",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9251,7 +9251,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "124:43-67",
+              "loc": "126:43-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9265,7 +9265,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "127:6-20",
+              "loc": "129:6-20",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9279,7 +9279,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "133:43-67",
+              "loc": "135:43-67",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9293,7 +9293,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./about",
-              "loc": "136:6-21",
+              "loc": "138:6-21",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -9388,7 +9388,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "19:19-31",
+              "loc": "21:19-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9402,7 +9402,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "20:19-31",
+              "loc": "22:19-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9416,7 +9416,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "26:10-23",
+              "loc": "28:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9430,7 +9430,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "64:9-21",
+              "loc": "66:9-21",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9444,7 +9444,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "65:9-21",
+              "loc": "67:9-21",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9458,7 +9458,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "68:16-28",
+              "loc": "70:16-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9472,7 +9472,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "126:21-33",
+              "loc": "128:21-33",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9486,7 +9486,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "184:12-30",
+              "loc": "186:12-30",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9500,7 +9500,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "189:12-30",
+              "loc": "191:12-30",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9514,7 +9514,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "197:12-29",
+              "loc": "199:12-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9528,7 +9528,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "319:10-25",
+              "loc": "321:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9542,7 +9542,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "324:10-25",
+              "loc": "326:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9556,7 +9556,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "329:10-25",
+              "loc": "331:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9570,7 +9570,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "335:10-25",
+              "loc": "337:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9584,7 +9584,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "343:10-23",
+              "loc": "345:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9598,7 +9598,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "352:10-23",
+              "loc": "354:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9612,7 +9612,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "361:10-23",
+              "loc": "363:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9626,7 +9626,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "366:10-23",
+              "loc": "368:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9640,7 +9640,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "376:10-23",
+              "loc": "378:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9654,7 +9654,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "381:10-23",
+              "loc": "383:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9668,7 +9668,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "385:10-34",
+              "loc": "387:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9682,7 +9682,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "538:10-23",
+              "loc": "540:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9696,7 +9696,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "544:10-31",
+              "loc": "546:10-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9710,7 +9710,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "552:10-28",
+              "loc": "554:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9724,7 +9724,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "572:10-28",
+              "loc": "574:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9738,7 +9738,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "594:10-23",
+              "loc": "596:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9752,7 +9752,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "603:10-34",
+              "loc": "605:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9766,7 +9766,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "621:6-30",
+              "loc": "623:6-30",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9780,7 +9780,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "671:10-25",
+              "loc": "673:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9794,7 +9794,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "675:10-25",
+              "loc": "677:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9808,7 +9808,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "679:10-25",
+              "loc": "681:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9822,7 +9822,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "683:10-25",
+              "loc": "685:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9836,7 +9836,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "687:10-25",
+              "loc": "689:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9850,7 +9850,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "690:10-25",
+              "loc": "692:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9864,7 +9864,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "706:10-25",
+              "loc": "708:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9878,7 +9878,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "710:10-25",
+              "loc": "712:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9892,7 +9892,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "714:10-25",
+              "loc": "716:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9906,7 +9906,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "718:10-25",
+              "loc": "720:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9920,7 +9920,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "722:10-25",
+              "loc": "724:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9934,7 +9934,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "726:10-25",
+              "loc": "728:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9948,7 +9948,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "730:10-25",
+              "loc": "732:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9962,7 +9962,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "736:10-25",
+              "loc": "738:10-25",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9976,7 +9976,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "752:4-28",
+              "loc": "754:4-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -9990,7 +9990,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "850:10-23",
+              "loc": "852:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10004,7 +10004,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "853:10-31",
+              "loc": "855:10-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10018,7 +10018,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "858:10-23",
+              "loc": "860:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10032,7 +10032,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "863:10-23",
+              "loc": "865:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10046,7 +10046,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "868:10-23",
+              "loc": "870:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10060,7 +10060,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "878:10-23",
+              "loc": "880:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10074,7 +10074,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "883:10-23",
+              "loc": "885:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10088,7 +10088,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "888:10-23",
+              "loc": "890:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10102,7 +10102,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "906:10-34",
+              "loc": "908:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10116,7 +10116,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "912:10-28",
+              "loc": "913:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10130,7 +10130,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "972:10-23",
+              "loc": "1026:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10144,7 +10144,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1060:14-29",
+              "loc": "1063:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10158,7 +10158,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1064:14-29",
+              "loc": "1067:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10172,7 +10172,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1072:14-29",
+              "loc": "1075:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10186,7 +10186,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "1076:14-29",
+              "loc": "1079:14-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10326,7 +10326,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "73:10-29",
+              "loc": "72:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10340,7 +10340,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "82:10-29",
+              "loc": "81:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10354,7 +10354,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "86:10-28",
+              "loc": "85:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10368,7 +10368,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "90:10-28",
+              "loc": "89:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10382,7 +10382,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "98:10-27",
+              "loc": "97:10-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10396,7 +10396,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "103:10-28",
+              "loc": "102:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10410,7 +10410,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "126:14-31",
+              "loc": "125:14-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10424,7 +10424,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "137:14-31",
+              "loc": "136:14-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10438,7 +10438,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "150:12-27",
+              "loc": "149:12-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10452,7 +10452,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "251:10-31",
+              "loc": "209:10-31",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10466,7 +10466,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "264:10-28",
+              "loc": "223:10-28",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10480,7 +10480,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "267:10-29",
+              "loc": "226:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10494,7 +10494,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "275:10-29",
+              "loc": "235:10-29",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10508,7 +10508,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "280:10-27",
+              "loc": "240:10-27",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10522,7 +10522,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "302:10-34",
+              "loc": "262:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10536,7 +10536,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "308:10-34",
+              "loc": "268:10-34",
               "moduleId": null,
               "resolvedModuleId": null
             },
@@ -10550,7 +10550,7 @@
               "active": true,
               "explanation": "",
               "userRequest": "./utils",
-              "loc": "321:10-23",
+              "loc": "281:10-23",
               "moduleId": null,
               "resolvedModuleId": null
             }
@@ -10747,7 +10747,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "140:0-23",
+          "loc": "142:0-23",
           "moduleId": 163,
           "resolvedModuleId": null
         },
@@ -10761,7 +10761,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "148:0-17",
+          "loc": "150:0-17",
           "moduleId": 163,
           "resolvedModuleId": null
         },
@@ -10775,7 +10775,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "@barba/core",
-          "loc": "157:0-22",
+          "loc": "159:0-22",
           "moduleId": 163,
           "resolvedModuleId": null
         }
@@ -10794,9 +10794,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 11241,
+      "size": 10921,
       "sizes": {
-        "javascript": 11241
+        "javascript": 10921
       },
       "built": true,
       "codeGenerated": false,
@@ -10867,7 +10867,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "109:6-14",
+          "loc": "110:15-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -10881,7 +10881,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "114:43-63",
+          "loc": "116:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -10895,7 +10895,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "123:43-63",
+          "loc": "125:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -10909,7 +10909,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "132:43-63",
+          "loc": "134:43-63",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -10923,7 +10923,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./index",
-          "loc": "162:4-23",
+          "loc": "164:4-23",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -11006,7 +11006,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./cursor",
-          "loc": "161:4-19",
+          "loc": "163:4-19",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11034,7 +11034,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./cursor",
-          "loc": "311:27-37",
+          "loc": "271:27-37",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -11056,9 +11056,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 33542,
+      "size": 33630,
       "sizes": {
-        "javascript": 33542
+        "javascript": 33630
       },
       "built": true,
       "codeGenerated": false,
@@ -11171,7 +11171,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "115:43-67",
+          "loc": "117:43-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11185,7 +11185,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "118:6-24",
+          "loc": "120:6-24",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11199,7 +11199,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "124:43-67",
+          "loc": "126:43-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11213,7 +11213,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "127:6-20",
+          "loc": "129:6-20",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11227,7 +11227,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "133:43-67",
+          "loc": "135:43-67",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11241,7 +11241,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./about",
-          "loc": "136:6-21",
+          "loc": "138:6-21",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -11425,9 +11425,9 @@
     {
       "type": "module",
       "moduleType": "css/mini-extract",
-      "size": 86380,
+      "size": 86389,
       "sizes": {
-        "css/mini-extract": 86380
+        "css/mini-extract": 86389
       },
       "built": true,
       "codeGenerated": true,
@@ -11556,7 +11556,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "19:19-31",
+          "loc": "21:19-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11570,7 +11570,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "20:19-31",
+          "loc": "22:19-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11584,7 +11584,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "26:10-23",
+          "loc": "28:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11598,7 +11598,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "64:9-21",
+          "loc": "66:9-21",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11612,7 +11612,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "65:9-21",
+          "loc": "67:9-21",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11626,7 +11626,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "68:16-28",
+          "loc": "70:16-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11640,7 +11640,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "126:21-33",
+          "loc": "128:21-33",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11654,7 +11654,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "184:12-30",
+          "loc": "186:12-30",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11668,7 +11668,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "189:12-30",
+          "loc": "191:12-30",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11682,7 +11682,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "197:12-29",
+          "loc": "199:12-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11696,7 +11696,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "319:10-25",
+          "loc": "321:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11710,7 +11710,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "324:10-25",
+          "loc": "326:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11724,7 +11724,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "329:10-25",
+          "loc": "331:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11738,7 +11738,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "335:10-25",
+          "loc": "337:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11752,7 +11752,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "343:10-23",
+          "loc": "345:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11766,7 +11766,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "352:10-23",
+          "loc": "354:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11780,7 +11780,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "361:10-23",
+          "loc": "363:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11794,7 +11794,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "366:10-23",
+          "loc": "368:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11808,7 +11808,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "376:10-23",
+          "loc": "378:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11822,7 +11822,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "381:10-23",
+          "loc": "383:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11836,7 +11836,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "385:10-34",
+          "loc": "387:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11850,7 +11850,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "538:10-23",
+          "loc": "540:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11864,7 +11864,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "544:10-31",
+          "loc": "546:10-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11878,7 +11878,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "552:10-28",
+          "loc": "554:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11892,7 +11892,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "572:10-28",
+          "loc": "574:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11906,7 +11906,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "594:10-23",
+          "loc": "596:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11920,7 +11920,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "603:10-34",
+          "loc": "605:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11934,7 +11934,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "621:6-30",
+          "loc": "623:6-30",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11948,7 +11948,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "671:10-25",
+          "loc": "673:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11962,7 +11962,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "675:10-25",
+          "loc": "677:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11976,7 +11976,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "679:10-25",
+          "loc": "681:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -11990,7 +11990,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "683:10-25",
+          "loc": "685:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12004,7 +12004,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "687:10-25",
+          "loc": "689:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12018,7 +12018,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "690:10-25",
+          "loc": "692:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12032,7 +12032,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "706:10-25",
+          "loc": "708:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12046,7 +12046,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "710:10-25",
+          "loc": "712:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12060,7 +12060,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "714:10-25",
+          "loc": "716:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12074,7 +12074,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "718:10-25",
+          "loc": "720:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12088,7 +12088,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "722:10-25",
+          "loc": "724:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12102,7 +12102,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "726:10-25",
+          "loc": "728:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12116,7 +12116,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "730:10-25",
+          "loc": "732:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12130,7 +12130,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "736:10-25",
+          "loc": "738:10-25",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12144,7 +12144,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "752:4-28",
+          "loc": "754:4-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12158,7 +12158,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "850:10-23",
+          "loc": "852:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12172,7 +12172,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "853:10-31",
+          "loc": "855:10-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12186,7 +12186,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "858:10-23",
+          "loc": "860:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12200,7 +12200,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "863:10-23",
+          "loc": "865:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12214,7 +12214,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "868:10-23",
+          "loc": "870:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12228,7 +12228,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "878:10-23",
+          "loc": "880:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12242,7 +12242,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "883:10-23",
+          "loc": "885:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12256,7 +12256,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "888:10-23",
+          "loc": "890:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12270,7 +12270,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "906:10-34",
+          "loc": "908:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12284,7 +12284,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "912:10-28",
+          "loc": "913:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12298,7 +12298,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "972:10-23",
+          "loc": "1026:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12312,7 +12312,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1060:14-29",
+          "loc": "1063:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12326,7 +12326,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1064:14-29",
+          "loc": "1067:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12340,7 +12340,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1072:14-29",
+          "loc": "1075:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12354,7 +12354,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "1076:14-29",
+          "loc": "1079:14-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12494,7 +12494,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "73:10-29",
+          "loc": "72:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12508,7 +12508,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "82:10-29",
+          "loc": "81:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12522,7 +12522,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "86:10-28",
+          "loc": "85:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12536,7 +12536,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "90:10-28",
+          "loc": "89:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12550,7 +12550,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "98:10-27",
+          "loc": "97:10-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12564,7 +12564,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "103:10-28",
+          "loc": "102:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12578,7 +12578,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "126:14-31",
+          "loc": "125:14-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12592,7 +12592,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "137:14-31",
+          "loc": "136:14-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12606,7 +12606,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "150:12-27",
+          "loc": "149:12-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12620,7 +12620,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "251:10-31",
+          "loc": "209:10-31",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12634,7 +12634,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "264:10-28",
+          "loc": "223:10-28",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12648,7 +12648,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "267:10-29",
+          "loc": "226:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12662,7 +12662,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "275:10-29",
+          "loc": "235:10-29",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12676,7 +12676,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "280:10-27",
+          "loc": "240:10-27",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12690,7 +12690,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "302:10-34",
+          "loc": "262:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12704,7 +12704,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "308:10-34",
+          "loc": "268:10-34",
           "moduleId": null,
           "resolvedModuleId": null
         },
@@ -12718,7 +12718,7 @@
           "active": true,
           "explanation": "",
           "userRequest": "./utils",
-          "loc": "321:10-23",
+          "loc": "281:10-23",
           "moduleId": null,
           "resolvedModuleId": null
         }
@@ -16113,9 +16113,9 @@
       "type": "module",
       "moduleType": "javascript/auto",
       "layer": null,
-      "size": 195041,
+      "size": 195171,
       "sizes": {
-        "javascript": 195041
+        "javascript": 195171
       },
       "built": true,
       "codeGenerated": true,
@@ -17717,19 +17717,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 81249
+          "size": 81258
         },
         {
-          "name": "js/maine48c7369035e4abb0451.js",
-          "size": 37853
+          "name": "js/main5324965e0a44231f1499.js",
+          "size": 37877
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147987,
+      "assetsSize": 148020,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 91509
+          "size": 91620
         },
         {
           "name": "images/about-bg..png",
@@ -17916,8 +17916,8 @@
           "size": 25997
         },
         {
-          "name": "js/maine48c7369035e4abb0451.js.map",
-          "size": 111045
+          "name": "js/main5324965e0a44231f1499.js.map",
+          "size": 110934
         },
         {
           "name": "js/vendors1bf5425334865c5870a6.js.map",
@@ -17945,19 +17945,19 @@
         },
         {
           "name": "css/main.css",
-          "size": 81249
+          "size": 81258
         },
         {
-          "name": "js/maine48c7369035e4abb0451.js",
-          "size": 37853
+          "name": "js/main5324965e0a44231f1499.js",
+          "size": 37877
         }
       ],
       "filteredAssets": 0,
-      "assetsSize": 147987,
+      "assetsSize": 148020,
       "auxiliaryAssets": [
         {
           "name": "css/main.css.map",
-          "size": 91509
+          "size": 91620
         },
         {
           "name": "images/about-bg..png",
@@ -18144,8 +18144,8 @@
           "size": 25997
         },
         {
-          "name": "js/maine48c7369035e4abb0451.js.map",
-          "size": 111045
+          "name": "js/main5324965e0a44231f1499.js.map",
+          "size": 110934
         },
         {
           "name": "js/vendors1bf5425334865c5870a6.js.map",
@@ -18175,10 +18175,10 @@
   "children": [
     {
       "name": "HtmlWebpackCompiler",
-      "hash": "5ede6d105d072eaefc26",
+      "hash": "920e3cd64e4644a301c5",
       "version": "5.74.0",
-      "time": 23783,
-      "builtAt": 1663318615694,
+      "time": 23868,
+      "builtAt": 1667223676728,
       "publicPath": "",
       "outputPath": "/home/user/projects/portfolio/dist",
       "assetsByChunkName": {},
@@ -18531,9 +18531,9 @@
           "initial": true,
           "entry": true,
           "recorded": false,
-          "size": 545681,
+          "size": 539028,
           "sizes": {
-            "javascript": 545226,
+            "javascript": 538573,
             "runtime": 455
           },
           "names": [
@@ -18545,7 +18545,7 @@
           ],
           "files": [],
           "auxiliaryFiles": [],
-          "hash": "c29a06d98b3e028d560d",
+          "hash": "f3f0b92ee24ca2192292",
           "childrenByOrder": {},
           "id": 563,
           "siblings": [],
@@ -18556,9 +18556,9 @@
               "type": "module",
               "moduleType": "javascript/auto",
               "layer": null,
-              "size": 545149,
+              "size": 538496,
               "sizes": {
-                "javascript": 545149
+                "javascript": 538496
               },
               "built": true,
               "codeGenerated": true,
@@ -19660,9 +19660,9 @@
           "type": "module",
           "moduleType": "javascript/auto",
           "layer": null,
-          "size": 545149,
+          "size": 538496,
           "sizes": {
-            "javascript": 545149
+            "javascript": 538496
           },
           "built": true,
           "codeGenerated": true,

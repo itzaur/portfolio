@@ -13,25 +13,29 @@ let animStatusRun = false;
 
 function cornerArrowAnimation() {
   const cornerArrowTimeline = gsap.timeline({ paused: true });
-  cornerArrowTimeline.set("#corner-button svg g g path", {
-    autoAlpha: 0,
-  });
+  // cornerArrowTimeline.set("#corner-button svg g g path", {
+  //   autoAlpha: 0,
+  // });
 
-  cornerArrowTimeline.fromTo(
-    "#corner-button svg g g path",
-    {
-      y: `-=${randomNumber(40, -40)}`,
-      x: `+=${randomNumber(40, -40)}`,
-    },
-    {
-      autoAlpha: 1,
-      x: 0,
-      y: 0,
-      duration: 0.2,
-      ease: gsapEase.back,
-      stagger: { each: 0.01 },
-    }
-  );
+  cornerArrowTimeline
+    .set("#corner-button svg path", {
+      autoAlpha: 0,
+    })
+    .fromTo(
+      "#corner-button svg path",
+      {
+        y: `-=${randomNumber(40, -40)}`,
+        x: `+=${randomNumber(40, -40)}`,
+      },
+      {
+        autoAlpha: 1,
+        x: 0,
+        y: 0,
+        duration: 0.2,
+        ease: gsapEase.back,
+        stagger: { each: 0.01 },
+      }
+    );
 
   if (!animStatusRun) {
     cornerArrowTimeline.play();
@@ -321,7 +325,7 @@ function pageSkillsInit() {
 
   addHobbiesParallax();
 
-  //Eye move
+  //Cat's eye move
   const catItem = document.querySelector(".hobbie--3");
   const cat = document.getElementById("cat");
   const eyeLeftPupil = cat.querySelector(".eye-left-pupil");
@@ -1217,7 +1221,6 @@ function contactPageInit() {
         });
       },
     })
-
     .from(".btn-big", {
       transform: "translate3d(0, 0, 1px) scale(0)",
       opacity: 0,
@@ -1228,9 +1231,8 @@ function contactPageInit() {
     .from(
       ".laptop-text > *, .laptop-text > * > *, .laptop-mail-arrow, .laptop-mail",
       {
-        scale: 1.2,
         autoAlpha: 0,
-        ease: gsapEase.elastic02,
+        ease: gsapEase.back,
         duration: 0.6,
         stagger: { each: 0.1 },
         clearProps: "all",
@@ -1240,6 +1242,7 @@ function contactPageInit() {
       }
     );
 
+  //Mail animation
   const mailWiggle = gsap.timeline({
     repeat: -1,
     repeatDelay: 2,
@@ -1297,19 +1300,7 @@ function contactPageInit() {
       yPercent: 0,
     });
 
-  const iconsTimeline = gsap.timeline({ paused: true });
-  iconsTimeline.from(
-    ".social__item",
-    {
-      x: 500,
-      rotation: 360,
-      ease: gsapEase.back,
-      stagger: { each: 0.2 },
-      duration: 1,
-    },
-    "<1"
-  );
-
+  //Laptop elements animation
   const laptopElementsTimeline = gsap.timeline({
     paused: true,
     repeat: -1,
@@ -1373,6 +1364,19 @@ function contactPageInit() {
 
   //ANCHOR Social icons animation
   const socialItems = document.querySelectorAll(".social__item");
+
+  const iconsTimeline = gsap.timeline({ paused: true });
+  iconsTimeline.from(
+    socialItems,
+    {
+      x: 500,
+      rotation: 360,
+      ease: gsapEase.back,
+      stagger: { each: 0.2 },
+      duration: 1,
+    },
+    "<1"
+  );
 
   socialItems.forEach((item) => {
     const socialWindow = {

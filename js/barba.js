@@ -1,7 +1,7 @@
 import "../scss/main.scss";
 import "../pavel.cv.pdf";
 import barba from "@barba/core";
-import { homeInit, buttonFunctionality, doodlePositionResize } from "./index";
+import { buttonFunctionality, doodlePositionResize, homeInit } from "./index";
 import {
   addDoorAnimationOnResize,
   controlHoverOnCornerButton,
@@ -31,7 +31,7 @@ function animationEnter(container) {
   const timelineEnter = gsap.timeline({ duration: 0.5 });
 
   timelineEnter
-    .set("#corner-button svg g g path", {
+    .set("#corner-button svg path", {
       autoAlpha: 0,
     })
     .set("#corner-button svg", {
@@ -137,7 +137,7 @@ barba.init({
         window.removeEventListener("resize", addDoorAnimationOnResize);
       },
       afterEnter: () => {
-        homeInit();
+        setTimeout(() => homeInit(), 0);
       },
     },
     {

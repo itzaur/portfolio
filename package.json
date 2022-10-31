@@ -25,14 +25,14 @@
   "homepage": "https://github.com/itzaur/portfolio#readme",
   "dependencies": {
     "@barba/core": "^2.9.7",
-    "autoprefixer": "^10.4.8",
+    "autoprefixer": "^10.4.13",
     "fontfaceobserver": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.0",
-    "@babel/preset-env": "^7.19.0",
+    "@babel/core": "^7.19.6",
+    "@babel/preset-env": "^7.19.4",
     "@barba/css": "^2.1.15",
-    "babel-loader": "^8.2.5",
+    "babel-loader": "^9.0.0",
     "babel-regenerator-runtime": "^6.5.0",
     "barba.js": "^1.0.0",
     "clean-webpack-plugin": "^4.0.0",
@@ -41,16 +41,16 @@
     "file-loader": "^6.2.0",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.6.1",
-    "postcss": "^8.4.16",
+    "postcss": "^8.4.18",
     "postcss-cli": "^10.0.0",
     "postcss-loader": "^7.0.1",
-    "postcss-preset-env": "^7.8.0",
-    "sass": "^1.54.8",
-    "sass-loader": "^13.0.2",
+    "postcss-preset-env": "^7.8.2",
+    "sass": "^1.55.0",
+    "sass-loader": "^13.1.0",
     "style-loader": "^3.3.1",
     "webpack": "^5.74.0",
-    "webpack-bundle-analyzer": "^4.6.1",
+    "webpack-bundle-analyzer": "^4.7.0",
     "webpack-cli": "^4.10.0",
-    "webpack-dev-server": "^4.10.1"
+    "webpack-dev-server": "^4.11.1"
   }
 }

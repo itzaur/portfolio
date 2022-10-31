@@ -15,6 +15,7 @@
 
   @include respond-to("568->") {
     --gap: 1.5rem;
+    grid-column: 2;
     flex-direction: column;
     margin-bottom: 2vw;
   }
@@ -24,7 +25,8 @@
     position: relative;
 
     width: 3.5rem;
-    aspect-ratio: 1;
+    height: 3.5rem;
+    // aspect-ratio: 1;
 
     background-repeat: no-repeat;
     background-color: transparent;
@@ -55,6 +57,7 @@
 
     @include respond-to("320->") {
       width: 5rem;
+      height: 5rem;
     }
   }
 

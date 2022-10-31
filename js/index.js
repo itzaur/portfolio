@@ -1,7 +1,6 @@
 "use strict";
 import { gsapEase } from "./utils";
 import { MagnetLogo } from "./cursor";
-// import FontFaceObserver from "./../node_modules/fontfaceobserver/fontfaceobserver";
 
 function buttonFunctionality() {
   //ANCHOR Button
@@ -77,7 +76,6 @@ function buttonFunctionality() {
   }
 
   //Menu animation
-  //Menu transition
   const tlMenuTransition = gsap.timeline({
     paused: true,
   });
@@ -220,61 +218,8 @@ function buttonFunctionality() {
 
 function homeInit() {
   const btnBig = document.querySelector(".btn-big");
-
-  //ANCHOR Fonts
-  // let font = new FontFaceObserver("d_CCMonologous", {
-  //   weight: 700,
-  // });
-
-  // font
-  //   .load()
-  //   .then(function () {
-  //     console.log("Font has loaded.");
-  //   })
-  //   .catch(function () {
-  //     console.log("Font failed to load.");
-  //   });
-
-  //ANCHOR Glasses animation
-  const timelineGlasses = gsap.timeline();
-
-  timelineGlasses
-    .fromTo(
-      ".glass",
-      {
-        x: -25,
-        y: 8.5,
-        opacity: 0.8,
-      },
-      {
-        x: 55,
-        y: -25,
-        duration: 0.5,
-        repeatDelay: 6,
-        ease: "none",
-        repeat: -1,
-      }
-    )
-    .to(
-      ".glass rect",
-      {
-        keyframes: [
-          { height: 80 },
-          { height: 22, x: -336, y: 160, opacity: 0.8 },
-        ],
-        duration: 0.5,
-        ease: "none",
-        repeat: -1,
-        repeatDelay: 6,
-      },
-      "<0"
-    );
-
-  //ANCHOR Doodle
   const doodle = document.querySelector(".doodle");
   const doodleMobile = document.querySelector(".doodle-mobile");
-
-  //ANCHOR Photo
   const photo = document.querySelector(".photo");
   const photoTransformY = +window
     .getComputedStyle(photo, null)
@@ -282,7 +227,15 @@ function homeInit() {
   const photoTransformX = +window
     .getComputedStyle(photo, null)
     .transform.match(/(-?[0-9\.]+)/g)[4];
+  const logo = document.querySelector(".logo");
+  const helloDots = document.querySelectorAll(
+    '.hello-dots path:not([data-item="hello-doodle"])'
+  );
+  const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
+  const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
+  const colorGameItem = document.querySelectorAll(".color-game__item");
 
+  //ANCHOR Doodle starting position
   function doodlePositionStart() {
     doodle.style.transform = `translate(${
       window.innerWidth -
@@ -296,14 +249,6 @@ function homeInit() {
   }
 
   //ANCHOR Page animations
-  const logo = document.querySelector(".logo");
-  const helloDots = document.querySelectorAll(
-    '.hello-dots path:not([data-item="hello-doodle"])'
-  );
-  const helloDoodle = document.querySelectorAll('[data-item="hello-doodle"]');
-  const dots = document.querySelectorAll('[data-name="pre-photo"] .cls-1');
-  const colorGameItem = document.querySelectorAll(".color-game__item");
-
   const timelinePageAnimation = gsap.timeline({
     duration: 1,
     rotation: 0.05,
@@ -328,6 +273,8 @@ function homeInit() {
       {
         opacity: 0,
         scale: 0,
+        // rotation: 0.01,
+
         stagger: {
           each: 0.002,
           from: 15,
@@ -351,6 +298,7 @@ function homeInit() {
       helloDoodle,
       {
         y: -300,
+        rotation: 0.01,
         ease: gsapEase.bounce_out,
         opacity: 0,
         stagger: 0.03,
@@ -433,6 +381,41 @@ function homeInit() {
 
   timelinePageAnimation.play();
 
+  //ANCHOR Glasses animation
+  const timelineGlasses = gsap.timeline();
+
+  timelineGlasses
+    .fromTo(
+      ".glass",
+      {
+        x: -25,
+        y: 8.5,
+        opacity: 0.8,
+      },
+      {
+        x: 55,
+        y: -25,
+        duration: 0.5,
+        repeatDelay: 6,
+        ease: "none",
+        repeat: -1,
+      }
+    )
+    .to(
+      ".glass rect",
+      {
+        keyframes: [
+          { height: 80 },
+          { height: 22, x: -336, y: 160, opacity: 0.8 },
+        ],
+        duration: 0.5,
+        ease: "none",
+        repeat: -1,
+        repeatDelay: 6,
+      },
+      "<0"
+    );
+
   //ANCHOR Color game
   function colorGame() {
     const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
@@ -482,6 +465,7 @@ function homeInit() {
   }
 }
 
+//ANCHOR Doodle position onresize
 function doodlePositionResize() {
   const photo = document.querySelector(".photo");
   const doodle = document.querySelector(".doodle");
